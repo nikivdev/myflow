@@ -302,6 +302,7 @@ And here are some more command line tools I use and love :
 - [imgcat](https://github.com/eddieantonio/imgcat) : like [cat](http://www.linfo.org/cat.html) but for images
 - [screenfetch](https://github.com/KittyKatt/screenFetch) : fetches system/theme information in terminal
 - [hugo](https://github.com/gohugoio/hugo) : fast and flexible static site generator
+- [hexo](https://hexo.io) : a fast, simple & powerful blog framework written using NodeJS
 - [coala](https://github.com/coala/coala) : linting and fixing of code
 - [reflex](https://github.com/cespare/reflex) : run a command when files change
 - [create-react-app](https://github.com/facebookincubator/create-react-app) : create React apps with no build configuration
