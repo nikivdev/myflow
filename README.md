@@ -270,6 +270,9 @@ I use a lot of applications on my mac. Here is a list of the ones that I love an
 	- [here](http://i.imgur.com/7oiSYV3.png) is one example of such rule 
 		- I also recursively lowercase files and hide extensions for all files on my system
 
+#### 66. [Upterm](https://github.com/railsware/upterm) 
+- rIts a modern day terminal emulator and an interactive shell. The autocomplete feature on this is really good for productivity. Club all this with oh my zsh(https://github.com/robbyrussell/oh-my-zsh) and you've got auto created aliases and a shell that reminds you of using those aliases.
+
 <h1 align="center">Browser 🌐</h1>
 
 My browser of choice is [Safari](http://www.apple.com/safari/). Chrome just kills the battery and Safari is really well optimised for macOS plus I have tried both and I really do find Safari a lot more 'snappier' to use. One powerful plus that chrome does have over safari is the amount of chrome extensions that you can get. Fortunately the ones most needed for me do exist on Safari. 
