@@ -215,7 +215,7 @@ I use a lot of applications on my mac. Here is a list of the ones that I love an
 #### 49. [Slack](https://slack.com) 
 - find it to be quite a slow application, given the fact that it is essentially a chrome web application wrapped up with [electron](http://electron.atom.io), it is not much surprise but still it does have some really great features for working and communicating within a team
 
-#### 50. [Telegram](https://desktop.telegram.org/) 
+#### 50. [Telegram](https://desktop.telegram.org/) `brew cask install Telegram`
 - really dislike [whatsapp](https://www.whatsapp.com) and I quite like Telegram
 - it has a very clean interface, a native client for macOS and stickers, privacy is questionable as data is still being sent through Telegram servers but it is still a great chat application)
 
