@@ -1,5 +1,7 @@
 <h1 align="center">My wonderful world of macOS 💻 </h1>
-This is a forked repository from [nikitavoloboev](https://github.com/nikitavoloboev/my-mac-os). I've made changes to reflect   upon my use of my Mac 
+This is a forked repository from 
+<a href="https://github.com/nikitavoloboev/my-mac-os">nikitavoloboev</a>.
+I've made changes to reflect upon my use of my Mac 
 <div align="center">
 	
 
