@@ -1,6 +1,7 @@
 <h1 align="center">My wonderful world of macOS 💻 </h1>
-
+This is a forked repository from [nikitavoloboev](https://github.com/nikitavoloboev/my-mac-os). I've made changes to reflect   upon my use of my Mac 
 <div align="center">
+	
 
 <a href="https://github.com/astrocat84/my-mac-os/blob/master/LICENSE">
 		<img src="https://img.shields.io/pypi/l/pipenv.svg">
