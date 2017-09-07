@@ -1,10 +1,11 @@
 <h1 align="center">My wonderful world of macOS 💻 </h1>
-
+This is a forked repository from 
+<a href="https://github.com/nikitavoloboev/my-mac-os">nikitavoloboev</a>.
+I've made changes to reflect upon my use of my Mac 
 <div align="center">
-<a href="https://www.patreon.com/nikitavoloboev">
-		<img src="https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg">
-	</a>
-	<a href="https://github.com/nikitavoloboev/my-mac-os/blob/master/LICENSE">
+	
+
+<a href="https://github.com/astrocat84/my-mac-os/blob/master/LICENSE">
 		<img src="https://img.shields.io/pypi/l/pipenv.svg">
 	</a>
 </div>
@@ -350,6 +351,6 @@ If you found this interesting, I also have [similar repository](https://github.c
 
 <h1 align="center"> Thanks 🍀</h1>
 
-You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-191.2,-905.2,2) I shared. Thank you. 💛 
+
 
 
