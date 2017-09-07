@@ -2,7 +2,7 @@
 
 <div align="center">
 
-	<a href="https://github.com/astrocat84/my-mac-os/blob/master/LICENSE">
+<a href="https://github.com/astrocat84/my-mac-os/blob/master/LICENSE">
 		<img src="https://img.shields.io/pypi/l/pipenv.svg">
 	</a>
 </div>
