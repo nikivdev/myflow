@@ -277,6 +277,29 @@ I use a lot of applications on my mac. Here is a list of the ones that I love an
 	- I then can [display it with HammerSpoon](https://github.com/nikitavoloboev/dotfiles/blob/master/hammerspoon/init.lua#L57) briefly on my screen to remind myself of what I need to be doing
 - I also use it to show a [list of brew services](https://getbitbar.com/plugins/Dev/Homebrew/brew-services.10m.rb) running on my system
 
+#### 66. [Battery Monitor](https://itunes.apple.com/us/app/battery-monitor-health-info/id836505650?mt=12)
+- can display the health of your battery including current (and age reduced) charge, current (and reduced capacity), time and battery cycles.
+- Can see more detailed information about my battery life as well as keeping a battery monitor that keeps in with the default theme.
+
+#### 67. [BetterSnapTool](https://itunes.apple.com/gb/app/bettersnaptool/id417375580?mt=12)
+- Made by the folks who made BetterTouchTool, this app allows simple windows mapping like you could on a windows or linux device by default. You can snap windows to corners of the screen in order to put more in the space you have, rather than relying on workspaces. 
+
+#### 68. [Caffeine](https://caffeine.en.softonic.com/mac?ex=DSK-309.0)
+- A simple app that keeps your screen from going to sleep. Perfect for those long nights working to deadlines such as during university or hackathons.
+
+#### 69. [ClipMenu](http://www.clipmenu.com/)
+- A simple clipboard manager for mac, allows you to store many more items to access simply with Cmd + Shift + v.
+- I use this to copy and past many things including images, text and files; all of which are rendered in the popup menu so I know what I am pasting. This has been invaluable to me.
+
+#### 70. [Endurance](http://www.enduranceapp.com/)
+- A very useful app for monitoring battery intensive apps and quitting them or limiting their computational resources. 
+- Also notifies you when the battery is getting low which is invaluable in preventing the mad dashes to plug in. Also has f.lux dimming capabilities but I would rely on f.lux for this.
+
+#### 71. [Memory Purge](https://itunes.apple.com/us/app/memory-purge-monitor-and-free-up-memory/id942385494?mt=12)
+- A simple app to display how much memory you have and can clear out cached items to free it up. 
+- Not nearly as complex as iStat menus which I use alongside it, but simple and satisfying enough to clear up memory without needing to dive into menus.
+- Also free!
+
 <h1 align="center">Browser 🌐</h1>
 
 My browser of choice is [Safari](http://www.apple.com/safari/). Chrome just kills the battery and Safari is really well optimised for macOS plus I have tried both and I really do find Safari a lot more 'snappier' to use. One powerful plus that chrome does have over safari is the amount of chrome extensions that you can get. Fortunately the ones most needed for me do exist on Safari. 
