@@ -217,6 +217,10 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles#readme) to
 
 - Use the app to store the many [vegan recipes](https://github.com/nikitavoloboev/vegan-recipes#readme) I like to make.
 
+#### [CopyClip 2](https://fiplab.com/apps/copyclip-for-mac) - Clipboard Management Done Right
+
+- Since I installed it it's part of my workflow, easy to use and helps a lot. Never need to re-visit a site for a link.
+
 ### Code
 
 #### [VS Code](https://github.com/Microsoft/vscode) - Code editor
