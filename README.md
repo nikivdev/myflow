@@ -291,6 +291,13 @@ Here is how my library looks:
 
 - Use the app to stay on top of all issues across my GitHub repos. All issues I want to work on soon are put into **Next** queue and I work through each one, one by one.
 
+#### [Postman](https://www.neat.io/bee/) - API development
+
+- Postman Makes API Development simple. With this tool you could forge HTTP request to your API server and test it. All the features you'll need are already included (token bearer, json body, all methods get post patch, etc...)
+
+![](https://imgur.com/R2DlFFO)
+
+
 ### Social
 
 #### [Textual](https://www.codeux.com/textual/) - IRC Client
