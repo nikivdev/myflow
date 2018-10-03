@@ -372,6 +372,10 @@ Here is how my library looks:
 - Quickly finding artists, songs I want to listen, instantly adding the song playing to my [Likes](https://open.spotify.com/user/nikitavoloboev/playlist/0ERn0U4qZIKC8Dy7RrMMsn?) playlist or any other playlist I want, seeing what other songs the artist has and more.
   <img src="https://i.imgur.com/BYGYS9s.png" width="500" alt="img">
 
+#### [eqMac2](https://bitgapp.com/eqmac/) - System-wide Audio Equalizer
+
+- Improves your Audio Listening on OSX / macOS. Experience Music on your Mac, how it is meant to be. The project is open-source, you can check it [here](https://github.com/nodeful/eqMac2). Works pretty well.
+
 ### Images
 
 #### [Pixave](http://www.littlehj.com/mac) - Image/GIF/Video organizer
