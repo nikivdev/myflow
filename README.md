@@ -217,6 +217,10 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles#readme) to
 
 - Use the app to store the many [vegan recipes](https://github.com/nikitavoloboev/vegan-recipes#readme) I like to make.
 
+#### [CopyClip 2](https://fiplab.com/apps/copyclip-for-mac) - Clipboard Management Done Right
+
+- Since I installed it it's part of my workflow, easy to use and helps a lot. Never need to re-visit a site for a link.
+
 ### Code
 
 #### [VS Code](https://github.com/Microsoft/vscode) - Code editor
@@ -371,6 +375,10 @@ Here is how my library looks:
 - Found a [lot of great music](https://open.spotify.com/user/nikitavoloboev) with this application and the phenomenal [Alfred Workflow](http://alfred-spotify-mini-player.com/) makes using the application an absolute joy.
 - Quickly finding artists, songs I want to listen, instantly adding the song playing to my [Likes](https://open.spotify.com/user/nikitavoloboev/playlist/0ERn0U4qZIKC8Dy7RrMMsn?) playlist or any other playlist I want, seeing what other songs the artist has and more.
   <img src="https://i.imgur.com/BYGYS9s.png" width="500" alt="img">
+
+#### [eqMac2](https://bitgapp.com/eqmac/) - System-wide Audio Equalizer
+
+- Improves your Audio Listening on OSX / macOS. Experience Music on your Mac, how it is meant to be. The project is open-source, you can check it [here](https://github.com/nodeful/eqMac2). Works pretty well.
 
 ### Images
 
