@@ -420,6 +420,10 @@ Here is how my library looks:
 
 - Allows you to listen and control playback of podcasts from [Overcast](https://overcast.fm) right from your menu bar.
 
+#### [Spectacle](https://www.spectacleapp.com/) - Move and resize windows with ease
+
+- A great tool for window control with simple and customizable keyboard shortcuts.
+
 ### Browsers
 
 #### [Safari](https://www.apple.com/lae/safari/)
