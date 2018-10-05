@@ -222,7 +222,8 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles#readme) to
 #### [Snappy](http://snappy-app.com/) - Float Screenshot Tools
 
 - It can take a screenshot easily and display it on the top of the screen layers. So, you can watch and type/code at the same time without split your screen.
-  <img src="https://i.imgur.com/KEUoINu.png" with="400" alt="img">
+- Besides, it can also help manage your screenshots and share to Twitter or Slack.
+  <img src="https://i.imgur.com/rt5fLCa.png" with="400" alt="img">
 
 ### Code
 
