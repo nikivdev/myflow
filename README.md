@@ -219,6 +219,11 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles#readme) to
 
 - Use the app to store the many [vegan recipes](https://github.com/nikitavoloboev/vegan-recipes#readme) I like to make.
 
+#### [Snappy](http://snappy-app.com/) - Float Screenshot Tools
+
+- It can take a screenshot easily and display it on the top of the screen layers. So, you can watch and type/code at the same time without split your screen.
+  <img src="https://i.imgur.com/KEUoINu.png" with="400" alt="img">
+
 ### Code
 
 #### [VS Code](https://github.com/Microsoft/vscode) - Code editor
