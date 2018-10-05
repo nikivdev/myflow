@@ -559,7 +559,7 @@ Here you can find more setups by other people that you can take ideas and inspir
 
 If you shared a similar personal setup to this, be it for Windows, Linux or anything else, you can add it in [Similar Setups](#similar-setups) section.
 
-I love finding new awesome tools and apps. If you have a favorite tool or app that you think I missed, please [say it](../../issues/new).
+I love finding new awesome tools and apps and accessing them. If you have a favorite tool or app that you think I missed, please [say it](../../issues/new).
 
 ## Thank you
 
