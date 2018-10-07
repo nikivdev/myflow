@@ -294,6 +294,10 @@ Here is how my library looks:
 
 - Use the app to stay on top of all issues across my GitHub repos. All issues I want to work on soon are put into **Next** queue and I work through each one, one by one.
 
+#### [Insomnia](https://insomnia.rest/) - REST Client
+
+- Use the app to debug and test REST API's
+
 ### Social
 
 #### [Textual](https://www.codeux.com/textual/) - IRC Client
