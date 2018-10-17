@@ -224,6 +224,12 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles#readme) to
 
 - Use the app to store the many [vegan recipes](https://github.com/nikitavoloboev/vegan-recipes#readme) I like to make.
 
+#### [Clipy](https://github.com/Clipy/Clipy) - Clipboard extension
+
+- This is useful clipboard manager to have a copy/paste history and save a lot of time.
+
+<img src="https://i.imgur.com/EdhIyGE.png" width="400" alt="img">
+
 ### Code
 
 #### [VS Code](https://github.com/Microsoft/vscode) - Code editor
