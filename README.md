@@ -209,6 +209,10 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles#readme) to
 
 - Enhance play/pause as well as previous/next playback keys to not only work in iTunes and Spotify but work for SoundCloud, YouTube and many other services.
 
+#### [Commander One](https://mac.eltima.com/file-manager.html) - Dual pane - File Explorer
+
+- A file manager that can show dual panal and you can move around the files much more convenient. 
+
 #### [Transmission](https://www.transmissionbt.com/) - BitTorrent client
 
 - A torrent client that I use. Very minimal in its UI but very powerful and has all the features that I need.
