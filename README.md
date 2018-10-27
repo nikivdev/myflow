@@ -570,7 +570,7 @@ If you shared a similar personal setup to this, be it for Windows, Linux or anyt
 
 I love finding new awesome tools and apps. If you have a favorite tool or app that you think I missed, please [say it](../../issues/new).
 
-## Thank you
+## Thanking you
 
 You can support me on [Patreon](https://www.patreon.com/nikitavoloboev) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
 
