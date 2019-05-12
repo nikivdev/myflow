@@ -59,6 +59,11 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles#readme) to
 - It has a [wonderful community](https://forum.keyboardmaestro.com/) that is happy to help with whatever you are trying to achieve.
 - I share [all the macros I use](https://wiki.nikitavoloboev.xyz/macOS/apps/keyboard-maestro/km-macros) with the app.
 
+#### [Keytty](https://keytty.com) - Control mouse actions
+- Enables you to control your mouse with a few key strokes.
+- Mouse Keys Alternative.
+- Inspired by Vim keybindings.
+
 #### [2Do](http://www.2doapp.com/mac) - Flexible task manager
 
 - I love GTD methodology. This app is phenomenal with helping me [organize my tasks](https://wiki.nikitavoloboev.xyz/macOS/apps/2do). Here is how my sidebar looks:
