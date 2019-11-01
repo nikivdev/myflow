@@ -459,7 +459,7 @@ I curate a list of [interesting CLI tools](https://github.com/learn-anything/com
 - [now](https://github.com/zeit/now-cli) - Real time global deployments served over HTTP/2.
 - [yarn](https://github.com/yarnpkg/yarn) - Fast, reliable, and secure dependency management.
 - [hub](https://github.com/github/hub) - GitHub wrapper.
-- [entr](http://www.entrproject.org/) - Run arbitrary commands when files change.
+- [entr](https://bitbucket.org/eradman/entr/src/default/) - Run arbitrary commands when files change.
 - [xsv](https://github.com/BurntSushi/xsv) - Fast CSV command line toolkit written in Rust.
 - [pv](https://ivarch.com/programs/pv.shtml) - Pipe Viewer.
 - [m-cli](https://github.com/rgcr/m-cli) - Useful utils for macOS.
