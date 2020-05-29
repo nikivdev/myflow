@@ -36,7 +36,7 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 - Alfred is a powerful launcher that you can program to show anything you want. It save me a lot of time as I use it to search through anything instantly.
 
-<img src="https://i.imgur.com/MdIcKlh.png" width="700" alt="img">
+<img src="https://i.imgur.com/pr19IYn.jpg" width="700" alt="img">
 
 - It has a great [community](https://www.alfredforum.com/) and [amazing workflows](https://github.com/learn-anything/alfred-workflows#readme) that you can use.
 
@@ -44,9 +44,9 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 #### [Karabiner](https://pqrs.org/osx/karabiner/) - Keyboard remapping
 
-- Karabiner is life changing tool that [lets you remap keys at a very low level on macOS](https://medium.com/@nikitavoloboev/karabiner-god-mode-7407a5ddc8f6).
+- Karabiner is life changing tool that [lets you remap keys at a low level on macOS](https://medium.com/@nikitavoloboev/karabiner-god-mode-7407a5ddc8f6).
 - I completely remapped my keyboard with it and every key on my keyboard is a custom modifier key that I can program to do what I want.
-- For example you can make caps lock into an escape key when pressed once but if you hold it, it becomes a [hyper key](https://medium.com/@nikitavoloboev/karabiner-god-mode-7407a5ddc8f6). Hyper key means that a key now serves two purposes, once when pressed alone and once when held down. So for example, for remapping caps lock, we can remap it to act as escape when pressed alone once but if we hold down on it, it becomes `⌘ + ⌃` modifier key. So `Caps Lock + F` becomes `⌘ + ⌃ + F`. And so on.
+- For example you can make caps lock into an escape key when pressed once but if you hold it, it becomes a hyper key. Hyper key means that a key now serves two purposes, once when pressed alone and once when held down. So for example, for remapping caps lock, we can remap it to act as escape when pressed alone once but if we hold down on it, it becomes `⌘ + ⌃` modifier key. So `Caps Lock + F` becomes `⌘ + ⌃ + F`. And so on.
 - I take this idea further and define these kind of hyper keys for **every single key on my keyboard**.
 - I describe how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macos/macos-apps/karabiner) and I generate [my configuration](https://github.com/nikitavoloboev/dotfiles/blob/master/karabiner/karabiner.edn) with a [Karabiner DSL](https://github.com/yqrashawn/GokuRakuJoudo#readme).
 
@@ -60,7 +60,7 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 - I love GTD methodology. This app is phenomenal with helping me [organize my tasks](https://wiki.nikitavoloboev.xyz/macOS/apps/2do). Here is how my sidebar looks:
 
-<img src="https://i.imgur.com/I68CbYo.png" width="150">
+<img src="https://i.imgur.com/Hsdov6C.png" width="150">
 
 - It also has global quick add with a hotkey. Together with lists, priorities, powerful search and a lot more.
 
@@ -154,19 +154,17 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 - My favorite editor that I use to write code in. I use [many extensions](https://wiki.nikitavoloboev.xyz/text-editors/vs-code/vs-code-extensions) for it.
 - My config for it can be found [here](https://github.com/nikitavoloboev/dotfiles/blob/master/vscode/settings.json).
-- I use VS Code [Monokai Night](https://github.com/fabiospampinato/vscode-monokai-night#readme) theme with [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font. Here is how it looks:
+- I use [GitHub theme]slhttps://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme() theme with [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font. Here is how it looks:
 
-![](https://i.imgur.com/jSH3nbF.png)
+![](https://i.imgur.com/sxhWBjq.png)
 
 #### [iTerm](https://www.iterm2.com/) - Terminal Emulator
 
 - Use Zsh as my shell together with [Antibody](https://github.com/getantibody/antibody) to install [Zsh plugins I use](https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins).
 - Assigned w + j with [Karabiner](https://wiki.nikitavoloboev.xyz/macos/macos-apps/karabiner) to open the app from Keyboard Maestro in seconds.
-- I made my own [Monokai Night theme](iterm#readme) for it.
+- I made my own [GitHub theme](https://github.com/fcaldera/github-primer-iterm2) for it.
 
-<img src="https://i.imgur.com/vp9Z8lD.png" width="500" alt="img">
-
-- I go over how I use the app [here](https://wiki.nikitavoloboev.xyz/macOS/apps/iterm).
+<img src="https://i.imgur.com/pmmSRVN.png" width="500" alt="img">
 
 #### [Sublime Text](https://www.sublimetext.com) - Text Editor
 
@@ -194,9 +192,9 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 - The best text editing experience you will ever get. It is worth learning it as you will start thinking about text editing differently.
 - I use some kind of vim bindings in any app I use and if there is a vim plugin for the app, I often use it. I use [vim editor](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim) often when connecting to remote sessions and when I need a console editor.
-- My [Neovim](https://github.com/neovim/neovim) config can be seen [here](https://github.com/nikitavoloboev/dotfiles/blob/master/nvim/init.vim). I use [Monokai Night theme](https://github.com/nikitavoloboev/vim-monokai-night#readme) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins). Here is how it looks:
+- My [Neovim](https://github.com/neovim/neovim) config can be seen [here](https://github.com/nikitavoloboev/dotfiles/blob/master/nvim/init.vim). I use [GitHub theme](https://github.com/AlexanderEkdahl/github-sublime-theme) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins). Here is how it looks:
 
-![](https://i.imgur.com/sLXBvv7.png)
+![](https://i.imgur.com/RNEKTMP.png)
 
 ### Social
 
@@ -220,7 +218,7 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 - I love IRC and this is the best macOS client for it.
 - I created my own [Monokai Night theme](textual#readme) for it that I love.
 
-![](https://i.imgur.com/Lpozk8X.png)
+![](https://i.imgur.com/VZX63Ae.jpg)
 
 - The app also has an awesome channel search feature that I use a lot.
 
@@ -351,15 +349,9 @@ I also [share screenshots of changes to System Preferences I made](https://imgur
 
 ## Alfred launcher
 
-![](https://i.imgur.com/zsxhm46.png)
+![](https://content.invisioncic.com/r229491/monthly_2020_05/image.png.19a1fde4be98df7dfdb00e53bdd296b1.png)
 
-> Searching [Alfred Learn Anything](https://github.com/nikitavoloboev/alfred-learn-anything#readme). Using [Monokai Night theme](https://www.alfredapp.com/extras/theme/PQVZpeg4Zi/).
-
-## Monokai Night themes
-
-![](https://i.imgur.com/Xffv68c.jpg)
-
-> Having a [unified theme](https://wiki.nikitavoloboev.xyz/design/monokai-night-themes) across apps is amazing
+> Searching [Alfred Learn Anything](https://github.com/nikitavoloboev/alfred-learn-anything#readme). Using [Mono](https://www.alfredapp.com/extras/theme/pKn3GJWnOM/).
 
 ## Launchpad
 
