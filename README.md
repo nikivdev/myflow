@@ -151,7 +151,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 #### [Telegram](https://desktop.telegram.org/) - Messenger
 
-- My favorite messenger.
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/tools/telegram).
 
 #### [Spark](https://sparkmailapp.com) - Email client
 
