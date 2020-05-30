@@ -89,7 +89,7 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 - I use this app a lot for mapping [various trackpad gestures](https://medium.com/@nikitavoloboev/take-control-of-your-touchpad-on-macos-45c581f542e0#.7n1ye6vze) to hotkeys and actions both globally and per specific apps.
 - I love scrolling through my tabs in Safari with three finger swipes left and right as well as opening and closing tabs with swiping up and down respectively.
-- I share [all the different gestures I have setup to use with the app](btt#readme) that you can view and download.
+- I share [all the different gestures I have setup to use with the app](https://wiki.nikitavoloboev.xyz/macos/macos-apps/bettertouchtool) that you can view and download.
 - I also use the app to modify how my TouchBar looks.
 
 ![](https://i.imgur.com/Ubna3yL.png)
