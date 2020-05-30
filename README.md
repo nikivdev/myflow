@@ -126,17 +126,21 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 - Described in [wiki](https://wiki.nikitavoloboev.xyz/text-editors/sublime-text).
 
-#### [Dash](https://kapeli.com/dash) - API Documentation Browser
+#### [Sublime Merge](https://www.sublimemerge.com) - Git Client
 
-- Allows you to download any docset that you might want to use, search for any method, class or anything that you need very quickly, comes with the amazing [Alfred workflow](https://www.alfredapp.com/blog/productivity/dash-quicker-api-documentation-search/) to simplify the process of searching for the right things.
-
-<img src="https://i.imgur.com/Km4wFRr.png" width="500" alt="img">
+- Use it to version control projects I work on. Use it together with [gitupdate](https://github.com/nikitavoloboev/gitupdate) to frictionlessly manage updates.
 
 #### [Tower](https://www.git-tower.com) - Git client
 
 - Use the app to help me version control any project I am working on. Love the ability to search through commits, check out branches with ease and searching through all the Git repositories I have on my mac with quick search.
 
 ![](https://i.imgur.com/fwCDoKR.png)
+
+#### [Dash](https://kapeli.com/dash) - API Documentation Browser
+
+- Allows you to download any docset that you might want to use, search for any method, class or anything that you need very quickly, comes with the amazing [Alfred workflow](https://www.alfredapp.com/blog/productivity/dash-quicker-api-documentation-search/) to simplify the process of searching for the right things.
+
+<img src="https://i.imgur.com/Km4wFRr.png" width="500" alt="img">
 
 #### [Paw](https://paw.cloud) - HTTP client
 
