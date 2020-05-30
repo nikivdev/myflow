@@ -154,7 +154,7 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 - My favorite editor that I use to write code in. I use [many extensions](https://wiki.nikitavoloboev.xyz/text-editors/vs-code/vs-code-extensions) for it.
 - My config for it can be found [here](https://github.com/nikitavoloboev/dotfiles/blob/master/vscode/settings.json).
-- I use [GitHub theme]slhttps://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme() theme with [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font. Here is how it looks:
+- I use [GitHub theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme) theme with [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font. Here is how it looks:
 
 ![](https://i.imgur.com/sxhWBjq.png)
 
