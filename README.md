@@ -169,7 +169,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 #### [Figma](https://www.figma.com) - Design tool
 
-- Use the app to quickly prototype & collaborate on designs.
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/design/figma).
 
 #### [Sip](https://sipapp.io/) - Collect, organize & share colors
 
