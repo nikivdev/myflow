@@ -201,7 +201,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 #### [Safari](https://www.apple.com/lae/safari/)
 
-- My favorite browser. It is incredibly fast & cares about my privacy unlike Chrome.
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/web/browsers/safari).
 
 ##### Safari Extensions
 
@@ -211,7 +211,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 #### [Google Chrome Canary](https://www.google.com/chrome/canary/)
 
-- Use it to develop websites with Dev Tools and [Pesticide](http://pesticide.io) & [React Dev Tools](https://reactjs.org/blog/2019/08/15/new-react-devtools.html) extensions. Chrome has few [other extensions I like](https://wiki.nikitavoloboev.xyz/web/browsers/google-chrome).
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/web/browsers/google-chrome).
 
 ## Command Line Apps
 
