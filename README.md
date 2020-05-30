@@ -30,7 +30,7 @@ I use a lot of apps on my mac. Below is a list of my favorite tools with descrip
 
 I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together with my [iOS setup](https://github.com/nikitavoloboev/my-ios). And I made a [Telegram group](https://t.me/joinchat/BBKnQU4_rty6_942PFbPbw) to discuss all things macOS/iOS.
 
-I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everything I know](https://wiki.nikitavoloboev.xyz/sharing/everything-I-know). Apps that I described in the wiki are linked to it from here.
+I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everything I know](https://wiki.nikitavoloboev.xyz/sharing/everything-I-know). Apps that I described in the wiki are linked to from here.
 
 ### Productivity
 
