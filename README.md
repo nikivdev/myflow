@@ -162,7 +162,7 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 - Use Zsh as my shell together with [Antibody](https://github.com/getantibody/antibody) to install [Zsh plugins I use](https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins).
 - Assigned w + j with [Karabiner](https://wiki.nikitavoloboev.xyz/macos/macos-apps/karabiner) to open the app from Keyboard Maestro in seconds.
-- I made my own [GitHub theme](https://github.com/fcaldera/github-primer-iterm2) for it.
+- I use [Primer GitHub theme](https://github.com/fcaldera/github-primer-iterm2) for it. And share [my iTerm preferences](https://www.dropbox.com/s/wx9ijtq4me8fttp/com.googlecode.iterm2.plist?dl=1).
 
 <img src="https://i.imgur.com/pmmSRVN.png" width="500" alt="img">
 
