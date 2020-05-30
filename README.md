@@ -30,80 +30,45 @@ I use a lot of apps on my mac. Below is a list of my favorite tools with descrip
 
 I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together with my [iOS setup](https://github.com/nikitavoloboev/my-ios). And I made a [Telegram group](https://t.me/joinchat/BBKnQU4_rty6_942PFbPbw) to discuss all things macOS/iOS.
 
+I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everything I know](https://wiki.nikitavoloboev.xyz/sharing/everything-I-know). Apps that I described in the wiki are linked to it from here.
+
 ### Productivity
 
 #### [Alfred](https://www.alfredapp.com) - Launcher
 
-- Alfred is a powerful launcher that you can program to show anything you want. It save me a lot of time as I use it to search through anything instantly.
-
-<img src="https://i.imgur.com/pr19IYn.jpg" width="700" alt="img">
-
-- It has a great [community](https://www.alfredforum.com/) and [amazing workflows](https://github.com/learn-anything/alfred-workflows#readme) that you can use.
-
-- I wrote [an article](https://medium.com/@nikitavoloboev/writing-alfred-workflows-in-go-2a44f62dc432) on how anyone can start developing workflows of their own using Go language and [AwGo](https://github.com/deanishe/awgo) library.
+- Described in [wiki](/Users/nikivi/Dropbox/Write/knowledge/macOS/apps/alfred/alfred.md).
 
 #### [Karabiner](https://pqrs.org/osx/karabiner/) - Keyboard remapping
 
-- Karabiner is life changing tool that [lets you remap keys at a low level on macOS](https://medium.com/@nikitavoloboev/karabiner-god-mode-7407a5ddc8f6).
-- I completely remapped my keyboard with it and every key on my keyboard is a custom modifier key that I can program to do what I want.
-- For example you can make caps lock into an escape key when pressed once but if you hold it, it becomes a hyper key. Hyper key means that a key now serves two purposes, once when pressed alone and once when held down. So for example, for remapping caps lock, we can remap it to act as escape when pressed alone once but if we hold down on it, it becomes `⌘ + ⌃` modifier key. So `Caps Lock + F` becomes `⌘ + ⌃ + F`. And so on.
-- I take this idea further and define these kind of hyper keys for **every single key on my keyboard**.
-- I describe how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macos/macos-apps/karabiner) and I generate [my configuration](https://github.com/nikitavoloboev/dotfiles/blob/master/karabiner/karabiner.edn) with a [Karabiner DSL](https://github.com/yqrashawn/GokuRakuJoudo#readme).
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/karabiner).
 
 #### [Keyboard Maestro](https://www.keyboardmaestro.com/main/) - Automation tool
 
-- Keyboard Maestro is essentially an IDE for automation. You create macros of actions that you can then easily call from Karabiner.
-- It has a [wonderful community](https://forum.keyboardmaestro.com/) that is happy to help with whatever you are trying to achieve.
-- I share [all the macros I use](https://wiki.nikitavoloboev.xyz/macOS/apps/keyboard-maestro/km-macros) with the app.
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maestro).
 
 #### [2Do](https://www.2doapp.com/mac) - Flexible task manager
 
-- I love GTD methodology. This app is phenomenal with helping me [organize my tasks](https://wiki.nikitavoloboev.xyz/macOS/apps/2do). Here is how my sidebar looks:
-
-<img src="https://i.imgur.com/Hsdov6C.png" width="150">
-
-- It also has global quick add with a hotkey. Together with lists, priorities, powerful search and a lot more.
-
-<img src="https://i.imgur.com/QuBsexM.png" width="400" alt="img">
-
-#### [Trello](https://trello.com) - Project management tool
-
-- I use the app a lot to track various projects I have in my life.
-- I share many boards I made [publicly](https://wiki.nikitavoloboev.xyz/sharing/my-trello). Here is an example of a public board for tracking various [things I want to learn](https://trello.com/b/cu32qF3q).
-
-![](https://i.imgur.com/U0KSBJT.png)
-
-- I assign myself to the cards I am working on now and filter to see only them by [pressing Q key](https://trello.com/shortcuts). I mark cards I want to work on next with `Next` tag.
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/2do).
 
 #### [1Password](https://1password.com) - Password manager
 
-- Generate all of my passwords with it and keep everything in a secured and encrypted vault kept secure by my one master password.
-- No longer need to remember passwords and I now have a unique password for every website that I am signed up on whilst [activating two factor authentication](https://support.1password.com/one-time-passwords/) wherever possible.
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/1password).
 
 #### [Typinator](http://www.ergonis.com/products/typinator/) - Text expansions
 
-- I use the app to [fully automate writing repetitive text](https://medium.com/@nikitavoloboev/write-once-never-write-again-c2fa1f6c4e8).
-- I share all the Typinator sets I made with the app [here](typinator).
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/typinator).
 
 #### [BetterTouchTool](https://www.boastr.net/) - Mac input customizer
 
-- I use this app a lot for mapping [various trackpad gestures](https://medium.com/@nikitavoloboev/take-control-of-your-touchpad-on-macos-45c581f542e0#.7n1ye6vze) to hotkeys and actions both globally and per specific apps.
-- I love scrolling through my tabs in Safari with three finger swipes left and right as well as opening and closing tabs with swiping up and down respectively.
-- I share [all the different gestures I have setup to use with the app](https://wiki.nikitavoloboev.xyz/macos/macos-apps/bettertouchtool) that you can view and download.
-- I also use the app to modify how my TouchBar looks.
-
-![](https://i.imgur.com/Ubna3yL.png)
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/bettertouchtool).
 
 #### [PDF Expert](https://pdfexpert.com/) - PDF reader/editor
 
-- I read a lot of PDFs like books, research papers and the like. This app is a huge upgrade over Preview app that I used before.
-- Multiple tabs, sepia mode, very nice annotation tools, great search, performance.
+- I read a lot of PDFs like books, research papers and the like. I like that it lets me have multiple tabs, sepia/dark mode, nice annotation tools & has great search.
 
 #### [Fantastical](https://flexibits.com/fantastical) - Calendar
 
-- I use the app to manage events in my life.
-- I take great use of Fantastical's natural language input and I use [many Typinator expansions](https://medium.com/@nikitavoloboev/fantastical-natural-input-text-expansions-3ea8cf7ccac3#.pv5937ncr) to ease this process.
-- I always view my events from `Week` view. And show 5 days with 16h shown for all days. This lets me have a perspective over what I have to do now. What deadlines I have to complete soon. And gives me the freedom to adjust my schedule in light of upcoming deadlines and events.
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/fantastical).
 
 #### [Contexts](https://contexts.co) - Window switcher
 
@@ -152,25 +117,15 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 #### [VS Code](https://github.com/Microsoft/vscode) - Code editor
 
-- My favorite editor that I use to write code in. I use [many extensions](https://wiki.nikitavoloboev.xyz/text-editors/vs-code/vs-code-extensions) for it.
-- My config for it can be found [here](https://github.com/nikitavoloboev/dotfiles/blob/master/vscode/settings.json).
-- I use [GitHub theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme) theme with [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font. Here is how it looks:
-
-![](https://i.imgur.com/sxhWBjq.png)
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/text-editors/vs-code).
 
 #### [iTerm](https://www.iterm2.com/) - Terminal Emulator
 
-- Use Zsh as my shell together with [Antibody](https://github.com/getantibody/antibody) to install [Zsh plugins I use](https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins).
-- Assigned w + j with [Karabiner](https://wiki.nikitavoloboev.xyz/macos/macos-apps/karabiner) to open the app from Keyboard Maestro in seconds.
-- I use [Primer GitHub theme](https://github.com/fcaldera/github-primer-iterm2) for it. And share [my iTerm preferences](https://www.dropbox.com/s/wx9ijtq4me8fttp/com.googlecode.iterm2.plist?dl=1).
-
-<img src="https://i.imgur.com/pmmSRVN.png" width="500" alt="img">
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/text-editors/vs-code).
 
 #### [Sublime Text](https://www.sublimetext.com) - Text Editor
 
-- Use this editor in addition to VS Code and Neovim for its blazing fast speed of opening files.
-- I use it primarily to edit markdown files like [my wiki](https://wiki.nikitavoloboev.xyz/other/wiki-workflow). I also edit config files and open large and small files for quick edits.
-- I use [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/sublime-text/sublime-text-plugins) together with [Ayu theme](https://github.com/dempfi/ayu).
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/text-editors/sublime-text).
 
 #### [Dash](https://kapeli.com/dash) - API Documentation Browser
 
@@ -190,11 +145,7 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 #### [Neovim](https://neovim.io) - Text Editor
 
-- The best text editing experience you will ever get. It is worth learning it as you will start thinking about text editing differently.
-- I use some kind of vim bindings in any app I use and if there is a vim plugin for the app, I often use it. I use [vim editor](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim) often when connecting to remote sessions and when I need a console editor.
-- My [Neovim](https://github.com/neovim/neovim) config can be seen [here](https://github.com/nikitavoloboev/dotfiles/blob/master/nvim/init.vim). I use [GitHub theme](https://github.com/AlexanderEkdahl/github-sublime-theme) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins). Here is how it looks:
-
-![](https://i.imgur.com/RNEKTMP.png)
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/text-editors/vim).
 
 ### Social
 
@@ -204,23 +155,15 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 #### [Spark](https://sparkmailapp.com) - Email client
 
-- Love how it smartly categorizes emails by categories.
-- I approach all of my email tasks in GTD style. Keeping my email Inbox close to 0 at all times.
+- Love how it smartly categorizes emails by categories. I approach all of my email tasks in GTD style. Keeping my email Inbox close to 0 at all times.
 
 #### [Tweetbot](http://tapbots.com/tweetbot/mac/) - Twitter client
 
-- Use it to stay up to date and communicate on Twitter. I have Tweetbot open in full screen with two columns (Mentions or [Other](https://twitter.com/i/lists/1131319788012285952) & [Timeline](https://twitter.com/nikitavoloboev/following)). Here is how that looks for me:
-
-![](https://i.imgur.com/uMoGfGx.png)
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/tweetbot).
 
 #### [Textual](https://www.codeux.com/textual/) - IRC Client
 
-- I love IRC and this is the best macOS client for it.
-- I created my own [Monokai Night theme](https://wiki.nikitavoloboev.xyz/macos/macos-apps/textual) for it that I love.
-
-- The app also has an awesome channel search feature that I use a lot.
-
-<img src="https://i.imgur.com/CMBW8Qf.png" width="500" alt="img">
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/textual).
 
 ### Design
 
@@ -230,7 +173,7 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 #### [Sip](https://sipapp.io/) - Collect, organize & share colors
 
-- A great color picker I use to collect my favorite colors and color schemes.
+- Great color picker I use to collect my favorite colors and color schemes.
 
 <img src="https://i.imgur.com/B7d1W3v.png" width="400" alt="img">
 
@@ -254,11 +197,6 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 - Open source alternative to VLC built specifically for macOS.
 - It is based on [mpv](https://github.com/mpv-player/mpv) and has a more modern and native look than VLC.
 
-#### [Kap](https://github.com/wulkano/kap) - Screen recorder
-
-- An open source screen recorder I use to record GIFs.
-- Has keyboard support so I can quickly start and end recording of the GIF in one hotkey.
-
 ### Browsers
 
 #### [Safari](https://www.apple.com/lae/safari/)
@@ -279,7 +217,7 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 I use [brew](https://brew.sh) package manager to install all the [tools I use on my system](https://github.com/nikitavoloboev/dotfiles/blob/master/magefile.go).
 
-I curate a list of [interesting CLI tools](https://github.com/learn-anything/command-line-tools#readme). Below are ones I love & use often:
+I curate a list of [interesting CLI tools](https://github.com/learn-anything/command-line-tools#readme). Below are ones I love & use:
 
 - [exa](https://github.com/ogham/exa) - Replacement for ls written in rust.
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - Search text for patterns fast.
@@ -329,25 +267,6 @@ I curate a list of [interesting CLI tools](https://github.com/learn-anything/com
 - [wifi-password](https://github.com/rauchg/wifi-password) - Get the password of the WiFi you're on.
 - [fkill](https://github.com/sindresorhus/fkill-cli) - Fabulously kill processes.
 - [ran](https://github.com/m3ng9i/ran) - Simple static web server written in Go.
-
-## Preference Panes
-
-- [SwiftDefaultApps](https://github.com/Lord-Kamina/SwiftDefaultApps/releases/latest) - Set the default application used for various URL schemes, file extensions, file types, MIME types, and Uniform Type Identifiers.
-- [TinkerTool](https://www.bresink.com/osx/TinkerTool.html) - Gives you access to additional preference settings Apple has built into macOS.
-
-I also [share screenshots of changes to System Preferences I made](https://imgur.com/a/KoVAxFQ).
-
-## Desktop Screenshot
-
-![](https://i.imgur.com/petNhFp.jpg)
-
-> Using [screenfetch](https://github.com/KittyKatt/screenFetch)
-
-## Alfred launcher
-
-![](https://content.invisioncic.com/r229491/monthly_2020_05/image.png.19a1fde4be98df7dfdb00e53bdd296b1.png)
-
-> Searching [Alfred Learn Anything](https://github.com/nikitavoloboev/alfred-learn-anything#readme). Using [Mono](https://www.alfredapp.com/extras/theme/pKn3GJWnOM/).
 
 ## Launchpad
 
