@@ -126,15 +126,15 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 #### [Popclip](https://pilotmoon.com/popclip/) - iOS like mouse text selection popover
 
-- Brings up a quick menu whenever some text is selected on which I can do a number of quick actions, like searching selected text on Google, YouTube or copy the text. Here is how it looks for me:
+- Brings up a quick menu whenever some text is selected on which I can do a number of quick actions, like searching selected text on Google, YouTube or copy the text. Here are the extensions I have activated:
+
+![](https://i.imgur.com/PS3HFvS.png)
+
+- And here is how it looks for me:
 
 <img src="https://i.imgur.com/dxt2qjK.png" width="400" alt="img">
 
-- I share all the extensions I use with it [here](popclip#readme.md).
-
-#### [Noizio](http://noiz.io/) - Ambient sounds
-
-- I use it to play sounds of rain when focusing.
+- Everything I use comes by default with PopClip except YouTube extension which you can download [here](https://www.dropbox.com/sh/gckplsy5d4mg4rq/AABgvWT9QKg0NlwC9Bz8X9B0a?dl=0). I used [PopMaker](http://brettterpstra.com/2014/05/12/popmaker-popclip-extension-generator/) tool to create this web search extension.
 
 #### [Reeder](http://reederapp.com/mac/) - RSS Reeder
 
@@ -216,15 +216,11 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 #### [Textual](https://www.codeux.com/textual/) - IRC Client
 
 - I love IRC and this is the best macOS client for it.
-- I created my own [Monokai Night theme](textual#readme) for it that I love.
-
-![](https://i.imgur.com/VZX63Ae.jpg)
+- I created my own [Monokai Night theme](https://wiki.nikitavoloboev.xyz/macos/macos-apps/textual) for it that I love.
 
 - The app also has an awesome channel search feature that I use a lot.
 
 <img src="https://i.imgur.com/CMBW8Qf.png" width="500" alt="img">
-
-app due to its clean interface, a native client and stickers. I use few [KM macros](https://wiki.nikitavoloboev.xyz/macOS/apps/keyboard-maestro/km-macros) & quick jump search to instantly jump to chats.
 
 ### Design
 
