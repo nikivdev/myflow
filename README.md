@@ -114,7 +114,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 #### [Notion](https://www.notion.so/) - All-in-one workspace
 
-- Use it for projects as a wiki of docs, notes, todos.
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/tools/notion).
 
 #### [Linear](https://linear.app/) - Issue tracker
 
