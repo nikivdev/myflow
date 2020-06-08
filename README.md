@@ -112,6 +112,14 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 - A torrent client that I use. Very minimal in its UI but very powerful and has all the features that I need.
 
+#### [Notion](https://www.notion.so/) - All-in-one workspace
+
+- Use it for projects as a wiki of docs, notes, todos.
+
+#### [Linear](https://linear.app/) - Issue tracker
+
+- Love using it for working in teams on bigger projects.
+
 ### Code
 
 #### [VS Code](https://github.com/Microsoft/vscode) - Code editor
