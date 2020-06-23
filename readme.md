@@ -222,7 +222,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 I use [brew](https://brew.sh) package manager to install all the [tools I use on my system](https://github.com/nikitavoloboev/dotfiles/blob/master/magefile.go).
 
-I curate a list of [interesting CLI tools](https://github.com/learn-anything/command-line-tools#readme). Below are ones I love & use:
+I curate a list of [interesting CLI tools](https://github.com/learn-anything/command-line-tools). Below are ones I love & use:
 
 - [exa](https://github.com/ogham/exa) - Replacement for ls written in rust.
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - Search text for patterns fast.
@@ -277,17 +277,17 @@ I curate a list of [interesting CLI tools](https://github.com/learn-anything/com
 
 ![](https://i.imgur.com/rlrnzOi.png)
 
-## [My wonderful world of iOS 📱](https://github.com/nikitavoloboev/my-ios#readme)
+## [My wonderful world of iOS 📱](https://github.com/nikitavoloboev/my-ios)
 
-If you found this interesting, I also have [similar repository](https://github.com/nikitavoloboev/my-ios#readme) going over what applications I use on iOS/WatchOS as well as how and why I use them.
+If you found this interesting, I also have [similar repository](https://github.com/nikitavoloboev/my-ios) going over what applications I use on iOS/WatchOS as well as how and why I use them.
 
-<a align="center" href="https://github.com/nikitavoloboev/my-ios#readme">
+<a align="center" href="https://github.com/nikitavoloboev/my-ios">
     <img width="250" heigth="400" src="https://i.imgur.com/q6lSHQI.png"></a>
 
-<a align="center" href="https://github.com/nikitavoloboev/my-ios#readme">
+<a align="center" href="https://github.com/nikitavoloboev/my-ios">
     <img width="250" heigth="400" src="https://i.imgur.com/faN6HSB.jpg"></a>
 
-<a align="center" href="https://github.com/nikitavoloboev/my-ios#readme">
+<a align="center" href="https://github.com/nikitavoloboev/my-ios">
     <img width="250" heigth="400" src="https://i.imgur.com/9N2zJgM.png"></a>
 
 ## Similar Setups
@@ -300,9 +300,9 @@ Here you can find more setups by other people that you can take ideas and inspir
 
 ## Related
 
-- [Awesome mac](https://github.com/jaywcjlove/awesome-mac#readme)
-- [Interesting macOS apps](https://github.com/learn-anything/macos-apps#readme)
-- [Open Source macOS apps](https://github.com/serhii-londar/open-source-mac-os-apps#readme)
+- [Awesome mac](https://github.com/jaywcjlove/awesome-mac)
+- [Interesting macOS apps](https://github.com/learn-anything/macos-apps)
+- [Open Source macOS apps](https://github.com/serhii-londar/open-source-mac-os-apps)
 
 ## Contributing
 
@@ -314,4 +314,4 @@ I love finding new awesome tools and apps. If you have a favorite tool or app th
 
 You can support me on [GitHub](https://github.com/sponsors/nikitavoloboev) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
 
-[![MIT](https://img.shields.io/badge/license-MIT-0a0a0a.svg?style=flat&colorA=0a0a0a)](LICENSE) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)
+[![CC4](https://img.shields.io/badge/license-CC4-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://creativecommons.org/licenses/by/4.0/) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)
