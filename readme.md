@@ -140,7 +140,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 - Allows you to download any docset that you might want to use, search for any method, class or anything that you need very quickly, comes with the amazing [Alfred workflow](https://www.alfredapp.com/blog/productivity/dash-quicker-api-documentation-search/) to simplify the process of searching for the right things.
 
-<img src="https://i.imgur.com/Km4wFRr.png" width="500" alt="img">
+<img src="https://i.imgur.com/0Vo17Iw.png" width="500" alt="img">
 
 #### [Paw](https://paw.cloud) - HTTP client
 
