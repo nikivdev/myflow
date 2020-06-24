@@ -33,7 +33,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 #### [Alfred](https://www.alfredapp.com) - Launcher
 
-- Described in [wiki](/Users/nikivi/Dropbox/Write/knowledge/macOS/apps/alfred/alfred.md).
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/alfred).
 
 #### [Karabiner](https://pqrs.org/osx/karabiner/) - Keyboard remapping
 
