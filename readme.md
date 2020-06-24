@@ -6,8 +6,6 @@
 
 > All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
 
-#### Contents
-
 - [Applications](#applications)
   - [Productivity](#productivity)
   - [Code](#code)
