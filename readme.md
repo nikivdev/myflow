@@ -71,11 +71,9 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 #### [Contexts](https://contexts.co) - Window switcher
 
-- Allows me to fuzzy search through all the currently active windows that I have.
+- Allows me to fuzzy search through all the currently active windows. Most apps I open directly via Karabiner but for other times it's great to fuzzy search through all open windows.
 
-![](https://i.imgur.com/VdNRlGM.png)
-
-- Makes jumping to the right window I need effortless. I often may have many VS Code instances with different projects running and this lets me switch to the project I need in seconds.
+![](https://i.imgur.com/0RBooBz.png)
 
 #### [Dictionary](<http://en.wikipedia.org/wiki/Dictionary_(software)>)
 
@@ -180,7 +178,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 - Great color picker I use to collect my favorite colors and color schemes.
 
-<img src="https://i.imgur.com/B7d1W3v.png" width="400" alt="img">
+<img src="https://i.imgur.com/QvsdlQe.png" width="400" alt="img">
 
 #### [PixelSnap](https://getpixelsnap.com/) - Measure everything on screen
 
@@ -190,10 +188,10 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 #### [Spotify](https://www.spotify.com/us/) - Music streaming
 
-- Found a [lot of great music](https://open.spotify.com/user/nikitavoloboev) with this application and the phenomenal [Alfred Workflow](http://alfred-spotify-mini-player.com/) makes using the application an absolute joy.
+- Found a [lot of great music](https://open.spotify.com/user/nikitavoloboev) with this app and the phenomenal [Alfred Workflow](http://alfred-spotify-mini-player.com/) makes using the application an absolute joy.
 - Quickly finding artists, songs I want to listen, instantly adding the song playing to my [Likes](https://open.spotify.com/user/nikitavoloboev/playlist/0ERn0U4qZIKC8Dy7RrMMsn?) playlist or any other playlist I want, seeing what other songs the artist has and more.
 
-<img src="https://i.imgur.com/tNThVG0.png" width="500" alt="img">
+<img src="https://i.imgur.com/Mww8K4a.png" width="500" alt="img">
 
 ### Video
 
