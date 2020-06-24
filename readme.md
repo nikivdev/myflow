@@ -80,7 +80,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 - Comes natively with macOS and I started to love using it for exploring and searching through Wikipedia.
 - It is incredibly fast to make the searches and it gives quick autosuggestions for any query I type that I can then select with up and down arrows.
 
-![](https://i.imgur.com/Nj4erv5.png)
+![](https://i.imgur.com/uLgCCmn.png)
 
 #### [CleanShot](https://getcleanshot.com) - Create & annotate screenshots/recordings
 
