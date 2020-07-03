@@ -2,7 +2,7 @@
 
 > List of applications and tools that make my macOS experience even more amazing
 
-![](https://raw.githubusercontent.com/nikitavoloboev/my-mac-os/master/desktop.png)
+![](https://raw.githubusercontent.com/nikitavoloboev/my-mac-os/master/mac.png)
 
 > All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
 
