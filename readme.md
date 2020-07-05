@@ -2,13 +2,13 @@
 
 > List of applications and tools that make my macOS experience even more amazing
 
-![](https://raw.githubusercontent.com/nikitavoloboev/my-mac-os/master/dark.png)
-
-> Dark appearance. All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
-
 ![](https://raw.githubusercontent.com/nikitavoloboev/my-mac-os/master/light.png)
 
 > Light appearance. I prefer to use light themes during the day as it's easier to focus on the text. I have macOS switch between the themes between evening & day.
+
+![](https://raw.githubusercontent.com/nikitavoloboev/my-mac-os/master/dark.png)
+
+> Dark appearance. All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
 
 - [Applications](#applications)
   - [Productivity](#productivity)
@@ -82,7 +82,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 - Comes natively with macOS and I started to love using it for exploring and searching through Wikipedia.
 - It is incredibly fast to make the searches and it gives quick autosuggestions for any query I type that I can then select with up and down arrows.
 
-![](https://i.imgur.com/uLgCCmn.png)
+![](https://i.imgur.com/wFkJXwd.png)
 
 #### [CleanShot](https://getcleanshot.com) - Create & annotate screenshots/recordings
 
@@ -106,7 +106,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 - I use [Inoreader](https://www.inoreader.com) to sync [blogs I follow](https://wiki.nikitavoloboev.xyz/research/blogs) between phone and mac.
 - Here is how Reeder looks like for me:
 
-![](https://i.imgur.com/2Ruad9G.png)
+![](https://i.imgur.com/l0Cq6ZT.jpg)
 
 #### [Transmission](https://www.transmissionbt.com/) - BitTorrent client
 
@@ -142,7 +142,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 - Allows you to download any docset that you might want to use, search for any method, class or anything that you need very quickly, comes with the amazing [Alfred workflow](https://www.alfredapp.com/blog/productivity/dash-quicker-api-documentation-search/) to simplify the process of searching for the right things.
 
-<img src="https://i.imgur.com/0Vo17Iw.png" width="500" alt="img">
+<img src="https://i.imgur.com/P5LQaLz.png" width="500" alt="img">
 
 #### [Paw](https://paw.cloud) - HTTP client
 
@@ -180,7 +180,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 - Great color picker I use to collect my favorite colors and color schemes.
 
-<img src="https://i.imgur.com/QvsdlQe.png" width="400" alt="img">
+<img src="https://i.imgur.com/RbtDn7n.png" width="400" alt="img">
 
 #### [PixelSnap](https://getpixelsnap.com/) - Measure everything on screen
 
@@ -193,7 +193,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 - Found a [lot of great music](https://open.spotify.com/user/nikitavoloboev) with this app and the phenomenal [Alfred Workflow](http://alfred-spotify-mini-player.com/) makes using the application an absolute joy.
 - Quickly finding artists, songs I want to listen, instantly adding the song playing to my [Likes](https://open.spotify.com/user/nikitavoloboev/playlist/0ERn0U4qZIKC8Dy7RrMMsn?) playlist or any other playlist I want, seeing what other songs the artist has and more.
 
-<img src="https://i.imgur.com/Mww8K4a.png" width="500" alt="img">
+<img src="https://i.imgur.com/WqobmyT.png" width="500" alt="img">
 
 ### Video
 
@@ -275,7 +275,7 @@ I curate a list of [interesting CLI tools](https://github.com/learn-anything/com
 
 ## Launchpad
 
-![](https://i.imgur.com/rlrnzOi.png)
+![](https://i.imgur.com/Bm4AyZr.jpg)
 
 ## [My wonderful world of iOS 📱](https://github.com/nikitavoloboev/my-ios)
 
