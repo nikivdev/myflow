@@ -2,9 +2,13 @@
 
 > List of applications and tools that make my macOS experience even more amazing
 
-![](https://raw.githubusercontent.com/nikitavoloboev/my-mac-os/master/desktop.png)
+![](https://raw.githubusercontent.com/nikitavoloboev/my-mac-os/master/dark.png)
 
-> All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
+> Dark appearance. All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
+
+![](https://raw.githubusercontent.com/nikitavoloboev/my-mac-os/master/light.png)
+
+> Light appearance. I prefer to use light themes during the day as it's easier to focus on the text. I have macOS switch between the themes between evening & day.
 
 - [Applications](#applications)
   - [Productivity](#productivity)
