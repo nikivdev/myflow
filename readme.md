@@ -8,7 +8,7 @@
 
 ![](https://raw.githubusercontent.com/nikitavoloboev/my-mac-os/master/night.png)
 
-> Dark appearance. All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
+> Dark appearance. All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden. Desktop background is dynamic.
 
 - [Applications](#applications)
   - [Productivity](#productivity)
