@@ -275,7 +275,7 @@ I curate a list of [interesting CLI tools](https://github.com/learn-anything/com
 
 ## Launchpad
 
-![](https://i.imgur.com/Bm4AyZr.jpg)
+![](https://i.imgur.com/N3R2wun.png)
 
 ## [My wonderful world of iOS 📱](https://github.com/nikitavoloboev/my-ios)
 
