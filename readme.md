@@ -33,6 +33,10 @@ I also share [my dotfiles](https://github.com/nikitavoloboev/dotfiles) together 
 
 I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everything I know](https://wiki.nikitavoloboev.xyz/sharing/everything-I-know). Apps that I described in the wiki are linked to from here.
 
+### Changing themes
+
+I made [KM macro](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maestro/km-macros) with [this AppleScript](https://www.macobserver.com/tips/quick-tip/change-light-dark-mode-applescript-app/) to switch between light/dark macOS appearances. As appearances are switched, the themes get updated accordingly on most apps (Notion, Discord & Sublime Merge sadly still don't let you change their theme according to OS setting). So as most sites don't use [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS feature to change the look of sites from light to dark automatically. Hope it changes in future.
+
 ### Productivity
 
 #### [Alfred](https://www.alfredapp.com) - Launcher
