@@ -35,7 +35,7 @@ I have [extensive wiki](https://wiki.nikitavoloboev.xyz) where I share [everythi
 
 ### Changing themes
 
-I made [KM macro](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maestro/km-macros) with [this AppleScript](https://www.macobserver.com/tips/quick-tip/change-light-dark-mode-applescript-app/) to switch between light/dark macOS appearances. As appearances are switched, the themes get updated accordingly on most apps (Notion, Discord & Sublime Merge sadly still don't let you change their theme according to OS setting). So as most sites don't use [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS feature to change the look of sites from light to dark automatically. Hope it changes in future.
+I made [KM macro](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maestro/km-macros) with [this AppleScript](https://www.macobserver.com/tips/quick-tip/change-light-dark-mode-applescript-app/) to switch [between light/dark macOS appearances](https://twitter.com/nikitavoloboev/status/1311336647338983432). As appearances are switched, the themes get updated accordingly on most apps.
 
 ### Productivity
 
@@ -59,17 +59,13 @@ I made [KM macro](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maes
 
 - Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/1password).
 
-#### [Typinator](http://www.ergonis.com/products/typinator/) - Text expansions
-
-- Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/typinator).
-
 #### [BetterTouchTool](https://www.boastr.net/) - Mac input customizer
 
 - Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/bettertouchtool).
 
 #### [PDF Expert](https://pdfexpert.com/) - PDF reader/editor
 
-- I read a lot of PDFs like books, research papers and the like. I like that it lets me have multiple tabs, sepia/dark mode, nice annotation tools & has great search.
+- I read a lot of PDFs like books, research papers and the like. I like that it lets me have multiple tabs, dark mode, nice annotation tools & good search.
 
 #### [Fantastical](https://flexibits.com/fantastical) - Calendar
 
@@ -122,7 +118,7 @@ I made [KM macro](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maes
 
 #### [Linear](https://linear.app/) - Issue tracker
 
-- Love using it for working in teams on bigger projects.
+- Nice private project tracker. I like to use GitHub issues primarily for projects.
 
 ### Code
 
