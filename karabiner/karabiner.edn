@@ -599,6 +599,7 @@
                  [:k [:km "run: Go"]]
                  [:l [:km "run: Python"]]
                  [:semicolon [:alfred "search learning" "nikivi.private.directories"]]
+                 [:quote [:km "proj: Go Exp"]]
                  [:n [:km "run: Node"]]
                  [:m [:km "run: Swift"]]
                  [:period [:km "edit: Dotfiles Magefile"]]
