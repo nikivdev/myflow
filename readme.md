@@ -63,10 +63,6 @@ I made [KM macro](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maes
 
 - Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/bettertouchtool).
 
-#### [PDF Expert](https://pdfexpert.com/) - PDF reader/editor
-
-- I read a lot of PDFs like books, research papers and the like. I like that it lets me have multiple tabs, dark mode, nice annotation tools & good search.
-
 #### [Fantastical](https://flexibits.com/fantastical) - Calendar
 
 - Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/fantastical).
