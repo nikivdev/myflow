@@ -35,6 +35,7 @@
              :b-mode {:key :b}
              :n-mode {:key :n}
              :m-mode {:key :m}
+             :comma-mode {:key :comma}
              :dot-mode {:key :period}
              :spacebar-mode {:key :spacebar}
              :go-mode {:key :period :condi ["in-go" 1]}
@@ -263,12 +264,13 @@
                  ;[:i [:km "open: Flume"]]
                  [:i [:km "open: Feedback Assistant"]]
                  [:o [:km "open: Developer"]]
-                 [:caps_lock [:km "open: Preview"]]
+                 ;[:caps_lock [:km "open: Preview"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:j [:km "open: Dictionary"]]
-                 [:k [:km "open: PDF Expert"]]
-                 [:l [:km "open: Reeder"]]
-                 [:semicolon [:km "open: Books"]]
+                 [:k [:km "open: Preview"]]
+                 [:l [:km "open: Books"]]
+                 ;[:k [:km "open: PDF Expert"]]
+                 ;[:l [:km "open: Reeder"]]
                  [:b [:km "Edit keyboard shortcuts"]]
                  [:n [:km "open: ScreenFlow"]]
                  [:m [:km "open: OBS"]]
@@ -440,7 +442,7 @@
                  [:e :tab]
                  [:r :!Stab]
                  [:t :!Sreturn_or_enter]
-                 ;[:u :!COp] ; Selection -> HasteBin link
+                 [:u :!COp] ; Selection -> HasteBin link
                  [:i :!CTperiod] ; Contexts search active windows
                  [:o :!Cx] ; Cut
                  ;[:open_bracket :!Oleft_arrow]
@@ -558,18 +560,18 @@
                  [:f [:km "open: Spark"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
-                 [:j [:km "open: Textual"]]
+                 [:j [:km "w: Element"]]
                  [:k [:km "open: Telegram"]]
                  [:l [:km "open: Discord"]]
                  [:semicolon [:km "open: Slack"]]
-                 [:quote [:km "w: Element"]]
                  [:c [:km "open: Contacts"]]
                  [:v [:km "open: Tweetbot"]]
                  [:b [:km "w: Twitter"]]
                  [:n [:km "New tweet"]]
                  [:m [:km "New tweet with current URL"]]
-                 [:comma [:km "Search Tweetbot"]]
-                 [:period [:km "w: Twitter Search"]]
+                 [:comma [:km "w: Twitter Search"]]
+                 [:period [:km "open: Textual"]]
+                 [:slash[:km "Search Tweetbot"]]
                  [:spacebar :!CSOz]]} ; Selection -> Twitter
         {:des "xkey (spotify)"
          :rules [:x-mode
@@ -599,7 +601,7 @@
                  [:k [:km "run: Go"]]
                  [:l [:km "run: Python"]]
                  [:semicolon [:alfred "search learning" "nikivi.private.directories"]]
-                 [:quote [:km "proj: Go Exp"]]
+                 [:quote [:km "proj: Go"]]
                  [:n [:km "run: Node"]]
                  [:m [:km "run: Swift"]]
                  [:period [:km "edit: Dotfiles Magefile"]]
@@ -634,31 +636,31 @@
         {:des "bkey (break)"
          :rules [:b-mode
                  [:7 [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
-                 [:8 [:km "w: Product Hunt"]]
-                 [:9 [:km "w: Lobsters"]]
-                 [:0 [:km "w: HN"]]
                  [:q [:km "w: KM forum"]]
+                 [:w [:km "w: Swift forum"]]
                  [:e [:km "w: Behance"]]
                  [:r [:km "w: Medium (network)"]]
                  [:t [:km "w: Medium (bookmarks)"]]
-                 [:i [:km "w: Reddit"]]
-                 [:u [:km "w: Reddit (all)"]]
+                 [:u [:km "w: Product Hunt"]]
                  [:i [:km "w: Dribble"]]
                  [:o [:km "w: Pinboard"]]
+                 [:p [:km "w: Indie Hackers"]]
                  [:p [:km "w: HN (show new)"]]
                  [:open_bracket [:km "w: Reddit Saved"]]
                  [:close_bracket [:km "w: Twitter Bookmarks"]]
-                 [:a [:km "w: Alfred Forum"]]
-                 [:s [:km "w: Swift forum"]]
-                 [:d [:km "w: Indie Hackers"]]
-                 [:f [:km "w: HN (comments)"]]
-                 [:g [:km "w: Lobsters (comments)"]]
+                 [:a [:km "w: HN"]]
+                 [:s [:km "w: Lobsters"]]
+                 [:d [:km "w: Reddit"]]
+                 [:f [:km "w: Reddit (all)"]]
+                 [:g [:km "w: Alfred Forum"]]
                  [:h [:km "w: Product Hunt (new)"]]
                  [:j [:km "w: Reddit (new)"]]
                  [:k [:km "w: GitHub (front page)"]]
                  [:l [:km "w: Lobsters (new)"]]
                  [:semicolon [:km "w: HN (new)"]]
                  [:quote [:km "w: HckrNews"]]
+                 [:z [:km "w: HN (comments)"]]
+                 [:x [:km "w: Lobsters (comments)"]]
                  [:n [:km "w: Inoreader"]]
                  [:m [:km "w: Mastodon"]]
                  [:comma [:km "w: GitHub (trending)"]]
@@ -710,6 +712,10 @@
                  [:c [:alfred "search alfred" "nikivi.utilities" "css "]]
                  [:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
                  [:b [:alfred "search alfred" "nikivi.utilities" "bash "]]]}
+        {:des "commakey (words)"
+         :rules [:comma-mode
+                 [:w [:n :i :k :i :v :i]] ; -> nikivi
+                 [:a [:n :i :k :i :t :a :v :o :l :o :b :o :e :v ]]]} ; -> nikitavoloboev
          {:des "dotkey (1-3, q-u, caps, tab)"
           :rules [:dot-mode
                   [:1 [:!Sc :l :o :s :e :spacebar :!S3]] ; -> Close #
@@ -782,9 +788,9 @@
                  [:q [:km "open: CleanShot"]]
                  [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Screenshot -> Clipboard
-                 [:r :!TOCp] ; Screenshot -> Imgur
+                 [:r :!COS4] ; Screenshot -> CleanShot (cloud)
+                 ;[:r :!TOCp] ; Screenshot -> Imgur
                  ;[:r :!TOCp] ; Screenshot -> Imgur (auth)
-                 ;[:r :!TOCp] ; Screenshot -> ImgBB (temp)
                  [:t :!CS4] ; Screenshot -> ~/Desktop
                  ;[:i [:km "w: Google Sheets"]]
                  [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
@@ -796,9 +802,9 @@
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
                  [:f :!CO5] ; Start/stop ScreenFlow recording
                  [:h [:km "w: Roam Research"]]
-                 [:j [:km "w: Localhost"]]
+                 [:j [:km "w: Excalidraw"]]
                  [:k [:km "w: GitHub"]]
-                 [:l [:km "w: Excalidraw"]]
+                 [:l [:km "w: Localhost"]]
                  [:semicolon [:km "w: StackBlitz"]]
                  [:quote [:km "w: Learn Anything"]]
                  [:b [:km "w: Digital Ocean"]]

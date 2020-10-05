@@ -43,7 +43,7 @@
   "files.insertFinalNewline": true,
   "files.eol": "\n",
   // Workbench
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "GitHub Light",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark",
   "workbench.list.horizontalScrolling": true,
@@ -69,7 +69,7 @@
   },
   // Window
   "window.autoDetectColorScheme": true,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -2,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -82,6 +82,7 @@
   "search.quickOpen.includeHistory": false,
   "search.searchEditor.defaultNumberOfContextLines": null,
   "search.smartCase": true,
+  "search.useIgnoreFiles": false,
   "search.exclude": {
     "**/node_modules": true,
     "**/.git": true,
@@ -222,17 +223,17 @@
   "git.enableSmartCommit": true,
   "git.ignoreMissingGitWarning": true,
   // GitLens
-  "gitlens.keymap": "chorded",
-  "gitlens.codeLens.scopes": ["containers", "document"],
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
+  // "gitlens.keymap": "chorded",
+  // "gitlens.codeLens.scopes": ["containers", "document"],
+  // "gitlens.views.fileHistory.enabled": true,
+  // "gitlens.views.lineHistory.enabled": true,
   "gitlens.currentLine.format": "${message}",
-  "gitlens.advanced.messages": {
-    "suppressCommitNotFoundWarning": true,
-    "suppressFileNotUnderSourceControlWarning": true,
-    "suppressShowKeyBindingsNotice": true,
-    "suppressUpdateNotice": true
-  },
+  // "gitlens.advanced.messages": {
+  //   "suppressCommitNotFoundWarning": true,
+  //   "suppressFileNotUnderSourceControlWarning": true,
+  //   "suppressShowKeyBindingsNotice": true,
+  //   "suppressUpdateNotice": true
+  // },
   // Extensions
   "extensions.ignoreRecommendations": true,
   "extensions.showRecommendationsOnlyOnDemand": true,

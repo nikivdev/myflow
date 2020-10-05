@@ -1,11 +1,17 @@
 # Temp
 ,() {
+  git branch -m master main
+  git push -u origin main
+  git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main
 }
 
-g,() {
-  git add .
-  git commit -m 'clean'
-  git push
+,,() {
+  git push origin --delete master
+}
+
+,,,() {
+  rm -rf .github
+  mv /Users/nikivi/src/lib/go/go/.github .
 }
 
 # search & replace
