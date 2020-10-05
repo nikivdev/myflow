@@ -571,7 +571,7 @@
                  [:m [:km "New tweet with current URL"]]
                  [:comma [:km "w: Twitter Search"]]
                  [:period [:km "open: Textual"]]
-                 [:slash[:km "Search Tweetbot"]]
+                 [:slash [:km "Search Tweetbot"]]
                  [:spacebar :!CSOz]]} ; Selection -> Twitter
         {:des "xkey (spotify)"
          :rules [:x-mode
@@ -635,7 +635,8 @@
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
-                 [:7 [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
+                 [:9 [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
+                 [:0 [:km "w: HN (show new)"]]
                  [:q [:km "w: KM forum"]]
                  [:w [:km "w: Swift forum"]]
                  [:e [:km "w: Behance"]]
@@ -645,7 +646,6 @@
                  [:i [:km "w: Dribble"]]
                  [:o [:km "w: Pinboard"]]
                  [:p [:km "w: Indie Hackers"]]
-                 [:p [:km "w: HN (show new)"]]
                  [:open_bracket [:km "w: Reddit Saved"]]
                  [:close_bracket [:km "w: Twitter Bookmarks"]]
                  [:a [:km "w: HN"]]
