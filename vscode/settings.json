@@ -69,7 +69,7 @@
   },
   // Window
   "window.autoDetectColorScheme": true,
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -1,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
