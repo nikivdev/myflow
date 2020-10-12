@@ -43,7 +43,7 @@
   "files.insertFinalNewline": true,
   "files.eol": "\n",
   // Workbench
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark",
   "workbench.list.horizontalScrolling": true,
@@ -69,7 +69,7 @@
   },
   // Window
   "window.autoDetectColorScheme": true,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -82,7 +82,7 @@
   "search.quickOpen.includeHistory": false,
   "search.searchEditor.defaultNumberOfContextLines": null,
   "search.smartCase": true,
-  "search.useIgnoreFiles": false,
+  // "search.useIgnoreFiles": false,
   "search.exclude": {
     "**/node_modules": true,
     "**/.git": true,
@@ -253,5 +253,6 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "breadcrumbs.enabled": true
 }

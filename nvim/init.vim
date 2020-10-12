@@ -6,7 +6,7 @@ endfunction
 " Install plugins
 call plug#begin()
 " Utility
-Plug 'w0rp/ale' " Asynchronous Lint Engine.
+Plug 'dense-analysis/ale' " Asynchronous Lint Engine.
 Plug 'romainl/vim-cool' " Stop matching after search is done.
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
 Plug 'scrooloose/nerdcommenter' " Quick comments.
@@ -20,10 +20,6 @@ Plug 'junegunn/fzf.vim' " Fzf search.
 Plug 'haya14busa/incsearch.vim' " Improved incremental searching.
 Plug 'easymotion/vim-easymotion' " Vim motions on speed.
 Plug 'thinca/vim-quickrun' " Run commands quickly.
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'json', 'markdown'] } " Prettier support
-
 
 " Git
 Plug 'tpope/vim-fugitive' " Git wrapper.
@@ -124,7 +120,7 @@ set grepformat^=%f:%l:%c:%m
 set viewoptions=cursor,slash,unix
 
 " Theme (mirage, light)
-let ayucolor="light"
+let ayucolor="mirage"
 colorscheme ayu
 
 " Bufferline
@@ -207,3 +203,12 @@ if ayucolor ==# "light"
 else
     hi LineNr guifg=#23292c
 endif
+
+let g:ale_fixers = {
+\   'json': ['prettier'],
+\   'markdown': ['prettier'],
+\   'javascript': ['prettier'],
+\   'typescript': ['prettier'],
+\   'css': ['prettier'],
+\}
+let g:ale_fix_on_save = 1
