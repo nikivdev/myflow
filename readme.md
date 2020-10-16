@@ -124,7 +124,7 @@ I made [KM macro](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maes
 
 #### [iTerm](https://www.iterm2.com/) - Terminal Emulator
 
-- Described in [wiki](https://wiki.nikitavoloboev.xyz/text-editors/vs-code).
+- Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/iterm).
 
 #### [Sublime Text](https://www.sublimetext.com) - Text Editor
 
