@@ -188,7 +188,6 @@
                  [:e [:km "open: Fantastical"]]
                  [:r [:km "open: Notion"]]
                  [:t [:km "open: Activity Monitor"]]
-                 ;[:i [:km "open: Safari Technology Preview"]]
                  [:i [:km "open: Instruments"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Postgres"]]
@@ -198,7 +197,8 @@
                  [:f [:km "open: 2Do"]]
                  ;[:g [:km "open: Linear"]]
                  [:j [:km "open: iTerm"]]
-                 [:k [:km "open: Safari"]]
+                 ;[:k [:km "open: Safari"]]
+                 [:k [:km "open: Safari Technology Preview"]]
                  [:l [:km "open: VS Code"]]
                  [:semicolon [:km "open: Xcode"]]
                  [:quote [:km "open: Console"]]
@@ -540,6 +540,7 @@
                  [:d [:km "Commit dotfiles"]]
                  [:f [:km "Commit learning"]]
                  [:h [:km "Commit home"]]
+                 ;[:j [[:km "JS Dash profile"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
                  [:j [[:open "dash://.js:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
                  ;[:j [[:open "dash://.jsts:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
                  [:k [[:open "dash://.go:"] ["in-python" 0] ["in-go" 1] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Go

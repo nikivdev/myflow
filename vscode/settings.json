@@ -69,11 +69,12 @@
   },
   // Window
   "window.autoDetectColorScheme": true,
-  "window.zoomLevel": -2,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
   "breadcrumbs.filePath": "on",
+  "breadcrumbs.enabled": true,
   // Debug
   "debug.openDebug": "neverOpen",
   "debug.showInStatusBar": "never",
@@ -253,6 +254,5 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "breadcrumbs.enabled": true
+  }
 }
