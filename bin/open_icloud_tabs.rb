@@ -50,9 +50,9 @@ class CloudTabOpener
       if should_open
         tabs.each_with_index do |tab, index|
           if index == 0
-            command = "osascript -e 'tell application \"Safari Technology Preview\" to make new document with properties {URL: \"#{tab[:url]}\"}' > /dev/null"
+            command = "osascript -e 'tell application \"Safari\" to make new document with properties {URL: \"#{tab[:url]}\"}' > /dev/null"
           else
-            command = "osascript -e 'tell application \"Safari Technology Preview\" to tell window 1 to make new tab with properties {URL: \"#{tab[:url]}\"}' > /dev/null"
+            command = "osascript -e 'tell application \"Safari\" to tell window 1 to make new tab with properties {URL: \"#{tab[:url]}\"}' > /dev/null"
           end
           puts "Opening #{index + 1} of #{tabs.count}: #{tab[:title]}"
           system(command)
