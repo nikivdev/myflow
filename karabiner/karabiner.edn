@@ -207,7 +207,7 @@
                  [:b [:km "open: BetterTouchTool"]]
                  [:n [:km "open: Sublime Text"]]
                  [:m [:km "open: Sublime Merge"]]
-                 ;[:period [:km "open: Proxyman"]]
+                 [:comma [:km "open: Proxyman"]]
                  [:period [:km "open: Cypress"]]
                  [:spacebar :!CT7]]} ; Start Google search with selection
         {:des "ekey (cmd)"
@@ -746,10 +746,10 @@
                   [:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
                   [:j [:right_arrow :spacebar :equal_sign :spacebar]] ; -> =
                   [:k [:right_arrow :spacebar :!Sopen_bracket :return_or_enter]] ; -> {  }
-                  [:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
+                  [:z [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sclose_bracket :left_arrow]] ; -> style={}
                   ;[:x [:t :a :c :h :y :o :n :s :spacebar]] ; -> tachyons
                   ;[:c [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
-                  [:c [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sclose_bracket :left_arrow]] ; -> style={}
+                  [:c [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
                   [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]]]} ; -> typescript
         {:des "godot"

@@ -60,7 +60,7 @@
 	editor = nvim
 	excludesfile = ~/.gitignore_global
     # ansi-dark (dark) | GitHub (light)
-    pager = delta --theme='ansi-dark'
+    pager = delta --theme='GitHub'
 [interactive]
     diffFilter = delta --color-only
 [github]
