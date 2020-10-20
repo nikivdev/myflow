@@ -790,10 +790,10 @@
                  [:q [:km "open: CleanShot"]]
                  [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Screenshot -> Clipboard
-                 ;[:r :!TOCp] ; Screenshot -> Imgur
-                 ;[:r :!TOCp] ; Screenshot -> Imgur (auth)
-                 ;[:r :!COS4] ; Screenshot -> CleanShot (cloud)
-                 [:t :!CS4] ; Screenshot -> ~/Desktop
+                 [:r :!CS4] ; Screenshot -> ~/Desktop
+                 ;[:t :!TOCp] ; Screenshot -> Imgur
+                 ;[:t :!TOCp] ; Screenshot -> Imgur (auth)
+                 ;[:t :!COS4] ; Screenshot -> CleanShot (cloud)
                  ;[:i [:km "w: Google Sheets"]]
                  [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  [:o [:km "w: Google Docs"]]
