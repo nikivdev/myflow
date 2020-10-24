@@ -91,6 +91,7 @@
         {:des "jsim"
          :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
+                 ;[[:j :semicolon] :!COS9] ; Raycast
                  [[:j :l] :!CTOSspacebar]]} ; Alfred
         {:des "ksim"
          :rules [[[:k :l] [:alfred "search dash" "com.kapeli.dash.workflow"]]
@@ -348,7 +349,8 @@
                  [:s [:alfred "search code" "nikivi.manage.notes"]]
                  [:d [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
                  [:f [:alfred "search folders" "nikivi.search.folders"]]
-                 [:g [:km "2Do with current url as note (github)"]]
+                 [:g :!COS9] ; Raycast
+                 ;[:g [:km "2Do with current url as note (github)"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
