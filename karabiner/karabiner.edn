@@ -386,8 +386,9 @@
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
                  [:l [:km "Open 2Do Later"]]
-                 [:semicolon [:km "Open 2Do Starred"]]
-                 [:quote [:km "Open 2Do Other"]] ; TODO: remove once its empty
+                 [:semicolon [:km "Open 2Do Recent"]]
+                 [:quote [:km "Open 2Do Starred"]]
+                 ;[:quote [:km "Open 2Do Other"]] ; TODO: remove once its empty
                  [:c [:km "Look back"]]
                  [:v [:km "wiki: Goals"]]
                  [:b [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
@@ -621,6 +622,8 @@
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes 
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss
                  ;[:a [:km "Repeat Spotify song"]] ; TODO: do in background
+                 ;[:a [:km "Play/pause Endel"]]
+                 ;[:a [:km "open: Endel"]]
                  [:s [:km "Play/pause Spotify"]]
                  [:d :!CO9] ; Connect/disconnect AirPods
                  [:h :vk_consumer_previous]
