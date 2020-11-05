@@ -542,8 +542,8 @@
                  [:e :!CTk] ; Turn on/off BTT TouchBar
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:d [:km "Commit dotfiles"]]
-                 [:f [:km "Commit learning"]]
-                 [:h [:km "Commit home"]]
+                 [:f [:km "Commit home"]]
+                 ;[:f [:km "Commit learning"]]
                  ;[:j [[:km "JS Dash profile"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
                  [:j [[:open "dash://.js:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
                  ;[:j [[:open "dash://.jsts:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
@@ -804,10 +804,10 @@
                  [:o [:km "w: Google Docs"]]
                  [:open_bracket [:km "w: Google Slides"]]
                  [:close_bracket [:km "w: Beautiful.ai"]]
-                 [:caps_lock :!CTOSg] ; Loom recording
                  [:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
-                 [:f :!CO5] ; Start/stop ScreenFlow recording
+                 [:f :!CTOSg] ; Loom recording
+                 [:g :!CO5] ; Start/stop ScreenFlow recording
                  [:h [:km "w: Roam Research"]]
                  [:j [:km "w: Excalidraw"]]
                  [:k [:km "w: GitHub"]]
