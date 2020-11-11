@@ -496,7 +496,7 @@
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "open: MindNode"]]
                  ;[:q [:km "edit: 1st Safari tab"]]
-                 [:q [:km "open: Chrome Canary"]]
+                 [:q [:km "open: Figma"]]
                  [:w [:km "Save clipboard link"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
@@ -505,7 +505,7 @@
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:caps_lock :!CTOu] ; Sip color picker
-                 [:a [:km "open: Figma"]]
+                 [:a [:km "open: Chrome Canary"]]
                  [:s [:km "edit: 2nd iTerm tab"]]
                  [:d [:km "Save clipboard link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
@@ -631,13 +631,14 @@
                  [:k :vk_consumer_play]
                  [:l :vk_consumer_next]
                  [:semicolon [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5QOChSDsvLTtBwXmIn8Pss"]] ; Ambient
                  [:grave_accent_and_tilde [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5QOChSDsvLTtBwXmIn8Pss"]] ; Ambient
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:4ZjiY5692n0Nev7q38tMvB"]] ; Rain
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5fIL0WiQ79QtgsP4Y4L20V"]] ; Inspired
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
