@@ -446,7 +446,7 @@
                  [:r :!Stab]
                  [:t :!Sreturn_or_enter]
                  [:u :!COp] ; Selection -> HasteBin link
-                 [:i :!CTperiod] ; Contexts search active windows
+                 ;[:i :!CTperiod] ; Contexts search active windows
                  [:o :!Cx] ; Cut
                  ;[:open_bracket :!Oleft_arrow]
                  [:open_bracket [:km "Lowercase selected text"]]
@@ -638,7 +638,8 @@
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:4ZjiY5692n0Nev7q38tMvB"]] ; Rain
+                 ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:4ZjiY5692n0Nev7q38tMvB"]] ; Rain
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7B0ofCHeQu2FoX7P28ZaPp"]] ; Nils
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5fIL0WiQ79QtgsP4Y4L20V"]] ; Inspired
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
