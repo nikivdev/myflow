@@ -575,7 +575,7 @@
                  [:n [:km "New tweet"]]
                  [:m [:km "New tweet with current URL"]]
                  [:comma [:km "w: Twitter Search"]]
-                 [:period [:km "open: Textual"]]
+                 ;[:period [:km "open: Textual"]]
                  [:slash [:km "Search Tweetbot"]]
                  [:spacebar :!CSOz]]} ; Selection -> Twitter
         {:des "xkey (spotify)"

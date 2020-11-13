@@ -56,6 +56,12 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.statusBar.visible": false, // formatting only supports LF line endings
   "workbench.sideBar.location": "left",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter-notebook",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
   // Color changes
   "workbench.colorCustomizations": {
     "[GitHub Dark]": {
@@ -184,7 +190,6 @@
   "vim.easymotionMarkerBackgroundColor": "yellow",
   "vim.easymotionKeys": "hklyuiopnm,qwertzxcvbasdgjf:",
   "vim.easymotionMarkerForegroundColorOneChar": "black",
-  "vim.easymotionMarkerForegroundColorTwoChar": "black",
   // Go
   "go.useLanguageServer": true,
   "go.useCodeSnippetsOnFunctionSuggest": false,
@@ -237,7 +242,6 @@
   // },
   // Extensions
   "extensions.ignoreRecommendations": true,
-  "extensions.showRecommendationsOnlyOnDemand": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -255,11 +259,5 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter-notebook",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
-  "jupyter.insidersChannel": "weekly"
+  "jupyter.insidersChannel": "weekly",
 }
