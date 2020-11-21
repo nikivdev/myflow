@@ -566,6 +566,7 @@
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
                  [:j [:km "w: Element"]]
+                 ;[:j [:km "open: Textual"]]
                  [:k [:km "open: Telegram"]]
                  [:l [:km "open: Discord"]]
                  [:semicolon [:km "open: Slack"]]
@@ -575,7 +576,6 @@
                  [:n [:km "New tweet"]]
                  [:m [:km "New tweet with current URL"]]
                  [:comma [:km "w: Twitter Search"]]
-                 ;[:period [:km "open: Textual"]]
                  [:slash [:km "Search Tweetbot"]]
                  [:spacebar :!CSOz]]} ; Selection -> Twitter
         {:des "xkey (spotify)"
@@ -639,7 +639,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
                  ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:4ZjiY5692n0Nev7q38tMvB"]] ; Rain
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7B0ofCHeQu2FoX7P28ZaPp"]] ; Nils
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5iZJK7w5mgHwOC8Sjs3eaT"]] ; Focus song
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5fIL0WiQ79QtgsP4Y4L20V"]] ; Inspired
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
