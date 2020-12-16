@@ -43,6 +43,7 @@ func Link() {
 	// Sublime Text
 	// TODO: only link files in dots. rest stays as is (cache etc)
 	// links[home+"Library/Application Support/Sublime Text 3/Packages/User"] = dots + "sublime"
+	// TODO: setup https://www.sublimetext.com/docs/3/osx_command_line.html
 
 	// Neovim
 	links[home+".config/nvim/init.vim"] = dots + "nvim/init.vim"
