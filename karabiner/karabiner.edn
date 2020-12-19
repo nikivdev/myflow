@@ -198,6 +198,7 @@
                  [:f [:km "open: 2Do"]]
                  ;[:g [:km "open: Linear"]]
                  ;[:h [:km "open: Safari Technology Preview"]]
+                 [:h [:km "open: Android Emulator"]]
                  [:j [:km "open: iTerm"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code"]]

@@ -43,6 +43,7 @@
   "files.insertFinalNewline": true,
   "files.eol": "\n",
   // Workbench
+  "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.colorTheme": "GitHub Light",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark",
@@ -53,8 +54,7 @@
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
   "workbench.editor.showIcons": false,
-  "workbench.settings.enableNaturalLanguageSearch": false,
-  "workbench.statusBar.visible": false, // formatting only supports LF line endings
+  "workbench.settings.enableNaturalLanguageSearch": false, // formatting only supports LF line endings
   "workbench.sideBar.location": "left",
   "workbench.editorAssociations": [
     {
@@ -75,7 +75,6 @@
   },
   // Window
   "window.autoDetectColorScheme": true,
-  "window.zoomLevel": -2,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -85,6 +84,7 @@
   "debug.openDebug": "neverOpen",
   "debug.showInStatusBar": "never",
   "debug.toolBarLocation": "hidden",
+  "debug.console.fontSize": 15,
   // Search
   "search.quickOpen.includeHistory": false,
   "search.searchEditor.defaultNumberOfContextLines": null,
@@ -260,4 +260,18 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "jupyter.insidersChannel": "weekly",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    // "editor.rulers": [
+    //   80
+    // ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "workbench.statusBar.visible": false,
+  "window.zoomLevel": -1,
 }
