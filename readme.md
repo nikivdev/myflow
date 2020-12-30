@@ -269,6 +269,7 @@ I curate a list of [interesting CLI tools](https://github.com/learn-anything/com
 - [fkill](https://github.com/sindresorhus/fkill-cli) - Fabulously kill processes.
 - [ran](https://github.com/m3ng9i/ran) - Simple static web server written in Go.
 - [mcfly](https://github.com/cantino/mcfly) - Fast visual command history search.
+- [hyperfine](https://github.com/sharkdp/hyperfine) - Another excellent command-line benchmarking tool.
 
 ## Launchpad
 
