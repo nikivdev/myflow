@@ -280,13 +280,13 @@ I curate a list of [interesting CLI tools](https://github.com/learn-anything/com
 If you found this interesting, I also have [similar repository](https://github.com/nikitavoloboev/my-ios) going over what applications I use on iOS/WatchOS as well as how and why I use them.
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" heigth="400" src="https://i.imgur.com/zG9xWyV.jpg"></a>
+    <img width="250" heigth="400" src="https://i.imgur.com/4fHt6hb.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" heigth="400" src="https://i.imgur.com/DdQY5hy.jpg"></a>
+    <img width="250" heigth="400" src="https://i.imgur.com/ftxu1PD.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" heigth="400" src="https://i.imgur.com/jcSJBWi.jpg"></a>
+    <img width="250" heigth="400" src="https://i.imgur.com/T44TlSz.jpg"></a>
 
 ## Similar Setups
 
