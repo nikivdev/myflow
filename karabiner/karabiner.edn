@@ -137,9 +137,8 @@
                  ;[:j :!SOTw] ; Replies
                  ;[:k :!SOTf] ; App specific
                  ;[:l :!SOTr] ; Personal
-                 [:j [:km "w: Phabricator"]]
                  [:k [:km "w: GitLab"]]
-                 [:l [:km "w: RealTime"]]
+                 [:l [:km "w: Repl.it"]]
                  [:period [:km "w: CodeSandbox"]]]}
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
@@ -574,8 +573,9 @@
                  [:c [:km "open: Contacts"]]
                  [:v [:km "open: Tweetbot"]]
                  [:b [:km "w: Twitter"]]
-                 [:n [:km "New tweet"]]
-                 [:m [:km "New tweet with current URL"]]
+                 ;[:n [:km "New tweet"]]
+                 [:n [:km "w: Typefully"]]
+                 ;[:m [:km "New tweet with current URL"]]
                  [:comma [:km "w: Twitter Search"]]
                  [:slash [:km "Search Tweetbot"]]
                  [:spacebar :!CSOz]]} ; Selection -> Twitter
@@ -640,7 +640,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
                  ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:4ZjiY5692n0Nev7q38tMvB"]] ; Rain
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6Rkp6fEsvOTR7YxsW5uNyR"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5626KdflSKfeDK7RJQfSrE"]] ; Focus song
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5fIL0WiQ79QtgsP4Y4L20V"]] ; Inspired
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"

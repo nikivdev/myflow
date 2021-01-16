@@ -7,7 +7,7 @@
   "editor.renderLineHighlight": "gutter",
   "editor.hideCursorInOverviewRuler": true,
   "editor.scrollBeyondLastLine": false,
-  "editor.tabSize": 2,
+  // "editor.tabSize": 4,
   "editor.lineHeight": 26,
   // "editor.lineNumbers": "off",
   "editor.occurrencesHighlight": false,
@@ -272,6 +272,8 @@
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
   },
+  "gitlens.hovers.currentLine.over": "line",
+  "dart.previewLsp": true,
   "workbench.statusBar.visible": false,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -3,
 }
