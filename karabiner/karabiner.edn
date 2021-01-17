@@ -137,6 +137,7 @@
                  ;[:j :!SOTw] ; Replies
                  ;[:k :!SOTf] ; App specific
                  ;[:l :!SOTr] ; Personal
+                 [:j [:km "w: nikitavoloboev.xyz"]]
                  [:k [:km "w: GitLab"]]
                  [:l [:km "w: Repl.it"]]
                  [:period [:km "w: CodeSandbox"]]]}
