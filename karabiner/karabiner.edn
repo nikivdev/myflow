@@ -640,7 +640,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
                  ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:4ZjiY5692n0Nev7q38tMvB"]] ; Rain
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5626KdflSKfeDK7RJQfSrE"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5YblBdD3D4E902fdzfRWv3"]] ; Focus song
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5fIL0WiQ79QtgsP4Y4L20V"]] ; Inspired
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
