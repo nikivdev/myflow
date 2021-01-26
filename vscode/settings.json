@@ -277,5 +277,5 @@
   "workbench.statusBar.visible": false,
   "workbench.editor.decorations.colors": false,
   "workbench.editor.decorations.badges": false,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
 }
