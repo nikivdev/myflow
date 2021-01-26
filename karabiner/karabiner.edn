@@ -196,6 +196,7 @@
                  [:a :!OSC1] ; Open Dash
                  [:d [:km "open: Postico"]]
                  [:f [:km "open: 2Do"]]
+                 ;[:g [:km "open: MindNode"]]
                  ;[:g [:km "open: Linear"]]
                  ;[:h [:km "open: Safari Technology Preview"]]
                  [:h [:km "open: Android Emulator"]]
@@ -283,7 +284,6 @@
          :rules [:t-mode
                  [:0 [:km "w: regex101"]]
                  [:e [:km "w: Facebook"]]
-                 [:r [:km "w: Repl"]]
                  [:u [:km "w: Medium"]]
                  [:i [:km "w: Arxiv"]]
                  [:o [:km "w: Stack Overflow"]]
@@ -495,7 +495,6 @@
                  [:tab [:km "Test"]]
                  ;[:q [:km "open: Photos"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
-                 ;[:q [:km "open: MindNode"]]
                  ;[:q [:km "edit: 1st Safari tab"]]
                  [:q [:km "open: Figma"]]
                  [:w [:km "Save clipboard link"]]
@@ -566,10 +565,9 @@
                  [:f [:km "open: Spark"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
-                 [:j [:km "w: Element"]]
-                 ;[:j [:km "open: Textual"]]
+                 [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
-                 [:l [:km "open: Discord"]]
+                 [:l [:km "w: Element"]]
                  [:semicolon [:km "open: Slack"]]
                  [:c [:km "open: Contacts"]]
                  [:v [:km "open: Tweetbot"]]
@@ -634,14 +632,14 @@
                  [:l :vk_consumer_next]
                  [:semicolon [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5QOChSDsvLTtBwXmIn8Pss"]] ; Ambient
+                 [:backslash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:4ZjiY5692n0Nev7q38tMvB"]] ; Rain
                  [:grave_accent_and_tilde [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
-                 ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:4ZjiY5692n0Nev7q38tMvB"]] ; Rain
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5YblBdD3D4E902fdzfRWv3"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1hL8t3xKR0JYLFn3nb4Ap9"]] ; Focus song
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5fIL0WiQ79QtgsP4Y4L20V"]] ; Inspired
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
