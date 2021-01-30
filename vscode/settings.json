@@ -277,5 +277,6 @@
   "workbench.statusBar.visible": false,
   "workbench.editor.decorations.colors": false,
   "workbench.editor.decorations.badges": false,
-  "window.zoomLevel": -2,
+  "codestream.email": "nikita.voloboev@gmail.com",
+  "window.zoomLevel": -1,
 }

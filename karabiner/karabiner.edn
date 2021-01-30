@@ -631,7 +631,7 @@
                  [:k :vk_consumer_play]
                  [:l :vk_consumer_next]
                  [:semicolon [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5QOChSDsvLTtBwXmIn8Pss"]] ; Ambient
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4j4nNAlwbYz0KkRrea6WBd"]] ; Space
                  [:backslash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:4ZjiY5692n0Nev7q38tMvB"]] ; Rain
                  [:grave_accent_and_tilde [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
@@ -639,7 +639,7 @@
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0pcxvYCWcYn4FOlRM5aoW9"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4dlZMmWmdog41eBKNuOTU6"]] ; Focus song
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5fIL0WiQ79QtgsP4Y4L20V"]] ; Inspired
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
