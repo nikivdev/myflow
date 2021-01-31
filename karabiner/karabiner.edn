@@ -196,7 +196,7 @@
                  [:a :!OSC1] ; Open Dash
                  [:d [:km "open: Postico"]]
                  [:f [:km "open: 2Do"]]
-                 ;[:g [:km "open: MindNode"]]
+                 [:g [:km "open: MindNode"]]
                  ;[:g [:km "open: Linear"]]
                  ;[:h [:km "open: Safari Technology Preview"]]
                  [:h [:km "open: Android Emulator"]]
