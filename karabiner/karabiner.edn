@@ -196,7 +196,6 @@
                  [:a :!OSC1] ; Open Dash
                  [:d [:km "open: Postico"]]
                  [:f [:km "open: 2Do"]]
-                 [:g [:km "open: MindNode"]]
                  ;[:g [:km "open: Linear"]]
                  ;[:h [:km "open: Safari Technology Preview"]]
                  [:h [:km "open: Android Emulator"]]
@@ -496,7 +495,8 @@
                  ;[:q [:km "open: Photos"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "edit: 1st Safari tab"]]
-                 [:q [:km "open: Figma"]]
+                 ;[:q [:km "open: Figma"]]
+                 [:q [:km "open: Chrome Canary"]]
                  [:w [:km "Save clipboard link"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
@@ -505,7 +505,8 @@
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:caps_lock :!CTOu] ; Sip color picker
-                 [:a [:km "open: Chrome Canary"]]
+                 ;[:a [:km "open: Figma"]]
+                 [:a [:km "open: MindNode"]]
                  [:s [:km "edit: 2nd iTerm tab"]]
                  [:d [:km "Save clipboard link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
@@ -572,11 +573,10 @@
                  [:c [:km "open: Contacts"]]
                  [:v [:km "open: Tweetbot"]]
                  [:b [:km "w: Twitter"]]
-                 ;[:n [:km "New tweet"]]
-                 [:n [:km "w: Typefully"]]
-                 ;[:m [:km "New tweet with current URL"]]
-                 [:comma [:km "w: Twitter Search"]]
-                 [:slash [:km "Search Tweetbot"]]
+                 [:n [:km "w: Twitter Compose"]]
+                 [:m [:km "w: Twitter Compose with current URL pasted"]]
+                 [:comma [:km "w: Typefully"]]
+                 [:period [:km "w: Twitter Search"]]
                  [:spacebar :!CSOz]]} ; Selection -> Twitter
         {:des "xkey (spotify)"
          :rules [:x-mode
