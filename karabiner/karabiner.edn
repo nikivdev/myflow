@@ -196,7 +196,7 @@
                  [:a :!OSC1] ; Open Dash
                  [:d [:km "open: Postico"]]
                  [:f [:km "open: 2Do"]]
-                 ;[:g [:km "open: Linear"]]
+                 [:g [:km "open: Linear"]]
                  ;[:h [:km "open: Safari Technology Preview"]]
                  [:h [:km "open: Android Emulator"]]
                  [:j [:km "open: iTerm"]]
@@ -446,7 +446,7 @@
                  [:r :!Stab]
                  [:t :!Sreturn_or_enter]
                  [:u :!COp] ; Selection -> HasteBin link
-                 ;[:i :!CTperiod] ; Contexts search active windows
+                 [:i :!CTperiod] ; Contexts search active windows
                  [:o :!Cx] ; Cut
                  ;[:open_bracket :!Oleft_arrow]
                  [:open_bracket [:km "Lowercase selected text"]]
@@ -505,21 +505,21 @@
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:caps_lock :!CTOu] ; Sip color picker
-                 ;[:a [:km "open: Figma"]]
-                 [:a [:km "open: MindNode"]]
+                 [:a [:km "open: Figma"]]
                  [:s [:km "edit: 2nd iTerm tab"]]
                  [:d [:km "Save clipboard link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:j [:km "edit: 1st iTerm tab"]]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
-                 [:semicolon [:km "edit: Karabiner"]]
+                 [:semicolon [:km "open: MindNode"]]
                  [:quote [:km "Goku Run"]]
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]
                  [:m :!Sreturn_or_enter]
                  [:comma  [:km "Add safari link to selected markdown text"]]
-                 [:period :!CTO4] ; Alfred file action
+                 [:period [:km "edit: Karabiner"]]
+                 [:slash :!CTO4] ; Alfred file action
                  [:spacebar :!CTq]]} ; Selection -> Web Searches
         {:des "gkey (actions)"
          :rules [:g-mode
