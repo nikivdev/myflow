@@ -66,11 +66,11 @@
   "workbench.colorCustomizations": {
     "[GitHub Dark]": {
       "editorLineNumber.foreground": "#23292f",
-      "editor.lineHighlightBackground": "#23292f",
+      "editor.lineHighlightBackground": "#23292f"
     },
     "[GitHub Light]": {
       "editorLineNumber.foreground": "#ffffff",
-      "editor.lineHighlightBackground": "#ffffff",
+      "editor.lineHighlightBackground": "#ffffff"
     }
   },
   // Window
@@ -278,4 +278,8 @@
   "workbench.editor.decorations.colors": false,
   "workbench.editor.decorations.badges": false,
   "codestream.email": "nikita.voloboev@gmail.com",
+  "codestream.requestFeedbackOnCommit": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "window.zoomLevel": -1
 }
