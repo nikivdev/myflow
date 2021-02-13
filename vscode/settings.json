@@ -281,5 +281,5 @@
   "codestream.requestFeedbackOnCommit": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
-  "window.zoomLevel": -1
+  "window.zoomLevel": -2
 }
