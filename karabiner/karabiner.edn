@@ -115,7 +115,8 @@
                  [:h [:km "wiki: Used hotkeys"]]
                  [:j [:km "edit: Aliases"]]
                  [:k [:km "edit: Zsh functions"]]
-                 [:l [:km "Search current safari url in wiki"]]
+                 ;[:l [:km "Search current safari url in wiki"]]
+                 [:l [:km "proj: epictools.dev"]]
                  [:semicolon [:km "proj: Knowledge"]]
                  [:quote [:km "wiki: Summary"]]
                  [:n [:km "proj: Dotfiles"]]
@@ -498,7 +499,7 @@
                  ;[:q [:km "edit: 1st Safari tab"]]
                  ;[:q [:km "open: Figma"]]
                  [:q [:km "open: Chrome Canary"]]
-                 [:w [:km "Save clipboard link"]]
+                 [:w [:km "Save link"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
                  [:i :!Treturn_or_enter]
@@ -508,7 +509,7 @@
                  [:caps_lock :!CTOu] ; Sip color picker
                  [:a [:km "open: Figma"]]
                  [:s [:km "edit: 2nd iTerm tab"]]
-                 [:d [:km "Save clipboard link (top)"]]
+                 [:d [:km "Save link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:j [:km "edit: 1st iTerm tab"]]
                  [:k :return_or_enter]
@@ -623,9 +624,9 @@
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes 
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss
                  ;[:a [:km "Repeat Spotify song"]] ; TODO: do in background
-                 ;[:a [:km "Play/pause Endel"]]
+                 [:a [:km "Play/Pause Endel"]]
                  ;[:a [:km "open: Endel"]]
-                 [:s [:km "Play/pause Spotify"]]
+                 [:s [:km "Play/Pause Spotify"]]
                  [:d :!CO9] ; Connect/disconnect AirPods
                  [:h :vk_consumer_previous]
                  [:j :mute]
@@ -633,8 +634,9 @@
                  [:l :vk_consumer_next]
                  [:semicolon [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3zy0JafsRQJgAMU67hnjYX"]] ; Focus Active
+                 [:backslash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1IERjUpo0AhB3yoxCBl7FQ"]] ; Focus Slow
                  ;[:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2xqhXTdxgBg5z9IuOOCIV3"]] ; Endel
-                 [:backslash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:4ZjiY5692n0Nev7q38tMvB"]] ; Rain
+                 ;[:backslash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:4ZjiY5692n0Nev7q38tMvB"]] ; Rain
                  [:grave_accent_and_tilde [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]

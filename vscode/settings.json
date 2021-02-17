@@ -280,6 +280,5 @@
   "codestream.email": "nikita.voloboev@gmail.com",
   "codestream.requestFeedbackOnCommit": false,
   "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "window.zoomLevel": -2
+  "gitlens.codeLens.enabled": false
 }
