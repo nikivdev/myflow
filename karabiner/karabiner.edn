@@ -624,8 +624,9 @@
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes 
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss
                  ;[:a [:km "Repeat Spotify song"]] ; TODO: do in background
-                 [:a [:km "Play/Pause Endel"]]
+                 ;[:a [:km "Play/Pause Endel"]]
                  ;[:a [:km "open: Endel"]]
+                 ;[:a [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2xqhXTdxgBg5z9IuOOCIV3"]] ; Endel
                  [:s [:km "Play/Pause Spotify"]]
                  [:d :!CO9] ; Connect/disconnect AirPods
                  [:h :vk_consumer_previous]
@@ -635,15 +636,14 @@
                  [:semicolon [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3zy0JafsRQJgAMU67hnjYX"]] ; Focus Active
                  [:backslash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1IERjUpo0AhB3yoxCBl7FQ"]] ; Focus Slow
-                 ;[:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2xqhXTdxgBg5z9IuOOCIV3"]] ; Endel
-                 ;[:backslash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:4ZjiY5692n0Nev7q38tMvB"]] ; Rain
                  [:grave_accent_and_tilde [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4dlZMmWmdog41eBKNuOTU6"]] ; Focus Slow
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2Ge3BI9fA1cNJdb8ePNqam"]] ; Rain Ambient
+                 ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4dlZMmWmdog41eBKNuOTU6"]] ; Focus Slow
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5fIL0WiQ79QtgsP4Y4L20V"]] ; Inspired
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"

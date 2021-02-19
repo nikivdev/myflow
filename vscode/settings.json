@@ -50,7 +50,6 @@
   "workbench.list.horizontalScrolling": true,
   "workbench.panel.defaultLocation": "right",
   "workbench.fontAliasing": "antialiased",
-  "workbench.activityBar.visible": false,
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
   "workbench.editor.showIcons": false,
@@ -280,5 +279,10 @@
   "codestream.email": "nikita.voloboev@gmail.com",
   "codestream.requestFeedbackOnCommit": false,
   "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.enabled": false
+  "gitlens.codeLens.enabled": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.activityBar.visible": false,
+  "window.zoomLevel": -1
 }
