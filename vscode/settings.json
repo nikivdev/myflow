@@ -283,6 +283,5 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.activityBar.visible": false,
-  "window.zoomLevel": -1
+  "workbench.activityBar.visible": false
 }
