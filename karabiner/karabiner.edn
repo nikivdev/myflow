@@ -624,7 +624,7 @@
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes 
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss
                  ;[:a [:km "Repeat Spotify song"]] ; TODO: do in background
-                 ;[:a [:km "Play/Pause Endel"]]
+                 [:a [:km "Play/Pause Endel"]]
                  ;[:a [:km "open: Endel"]]
                  ;[:a [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2xqhXTdxgBg5z9IuOOCIV3"]] ; Endel
                  [:s [:km "Play/Pause Spotify"]]

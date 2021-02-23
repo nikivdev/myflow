@@ -58,13 +58,13 @@ alias lt='ls -lart'
 alias tp='type'
 
 # Nix
-alias n='nix'
-alias nr='nix repl'
-alias R='darwin-rebuild switch'
+# alias n='nix'
+# alias nr='nix repl'
+# alias R='darwin-rebuild switch'
 
 # Nix shell
-alias ns="nix-shell --run zsh"
-alias nss="nix-shell --run zsh -p"
+# alias ns="nix-shell --run zsh"
+# alias nss="nix-shell --run zsh -p"
 
 # Brew
 alias bi='brew install'
@@ -273,3 +273,7 @@ alias fs='mage start'
 
 # Django
 alias dj='./manage'
+
+## Dendron
+alias n='dendron-cli'
+alias ns='dendron-cli buildSiteV2 --wsRoot . --stage dev --serve' # serve dendron locally
