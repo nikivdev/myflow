@@ -67,12 +67,6 @@ I made [KM macro](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maes
 
 - Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/fantastical).
 
-#### [Contexts](https://contexts.co) - Window switcher
-
-- Allows me to fuzzy search through all the currently active windows. Most apps I open directly via Karabiner but for other times it's great to fuzzy search through all open windows.
-
-![](https://i.imgur.com/0RBooBz.png)
-
 #### [Dictionary](<http://en.wikipedia.org/wiki/Dictionary_(software)>)
 
 - Comes natively with macOS and I started to love using it for exploring and searching through Wikipedia.
@@ -280,13 +274,13 @@ I curate a list of [interesting CLI tools](https://github.com/learn-anything/com
 If you found this interesting, I also have [similar repository](https://github.com/nikitavoloboev/my-ios) going over what applications I use on iOS/WatchOS as well as how and why I use them.
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" heigth="400" src="https://i.imgur.com/4fHt6hb.png"></a>
+    <img width="250" heigth="400" src="https://i.imgur.com/Kkv5ral.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" heigth="400" src="https://i.imgur.com/ftxu1PD.png"></a>
+    <img width="250" heigth="400" src="https://i.imgur.com/IzVAy2F.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" heigth="400" src="https://i.imgur.com/T44TlSz.jpg"></a>
+    <img width="250" heigth="400" src="https://i.imgur.com/LiILeEK.jpg"></a>
 
 ## Similar Setups
 
