@@ -284,5 +284,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.activityBar.visible": false,
+  "debug.javascript.autoAttachFilter": "smart",
   "window.zoomLevel": -1
 }
