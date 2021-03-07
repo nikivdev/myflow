@@ -565,3 +565,12 @@ ram() {
     fi
   fi
 }
+
+
+# when there's too many files in working changes for gitupdate, commit with '.' commit.
+G() {
+  git add .
+  git commit -m "."
+  git push
+
+}

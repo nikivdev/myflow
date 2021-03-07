@@ -285,5 +285,5 @@
   },
   "workbench.activityBar.visible": false,
   "debug.javascript.autoAttachFilter": "smart",
-  "window.zoomLevel": -1
+  "window.zoomLevel": -2
 }

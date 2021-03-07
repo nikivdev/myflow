@@ -277,3 +277,4 @@ alias dj='./manage'
 ## Dendron
 alias n='dendron-cli'
 alias ns='dendron-cli buildSiteV2 --wsRoot . --stage dev --serve' # serve dendron locally
+alias ng='dendron-cli buildSiteV2 --wsRoot .  --stage prod' # publish dendron
