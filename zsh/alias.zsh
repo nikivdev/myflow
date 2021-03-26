@@ -256,6 +256,7 @@ alias ga='git add'
 alias gg='git push'
 alias glp='git pull && git push'
 alias grao='git remote add origin'
+alias gnvm="git reset --soft HEAD~1" # undo commit https://twitter.com/bencodezen/status/1371564043278946305
 
 alias greset='git reset --soft HEAD^' # Undo last commit, but don't throw away your changes
 

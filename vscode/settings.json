@@ -67,6 +67,9 @@
       "editorLineNumber.foreground": "#23292f",
       "editor.lineHighlightBackground": "#23292f"
     },
+    // "[poimandres]": {
+    //   "editorLineNumber.foreground": "#1a1e29"
+    // },
     "[GitHub Light]": {
       "editorLineNumber.foreground": "#ffffff",
       "editor.lineHighlightBackground": "#ffffff"
@@ -285,5 +288,6 @@
   },
   "workbench.activityBar.visible": false,
   "debug.javascript.autoAttachFilter": "smart",
-  "window.zoomLevel": -2
+  "window.zoomLevel": -1,
+  "go.toolsManagement.autoUpdate": true
 }
