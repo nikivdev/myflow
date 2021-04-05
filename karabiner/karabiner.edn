@@ -642,10 +642,10 @@
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
-                 ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:show:26mJz0W2vvRG5nMyT7ufwv"]] ; Rain
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2lF5acSU8Vu9292cthQmc5"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:0tYQ3whyQ3GfABnRJ8n3t2"]] ; Rain
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5kGMJTXKSDrFRGAgeLmavm"]] ; Focus Inspire
                  ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4dlZMmWmdog41eBKNuOTU6"]] ; Focus Slow
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5fIL0WiQ79QtgsP4Y4L20V"]] ; Inspired
+                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5fIL0WiQ79QtgsP4Y4L20V"]] ; Inspired
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
