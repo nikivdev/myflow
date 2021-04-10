@@ -575,9 +575,10 @@
                  [:c [:km "open: Contacts"]]
                  [:v [:km "open: Tweetbot"]]
                  [:b [:km "w: Twitter"]]
-                 [:n [:km "w: Twitter Compose"]]
-                 [:m [:km "w: Twitter Compose with current URL pasted"]]
-                 [:comma [:km "w: Typefully"]]
+                 [:n [:km "w: Typefully"]]
+                 [:m [:km "w: Typefully with current URL pasted"]]
+                 ;[:n [:km "w: Twitter Compose"]]
+                 ;[:m [:km "w: Twitter Compose with current URL pasted"]]
                  [:period [:km "w: Twitter Search"]]
                  [:spacebar :!CSOz]]} ; Selection -> Twitter
         {:des "xkey (spotify)"
@@ -635,7 +636,7 @@
                  [:l :vk_consumer_next]
                  [:semicolon [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3zy0JafsRQJgAMU67hnjYX"]] ; Focus Active
-                 [:backslash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1IERjUpo0AhB3yoxCBl7FQ"]] ; Focus Slow
+                 [:backslash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0DNBrEt6XVU7qsuxahUw4K"]] ; Focus Slow
                  [:grave_accent_and_tilde [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
