@@ -635,8 +635,8 @@
                  [:k :vk_consumer_play]
                  [:l :vk_consumer_next]
                  [:semicolon [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3zy0JafsRQJgAMU67hnjYX"]] ; Focus Active
-                 [:backslash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0RckM34s52ifb27p4Lr2Fj"]] ; Focus Slow
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5fIL0WiQ79QtgsP4Y4L20V"]] ; Inspired
+                 [:backslash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3zy0JafsRQJgAMU67hnjYX"]] ; Focus Get Hyped
                  [:grave_accent_and_tilde [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
@@ -644,9 +644,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:0tYQ3whyQ3GfABnRJ8n3t2"]] ; Rain
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5kGMJTXKSDrFRGAgeLmavm"]] ; Focus Inspire
-                 ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4dlZMmWmdog41eBKNuOTU6"]] ; Focus Slow
-                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:5fIL0WiQ79QtgsP4Y4L20V"]] ; Inspired
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:66JaeVf0sXp4GzOrN3hY48"]] ; Focus song
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
