@@ -59,7 +59,7 @@ I made [KM macro](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maes
 
 - Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/1password).
 
-#### [BetterTouchTool](https://www.boastr.net/) - Mac input customizer
+#### [BetterTouchTool](https://folivora.ai) - Mac input customizer
 
 - Described in [wiki](https://wiki.nikitavoloboev.xyz/macos/macos-apps/bettertouchtool).
 
