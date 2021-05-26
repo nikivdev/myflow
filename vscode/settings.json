@@ -55,12 +55,9 @@
   "workbench.editor.showIcons": false,
   "workbench.settings.enableNaturalLanguageSearch": false, // formatting only supports LF line endings
   "workbench.sideBar.location": "left",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter-notebook",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
   // Color changes
   "workbench.colorCustomizations": {
     "[GitHub Dark]": {
@@ -288,5 +285,6 @@
   },
   "workbench.activityBar.visible": false,
   "debug.javascript.autoAttachFilter": "smart",
-  "go.toolsManagement.autoUpdate": true
+  "go.toolsManagement.autoUpdate": true,
+  "security.workspace.trust.untrustedFiles": "open"
 }

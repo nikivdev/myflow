@@ -19,5 +19,6 @@ export PATH=$PATH:./node_modules/.bin
 
 # fnm
 # eval "$(fnm env --multi)"
+# eval "$(fnm env)" # https://github.com/Schniz/fnm
 
 typeset -U PATH # Remove duplicates in $PATH

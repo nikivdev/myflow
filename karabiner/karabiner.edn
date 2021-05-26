@@ -265,6 +265,7 @@
                  [:q [:km "open: IINA"]]
                  [:w [:km "open: 1Password"]]
                  [:e [:km "open: Keynote"]]
+                 ;[:e [:km "open: Day One"]]
                  ;[:i [:km "open: Flume"]]
                  [:i [:km "open: Feedback Assistant"]]
                  [:o [:km "open: Developer"]]
@@ -272,7 +273,8 @@
                  [:a [:km "open: Alfred Preferences"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: Preview"]]
-                 [:l [:km "open: Books"]]
+                 ;[:l [:km "open: Books"]]
+                 [:l [:km "open: Reflect"]]
                  ;[:k [:km "open: PDF Expert"]]
                  ;[:l [:km "open: Reeder"]]
                  [:b [:km "Edit keyboard shortcuts"]]
@@ -644,7 +646,8 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:0tYQ3whyQ3GfABnRJ8n3t2"]] ; Rain
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:493uQXwZsTDHAkjWXImR7K"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4y6jjdklWYLDCIBsj3RMQZ"]] ; Focus song
+                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:493uQXwZsTDHAkjWXImR7K"]] ; Focus song (slow)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
