@@ -646,7 +646,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:0tYQ3whyQ3GfABnRJ8n3t2"]] ; Rain
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4y6jjdklWYLDCIBsj3RMQZ"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0F7H6fPmlrjjmnpIqsmsYX"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:493uQXwZsTDHAkjWXImR7K"]] ; Focus song (slow)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
@@ -715,10 +715,10 @@
          :rules [:m-mode
                  [:3 [:alfred "search alfred" "nikivi.utilities" "d3 "]]
                  [:q [:alfred "search alfred" "nikivi.utilities" "tldr "]]
-                 [:w [:alfred "search alfred" "nikivi.utilities" "django "]]
+                 ;[:w [:alfred "search alfred" "nikivi.utilities" "django "]]
+                 [:w [:alfred "search alfred" "nikivi.utilities" "ts "]]
                  [:e [:alfred "search alfred" "nikivi.utilities" "html "]]
                  [:r [:alfred "search alfred" "nikivi.utilities" "react "]]
-                 [:t [:alfred "search alfred" "nikivi.utilities" "ts "]]
                  [:a [:alfred "search alfred" "nikivi.utilities" "man "]]
                  ;[:d [:alfred "search alfred" "nikivi.utilities" "docker "]]
                  [:f [:alfred "search alfred" "nikivi.utilities" "apple "]]
