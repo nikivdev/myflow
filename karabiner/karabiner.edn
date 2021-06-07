@@ -500,7 +500,8 @@
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "edit: 1st Safari tab"]]
                  ;[:q [:km "open: Figma"]]
-                 [:q [:km "open: Chrome Canary"]]
+                 ;[:q [:km "open: Electron"]]
+                 ;[:q [:km "open: Chrome Canary"]]
                  [:w [:km "Save link"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
@@ -572,7 +573,8 @@
                  [:h [:km "Create new contact"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
-                 [:l [:km "w: Element"]]
+                 [:l [:km "open: Quill"]]
+                 ;[:l [:km "w: Element"]]
                  [:semicolon [:km "open: Slack"]]
                  [:c [:km "open: Contacts"]]
                  [:v [:km "open: Tweetbot"]]
@@ -646,7 +648,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:0tYQ3whyQ3GfABnRJ8n3t2"]] ; Rain
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0F7H6fPmlrjjmnpIqsmsYX"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3nTQL2ScjeyOxjqSmDoCCr"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:493uQXwZsTDHAkjWXImR7K"]] ; Focus song (slow)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
@@ -720,6 +722,7 @@
                  [:e [:alfred "search alfred" "nikivi.utilities" "html "]]
                  [:r [:alfred "search alfred" "nikivi.utilities" "react "]]
                  [:a [:alfred "search alfred" "nikivi.utilities" "man "]]
+                 ;[:s [:alfred "search alfred" "nikivi.utilities" "electron "]]
                  ;[:d [:alfred "search alfred" "nikivi.utilities" "docker "]]
                  [:f [:alfred "search alfred" "nikivi.utilities" "apple "]]
                  [:s [:alfred "search alfred" "nikivi.utilities" "lodash "]]

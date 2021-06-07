@@ -1,8 +1,8 @@
 {
   // Editor
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  },
+  // "editor.codeActionsOnSave": {
+  //   "source.organizeImports": true
+  // },
   "editor.formatOnSave": true,
   "editor.renderLineHighlight": "gutter",
   "editor.hideCursorInOverviewRuler": true,
