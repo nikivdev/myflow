@@ -286,5 +286,13 @@
   "workbench.activityBar.visible": false,
   "debug.javascript.autoAttachFilter": "smart",
   "go.toolsManagement.autoUpdate": true,
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "window.zoomLevel": -1
 }

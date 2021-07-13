@@ -41,7 +41,7 @@ set noshowcmd
 set cmdheight=1
 set noshowmode " Hide INSERT/VISUAL messages
 set mouse=a " Copy selected text with mouse to system clipboard
-set undofile " Save undos after file closes
+"set undofile " Save undos after file closes
 set wildmode=longest:list,full " Complete longest common string, then each full match
 set updatetime=250 " If this many milliseconds nothing is typed the swap file will be written to disk
 set visualbell " Turn off the audio bell (no beeps)

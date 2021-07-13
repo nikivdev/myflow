@@ -197,6 +197,7 @@
                  [:caps_lock [:km "open: Finder"]]
                  [:a :!OSC1] ; Open Dash
                  [:d [:km "open: Postico"]]
+                 ;[:d [:km "open: TablePlus"]]
                  [:f [:km "open: 2Do"]]
                  [:g [:km "open: Linear"]]
                  ;[:h [:km "open: Safari Technology Preview"]]
@@ -510,7 +511,8 @@
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:caps_lock :!CTOu] ; Sip color picker
-                 [:a [:km "open: Figma"]]
+                 ;[:a [:km "open: Figma"]]
+                 [:a [:km "open: Chrome Canary"]]
                  [:s [:km "edit: 2nd iTerm tab"]]
                  [:d [:km "Save link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
