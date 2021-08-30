@@ -242,6 +242,7 @@
   // Extensions
   "extensions.ignoreRecommendations": true,
   "[javascript]": {
+    "editor.autoClosingBrackets": "always",
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
@@ -256,7 +257,8 @@
     }
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoClosingBrackets": "always"
   },
   "jupyter.insidersChannel": "weekly",
   "[dart]": {
@@ -281,8 +283,10 @@
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
   "[typescript]": {
+    "editor.autoClosingBrackets": "always",
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "editor.autoClosingQuotes": "always",
   "workbench.activityBar.visible": false,
   "debug.javascript.autoAttachFilter": "smart",
   "go.toolsManagement.autoUpdate": true,
@@ -293,5 +297,10 @@
     "yaml": false,
     "plaintext": false,
     "markdown": false
-  }
+  },
+  "[javascriptreact]": {
+    "editor.autoClosingBrackets": "always"
+  },
+  "editor.autoClosingBrackets": "always",
+  "window.zoomLevel": -1
 }
