@@ -575,7 +575,7 @@
                  [:h [:km "Create new contact"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
-                 [:l [:km "open: Quill"]]
+                 ;[:l [:km "open: Quill"]]
                  ;[:l [:km "w: Element"]]
                  [:semicolon [:km "open: Slack"]]
                  [:c [:km "open: Contacts"]]
@@ -825,7 +825,8 @@
                  [:f :!CTOSg] ; Loom recording
                  [:g :!CO5] ; Start/stop ScreenFlow recording
                  [:h [:km "w: Roam Research"]]
-                 [:j [:km "w: Excalidraw"]]
+                 ;[:j [:km "w: Excalidraw"]]
+                 [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
                  [:l [:km "w: Localhost"]]
                  [:semicolon [:km "w: StackBlitz"]]

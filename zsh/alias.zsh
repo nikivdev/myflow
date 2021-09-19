@@ -1,4 +1,8 @@
 # General
+alias n="npm"
+alias nd="npm run dev"
+alias ni="npm install"
+alias nb="npm run build"
 alias prettierwrite="prettier --write '**/*.{ts,js,css,html,md,json}'"
 alias ip='ipconfig getifaddr en0 | pbcopy' # Copy IP address
 alias t1="tree -L 1 -I 'node_modules|cache|test_*'"
@@ -276,6 +280,6 @@ alias fs='mage start'
 alias dj='./manage'
 
 ## Dendron
-alias n='dendron-cli'
-alias ns='dendron-cli buildSiteV2 --wsRoot . --stage dev --serve' # serve dendron locally
-alias ng='dendron-cli buildSiteV2 --wsRoot .  --stage prod' # publish dendron
+# alias n='dendron-cli'
+# alias ns='dendron-cli buildSiteV2 --wsRoot . --stage dev --serve' # serve dendron locally
+# alias ng='dendron-cli buildSiteV2 --wsRoot .  --stage prod' # publish dendron
