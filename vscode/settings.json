@@ -44,7 +44,7 @@
   "files.eol": "\n",
   // Workbench
   "workbench.editor.enablePreviewFromQuickOpen": true,
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark",
   "workbench.list.horizontalScrolling": true,
@@ -302,5 +302,8 @@
     "editor.autoClosingBrackets": "always"
   },
   "editor.autoClosingBrackets": "always",
+  "emmet.includeLanguages": {
+    "javascript": "html"
+  },
   "window.zoomLevel": -1
 }

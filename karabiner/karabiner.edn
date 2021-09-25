@@ -651,7 +651,7 @@
                  ;[:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus
                  ;[:comma [:km "Play Spotify local song"]]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:1V6E19oxBxrOHYRkNYLlm5"]] ; Offline
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:episode:0tYQ3whyQ3GfABnRJ8n3t2"]] ; Rain
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3R38IXWFcoxYBdUkmxaoyy"]] ; Rain
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:52o0rOFFGNEekY4o0xV0AK"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:493uQXwZsTDHAkjWXImR7K"]] ; Focus song (slow)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
