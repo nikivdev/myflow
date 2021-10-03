@@ -305,5 +305,5 @@
   "emmet.includeLanguages": {
     "javascript": "html"
   },
-  "window.zoomLevel": -1
+  "python.defaultInterpreterPath": "/usr/local/bin/python3"
 }

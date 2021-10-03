@@ -502,7 +502,8 @@
                  ;[:q [:km "edit: 1st Safari tab"]]
                  ;[:q [:km "open: Figma"]]
                  ;[:q [:km "open: Electron"]]
-                 [:q [:km "open: Chrome Canary"]]
+                 ;[:q [:km "open: Chrome Canary"]]
+                 [:q [:km "open: Zeplin"]]
                  [:w [:km "Save link"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
