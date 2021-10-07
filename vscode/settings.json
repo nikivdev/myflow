@@ -305,5 +305,11 @@
   "emmet.includeLanguages": {
     "javascript": "html"
   },
-  "python.defaultInterpreterPath": "/usr/local/bin/python3"
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+  },
+  "window.zoomLevel": -1
 }

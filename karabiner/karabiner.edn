@@ -138,6 +138,7 @@
                  ;[:j :!SOTw] ; Replies
                  ;[:k :!SOTf] ; App specific
                  ;[:l :!SOTr] ; Personal
+                 [:o [:km "Lowercase and dash separate text"]]
                  [:j [:km "w: nikitavoloboev.xyz"]]
                  [:k [:km "w: GitLab"]]
                  [:l [:km "w: Repl.it"]]
