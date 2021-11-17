@@ -1,8 +1,10 @@
 # Temp
 ,() {
-  echo "Enter m3u8 link:";read link;echo "Enter output filename:";read filename;ffmpeg -i "$link" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 $filename.mp4
+  # echo "Enter m3u8 link:";read link;echo "Enter output filename:";read filename;ffmpeg -i "$link" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 $filename.mp4
   # git branch -m master main
   # git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main
+  go build
+  ./gitupdate
 }
 
 ,,() {
@@ -572,5 +574,11 @@ G() {
   git add .
   git commit -m "."
   git push
-
 }
+
+# activate python virtual env
+penv () {
+  [ ! -d "venv/" ] && python3 -m venv venv
+  source venv/bin/activate
+}
+

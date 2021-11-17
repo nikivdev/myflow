@@ -12,6 +12,7 @@ export GOPATH="$(go env GOPATH)" # Go
 export PATH="$PATH:$GOPATH/bin" # Go
 # export PATH=$PATH:~/anaconda3/bin # Anaconda
 export PATH=$PATH:./node_modules/.bin
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # fzf bindings and fuzzy completion
 # eval "$(direnv hook zsh)"

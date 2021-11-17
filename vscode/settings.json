@@ -9,7 +9,7 @@
   "editor.scrollBeyondLastLine": false,
   // "editor.tabSize": 4,
   "editor.lineHeight": 26,
-  // "editor.lineNumbers": "off",
+  // "editor.lineNumbers": "on",
   "editor.occurrencesHighlight": false,
   "editor.overviewRulerBorder": false,
   "editor.renderIndentGuides": true,
@@ -311,5 +311,8 @@
     "**/.metals": true,
     "**/.ammonite": true
   },
-  "window.zoomLevel": -1
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": -2
 }

@@ -90,8 +90,8 @@
         ; :rules [[:non_us_backslash [:km "Karabiner on/off"]]]}
         {:des "jsim"
          :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
-                 [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
-                 ;[[:j :semicolon] :!COS9] ; Raycast
+                 ;[[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
+                 [[:j :semicolon] :!COS9] ; Raycast
                  [[:j :l] :!CTOSspacebar]]} ; Alfred
         {:des "ksim"
          :rules [[[:k :l] [:alfred "search dash" "com.kapeli.dash.workflow"]]
@@ -352,7 +352,7 @@
                  [:i [:alfred "search alfred" "nikivi.utilities" "?"]]
                  [:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
-                 [:s [:alfred "search code" "nikivi.manage.notes"]]
+                 ;[:s [:alfred "search code" "nikivi.manage.notes"]]
                  [:d [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
                  [:f [:alfred "search folders" "nikivi.search.folders"]]
                  [:g :!COS9] ; Raycast
@@ -501,10 +501,10 @@
                  ;[:q [:km "open: Photos"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "edit: 1st Safari tab"]]
-                 ;[:q [:km "open: Figma"]]
+                 [:q [:km "open: Figma"]]
                  ;[:q [:km "open: Electron"]]
                  ;[:q [:km "open: Chrome Canary"]]
-                 [:q [:km "open: Zeplin"]]
+                 ;[:q [:km "open: Zeplin"]]
                  [:w [:km "Save link"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
@@ -654,6 +654,12 @@
                  ;[:comma [:km "Play Spotify local song"]]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:1V6E19oxBxrOHYRkNYLlm5"]] ; Offline
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3R38IXWFcoxYBdUkmxaoyy"]] ; Rain
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2lF5acSU8Vu9292cthQmc5"]] ; Focus song
+                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3jI7Yeg7a2d7BMc8CxABVM"]] ; Focus song
+                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6eKOshIu2rtjm3HivUaCWh"]] ; Focus song
+                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4tnWEXeAgZWTRULCkJ6IGL"]] ; Focus song
+                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5f5S32oPDjAUzBpOaNXFzV"]] ; Focus song
+                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4iORPRB30LonHaKwkctjyE"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:52o0rOFFGNEekY4o0xV0AK"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:493uQXwZsTDHAkjWXImR7K"]] ; Focus song (slow)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images

@@ -3,7 +3,7 @@ alias n="npm"
 alias nd="npm run dev"
 alias ni="npm install"
 alias nb="npm run build"
-alias prettierwrite="prettier --write '**/*.{ts,js,css,html,md,json}'"
+alias prettierwrite="prettier --write '**/*.{ts,tsx,js,css,html,md,json}'"
 alias ip='ipconfig getifaddr en0 | pbcopy' # Copy IP address
 alias t1="tree -L 1 -I 'node_modules|cache|test_*'"
 alias t2="tree -L 2 -I 'node_modules|cache|test_*'"
@@ -79,7 +79,7 @@ alias wg='watchexec --exts go "echo -- && go run ."'
 alias wf='watchexec --exts go "alfred build"'
 alias wG='cd ~/src/learning/go && watchexec --exts go "echo -- && go run ."'
 alias we='watchexec --restart --exts go "echo -- && go run ."'
-alias wt='watchexec --exts py "echo -- && python3"'
+alias wp='watchexec --exts py "echo -- && python3"'
 alias wn='watchexec --exts js "echo -- && node"'
 alias wtex='watchexec --exts "echo -- && .tex"'
 alias wo='watchexec --exts go "echo -- && go install"'
@@ -102,15 +102,15 @@ alias wfa='alfred pack -o ~/Desktop'
 alias ws='workflow-install -s workflow' # Symlink `source` directory
 
 # Docker
-alias c='docker'
-alias cs='docker ps'
-alias co='docker-compose'
-alias cou='docker-compose up'
-alias cos='docker-compose ps'
-alias ca='docker container ls'
+alias do='docker'
+alias dos='docker ps'
+alias dcls='docker container ls'
 alias css='docker stop $(docker ps -a -q)' # Stop running containers
 alias csr='docker rm -f $(docker ps -q)' # Stop & remove running containers
 # alias csr='docker kill $(docker ps -q)' # Kill active containers
+alias dco='docker-compose'
+alias dcu='docker-compose up'
+alias dcs='docker-compose ps'
 
 # Kubernetes
 alias k='kubectl'
