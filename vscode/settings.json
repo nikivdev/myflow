@@ -1,8 +1,8 @@
 {
   // Editor
-  // "editor.codeActionsOnSave": {
-  //   "source.organizeImports": true
-  // },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
   "editor.formatOnSave": true,
   "editor.renderLineHighlight": "gutter",
   "editor.hideCursorInOverviewRuler": true,
@@ -314,5 +314,12 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": -2
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "off",
+  "nix.formatterPath": "/Users/nikivi/.nix-profile/bin/nixpkgs-fmt",
+  "nix.serverPath": "/Users/nikivi/.nix-profile/bin/rnix-lsp",
+  "nix.enableLanguageServer": true,
+  "window.zoomLevel": -1
 }
