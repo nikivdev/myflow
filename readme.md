@@ -264,6 +264,7 @@ I curate a list of [interesting CLI tools](https://github.com/learn-anything/com
 - [ran](https://github.com/m3ng9i/ran) - Simple static web server written in Go.
 - [mcfly](https://github.com/cantino/mcfly) - Fast visual command history search.
 - [hyperfine](https://github.com/sharkdp/hyperfine) - Excellent command-line benchmarking tool.
+- [zoxide](https://github.com/ajeetdsouza/zoxide) - Smarter cd command.
 
 ## Launchpad
 
