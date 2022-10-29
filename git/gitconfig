@@ -58,11 +58,11 @@
     conflictstyle = diff3
 [core]
 	editor = nvim
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/nikiv/.gitignore_global
     # ansi-dark (dark) | GitHub (light)
     pager = delta --theme='ansi-dark'
-[interactive]
-    diffFilter = delta --color-only
+# [interactive]
+#     diffFilter = delta --color-only
 [github]
     user = nikitavoloboev
 [gpg]

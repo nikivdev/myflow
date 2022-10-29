@@ -1,19 +1,29 @@
 # Temp
 ,() {
   # echo "Enter m3u8 link:";read link;echo "Enter output filename:";read filename;ffmpeg -i "$link" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 $filename.mp4
+
+  # echo "Enter link:";
+  # read link;
+  link=$(pbpaste)
+  # echo $link
+
+  echo "Enter output filename:";
+  read filename;
+  yt-dlp -S ext "$link" -o "$filename.mp4";
   # git branch -m master main
   # git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main
-  go build
-  ./gitupdate
+  # go build
+  # ./gitupdate
 }
 
 ,,() {
-  git push origin --delete master
+  # git push origin --delete master
+  # yt-dlp ""${1:-.}""
 }
 
 ,,,() {
-  rm -rf .github
-  mv /Users/nikivi/src/lib/go/go/.github .
+  # rm -rf .github
+  # mv /Users/nikivi/src/lib/go/go/.github .
 }
 
 # search & replace
@@ -208,10 +218,10 @@ cfile(){
 }
 
 # wr - Release Alfred workflow
-wr() {
-  # TODO: Check if current dir has go in it (if yes, cd to workflow and then run script)
-  package-workflow .
-}
+# wr() {
+#   # TODO: Check if current dir has go in it (if yes, cd to workflow and then run script)
+#   package-workflow .
+# }
 
 # re <files> - Move files to trash.
 re(){
@@ -582,3 +592,7 @@ penv () {
   source venv/bin/activate
 }
 
+# move file/folder to code archive
+mvarchivecode() {
+  mv "${1:-.}" ~/archive/code
+}

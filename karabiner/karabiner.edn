@@ -80,7 +80,7 @@
                  [:n :!Sn]
                  [:m :!Sm]]}
         {:des "swap : and ;"
-         :rules [[:#Psemicolon :!Ssemicolon]
+        :rules [[:#Psemicolon :!Ssemicolon]
                  [:!Ssemicolon :semicolon]]}
         {:des "left cmd -> cmd+tab"
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
@@ -122,7 +122,7 @@
                  [:n [:km "proj: Dotfiles"]]
                  [:m [:km "proj: Home"]]
                  [:comma [:km "edit: Now"]]
-                 [:period [:km "edit: GitHub Bio"]] ; TODO: 
+                 [:period [:km "edit: GitHub Bio"]] ; TODO:
                  [:spacebar :!CSOp]]} ; Selection -> Reddit
         {:des "4key (open curated lists)"
          :rules [:4-mode
@@ -139,7 +139,7 @@
                  ;[:k :!SOTf] ; App specific
                  ;[:l :!SOTr] ; Personal
                  [:o [:km "Lowercase and dash separate text"]]
-                 [:j [:km "w: nikitavoloboev.xyz"]]
+                 [:j [:km "w: nikiv.dev"]]
                  [:k [:km "w: GitLab"]]
                  [:l [:km "w: Repl.it"]]
                  [:period [:km "w: CodeSandbox"]]]}
@@ -192,18 +192,19 @@
                  [:r [:km "open: Notion"]]
                  [:t [:km "open: Activity Monitor"]]
                  ;[:i [:km "open: Instruments"]]
-                 [:i [:km "open: Obsidian"]]
+                 ;[:i [:km "open: Obsidian"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
-                 [:a :!OSC1] ; Open Dash
+                 [:a [:km "open: Obsidian"]]
                  [:d [:km "open: Postico"]]
                  ;[:d [:km "open: TablePlus"]]
                  [:f [:km "open: 2Do"]]
-                 [:g [:km "open: Linear"]]
+                 ;[:g [:km "open: Linear"]]
+                 [:g [:km "open: Height"]]
                  ;[:h [:km "open: Safari Technology Preview"]]
                  [:h [:km "open: Android Emulator"]]
-                 [:j [:km "open: iTerm"]]
+                 [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code"]]
                  [:semicolon [:km "open: Xcode"]]
@@ -215,7 +216,8 @@
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
                  [:period [:km "open: Cypress"]]
-                 [:spacebar :!CT7]]} ; Start Google search with selection
+                ;;  [:spacebar :!CT7]]} ; Start Google search with selection
+                 [:spacebar [:km "open: Learn Anything"]]]}
         {:des "ekey (cmd)"
          :rules [:e-mode
                  [:q :!Cq]
@@ -472,7 +474,7 @@
                  [:##b :!Cleft_arrow]
                  [:n :!Cv] ; Paste
                  [:##m :!Cright_arrow]
-                 [:period :!COS0]]} ; Selection -> Alfred Snippets TODO: 
+                 [:period :!COS0]]} ; Selection -> Alfred Snippets TODO:
         {:des "dkey (mouse)"
          :rules [:d-mode
                  [:i :!Ckeypad_hyphen] ; Zoom out
@@ -501,9 +503,8 @@
                  ;[:q [:km "open: Photos"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "edit: 1st Safari tab"]]
-                 [:q [:km "open: Figma"]]
                  ;[:q [:km "open: Electron"]]
-                 ;[:q [:km "open: Chrome Canary"]]
+                 [:q [:km "open: Chrome Canary"]]
                  ;[:q [:km "open: Zeplin"]]
                  [:w [:km "Save link"]]
                  [:e :!CO8] ; Alfred clipboard history search
@@ -513,15 +514,16 @@
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:caps_lock :!CTOu] ; Sip color picker
-                 ;[:a [:km "open: Figma"]]
-                 [:a [:km "open: Chrome Canary"]]
-                 [:s [:km "edit: 2nd iTerm tab"]]
+                 [:a [:km "open: Figma"]]
+                 ;[:a [:km "open: Chrome Canary"]]
+                 [:s [:km "edit: 2nd Warp tab"]]
                  [:d [:km "Save link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
-                 [:j [:km "edit: 1st iTerm tab"]]
+                 [:j [:km "edit: 1st Warp tab"]]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
                  [:semicolon [:km "open: MindNode"]]
+                 ;[:semicolon [:km "open: Obsidian"]]
                  [:quote [:km "Goku Run"]]
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]
@@ -630,7 +632,7 @@
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:p [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly
-                 [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes 
+                 [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss
                  ;[:a [:km "Repeat Spotify song"]] ; TODO: do in background
                  [:a [:km "Play/Pause Endel"]]
@@ -742,10 +744,11 @@
                  [:g [:alfred "search alfred" "nikivi.utilities" "godoc "]]
                  [:c [:alfred "search alfred" "nikivi.utilities" "css "]]
                  [:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
-                 [:b [:alfred "search alfred" "nikivi.utilities" "bash "]]]}
+                 [:b [:alfred "search alfred" "nikivi.utilities" "bash "]]
+                 [:spacebar :!OSC1]]} ; Open Dash
         {:des "commakey (words)"
          :rules [:comma-mode
-                 [:w [:n :i :k :i :v :i]] ; -> nikivi
+                 [:w [:n :i :k :i :v]] ; -> nikiv
                  [:a [:n :i :k :i :t :a :v :o :l :o :b :o :e :v ]]]} ; -> nikitavoloboev
          {:des "dotkey (1-3, q-u, caps, tab)"
           :rules [:dot-mode
@@ -834,7 +837,8 @@
                  [:g :!CO5] ; Start/stop ScreenFlow recording
                  [:h [:km "w: Roam Research"]]
                  ;[:j [:km "w: Excalidraw"]]
-                 [:j [:km "w: YouTube"]]
+                 [:j :!COS9] ; Raycast
+                 ;[:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
                  [:l [:km "w: Localhost"]]
                  [:semicolon [:km "w: StackBlitz"]]

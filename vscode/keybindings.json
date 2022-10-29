@@ -169,10 +169,6 @@
     "command": "workbench.action.navigateBack"
   },
   {
-    "key": "ctrl+`",
-    "command": "-workbench.action.terminal.toggleTerminal"
-  },
-  {
     "key": "shift+cmd+e",
     "command": "-workbench.view.explorer"
   },
@@ -258,6 +254,11 @@
   {
     "key": "cmd+m",
     "command": "workbench.action.quickOpenTerm"
+  },
+  {
+    "key": "enter",
+    "command": "editor.action.goToDeclaration",
+    "when": "inSearchEditor && editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "key": "shift+cmd+v",
@@ -422,5 +423,9 @@
     "key": "shift+alt+cmd+c",
     "command": "-copyRelativeFilePath",
     "when": "!editorFocus"
+  },
+  {
+    "key": "shift+cmd+f",
+    "command": "search.action.openEditor"
   }
 ]

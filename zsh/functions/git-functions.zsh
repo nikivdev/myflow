@@ -1,4 +1,4 @@
-g() {
+G() {
   if [ $# -eq 0 ]; then
     # Commit/push all with file names changed as commit msg
     gitupdate .

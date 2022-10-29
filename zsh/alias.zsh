@@ -1,8 +1,18 @@
-# General
-alias n="npm"
-alias nd="npm run dev"
-alias ni="npm install"
-alias nb="npm run build"
+# general
+alias g='gcloud'
+alias dev='pnpm run dev'
+alias .='open .'
+# alias go="go1.19rc2"
+alias nr="pnpm run dev"
+alias python="python3"
+alias n="pnpm"
+alias nd="nr dev" # https://github.com/antfu/ni
+alias ni="ni"
+alias nb="pnpm run build"
+# alias n="npm"
+# alias nd="npm run dev"
+# alias ni="npm install"
+# alias nb="npm run build"
 alias prettierwrite="prettier --write '**/*.{ts,tsx,js,css,html,md,json}'"
 alias ip='ipconfig getifaddr en0 | pbcopy' # Copy IP address
 alias t1="tree -L 1 -I 'node_modules|cache|test_*'"
@@ -75,14 +85,17 @@ alias bi='brew install'
 
 # Watch files & run cmds
 alias wa='watchexec --exts'
-alias wg='watchexec --exts go "echo -- && go run ."'
+# alias wg='watchexec --exts go "echo -- && go run ."'
+alias wg='watchexec --restart --exts go "echo -- && go run ."'
 alias wf='watchexec --exts go "alfred build"'
 alias wG='cd ~/src/learning/go && watchexec --exts go "echo -- && go run ."'
 alias we='watchexec --restart --exts go "echo -- && go run ."'
 alias wp='watchexec --exts py "echo -- && python3"'
 alias wn='watchexec --exts js "echo -- && node"'
+alias wb='watchexec --exts ts "echo -- && bun run"'
 alias wtex='watchexec --exts "echo -- && .tex"'
 alias wo='watchexec --exts go "echo -- && go install"'
+alias wr='watchexec --exts rs "echo -- && cargo run -q"'
 
 # Dev
 alias ll='ln -s'
@@ -93,8 +106,8 @@ alias cra='npx create-react-app'
 alias lic='legit'
 
 # Python
-alias p='python3'
-alias p2='python2'
+# alias p='python3'
+# alias p2='python2'
 
 # Alfred
 alias wfl='alfred link'
@@ -167,7 +180,8 @@ alias cwd='pwd | pbcopy'
 alias rrpdf='rm -rf *.pdf'
 
 # Source things
-alias sz='exec zsh'
+# alias sz='exec zsh'
+alias sz='source ~/.zshrc'
 
 # Hugo
 alias hu='hugo'

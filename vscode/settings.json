@@ -1,23 +1,20 @@
 {
   // Editor
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  },
+  // "editor.codeActionsOnSave": {
+  //   "source.organizeImports": true
+  // },
   "editor.formatOnSave": true,
   "editor.renderLineHighlight": "gutter",
   "editor.hideCursorInOverviewRuler": true,
   "editor.scrollBeyondLastLine": false,
-  // "editor.tabSize": 4,
   "editor.lineHeight": 26,
-  // "editor.lineNumbers": "on",
+  "editor.lineNumbers": "on",
   "editor.occurrencesHighlight": false,
   "editor.overviewRulerBorder": false,
-  "editor.renderIndentGuides": true,
   "editor.folding": false,
   "editor.snippetSuggestions": "top",
   "editor.lightbulb.enabled": false,
   "editor.minimap.enabled": false,
-  "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "line",
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
@@ -44,32 +41,31 @@
   "files.eol": "\n",
   // Workbench
   "workbench.editor.enablePreviewFromQuickOpen": true,
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "GitHub Dark Default",
   "workbench.preferredLightColorTheme": "GitHub Light",
-  "workbench.preferredDarkColorTheme": "GitHub Dark",
+  "workbench.preferredDarkColorTheme": "GitHub Dark Default",
   "workbench.list.horizontalScrolling": true,
-  "workbench.panel.defaultLocation": "right",
   "workbench.fontAliasing": "antialiased",
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
   "workbench.editor.showIcons": false,
-  "workbench.settings.enableNaturalLanguageSearch": false, // formatting only supports LF line endings
-  "workbench.sideBar.location": "left",
+  "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
   // Color changes
   "workbench.colorCustomizations": {
-    "[GitHub Dark]": {
-      "editorLineNumber.foreground": "#23292f",
-      "editor.lineHighlightBackground": "#23292f"
-    },
-    // "[poimandres]": {
-    //   "editorLineNumber.foreground": "#1a1e29"
+    // "[GitHub Dark]": {
+    //   "editorLineNumber.foreground": "#23292f",
+    //   "editor.lineHighlightBackground": "#23292f"
     // },
     "[GitHub Light]": {
       "editorLineNumber.foreground": "#ffffff",
       "editor.lineHighlightBackground": "#ffffff"
+    },
+    "[GitHub Dark Default]": {
+      "editorLineNumber.foreground": "#0d1117",
+      "editor.lineHighlightBackground": "#0d1117"
     }
   },
   // Window
@@ -88,7 +84,6 @@
   "search.quickOpen.includeHistory": false,
   "search.searchEditor.defaultNumberOfContextLines": null,
   "search.smartCase": true,
-  // "search.useIgnoreFiles": false,
   "search.exclude": {
     "**/node_modules": true,
     "**/.git": true,
@@ -107,15 +102,9 @@
   "explorer.decorations.badges": false,
   // Python
   "python.pythonPath": "/usr/local/bin/python3",
-  "python.showStartPage": false,
   "python.linting.pylintArgs": ["--errors-only"],
   "python.insidersChannel": "off",
   "python.languageServer": "Pylance",
-  // "python.pythonPath": "/Users/nikivi/anaconda3/bin/python3",
-  // "python.formatting.provider": "black",
-  // "python.linting.pylintEnabled": false,
-  // "python.linting.flake8Enabled": true,
-  // "python.linting.enabled": false,
   // Vim
   "vim.leader": " ",
   "vim.debug.silent": true,
@@ -158,6 +147,14 @@
       ]
     },
     {
+      "before": ["w"],
+      "commands": [":w"]
+    },
+    {
+      "before": ["q"],
+      "commands": [":q"]
+    },
+    {
       "before": ["K"],
       "after": ["leader", "leader", "k"]
     },
@@ -175,6 +172,10 @@
     }
   ],
   "vim.visualModeKeyBindings": [
+    {
+      "before": [":"],
+      "after": ["y"]
+    },
     {
       "before": ["K"],
       "after": ["leader", "leader", "k"]
@@ -219,8 +220,6 @@
   // JavaScript
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.validate.enable": false,
-  // ESLint
-  "eslint.packageManager": "yarn",
   // Git
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -228,17 +227,7 @@
   "git.enableSmartCommit": true,
   "git.ignoreMissingGitWarning": true,
   // GitLens
-  // "gitlens.keymap": "chorded",
-  // "gitlens.codeLens.scopes": ["containers", "document"],
-  // "gitlens.views.fileHistory.enabled": true,
-  // "gitlens.views.lineHistory.enabled": true,
   "gitlens.currentLine.format": "${message}",
-  // "gitlens.advanced.messages": {
-  //   "suppressCommitNotFoundWarning": true,
-  //   "suppressFileNotUnderSourceControlWarning": true,
-  //   "suppressShowKeyBindingsNotice": true,
-  //   "suppressUpdateNotice": true
-  // },
   // Extensions
   "extensions.ignoreRecommendations": true,
   "[javascript]": {
@@ -260,13 +249,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.autoClosingBrackets": "always"
   },
-  "jupyter.insidersChannel": "weekly",
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    // "editor.rulers": [
-    //   80
-    // ],
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
@@ -274,12 +259,9 @@
     "editor.wordBasedSuggestions": false
   },
   "gitlens.hovers.currentLine.over": "line",
-  "dart.previewLsp": true,
   "workbench.statusBar.visible": false,
   "workbench.editor.decorations.colors": false,
   "workbench.editor.decorations.badges": false,
-  "codestream.email": "nikita.voloboev@gmail.com",
-  "codestream.requestFeedbackOnCommit": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
   "[typescript]": {
@@ -292,12 +274,14 @@
   "go.toolsManagement.autoUpdate": true,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.inlineSuggest.enabled": true,
-  "github.copilot.enable": {
-    "*": false,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": false
-  },
+  // "github.copilot.enable": {
+  //   "*": false,
+  //   "yaml": false,
+  //   "plaintext": false,
+  //   "markdown": false,
+  //   "ts": true,
+  //   "typescriptreact": false
+  // },
   "[javascriptreact]": {
     "editor.autoClosingBrackets": "always"
   },
@@ -321,5 +305,7 @@
   "nix.formatterPath": "/Users/nikivi/.nix-profile/bin/nixpkgs-fmt",
   "nix.serverPath": "/Users/nikivi/.nix-profile/bin/rnix-lsp",
   "nix.enableLanguageServer": true,
-  "window.zoomLevel": -1
+  "editor.cursorBlinking": "solid",
+  "editor.glyphMargin": false,
+  "window.zoomLevel": -2
 }

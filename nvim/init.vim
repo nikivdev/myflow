@@ -119,8 +119,8 @@ set grepformat^=%f:%l:%c:%m
 
 set viewoptions=cursor,slash,unix
 
-" Theme (mirage, light)
-let ayucolor="mirage"
+" Theme (dark, light)
+let ayucolor="dark"
 colorscheme ayu
 
 " Bufferline
@@ -201,7 +201,7 @@ if ayucolor ==# "light"
     hi CursorLineNr guifg=#050505
     hi LineNr guifg=#ffffff
 else
-    hi LineNr guifg=#23292c
+    hi LineNr guifg=#101418
 endif
 
 let g:ale_fixers = {

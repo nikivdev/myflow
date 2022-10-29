@@ -46,4 +46,4 @@ It will also install CLI tools & apps.
 
 You can support me on [GitHub](https://github.com/users/nikitavoloboev/sponsorship) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
 
-[![MIT](https://img.shields.io/badge/license-MIT-0a0a0a.svg?style=flat&colorA=0a0a0a)](license) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)
+[![MIT](http://bit.ly/mitbadge)](license) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)
