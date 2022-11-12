@@ -12,3 +12,19 @@ function w
         code-insiders $argv
     end
 end
+
+
+# r - run `cargo run` when rust files change
+# r <cmd> - cargo <cmd>
+function r
+    if not count $argv
+        cargo watch -q -x "run -q"
+    else
+        cargo $argv
+    end
+end
+
+# R <flags or things to pass to CLI>
+function R
+    cargo watch -q -x "run -q -- $argv"
+end
