@@ -67,4 +67,8 @@ export PATH="$PNPM_HOME:$PATH"
 # bun
 BUN_INSTALL="/Users/nikiv/.bun"
 PATH="$BUN_INSTALL/bin:$PATH"
+
 export NVM_DIR="$HOME/.nvm"
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm

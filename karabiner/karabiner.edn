@@ -193,6 +193,7 @@
                  [:t [:km "open: Activity Monitor"]]
                  ;[:i [:km "open: Instruments"]]
                  ;[:i [:km "open: Obsidian"]]
+                 [:i [:km "open: Dropcode"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
