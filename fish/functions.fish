@@ -6,18 +6,17 @@ end
 # w - open current path in VSCode
 # w <path> - open path in VSCode
 function w
-    if not count $argv
+    if not set -q argv[1]
         code-insiders .
     else
         code-insiders $argv
     end
 end
 
-
 # r - run `cargo run` when rust files change
 # r <cmd> - cargo <cmd>
 function r
-    if not count $argv
+    if not set -q argv[1]
         cargo watch -q -x "run -q"
     else
         cargo $argv

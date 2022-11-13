@@ -1,4 +1,5 @@
 alias a="exa" # list files
+alias v="mv" # move files/folders or rename
 alias sf="source ~/.config/fish/config.fish" # source fish config
 # cd places
 alias d="cd"
