@@ -1,13 +1,11 @@
-command la # overwrite `la` fish builtin function
-
 # af <cmd> - view definition of <cmd>
 function af
     type $argv
 end
 
-# function la
-#     ~/go/bin/la
-# end
+function la
+    command la # overwrite `la` fish builtin function
+end
 
 # w - open current path in VSCode
 # w <path> - open path in VSCode
