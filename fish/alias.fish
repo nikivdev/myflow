@@ -9,3 +9,4 @@ alias dz="cd ~/.dotfiles"
 alias rr="rm -rf"
 alias md="mkdir"
 alias dev="pnpm run dev" # TODO: make npm agnostic (there's github CLI for this)
+alias wgi="watchexec --restart --exts go \"echo -- && go install .\""

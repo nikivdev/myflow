@@ -1,6 +1,8 @@
 # testing
 
 # path
+
+fish_add_path ~/.bun/bin/
 # fish_add_path /opt/homebrew/bin
 # fish_add_path ~/.dotfiles/bin
 # fish_add_path $HOME/.cargo/bin # rust
@@ -17,3 +19,7 @@ __fish_cursor_xterm line # make cursor into thin line (doesn't make a difference
 set -gx PNPM_HOME /Users/nikiv/Library/pnpm
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
+
+# go
+set -x GOPATH (go env GOPATH)
+set -x PATH $PATH (go env GOPATH)/bin

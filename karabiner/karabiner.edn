@@ -218,7 +218,8 @@
                  [:comma [:km "open: Proxyman"]]
                  [:period [:km "open: Cypress"]]
                 ;;  [:spacebar :!CT7]]} ; Start Google search with selection
-                 [:spacebar [:km "open: Learn Anything"]]]}
+                 ;[:spacebar [:km "open: Learn Anything"]]]}
+                 [:spacebar [:km "open: Excalidraw"]]]}
         {:des "ekey (cmd)"
          :rules [:e-mode
                  [:q :!Cq]
@@ -517,7 +518,8 @@
                  [:caps_lock :!CTOu] ; Sip color picker
                  [:a [:km "open: Figma"]]
                  ;[:a [:km "open: Chrome Canary"]]
-                 [:s [:km "edit: 2nd Warp tab"]]
+                [:s [:km "edit: 2nd Warp tab"]]
+                 ;[:s [:km "open: Excalidraw"]]
                  [:d [:km "Save link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:j [:km "edit: 1st Warp tab"]]
@@ -532,6 +534,7 @@
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
+                 ;[:spacebar [:km "open: Excalidraw"]]]}
                  [:spacebar :!CTq]]} ; Selection -> Web Searches
         {:des "gkey (actions)"
          :rules [:g-mode
