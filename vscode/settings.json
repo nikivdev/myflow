@@ -1,5 +1,6 @@
 {
-  // Editor
+  "fish.path.fish": "/opt/homebrew/bin/fish",
+  "fish.path.fish_indent": "/opt/homebrew/bin/fish_indent",
   // "editor.codeActionsOnSave": {
   //   "source.organizeImports": true
   // },
@@ -7,16 +8,16 @@
   "editor.renderLineHighlight": "gutter",
   "editor.hideCursorInOverviewRuler": true,
   "editor.scrollBeyondLastLine": false,
+  "editor.tabSize": 2,
   "editor.lineHeight": 26,
-  "editor.lineNumbers": "on",
   "editor.occurrencesHighlight": false,
   "editor.overviewRulerBorder": false,
   "editor.folding": false,
   "editor.snippetSuggestions": "top",
   "editor.lightbulb.enabled": false,
   "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "line",
-  "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   // Files
@@ -40,35 +41,40 @@
   "files.insertFinalNewline": true,
   "files.eol": "\n",
   // Workbench
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": false,
+  "workbench.layoutControl.enabled": false,
   "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.colorTheme": "GitHub Dark Default",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark Default",
   "workbench.list.horizontalScrolling": true,
+  "workbench.panel.defaultLocation": "right",
   "workbench.fontAliasing": "antialiased",
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
   "workbench.editor.showIcons": false,
-  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.settings.enableNaturalLanguageSearch": false, // formatting only supports LF line endings
+  "workbench.sideBar.location": "left",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
   // Color changes
   "workbench.colorCustomizations": {
-    // "[GitHub Dark]": {
-    //   "editorLineNumber.foreground": "#23292f",
-    //   "editor.lineHighlightBackground": "#23292f"
-    // },
-    "[GitHub Light]": {
-      "editorLineNumber.foreground": "#ffffff",
-      "editor.lineHighlightBackground": "#ffffff"
+    "[GitHub Dark]": {
+      "editorLineNumber.foreground": "#23292f",
+      "editor.lineHighlightBackground": "#23292f"
     },
     "[GitHub Dark Default]": {
-      "editorLineNumber.foreground": "#0d1117",
-      "editor.lineHighlightBackground": "#0d1117"
+      "editorLineNumber.foreground": "#0c1118",
+      "editor.lineHighlightBackground": "#0c1118"
+    },
+    "[GitHub Light]": {
+      // "editorLineNumber.foreground": "#E8E8E8",
+      "editorLineNumber.foreground": "#ffffff",
+      "editor.lineHighlightBackground": "#ffffff"
     }
   },
-  // Window
   "window.autoDetectColorScheme": true,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
@@ -84,6 +90,7 @@
   "search.quickOpen.includeHistory": false,
   "search.searchEditor.defaultNumberOfContextLines": null,
   "search.smartCase": true,
+  // "search.useIgnoreFiles": false,
   "search.exclude": {
     "**/node_modules": true,
     "**/.git": true,
@@ -91,7 +98,6 @@
     "out": true,
     "coverage": true
   },
-  // Terminal
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.inheritEnv": false,
@@ -101,7 +107,6 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
   // Python
-  "python.pythonPath": "/usr/local/bin/python3",
   "python.linting.pylintArgs": ["--errors-only"],
   "python.insidersChannel": "off",
   "python.languageServer": "Pylance",
@@ -147,14 +152,6 @@
       ]
     },
     {
-      "before": ["w"],
-      "commands": [":w"]
-    },
-    {
-      "before": ["q"],
-      "commands": [":q"]
-    },
-    {
       "before": ["K"],
       "after": ["leader", "leader", "k"]
     },
@@ -173,10 +170,6 @@
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": [":"],
-      "after": ["y"]
-    },
-    {
       "before": ["K"],
       "after": ["leader", "leader", "k"]
     },
@@ -191,6 +184,7 @@
   "vim.easymotionKeys": "hklyuiopnm,qwertzxcvbasdgjf:",
   "vim.easymotionMarkerForegroundColorOneChar": "black",
   // Go
+  "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
   "go.useCodeSnippetsOnFunctionSuggest": false,
   "go.languageServerExperimentalFeatures": {
@@ -227,13 +221,9 @@
   "git.enableSmartCommit": true,
   "git.ignoreMissingGitWarning": true,
   // GitLens
-  "gitlens.currentLine.format": "${message}",
+  // "gitlens.currentLine.format": "${message}",
   // Extensions
   "extensions.ignoreRecommendations": true,
-  "[javascript]": {
-    "editor.autoClosingBrackets": "always",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -246,66 +236,21 @@
     }
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.autoClosingBrackets": "always"
-  },
-  "[dart]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.selectionHighlight": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
-  },
-  "gitlens.hovers.currentLine.over": "line",
-  "workbench.statusBar.visible": false,
-  "workbench.editor.decorations.colors": false,
-  "workbench.editor.decorations.badges": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "[typescript]": {
-    "editor.autoClosingBrackets": "always",
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.autoClosingQuotes": "always",
-  "workbench.activityBar.visible": false,
-  "debug.javascript.autoAttachFilter": "smart",
-  "go.toolsManagement.autoUpdate": true,
-  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.editor.decorations.colors": false,
+  "svelte.enable-ts-plugin": true,
   "editor.inlineSuggest.enabled": true,
   // "github.copilot.enable": {
-  //   "*": false,
+  //   "*": true,
   //   "yaml": false,
   //   "plaintext": false,
   //   "markdown": false,
-  //   "ts": true,
-  //   "typescriptreact": false
+  //   "javascript": false
   // },
-  "[javascriptreact]": {
-    "editor.autoClosingBrackets": "always"
-  },
-  "editor.autoClosingBrackets": "always",
-  "emmet.includeLanguages": {
-    "javascript": "html"
-  },
-  "python.defaultInterpreterPath": "/usr/local/bin/python3",
-  "files.watcherExclude": {
-    "**/.bloop": true,
-    "**/.metals": true,
-    "**/.ammonite": true
-  },
-  "[json]": {
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
-  "editor.accessibilitySupport": "off",
-  "nix.formatterPath": "/Users/nikivi/.nix-profile/bin/nixpkgs-fmt",
-  "nix.serverPath": "/Users/nikivi/.nix-profile/bin/rnix-lsp",
-  "nix.enableLanguageServer": true,
-  "editor.cursorBlinking": "solid",
-  "editor.glyphMargin": false,
-  "window.zoomLevel": -2
+  "lldb.suppressUpdateNotifications": true,
+  "terminal.integrated.defaultProfile.osx": "fish"
 }

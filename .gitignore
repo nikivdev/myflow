@@ -4,3 +4,5 @@
 /sublime/Package Control.user-ca-bundle
 /sublime/Package Control.last-run
 /bin/private
+/run/
+*.DS_Store

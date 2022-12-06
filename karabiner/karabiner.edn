@@ -219,7 +219,7 @@
                  [:period [:km "open: Cypress"]]
                 ;;  [:spacebar :!CT7]]} ; Start Google search with selection
                  ;[:spacebar [:km "open: Learn Anything"]]]}
-                 [:spacebar [:km "open: Excalidraw"]]]}
+                 [:spacebar [:km "Explain with AskAI"]]]}
         {:des "ekey (cmd)"
          :rules [:e-mode
                  [:q :!Cq]
@@ -288,7 +288,8 @@
                  [:m [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
                  [:period [:km "open: Final Cut Pro"]]
-                 [:spacebar :!COSx]]} ; Selection -> Reddit
+                 ;[:spacebar :!COSx]]} ; Selection -> Reddit
+                 [:spacebar :!CTOSg]]} ; Loom recording
         {:des "tkey (palettes + websites)"
          :rules [:t-mode
                  [:0 [:km "w: regex101"]]
@@ -309,7 +310,8 @@
                  [:m [:km "w: Meetup"]]
                  [:comma [:km "w: Google Drive"]]
                  [:period [:km "w: IFTTT"]]
-                 [:spacebar :!COSr]]} ; Selection -> Google Translate
+                 ;[:spacebar :!COSr]]} ; Selection -> Google Translate
+                 [:spacebar :!CTOSi]]} ; Loom cancel record
         {:des "ikey (symbols)"
          :rules [:i-mode
                  [:1 :!S1]
@@ -370,7 +372,8 @@
                  [:b [:km "Add 2Do with current url as note (github)"]]
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
                  [:m [:alfred "search lists" "nikivi.awesome.lists"]]
-                 [:spacebar [:alfred "search PDFs" "nikivi.search.files"]]]}
+                 ;[:spacebar [:alfred "search PDFs" "nikivi.search.files"]]]}
+                 [:spacebar [:km "open: AskAI"]]]}
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
                  [:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
@@ -534,8 +537,8 @@
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
-                 ;[:spacebar [:km "open: Excalidraw"]]]}
-                 [:spacebar :!CTq]]} ; Selection -> Web Searches
+                 ;[:spacebar :!CTq]]} ; Selection -> Web Searches
+                 [:spacebar [:km "open: Excalidraw"]]]}
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:q :!CT3] ; Search bartender menu items
@@ -837,10 +840,9 @@
                  [:close_bracket [:km "w: Beautiful.ai"]]
                  [:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
-                 [:f :!CTOSg] ; Loom recording
+                 ;[:f :!CTOSg] ; Loom recording
                  [:g :!CO5] ; Start/stop ScreenFlow recording
                  [:h [:km "w: Roam Research"]]
-                 ;[:j [:km "w: Excalidraw"]]
                  [:j :!COS9] ; Raycast
                  ;[:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]

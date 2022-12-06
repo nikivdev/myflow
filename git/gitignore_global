@@ -32,6 +32,7 @@ node_modules
 *.sqlite
 
 # macOS
+*.DS_Store
 .DS_Store
 .DS_Store?
 ._*
