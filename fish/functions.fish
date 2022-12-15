@@ -17,6 +17,18 @@ function w
     end
 end
 
+function wb
+    watchexec --restart --exts ts "tput reset && bun run $argv"
+end
+
+function wn
+    watchexec --restart --exts ts "tput reset && node $argv"
+end
+
+function wG
+    watchexec --restart --exts go "tput reset && go run $argv"
+end
+
 # r - run `cargo run` when rust files change
 # r <cmd> - cargo <cmd>
 function r
@@ -36,4 +48,4 @@ end
 # `go get -u github.com/spf13/cobra@latest
 # function gi
 #     go get -u github.com/leaanthony/clir@latest
-# end
+# en

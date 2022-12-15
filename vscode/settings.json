@@ -1,4 +1,5 @@
 {
+  "editor.cursorSmoothCaretAnimation": "explicit",
   "fish.path.fish": "/opt/homebrew/bin/fish",
   "fish.path.fish_indent": "/opt/homebrew/bin/fish_indent",
   // "editor.codeActionsOnSave": {
@@ -45,7 +46,7 @@
   "workbench.activityBar.visible": false,
   "workbench.layoutControl.enabled": false,
   "workbench.editor.enablePreviewFromQuickOpen": true,
-  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.colorTheme": "GitHub Light",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark Default",
   "workbench.list.horizontalScrolling": true,
@@ -252,5 +253,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "lldb.suppressUpdateNotifications": true,
-  "terminal.integrated.defaultProfile.osx": "fish"
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "window.zoomLevel": -1
 }

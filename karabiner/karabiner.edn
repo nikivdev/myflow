@@ -219,7 +219,8 @@
                  [:period [:km "open: Cypress"]]
                 ;;  [:spacebar :!CT7]]} ; Start Google search with selection
                  ;[:spacebar [:km "open: Learn Anything"]]]}
-                 [:spacebar [:km "Explain with AskAI"]]]}
+                 [:spacebar [:km "Explain with ChatGPT"]]]}
+                 ;[:spacebar [:km "Explain with Ask"]]]}
         {:des "ekey (cmd)"
          :rules [:e-mode
                  [:q :!Cq]
@@ -270,7 +271,7 @@
                  [:tab [:km "open: Transmission"]]
                  [:q [:km "open: IINA"]]
                  [:w [:km "open: 1Password"]]
-                 [:e [:km "open: Keynote"]]
+                 ;[:e [:km "open: Keynote"]]
                  ;[:e [:km "open: Day One"]]
                  ;[:i [:km "open: Flume"]]
                  [:i [:km "open: Feedback Assistant"]]
@@ -279,8 +280,9 @@
                  [:a [:km "open: Alfred Preferences"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: Preview"]]
+                 [:l [:km "open: NetNewsWire"]]
                  ;[:l [:km "open: Books"]]
-                 [:l [:km "open: Reflect"]]
+                 ;[:l [:km "open: Reflect"]]
                  ;[:k [:km "open: PDF Expert"]]
                  ;[:l [:km "open: Reeder"]]
                  [:b [:km "Edit keyboard shortcuts"]]
@@ -292,24 +294,25 @@
                  [:spacebar :!CTOSg]]} ; Loom recording
         {:des "tkey (palettes + websites)"
          :rules [:t-mode
-                 [:0 [:km "w: regex101"]]
-                 [:e [:km "w: Facebook"]]
-                 [:u [:km "w: Medium"]]
-                 [:i [:km "w: Arxiv"]]
-                 [:o [:km "w: Stack Overflow"]]
-                 [:p [:km "w: Dropbox"]]
-                 [:a [:km "w: Amazon"]]
-                 [:h [:km "w: Twitch"]]
-                 [:j :!COSo] ; Safari URL -> Twitter
+                 ;[:0 [:km "w: regex101"]]
+                 ;[:e [:km "w: Facebook"]]
+                 ;[:u [:km "w: Medium"]]
+                 ;[:i [:km "w: Arxiv"]]
+                 ;[:o [:km "w: Stack Overflow"]]
+                 ;[:p [:km "w: Dropbox"]]
+                 ;[:a [:km "w: Amazon"]]
+                 ;[:h [:km "w: Twitch"]]
+                 ;[:k [:km "Get link (Safari Technology Preview)"]]
+                 ;[:j :!COSo] ; Safari URL -> Twitter
                  ;[:j :!COSo] ; Safari URL -> Google
                  ;[:k :!COSo] ; Safari URL -> HN
                  ;[:l :!COSo] ; Safari URL -> Lobsters
-                 [:semicolon [:km "w: Netlify"]]
-                 [:z [:km "w: MDN"]]
-                 [:b [:km "w: Observable"]]
-                 [:m [:km "w: Meetup"]]
-                 [:comma [:km "w: Google Drive"]]
-                 [:period [:km "w: IFTTT"]]
+                 ;[:semicolon [:km "w: Netlify"]]
+                 ;[:z [:km "w: MDN"]]
+                 ;[:b [:km "w: Observable"]]
+                 ;[:m [:km "w: Meetup"]]
+                 ;[:comma [:km "w: Google Drive"]]
+                 ;[:period [:km "w: IFTTT"]]
                  ;[:spacebar :!COSr]]} ; Selection -> Google Translate
                  [:spacebar :!CTOSi]]} ; Loom cancel record
         {:des "ikey (symbols)"
@@ -373,7 +376,8 @@
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
                  [:m [:alfred "search lists" "nikivi.awesome.lists"]]
                  ;[:spacebar [:alfred "search PDFs" "nikivi.search.files"]]]}
-                 [:spacebar [:km "open: AskAI"]]]}
+                 [:spacebar [:km "open: ChatGPT"]]]}
+                 ;[:spacebar [:km "open: Ask"]]]}
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
                  [:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
@@ -509,6 +513,7 @@
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "edit: 1st Safari tab"]]
                  ;[:q [:km "open: Electron"]]
+                 ;[:q [:km "open: Safari Technology Preview"]]
                  [:q [:km "open: Chrome Canary"]]
                  ;[:q [:km "open: Zeplin"]]
                  [:w [:km "Save link"]]
@@ -693,7 +698,8 @@
                  [:f [:km "w: Reddit (all)"]]
                  [:g [:km "w: Alfred Forum"]]
                  [:h [:km "w: Product Hunt (new)"]]
-                 [:j [:km "w: Reddit (new)"]]
+                 ;[:j [:km "w: Reddit (new)"]]
+                 [:j [:km "open: Safari Technology Preview"]]
                  [:k [:km "w: GitHub (front page)"]]
                  [:l [:km "w: Lobsters (new)"]]
                  [:semicolon [:km "w: HN (new)"]]
@@ -835,7 +841,8 @@
                  ;[:t :!COS4] ; Screenshot -> CleanShot (cloud)
                  ;[:i [:km "w: Google Sheets"]]
                  [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
-                 [:o [:km "w: Google Docs"]]
+                 ;[:o [:km "w: Google Docs"]]
+                 [:o [:km "open: GraphQL"]]
                  [:open_bracket [:km "w: Google Slides"]]
                  [:close_bracket [:km "w: Beautiful.ai"]]
                  [:a :!TO4] ; CleanShot recording
@@ -844,9 +851,10 @@
                  [:g :!CO5] ; Start/stop ScreenFlow recording
                  [:h [:km "w: Roam Research"]]
                  [:j :!COS9] ; Raycast
+                 [:k [:km "open: Safari Technology Preview"]]
                  ;[:j [:km "w: YouTube"]]
-                 [:k [:km "w: GitHub"]]
-                 [:l [:km "w: Localhost"]]
+                 ;[:k [:km "w: GitHub"]]
+                 ;[:l [:km "w: Localhost"]]
                  [:semicolon [:km "w: StackBlitz"]]
                  [:quote [:km "w: Learn Anything"]]
                  [:b [:km "w: Digital Ocean"]]
