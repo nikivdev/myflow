@@ -188,6 +188,7 @@
                  [:spacebar :!CSOe]]} ; Selection -> YouTube
         {:des "wkey (apps)"
          :rules [:w-mode
+                 [:q [:km "open: GraphQL"]]
                  [:e [:km "open: Fantastical"]]
                  [:r [:km "open: Notion"]]
                  [:t [:km "open: Activity Monitor"]]
@@ -842,7 +843,7 @@
                  ;[:i [:km "w: Google Sheets"]]
                  [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  ;[:o [:km "w: Google Docs"]]
-                 [:o [:km "open: GraphQL"]]
+                 ;[:o [:km "open: GraphQL"]]
                  [:open_bracket [:km "w: Google Slides"]]
                  [:close_bracket [:km "w: Beautiful.ai"]]
                  [:a :!TO4] ; CleanShot recording

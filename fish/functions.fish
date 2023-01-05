@@ -21,6 +21,10 @@ function wb
     watchexec --restart --exts ts "tput reset && bun run $argv"
 end
 
+function wd
+    watchexec --restart --exts ts "tput reset && deno run $argv"
+end
+
 function wn
     watchexec --restart --exts ts "tput reset && node $argv"
 end
@@ -48,4 +52,4 @@ end
 # `go get -u github.com/spf13/cobra@latest
 # function gi
 #     go get -u github.com/leaanthony/clir@latest
-# en
+# end

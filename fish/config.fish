@@ -3,6 +3,8 @@
 # path
 
 fish_add_path ~/.bun/bin/
+fish_add_path ~/src/config/bin
+fish_add_path ~/src/config/bin/private
 # fish_add_path /opt/homebrew/bin
 # fish_add_path ~/.dotfiles/bin
 # fish_add_path $HOME/.cargo/bin # rust

@@ -1,5 +1,26 @@
 {
-  "editor.cursorSmoothCaretAnimation": "explicit",
+  // Color changes
+  "workbench.colorCustomizations": {
+    "[GitHub Light]": {
+      // "editorLineNumber.foreground": "#0d090979",
+      "editorLineNumber.foreground": "#ffffff",
+      "editor.lineHighlightBackground": "#ffffff",
+      "editorInlayHint.typeBackground": "#f1f9fd"
+    },
+    "[GitHub Dark Default]": {
+      "editorLineNumber.foreground": "#0c1118",
+      // "editorLineNumber.foreground": "#ded4d4",
+      "editor.lineHighlightBackground": "#0c1118"
+    }
+  },
+  "deno.inlayHints.enumMemberValues.enabled": false,
+  "deno.inlayHints.functionLikeReturnTypes.enabled": false,
+  "deno.inlayHints.parameterNames.enabled": "none",
+  "deno.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+  "deno.inlayHints.parameterTypes.enabled": false,
+  "deno.inlayHints.propertyDeclarationTypes.enabled": false,
+  "deno.inlayHints.variableTypes.enabled": false,
+  "deno.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
   "fish.path.fish": "/opt/homebrew/bin/fish",
   "fish.path.fish_indent": "/opt/homebrew/bin/fish_indent",
   // "editor.codeActionsOnSave": {
@@ -56,25 +77,9 @@
   "workbench.settings.editor": "json",
   "workbench.editor.showIcons": false,
   "workbench.settings.enableNaturalLanguageSearch": false, // formatting only supports LF line endings
-  "workbench.sideBar.location": "left",
+  "workbench.sideBar.location": "right",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
-  },
-  // Color changes
-  "workbench.colorCustomizations": {
-    "[GitHub Dark]": {
-      "editorLineNumber.foreground": "#23292f",
-      "editor.lineHighlightBackground": "#23292f"
-    },
-    "[GitHub Dark Default]": {
-      "editorLineNumber.foreground": "#0c1118",
-      "editor.lineHighlightBackground": "#0c1118"
-    },
-    "[GitHub Light]": {
-      // "editorLineNumber.foreground": "#E8E8E8",
-      "editorLineNumber.foreground": "#ffffff",
-      "editor.lineHighlightBackground": "#ffffff"
-    }
   },
   "window.autoDetectColorScheme": true,
   "window.restoreWindows": "all",
@@ -222,7 +227,7 @@
   "git.enableSmartCommit": true,
   "git.ignoreMissingGitWarning": true,
   // GitLens
-  // "gitlens.currentLine.format": "${message}",
+  "gitlens.currentLine.format": "${message}",
   // Extensions
   "extensions.ignoreRecommendations": true,
   "[jsonc]": {
@@ -254,5 +259,10 @@
   },
   "lldb.suppressUpdateNotifications": true,
   "terminal.integrated.defaultProfile.osx": "fish",
-  "window.zoomLevel": -1
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": false,
+  "window.zoomLevel": -2
 }
