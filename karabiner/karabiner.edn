@@ -861,10 +861,11 @@
                  ;[:l [:km "w: Localhost"]]
                  ;[:l [:km "w: Learn Anything"]]
                  ;[:semicolon [:km "w: StackBlitz"]]
-                 [:b [:km "w: Digital Ocean"]]
-                 [:n [:km "w: GCP"]]
-                 [:m [:km "w: AWS"]]
-                 [:comma [:km "w: Diagrams"]]
+                 [:-semicolon ["~/.kit/kar Test"]]
+                 ;[:b [:km "w: Digital Ocean"]]
+                 ;[:n [:km "w: GCP"]]
+                 ;[:m [:km "w: AWS"]]
+                 ;[:comma [:km "w: Diagrams"]]
                  [:period [:km "w: YouTube"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
 ]}
