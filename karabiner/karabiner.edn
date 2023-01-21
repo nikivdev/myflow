@@ -861,7 +861,7 @@
                  ;[:l [:km "w: Localhost"]]
                  ;[:l [:km "w: Learn Anything"]]
                  ;[:semicolon [:km "w: StackBlitz"]]
-                 [:-semicolon ["~/.kit/kar Test"]]
+                 [:semicolon ["~/.kit/kar Test"]]
                  ;[:b [:km "w: Digital Ocean"]]
                  ;[:n [:km "w: GCP"]]
                  ;[:m [:km "w: AWS"]]
