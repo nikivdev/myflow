@@ -91,7 +91,7 @@
         {:des "jsim"
          :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  ;[[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
-                 [[:j :semicolon] :!COS9] ; Raycast
+                 [[:j :semicolon] :!COST9] ; ScriptKit
                  [[:j :l] :!CTOSspacebar]]} ; Alfred
         {:des "ksim"
          :rules [[[:k :l] [:alfred "search dash" "com.kapeli.dash.workflow"]]
@@ -116,7 +116,6 @@
                  [:j [:km "edit: Aliases"]]
                  [:k [:km "edit: Zsh functions"]]
                  ;[:l [:km "Search current safari url in wiki"]]
-                 [:l [:km "proj: epictools.dev"]]
                  [:semicolon [:km "proj: Knowledge"]]
                  [:quote [:km "wiki: Summary"]]
                  [:n [:km "proj: Dotfiles"]]
@@ -194,13 +193,14 @@
                  [:t [:km "open: Activity Monitor"]]
                  ;[:i [:km "open: Instruments"]]
                  ;[:i [:km "open: Obsidian"]]
-                 [:i [:km "open: Dropcode"]]
+                 ;[:i [:km "open: Dropcode"]]
+                 [:i [:km "open: SnippetsLab"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:a [:km "open: Obsidian"]]
-                 [:d [:km "open: Postico"]]
-                 ;[:d [:km "open: TablePlus"]]
+                 ;[:d [:km "open: Postico"]]
+                 [:d [:km "open: TablePlus"]]
                  [:f [:km "open: 2Do"]]
                  ;[:g [:km "open: Linear"]]
                  [:g [:km "open: Height"]]
@@ -212,6 +212,7 @@
                  [:semicolon [:km "open: Xcode"]]
                  [:quote [:km "open: Console"]]
                  [:c [:km "open: Spotify"]]
+                 ;[:v [:km "open: HTTPie"]]
                  [:v [:km "open: Paw"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:n [:km "open: Sublime Text"]]
@@ -515,7 +516,8 @@
                  ;[:q [:km "edit: 1st Safari tab"]]
                  ;[:q [:km "open: Electron"]]
                  ;[:q [:km "open: Safari Technology Preview"]]
-                 [:q [:km "open: Chrome Canary"]]
+                 ;[:q [:km "open: Chrome Canary"]]
+                 [:q [:km "open: Chrome"]]
                  ;[:q [:km "open: Zeplin"]]
                  [:w [:km "Save link"]]
                  [:e :!CO8] ; Alfred clipboard history search
@@ -846,9 +848,10 @@
                  ;[:o [:km "open: GraphQL"]]
                  [:open_bracket [:km "w: Google Slides"]]
                  [:close_bracket [:km "w: Beautiful.ai"]]
-                 [:a :!TO4] ; CleanShot recording
+                 ;[:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
                  ;[:f :!CTOSg] ; Loom recording
+                 ;[:f [:km "open: ChatGPT"]]
                  [:g :!CO5] ; Start/stop ScreenFlow recording
                  [:h [:km "w: Roam Research"]]
                  [:j :!COS9] ; Raycast
@@ -856,8 +859,8 @@
                  ;[:j [:km "w: YouTube"]]
                  ;[:k [:km "w: GitHub"]]
                  ;[:l [:km "w: Localhost"]]
-                 [:semicolon [:km "w: StackBlitz"]]
-                 [:quote [:km "w: Learn Anything"]]
+                 ;[:l [:km "w: Learn Anything"]]
+                 ;[:semicolon [:km "w: StackBlitz"]]
                  [:b [:km "w: Digital Ocean"]]
                  [:n [:km "w: GCP"]]
                  [:m [:km "w: AWS"]]

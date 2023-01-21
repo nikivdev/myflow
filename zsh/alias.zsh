@@ -1,6 +1,7 @@
 # general
 alias g='gcloud'
-alias dev='pnpm run dev'
+# alias dev='pnpm run dev'
+alias dev='bun run dev'
 alias .='open .'
 # alias go="go1.19rc2"
 alias nr="pnpm run dev"
