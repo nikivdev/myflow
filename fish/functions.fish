@@ -18,19 +18,23 @@ function w
 end
 
 function wb
-    watchexec --restart --exts ts "tput reset && bun run $argv"
+    watchexec --restart --exts ts "tput reset && bun run $argv" --project-origin .
+end
+
+function wbk
+    watchexec --restart --exts ts "tput reset && bun run ../bin/$argv" --project-origin .
 end
 
 function wd
-    watchexec --restart --exts ts "tput reset && deno run $argv"
+    watchexec --restart --exts ts "tput reset && deno run $argv" --project-origin .
 end
 
 function wn
-    watchexec --restart --exts ts "tput reset && node $argv"
+    watchexec --restart --exts ts "tput reset && node $argv" --project-origin .
 end
 
 function wG
-    watchexec --restart --exts go "tput reset && go run $argv"
+    watchexec --restart --exts go "tput reset && go run $argv" --project-origin .
 end
 
 # r - run `cargo run` when rust files change

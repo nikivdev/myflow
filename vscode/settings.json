@@ -9,7 +9,7 @@
     },
     "[GitHub Dark Default]": {
       "editorLineNumber.foreground": "#0c1118",
-      // "editorLineNumber.foreground": "#ded4d4",
+      // "editorLineNumber.foreground": "#615e5ea7",
       "editor.lineHighlightBackground": "#0c1118"
     }
   },
@@ -266,5 +266,6 @@
   "totalTypeScript.hideBasicTips": false,
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "window.zoomLevel": -1
 }
