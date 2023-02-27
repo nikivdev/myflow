@@ -21,6 +21,10 @@ function wb
     watchexec --restart --exts ts "tput reset && bun run $argv" --project-origin .
 end
 
+function wbi
+    watchexec --restart --exts ts "tput reset && bun run index.ts" --project-origin .
+end
+
 function wbk
     watchexec --restart --exts ts "tput reset && bun run ../bin/$argv" --project-origin .
 end
@@ -33,8 +37,12 @@ function wn
     watchexec --restart --exts ts "tput reset && node $argv" --project-origin .
 end
 
-function wG
+function wgm
     watchexec --restart --exts go "tput reset && go run $argv" --project-origin .
+end
+
+function wgm
+    watchexec --restart --exts go "tput reset && go run main.go" --project-origin .
 end
 
 # r - run `cargo run` when rust files change

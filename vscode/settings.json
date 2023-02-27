@@ -62,12 +62,9 @@
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.eol": "\n",
-  // Workbench
-  "workbench.statusBar.visible": false,
-  "workbench.activityBar.visible": false,
   "workbench.layoutControl.enabled": false,
   "workbench.editor.enablePreviewFromQuickOpen": true,
-  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.colorTheme": "GitHub Light",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark Default",
   "workbench.list.horizontalScrolling": true,
@@ -254,18 +251,18 @@
   //   "markdown": false,
   //   "javascript": false
   // },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
   "lldb.suppressUpdateNotifications": true,
   "terminal.integrated.defaultProfile.osx": "fish",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "totalTypeScript.hideAllTips": false,
-  "totalTypeScript.hideBasicTips": false,
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": -1
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

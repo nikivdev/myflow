@@ -112,6 +112,7 @@
                  [:i [:km "edit: Likes"]]
                  [:o [:km "edit: Projects"]]
                  [:t [:km "edit: Git config"]]
+                 [:g [:km "edit: gitignore global"]]
                  [:h [:km "wiki: Used hotkeys"]]
                  [:j [:km "edit: Fish aliases"]]
                  [:k [:km "edit: Fish functions"]]
@@ -671,7 +672,9 @@
                  ;[:comma [:km "Play Spotify local song"]]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:1V6E19oxBxrOHYRkNYLlm5"]] ; Offline
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3R38IXWFcoxYBdUkmxaoyy"]] ; Rain
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2lF5acSU8Vu9292cthQmc5"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4G0m7oplySbleIlWeLu3vH"]] ; Focus song
+                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:58FDTnjuNlUMyLY1airrrD"]] ; Focus song
+                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2lF5acSU8Vu9292cthQmc5"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3jI7Yeg7a2d7BMc8CxABVM"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6eKOshIu2rtjm3HivUaCWh"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4tnWEXeAgZWTRULCkJ6IGL"]] ; Focus song
@@ -851,6 +854,7 @@
                  ;[:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
                  ;[:f :!CTOSg] ; Loom recording
+                 [:f :!CTOSg] ; Screen Studio recording
                  ;[:f [:km "open: ChatGPT"]]
                  [:g :!CO5] ; Start/stop ScreenFlow recording
                  [:h [:km "w: Roam Research"]]

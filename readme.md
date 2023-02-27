@@ -1,6 +1,6 @@
 # My config files for macOS [![Thanks](http://bit.ly/saythankss)](https://github.com/users/nikitavoloboev/sponsorship)
 
-> Zsh, Karabiner, VS Code, Sublime, Neovim, Nix
+> Fish, Karabiner, VS Code
 
 ![](https://i.imgur.com/li5tXYp.jpg)
 
