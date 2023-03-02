@@ -42,8 +42,10 @@ It will also install CLI tools & apps.
 
 [Suggestions](../../issues/) on how I can improve the these dotfiles or suggestions of new and awesome tools are welcome.
 
-## Thank you
+### Thanks
 
-You can support me on [GitHub](https://github.com/users/nikitavoloboev/sponsorship) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
+All contributions or ideas for how to improve the project are welcome.
 
-[![MIT](http://bit.ly/mitbadge)](license) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)
+You can support the project on [GitHub Sponsors](https://github.com/sponsors/nikitavoloboev) or see [other projects](https://nikiv.dev/projects).
+
+[![Thanks](https://bit.ly/saythankss)](https://github.com/sponsors/nikitavoloboev) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev) [![0BSD](https://img.shields.io/badge/license-0BSD-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://choosealicense.com/licenses/0bsd/)

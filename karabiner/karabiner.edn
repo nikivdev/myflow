@@ -203,10 +203,11 @@
                  ;[:d [:km "open: Postico"]]
                  [:d [:km "open: TablePlus"]]
                  [:f [:km "open: 2Do"]]
-                 ;[:g [:km "open: Linear"]]
                  [:g [:km "open: Height"]]
+                 [:h [:km "open: Zen"]]
+                 ;[:g [:km "open: Linear"]]
                  ;[:h [:km "open: Safari Technology Preview"]]
-                 [:h [:km "open: Android Emulator"]]
+                 ;[:h [:km "open: Android Emulator"]]
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code"]]
@@ -222,7 +223,8 @@
                  [:period [:km "open: Cypress"]]
                 ;;  [:spacebar :!CT7]]} ; Start Google search with selection
                  ;[:spacebar [:km "open: Learn Anything"]]]}
-                 [:spacebar [:km "Explain with ChatGPT"]]]}
+                 ;[:spacebar [:km "Explain with ChatGPT"]]]}
+                 [:spacebar [:km "open: Zen"]]]}
                  ;[:spacebar [:km "Explain with Ask"]]]}
         {:des "ekey (cmd)"
          :rules [:e-mode
@@ -358,6 +360,8 @@
                  [:6 :!C6]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:w :!CObackslash] ; 1Password search
+                 ;[:e [:km "Make 2Do task"]]
+                 [:e :!CTOS9]
                  [:e [:km "Make 2Do task"]]
                  [:r [:km "Make 2Do task with note as current URL"]]
                  [:t [:km "Make 2Do task with Safari title as name + note as current URL"]]
