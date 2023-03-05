@@ -60,6 +60,13 @@ function R
     cargo watch -q -x "run -q -- $argv"
 end
 
+# ga. - commit all with `.` as message
+function g.
+    git add .
+    git commit -m "."
+    git push
+end
+
 # gi - go get package
 # `go get -u github.com/spf13/cobra@latest
 # function gi
