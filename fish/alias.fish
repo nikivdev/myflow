@@ -17,5 +17,5 @@ alias pd="pnpm run dev" # TODO: make npm agnostic (there's github CLI for this)
 alias d="cd"
 alias dk="cd ~/Dropbox/Write/knowledge"
 alias da="cd ~/src"
-alias dot="cd ~/.dotfiles"
+alias dot="cd ~/src/config"
 alias dt='cd ~/test'

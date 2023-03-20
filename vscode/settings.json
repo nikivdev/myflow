@@ -27,6 +27,7 @@
   //   "source.organizeImports": true
   // },
   "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
   "editor.renderLineHighlight": "gutter",
   "editor.hideCursorInOverviewRuler": true,
   "editor.scrollBeyondLastLine": false,
@@ -263,6 +264,9 @@
   "workbench.statusBar.visible": false,
   "workbench.activityBar.visible": false,
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

@@ -7,13 +7,13 @@ export PATH="$HOME/.cargo/bin:$PATH"
 [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
 #### END FIG ENV VARIABLES ####
 source ~/.zsh_plugins.sh # Load zsh plugins (using antibody)
-source ~/.dotfiles/zsh/env.zsh
-source ~/.dotfiles/zsh/options.zsh
-source ~/.dotfiles/zsh/functions/functions.zsh
-source ~/.dotfiles/zsh/functions/fzf-functions.zsh
-source ~/.dotfiles/zsh/functions/git-functions.zsh
-source ~/.dotfiles/zsh/bindings.zsh
-source ~/.dotfiles/zsh/alias.zsh
+source ~/src/config/zsh/env.zsh
+source ~/src/config/zsh/options.zsh
+source ~/src/config/zsh/functions/functions.zsh
+source ~/src/config/zsh/functions/fzf-functions.zsh
+source ~/src/config/zsh/functions/git-functions.zsh
+source ~/src/config/zsh/bindings.zsh
+source ~/src/config/zsh/alias.zsh
 
 eval "$(fnm env --use-on-cd)"
 
@@ -72,3 +72,5 @@ export NVM_DIR="$HOME/.nvm"
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+eval "$(starship init zsh)"

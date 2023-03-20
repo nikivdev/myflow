@@ -1,4 +1,4 @@
-# testing
+# temp / testing
 
 # path
 fish_add_path ~/.bun/bin/

@@ -108,12 +108,13 @@
                  [:spacebar :!COSu]]} ; Selection -> HN
         {:des "3key (open files + projects)"
          :rules [:3-mode
-                 [:r [:km "proj: LA"]]
-                 [:i [:km "edit: Likes"]]
-                 [:o [:km "edit: Projects"]]
-                 [:t [:km "edit: Git config"]]
-                 [:g [:km "edit: gitignore global"]]
-                 [:h [:km "wiki: Used hotkeys"]]
+                 ;[:r [:km "proj: LA"]]
+                 ;[:i [:km "edit: Likes"]]
+                 [:o [:km "edit: GitHub Bio"]]
+                 ;[:o [:km "edit: Projects"]]
+                 ;[:t [:km "edit: Git config"]]
+                 ;[:g [:km "edit: gitignore global"]]
+                 ;[:h [:km "wiki: Used hotkeys"]]
                  [:j [:km "edit: Fish aliases"]]
                  [:k [:km "edit: Fish functions"]]
                  ;[:l [:km "Search current safari url in wiki"]]
@@ -383,6 +384,7 @@
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
                  [:m [:alfred "search lists" "nikivi.awesome.lists"]]
                  ;[:spacebar [:alfred "search PDFs" "nikivi.search.files"]]]}
+                 ;[:spacebar [:km "open: MacGPT"]]]}
                  [:spacebar [:km "open: ChatGPT"]]]}
                  ;[:spacebar [:km "open: Ask"]]]}
         {:des "capskey (todo + trello)"
@@ -521,8 +523,8 @@
                  ;[:q [:km "edit: 1st Safari tab"]]
                  ;[:q [:km "open: Electron"]]
                  ;[:q [:km "open: Safari Technology Preview"]]
-                 ;[:q [:km "open: Chrome Canary"]]
-                 [:q [:km "open: Chrome"]]
+                 [:q [:km "open: Chrome Canary"]]
+                 ;[:q [:km "open: Chrome"]]
                  ;[:q [:km "open: Zeplin"]]
                  [:w [:km "Save link"]]
                  [:e :!CO8] ; Alfred clipboard history search
