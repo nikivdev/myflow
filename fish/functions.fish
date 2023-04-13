@@ -17,6 +17,12 @@ function w
     end
 end
 
+# TODO: pass arg for extension, and also the command to rerun
+# for now `js` is hardcoded
+function W
+    watchexec --restart --exts js "tput reset && $argv" --project-origin .
+end
+
 function wb
     watchexec --restart --exts ts "tput reset && bun run $argv" --project-origin .
 end

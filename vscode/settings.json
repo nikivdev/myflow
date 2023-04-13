@@ -65,7 +65,7 @@
   "files.eol": "\n",
   "workbench.layoutControl.enabled": false,
   "workbench.editor.enablePreviewFromQuickOpen": true,
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "GitHub Dark Default",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark Default",
   "workbench.list.horizontalScrolling": true,
@@ -268,5 +268,6 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "window.zoomLevel": 1
 }

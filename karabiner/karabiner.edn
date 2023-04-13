@@ -89,13 +89,17 @@
         ;{:des "§ -> Karabiner on/off"
         ; :rules [[:non_us_backslash [:km "Karabiner on/off"]]]}
         {:des "jsim"
-         :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
-                 ;[[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
-                 [[:j :semicolon] :!COST9] ; ScriptKit
-                 [[:j :l] :!CTOSspacebar]]} ; Alfred
+         :rules [
+                 [[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
+                 ;[[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]] ; TODO:
+                 ;[[:j :semicolon] [:alfred "search dash" "com.kapeli.dash.workflow"]]
+                 [[:j :l] :!CTOSspacebar]
+                 ]} ; Alfred
         {:des "ksim"
-         :rules [[[:k :l] [:alfred "search dash" "com.kapeli.dash.workflow"]]
-                 [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]]}
+         :rules [
+                 [[:k :l] :!COS9] ; Raycast
+                 [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
+                 ]}
         {:des "2key (move + alfred)"
          :rules [:2-mode
                  [:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
@@ -204,7 +208,8 @@
                  ;[:d [:km "open: Postico"]]
                  [:d [:km "open: TablePlus"]]
                  [:f [:km "open: 2Do"]]
-                 [:g [:km "open: Height"]]
+                 ;[:g [:km "open: Height"]]
+                 [:g [:km "open: Things"]]
                  [:h [:km "open: Zen"]]
                  ;[:g [:km "open: Linear"]]
                  ;[:h [:km "open: Safari Technology Preview"]]
@@ -221,11 +226,11 @@
                  [:n [:km "open: Sublime Text"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
-                 [:period [:km "open: Cypress"]]
+                 [:period [:km "open: Cypress"]]]}
                 ;;  [:spacebar :!CT7]]} ; Start Google search with selection
                  ;[:spacebar [:km "open: Learn Anything"]]]}
                  ;[:spacebar [:km "Explain with ChatGPT"]]]}
-                 [:spacebar [:km "open: Zen"]]]}
+                 ;[:spacebar [:km "open: Zen"]]]}
                  ;[:spacebar [:km "Explain with Ask"]]]}
         {:des "ekey (cmd)"
          :rules [:e-mode
@@ -369,6 +374,7 @@
                  [:i [:alfred "search alfred" "nikivi.utilities" "?"]]
                  [:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
+                 [:s [:open "raycast://extensions/mattisssa/spotify-beta/search"]] ; Raycast Spotify Search
                  ;[:s [:alfred "search code" "nikivi.manage.notes"]]
                  [:d [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
                  [:f [:alfred "search folders" "nikivi.search.folders"]]
@@ -602,7 +608,7 @@
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
                  ;[:l [:km "open: Quill"]]
-                 ;[:l [:km "w: Element"]]
+                 [:l [:km "open: Element"]]
                  [:semicolon [:km "open: Slack"]]
                  [:c [:km "open: Contacts"]]
                  [:v [:km "open: Tweetbot"]]
@@ -806,7 +812,8 @@
                   [:z [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sclose_bracket :left_arrow]] ; -> style={}
                   ;[:x [:t :a :c :h :y :o :n :s :spacebar]] ; -> tachyons
                   ;[:c [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
-                  [:c [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
+                  ;[:c [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
+                  [:c [:spacebar :c :l :a :s :s :equal_sign :!Squote :!Squote :left_arrow]] ; -> class=""
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
                   [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]]]} ; -> typescript
         {:des "godot"
@@ -864,7 +871,7 @@
                  ;[:f [:km "open: ChatGPT"]]
                  [:g :!CO5] ; Start/stop ScreenFlow recording
                  [:h [:km "w: Roam Research"]]
-                 [:j :!COS9] ; Raycast
+                 ;[:j :!COS9] ; Raycast
                  [:k [:km "open: Safari Technology Preview"]]
                  ;[:j [:km "w: YouTube"]]
                  ;[:k [:km "w: GitHub"]]
