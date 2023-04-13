@@ -92,12 +92,12 @@
          :rules [
                  [[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  ;[[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]] ; TODO:
-                 ;[[:j :semicolon] [:alfred "search dash" "com.kapeli.dash.workflow"]]
+                 [[:j :semicolon] :!COS9] ; Raycast
                  [[:j :l] :!CTOSspacebar]
                  ]} ; Alfred
         {:des "ksim"
          :rules [
-                 [[:k :l] :!COS9] ; Raycast
+                 [[:k :l] [:alfred "search dash" "com.kapeli.dash.workflow"]]
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
                  ]}
         {:des "2key (move + alfred)"
