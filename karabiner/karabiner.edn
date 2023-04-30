@@ -38,12 +38,11 @@
              :comma-mode {:key :comma}
              :dot-mode {:key :period}
              :spacebar-mode {:key :spacebar}
-             :go-mode {:key :period :condi ["in-go" 1]}
-             :js-mode {:key :period :condi ["in-js" 1]}
-             :swift-mode {:key :period :condi ["in-swift" 1]}
+             :ts-mode {:key :period :condi ["in-ts" 1]}
              :rust-mode {:key :period :condi ["in-rust" 1]}
+             :swift-mode {:key :period :condi ["in-swift" 1]}
+             :go-mode {:key :period :condi ["in-go" 1]}
              :py-mode {:key :period :condi ["in-python" 1]}
-             :elixir-mode {:key :period :condi ["in-elixir" 1]}
              }
  :main [{:des "colonkey (shift)"
          :rules [:semicolon-mode
@@ -380,7 +379,8 @@
                  [:f [:alfred "search folders" "nikivi.search.folders"]]
                  [:g :!COS9] ; Raycast
                  ;[:g [:km "2Do with current url as note (github)"]]
-                 [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
+                 ;[:j [:alfred "run" "iansinnott.keyboardmaestro"]] ; TODO: move to nice key
+                 [:j [:alfred "search dash" "com.kapeli.dash.workflow"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
@@ -585,10 +585,11 @@
                  [:f [:km "Commit home"]]
                  ;[:f [:km "Commit learning"]]
                  ;[:j [[:km "JS Dash profile"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
-                 [:j [[:open "dash://.js:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
-                 ;[:j [[:open "dash://.jsts:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
-                 [:k [[:open "dash://.go:"] ["in-python" 0] ["in-go" 1] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Go
-                 [:l [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
+                 [:j [[:open "dash://.tsprofile:"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
+                 [:k [[:open "dash://.rustprofile:"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
+                 [:l [[:open "dash://.swiftprofile:"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
+                 [:semicolon [[:open "dash://.goprofile:"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
+                 ;[:l [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  [:c [:km "Commit code"]]
                  [:v [:km "Commit wiki"]]
                  ;[:n [[:open "dash://.rust:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 1] ["in-swift" 0]]] ; Rust
@@ -760,13 +761,14 @@
                  [:spacebar [:alfred "search history" "net.deanishe.alfred.safari"]]]}
         {:des "mkey (dash)"
          :rules [:m-mode
-                 [:3 [:alfred "search alfred" "nikivi.utilities" "d3 "]]
-                 [:q [:alfred "search alfred" "nikivi.utilities" "tldr "]]
+                 ;[:3 [:alfred "search alfred" "nikivi.utilities" "d3 "]]
+                 ;[:q [:alfred "search alfred" "nikivi.utilities" "tldr "]]
                  ;[:w [:alfred "search alfred" "nikivi.utilities" "django "]]
                  [:w [:alfred "search alfred" "nikivi.utilities" "ts "]]
                  [:e [:alfred "search alfred" "nikivi.utilities" "html "]]
-                 [:r [:alfred "search alfred" "nikivi.utilities" "react "]]
-                 [:a [:alfred "search alfred" "nikivi.utilities" "man "]]
+                 ;[:r [:alfred "search alfred" "nikivi.utilities" "react "]]
+                 [:a [:alfred "search alfred" "nikivi.utilities" "rust "]]
+                 ;[:a [:alfred "search alfred" "nikivi.utilities" "man "]]
                  ;[:s [:alfred "search alfred" "nikivi.utilities" "electron "]]
                  ;[:d [:alfred "search alfred" "nikivi.utilities" "docker "]]
                  [:f [:alfred "search alfred" "nikivi.utilities" "apple "]]
@@ -797,8 +799,8 @@
                   [:grave_accent_and_tilde [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
                   [:left_gui [:!St :h :a :n :k :s :spacebar]] ; -> Thanks
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]]]} ; -> Thank you.
-         {:des "jsdot"
-          :rules [:js-mode
+         {:des "tsdot"
+          :rules [:ts-mode
                   [:tab [:km "w: MDN"]]
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
                   ;[:a [:c :o :n :s :o :l :e :period :w :a :r :n :!S9 :!S0 :left_arrow]] ; -> console.warn()
@@ -844,10 +846,6 @@
           :rules[:rust-mode
                  [:a [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :left_arrow]] ; -> println!()
                  [:v [:r :u :s :t :spacebar]]]} ; -> rust
-        {:des "elixdot"
-          :rules[:elixir-mode
-                 [:a [:!Si :!So :period :p :u :t :s :!S9 :!S0 :left_arrow]] ; -> IO.puts()
-                 [:v [:e :l :i :x :i :r :spacebar]]]} ; -> elixir
         {:des "spacekey (websites)"
          :rules [:spacebar-mode
                  ;[:tab :!CO5] ; TODO: Configure ScreenFlow recording

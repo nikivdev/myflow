@@ -55,7 +55,7 @@ end
 # r <cmd> - cargo <cmd>
 function r
     if not set -q argv[1]
-        cargo watch -q -x "run -q"
+        cargo watch -q -- sh -c "tput reset && cargo run -q"
     else
         cargo $argv
     end

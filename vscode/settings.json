@@ -10,7 +10,8 @@
     "[GitHub Dark Default]": {
       "editorLineNumber.foreground": "#0c1118",
       // "editorLineNumber.foreground": "#615e5ea7",
-      "editor.lineHighlightBackground": "#0c1118"
+      "editor.lineHighlightBackground": "#0c1118",
+      "editorInlayHint.typeBackground": "#0d1116"
     }
   },
   "deno.inlayHints.enumMemberValues.enabled": false,
@@ -268,6 +269,5 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "window.zoomLevel": 1
+  }
 }
