@@ -10,8 +10,10 @@ source ~/src/config//fish/alias.fish
 source ~/src/config/fish/functions.fish
 
 # pnpm
-set -gx PNPM_HOME /Users/nikiv/Library/pnpm
-set -gx PATH "$PNPM_HOME" $PATH
+set -gx PATH /Users/nikiv/Library/pnpm $PATH
+
+# node
+fnm env --use-on-cd | source # https://github.com/Schniz/fnm#fish-shell setup
 
 # go
 set -x GOPATH (go env GOPATH)
