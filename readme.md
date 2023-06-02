@@ -2,23 +2,21 @@
 
 > Fish, Karabiner, VS Code
 
-![](https://i.imgur.com/li5tXYp.jpg)
+![](https://images.nikiv.dev/config-dark-23.png)
 
-> Light appearance. Prefer to use light themes as it makes text more readable during the day with natural light around.
+> Dark appearance.
 
-![](https://i.imgur.com/e1Ei3b1.jpg)
+![](https://images.nikiv.dev/config-light-23.png)
 
-> Dark appearance. Using [screenfetch](https://github.com/KittyKatt/screenFetch) to get OS details.
+> Light appearance. Prefer to use light themes during day as it makes text more readable with natural light around.
 
-I don't actually split editors like above. I code with each window maximized & switch quickly between windows/apps with Karabiner. Sometimes I use iPad with Sidecar on the side (for web dev) but mostly use one 16" MacBook screen.
-
-You can see my top used apps, Safari extensions and Alfred workflows [here](https://github.com/nikitavoloboev/my-mac-os). I also explain how I use the apps in detail there.
+You can see my top used apps, Safari extensions and Alfred workflows [here](https://github.com/nikitavoloboev/my-mac). I also explain how I use the apps in detail there.
 
 ## Clean install
 
 1. Boot latest macOS version. Remember that username is the name you want the home folder to be (by default its first name & last name).
 2. Go through [preferences](https://imgur.com/a/KoVAxFQ) & set everything up.
-3. Download & install [apps I use](https://github.com/nikitavoloboev/my-mac-os).
+3. Download & install [apps I use](https://github.com/nikitavoloboev/my-mac).
 4. Clone dotfiles & sync them.
 5. [Sync settings](https://github.com/zenangst/Syncalicious) for apps I use.
 
