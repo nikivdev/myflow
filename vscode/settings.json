@@ -14,6 +14,7 @@
       "editorInlayHint.typeBackground": "#0d1116"
     }
   },
+  "editor.inlayHints.enabled": "off",
   "deno.inlayHints.enumMemberValues.enabled": false,
   "deno.inlayHints.functionLikeReturnTypes.enabled": false,
   "deno.inlayHints.parameterNames.enabled": "none",
@@ -66,7 +67,7 @@
   "files.eol": "\n",
   "workbench.layoutControl.enabled": false,
   "workbench.editor.enablePreviewFromQuickOpen": true,
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "GitHub Dark Default",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark Default",
   "workbench.list.horizontalScrolling": true,
@@ -220,6 +221,7 @@
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.validate.enable": false,
   // Git
+  "git.mergeEditor": true,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.ignoreLimitWarning": true,
@@ -263,12 +265,12 @@
   },
   "git.openRepositoryInParentFolders": "never",
   "workbench.statusBar.visible": false,
-  "workbench.activityBar.visible": false,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": -1
+  "workbench.activityBar.visible": false,
+  "window.zoomLevel": 1
 }

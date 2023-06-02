@@ -21,3 +21,8 @@ set -x PATH $PATH (go env GOPATH)/bin
 
 # other
 __fish_cursor_xterm line # make cursor into thin line (doesn't make a difference in Warp.dev)
+
+# pnpm
+set -gx PNPM_HOME "/Users/nikiv/Library/pnpm"
+set -gx PATH "$PNPM_HOME" $PATH
+# pnpm end

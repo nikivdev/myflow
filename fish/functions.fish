@@ -35,12 +35,20 @@ function wbk
     watchexec --restart --exts ts "tput reset && bun run ../bin/$argv" --project-origin .
 end
 
+function wt
+    watchexec --restart --exts ts "tput reset && tsx $argv" --project-origin .
+end
+
 function wd
     watchexec --restart --exts ts "tput reset && deno run $argv" --project-origin .
 end
 
+# function wn
+#     watchexec --restart --exts ts "tput reset && node $argv" --project-origin .
+# end
+
 function wn
-    watchexec --restart --exts ts "tput reset && node $argv" --project-origin .
+    watchexec --restart --exts ts "tput reset && tsx $argv" --project-origin .
 end
 
 function wgm
