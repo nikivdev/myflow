@@ -36,14 +36,16 @@ It will also install CLI tools & apps.
 
 [Here](https://wiki.nikitavoloboev.xyz/unix/dotfiles) are dotfiles I got many ideas from and liked. I also mention [Nix configurations I liked](https://wiki.nikitavoloboev.xyz/operating-systems/linux/nixos).
 
-## Contributing
+## Contribute
 
-[Suggestions](../../issues/) on how I can improve the these dotfiles or suggestions of new and awesome tools are welcome.
+Have idea how to improve or something is broken?
 
-### Thanks
+Search for [existing issues](../../issues) or open [new one](../../issues/new/choose).
 
-All contributions or ideas for how to improve the project are welcome.
+## Thank you
 
-You can support the project on [GitHub Sponsors](https://github.com/sponsors/nikitavoloboev) or see [other projects](https://nikiv.dev/projects).
+You can support me on [GitHub](https://github.com/sponsors/nikitavoloboev) or look into [other projects](https://nikiv.dev/projects) I shared.
 
-[![Thanks](https://bit.ly/saythankss)](https://github.com/sponsors/nikitavoloboev) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev) [![0BSD](https://img.shields.io/badge/license-0BSD-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://choosealicense.com/licenses/0bsd/)
+I also have [personal Discord](https://discord.com/invite/TVafwaD23d) you can join for more indepth discussions.
+
+[![MIT](http://bit.ly/mitbadge)](https://choosealicense.com/licenses/mit/) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)

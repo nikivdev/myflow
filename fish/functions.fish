@@ -20,27 +20,27 @@ end
 # TODO: pass arg for extension, and also the command to rerun
 # for now `js` is hardcoded
 function W
-    watchexec --restart --exts js "tput reset && $argv" --project-origin .
+    watchexec --no-vcs-ignore --restart --exts js "tput reset && $argv" --project-origin .
 end
 
 function wb
-    watchexec --restart --exts ts "tput reset && bun run $argv" --project-origin .
+    watchexec --no-vcs-ignore --restart --exts ts "tput reset && bun run $argv" --project-origin .
 end
 
 function wbi
-    watchexec --restart --exts ts "tput reset && bun run index.ts" --project-origin .
+    watchexec --no-vcs-ignore --restart --exts ts "tput reset && bun run index.ts" --project-origin .
 end
 
 function wbk
-    watchexec --restart --exts ts "tput reset && bun run ../bin/$argv" --project-origin .
+    watchexec --no-vcs-ignore --restart --exts ts "tput reset && bun run ../bin/$argv" --project-origin .
 end
 
 function wt
-    watchexec --restart --exts ts "tput reset && tsx $argv" --project-origin .
+    watchexec --no-vcs-ignore --restart --exts ts "tput reset && tsx $argv" --project-origin .
 end
 
 function wd
-    watchexec --restart --exts ts "tput reset && deno run $argv" --project-origin .
+    watchexec --no-vcs-ignore --restart --exts ts "tput reset && deno run $argv" --project-origin .
 end
 
 # function wn
@@ -48,15 +48,15 @@ end
 # end
 
 function wn
-    watchexec --restart --exts ts "tput reset && tsx $argv" --project-origin .
+    watchexec --no-vcs-ignore --restart --exts ts "tput reset && tsx $argv" --project-origin .
 end
 
 function wgm
-    watchexec --restart --exts go "tput reset && go run $argv" --project-origin .
+    watchexec --no-vcs-ignore --restart --exts go "tput reset && go run $argv" --project-origin .
 end
 
 function wgm
-    watchexec --restart --exts go "tput reset && go run main.go" --project-origin .
+    watchexec --no-vcs-ignore --restart --exts go "tput reset && go run main.go" --project-origin .
 end
 
 # r - run `cargo run` when rust files change
@@ -87,11 +87,16 @@ end
 #     go get -u github.com/leaanthony/clir@latest
 # end
 
-# source .env files (https://gist.github.com/nikoheikkila/dd4357a178c8679411566ba2ca280fcc)
+# envsource - source .env files (https://gist.github.com/nikoheikkila/dd4357a178c8679411566ba2ca280fcc)
 function envsource
     for line in (cat $argv | grep -v '^#')
         set item (string split -m 1 '=' $line)
         set -gx $item[1] $item[2]
         echo "Exported key $item[1]"
     end
+end
+
+# pw <package.json command> - rerun command if .ts files change
+function pw
+    watchexec --no-vcs-ignore --restart --exts ts "tput reset && pnpm --silent run $argv" --project-origin .
 end
