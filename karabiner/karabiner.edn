@@ -862,7 +862,6 @@
                  ;[:t :!TOCp] ; Screenshot -> Imgur (auth)
                  ;[:t :!COS4] ; Screenshot -> CleanShot (cloud)
                  ;[:i [:km "w: Google Sheets"]]
-                 [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  ;[:o [:km "w: Google Docs"]]
                  ;[:o [:km "open: GraphQL"]]
                  [:open_bracket [:km "w: Google Slides"]]
@@ -875,15 +874,19 @@
                  [:g :!CO5] ; Start/stop ScreenFlow recording
                  [:h [:km "w: Roam Research"]]
                  ;[:j :!COS9] ; Raycast
-                 [:j [:km "open: Typefully"]]
+                 ;[:j [:km "open: Typefully"]] ; or start writing tweet
+                 [:j [:km "open: ChatGPT"]]
                  [:k [:km "open: Safari Technology Preview"]]
+                 [:l [:km "New tweet"]]
+                 [:semicolon [:km "Midjourney Imagine"]]
+                 [:n [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  ;[:j [:km "w: YouTube"]]
                  ;[:k [:km "w: GitHub"]]
                  ;[:l [:km "w: Localhost"]]
                  ;[:l [:km "w: Learn Anything"]]
                  ;[:semicolon :semicolon]
                  ;[:semicolon [:km "w: StackBlitz"]]
-                 [:semicolon ["~/.kit/kar Test"]]
+                 ;[:semicolon ["~/.kit/kar Test"]]
                  ;[:b [:km "w: Digital Ocean"]]
                  ;[:n [:km "w: GCP"]]
                  ;[:m [:km "w: AWS"]]

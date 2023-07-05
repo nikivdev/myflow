@@ -34,7 +34,7 @@ It will also install CLI tools & apps.
 
 ## Interesting dotfiles
 
-[Here](https://wiki.nikitavoloboev.xyz/unix/dotfiles) are dotfiles I got many ideas from and liked. I also mention [Nix configurations I liked](https://wiki.nikitavoloboev.xyz/operating-systems/linux/nixos).
+[Here](https://wiki.nikiv.dev/unix/dotfiles) are dotfiles I got many ideas from and liked. I also mention [Nix configurations I liked](https://wiki.nikiv.dev/operating-systems/linux/nixos#nix-configs-nixos).
 
 ## Contribute
 

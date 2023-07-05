@@ -11,7 +11,8 @@ alias pag="pnpm add -g" # install npm package globally
 
 # pnpm
 alias p="pnpm"
-alias pd="pnpm run dev" # TODO: make npm agnostic (there's github CLI for this)
+alias prd="pnpm run dev" # TODO: make npm agnostic (there's github CLI for this)
+alias pr="pnpm run"
 
 # cd places
 alias d="cd"
