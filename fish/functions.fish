@@ -69,6 +69,16 @@ function r
     end
 end
 
+# p - pnpm install dependencies
+# p <cmd> - pnpm <cmd>
+function p
+    if not set -q argv[1]
+        pnpm i
+    else
+        pnpm $argv
+    end
+end
+
 # R <flags or things to pass to CLI>
 function R
     cargo watch -q -x "run -q -- $argv"

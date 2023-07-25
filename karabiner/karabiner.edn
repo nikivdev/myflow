@@ -219,14 +219,16 @@
                  [:semicolon [:km "open: Xcode"]]
                  [:quote [:km "open: Console"]]
                  [:c [:km "open: Spotify"]]
-                 [:v [:km "open: HTTPie"]]
+                 ;[:v [:km "open: HTTPie"]]
+                 [:v [:km "open: TablePlus"]]
                  ;[:v [:km "open: RapidAPI"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:n [:km "open: Sublime Text"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
-                 [:spacebar [:km "open: Linear"]]
-                 [:period [:km "open: Commander One"]]]}
+                 [:spacebar [:km "open: TablePlus"]]]}
+                 ;[:spacebar [:km "open: Linear"]]
+                 ;[:period [:km "open: Commander One"]]
                  ;[:period [:km "open: Cypress"]]]}
                 ;;  [:spacebar :!CT7]]} ; Start Google search with selection
                  ;[:spacebar [:km "open: Learn Anything"]]]}
@@ -550,10 +552,11 @@
                  ;[:s [:km "open: Excalidraw"]]
                  [:d [:km "Save link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
-                 [:j [:km "edit: 1st Warp tab"]]
+                 ;[:j [:km "edit: 1st Warp tab"]]
+                 [:j [:km "open: Electron"]]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
-                 [:semicolon [:escape :!Sa :semicolon :return_or_enter]]
+                 ;[:semicolon [:escape :!Sa :semicolon :return_or_enter]]
                  ;[:semicolon [:km "open: MindNode"]]
                  ;[:semicolon [:km "open: Obsidian"]]
                  [:quote [:km "Goku Run"]]
@@ -564,7 +567,8 @@
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
-                 [:spacebar [:km "open: Excalidraw"]]]}
+                 ;[:spacebar [:km "open: Excalidraw"]]]}
+                 [:spacebar [:km "open: Electron"]]]}
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:q :!CT3] ; Search bartender menu items
@@ -864,6 +868,7 @@
                  ;[:i [:km "w: Google Sheets"]]
                  ;[:o [:km "w: Google Docs"]]
                  ;[:o [:km "open: GraphQL"]]
+                 [:i [:km "Midjourney Imagine"]]
                  [:open_bracket [:km "w: Google Slides"]]
                  [:close_bracket [:km "w: Beautiful.ai"]]
                  ;[:a :!TO4] ; CleanShot recording
@@ -871,14 +876,15 @@
                  ;[:f :!CTOSg] ; Loom recording
                  [:f :!CTOSg] ; Screen Studio recording
                  ;[:f [:km "open: ChatGPT"]]
-                 [:g :!CO5] ; Start/stop ScreenFlow recording
-                 [:h [:km "w: Roam Research"]]
+                 [:g [:km "web: GitHub Learn Anything"]]
+                 ;[:g :!CO5] ; Start/stop ScreenFlow recording
+                 ;[:h [:km "w: Roam Research"]]
                  ;[:j :!COS9] ; Raycast
                  ;[:j [:km "open: Typefully"]] ; or start writing tweet
-                 [:j [:km "open: ChatGPT"]]
+                 ;[:j [:km "open: ChatGPT"]]
+                 [:j [:km "New tweet"]]
                  [:k [:km "open: Safari Technology Preview"]]
-                 [:l [:km "New tweet"]]
-                 [:semicolon [:km "Midjourney Imagine"]]
+                 ;[:l [:km "New LA post"]]
                  [:n [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  ;[:j [:km "w: YouTube"]]
                  ;[:k [:km "w: GitHub"]]

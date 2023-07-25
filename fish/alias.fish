@@ -10,9 +10,9 @@ alias dw="deno task watch"
 alias pag="pnpm add -g" # install npm package globally
 
 # pnpm
-alias p="pnpm"
 alias prd="pnpm run dev" # TODO: make npm agnostic (there's github CLI for this)
 alias pr="pnpm run"
+alias pa="pnpm add"
 
 # cd places
 alias d="cd"
