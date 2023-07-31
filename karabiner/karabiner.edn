@@ -205,7 +205,8 @@
                  [:caps_lock [:km "open: Finder"]]
                  [:a [:km "open: Obsidian"]]
                  ;[:d [:km "open: Postico"]]
-                 [:d [:km "open: TablePlus"]]
+                 ;[:d [:km "open: TablePlus"]]
+                 [:d [:km "open: Beekeepr Studio Ultimate"]]
                  [:f [:km "open: 2Do"]]
                  [:g [:km "open: KusKus"]]
                  ;[:g [:km "open: Height"]]
@@ -226,7 +227,9 @@
                  [:n [:km "open: Sublime Text"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
-                 [:spacebar [:km "open: TablePlus"]]]}
+                 ;[:spacebar [:km "open: TablePlus"]]]}
+                 ;[:spacebar [:km "open: Dash"]]]}
+                 [:spacebar [:km "open: Beekeepr Studio Ultimate"]]]}
                  ;[:spacebar [:km "open: Linear"]]
                  ;[:period [:km "open: Commander One"]]
                  ;[:period [:km "open: Cypress"]]]}
@@ -375,7 +378,8 @@
                  ;[:e [:km "Make 2Do task"]]
                  [:r [:km "Make 2Do task with note as current URL"]]
                  [:t [:km "Make 2Do task with Safari title as name + note as current URL"]]
-                 [:i [:alfred "search alfred" "nikivi.utilities" "?"]]
+                 ;[:i [:alfred "search alfred" "nikivi.utilities" "?"]]
+                 [:i [:km "Search Dash app"]]
                  [:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
                  [:s [:open "raycast://extensions/mattisssa/spotify-beta/search"]] ; Raycast Spotify Search
@@ -385,7 +389,8 @@
                  [:g :!COS9] ; Raycast
                  ;[:g [:km "2Do with current url as note (github)"]]
                  ;[:j [:alfred "run" "iansinnott.keyboardmaestro"]] ; TODO: move to nice key
-                 [:j [:alfred "search dash" "com.kapeli.dash.workflow"]]
+                 ;[:j [:alfred "search dash" "com.kapeli.dash.workflow"]]
+                 [:j [:km "open: Dash"]]
                  ;[:j [:km "open: Typefully"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
@@ -553,7 +558,8 @@
                  [:d [:km "Save link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  ;[:j [:km "edit: 1st Warp tab"]]
-                 [:j [:km "open: Electron"]]
+                 ;[:j [:km "open: Electron"]]
+                 [:j [:km "open: Learn Anything (dev)"]]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
                  ;[:semicolon [:escape :!Sa :semicolon :return_or_enter]]
@@ -853,7 +859,7 @@
                 [:v [:s :w :i :f :t :spacebar]]]} ; -> swift
         {:des "rustdot"
           :rules[:rust-mode
-                 [:a [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :left_arrow]] ; -> println!()
+                 [:a [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow]] ; -> println!()
                  [:v [:r :u :s :t :spacebar]]]} ; -> rust
         {:des "spacekey (websites)"
          :rules [:spacebar-mode
