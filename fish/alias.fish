@@ -20,3 +20,6 @@ alias dk="cd ~/Dropbox/Write/knowledge"
 alias da="cd ~/src"
 alias dot="cd ~/src/config"
 alias dt='cd ~/test'
+
+# rust
+# alias rbnowarning="RUSTFLAGS="-A warnings" cargo build"

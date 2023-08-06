@@ -221,15 +221,17 @@
                  [:quote [:km "open: Console"]]
                  [:c [:km "open: Spotify"]]
                  ;[:v [:km "open: HTTPie"]]
-                 [:v [:km "open: TablePlus"]]
+                 ;[:v [:km "open: TablePlus"]]
                  ;[:v [:km "open: RapidAPI"]]
+                 [:v [:km "open: SQLiteFlow"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:n [:km "open: Sublime Text"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
                  ;[:spacebar [:km "open: TablePlus"]]]}
                  ;[:spacebar [:km "open: Dash"]]]}
-                 [:spacebar [:km "open: Beekeepr Studio Ultimate"]]]}
+                 ;[:spacebar [:km "open: Beekeepr Studio Ultimate"]]]}
+                 [:spacebar [:km "Copy text to ChatGPT"]]]}
                  ;[:spacebar [:km "open: Linear"]]
                  ;[:period [:km "open: Commander One"]]
                  ;[:period [:km "open: Cypress"]]]}
@@ -547,14 +549,16 @@
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
                  [:i :!Treturn_or_enter]
-                 [:o :!Oreturn_or_enter]
+                 ;[:o :!Oreturn_or_enter]
+                 [:o [:!Sreturn_or_enter :!Cs]]
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:caps_lock :!CTOu] ; Sip color picker
                  [:a [:km "open: Figma"]]
                  ;[:a [:km "open: Chrome Canary"]]
-                 [:s [:km "edit: 2nd Warp tab"]]
+                 ;[:s [:km "edit: 2nd Warp tab"]]
                  ;[:s [:km "open: Excalidraw"]]
+                 [:s [:!TOreturn_or_enter :!Cs]]
                  [:d [:km "Save link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  ;[:j [:km "edit: 1st Warp tab"]]
@@ -562,6 +566,7 @@
                  [:j [:km "open: Learn Anything (dev)"]]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
+                 [:semicolon :!Oreturn_or_enter]
                  ;[:semicolon [:escape :!Sa :semicolon :return_or_enter]]
                  ;[:semicolon [:km "open: MindNode"]]
                  ;[:semicolon [:km "open: Obsidian"]]
@@ -572,9 +577,9 @@
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
-                 ;[:spacebar :!CTq]]} ; Selection -> Web Searches
+                 [:spacebar :!CTq]]} ; Selection -> Web Searches
                  ;[:spacebar [:km "open: Excalidraw"]]]}
-                 [:spacebar [:km "open: Electron"]]]}
+                 ;[:spacebar [:km "Copy text to ChatGPT"]]]}
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:q :!CT3] ; Search bartender menu items
@@ -859,7 +864,10 @@
                 [:v [:s :w :i :f :t :spacebar]]]} ; -> swift
         {:des "rustdot"
           :rules[:rust-mode
-                 [:a [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow]] ; -> println!()
+                 [:a [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow :!Squote :!Sopen_bracket :!Sclose_bracket :right_arrow :comma :spacebar]] ; -> println!("{}", )
+                 [:s [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow :!Squote :!Sopen_bracket :!Ssemicolon :!Sslash :!Sclose_bracket :right_arrow :comma :spacebar]] ; -> println!("{:?}", );
+                 [:d [:a :s :s :e :r :t :!Shyphen :e :q :!S1 :!S9]] ; assert_eq!();
+                 [:f [:hyphen :!Speriod :spacebar]] ; ->
                  [:v [:r :u :s :t :spacebar]]]} ; -> rust
         {:des "spacekey (websites)"
          :rules [:spacebar-mode
@@ -888,10 +896,12 @@
                  ;[:j :!COS9] ; Raycast
                  ;[:j [:km "open: Typefully"]] ; or start writing tweet
                  ;[:j [:km "open: ChatGPT"]]
-                 [:j [:km "New tweet"]]
+                 [:h [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
+                 [:j [:open "raycast://extensions/loris/safari/cloud-tabs"]]
                  [:k [:km "open: Safari Technology Preview"]]
+                 [:l [:km "New tweet"]]
+                 [:semicolon [:open "raycast://extensions/loris/safari/search-history"]]
                  ;[:l [:km "New LA post"]]
-                 [:n [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  ;[:j [:km "w: YouTube"]]
                  ;[:k [:km "w: GitHub"]]
                  ;[:l [:km "w: Localhost"]]

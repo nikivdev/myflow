@@ -60,12 +60,44 @@ function wgm
 end
 
 # r - run `cargo run` when rust files change
-# r <cmd> - cargo <cmd>
 function r
     if not set -q argv[1]
         cargo watch -q -- sh -c "tput reset && cargo run -q"
     else
-        cargo $argv
+        cargo watch -q -- sh -c "tput reset && cargo run -q -- $argv"
+    end
+end
+
+# rb - put rust binary into PATH in debug
+function rb
+    set current_folder (basename (pwd))
+    cargo build
+    if test $status -eq 0
+        mv target/debug/$current_folder ~/src/config/bin
+    end
+end
+
+# R <cmd> - cargo <cmd>
+function R
+    cargo $argv
+end
+
+# rt - `cargo test` on rust file changes
+function rt
+    if not set -q argv[1]
+        cargo watch -q -- sh -c "tput reset && cargo test -q"
+    else
+        # cargo $argv
+    end
+end
+
+# n - `bun dev`
+# n <cmd> - `bun run ..`
+function n
+    if not set -q argv[1]
+        bun run dev
+    else
+        bun run $argv
     end
 end
 
