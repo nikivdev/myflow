@@ -12,6 +12,8 @@
 
 You can see my top used apps, Safari extensions and Alfred workflows [here](https://github.com/nikitavoloboev/my-mac). I also explain how I use the apps in detail there.
 
+<!-- ## File structure -->
+
 ## Clean install
 
 1. Boot latest macOS version. Remember that username is the name you want the home folder to be (by default its first name & last name).
@@ -38,14 +40,24 @@ It will also install CLI tools & apps.
 
 ## Contribute
 
-Have idea how to improve or something is broken?
+The tasks to do are outlined in [existing issues](../../issues) or [below](#tasks) (until I setup nice GitHub sync).
 
-Search for [existing issues](../../issues) or open [new one](../../issues/new/choose).
+If issue/idea you have is not there, [open new issue](../../issues/new/choose) or [start discussion](../../discussions).
 
-## Thank you
+Any PR with code/doc improvements is welcome. ✨
 
-You can support me on [GitHub](https://github.com/sponsors/nikitavoloboev) or look into [other projects](https://nikiv.dev/projects) I shared.
+There is also a [personal Discord](https://discord.com/invite/TVafwaD23d) you can join for more indepth discussions related to this repo or [others](https://github.com/nikitavoloboev#src).
 
-I also have [personal Discord](https://discord.com/invite/TVafwaD23d) you can join for more indepth discussions.
+## Tasks
+
+- use [chezmoi](https://www.chezmoi.io/)
+- remove magefile.go with chezmoi + ts/rust instead.
+- remove install script too. ts/rust instead.
+- use nix
+  - `bin` folder and `bin/private` folder is messy, should be done with nix
+
+### ♥️
+
+[Support on GitHub](https://github.com/sponsors/nikitavoloboev) or look into [other projects](https://nikiv.dev/projects).
 
 [![MIT](http://bit.ly/mitbadge)](https://choosealicense.com/licenses/mit/) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)
