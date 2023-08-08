@@ -1,4 +1,4 @@
-# My config files for macOS [![Thanks](http://bit.ly/saythankss)](https://github.com/users/nikitavoloboev/sponsorship)
+# My config files for macOS
 
 > Fish, Nix, Karabiner, VS Code
 
