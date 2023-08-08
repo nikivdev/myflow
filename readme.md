@@ -1,6 +1,6 @@
 # My config files for macOS [![Thanks](http://bit.ly/saythankss)](https://github.com/users/nikitavoloboev/sponsorship)
 
-> Fish, Karabiner, VS Code
+> Fish, Nix, Karabiner, VS Code
 
 ![](https://images.nikiv.dev/config-dark-23.png)
 
@@ -51,7 +51,7 @@ There is also a [personal Discord](https://discord.com/invite/TVafwaD23d) you ca
 ## Tasks
 
 - use [chezmoi](https://www.chezmoi.io/)
-- remove magefile.go with chezmoi + ts/rust instead.
+- replace magefile.go with chezmoi + ts/rust instead.
 - remove install script too. ts/rust instead.
 - use nix
   - `bin` folder and `bin/private` folder is messy, should be done with nix
