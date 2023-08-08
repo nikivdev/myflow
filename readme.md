@@ -12,7 +12,12 @@
 
 You can see my top used apps, Safari extensions and Alfred workflows [here](https://github.com/nikitavoloboev/my-mac). I also explain how I use the apps in detail there.
 
-<!-- ## File structure -->
+<!-- ## File structure
+
+- [fish](fish)
+- [git](git)
+- [karabiner](karabiner)
+- [macos](macos) -->
 
 ## Clean install
 
@@ -40,19 +45,19 @@ It will also install CLI tools & apps.
 
 ## Contribute
 
-The tasks to do are outlined in [existing issues](../../issues) or [below](#tasks) (until I setup nice GitHub sync).
+The tasks to do are outlined in [existing issues](../../issues) and in [tasks below](#tasks) (sorted by priority).
 
 If issue/idea you have is not there, [open new issue](../../issues/new/choose) or [start discussion](../../discussions).
 
 Any PR with code/doc improvements is welcome. ✨
 
-There is also a [personal Discord](https://discord.com/invite/TVafwaD23d) you can join for more indepth discussions related to this repo or [others](https://github.com/nikitavoloboev#src).
+Join [Discord](https://discord.com/invite/TVafwaD23d) for more indepth discussions on this repo and [others](https://github.com/nikitavoloboev#src).
 
 ## Tasks
 
 - use [chezmoi](https://www.chezmoi.io/)
-- replace magefile.go with chezmoi + ts/rust instead.
-- remove install script too. ts/rust instead.
+- replace magefile.go with chezmoi + ts/rust instead
+- remove install script too. ts/rust instead
 - use nix
   - `bin` folder and `bin/private` folder is messy, should be done with nix
 
