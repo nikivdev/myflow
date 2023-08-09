@@ -898,7 +898,8 @@
                  ;[:j :!COS9] ; Raycast
                  ;[:j [:km "open: Typefully"]] ; or start writing tweet
                  ;[:j [:km "open: ChatGPT"]]
-                 [:h [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
+                 ;[:h [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
+                 [:h [:km "w: HN submit"]]
                  [:j [:open "raycast://extensions/loris/safari/cloud-tabs"]]
                  [:k [:km "open: Safari Technology Preview"]]
                  [:l [:km "New tweet"]]
@@ -915,6 +916,9 @@
                  ;[:n [:km "w: GCP"]]
                  ;[:m [:km "w: AWS"]]
                  ;[:comma [:km "w: Diagrams"]]
-                 [:period [:km "New tweet with current URL"]]
+                 [:b [:km "w: Lobsters submit"]]
+                 [:n [:km "w: Reddit submit"]]
+                 [:m [:km "New tweet with current URL"]]
+                 [:period [:km "New Mastodon post"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
 ]}
