@@ -878,6 +878,7 @@
                  [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Screenshot -> Clipboard
                  [:r :!CS4] ; Screenshot -> ~/Desktop
+                 [:t [:km "w: YouTube submit"]]
                  ;[:t :!TOCp] ; Screenshot -> Imgur
                  ;[:t :!TOCp] ; Screenshot -> Imgur (auth)
                  ;[:t :!COS4] ; Screenshot -> CleanShot (cloud)
@@ -885,6 +886,8 @@
                  ;[:o [:km "w: Google Docs"]]
                  ;[:o [:km "open: GraphQL"]]
                  [:i [:km "Midjourney Imagine"]]
+                 [:o [:km "w: Stack Overflow question"]]
+                 ;[:p [:km "w: CodePen New"]]
                  [:open_bracket [:km "w: Google Slides"]]
                  [:close_bracket [:km "w: Beautiful.ai"]]
                  ;[:a :!TO4] ; CleanShot recording
