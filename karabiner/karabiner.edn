@@ -590,7 +590,7 @@
                  [:a [:km "Go to KM group of current app"]]
                  [:s [:km "Dismiss notifications"]]
                  [:h :!CSOa] ; Move window left
-                 [:j :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
+                 [:j :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  [:k :!COSf] ; Maximize window
                  [:l :!CSOd] ; Move window right
                  [:semicolon :!COSs] ; Move window between different screen & maximize (iPad)
@@ -915,6 +915,6 @@
                  ;[:n [:km "w: GCP"]]
                  ;[:m [:km "w: AWS"]]
                  ;[:comma [:km "w: Diagrams"]]
-                 [:period [:km "w: YouTube"]]
+                 [:period [:km "New tweet with current URL"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
 ]}
