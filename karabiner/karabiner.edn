@@ -217,7 +217,8 @@
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code Insiders"]]
-                 [:semicolon [:km "open: Xcode"]]
+                 [:semicolon [:km "open: VS Code"]]
+                 ;[:semicolon [:km "open: Xcode"]]
                  [:quote [:km "open: Console"]]
                  [:c [:km "open: Spotify"]]
                  ;[:v [:km "open: HTTPie"]]
@@ -231,6 +232,7 @@
                  ;[:spacebar [:km "open: TablePlus"]]]}
                  ;[:spacebar [:km "open: Dash"]]]}
                  ;[:spacebar [:km "open: Beekeepr Studio Ultimate"]]]}
+                 [:period [:km "open: Xcode"]]
                  [:spacebar [:km "Copy text to ChatGPT"]]]}
                  ;[:spacebar [:km "open: Linear"]]
                  ;[:period [:km "open: Commander One"]]
