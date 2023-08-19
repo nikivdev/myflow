@@ -200,7 +200,8 @@
                  ;[:i [:km "open: Obsidian"]]
                  ;[:i [:km "open: Dropcode"]]
                  ;[:i [:km "open: SnippetsLab"]]
-                 [:i [:km "open: Notes"]]
+                 ;[:i [:km "open: Notes"]]
+                 [:i [:km "open: OBS"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
@@ -218,7 +219,8 @@
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code Insiders"]]
-                 [:semicolon [:km "open: VS Code"]]
+                 ;[:semicolon [:km "open: VS Code"]]
+                 [:semicolon [:km "open: Cursor"]]
                  ;[:semicolon [:km "open: Xcode"]]
                  [:quote [:km "open: Console"]]
                  [:c [:km "open: Spotify"]]
@@ -234,8 +236,7 @@
                  ;[:spacebar [:km "open: Dash"]]]}
                  ;[:spacebar [:km "open: Beekeepr Studio Ultimate"]]]}
                  [:period [:km "open: Xcode"]]
-                 [:spacebar [:km "Copy text to ChatGPT"]]]}
-                 ;[:spacebar [:km "open: Linear"]]
+                 [:spacebar [:km "open: Linear"]]]}
                  ;[:period [:km "open: Commander One"]]
                  ;[:period [:km "open: Cypress"]]]}
                 ;;  [:spacebar :!CT7]]} ; Start Google search with selection
@@ -868,11 +869,11 @@
         {:des "rustdot"
           :rules[:rust-mode
                  [:a [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow :!Squote :!Sopen_bracket :!Sclose_bracket :right_arrow :comma :spacebar]] ; -> println!("{}", )
-                 [:s [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow :!Squote :!Sopen_bracket :!Ssemicolon :!Sslash :!Sclose_bracket :right_arrow :comma :spacebar]] ; -> println!("{:?}", );
-                 [:d [:a :s :s :e :r :t :!Shyphen :e :q :!S1 :!S9]] ; assert_eq!();
-                 [:f [:hyphen :!Speriod :spacebar]] ; ->
+                 [:s [:a :s :s :e :r :t :!Shyphen :e :q :!S1 :!S9]] ; assert_eq!();
+                 [:d [:hyphen :!Speriod :spacebar]] ; ->
+                 [:f [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow :!Squote :!Sopen_bracket :!Ssemicolon :!Sslash :!Sclose_bracket :right_arrow :comma :spacebar]] ; -> println!("{:?}", );
                  [:v [:r :u :s :t :spacebar]]]} ; -> rust
-        {:des "spacekey (websites)"
+        {:des "spacekey"
          :rules [:spacebar-mode
                  ;[:tab :!CO5] ; TODO: Configure ScreenFlow recording
                  [:q [:km "open: CleanShot"]]
@@ -886,16 +887,19 @@
                  ;[:i [:km "w: Google Sheets"]]
                  ;[:o [:km "w: Google Docs"]]
                  ;[:o [:km "open: GraphQL"]]
-                 [:i [:km "Midjourney Imagine"]]
+                 ;[:i [:km "Midjourney Imagine"]]
                  [:o [:km "w: Stack Overflow question"]]
                  ;[:p [:km "w: CodePen New"]]
                  [:open_bracket [:km "w: Google Slides"]]
                  [:close_bracket [:km "w: Beautiful.ai"]]
+                 [:a :!CTOSi] ; OBS mac video scene on
+                 [:s :!CTOSo] ; OBS black screen scene on
                  ;[:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
                  ;[:f :!CTOSg] ; Loom recording
-                 [:f :!CTOSg] ; Screen Studio recording
+                 ;[:f :!CTOSg] ; Screen Studio recording
                  ;[:f [:km "open: ChatGPT"]]
+                 [:f [:km "Copy text to ChatGPT"]]
                  [:g [:km "web: GitHub Learn Anything"]]
                  ;[:g :!CO5] ; Start/stop ScreenFlow recording
                  ;[:h [:km "w: Roam Research"]]

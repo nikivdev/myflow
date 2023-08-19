@@ -82,10 +82,11 @@ function R
     cargo $argv
 end
 
+# TODO: it skips doing doc-tests, have another function for it?
 # rt - `cargo test` on rust file changes
 function rt
     if not set -q argv[1]
-        cargo watch -q -- sh -c "tput reset && cargo test -q"
+        cargo watch -q -- sh -c "tput reset && cargo test -q --lib"
     else
         # cargo $argv
     end
