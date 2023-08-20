@@ -567,7 +567,8 @@
                  [:h [:km "Make markdown link from selection {link}"]]
                  ;[:j [:km "edit: 1st Warp tab"]]
                  ;[:j [:km "open: Electron"]]
-                 [:j [:km "open: Learn Anything (dev)"]]
+                 ;[:j [:km "open: Learn Anything (dev)"]]
+                 [:j [:!Sreturn_or_enter :!Cs]]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
                  [:semicolon :!Oreturn_or_enter]
@@ -871,7 +872,8 @@
                  [:a [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow :!Squote :!Sopen_bracket :!Sclose_bracket :right_arrow :comma :spacebar]] ; -> println!("{}", )
                  [:s [:a :s :s :e :r :t :!Shyphen :e :q :!S1 :!S9]] ; assert_eq!();
                  [:d [:hyphen :!Speriod :spacebar]] ; ->
-                 [:f [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow :!Squote :!Sopen_bracket :!Ssemicolon :!Sslash :!Sclose_bracket :right_arrow :comma :spacebar]] ; -> println!("{:?}", );
+                 ;[:f [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow :!Squote :!Sopen_bracket :!Ssemicolon :!Sslash :!Sclose_bracket :right_arrow :comma :spacebar]] ; -> println!("{:?}", );
+                 [:f [:l :o :g :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow]] ; -> log!();
                  [:v [:r :u :s :t :spacebar]]]} ; -> rust
         {:des "spacekey"
          :rules [:spacebar-mode
@@ -892,14 +894,16 @@
                  ;[:p [:km "w: CodePen New"]]
                  [:open_bracket [:km "w: Google Slides"]]
                  [:close_bracket [:km "w: Beautiful.ai"]]
-                 [:a :!CTOSi] ; OBS mac video scene on
-                 [:s :!CTOSo] ; OBS black screen scene on
+                 [:a [:km "OBS stream scene on"]]
+                 [:s [:km "OBS stream scene off"]]
+                 ;[:a :!CTOSi] ; OBS stream scene on
+                 ;[:s :!CTOSo] ; OBS stream scene off
                  ;[:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
                  ;[:f :!CTOSg] ; Loom recording
-                 ;[:f :!CTOSg] ; Screen Studio recording
                  ;[:f [:km "open: ChatGPT"]]
-                 [:f [:km "Copy text to ChatGPT"]]
+                 ;[:f [:km "Copy text to ChatGPT"]]
+                 [:f :!CTOSg] ; Screen Studio recording
                  [:g [:km "web: GitHub Learn Anything"]]
                  ;[:g :!CO5] ; Start/stop ScreenFlow recording
                  ;[:h [:km "w: Roam Research"]]
