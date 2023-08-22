@@ -247,10 +247,10 @@
     "command": "-editor.action.revealDefinitionAside",
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
-  {
-    "key": "cmd+j",
-    "command": "workbench.action.showAllEditors"
-  },
+  // {
+  //   "key": "cmd+j",
+  //   "command": "workbench.action.showAllEditors"
+  // },
   {
     "key": "cmd+m",
     "command": "workbench.action.quickOpenTerm"

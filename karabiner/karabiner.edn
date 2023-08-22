@@ -219,10 +219,10 @@
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code Insiders"]]
+                 [:semicolon [:km "open: Cursor Nightly"]]
+                 ;[:semicolon [:km "open: Cursor"]]
                  ;[:semicolon [:km "open: VS Code"]]
-                 [:semicolon [:km "open: Cursor"]]
-                 ;[:semicolon [:km "open: Xcode"]]
-                 [:quote [:km "open: Console"]]
+                 ;[:quote [:km "open: Console"]]
                  [:c [:km "open: Spotify"]]
                  ;[:v [:km "open: HTTPie"]]
                  ;[:v [:km "open: TablePlus"]]
@@ -236,6 +236,7 @@
                  ;[:spacebar [:km "open: Dash"]]]}
                  ;[:spacebar [:km "open: Beekeepr Studio Ultimate"]]]}
                  [:period [:km "open: Xcode"]]
+                 ;[:period [:km "open: VS Code Insiders"]]
                  [:spacebar [:km "open: Linear"]]]}
                  ;[:period [:km "open: Commander One"]]
                  ;[:period [:km "open: Cypress"]]]}
