@@ -919,10 +919,10 @@
                  ;[:h [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  ;[:h [:km "w: HN submit"]]
                  [:h [:open "raycast://extensions/loris/safari/search-history"]]
-                 [:j [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
-                 [:semicolon [:open "raycast://extensions/loris/safari/cloud-tabs"]]
+                 [:j [:open "raycast://extensions/loris/safari/cloud-tabs"]]
                  [:k [:km "open: Safari Technology Preview"]]
                  [:l [:km "New tweet"]]
+                 [:semicolon [:open "raycast://extensions/loris/safari/search-bookmarks"]]
                  ;[:l [:km "New LA post"]]
                  ;[:j [:km "w: YouTube"]]
                  ;[:k [:km "w: GitHub"]]
