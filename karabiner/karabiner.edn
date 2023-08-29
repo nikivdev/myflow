@@ -562,6 +562,7 @@
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:caps_lock :!CTOu] ; Sip color picker
                  [:a [:km "open: Figma"]]
+                 [:s [:km "open: Learn Anything (dev)"]]
                  ;[:a [:km "open: Chrome Canary"]]
                  ;[:s [:km "edit: 2nd Warp tab"]]
                  ;[:s [:km "open: Excalidraw"]]
