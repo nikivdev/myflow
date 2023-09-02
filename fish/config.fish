@@ -5,6 +5,8 @@ fish_add_path ~/.bun/bin/
 fish_add_path ~/src/config/bin
 fish_add_path ~/src/config/bin/private
 
+fish_add_path ~/.local/share/solana/install/active_release/bin
+
 # source
 source ~/src/config//fish/alias.fish
 source ~/src/config/fish/functions.fish

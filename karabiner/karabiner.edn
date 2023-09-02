@@ -549,9 +549,11 @@
                  ;[:q [:km "edit: 1st Safari tab"]]
                  ;[:q [:km "open: Electron"]]
                  ;[:q [:km "open: Safari Technology Preview"]]
-                 [:q [:km "open: Chrome Canary"]]
+                 ;[:q [:km "open: Chrome Canary"]]
+                 ;[:q [:km "open: Figma"]]
                  ;[:q [:km "open: Chrome"]]
                  ;[:q [:km "open: Zeplin"]]
+                 [:q [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  [:w [:km "Save link"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
@@ -561,8 +563,9 @@
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:caps_lock :!CTOu] ; Sip color picker
-                 [:a [:km "open: Figma"]]
-                 [:s [:km "open: Learn Anything (dev)"]]
+                 [:a [:km "open: Chrome Canary"]]
+                 [:s [:km "open: Figma"]]
+                 ;[:s [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  ;[:a [:km "open: Chrome Canary"]]
                  ;[:s [:km "edit: 2nd Warp tab"]]
                  ;[:s [:km "open: Excalidraw"]]
