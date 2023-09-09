@@ -1,4 +1,4 @@
-alias a="exa" # list files
+alias a="eza" # list files
 alias cwd='pwd | pbcopy'
 alias v="mv" # move files/folders or rename
 alias sf="source ~/.config/fish/config.fish" # source fish config
