@@ -17,6 +17,14 @@ function w
     end
 end
 
+function e
+    if not set -q argv[1]
+        open -a /Applications/Zed.app .
+    else
+        open -a /Applications/Zed.app $argv
+    end
+end
+
 # TODO: pass arg for extension, and also the command to rerun
 # for now `js` is hardcoded
 function W
