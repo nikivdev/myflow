@@ -9,27 +9,35 @@ end
 
 # w - open current path in VSCode
 # w <path> - open path in VSCode
+#function w
+#    if not set -q argv[1]
+#        code-insiders .
+#    else
+#        code-insiders $argv
+#    end
+#end
+
 function w
     if not set -q argv[1]
-        code-insiders .
+        zed .
     else
-        code-insiders $argv
+        zed $argv
     end
 end
 
-function e
+function W
     if not set -q argv[1]
-        open -a /Applications/Zed.app .
+        open -a /Applications/Cursor\ Nightly.app .
     else
-        open -a /Applications/Zed.app $argv
+        open -a /Applications/Cursor\ Nightly.app $argv
     end
 end
 
 # TODO: pass arg for extension, and also the command to rerun
 # for now `js` is hardcoded
-function W
-    watchexec --no-vcs-ignore --restart --exts js "tput reset && $argv" --project-origin .
-end
+#function W
+#    watchexec --no-vcs-ignore --restart --exts js "tput reset && $argv" --project-origin .
+#end
 
 function wb
     watchexec --no-vcs-ignore --restart --exts ts "tput reset && bun run $argv" --project-origin .
