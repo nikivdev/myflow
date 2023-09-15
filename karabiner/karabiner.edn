@@ -307,7 +307,7 @@
                  ;[:l [:km "open: Reeder"]]
                  [:b [:km "Edit keyboard shortcuts"]]
                  [:n [:km "open: ScreenFlow"]]
-                 [:m [:km "open: OBS"]]
+                 [:m [:km "open: Music"]]
                  [:comma [:km "open: Arq"]]
                  [:period [:km "open: Final Cut Pro"]]
                  ;[:spacebar :!COSx]]} ; Selection -> Reddit

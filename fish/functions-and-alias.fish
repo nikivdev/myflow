@@ -171,6 +171,21 @@ function pw
 end
 
 # Aliases
+# cd places
+alias d="cd"
+alias dk="cd ~/Dropbox/Write/knowledge"
+alias da="cd ~/src"
+alias dot="cd ~/src/config"
+alias dt='cd ~/test'
+alias de="cd ~/Desktop"
+
+# rust
+# alias rbnowarning="RUSTFLAGS="-A warnings" cargo build"
+
+# run code fast
+alias :ts="cd ~/src/ts && bun dev"
+
+# other
 alias a="eza" # list files
 alias cwd='pwd | pbcopy'
 alias v="mv" # move files/folders or rename
@@ -181,16 +196,3 @@ alias wgi="watchexec --restart --exts go \"tput reset && go install .\""
 alias wg="watchexec --restart --exts go \"tput reset && go run .\""
 alias dw="deno task watch"
 alias pag="pnpm add -g" # install npm package globally
-
-# cd places
-alias d="cd"
-alias dk="cd ~/Dropbox/Write/knowledge"
-alias da="cd ~/src"
-alias dot="cd ~/src/config"
-alias dt='cd ~/test'
-
-# rust
-# alias rbnowarning="RUSTFLAGS="-A warnings" cargo build"
-
-# run code fast
-alias :ts="cd ~/src/ts && bun dev"

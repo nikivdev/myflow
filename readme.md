@@ -45,21 +45,13 @@ It will also install CLI tools & apps.
 
 ## Contribute
 
-The tasks to do are outlined in [existing issues](../../issues) and in [tasks below](#tasks) (sorted by priority).
+The tasks to do are outlined in [GitHub issues](../../issues) and in [todo.md](todo.md) (sorted by priority).
 
 If issue/idea you have is not there, [open new issue](../../issues/new/choose) or [start discussion](../../discussions).
 
 Any PR with code/doc improvements is welcome. ✨
 
 Join [Discord](https://discord.com/invite/TVafwaD23d) for more indepth discussions on this repo and [others](https://github.com/nikitavoloboev#src).
-
-## Tasks
-
-- use [chezmoi](https://www.chezmoi.io/)
-- replace magefile.go with chezmoi + ts/rust instead
-- remove install script too. ts/rust instead
-- use nix
-  - `bin` folder and `bin/private` folder is messy, should be done with nix
 
 ### ♥️
 
