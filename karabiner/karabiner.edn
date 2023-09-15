@@ -119,7 +119,6 @@
                  ;[:g [:km "edit: gitignore global"]]
                  ;[:h [:km "wiki: Used hotkeys"]]
                  [:j [:km "edit: Fish aliases"]]
-                 [:k [:km "edit: Fish functions"]]
                  ;[:l [:km "Search current safari url in wiki"]]
                  [:semicolon [:km "proj: Wiki"]]
                  [:quote [:km "wiki: Summary"]]
@@ -583,11 +582,13 @@
                  ;[:semicolon [:escape :!Sa :semicolon :return_or_enter]]
                  ;[:semicolon [:km "open: MindNode"]]
                  ;[:semicolon [:km "open: Obsidian"]]
-                 [:quote [:km "Goku Run"]]
+                 ;[:quote [:km "Goku Run"]]
+                 [:quote [:km "edit: Fish functions and alias"]]
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]
                  [:m :!Sreturn_or_enter]
                  [:comma  [:km "Add safari link to selected markdown text"]]
+                 ;[:comma [:km "edit: Fish Functions"]]
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
                  [:spacebar :!CTq]]} ; Selection -> Web Searches
@@ -595,7 +596,7 @@
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
         {:des "gkey (actions)"
          :rules [:g-mode
-                 [:q :!CT3] ; Search bartender menu items
+                 ;[:q :!CT3] ; Search bartender menu items
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:caps_lock [:km "Go to KM group of current app from picklist"]]
                  [:a [:km "Go to KM group of current app"]]
@@ -668,21 +669,26 @@
                  [:comma [:alfred "show_search_online" "com.vdesabou.spotify.mini.player"]] ; TODO: split up further into binds for direct searches of tracks/artists/all
                  [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]]}
-        {:des "ckey (run + dots)"
+        {:des "ckey (run code / open files)"
          :rules [:c-mode
                  [:tab [:km "proj: Learning"]]
                  [:u [:km "run: Rust"]]
                  [:i [:km "run: Julia"]] ; TODO: maybe use Pluto.jl notebook
                  [:o [:km "run: Deno"]]
-                 [:a [:km "Clone repo to ~/clones and open with VS Code"]]
+                 ;[:a [:km "Clone repo to ~/clones and open with VS Code"]]
+                 [:a [:km "Clone repo to ~/clones and open with Zed"]]
                  [:s [:km "Clone repo to ~/clones"]]
+                 [:d [:km "Clone repo to ~/clones and open with Cursor Nightly"]]
                  ;[:d [:km "Clone repo to ~/src/clones and open with VS Code"]] ; TODO: open with Xcode
-                 [:j [:km "run: Bash"]]
-                 [:k [:km "run: Go"]]
-                 [:l [:km "run: Python"]]
-                 [:semicolon [:alfred "search learning" "nikivi.private.directories"]]
+                 ;[:j [:km "run: Bash"]]
+                 ;[:k [:km "run: Go"]]
+                 ;[:l [:km "run: Python"]]
+                 [:j [:km "edit: TS"]]
+                 [:l [:km "edit: Fish config"]]
+                 [:semicolon [:km "edit: Fish functions and alias"]]
+                 ;[:semicolon [:alfred "search learning" "nikivi.private.directories"]]
                  [:quote [:km "proj: Go"]]
-                 [:n [:km "run: Node"]]
+                 ;[:n [:km "run: Node"]]
                  [:m [:km "run: Swift"]]
                  [:period [:km "edit: Dotfiles Magefile"]]
                  [:spacebar :!CSOy]]} ; Selection -> Stack Overflow
@@ -841,9 +847,10 @@
                   ;[:a [:c :o :n :s :o :l :e :period :w :a :r :n :!S9 :!S0 :left_arrow]] ; -> console.warn()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
-                  [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
+                  [:f [:f :u :n :c :t :i :o :n :spacebar]] ; -> function
                   ;[:f [:!Cf :c :o :n :s :o :l :e :period :w :a :r :n :!S9 :return_or_enter]] ; -> search console.warn( in file
-                  [:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
+                  [:g [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
+                  ;[:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
                   [:j [:right_arrow :spacebar :equal_sign :spacebar]] ; -> =
                   [:k [:right_arrow :spacebar :!Sopen_bracket :return_or_enter]] ; -> {  }
                   [:z [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sclose_bracket :left_arrow]] ; -> style={}

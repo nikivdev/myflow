@@ -17,6 +17,16 @@ end
 #    end
 #end
 
+# TODO: replace it with CLI that will autocomplete from `package.json scripts` as you type
+# with fzf matching
+function :
+    if not set -q argv[1]
+        bun dev
+    else
+        bun $argv
+    end
+end
+
 function w
     if not set -q argv[1]
         zed .
@@ -159,3 +169,28 @@ end
 function pw
     watchexec --no-vcs-ignore --restart --exts ts "tput reset && pnpm --silent run $argv" --project-origin .
 end
+
+# Aliases
+alias a="eza" # list files
+alias cwd='pwd | pbcopy'
+alias v="mv" # move files/folders or rename
+alias sf="source ~/.config/fish/config.fish" # source fish config
+alias rr="rm -rf"
+alias md="mkdir"
+alias wgi="watchexec --restart --exts go \"tput reset && go install .\""
+alias wg="watchexec --restart --exts go \"tput reset && go run .\""
+alias dw="deno task watch"
+alias pag="pnpm add -g" # install npm package globally
+
+# cd places
+alias d="cd"
+alias dk="cd ~/Dropbox/Write/knowledge"
+alias da="cd ~/src"
+alias dot="cd ~/src/config"
+alias dt='cd ~/test'
+
+# rust
+# alias rbnowarning="RUSTFLAGS="-A warnings" cargo build"
+
+# run code fast
+alias :ts="cd ~/src/ts && bun dev"
