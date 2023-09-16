@@ -196,3 +196,4 @@ alias wgi="watchexec --restart --exts go \"tput reset && go install .\""
 alias wg="watchexec --restart --exts go \"tput reset && go run .\""
 alias dw="deno task watch"
 alias pag="pnpm add -g" # install npm package globally
+alias :i="bun i"
