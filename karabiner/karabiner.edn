@@ -684,6 +684,7 @@
                  ;[:k [:km "run: Go"]]
                  ;[:l [:km "run: Python"]]
                  [:j [:km "edit: TS"]]
+                 [:k [:km "edit: TS todo"]]
                  [:l [:km "edit: Fish config"]]
                  [:semicolon [:km "edit: Fish functions and alias"]]
                  ;[:semicolon [:alfred "search learning" "nikivi.private.directories"]]

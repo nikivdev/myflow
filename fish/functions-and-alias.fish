@@ -173,9 +173,8 @@ end
 # Aliases
 # cd places
 alias d="cd"
-alias dk="cd ~/Dropbox/Write/knowledge"
 alias da="cd ~/src"
-alias dot="cd ~/src/config"
+alias dg="cd ~/src/config"
 alias dt='cd ~/test'
 alias de="cd ~/Desktop"
 
@@ -195,5 +194,4 @@ alias md="mkdir"
 alias wgi="watchexec --restart --exts go \"tput reset && go install .\""
 alias wg="watchexec --restart --exts go \"tput reset && go run .\""
 alias dw="deno task watch"
-alias pag="pnpm add -g" # install npm package globally
 alias :i="bun i"
