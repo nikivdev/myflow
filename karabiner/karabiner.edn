@@ -691,7 +691,10 @@
                  [:quote [:km "proj: Go"]]
                  ;[:n [:km "run: Node"]]
                  [:m [:km "run: Swift"]]
-                 [:period [:km "edit: Dotfiles Magefile"]]
+                 [:comma [:km "edit: Config todo"]]
+                 [:period [:km "edit: LA todo"]]
+                 [:slash [:km "edit: KusKus todo"]]
+                 ;[:period [:km "edit: Dotfiles Magefile"]]
                  [:spacebar :!CSOy]]} ; Selection -> Stack Overflow
         {:des "vkey (media)"
          :rules [:v-mode
