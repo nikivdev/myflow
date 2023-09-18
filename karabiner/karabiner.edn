@@ -923,7 +923,8 @@
                  ;[:f [:km "open: ChatGPT"]]
                  ;[:f [:km "Copy text to ChatGPT"]]
                  [:f :!CTOSg] ; Screen Studio recording
-                 [:g [:km "web: GitHub Learn Anything"]]
+                 [:g [:km "web: GitHub (personal)"]]
+                 [:h [:km "web: GitHub Learn Anything"]]
                  ;[:g :!CO5] ; Start/stop ScreenFlow recording
                  ;[:h [:km "w: Roam Research"]]
                  ;[:j :!COS9] ; Raycast
