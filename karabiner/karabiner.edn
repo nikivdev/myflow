@@ -20,7 +20,6 @@
              ;:t-mode {:key :t}
              :i-mode {:key :i}
              :o-mode {:key :o}
-             :caps-mode {:key :caps_lock}
              :a-mode {:key :a}
              :s-mode {:key :s}
              :d-mode {:key :d}
@@ -83,6 +82,8 @@
                  [:!Ssemicolon :semicolon]]}
         {:des "left cmd -> cmd+tab"
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
+        {:des "caps (alone) -> escape"
+         :rules [:caps_lock ["caps-mode" 1] nil {:afterup ["caps-mode" 0] :alone :escape}]}
         ;{:des "right cmd -> Alfred"
         ; :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         ;{:des "§ -> Karabiner on/off"
@@ -409,7 +410,13 @@
                  ;[:spacebar [:km "open: Ask"]]]}
         {:des "capskey (common words / phrases / emojis)"
          :rules [:caps-mode
-                  [:semicolon [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
+                  [:w [:!Sn :i :k :i :t :a]] ; -> Nikita
+                  [:e [:n :i :k :i :t :a :!S2 :n :i :k :i :v :period :d :e :v]] ; -> nikita@nikiv.dev
+                  [:j [:km "paste: ♥️"]] ; -> ♥️
+                  [:k [:km "paste: Thanks ♥️"]] ; -> Thanks ♥️
+                  [:semicolon [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
+                  [:u [:u :p :d :a :t :e :spacebar]] ; -> update
+                  [:p [:p :l :e :a :s :e :spacebar]] ; -> please
                  ;[:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
                  ;[:2 :!TO2] ; Screenshot -> Clipboard
                  ;[:3 :!TO3] ; Screenshot -> Annotate
@@ -842,8 +849,7 @@
                   [:spacebar [:n :i :k :i :t :a :!S2 :n :i :k :i :v :period :d :e :v]] ; -> nikita@nikiv.dev
                   [:y [:p :l :e :a :s :e :spacebar]] ; -> please
                   [:u [:u :p :d :a :t :e :spacebar]] ; -> update
-                  ;[:spacebar [:!St :h :a :n :k :s :spacebar]]]} ; -> Thanks ♥️
-                  [:spacebar [:km "paste: Thanks ♥️"]]]} ; -> Thanks ♥️
+                  [:spacebar [:km "paste: Thanks ♥️"]]]} ; -> Thanks ♥️ (TODO: change to something code related and useful)
          {:des "tsdot"
           :rules [:ts-mode
                   [:tab [:km "w: MDN"]]
