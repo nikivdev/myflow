@@ -9,6 +9,10 @@ fish_add_path ~/.local/share/solana/install/active_release/bin
 # node version switcher
 fnm env --use-on-cd | source # https://github.com/Schniz/fnm#fish-shell setup
 
+# edgedb
+# TODO: don't hard code /nikiv/ (how to do ~/ in fish?)
+source "/Users/nikiv/Library/Application Support/edgedb/env"
+
 # go
 set -x GOPATH (go env GOPATH)
 set -x PATH $PATH (go env GOPATH)/bin

@@ -407,39 +407,40 @@
                  ;[:spacebar [:km "open: MacGPT"]]]}
                  [:spacebar [:km "open: ChatGPT"]]]}
                  ;[:spacebar [:km "open: Ask"]]]}
-        {:des "capskey (todo + trello)"
+        {:des "capskey (common words / phrases / emojis)"
          :rules [:caps-mode
-                 [:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
-                 [:2 :!TO2] ; Screenshot -> Clipboard
-                 [:3 :!TO3] ; Screenshot -> Annotate
-                 [:4 :!TO9] ; Picture of screen -> Clipboard
-                 [:5 :!TO0] ; Picture of screen -> ~/Desktop
-                 [:w [:km "wiki: My workflow"]]
-                 [:e [:km "edit: Private notes"]]
-                 [:r [:km "wiki: Rules"]]
-                 [:t [:km "wiki: Processes"]]
-                 [:u [:km "Open 2Do Buy"]]
-                 [:i [:km "Open 2Do Fix"]]
-                 [:o [:km "Open 2Do Tools"]]
-                 [:p [:km "Open 2Do Repeat"]]
-                 [:open_bracket [:km "w: Goodreads (currently reading)"]]
-                 [:close_bracket [:km "w: Goodreads (next)"]]
-                 [:s [:km "Open 2Do Wiki"]]
-                 [:d [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
-                 [:f [:km "Search 2Do"]]
-                 [:g [:km "Open 2Do Life"]]
-                 [:h [:open "notion://nikitavoloboev/Learn-05c0eac7be904e0da89cd8a3bf7ab509"]]
-                 [:j [:km "Open 2Do Today"]]
-                 [:k [:km "Open 2Do GitHub"]]
-                 [:l [:km "Open 2Do Later"]]
-                 [:semicolon [:km "Open 2Do Starred"]]
+                  [:semicolon [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
+                 ;[:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
+                 ;[:2 :!TO2] ; Screenshot -> Clipboard
+                 ;[:3 :!TO3] ; Screenshot -> Annotate
+                 ;[:4 :!TO9] ; Picture of screen -> Clipboard
+                 ;[:5 :!TO0] ; Picture of screen -> ~/Desktop
+                 ;[:w [:km "wiki: My workflow"]]
+                 ;[:e [:km "edit: Private notes"]]
+                 ;[:r [:km "wiki: Rules"]]
+                 ;[:t [:km "wiki: Processes"]]
+                 ;[:u [:km "Open 2Do Buy"]]
+                 ;[:i [:km "Open 2Do Fix"]]
+                 ;[:o [:km "Open 2Do Tools"]]
+                 ;[:p [:km "Open 2Do Repeat"]]
+                 ;[:open_bracket [:km "w: Goodreads (currently reading)"]]
+                 ;[:close_bracket [:km "w: Goodreads (next)"]]
+                 ;[:s [:km "Open 2Do Wiki"]]
+                 ;[:d [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
+                 ;[:f [:km "Search 2Do"]]
+                 ;[:g [:km "Open 2Do Life"]]
+                 ;[:h [:open "notion://nikitavoloboev/Learn-05c0eac7be904e0da89cd8a3bf7ab509"]]
+                 ;[:j [:km "Open 2Do Today"]]
+                 ;[:k [:km "Open 2Do GitHub"]]
+                 ;[:l [:km "Open 2Do Later"]]
+                 ;[:semicolon [:km "Open 2Do Starred"]]
                  ;[:quote [:km "Open 2Do Other"]] ; TODO: remove once its empty
-                 [:c [:km "Look back"]]
-                 [:v [:km "wiki: Goals"]]
-                 [:b [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
-                 [:n [:km "Open 2Do Clean"]]
-                 [:m [:km "Open 2Do Work"]]
-                 [:comma [:km "Open 2Do LA"]]
+                 ;[:c [:km "Look back"]]
+                 ;[:v [:km "wiki: Goals"]]
+                 ;[:b [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
+                 ;[:n [:km "Open 2Do Clean"]]
+                 ;[:m [:km "Open 2Do Work"]]
+                 ;[:comma [:km "Open 2Do LA"]]
                  [:period [:km "Open 2Do Recent"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
@@ -829,20 +830,20 @@
                  [:a [:n :i :k :i :t :a :v :o :l :o :b :o :e :v ]]]} ; -> nikitavoloboev
          {:des "dotkey (1-3, q-u, caps, tab)"
           :rules [:dot-mode
-                  [:1 [:!Sc :l :o :s :e :spacebar :!S3]] ; -> Close #
-                  [:2 [:!Sr :e :f :spacebar :!S3]] ; -> Ref #
-                  [:3 [:!Sf :i :x :spacebar :!S3]] ; -> Fix #
+                  [:1 [:c :l :o :s :e :spacebar :!S3]] ; -> close #
+                  [:2 [:r :e :f :spacebar :!S3]] ; -> ref #
+                  [:3 [:f :i :x :spacebar :!S3]] ; -> fix #
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
-                  [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
+                  [:w [:km "Comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
-                  [:r [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
-                  [:t [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE:
-                  [:y [:p :l :e :a :s :e :spacebar]] ; -> please
-                  [:u [:u :p :d :a :t :e :spacebar]] ; -> update
+                  [:r [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE:
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:grave_accent_and_tilde [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
-                  [:left_gui [:!St :h :a :n :k :s :spacebar]] ; -> Thanks
-                  [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]]]} ; -> Thank you.
+                  [:spacebar [:n :i :k :i :t :a :!S2 :n :i :k :i :v :period :d :e :v]] ; -> nikita@nikiv.dev
+                  [:y [:p :l :e :a :s :e :spacebar]] ; -> please
+                  [:u [:u :p :d :a :t :e :spacebar]] ; -> update
+                  ;[:spacebar [:!St :h :a :n :k :s :spacebar]]]} ; -> Thanks ♥️
+                  [:spacebar [:km "paste: Thanks ♥️"]]]} ; -> Thanks ♥️
          {:des "tsdot"
           :rules [:ts-mode
                   [:tab [:km "w: MDN"]]
