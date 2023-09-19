@@ -410,14 +410,14 @@
                  ;[:spacebar [:km "open: Ask"]]]}
         {:des "capskey (common words / phrases / emojis)"
          :rules [:caps-mode
-                  [:w [:!Sn :i :k :i :t :a]] ; -> Nikita
+                  [:w [:km "paste: That worked, thanks ♥️"]]
                   [:e [:n :i :k :i :t :a :!S2 :n :i :k :i :v :period :d :e :v]] ; -> nikita@nikiv.dev
+                  [:r [:n :i :k :i :t :a :period :v :o :l :o :b :o :e :v :!S2 :g :m :a :i :l :period :c :o :m]] ; -> nikita.voloboev@gmail.com
                   [:s [:km "paste: ✨"]] ; -> ✨
-                  [:t [:t :h :a :t :spacebar :w :o :r :k :e :d :comma :spacebar :t :h :a :n :k :s]] ; -> that worked, thanks
-                  [:j [:t :h :a :n :k :s]] ; -> thanks
-                  [:k [:km "paste: ♥️"]] ; -> ♥️
-                  [:l [:km "paste: Thanks ♥️"]] ; -> Thanks ♥️
-                  [:semicolon [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
+                  [:f [:km "paste: ♥️"]] ; -> ♥️
+                  [:j [:km "paste: Thanks ♥️"]]
+                  [:n [:!Sn :i :k :i :t :a]] ; -> Nikita
+                  [:period [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
                   [:u [:u :p :d :a :t :e :spacebar]] ; -> update
                   [:p [:p :l :e :a :s :e :spacebar]] ; -> please
                  ;[:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
