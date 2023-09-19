@@ -83,7 +83,7 @@
         {:des "left cmd -> cmd+tab"
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
         {:des "caps (alone) -> escape"
-         :rules [:caps_lock ["caps-mode" 1] nil {:afterup ["caps-mode" 0] :alone :escape}]}
+         :rules [[:caps_lock ["caps-mode" 1] nil {:afterup ["caps-mode" 0] :alone :escape}]]}
         ;{:des "right cmd -> Alfred"
         ; :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         ;{:des "§ -> Karabiner on/off"
