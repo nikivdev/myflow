@@ -82,8 +82,10 @@
                  [:!Ssemicolon :semicolon]]}
         {:des "left cmd -> cmd+tab"
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
-        {:des "caps (alone) -> escape"
-         :rules [[:caps_lock ["caps-mode" 1] nil {:afterup ["caps-mode" 0] :alone :escape}]]}
+        ; TODO: for some reason if you do it this way, caps lock doesn't always trigger.. makes it unuseable
+        ; forced to use simple modification in karabiner GUI (caps_lock -> escape)
+        ;{:des "caps (alone) -> escape"
+         ;:rules [[:caps_lock ["caps-mode" 1] nil {:afterup ["caps-mode" 0] :alone :escape}]]}
         ;{:des "right cmd -> Alfred"
         ; :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         ;{:des "§ -> Karabiner on/off"
