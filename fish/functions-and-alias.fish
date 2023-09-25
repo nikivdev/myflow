@@ -27,7 +27,7 @@ function :
     end
 end
 
-function w
+function W
     if not set -q argv[1]
         zed .
     else
@@ -35,7 +35,7 @@ function w
     end
 end
 
-function W
+function w
     if not set -q argv[1]
         open -a /Applications/Cursor\ Nightly.app .
     else
@@ -177,6 +177,7 @@ alias da="cd ~/src"
 alias dg="cd ~/src/config"
 alias dt='cd ~/test'
 alias de="cd ~/Desktop"
+alias ds="cd ~/try"
 
 # rust
 # alias rbnowarning="RUSTFLAGS="-A warnings" cargo build"

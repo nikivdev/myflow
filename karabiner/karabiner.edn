@@ -139,16 +139,26 @@
                  [:k [:km "list: Alfred workflows"]]
                  [:l [:km "list: Command line tools"]]
                  [:n [:km "list: Events"]]]}
-        {:des "tabkey (websites)"
+        {:des "tabkey (common words / phrases / emojis)"
          :rules [:tab-mode
+                  [:e [:n :i :k :i :t :a :!S2 :n :i :k :i :v :period :d :e :v]] ; -> nikita@nikiv.dev
+                  [:r [:n :i :k :i :t :a :period :v :o :l :o :b :o :e :v :!S2 :g :m :a :i :l :period :c :o :m]] ; -> nikita.voloboev@gmail.com
+                  [:s [:km "paste: ✨"]] ; -> ✨
+                  ;[:j [:km "paste: Thanks ♥️"]]
+                  [:j [:km "paste: Telegram (personal)️"]]
+                  [:k [:km "paste: Cal.com (30 min)️"]]
+                  [:l [:km "paste: Cal.com (15 min)️"]]
+                  [:n [:!Sn :i :k :i :t :a]] ; -> Nikita
+                  [:u [:u :p :d :a :t :e :spacebar]] ; -> update
+                  [:p [:p :l :e :a :s :e :spacebar]]]} ; -> please
                  ;[:j :!SOTw] ; Replies
                  ;[:k :!SOTf] ; App specific
                  ;[:l :!SOTr] ; Personal
-                 [:o [:km "Lowercase and dash separate text"]]
-                 [:j [:km "w: nikiv.dev"]]
-                 [:k [:km "w: GitLab"]]
-                 [:l [:km "w: Repl.it"]]
-                 [:period [:km "w: CodeSandbox"]]]}
+                 ;[:o [:km "Lowercase and dash separate text"]]
+                 ;[:j [:km "w: nikiv.dev"]]
+                 ;[:k [:km "w: GitLab"]]
+                 ;[:l [:km "w: Repl.it"]]
+                 ;[:period [:km "w: CodeSandbox"]]]}
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:3 :!CS3]
@@ -196,8 +206,9 @@
          :rules [:w-mode
                  [:q [:km "open: GraphQL"]]
                  [:e [:km "open: Fantastical"]]
+                 ;[:r [:km "open: Pathfinder"]]
                  [:r [:km "open: Notion"]]
-                 [:t [:km "open: Activity Monitor"]]
+                 ;[:t [:km "open: Activity Monitor"]]
                  ;[:i [:km "open: Instruments"]]
                  ;[:i [:km "open: Obsidian"]]
                  ;[:i [:km "open: Dropcode"]]
@@ -218,11 +229,13 @@
                  [:g [:km "open: Notes"]]
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
-                 [:l [:km "open: Zed"]]
-                 [:semicolon [:km "open: Cursor Nightly"]]
+                 ;[:l [:km "open: Zed"]]
+                 [:l [:km "open: Cursor Nightly"]]
+                 [:semicolon [:km "open: Zed"]]
                  [:period [:km "open: VS Code Insiders"]]
                  [:c [:km "open: Spotify"]]
-                 [:v [:km "open: HTTPie"]]
+                 ;[:v [:km "open: HTTPie"]]
+                 [:v [:km "open: Pathfinder"]]
                  ;[:v [:km "open: TablePlus"]]
                  ;[:v [:km "open: RapidAPI"]]
                  ;[:v [:km "open: SQLiteFlow"]]
@@ -379,7 +392,7 @@
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:w :!CObackslash] ; 1Password search
                  ;[:e [:km "Make 2Do task"]]
-                 [:e :!CTOS9] ; search npm packages
+                 [:e [:open "raycast://extensions/loris/safari/search-bookmarks"]]
                  ;[:e [:km "open: Typefully"]]
                  ;[:e [:km "Make 2Do task"]]
                  [:r [:km "Make 2Do task with note as current URL"]]
@@ -404,21 +417,20 @@
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:b [:km "Add 2Do with current url as note (github)"]]
-                 [:n [:alfred "search lists" "nikivi.learn.anything"]]
-                 [:m [:alfred "search lists" "nikivi.awesome.lists"]]
+                 [:n :!CTOS9] ; search npm packages
+                 ;[:n [:alfred "search lists" "nikivi.learn.anything"]]
+                 ;[:m [:alfred "search lists" "nikivi.awesome.lists"]]
                  ;[:spacebar [:alfred "search PDFs" "nikivi.search.files"]]]}
                  ;[:spacebar [:km "open: MacGPT"]]]}
                  [:spacebar [:km "open: ChatGPT"]]]}
                  ;[:spacebar [:km "open: Ask"]]]}
         {:des "capskey (common words / phrases / emojis)"
          :rules [:caps-mode
-                  [:w [:km "paste: That worked, thanks ♥️"]]
-                  [:e [:n :i :k :i :t :a :!S2 :n :i :k :i :v :period :d :e :v]] ; -> nikita@nikiv.dev
-                  [:r [:n :i :k :i :t :a :period :v :o :l :o :b :o :e :v :!S2 :g :m :a :i :l :period :c :o :m]] ; -> nikita.voloboev@gmail.com
                   [:s [:km "paste: ✨"]] ; -> ✨
                   [:f [:km "paste: ♥️"]] ; -> ♥️
                   [:j [:km "paste: Thanks ♥️"]]
                   [:n [:!Sn :i :k :i :t :a]] ; -> Nikita
+                  ;[:period [:t :h :a :n :k :spacebar :y :o :u]] ; -> thank you
                   [:period [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
                   [:u [:u :p :d :a :t :e :spacebar]] ; -> update
                   [:p [:p :l :e :a :s :e :spacebar]] ; -> please
@@ -558,9 +570,10 @@
                  ;[:q [:km "open: Safari Technology Preview"]]
                  ;[:q [:km "open: Chrome Canary"]]
                  ;[:q [:km "open: Figma"]]
+                 [:q [:km "open: Framer"]]
                  ;[:q [:km "open: Chrome"]]
                  ;[:q [:km "open: Zeplin"]]
-                 [:q [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
+                 ;[:q [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  ;[:w [:km "Save link"]]
                  ;[:w [:km "open: Figma"]]
                  [:w [:km "open: Figma"]]
@@ -580,7 +593,9 @@
                  ;[:a [:km "open: Chrome Canary"]]
                  ;[:s [:km "edit: 2nd Warp tab"]]
                  ;[:s [:km "open: Excalidraw"]]
-                 [:s [:!TOreturn_or_enter :!Cs]]
+                 ;[:s [:!TOreturn_or_enter :!Cs]]
+                 ;[:s [:km "open: Pixave"]]
+                 [:s [:km "open: Eagle"]]
                  [:d [:km "Save link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  ;[:j [:km "edit: 1st Warp tab"]]
@@ -928,8 +943,11 @@
                  ;[:p [:km "w: CodePen New"]]
                  [:open_bracket [:km "w: Google Slides"]]
                  [:close_bracket [:km "w: Beautiful.ai"]]
-                 [:a [:km "OBS stream scene on"]]
-                 [:s [:km "OBS stream scene off"]]
+                 ;[:a [:km "OBS stream scene on"]]
+                 ;[:s [:km "OBS stream scene off"]]
+                 [:a [:open "raycast://extensions/loris/safari/cloud-tabs"]]
+                 [:s [:km "paste: ♥️"]] ; -> ♥️
+                 ;[:s [:t :h :a :n :k :s]] ; -> thanks
                  ;[:a :!CTOSi] ; OBS stream scene on
                  ;[:s :!CTOSo] ; OBS stream scene off
                  ;[:a :!TO4] ; CleanShot recording
@@ -948,10 +966,12 @@
                  ;[:h [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  ;[:h [:km "w: HN submit"]]
                  [:h [:open "raycast://extensions/loris/safari/search-history"]]
-                 [:j [:open "raycast://extensions/loris/safari/cloud-tabs"]]
+                 [:j [:open "raycast://extensions/loris/safari/search-bookmarks"]]
                  [:k [:km "open: Safari Technology Preview"]]
                  [:l [:km "New tweet"]]
-                 [:semicolon [:open "raycast://extensions/loris/safari/search-bookmarks"]]
+                 [:semicolon [:t :h :a :n :k :s]] ; -> thanks
+                 ;[:semicolon [:km "paste: Thanks ♥️"]]
+                 [:quote [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
                  ;[:l [:km "New LA post"]]
                  ;[:j [:km "w: YouTube"]]
                  ;[:k [:km "w: GitHub"]]
@@ -967,6 +987,7 @@
                  [:b [:km "w: Lobsters submit"]]
                  [:n [:km "w: Reddit submit"]]
                  [:m [:km "New tweet with current URL"]]
+                 [:period [:km "paste: that worked, thanks"]]
                  ;[:period [:km "New Mastodon post"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
 ]}
