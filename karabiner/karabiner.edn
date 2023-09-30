@@ -206,7 +206,6 @@
          :rules [:w-mode
                  [:q [:km "open: GraphQL"]]
                  [:e [:km "open: Fantastical"]]
-                 ;[:r [:km "open: Pathfinder"]]
                  [:r [:km "open: Notion"]]
                  ;[:t [:km "open: Activity Monitor"]]
                  ;[:i [:km "open: Instruments"]]
@@ -229,13 +228,11 @@
                  [:g [:km "open: Notes"]]
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
-                 ;[:l [:km "open: Zed"]]
                  [:l [:km "open: Cursor Nightly"]]
-                 [:semicolon [:km "open: Zed"]]
-                 [:period [:km "open: VS Code Insiders"]]
+                 [:semicolon [:km "open: Cursor"]]
                  [:c [:km "open: Spotify"]]
                  ;[:v [:km "open: HTTPie"]]
-                 [:v [:km "open: Pathfinder"]]
+                 [:v [:km "open: Linear"]]
                  ;[:v [:km "open: TablePlus"]]
                  ;[:v [:km "open: RapidAPI"]]
                  ;[:v [:km "open: SQLiteFlow"]]
@@ -243,13 +240,12 @@
                  [:n [:km "open: Sublime Text"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
+                 [:period [:km "open: Xcode (beta)"]]
+                 [:spacebar [:km "open: Pathfinder"]]]}
                  ;[:spacebar [:km "open: TablePlus"]]]}
                  ;[:spacebar [:km "open: Dash"]]]}
                  ;[:spacebar [:km "open: Beekeepr Studio Ultimate"]]]}
-                 ;[:period [:km "open: Xcode"]]
-                 [:period [:km "open: SnippetsLab"]]
                  ;[:period [:km "open: VS Code Insiders"]]
-                 [:spacebar [:km "open: Linear"]]]}
                  ;[:period [:km "open: Commander One"]]
                  ;[:period [:km "open: Cypress"]]]}
                 ;;  [:spacebar :!CT7]]} ; Start Google search with selection
@@ -566,8 +562,6 @@
                  ;[:q [:km "open: Photos"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "edit: 1st Safari tab"]]
-                 ;[:q [:km "open: Electron"]]
-                 ;[:q [:km "open: Safari Technology Preview"]]
                  ;[:q [:km "open: Chrome Canary"]]
                  ;[:q [:km "open: Figma"]]
                  [:q [:km "open: Framer"]]
@@ -595,11 +589,10 @@
                  ;[:s [:km "open: Excalidraw"]]
                  ;[:s [:!TOreturn_or_enter :!Cs]]
                  ;[:s [:km "open: Pixave"]]
-                 [:s [:km "open: Eagle"]]
+                 ;[:s [:km "open: Eagle"]]
                  [:d [:km "Save link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  ;[:j [:km "edit: 1st Warp tab"]]
-                 ;[:j [:km "open: Electron"]]
                  ;[:j [:km "open: Learn Anything (dev)"]]
                  ;[:j [:!Sreturn_or_enter :!Cs]]
                  [:j [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
@@ -619,7 +612,8 @@
                  ;[:comma [:km "edit: Fish Functions"]]
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
-                 [:spacebar :!CTq]]} ; Selection -> Web Searches
+                 ;[:spacebar :!CTq]]} ; Selection -> Web Searches
+                 [:spacebar [:km "open: Eagle"]]]}
                  ;[:spacebar [:km "open: Excalidraw"]]]}
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
         {:des "gkey (actions)"
@@ -784,13 +778,13 @@
                  [:close_bracket [:km "w: Twitter Bookmarks"]]
                  [:a [:km "w: HN"]]
                  [:s [:km "w: Lobsters"]]
-                 [:d [:km "w: Reddit"]]
                  [:f [:km "w: Reddit (all)"]]
                  [:g [:km "w: Alfred Forum"]]
                  [:h [:km "w: Product Hunt (new)"]]
                  ;[:j [:km "w: Reddit (new)"]]
-                 [:j [:km "open: Safari Technology Preview"]]
+                 ;[:j [:km "w: Reddit (in Safari Tech Preview)"]]
                  ;[:k [:km "w: GitHub (front page)"]]
+                 [:j [:km "w: Reddit"]]
                  [:k [:km "w: GitHub (dashboard)"]]
                  [:l [:km "w: Lobsters (new)"]]
                  [:semicolon [:km "w: HN (new)"]]
@@ -841,7 +835,6 @@
                  ;[:r [:alfred "search alfred" "nikivi.utilities" "react "]]
                  [:a [:alfred "search alfred" "nikivi.utilities" "rust "]]
                  ;[:a [:alfred "search alfred" "nikivi.utilities" "man "]]
-                 ;[:s [:alfred "search alfred" "nikivi.utilities" "electron "]]
                  ;[:d [:alfred "search alfred" "nikivi.utilities" "docker "]]
                  [:f [:alfred "search alfred" "nikivi.utilities" "apple "]]
                  [:s [:alfred "search alfred" "nikivi.utilities" "lodash "]]
