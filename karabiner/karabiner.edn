@@ -212,7 +212,6 @@
                  ;[:i [:km "open: Obsidian"]]
                  ;[:i [:km "open: Dropcode"]]
                  [:i [:km "open: OBS"]]
-                 ;[:i [:km "open: Notes"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
@@ -221,6 +220,7 @@
                  ;[:d [:km "open: TablePlus"]]
                  [:d [:km "open: Beekeepr Studio Ultimate"]]
                  [:f [:km "open: 2Do"]]
+                 [:g [:km "open: Notes"]]
                  ;[:f [:km "open: Linear"]]
                  ;[:g [:km "open: KusKus"]]
                  ;[:g [:km "open: Height"]]
@@ -313,6 +313,7 @@
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: Preview"]]
                  [:l [:km "open: NetNewsWire"]]
+                 [:semicolon [:km "open: Crouton"]]
                  ;[:l [:km "open: Books"]]
                  ;[:l [:km "open: Reflect"]]
                  ;[:k [:km "open: PDF Expert"]]
@@ -556,9 +557,9 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:1 [:km "View Sip"]]
-                 [:2 [:km "Go to test macro"]]
                  [:3 [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
-                 [:tab [:km "Test"]]
+                 [:tab [:km "Go to test macro"]]
+                 [:s [:km "Test"]]
                  ;[:q [:km "open: Photos"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "edit: 1st Safari tab"]]
@@ -613,7 +614,8 @@
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
-                 [:spacebar [:km "open: Eagle"]]]}
+                 [:spacebar [:km "open: Pixave"]]]}
+                 ;[:spacebar [:km "open: Eagle"]]]}
                  ;[:spacebar [:km "open: Excalidraw"]]]}
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
         {:des "gkey (actions)"
@@ -924,7 +926,8 @@
                  [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Screenshot -> Clipboard
                  [:r :!CS4] ; Screenshot -> ~/Desktop
-                 [:t [:km "w: YouTube submit"]]
+                 [:t [:t :h :a :n :k :s]] ; -> thanks
+                 ;[:t [:km "w: YouTube submit"]]
                  ;[:t :!TOCp] ; Screenshot -> Imgur
                  ;[:t :!TOCp] ; Screenshot -> Imgur (auth)
                  ;[:t :!COS4] ; Screenshot -> CleanShot (cloud)
@@ -932,23 +935,24 @@
                  ;[:o [:km "w: Google Docs"]]
                  ;[:o [:km "open: GraphQL"]]
                  ;[:i [:km "Midjourney Imagine"]]
-                 [:o [:km "w: Stack Overflow question"]]
+                 ;[:o [:km "w: Stack Overflow question"]]
                  ;[:p [:km "w: CodePen New"]]
-                 [:open_bracket [:km "w: Google Slides"]]
-                 [:close_bracket [:km "w: Beautiful.ai"]]
+                 ;[:open_bracket [:km "w: Google Slides"]]
+                 ;[:close_bracket [:km "w: Beautiful.ai"]]
                  ;[:a [:km "OBS stream scene on"]]
                  ;[:s [:km "OBS stream scene off"]]
-                 [:a [:open "raycast://extensions/loris/safari/cloud-tabs"]]
-                 [:s [:km "paste: ♥️"]] ; -> ♥️
+                 ;[:s [:km "paste: ♥️"]] ; -> ♥️
                  ;[:s [:t :h :a :n :k :s]] ; -> thanks
+                 [:a :!CS8] ; Screenshot -> Pixave
+                 [:s :!CTOSg] ; Loom recording
+                 [:f :!CS9] ; CleanShot screen recording
                  ;[:a :!CTOSi] ; OBS stream scene on
                  ;[:s :!CTOSo] ; OBS stream scene off
                  ;[:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
-                 ;[:f :!CTOSg] ; Loom recording
                  ;[:f [:km "open: ChatGPT"]]
                  ;[:f [:km "Copy text to ChatGPT"]]
-                 [:f :!CTOSg] ; Screen Studio recording
+                 ;[:f :!CTOSg] ; Screen Studio recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
                  ;[:g :!CO5] ; Start/stop ScreenFlow recording
@@ -962,7 +966,7 @@
                  [:j [:open "raycast://extensions/loris/safari/search-bookmarks"]]
                  [:k [:km "open: Safari Technology Preview"]]
                  [:l [:km "New tweet"]]
-                 [:semicolon [:t :h :a :n :k :s]] ; -> thanks
+                 [:semicolon [:open "raycast://extensions/loris/safari/cloud-tabs"]]
                  ;[:semicolon [:km "paste: Thanks ♥️"]]
                  [:quote [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
                  ;[:l [:km "New LA post"]]
