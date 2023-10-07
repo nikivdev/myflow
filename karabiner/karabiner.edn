@@ -26,6 +26,8 @@
              :f-mode {:key :f}
              :g-mode {:key :g}
              :semicolon-mode {:key :semicolon}
+             :escape-mode {:key :escape}
+             ;:backslash {:key :backslash} TODO: for future
              :tilde-mode {:key :grave_accent_and_tilde}
              :z-mode {:key :z}
              ;:x-mode {:key :x}
@@ -139,26 +141,9 @@
                  [:k [:km "list: Alfred workflows"]]
                  [:l [:km "list: Command line tools"]]
                  [:n [:km "list: Events"]]]}
-        {:des "tabkey (common words / phrases / emojis)"
+        {:des "tabkey (emojis?)"
          :rules [:tab-mode
-                  [:e [:n :i :k :i :t :a :!S2 :n :i :k :i :v :period :d :e :v]] ; -> nikita@nikiv.dev
-                  [:r [:n :i :k :i :t :a :period :v :o :l :o :b :o :e :v :!S2 :g :m :a :i :l :period :c :o :m]] ; -> nikita.voloboev@gmail.com
-                  [:s [:km "paste: ✨"]] ; -> ✨
-                  ;[:j [:km "paste: Thanks ♥️"]]
-                  [:j [:km "paste: Telegram (personal)️"]]
-                  [:k [:km "paste: Cal.com (30 min)️"]]
-                  [:l [:km "paste: Cal.com (15 min)️"]]
-                  [:n [:!Sn :i :k :i :t :a]] ; -> Nikita
-                  [:u [:u :p :d :a :t :e :spacebar]] ; -> update
-                  [:p [:p :l :e :a :s :e :spacebar]]]} ; -> please
-                 ;[:j :!SOTw] ; Replies
-                 ;[:k :!SOTf] ; App specific
-                 ;[:l :!SOTr] ; Personal
-                 ;[:o [:km "Lowercase and dash separate text"]]
-                 ;[:j [:km "w: nikiv.dev"]]
-                 ;[:k [:km "w: GitLab"]]
-                 ;[:l [:km "w: Repl.it"]]
-                 ;[:period [:km "w: CodeSandbox"]]]}
+                  [:s [:km "paste: ✨"]]]} ; -> ✨
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:3 :!CS3]
@@ -400,7 +385,6 @@
                  [:i [:km "open: Dash"]]
                  [:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
-                 [:s [:open "raycast://extensions/mattisssa/spotify-beta/search"]] ; Raycast Spotify Search
                  ;[:s [:alfred "search code" "nikivi.manage.notes"]]
                  [:d [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
                  [:f [:alfred "search folders" "nikivi.search.folders"]]
@@ -566,13 +550,14 @@
                  ;[:q [:km "edit: 1st Safari tab"]]
                  ;[:q [:km "open: Chrome Canary"]]
                  ;[:q [:km "open: Figma"]]
-                 [:q [:km "open: Framer"]]
+                 [:escape [:km "open: Framer"]]
                  ;[:q [:km "open: Chrome"]]
                  ;[:q [:km "open: Zeplin"]]
                  ;[:q [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  ;[:w [:km "Save link"]]
                  ;[:w [:km "open: Figma"]]
                  [:w [:km "open: Figma"]]
+                 ;[:w [:km "open: Pixave"]]
                  ;[:w [:km "open: Chrome Canary"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
@@ -616,6 +601,7 @@
                  [:slash :!CTO4] ; Alfred file action
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
                  [:spacebar [:km "open: Pixave"]]]}
+                 ;[:spacebar [:km "open: Figma"]]]}
                  ;[:spacebar [:km "open: Eagle"]]]}
                  ;[:spacebar [:km "open: Excalidraw"]]]}
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
@@ -631,26 +617,36 @@
                  [:k :!COSf] ; Maximize window
                  [:l :!CSOd] ; Move window right
                  [:semicolon :!COSs] ; Move window between different screen & maximize (iPad)
-                 [:z :!CO0] ; Show Dropzone dropdown
+                 ;[:z :!CO0] ; Show Dropzone dropdown
                  [:n :!CTOg] ; Turn on/off notifications
                  [:m :!COslash] ; Show/hide notification centre
                  [:period :!COS6]]} ; Toggle Night Shift on/off.
+        {:des "escapekey (paste)"
+         :rules [:escape-mode
+                  [:w [:km "paste: personal nikita.vo@ email"]]
+                  [:e [:km "paste: personal nikita@ email"]]
+                  [:j [:km "paste: Thanks ♥️"]]
+                  [:k [:km "paste: Thank you."]]
+                  [:l [:km "paste: Cal.com (30 min)️"]]
+                  [:g [:km "paste: Telegram (personal)️"]]
+                  [:period [:km "paste: Cal.com (15 min)️"]]
+                  [:k [:km "paste: Nikita"]]
+                  [:u [:km "paste: update"]]
+                  [:p [:km "paste: please"]]]}
         {:des "tilkey (actions + language switches)"
          :rules [:tilde-mode
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 [:e :!CTk] ; Turn on/off BTT TouchBar
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:d [:km "Commit dotfiles"]]
                  [:f [:km "Commit home"]]
-                 ;[:f [:km "Commit learning"]]
                  ;[:j [[:km "JS Dash profile"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
                  [:j [[:open "dash://.tsprofile:"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
                  [:k [[:open "dash://.rustprofile:"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
                  [:l [[:open "dash://.swiftprofile:"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
                  [:semicolon [[:open "dash://.goprofile:"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
                  ;[:l [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
-                 [:c [:km "Commit code"]]
-                 [:v [:km "Commit wiki"]]
+                 ;[:c [:km "Commit code"]]
+                 ;[:v [:km "Commit wiki"]]
                  ;[:n [[:open "dash://.rust:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 1] ["in-swift" 0]]] ; Rust
                  ;[:n :!STh] ; Record macro
                  ;[:m [[:open "dash://.swift:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 1]]] ; Swift
@@ -693,16 +689,15 @@
                  [:comma [:alfred "show_search_online" "com.vdesabou.spotify.mini.player"]] ; TODO: split up further into binds for direct searches of tracks/artists/all
                  [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]]}
-        {:des "ckey (run code / open files)"
+        {:des "ckey (files/websites)"
          :rules [:c-mode
                  [:tab [:km "proj: Learning"]]
                  [:u [:km "run: Rust"]]
                  [:i [:km "run: Julia"]] ; TODO: maybe use Pluto.jl notebook
                  [:o [:km "run: Deno"]]
-                 ;[:a [:km "Clone repo to ~/clones and open with VS Code"]]
-                 [:a [:km "Clone repo to ~/clones and open with Zed"]]
+                 ;[:a [:km "Clone repo to ~/clones and open with Zed"]]
+                 [:a [:km "Clone repo to ~/clones and open with Cursor Nightly"]]
                  [:s [:km "Clone repo to ~/clones"]]
-                 [:d [:km "Clone repo to ~/clones and open with Cursor Nightly"]]
                  ;[:d [:km "Clone repo to ~/src/clones and open with VS Code"]] ; TODO: open with Xcode
                  ;[:j [:km "run: Bash"]]
                  ;[:k [:km "run: Go"]]
@@ -719,6 +714,14 @@
                  [:period [:km "edit: LA todo"]]
                  [:slash [:km "edit: KusKus todo"]]
                  ;[:period [:km "edit: Dotfiles Magefile"]]
+                 ;[:j :!SOTw] ; Replies
+                 ;[:k :!SOTf] ; App specific
+                 ;[:l :!SOTr] ; Personal
+                 ;[:o [:km "Lowercase and dash separate text"]]
+                 ;[:j [:km "w: nikiv.dev"]]
+                 ;[:k [:km "w: GitLab"]]
+                 ;[:l [:km "w: Repl.it"]]
+                 ;[:period [:km "w: CodeSandbox"]]]}
                  [:spacebar :!CSOy]]} ; Selection -> Stack Overflow
         {:des "vkey (media)"
          :rules [:v-mode
@@ -730,12 +733,13 @@
                  [:p [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss
-                 ;[:a [:km "Repeat Spotify song"]] ; TODO: do in background
-                 [:a [:km "Play/Pause Endel"]]
+                 ;[:a [:km "Play/Pause Endel"]]
                  ;[:a [:km "open: Endel"]]
                  ;[:a [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2xqhXTdxgBg5z9IuOOCIV3"]] ; Endel
+                 [:a [:open "raycast://extensions/mattisssa/spotify-beta/search"]] ; Raycast Spotify Search
                  [:s [:km "Play/Pause Spotify"]]
-                 [:d :!CO9] ; Connect/disconnect AirPods
+                 [:d [:km "Repeat Spotify song"]] ; TODO: do in background
+                 ;[:d :!CO9] ; Connect/disconnect AirPods
                  [:h :vk_consumer_previous]
                  [:j :mute]
                  [:k :vk_consumer_play]
@@ -927,7 +931,6 @@
                  [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Screenshot -> Clipboard
                  [:r :!CS4] ; Screenshot -> ~/Desktop
-                 [:t [:t :h :a :n :k :s]] ; -> thanks
                  ;[:t [:km "w: YouTube submit"]]
                  ;[:t :!TOCp] ; Screenshot -> Imgur
                  ;[:t :!TOCp] ; Screenshot -> Imgur (auth)

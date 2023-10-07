@@ -199,3 +199,4 @@ alias :i="bun i"
 alias :d="bun dev"
 alias :t="bun test --watch"
 alias e="edgedb"
+alias g="goku" # TODO: should be automatic, have file watcher
