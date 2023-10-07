@@ -1,6 +1,6 @@
 # My config files for macOS
 
-> Fish, Nix, Karabiner, VS Code
+> Fish, Karabiner, Cursor
 
 ![](https://images.nikiv.dev/config-dark-23.png)
 

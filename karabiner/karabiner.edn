@@ -561,8 +561,6 @@
                  ;[:w [:km "open: Chrome Canary"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
-                 [:i :!Treturn_or_enter]
-                 [:o :!Oreturn_or_enter]
                  ;[:o [:!Sreturn_or_enter :!Cs]]
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
@@ -583,7 +581,8 @@
                  ;[:j [:km "open: Learn Anything (dev)"]]
                  ;[:j [:!Sreturn_or_enter :!Cs]]
                  [:j [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
-                 [:o :!Oreturn_or_enter]
+                 [:i :!Treturn_or_enter]
+                 [:o :!Sreturn_or_enter]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
                  [:semicolon :!Oreturn_or_enter] ; TODO: make it add ; same as deactivated :j (need to update extension code)
@@ -873,12 +872,13 @@
           :rules [:ts-mode
                   ;[:tab [:km "w: MDN"]]
                   ;[:a [:km "console.log()"]]
-                  [:escape [:a :s :y :n :c :spacebar :f :u :n :c :t :i :o :n :spacebar]] ; -> async function
+                  [:tab [:a :s :y :n :c :spacebar :f :u :n :c :t :i :o :n :spacebar]] ; -> async function
+                  [:escape [:f :u :n :c :t :i :o :n :spacebar]] ; -> function
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
                   ;[:a [:c :o :n :s :o :l :e :period :w :a :r :n :!S9 :!S0 :left_arrow]] ; -> console.warn()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
-                  [:f [:f :u :n :c :t :i :o :n :spacebar]] ; -> function
+                  [:f [:c :o :n :s :t :spacebar]] ; -> const
                   ;[:f [:!Cf :c :o :n :s :o :l :e :period :w :a :r :n :!S9 :return_or_enter]] ; -> search console.warn( in file
                   [:g [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
                   ;[:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
