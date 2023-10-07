@@ -213,8 +213,8 @@
                  ;[:i [:km "open: Dropcode"]]
                  [:i [:km "open: OBS"]]
                  [:o [:km "open: Keyboard Maestro"]]
-                 [:p [:km "open: Postgres"]]
-                 [:caps_lock [:km "open: Finder"]]
+                 ;[:p [:km "open: Postgres"]]
+                 [:escape [:km "open: Finder"]]
                  [:a [:km "open: Obsidian"]]
                  ;[:d [:km "open: Postico"]]
                  ;[:d [:km "open: TablePlus"]]
@@ -308,7 +308,8 @@
                  ;[:i [:km "open: Flume"]]
                  [:i [:km "open: Feedback Assistant"]]
                  [:o [:km "open: Developer"]]
-                 ;[:caps_lock [:km "open: Preview"]]
+                 ;[:escape [:km "open: Preview"]]
+                 [:escape [:km "open: IINA"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: Preview"]]
@@ -324,7 +325,7 @@
                  [:comma [:km "open: Arq"]]
                  [:period [:km "open: Final Cut Pro"]]
                  ;[:spacebar :!COSx]]} ; Selection -> Reddit
-                 [:spacebar :!CTOSg]]} ; Loom recording
+                 [:spacebar [:km "open: IINA"]]]}
         {:des "tkey (palettes + websites)"
          :rules [:t-mode
                  ;[:0 [:km "w: regex101"]]
@@ -657,9 +658,8 @@
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
-                 [:i [:km "open: WhatsApp"]]
-                 [:o [:km "open: Zoom"]]
-                 [:p [:km "open: FaceTime"]]
+                 ;[:i [:km "open: WhatsApp"]]
+                 ;[:o [:km "open: FaceTime"]]
                  [:d [:km "New Spark email"]]
                  [:f [:km "open: Spark"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
@@ -670,7 +670,7 @@
                  [:l [:km "open: Element"]]
                  [:semicolon [:km "open: Slack"]]
                  [:c [:km "open: Contacts"]]
-                 [:v [:km "open: Tweetbot"]]
+                 [:v [:km "open: Around"]]
                  [:b [:km "w: Twitter"]]
                  [:n [:km "w: Typefully"]]
                  [:m [:km "w: Typefully with current URL pasted"]]
@@ -861,14 +861,14 @@
                   [:r [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE:
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:grave_accent_and_tilde [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
-                  [:spacebar [:n :i :k :i :t :a :!S2 :n :i :k :i :v :period :d :e :v]] ; -> nikita@nikiv.dev
                   [:y [:p :l :e :a :s :e :spacebar]] ; -> please
-                  [:u [:u :p :d :a :t :e :spacebar]] ; -> update
-                  [:spacebar [:km "paste: Thanks ♥️"]]]} ; -> Thanks ♥️ (TODO: change to something code related and useful)
+                  [:u [:u :p :d :a :t :e :spacebar]]]} ; -> update
+                  ;[:spacebar [:km "paste: Thanks ♥️"]]]} ; -> Thanks ♥️ (TODO: change to something code related and useful)
          {:des "tsdot"
           :rules [:ts-mode
-                  [:tab [:km "w: MDN"]]
+                  ;[:tab [:km "w: MDN"]]
                   ;[:a [:km "console.log()"]]
+                  [:escape [:a :s :y :n :c :spacebar :f :u :n :c :t :i :o :n :spacebar]] ; -> async function
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
                   ;[:a [:c :o :n :s :o :l :e :period :w :a :r :n :!S9 :!S0 :left_arrow]] ; -> console.warn()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
@@ -885,7 +885,8 @@
                   ;[:c [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
                   [:c [:spacebar :c :l :a :s :s :equal_sign :!Squote :!Squote :left_arrow]] ; -> class=""
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
-                  [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]]]} ; -> typescript
+                  [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
+                  [:spacebar [:a :w :a :i :t :spacebar]]]} ; -> await
         {:des "godot"
          :rules[:go-mode
                 [:tab [:km "w: GoDoc"]]
