@@ -188,7 +188,8 @@
                  [:comma :!CScomma]
                  [:period :!CSperiod]
                  [:slash :!CSslash]
-                 [:spacebar :!CSOe]]} ; Selection -> YouTube
+                 [:spacebar [:km "Explain selected text"]]]}
+                 ;[:spacebar :!CSOe]]} ; Selection -> YouTube
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:q [:km "open: GraphQL"]]
@@ -207,7 +208,6 @@
                  ;[:d [:km "open: TablePlus"]]
                  [:d [:km "open: Beekeepr Studio Ultimate"]]
                  [:f [:km "open: 2Do"]]
-                 [:g [:km "open: Notes"]]
                  ;[:f [:km "open: Linear"]]
                  ;[:g [:km "open: KusKus"]]
                  ;[:g [:km "open: Height"]]
@@ -218,8 +218,9 @@
                  [:l [:km "open: Cursor Nightly"]]
                  [:semicolon [:km "open: Cursor"]]
                  [:c [:km "open: Spotify"]]
+                 ;[:v [:km "open: Pathfinder"]]
                  ;[:v [:km "open: HTTPie"]]
-                 [:v [:km "open: Linear"]]
+                 ;[:v [:km "open: Linear"]]
                  ;[:v [:km "open: TablePlus"]]
                  ;[:v [:km "open: RapidAPI"]]
                  ;[:v [:km "open: SQLiteFlow"]]
@@ -284,8 +285,9 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 ;[:spacebar [:km "Selected text into TODO"]]]}
-                 [:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
+                 [:spacebar [:km "Copy selected text to ChatGPT or explain .."]]]}
+                 ;[:spacebar [:km "Explain selected text (or just explain ..)"]]]}
+                 ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
         {:des "rkey (apps)"
          :rules [:r-mode
                  [:tab [:km "open: Transmission"]]
@@ -546,20 +548,18 @@
          :rules [:f-mode
                  [:1 [:km "View Sip"]]
                  [:3 [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
-                 [:tab [:km "Go to test macro"]]
+                 ;[:tab [:km "Go to test macro"]]
+                 [:escape [:km "Go to test macro"]]
                  [:s [:km "Test"]]
                  ;[:q [:km "open: Photos"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "edit: 1st Safari tab"]]
-                 ;[:q [:km "open: Chrome Canary"]]
-                 ;[:q [:km "open: Figma"]]
-                 ;[:escape [:km "open: Pixave"]]
+                 [:w [:km "open: Pixave"]]
                  ;[:q [:km "open: Chrome"]]
                  ;[:q [:km "open: Zeplin"]]
                  ;[:q [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  ;[:w [:km "Save link"]]
-                 ;[:w [:km "open: Figma"]]
-                 [:escape [:km "open: Framer"]]
+                 [:q [:km "open: Framer"]]
                  [:w [:km "open: Figma"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
@@ -567,8 +567,6 @@
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:caps_lock :!CTOu] ; Sip color picker
-                 ;[:a [:km "open: Chrome Canary"]]
-                 ;[:s [:km "open: Figma"]]
                  [:a [:km "open: Chrome Canary"]]
                  ;[:s [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  ;[:a [:km "open: Chrome Canary"]]
@@ -600,10 +598,9 @@
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
-                 [:spacebar [:km "open: Pixave"]]]}
-                 ;[:spacebar [:km "open: Figma"]]]}
-                 ;[:spacebar [:km "open: Eagle"]]]}
+                 [:spacebar [:km "open: Figma"]]]}
                  ;[:spacebar [:km "open: Excalidraw"]]]}
+                 ;[:spacebar [:km "open: Eagle"]]]}
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
         {:des "gkey (actions)"
          :rules [:g-mode
@@ -633,7 +630,8 @@
                   [:period [:km "paste: Cal.com (15 min)️"]]
                   [:k [:km "paste: Nikita"]]
                   [:u [:km "paste: update"]]
-                  [:p [:km "paste: please"]]]}
+                  [:p [:km "paste: please"]]
+                  [:spacebar [:km "Selected text into Google Lucky search"]]]}
         {:des "tilkey (actions + language switches)"
          :rules [:tilde-mode
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
