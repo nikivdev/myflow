@@ -72,7 +72,7 @@
                  [:k :!Sk]
                  [:l :!Sl]
                  [:tab [:km "Clear TODO"]]
-                 [:escape [:km "Selected text into TODO"]]
+                 [:escape [:km "Add to TODO"]]
                  [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
                  [:z :!Sz]
                  [:x :!Sx]
