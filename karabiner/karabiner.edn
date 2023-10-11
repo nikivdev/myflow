@@ -411,48 +411,49 @@
                  ;[:spacebar [:km "open: MacGPT"]]]}
                  [:spacebar [:km "open: ChatGPT"]]]}
                  ;[:spacebar [:km "open: Ask"]]]}
-        {:des "capskey (common words / phrases / emojis)"
-         :rules [:caps-mode
-                  [:s [:km "paste: ✨"]] ; -> ✨
-                  [:j [:km "paste: Thanks ♥️"]]
-                  [:n [:!Sn :i :k :i :t :a]] ; -> Nikita
-                  ;[:period [:t :h :a :n :k :spacebar :y :o :u]] ; -> thank you
-                  [:period [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
-                  [:u [:u :p :d :a :t :e :spacebar]] ; -> update
-                  [:p [:p :l :e :a :s :e :spacebar]] ; -> please
-                 ;[:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
-                 ;[:2 :!TO2] ; Screenshot -> Clipboard
-                 ;[:3 :!TO3] ; Screenshot -> Annotate
-                 ;[:4 :!TO9] ; Picture of screen -> Clipboard
-                 ;[:5 :!TO0] ; Picture of screen -> ~/Desktop
-                 ;[:w [:km "wiki: My workflow"]]
-                 ;[:e [:km "edit: Private notes"]]
-                 ;[:r [:km "wiki: Rules"]]
-                 ;[:t [:km "wiki: Processes"]]
-                 ;[:u [:km "Open 2Do Buy"]]
-                 ;[:i [:km "Open 2Do Fix"]]
-                 ;[:o [:km "Open 2Do Tools"]]
-                 ;[:p [:km "Open 2Do Repeat"]]
-                 ;[:open_bracket [:km "w: Goodreads (currently reading)"]]
-                 ;[:close_bracket [:km "w: Goodreads (next)"]]
-                 ;[:s [:km "Open 2Do Wiki"]]
-                 ;[:d [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
-                 ;[:f [:km "Search 2Do"]]
-                 ;[:g [:km "Open 2Do Life"]]
-                 ;[:h [:open "notion://nikitavoloboev/Learn-05c0eac7be904e0da89cd8a3bf7ab509"]]
-                 ;[:j [:km "Open 2Do Today"]]
-                 ;[:k [:km "Open 2Do GitHub"]]
-                 ;[:l [:km "Open 2Do Later"]]
-                 ;[:semicolon [:km "Open 2Do Starred"]]
-                 ;[:quote [:km "Open 2Do Other"]] ; TODO: remove once its empty
-                 ;[:c [:km "Look back"]]
-                 ;[:v [:km "wiki: Goals"]]
-                 ;[:b [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
-                 ;[:n [:km "Open 2Do Clean"]]
-                 ;[:m [:km "Open 2Do Work"]]
-                 ;[:comma [:km "Open 2Do LA"]]
-                 [:semicolon [:km "paste: ♥️"]] ; -> ♥️
-                 [:period [:km "Open 2Do Recent"]]]}
+        ;; TODO: not used, move it to other keys, whatever is useful
+        ;{:des ".."
+         ;:rules [:caps-mode
+                  ;[:s [:km "paste: ✨"]]
+                  ;[:j [:km "paste: Thanks ♥️"]]
+                  ;[:n [:!Sn :i :k :i :t :a]] ; -> Nikita
+                  ;;[:period [:t :h :a :n :k :spacebar :y :o :u]] ; -> thank you
+                  ;[:period [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
+                  ;[:u [:u :p :d :a :t :e :spacebar]] ; -> update
+                  ;[:p [:p :l :e :a :s :e :spacebar]] ; -> please
+                 ;;[:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
+                 ;;[:2 :!TO2] ; Screenshot -> Clipboard
+                 ;;[:3 :!TO3] ; Screenshot -> Annotate
+                 ;;[:4 :!TO9] ; Picture of screen -> Clipboard
+                 ;;[:5 :!TO0] ; Picture of screen -> ~/Desktop
+                 ;;[:w [:km "wiki: My workflow"]]
+                 ;;[:e [:km "edit: Private notes"]]
+                 ;;[:r [:km "wiki: Rules"]]
+                 ;;[:t [:km "wiki: Processes"]]
+                 ;;[:u [:km "Open 2Do Buy"]]
+                 ;;[:i [:km "Open 2Do Fix"]]
+                 ;;[:o [:km "Open 2Do Tools"]]
+                 ;;[:p [:km "Open 2Do Repeat"]]
+                 ;;[:open_bracket [:km "w: Goodreads (currently reading)"]]
+                 ;;[:close_bracket [:km "w: Goodreads (next)"]]
+                 ;;[:s [:km "Open 2Do Wiki"]]
+                 ;;[:d [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
+                 ;;[:f [:km "Search 2Do"]]
+                 ;;[:g [:km "Open 2Do Life"]]
+                 ;;[:h [:open "notion://nikitavoloboev/Learn-05c0eac7be904e0da89cd8a3bf7ab509"]]
+                 ;;[:j [:km "Open 2Do Today"]]
+                 ;;[:k [:km "Open 2Do GitHub"]]
+                 ;;[:l [:km "Open 2Do Later"]]
+                 ;;[:semicolon [:km "Open 2Do Starred"]]
+                 ;;[:quote [:km "Open 2Do Other"]] ; TODO: remove once its empty
+                 ;;[:c [:km "Look back"]]
+                 ;;[:v [:km "wiki: Goals"]]
+                 ;;[:b [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
+                 ;;[:n [:km "Open 2Do Clean"]]
+                 ;;[:m [:km "Open 2Do Work"]]
+                 ;;[:comma [:km "Open 2Do LA"]]
+                 ;[:semicolon [:km "paste: ♥️"]] ; -> ♥️
+                 ;[:period [:km "Open 2Do Recent"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:2 :!T2]
@@ -554,7 +555,7 @@
                  ;[:q [:km "open: Photos"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "edit: 1st Safari tab"]]
-                 [:w [:km "open: Pixave"]]
+                 ;[:w [:km "open: Pixave"]]
                  ;[:q [:km "open: Chrome"]]
                  ;[:q [:km "open: Zeplin"]]
                  ;[:q [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
@@ -598,7 +599,7 @@
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
-                 [:spacebar [:km "open: Figma"]]]}
+                 [:spacebar [:km "open: Pixave"]]]}
                  ;[:spacebar [:km "open: Excalidraw"]]]}
                  ;[:spacebar [:km "open: Eagle"]]]}
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
@@ -618,11 +619,14 @@
                  [:n :!CTOg] ; Turn on/off notifications
                  [:m :!COslash] ; Show/hide notification centre
                  [:period :!COS6]]} ; Toggle Night Shift on/off.
-        {:des "escapekey (paste)"
+        {:des "capskey (paste)"
          :rules [:escape-mode
                   [:w [:km "paste: personal nikita.vo@ email"]]
                   [:e [:km "paste: personal nikita@ email"]]
                   [:j [:km "paste: Thanks ♥️"]]
+                  [:c [:km "paste: 😿"]]
+                  [:h [:km "paste: 😺"]]
+                  [:f [:km "paste: explain"]]
                   [:k [:km "paste: Thank you."]]
                   [:l [:km "paste: Cal.com (30 min)️"]]
                   [:semicolon [:km "paste: ♥️"]]
