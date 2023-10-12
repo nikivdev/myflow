@@ -63,6 +63,7 @@ I made [KM macro](https://wiki.nikiv.dev/macOS/apps/keyboard-maestro/km-macros) 
 - [Notion](https://wiki.nikiv.dev/tools/notion) is useful to manage team wikis or share documents with others. Don't like using it as my general knowledge management tool.
 - [NetNewsWire](https://netnewswire.com/) use it to read all my [RSS](https://wiki.nikiv.dev/web/rss) feeds.
 - [Obsidian](https://wiki.nikiv.dev/tools/obsidian) use it for [note taking](https://wiki.nikiv.dev/other/wiki-workflow). Love its linking complete feature and various plugins it has.
+- [MindMac](https://mindmac.app/), a feature-rich & privacy-first native ChatGPT app to use OpenAI, Azure OpenAI, Anthropic Claude, OpenRouter all in one place.
 
 ### Code
 
