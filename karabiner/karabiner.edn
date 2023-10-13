@@ -195,6 +195,7 @@
                  [:q [:km "open: GraphQL"]]
                  [:e [:km "open: Fantastical"]]
                  [:r [:km "open: Notion"]]
+                 ;[:r [:km "open: Spacedrive"]]
                  ;[:t [:km "open: Activity Monitor"]]
                  ;[:i [:km "open: Instruments"]]
                  ;[:i [:km "open: Obsidian"]]
@@ -625,13 +626,15 @@
                   [:e [:km "paste: personal nikita@ email"]]
                   [:j [:km "paste: Thanks ♥️"]]
                   [:c [:km "paste: 😿"]]
+                  [:v [:km "paste: 👋"]]
                   [:h [:km "paste: 😺"]]
                   [:f [:km "paste: explain"]]
                   [:k [:km "paste: Thank you."]]
                   [:l [:km "paste: Cal.com (30 min)️"]]
+                  [:m [:km "paste: Cal.com (15 min)️"]]
                   [:semicolon [:km "paste: ♥️"]]
+                  [:period [:km "paste: that worked, thanks"]]
                   [:g [:km "paste: Telegram (personal)️"]]
-                  [:period [:km "paste: Cal.com (15 min)️"]]
                   [:k [:km "paste: Nikita"]]
                   [:u [:km "paste: update"]]
                   [:p [:km "paste: please"]]
@@ -935,6 +938,7 @@
                  [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Screenshot -> Clipboard
                  [:r :!CS4] ; Screenshot -> ~/Desktop
+                 [:t [:km "w: Twitter (personal)"]]
                  ;[:t [:km "w: YouTube submit"]]
                  ;[:t :!TOCp] ; Screenshot -> Imgur
                  ;[:t :!TOCp] ; Screenshot -> Imgur (auth)
@@ -993,8 +997,7 @@
                  ;[:comma [:km "w: Diagrams"]]
                  [:b [:km "w: Lobsters submit"]]
                  [:n [:km "w: Reddit submit"]]
-                 [:m [:km "New tweet with current URL"]]
-                 [:period [:km "paste: that worked, thanks"]]
-                 ;[:period [:km "New Mastodon post"]]
+                 [:m [:km "New Mastodon post"]]
+                 [:period [:km "New tweet with current URL"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
 ]}
