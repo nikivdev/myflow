@@ -183,7 +183,7 @@ alias ds="cd ~/try"
 # alias rbnowarning="RUSTFLAGS="-A warnings" cargo build"
 
 # run code fast
-alias :ts="cd ~/src/ts && bun dev"
+alias :ts="fish -c 'cd ~/src/ts; bun dev'"
 
 # other
 alias a="eza" # list files
