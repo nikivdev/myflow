@@ -97,10 +97,9 @@
         {:des "jsim"
          :rules [
                  [[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
-                 ;[[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]] ; TODO:
                  [[:j :semicolon] :!COS9] ; Raycast
-                 [[:j :l] :!CTOSspacebar]
-                 ]} ; Alfred
+                 [[:j :l] :!CTOSspacebar] ; Alfred
+                 ]}
         {:des "ksim"
          :rules [
                  [[:k :l] [:alfred "search dash" "com.kapeli.dash.workflow"]]
@@ -989,8 +988,6 @@
                  [:k [:km "open: Safari Technology Preview"]]
                  [:l [:km "New tweet"]]
                  [:semicolon [:open "raycast://extensions/loris/safari/cloud-tabs"]]
-                 ;[:semicolon [:km "paste: Thanks ♥️"]]
-                 [:quote [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
                  ;[:l [:km "New LA post"]]
                  ;[:j [:km "w: YouTube"]]
                  ;[:k [:km "w: GitHub"]]
