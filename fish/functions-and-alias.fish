@@ -57,9 +57,12 @@ end
 #    watchexec --no-vcs-ignore --restart --exts js "tput reset && $argv" --project-origin .
 #end
 
-function wb
-    watchexec --no-vcs-ignore --restart --exts ts "tput reset && bun run $argv" --project-origin .
+function :w
+    bun --watch $argv
 end
+# function wb
+#     watchexec --no-vcs-ignore --restart --exts ts "tput reset && bun run $argv" --project-origin .
+# end
 
 function wbi
     watchexec --no-vcs-ignore --restart --exts ts "tput reset && bun run index.ts" --project-origin .
