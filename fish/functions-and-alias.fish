@@ -37,17 +37,17 @@ end
 
 function w
     if not set -q argv[1]
-        open -a /Applications/Cursor\ Nightly.app .
+        cursor-nightly .
     else
-        open -a /Applications/Cursor\ Nightly.app $argv
+        cursor-nightly $argv
     end
 end
 
 function W
     if not set -q argv[1]
-        open -a /Applications/Cursor.app .
+        cursor .
     else
-        open -a /Applications/Cursor.app $argv
+        cursor $argv
     end
 end
 
