@@ -198,6 +198,7 @@ alias :ts="fish -c 'cd ~/src/ts; bun dev'"
 
 # other
 alias a="eza" # list files
+alias aa="eza -a" # list files (with hidden)
 alias cwd='pwd | pbcopy'
 alias v="mv" # move files/folders or rename
 alias sf="source ~/.config/fish/config.fish" # source fish config

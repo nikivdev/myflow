@@ -896,7 +896,8 @@
                   ;[:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
                   [:j [:right_arrow :spacebar :equal_sign :spacebar]] ; -> =
                   [:k [:right_arrow :spacebar :!Sopen_bracket :return_or_enter]] ; -> {  }
-                  [:z [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sclose_bracket :left_arrow]] ; -> style={}
+                  [:grave_accent_and_tilde [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sclose_bracket :left_arrow]] ; -> style={}
+                  [:z [:c :o :n :s :o :l :e :period :e :r :r :o :r :!S9 :!S0 :left_arrow]] ; -> console.error()
                   ;[:x [:t :a :c :h :y :o :n :s :spacebar]] ; -> tachyons
                   ;[:c [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
                   ;[:c [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
@@ -966,6 +967,7 @@
                  [:a :!CS8] ; Screenshot -> Pixave
                  [:s :!CTOSg] ; Loom recording
                  [:d :!CTOSg] ; Screen Studio recording
+                 ;[:f :!CTOS7] ; Screen Studio area recording
                  [:f :!CS9] ; CleanShot screen recording
                  ;[:a :!CTOSi] ; OBS stream scene on
                  ;[:s :!CTOSo] ; OBS stream scene off
