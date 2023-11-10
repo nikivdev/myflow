@@ -7,6 +7,7 @@
  :templates {:alfred "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
              :open "open \"%s\""
+             :open-g "open -g \"%s\""
              }
  :simlayers {
              :2-mode {:key :2}
@@ -191,7 +192,7 @@
                  ;[:spacebar :!CSOe]]} ; Selection -> YouTube
         {:des "wkey (apps)"
          :rules [:w-mode
-                 [:q [:km "open: GraphQL"]]
+                 ;[:q [:km "open: GraphQL"]]
                  [:e [:km "open: Fantastical"]]
                  [:r [:km "open: Notion"]]
                  ;[:r [:km "open: Spacedrive"]]
@@ -204,11 +205,11 @@
                  ;[:p [:km "open: Postgres"]]
                  [:escape [:km "open: Finder"]]
                  [:a [:km "open: Obsidian"]]
+                 ;[:f [:km "open: Learn Anything"]]
                  ;[:d [:km "open: Postico"]]
                  ;[:d [:km "open: TablePlus"]]
                  [:d [:km "open: Beekeepr Studio Ultimate"]]
                  [:f [:km "open: 2Do"]]
-                 ;[:f [:km "open: Linear"]]
                  ;[:g [:km "open: KusKus"]]
                  ;[:g [:km "open: Height"]]
                  ;[:h [:km "open: Things"]]
@@ -219,7 +220,8 @@
                  [:semicolon [:km "open: Cursor"]]
                  [:c [:km "open: Spotify"]]
                  ;[:v [:km "open: Pathfinder"]]
-                 [:v [:km "open: HTTPie"]]
+                 [:h [:km "open: HTTPie"]]
+                 [:v [:km "open: Pathfinder"]]
                  ;[:v [:km "open: Linear"]]
                  ;[:v [:km "open: TablePlus"]]
                  ;[:v [:km "open: RapidAPI"]]
@@ -228,8 +230,9 @@
                  [:n [:km "open: Sublime Text"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
-                 [:period [:km "open: Xcode (beta)"]]
-                 [:spacebar [:km "open: Pathfinder"]]]}
+                 [:period [:km "open: Xcode"]]
+                 ;[:period [:km "open: Xcode (beta)"]]
+                 [:spacebar [:km "open: Linear"]]]}
                  ;[:spacebar [:km "open: TablePlus"]]]}
                  ;[:spacebar [:km "open: Dash"]]]}
                  ;[:spacebar [:km "open: Beekeepr Studio Ultimate"]]]}
@@ -508,6 +511,7 @@
                  ;[:i [:km "Selected text -> Alfred Snippet"]]
                  ;[:u :!COp] ; Selection -> HasteBin link
                  ;[:i :!COp] ; Selection -> private GitHub gist (with url in clipboard) TODO:
+                 [:i [:km "Selected text -> Alfred Snippet"]]
                  [:o :!Cx] ; Cut
                  ;[:open_bracket :!Oleft_arrow]
                  [:open_bracket [:km "Lowercase selected text"]]
@@ -564,14 +568,15 @@
                  ;[:q [:km "open: Zeplin"]]
                  ;[:q [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  ;[:w [:km "Save link"]]
-                 [:q [:km "open: Framer"]]
+                 ;[:q [:km "open: Framer"]]
+                 [:q [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  [:w [:km "open: Figma"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
                  ;[:o [:!Sreturn_or_enter :!Cs]]
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
-                 ;[:caps_lock :!CTOu] ; Sip color picker
+                 ;[:escape :!CTOu] ; Sip color picker
                  [:a [:km "open: Chrome Canary"]]
                  ;[:s [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  ;[:a [:km "open: Chrome Canary"]]
@@ -586,7 +591,7 @@
                  ;[:j [:!Sreturn_or_enter :!Cs]]
                  ;[:j [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  ;[:j :!CTO0] ; Search Alfred Snippets
-                 [:j [:km "Selected text -> Alfred Snippet"]]
+                 [:j [:km "open: Learn Anything"]]
                  [:i :!Treturn_or_enter]
                  [:o :!Sreturn_or_enter]
                  [:k :return_or_enter]
@@ -635,8 +640,8 @@
                   [:h [:km "paste: 😺"]]
                   [:f [:km "paste: explain"]]
                   [:k [:km "paste: Thank you."]]
-                  [:l [:km "paste: Cal.com (30 min)️"]]
-                  [:m [:km "paste: Cal.com (15 min)️"]]
+                  [:l [:km "paste: Cal.com (15 min)️"]]
+                  [:m [:km "paste: Cal.com (30 min)️"]]
                   [:semicolon [:km "paste: ♥️"]]
                   [:period [:km "paste: that worked, thanks"]]
                   [:g [:km "paste: Telegram (personal)️"]]
@@ -651,8 +656,8 @@
                  [:d [:km "Commit dotfiles"]]
                  [:f [:km "Commit home"]]
                  ;[:j [[:km "JS Dash profile"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
-                 [:j [[:open "dash://.tsprofile:"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
-                 [:k [[:open "dash://.rustprofile:"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
+                 [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
+                 [:k [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
                  [:l [[:open "dash://.swiftprofile:"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
                  [:semicolon [[:open "dash://.goprofile:"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
                  ;[:l [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
