@@ -559,7 +559,8 @@
                  [:3 [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
                  ;[:tab [:km "Go to test macro"]]
                  [:tab [:km "Go to test macro"]]
-                 [:s [:km "Test"]]
+                 [:q [:km "Test"]]
+                 [:s [:km "open: Simulator"]]
                  ;[:q [:km "open: Photos"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "edit: 1st Safari tab"]]
@@ -569,7 +570,7 @@
                  ;[:q [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  ;[:w [:km "Save link"]]
                  ;[:q [:km "open: Framer"]]
-                 [:q [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
+                 ;[:q [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  [:w [:km "open: Figma"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
@@ -591,7 +592,8 @@
                  ;[:j [:!Sreturn_or_enter :!Cs]]
                  ;[:j [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  ;[:j :!CTO0] ; Search Alfred Snippets
-                 [:j [:km "open: Learn Anything"]]
+                 ;[:j [:km "open: Learn Anything"]]
+                 [:j [:km "open: Learn Anything (dev)"]]
                  [:i :!Treturn_or_enter]
                  [:o :!Sreturn_or_enter]
                  [:k :return_or_enter]

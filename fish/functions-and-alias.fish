@@ -208,6 +208,7 @@ alias wgi="watchexec --restart --exts go \"tput reset && go install .\""
 alias wg="watchexec --restart --exts go \"tput reset && go run .\""
 alias dw="deno task watch"
 alias :i="bun i"
+alias :id="bun i -d" # dev dep install
 alias :d="bun dev"
 alias :t="bun test --watch"
 alias e="edgedb"
