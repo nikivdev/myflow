@@ -214,3 +214,4 @@ alias :t="bun test --watch"
 alias e="edgedb"
 alias g="goku" # TODO: should be automatic, have file watcher
 alias .="open ."
+alias :solid="cd ~/src/ts/packages/solid && bun dev"

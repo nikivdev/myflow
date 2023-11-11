@@ -8,6 +8,7 @@
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
              :open "open \"%s\""
              :open-g "open -g \"%s\""
+             :shell "%s"
              }
  :simlayers {
              :2-mode {:key :2}
@@ -143,7 +144,7 @@
                  [:k [:km "list: Alfred workflows"]]
                  [:l [:km "list: Command line tools"]]
                  [:n [:km "list: Events"]]]}
-        {:des "tabkey (emojis?)"
+        {:des "tabkey (emojis or commands)"
          :rules [:tab-mode
                   [:s [:km "paste: ✨"]]]} ; -> ✨
         {:des "qkey (cmd + shift)"
@@ -195,6 +196,7 @@
                  ;[:q [:km "open: GraphQL"]]
                  [:e [:km "open: Fantastical"]]
                  [:r [:km "open: Notion"]]
+                 [:t [:km "open: Learn Anything"]]
                  ;[:r [:km "open: Spacedrive"]]
                  ;[:t [:km "open: Activity Monitor"]]
                  ;[:i [:km "open: Instruments"]]
@@ -655,12 +657,14 @@
          :rules [:tilde-mode
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
-                 [:d [:km "Commit dotfiles"]]
-                 [:f [:km "Commit home"]]
+                 [:d [:km "Do debug build of LA"]]
+                 ;[:d [:km "Commit dotfiles"]]
+                 ;[:f [:km "Commit home"]]
                  ;[:j [[:km "JS Dash profile"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
                  [:k [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
                  [:l [[:open "dash://.swiftprofile:"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
+                 ;[:semicolon [:shell "/usr/local/bin/cursor ~/src/config/workspaces/ts-rust.code-workspace"]]
                  [:semicolon [[:open "dash://.goprofile:"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
                  ;[:l [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  ;[:c [:km "Commit code"]]
