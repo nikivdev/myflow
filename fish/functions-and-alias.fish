@@ -139,6 +139,7 @@ function n
     end
 end
 
+# forceRemoteGitBranchToBeThisCommit <commit-hash>:<branch-name>
 function forceRemoteGitBranchToBeThisCommit
     set commit_hash (string split ":" $argv)[1]
     set branch_name (string split ":" $argv)[2]

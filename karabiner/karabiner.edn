@@ -144,7 +144,7 @@
                  [:k [:km "list: Alfred workflows"]]
                  [:l [:km "list: Command line tools"]]
                  [:n [:km "list: Events"]]]}
-        {:des "tabkey (emojis or commands)"
+        {:des "tabkey (things)"
          :rules [:tab-mode
                   [:s [:km "paste: ✨"]]]} ; -> ✨
         {:des "qkey (cmd + shift)"
@@ -559,7 +559,6 @@
          :rules [:f-mode
                  [:1 [:km "View Sip"]]
                  [:3 [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
-                 ;[:tab [:km "Go to test macro"]]
                  [:tab [:km "Go to test macro"]]
                  [:s [:km "open: Simulator"]]
                  [:q [:km "open: Photos"]]
@@ -584,7 +583,8 @@
                  ;[:a [:km "open: Chrome Canary"]]
                  ;[:s [:km "edit: 2nd Warp tab"]]
                  [:escape [:km "Test"]]
-                 [:grave_accent_and_tilde [:km "open: Excalidraw"]]
+                 [:n :!STh] ; Record macro
+                 ;[:grave_accent_and_tilde [:km "open: Excalidraw"]]
                  ;[:s [:!TOreturn_or_enter :!Cs]]
                  ;[:s [:km "open: Eagle"]]
                  [:d [:km "Save link (top)"]]
@@ -652,25 +652,22 @@
                   [:u [:km "paste: update"]]
                   [:p [:km "paste: please"]]
                   [:spacebar [:km "Selected text into Google Lucky search"]]]}
-        {:des "tilkey (actions + language switches)"
+        {:des "tilkey (code switches + websites)"
          :rules [:tilde-mode
-                 [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
-                 [:d [:km "Do debug build of LA"]]
+                 ;[:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
+                 ;[:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
+                 ;[:d [:km "Do debug build of LA"]]
                  ;[:d [:km "Commit dotfiles"]]
                  ;[:f [:km "Commit home"]]
-                 ;[:j [[:km "JS Dash profile"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
+                 [:w [:km "w: Cloudflare Workers & Pages"]]
+                 [:e [:km "w: Baselime LA logs"]]
+                 [:f [:km "w: Cloudflare LA deployments"]]
+                 [:g [:km "w: Grafbase LA logs"]]
+                 [:i [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
                  [:k [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
-                 [:l [[:open "dash://.swiftprofile:"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
-                 ;[:semicolon [:shell "/usr/local/bin/cursor ~/src/config/workspaces/ts-rust.code-workspace"]]
-                 [:semicolon [[:open "dash://.goprofile:"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
-                 ;[:l [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
-                 ;[:c [:km "Commit code"]]
-                 ;[:v [:km "Commit wiki"]]
-                 ;[:n [[:open "dash://.rust:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 1] ["in-swift" 0]]] ; Rust
-                 ;[:n :!STh] ; Record macro
-                 ;[:m [[:open "dash://.swift:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 1]]] ; Swift
+                 [:l [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
+                 [:semicolon [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
                  [:spacebar :!COSn]]} ; Selection -> GitHub
         {:des "zkey (chat)"
          :rules [:z-mode
