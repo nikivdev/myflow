@@ -139,6 +139,12 @@ function n
     end
 end
 
+function forceRemoteGitBranchToBeThisCommit
+    set commit_hash (string split ":" $argv)[1]
+    set branch_name (string split ":" $argv)[2]
+    git push origin $commit_hash:$branch_name --force
+end
+
 # p - pnpm install dependencies
 # p <cmd> - pnpm <cmd>
 function p
@@ -218,3 +224,4 @@ alias :s="cd ~/src/ts/packages/solid && bun dev" # run solid web server
 alias :j="cd ~/src/ts && bun dev"
 alias :r="cd ~/src/rust && bun dev"
 alias :t="cd ~/src/python && bun dev"
+alias getLastCommitHash="git log -1 --format=\"%H\""
