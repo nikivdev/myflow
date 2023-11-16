@@ -152,7 +152,7 @@ function p
     if not set -q argv[1]
         pnpm i
     else
-        pnpm $argv
+        pnpm add $argv
     end
 end
 
@@ -180,6 +180,16 @@ function envsource
         set item (string split -m 1 '=' $line)
         set -gx $item[1] $item[2]
         echo "Exported key $item[1]"
+    end
+end
+
+# :i = bun i
+# :i <package> = bun add <package>
+function :i
+    if not set -q argv[1]
+        bun i
+    else
+        bun add $argv
     end
 end
 
@@ -214,7 +224,6 @@ alias md="mkdir"
 alias wgi="watchexec --restart --exts go \"tput reset && go install .\""
 alias wg="watchexec --restart --exts go \"tput reset && go run .\""
 alias dw="deno task watch"
-alias :i="bun i"
 alias :id="bun i -d" # dev dep install
 alias :d="bun dev"
 alias :t="bun test --watch"
@@ -226,3 +235,6 @@ alias :j="cd ~/src/ts && bun dev"
 alias :r="cd ~/src/rust && bun dev"
 alias :t="cd ~/src/python && bun dev"
 alias getLastCommitHash="git log -1 --format=\"%H\""
+alias pr="pnpm run"
+alias w.="cursor-nightly .env"
+alias pw='pnpm add -w'

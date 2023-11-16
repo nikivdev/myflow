@@ -386,7 +386,7 @@
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:w :!CObackslash] ; 1Password search
                  ;[:e [:km "Make 2Do task"]]
-                 [:e [:open "raycast://extensions/loris/safari/search-bookmarks"]]
+                 [:e [:km "open: EdgeDB Cloud"]]
                  ;[:e [:km "open: Typefully"]]
                  ;[:e [:km "Make 2Do task"]]
                  [:r [:km "Make 2Do task with note as current URL"]]
@@ -662,6 +662,7 @@
                  [:e [:km "w: Baselime LA logs"]]
                  [:f [:km "w: Cloudflare LA deployments"]]
                  [:g [:km "w: Grafbase LA logs"]]
+                 [:v [:km "w: Pitch"]]
                  [:i [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
                  [:k [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
@@ -858,19 +859,19 @@
                  ;[:3 [:alfred "search alfred" "nikivi.utilities" "d3 "]]
                  ;[:q [:alfred "search alfred" "nikivi.utilities" "tldr "]]
                  ;[:w [:alfred "search alfred" "nikivi.utilities" "django "]]
-                 [:w [:alfred "search alfred" "nikivi.utilities" "ts "]]
-                 [:e [:alfred "search alfred" "nikivi.utilities" "html "]]
+                 ;[:w [:alfred "search alfred" "nikivi.utilities" "ts "]]
+                 ;[:e [:alfred "search alfred" "nikivi.utilities" "html "]]
                  ;[:r [:alfred "search alfred" "nikivi.utilities" "react "]]
-                 [:a [:alfred "search alfred" "nikivi.utilities" "rust "]]
+                 ;[:a [:alfred "search alfred" "nikivi.utilities" "rust "]]
                  ;[:a [:alfred "search alfred" "nikivi.utilities" "man "]]
                  ;[:d [:alfred "search alfred" "nikivi.utilities" "docker "]]
-                 [:f [:alfred "search alfred" "nikivi.utilities" "apple "]]
-                 [:s [:alfred "search alfred" "nikivi.utilities" "lodash "]]
-                 [:d [:alfred "search alfred" "nikivi.utilities" "node "]]
-                 [:g [:alfred "search alfred" "nikivi.utilities" "godoc "]]
-                 [:c [:alfred "search alfred" "nikivi.utilities" "css "]]
-                 [:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
-                 [:b [:alfred "search alfred" "nikivi.utilities" "bash "]]
+                 ;[:f [:alfred "search alfred" "nikivi.utilities" "apple "]]
+                 ;[:s [:alfred "search alfred" "nikivi.utilities" "lodash "]]
+                 ;[:d [:alfred "search alfred" "nikivi.utilities" "node "]]
+                 ;[:g [:alfred "search alfred" "nikivi.utilities" "godoc "]]
+                 ;[:c [:alfred "search alfred" "nikivi.utilities" "css "]]
+                 ;[:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
+                 ;[:b [:alfred "search alfred" "nikivi.utilities" "bash "]]
                  [:spacebar :!OSC1]]} ; Open Dash
         {:des "commakey (words)"
          :rules [:comma-mode
@@ -908,7 +909,7 @@
                   [:k [:right_arrow :spacebar :!Sopen_bracket :return_or_enter]] ; -> {  }
                   [:grave_accent_and_tilde [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sclose_bracket :left_arrow]] ; -> style={}
                   [:z [:c :o :n :s :o :l :e :period :e :r :r :o :r :!S9 :!S0 :left_arrow]] ; -> console.error()
-                  ;[:x [:t :a :c :h :y :o :n :s :spacebar]] ; -> tachyons
+                  [:x [:p :r :o :c :e :s :s :period :e :n :v :period]] ; -> process.env.
                   ;[:c [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
                   ;[:c [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
                   [:c [:spacebar :c :l :a :s :s :equal_sign :!Squote :!Squote :left_arrow]] ; -> class=""
