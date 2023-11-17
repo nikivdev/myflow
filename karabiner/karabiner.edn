@@ -196,7 +196,6 @@
                  ;[:q [:km "open: GraphQL"]]
                  [:e [:km "open: Fantastical"]]
                  [:r [:km "open: Notion"]]
-                 [:t [:km "open: Learn Anything"]]
                  ;[:r [:km "open: Spacedrive"]]
                  ;[:t [:km "open: Activity Monitor"]]
                  ;[:i [:km "open: Instruments"]]
@@ -394,11 +393,13 @@
                  ;[:i [:alfred "search alfred" "nikivi.utilities" "?"]]
                  ;[:i [:km "Search Dash app"]]
                  [:i [:km "open: Dash"]]
-                 [:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
+                 ;[:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
+                 [:escape [:km "open: Perplexity"]]
                  [:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
                  ;[:s [:alfred "search code" "nikivi.manage.notes"]]
+                 [:s [:alfred "search folders" "nikivi.search.folders"]]
                  [:d [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
-                 [:f [:alfred "search folders" "nikivi.search.folders"]]
+                 [:f [:km "open: Learn Anything Web"]]
                  ;[:g [:km "2Do with current url as note (github)"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  ;[:j [:alfred "search dash" "com.kapeli.dash.workflow"]]
@@ -681,7 +682,8 @@
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
                  ;[:l [:km "open: Quill"]]
-                 [:l [:km "open: Element"]]
+                 ;[:l [:km "open: Element"]]
+                 [:l [:km "open: X Pro"]]
                  [:semicolon [:km "open: Slack"]]
                  [:c [:km "open: Contacts"]]
                  [:v [:km "open: Around"]]
@@ -755,11 +757,10 @@
                  [:p [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss
-                 ;[:a [:km "Play/Pause Endel"]]
                  ;[:a [:km "open: Endel"]]
-                 ;[:a [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2xqhXTdxgBg5z9IuOOCIV3"]] ; Endel
-                 [:escape [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4F0sgXdji5yB1Gb9daWwqy"]] ; the focus song
+                 ;[:a [:km "Play/Pause Endel"]]
                  [:a [:open "raycast://extensions/mattisssa/spotify-beta/search"]] ; Raycast Spotify Search
+                 [:escape [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4F0sgXdji5yB1Gb9daWwqy"]] ; the focus song
                  [:s [:km "Play/Pause Spotify"]]
                  [:d [:km "Repeat Spotify song"]] ; TODO: do in background
                  ;[:d :!CO9] ; Connect/disconnect AirPods
@@ -820,8 +821,9 @@
                  [:quote [:km "w: HckrNews"]]
                  [:z [:km "w: HN (comments)"]]
                  [:x [:km "w: Lobsters (comments)"]]
-                 [:n [:km "w: Inoreader"]]
-                 [:m [:km "w: Mastodon"]]
+                 ;[:n [:km "w: Inoreader"]]
+                 ;[:m [:km "w: Mastodon"]]
+                 [:m [:km "open: Elk"]]
                  [:comma [:km "w: GitHub (trending)"]]
                  [:period [:km "w: YouTube (subs)"]]
                  [:slash [:km "w: GitHub (explore)"]]
