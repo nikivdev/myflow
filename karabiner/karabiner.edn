@@ -397,9 +397,8 @@
                  [:escape [:km "open: Perplexity"]]
                  [:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
                  ;[:s [:alfred "search code" "nikivi.manage.notes"]]
-                 [:s [:alfred "search folders" "nikivi.search.folders"]]
                  [:d [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
-                 [:f [:km "open: Learn Anything Web"]]
+                 [:f [:alfred "search folders" "nikivi.search.folders"]]
                  ;[:g [:km "2Do with current url as note (github)"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  ;[:j [:alfred "search dash" "com.kapeli.dash.workflow"]]
@@ -598,10 +597,10 @@
                  ;[:j :!CTO0] ; Search Alfred Snippets
                  [:j [:km "open: Learn Anything (dev)"]]
                  [:i :!Treturn_or_enter]
-                 [:o :!Sreturn_or_enter]
+                 [:o :!Oreturn_or_enter]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
-                 [:semicolon :!Oreturn_or_enter]
+                 [:semicolon [:km "open: Learn Anything Web"]]
                  ;[:semicolon [:escape :!Sa :semicolon :return_or_enter]]
                  ;[:semicolon [:km "open: MindNode"]]
                  ;[:semicolon [:km "open: Obsidian"]]
@@ -630,11 +629,12 @@
                  [:j :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  [:k :!COSf] ; Maximize window
                  [:l :!CSOd] ; Move window right
-                 [:semicolon :!COSs] ; Move window between different screen & maximize (iPad)
+                 ;[:semicolon :!COSs] ; Move window to right desktop
+                 [:semicolon :!COSs] ; Move window between different screen & maximize
                  ;[:z :!CO0] ; Show Dropzone dropdown
                  [:n :!CTOg] ; Turn on/off notifications
                  [:m :!COslash] ; Show/hide notification centre
-                 [:period :!COS6]]} ; Toggle Night Shift on/off.
+                 [:quote :!COS6]]} ; Toggle Night Shift on/off.
         {:des "capskey (paste)"
          :rules [:escape-mode
                   [:w [:km "paste: personal nikita.vo@ email"]]

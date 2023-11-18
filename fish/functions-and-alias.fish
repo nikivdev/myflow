@@ -206,6 +206,7 @@ alias dg="cd ~/src/config"
 alias dt='cd ~/test'
 alias de="cd ~/Desktop"
 alias ds="cd ~/try"
+alias dw="cd ~/data/wiki"
 
 # rust
 # alias rbnowarning="RUSTFLAGS="-A warnings" cargo build"
@@ -223,7 +224,7 @@ alias rr="rm -rf"
 alias md="mkdir"
 alias wgi="watchexec --restart --exts go \"tput reset && go install .\""
 alias wg="watchexec --restart --exts go \"tput reset && go run .\""
-alias dw="deno task watch"
+# alias dw="deno task watch"
 alias :id="bun i -d" # dev dep install
 alias :d="bun dev"
 alias :t="bun test --watch"
