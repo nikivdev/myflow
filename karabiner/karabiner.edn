@@ -382,9 +382,11 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
-                 [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 [:w :!CObackslash] ; 1Password search
+                 ;[:w :!CObackslash] ; 1Password search
+                 ;[:w :!CObackslash] ; 1Password search
                  ;[:e [:km "Make 2Do task"]]
+                 [:q [:km "1Password Search"]]
+                 [:w [:km "open: Cloudflare Dashboard"]]
                  [:e [:km "open: EdgeDB Cloud"]]
                  ;[:e [:km "open: Typefully"]]
                  ;[:e [:km "Make 2Do task"]]
@@ -397,8 +399,10 @@
                  [:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
                  ;[:s [:alfred "search code" "nikivi.manage.notes"]]
                  [:s [:alfred "search folders" "nikivi.search.folders"]]
-                 [:d [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
+                 ;[:d [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
+                 [:d [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:f [:km "open: Perplexity"]]
+                 [:g [:km "open: Grafbase"]]
                  ;[:g [:km "2Do with current url as note (github)"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  ;[:j [:alfred "search dash" "com.kapeli.dash.workflow"]]
