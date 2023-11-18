@@ -394,11 +394,11 @@
                  ;[:i [:km "Search Dash app"]]
                  [:i [:km "open: Dash"]]
                  ;[:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
-                 [:escape [:km "open: Perplexity"]]
                  [:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
                  ;[:s [:alfred "search code" "nikivi.manage.notes"]]
+                 [:s [:alfred "search folders" "nikivi.search.folders"]]
                  [:d [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
-                 [:f [:alfred "search folders" "nikivi.search.folders"]]
+                 [:f [:km "open: Perplexity"]]
                  ;[:g [:km "2Do with current url as note (github)"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  ;[:j [:alfred "search dash" "com.kapeli.dash.workflow"]]
