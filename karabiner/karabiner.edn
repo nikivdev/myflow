@@ -219,20 +219,19 @@
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor Nightly"]]
                  [:semicolon [:km "open: Cursor"]]
-                 [:quote [:km "open wip.md with Cursor Nightly"]]
                  [:c [:km "open: Spotify"]]
+                 [:v [:km "open: Pathfinder"]]
                  [:h [:km "open: HTTPie"]]
-                 [:v [:km "open: Linear"]]
                  ;[:v [:km "open: TablePlus"]]
                  ;[:v [:km "open: RapidAPI"]]
                  ;[:v [:km "open: SQLiteFlow"]]
                  [:b [:km "open: BetterTouchTool"]]
-                 [:n [:km "open: Pathfinder"]]
+                 [:n [:km "open wip.md with Cursor Nightly"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
                  [:period [:km "open: Xcode"]]
                  ;[:period [:km "open: Xcode (beta)"]]
-                 [:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
+                 [:spacebar [:km "open: Linear"]]]}
                  ;[:spacebar [:km "open: TablePlus"]]]}
                  ;[:spacebar [:km "open: Dash"]]]}
                  ;[:spacebar [:km "open: Beekeepr Studio Ultimate"]]]}
@@ -566,6 +565,7 @@
                  [:3 [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
                  [:tab [:km "Go to test macro"]]
                  ;[:q [:km "open: Photos"]]
+                 ;[:q [:km "open: Cosmos"]]
                  [:q [:km "open: Pixave"]]
                  [:w [:km "open: Figma"]]
                  [:e :!CO8] ; Alfred clipboard history search
@@ -610,8 +610,7 @@
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
-                 ;[:spacebar [:km "open: Cosmos"]]
-                 [:spacebar [:km "open: Cosmos"]]]}
+                 [:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
                  ;[:spacebar [:km "open: Excalidraw"]]]}
                  ;[:spacebar [:km "open: Eagle"]]]}
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
