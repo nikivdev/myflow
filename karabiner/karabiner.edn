@@ -303,7 +303,7 @@
                  ;[:i [:km "open: Flume"]]
                  ;[:i [:km "open: Feedback Assistant"]]
                  ;[:o [:km "open: Developer"]]
-                 [:i [:km "open: NetNewsWire"]]
+                 ;[:i [:km "open: NetNewsWire"]]
                  ;[:escape [:km "open: Preview"]]
                  [:escape [:km "open: IINA"]]
                  [:a [:km "open: Alfred Preferences"]]
@@ -421,7 +421,6 @@
                  ;[:n [:alfred "search lists" "nikivi.learn.anything"]]
                  ;[:m [:alfred "search lists" "nikivi.awesome.lists"]]
                  ;[:spacebar [:alfred "search PDFs" "nikivi.search.files"]]]}
-                 ;[:spacebar [:km "open: MacGPT"]]]}
                  [:spacebar [:km "open: ChatGPT"]]]}
                  ;[:spacebar [:km "open: Ask"]]]}
         ;; TODO: not used, move it to other keys, whatever is useful
@@ -568,7 +567,8 @@
                  [:1 [:km "View Sip"]]
                  [:3 [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
                  [:tab [:km "Go to test macro"]]
-                 [:q [:km "open: Photos"]]
+                 ;[:q [:km "open: Photos"]]
+                 [:q [:km "open: Pixave"]]
                  [:w [:km "open: Figma"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
@@ -612,7 +612,7 @@
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
-                 [:spacebar [:km "open: Pixave"]]]}
+                 [:spacebar [:km "open: Cosmos"]]]}
                  ;[:spacebar [:km "open: Excalidraw"]]]}
                  ;[:spacebar [:km "open: Eagle"]]]}
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
@@ -972,9 +972,9 @@
                  ;[:a [:km "OBS stream scene on"]]
                  ;[:s [:km "OBS stream scene off"]]
                  ;[:s [:t :h :a :n :k :s]] ; -> thanks
-                 [:tab :!CTOSg] ; Screen Studio recording
                  ;[:escape :!CTOSi] ; Screen Studio (record entire display)
-                 [:escape [:km "Start Screen Studio (record entire display)"]]
+                 [:tab [:km "Start Screen Studio (record entire display)"]]
+                 [:escape [:km "New tweet with clipboard (image or text)"]]
                  [:a :!CS8] ; Screenshot -> Pixave
                  [:s :!CTOSg] ; Screen Studio recording
                  ;[:s :!CTOSg] ; Loom recording
@@ -1014,8 +1014,9 @@
                  ;[:m [:km "w: AWS"]]
                  ;[:comma [:km "w: Diagrams"]]
                  [:b [:km "w: Lobsters submit"]]
-                 [:n [:km "w: Reddit submit"]]
-                 [:m [:km "New Mastodon post"]]
-                 [:period [:km "New tweet with current URL"]]
+                 [:n [:km "New tweet with current URL"]]
+                 [:m [:km "New tweet with @"]]
+                 ;[:n [:km "w: Reddit submit"]]
+                 ;[:m [:km "New Mastodon post"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
 ]}
