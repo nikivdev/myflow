@@ -291,7 +291,7 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 [:spacebar [:km "Copy selected text to ChatGPT or explain .."]]]}
+                 [:spacebar [:km "Explain selected text with ChatGPT or explain .."]]]}
                  ;[:spacebar [:km "Explain selected text (or just explain ..)"]]]}
                  ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
         {:des "rkey (apps)"
@@ -323,7 +323,7 @@
                  [:period [:km "open: Preview"]]
                  ;[:period [:km "open: Final Cut Pro"]]
                  ;[:spacebar :!COSx]]} ; Selection -> Reddit
-                 [:spacebar [:km "open: IINA"]]]}
+                 [:spacebar [:km "Copied image into ChatGPT"]]]}
         {:des "tkey (palettes + websites)"
          :rules [:t-mode
                  ;[:0 [:km "w: regex101"]]
