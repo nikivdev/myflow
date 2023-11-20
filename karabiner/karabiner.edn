@@ -193,7 +193,6 @@
                  ;[:spacebar :!CSOe]]} ; Selection -> YouTube
         {:des "wkey (apps)"
          :rules [:w-mode
-                 ;[:q [:km "open: GraphQL"]]
                  [:e [:km "open: Fantastical"]]
                  [:r [:km "open: Notion"]]
                  ;[:r [:km "open: Spacedrive"]]
@@ -207,35 +206,33 @@
                  ;[:p [:km "open: Postgres"]]
                  [:escape [:km "open: Finder"]]
                  [:a [:km "open: Obsidian"]]
+                 [:f [:km "open: 2Do"]]
+                 [:g [:km "open: Notes"]]
                  ;[:f [:km "open: Learn Anything"]]
                  ;[:d [:km "open: Postico"]]
                  ;[:d [:km "open: TablePlus"]]
                  [:d [:km "open: Beekeepr Studio Ultimate"]]
-                 [:f [:km "open: 2Do"]]
                  ;[:g [:km "open: KusKus"]]
                  ;[:g [:km "open: Height"]]
                  ;[:h [:km "open: Things"]]
-                 [:g [:km "open: Notes"]]
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor Nightly"]]
                  [:semicolon [:km "open: Cursor"]]
+                 [:quote [:km "open wip.md with Cursor Nightly"]]
                  [:c [:km "open: Spotify"]]
-                 ;[:v [:km "open: Pathfinder"]]
                  [:h [:km "open: HTTPie"]]
-                 [:v [:km "open: Pathfinder"]]
-                 ;[:v [:km "open: Linear"]]
+                 [:v [:km "open: Linear"]]
                  ;[:v [:km "open: TablePlus"]]
                  ;[:v [:km "open: RapidAPI"]]
                  ;[:v [:km "open: SQLiteFlow"]]
                  [:b [:km "open: BetterTouchTool"]]
-                 [:n [:km "open wip.md with Cursor Nightly"]]
-                 ;[:n [:km "open: Sublime Text"]]
+                 [:n [:km "open: Pathfinder"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
                  [:period [:km "open: Xcode"]]
                  ;[:period [:km "open: Xcode (beta)"]]
-                 [:spacebar [:km "open: Linear"]]]}
+                 [:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
                  ;[:spacebar [:km "open: TablePlus"]]]}
                  ;[:spacebar [:km "open: Dash"]]]}
                  ;[:spacebar [:km "open: Beekeepr Studio Ultimate"]]]}
@@ -317,7 +314,7 @@
                  ;[:k [:km "open: PDF Expert"]]
                  ;[:l [:km "open: Reeder"]]
                  [:b [:km "Edit keyboard shortcuts"]]
-                 [:n [:km "open: ScreenFlow"]]
+                 ;[:n [:km "open: ScreenFlow"]]
                  [:m [:km "open: Music"]]
                  [:comma [:km "open: Arq"]]
                  [:period [:km "open: Preview"]]
@@ -388,9 +385,10 @@
                  ;[:w :!CObackslash] ; 1Password search
                  ;[:w :!CObackslash] ; 1Password search
                  ;[:e [:km "Make 2Do task"]]
-                 [:q [:km "1Password Search"]]
+                 [:escape [:km "1Password Search"]]
+                 [:q [:km "open: EdgeDB Cloud"]]
                  [:w [:km "open: Cloudflare Dashboard"]]
-                 [:e [:km "open: EdgeDB Cloud"]]
+                 [:e [:km "open: ChatGPT GPTs"]]
                  ;[:e [:km "open: Typefully"]]
                  ;[:e [:km "Make 2Do task"]]
                  [:r [:km "Make 2Do task with note as current URL"]]
@@ -612,6 +610,7 @@
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
+                 ;[:spacebar [:km "open: Cosmos"]]
                  [:spacebar [:km "open: Cosmos"]]]}
                  ;[:spacebar [:km "open: Excalidraw"]]]}
                  ;[:spacebar [:km "open: Eagle"]]]}
