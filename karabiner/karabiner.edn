@@ -565,18 +565,19 @@
                  [:1 [:km "View Sip"]]
                  [:3 [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
                  [:tab [:km "Go to test macro"]]
-                 [:escape [:km "Test"]]
                  ;[:q [:km "open: Photos"]]
-                 ;[:q [:km "open: Cosmos"]]
                  [:q [:km "open: Pixave"]]
                  [:w [:km "open: Figma"]]
+                 [:grave_accent_and_tilde [:km "Test"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
                  ;[:escape :!CTOu] ; Sip color picker
+                 [:escape [:km "open: Cosmos"]]
                  [:a [:km "open: Chrome Canary"]]
-                 [:s [:km "open: Simulator"]]
+                 [:s [:km "open: Spline"]]
+                 ;[:s [:km "open: Simulator"]]
                  ;[:s [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  ;[:a [:km "open: Chrome Canary"]]
                  ;[:s [:km "edit: 2nd Warp tab"]]
