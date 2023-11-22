@@ -301,6 +301,7 @@
                  ;[:o [:km "open: Developer"]]
                  ;[:i [:km "open: NetNewsWire"]]
                  ;[:escape [:km "open: Preview"]]
+                 [:i [:km "open: Pitch"]]
                  [:escape [:km "open: IINA"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:j [:km "open: Dictionary"]]
@@ -564,6 +565,7 @@
                  [:1 [:km "View Sip"]]
                  [:3 [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
                  [:tab [:km "Go to test macro"]]
+                 [:escape [:km "Test"]]
                  ;[:q [:km "open: Photos"]]
                  ;[:q [:km "open: Cosmos"]]
                  [:q [:km "open: Pixave"]]
@@ -578,7 +580,7 @@
                  ;[:s [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  ;[:a [:km "open: Chrome Canary"]]
                  ;[:s [:km "edit: 2nd Warp tab"]]
-                 [:escape [:km "open: Draw my UI"]]
+                 ;[:escape [:km "open: Draw my UI"]]
                  [:grave_accent_and_tilde [:km "Test"]]
                  [:n :!STh] ; Record macro
                  ;[:grave_accent_and_tilde [:km "open: Excalidraw"]]
@@ -659,7 +661,7 @@
                  [:e [:km "w: Baselime LA logs"]]
                  [:f [:km "w: Cloudflare LA deployments"]]
                  [:g [:km "w: Grafbase LA logs"]]
-                 [:v [:km "w: Pitch"]]
+                 ;[:v [:km "w: Pitch"]]
                  [:i [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
                  [:k [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
@@ -753,10 +755,10 @@
                  [:p [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss
-                 ;[:a [:km "open: Endel"]]
-                 ;[:a [:km "Play/Pause Endel"]]
-                 [:a [:open "raycast://extensions/mattisssa/spotify-beta/search"]] ; Raycast Spotify Search
-                 [:escape [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4F0sgXdji5yB1Gb9daWwqy"]] ; the focus song
+                 [:escape [:km "open: Endel"]]
+                 [:a [:km "Play/Pause Endel"]]
+                 ;[:a [:open "raycast://extensions/mattisssa/spotify-beta/search"]] ; Raycast Spotify Search
+                 ;[:escape [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4F0sgXdji5yB1Gb9daWwqy"]] ; the focus song
                  [:s [:km "Play/Pause Spotify"]]
                  [:d [:km "Repeat Spotify song"]] ; TODO: do in background
                  ;[:d :!CO9] ; Connect/disconnect AirPods
@@ -803,20 +805,20 @@
                  [:open_bracket [:km "w: Reddit Saved"]]
                  [:close_bracket [:km "w: Twitter Bookmarks"]]
                  [:a [:km "w: HN"]]
-                 [:s [:km "w: Lobsters"]]
                  [:f [:km "w: Reddit (all)"]]
                  [:g [:km "w: Alfred Forum"]]
-                 [:h [:km "w: Product Hunt (new)"]]
+                 ;[:h [:km "w: Product Hunt (new)"]]
                  ;[:j [:km "w: Reddit (new)"]]
                  ;[:j [:km "w: Reddit (in Safari Tech Preview)"]]
                  ;[:k [:km "w: GitHub (front page)"]]
-                 [:j [:km "w: Reddit"]]
+                 [:h [:km "w: HckrNews"]]
+                 [:j [:km "w: HN (new)"]]
                  [:k [:km "w: GitHub (dashboard)"]]
                  [:l [:km "w: Lobsters (new)"]]
-                 [:semicolon [:km "w: HN (new)"]]
-                 [:quote [:km "w: HckrNews"]]
-                 [:z [:km "w: HN (comments)"]]
-                 [:x [:km "w: Lobsters (comments)"]]
+                 [:semicolon [:km "w: Reddit"]]
+                 ;[:l [:km "w: Lobsters"]]
+                 ;[:z [:km "w: HN (comments)"]]
+                 ;[:x [:km "w: Lobsters (comments)"]]
                  ;[:n [:km "w: Inoreader"]]
                  ;[:m [:km "w: Mastodon"]]
                  [:m [:km "open: Elk"]]
