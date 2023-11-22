@@ -823,7 +823,8 @@
                  ;[:m [:km "w: Mastodon"]]
                  [:m [:km "open: Elk"]]
                  [:comma [:km "w: GitHub (trending)"]]
-                 [:period [:km "w: YouTube (subs)"]]
+                 ;[:period [:km "w: YouTube (subs)"]]
+                 [:period [:km "Get break"]]
                  [:slash [:km "w: GitHub (explore)"]]
                  [:spacebar :!TOSs]]} ; Selection -> DuckDuckGo
         {:des "nkey (alfred)"
