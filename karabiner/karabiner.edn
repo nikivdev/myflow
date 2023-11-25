@@ -194,18 +194,18 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:e [:km "open: Fantastical"]]
+                 [:r [:km "open: Notion"]]
                  [:t [:km "open: Pitch"]]
+                 [:a [:km "open: Learn Anything (prefer dev)"]]
                  ;[:r [:km "open: Spacedrive"]]
                  ;[:t [:km "open: Activity Monitor"]]
                  ;[:i [:km "open: Instruments"]]
-                 ;[:i [:km "open: Obsidian"]]
                  ;[:i [:km "open: Dropcode"]]
                  ;[:i [:km "open: OBS"]]
                  [:i [:km "Open Cursor Nightly TS- workspace"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open wip.md with Cursor Nightly"]]
                  [:escape [:km "open: Finder"]]
-                 [:a [:km "open: Obsidian"]]
                  [:d [:km "open: SQLiteFlow"]]
                  [:f [:km "open: 2Do"]]
                  [:g [:km "open: Notes"]]
@@ -226,12 +226,12 @@
                  ;[:v [:km "open: TablePlus"]]
                  ;[:v [:km "open: RapidAPI"]]
                  [:b [:km "open: BetterTouchTool"]]
-                 [:n [:km "open: Linear"]]
+                 [:n [:km "open: Obsidian"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
                  [:period [:km "open: Xcode"]]
                  ;[:period [:km "open: Xcode (beta)"]]
-                 [:spacebar [:km "open: Notion"]]]}
+                 [:spacebar [:km "open: Linear"]]]}
                  ;[:spacebar [:km "open: TablePlus"]]]}
                  ;[:spacebar [:km "open: Dash"]]]}
                  ;[:spacebar [:km "open: Beekeepr Studio Ultimate"]]]}
