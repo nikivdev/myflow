@@ -109,13 +109,7 @@
                  ]}
         {:des "2key (move + alfred)"
          :rules [:2-mode
-                 [:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
-                 [:j :!Cdown_arrow]
-                 [:k :!Cup_arrow]
-                 [:l :!Cright_arrow]
-                 [:h :!Cleft_arrow]
-                 [:semicolon :!Oup_arrow]
-                 [:quote :!Odown_arrow]
+                 ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
                  [:spacebar :!COSu]]} ; Selection -> HN
         {:des "3key (open files + projects)"
          :rules [:3-mode
@@ -146,7 +140,12 @@
                  [:n [:km "list: Events"]]]}
         {:des "tabkey (things)"
          :rules [:tab-mode
-                  [:s [:km "paste: ✨"]]]} ; -> ✨
+                 [:i [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
+                 [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
+                 [:k [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
+                 [:l [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
+                 [:semicolon [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
+                 [:s [:km "paste: ✨"]]]} ; -> ✨
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:3 :!CS3]
@@ -660,16 +659,20 @@
                  ;[:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                  ;[:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  ;[:d [:km "Do debug build of LA"]]
-                 [:w [:km "w: Cloudflare Workers & Pages"]]
-                 [:e [:km "w: Baselime LA logs"]]
-                 [:f [:km "w: Cloudflare LA deployments"]]
-                 [:g [:km "w: Grafbase LA logs"]]
+                 [:v :left_shift]
+                 [:##j :!Cdown_arrow]
+                 [:##k :!Cup_arrow]
+                 [:##l :!Cright_arrow]
+                 [:##h :!Cleft_arrow]
+                 [:##semicolon :!Oup_arrow]
+                 [:##quote :!Odown_arrow]
+                 [:##n :!Oleft_arrow]
+                 [:##m :!Oright_arrow]
+                 ;[:w [:km "w: Cloudflare Workers & Pages"]]
+                 ;[:e [:km "w: Baselime LA logs"]]
+                 ;[:f [:km "w: Cloudflare LA deployments"]]
+                 ;[:g [:km "w: Grafbase LA logs"]]
                  ;[:v [:km "w: Pitch"]]
-                 [:i [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
-                 [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
-                 [:k [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
-                 [:l [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
-                 [:semicolon [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
                  [:spacebar :!COSn]]} ; Selection -> GitHub
         {:des "zkey (chat)"
          :rules [:z-mode
