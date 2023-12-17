@@ -110,6 +110,10 @@
         {:des "2key (move + alfred)"
          :rules [:2-mode
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
+                 [:j :!Cdown_arrow]
+                 [:k :!Cup_arrow]
+                 [:l :!Cright_arrow]
+                 [:h :!Cleft_arrow]
                  [:spacebar :!COSu]]} ; Selection -> HN
         {:des "3key (open files + projects)"
          :rules [:3-mode
@@ -208,7 +212,8 @@
                  [:escape [:km "open: Finder"]]
                  [:d [:km "open: SQLiteFlow"]]
                  [:f [:km "open: 2Do"]]
-                 [:g [:km "open: Notes"]]
+                 [:g [:km "open: Day One"]]
+                 [:h [:km "open: Notes"]]
                  ;[:f [:km "open: Learn Anything"]]
                  ;[:d [:km "open: Postico"]]
                  ;[:d [:km "open: TablePlus"]]
@@ -307,7 +312,7 @@
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: Reader"]]
                  [:l [:km "Open Reader with Nightly TS- workspace split 50/50"]]
-                 [:semicolon [:km "open: Day One"]]
+                 ;[:semicolon [:km "open: Day One"]]
                  ;[:semicolon [:km "open: Crouton"]]
                  ;[:l [:km "open: Books"]]
                  ;[:l [:km "open: Reflect"]]
