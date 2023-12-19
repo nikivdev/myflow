@@ -1009,7 +1009,6 @@
                  [:h [:km "web: GitHub Learn Anything"]]
                  ;[:g :!CO5] ; Start/stop ScreenFlow recording
                  ;[:h [:km "w: Roam Research"]]
-                 ;[:j :!COS9] ; Raycast
                  ;[:j [:km "open: Typefully"]] ; or start writing tweet
                  ;[:j [:km "open: ChatGPT"]]
                  ;[:h [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
@@ -1017,6 +1016,7 @@
                  [:i [:open "raycast://extensions/loris/safari/search-history"]]
                  [:o [:open "raycast://extensions/loris/safari/search-bookmarks"]]
                  [:j :!CTO0] ; Search Alfred Snippets
+                 ;[:k :!COS9] ; Raycast
                  [:k [:open "raycast://extensions/loris/safari/cloud-tabs"]]
                  [:l [:km "New tweet"]]
                  [:semicolon [:km "open: Dash (with search)"]]
@@ -1033,8 +1033,9 @@
                  ;[:m [:km "w: AWS"]]
                  ;[:comma [:km "w: Diagrams"]]
                  [:b [:km "w: Lobsters submit"]]
-                 [:n [:km "New tweet with current URL"]]
-                 [:m [:km "New tweet with @"]]
+                 [:n [:km "New 2Do task"]]
+                 [:m [:km "New tweet with current URL"]]
+                 [:comma [:km "New tweet with @"]]
                  ;[:n [:km "w: Reddit submit"]]
                  ;[:m [:km "New Mastodon post"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
