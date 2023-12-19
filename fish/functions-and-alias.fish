@@ -88,12 +88,16 @@ function wn
     watchexec --no-vcs-ignore --restart --exts ts "tput reset && tsx $argv" --project-origin .
 end
 
-function wgm
+function wg
     watchexec --no-vcs-ignore --restart --exts go "tput reset && go run $argv" --project-origin .
 end
 
-function wgm
-    watchexec --no-vcs-ignore --restart --exts go "tput reset && go run main.go" --project-origin .
+function g
+    watchexec --no-vcs-ignore --restart --exts go "tput reset && go run ."
+end
+
+function G
+    watchexec --no-vcs-ignore --restart --exts go "tput reset && go test"
 end
 
 # r - run `cargo run` when rust files change
@@ -229,7 +233,6 @@ alias :id="bun i -d" # dev dep install
 alias :d="bun dev"
 alias :t="bun test --watch"
 alias e="edgedb"
-alias g="goku" # TODO: should be automatic, have file watcher
 alias .="open ."
 alias :s="cd ~/src/ts/packages/solid && bun dev" # run solid web server
 alias :j="cd ~/src/ts && bun dev"
@@ -239,3 +242,4 @@ alias getLastCommitHash="git log -1 --format=\"%H\""
 alias pr="pnpm run"
 alias w.="cursor-nightly .env"
 alias pw='pnpm add -w'
+alias gmt='go mod tidy'
