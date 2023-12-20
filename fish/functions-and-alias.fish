@@ -93,11 +93,19 @@ function wg
 end
 
 function g
-    watchexec --no-vcs-ignore --restart --exts go "tput reset && go run ."
+    if not set -q argv[1]
+        watchexec --no-vcs-ignore --restart --exts go "tput reset && go run ."
+    else
+        go $argv
+    end
 end
 
 function G
-    watchexec --no-vcs-ignore --restart --exts go "tput reset && go test"
+    if not set -q argv[1]
+        watchexec --no-vcs-ignore --restart --exts go "tput reset && go test"
+    else
+        watchexec --no-vcs-ignore --restart --exts go "tput reset && go test -run $argv"
+    end
 end
 
 # r - run `cargo run` when rust files change

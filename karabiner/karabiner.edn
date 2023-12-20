@@ -1034,8 +1034,9 @@
                  ;[:comma [:km "w: Diagrams"]]
                  [:b [:km "w: Lobsters submit"]]
                  [:n [:km "New 2Do task"]]
-                 [:m [:km "New tweet with current URL"]]
-                 [:comma [:km "New tweet with @"]]
+                 [:m [:km "New Linear task"]]
+                 [:comma [:km "New tweet with current URL"]]
+                 ;[:comma [:km "New tweet with @"]]
                  ;[:n [:km "w: Reddit submit"]]
                  ;[:m [:km "New Mastodon post"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
