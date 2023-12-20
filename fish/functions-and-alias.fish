@@ -92,6 +92,14 @@ function wg
     watchexec --no-vcs-ignore --restart --exts go "tput reset && go run $argv" --project-origin .
 end
 
+function gg
+    if not set -q argv[1]
+        go mod tidy
+    else
+        go get -u $argv
+    end
+end
+
 function g
     if not set -q argv[1]
         watchexec --no-vcs-ignore --restart --exts go "tput reset && go run ."
