@@ -114,6 +114,8 @@
                  [:k :!Cup_arrow]
                  [:l :!Cright_arrow]
                  [:h :!Cleft_arrow]
+                 [:semicolon :!Oup_arrow]
+                 [:quote :!Odown_arrow]
                  [:spacebar :!COSu]]} ; Selection -> HN
         {:des "3key (open files + projects)"
          :rules [:3-mode
@@ -1017,7 +1019,8 @@
                  [:o [:open "raycast://extensions/loris/safari/search-bookmarks"]]
                  [:j :!CTO0] ; Search Alfred Snippets
                  ;[:k :!COS9] ; Raycast
-                 [:k [:open "raycast://extensions/loris/safari/cloud-tabs"]] ; TODO: improve on it, slow
+                 ;[:k [:open "raycast://extensions/loris/safari/cloud-tabs"]] ; TODO: improve on it, slow
+                 [:k :!TSC0] ; Raycast: Search open tabs
                  [:l [:km "New tweet"]]
                  [:semicolon [:km "open: Dash (with search)"]]
                  [:period [:km "open: Safari Technology Preview"]]
