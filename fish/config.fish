@@ -1,4 +1,5 @@
 source ~/src/config/fish/functions-and-alias.fish
+source ~/src/config/fish/private.fish
 
 # path
 fish_add_path ~/.bun/bin/

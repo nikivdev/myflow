@@ -7,3 +7,4 @@
 /run/
 *.DS_Store
 workspaces
+fish/private.fish
