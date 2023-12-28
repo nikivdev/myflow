@@ -151,7 +151,7 @@
                  [:k [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
                  [:l [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
                  [:semicolon [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
-                 [:s [:km "paste: ✨"]]]} ; -> ✨
+                 [:s [:km "Open Dash and search docsets"]]]}
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:3 :!CS3]
@@ -649,6 +649,8 @@
          :rules [:escape-mode
                   [:w [:km "paste: personal nikita.vo@ email"]]
                   [:e [:km "paste: personal nikita@ email"]]
+                  [:r [:km "paste: 🙏"]]
+                  [:s [:km "paste: ✨"]]
                   ;[:j [:km "paste: Thanks ♥️"]]
                   [:j [:km "paste: thanks"]]
                   [:k [:km "paste: Thank you."]]
