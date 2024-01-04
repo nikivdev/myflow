@@ -146,6 +146,7 @@
                  [:n [:km "list: Events"]]]}
         {:des "tabkey (things)"
          :rules [:tab-mode
+                 [:f [:km "Get time in SF"]]
                  [:i [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
                  [:k [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
@@ -398,7 +399,7 @@
                  ;[:w [:km "open: Dash (search off)"]]
                  ;[:e [:km "open: Dash (with search)"]]
                  ;[:e [:km "open: ChatGPT GPTs"]]
-                 ;[:e [:km "open: EdgeDB Cloud"]]
+                 [:e [:km "open: EdgeDB Cloud"]]
                  ;[:e [:km "open: Typefully"]]
                  ;[:e [:km "Make 2Do task"]]
                  [:r [:km "Make 2Do task with note as current URL"]]
@@ -660,7 +661,7 @@
                   [:v [:km "paste: 👋"]]
                   [:h [:km "paste: 😺"]]
                   [:f [:km "paste: explain"]]
-                  [:semicolon [:km "paste: ♥️"]]
+                  [:semicolon [:km "paste: 🖤"]]
                   [:period [:km "paste: that worked, thanks"]]
                   [:g [:km "paste: Telegram (personal)️"]]
                   ;[:n [:km "paste: Nikita"]]
@@ -694,7 +695,9 @@
                  [:e [:km "open: Telegram"]]
                  ;[:i [:km "open: WhatsApp"]]
                  ;[:o [:km "open: FaceTime"]]
-                 [:d [:km "New Spark email"]]
+                 ;[:d [:km "New Spark email"]]
+                 [:o [:km "open: Around"]]
+                 [:d [:km "open: Mimestream"]]
                  [:f [:km "open: Spark"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
@@ -705,10 +708,11 @@
                  [:l [:km "open: X Pro"]]
                  [:semicolon [:km "open: Slack"]]
                  [:c [:km "open: Contacts"]]
-                 [:v [:km "open: Around"]]
-                 [:b [:km "w: Twitter"]]
-                 [:n [:km "w: Typefully"]]
-                 [:m [:km "w: Typefully with current URL pasted"]]
+                 [:v [:km "open: Mimestream"]]
+                 [:n [:km "open: Signal"]]
+                 ;[:b [:km "w: Twitter"]]
+                 ;[:n [:km "w: Typefully"]]
+                 ;[:m [:km "w: Typefully with current URL pasted"]]
                  ;[:n [:km "w: Twitter Compose"]]
                  ;[:m [:km "w: Twitter Compose with current URL pasted"]]
                  [:period [:km "w: Twitter Search"]]

@@ -27,6 +27,10 @@ function :
     end
 end
 
+function copyfile
+    cat $argv | pbcopy
+end
+
 # function W
 #     if not set -q argv[1]
 #         zed .
