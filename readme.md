@@ -41,9 +41,9 @@
 - [iPad](#ipad)
 - [Similar Setups](#similar-setups)
 - [Related](#related)
-- Automation course
-- Discord/Telegram chats
-- [Contributing](#contributing)
+- [Automation course](#automation-course)
+- [macOS/iOS Telegram group](#macosios-telegram-group)
+- [Contribute](#contribute)
 
 ## macOS Apps
 
@@ -256,10 +256,7 @@ I used only one Infograph Modular watch face. It showed the current time and day
 I don't use iPad either. When I did, I mostly used it to draw with [Procreate](https://procreate.art) or noting/sketching in [Notes](https://www.icloud.com/notes)/[Muse](https://museapp.com/) with the pencil. I also sometimes used it as second screen with [Sidecar](https://support.apple.com/en-me/HT210380).
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="450" heigth="450" src="https://raw.githubusercontent.com/nikitavoloboev/my-ios/main/ipad.png"></a>
-
-<a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="450" heigth="450" src="https://raw.githubusercontent.com/nikitavoloboev/my-ios/main/ipad2.png"></a>
+    <img width="450" heigth="450" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ipad.png"></a>
 
 ## Automation course
 
