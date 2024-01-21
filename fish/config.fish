@@ -32,8 +32,10 @@ set -gx PATH /usr/local/lib/ruby/gems/2.7.0/bin $PATH
 
 # TODO: uncomment if things break, trying to use bun only
 # pnpm
-#set -gx PATH /Users/nikiv/Library/pnpm $PATH
-# pnpm
-#set -gx PNPM_HOME /Users/nikiv/Library/pnpm
-#kset -gx PATH "$PNPM_HOME" $PATH
+set -gx PNPM_HOME "/Users/nikiv/Library/pnpm"
+set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
+
+
+ulimit -f unlimited
+set -Ux NODE_OPTIONS "--max-old-space-size=8096"

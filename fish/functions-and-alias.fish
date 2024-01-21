@@ -17,8 +17,8 @@ end
 #    end
 #end
 
-# TODO: replace it with CLI that will autocomplete from `package.json scripts` as you type
-# with fzf matching
+# TODO: make completions for `: ` so it gets the scripts found in package.json
+# below is maybe hacky way to do it but it has to by dynamic
 function :
     if not set -q argv[1]
         bun dev
@@ -26,6 +26,23 @@ function :
         bun $argv
     end
 end
+
+# function generate_completions_for_colon_function
+#     for script in (jq -r '.scripts | keys[]' package.json)
+#         complete -c : -a "$script"
+#     end
+# end
+# generate_completions_for_colon_function
+
+# autocomplete from `package.json scripts` as you type with fzf matching
+function ::
+    set selected_script (jq -r '.scripts | to_entries | .[] | .key + " " + .value' package.json | fzf | awk '{print $1}')
+    if test -n "$selected_script"
+        bun run $selected_script
+    end
+end
+
+bind \cg ::
 
 function copyfile
     cat $argv | pbcopy
@@ -263,3 +280,4 @@ alias pr="pnpm run"
 alias w.="cursor-nightly .env"
 alias pw='pnpm add -w'
 alias gmt='go mod tidy'
+alias findAll.gitInCurrentDir="find . -type d -name .git"
