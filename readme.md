@@ -1,6 +1,6 @@
 # My macOS / iOS
 
-> Apps/tools I use on macOS/iOS + configs. Fish, Karabiner, Cursor..
+> Apps/CLIs/configs I use on macOS/iOS. Fish, Karabiner, Cursor..
 
 ![](images/mac-night.png)
 
@@ -11,13 +11,13 @@
 > Light appearance. Use light themes when outside or when there is glare from the sun as it makes text more readable.
 
 <a align="center" href="https://github.com/nikitavoloboev/my-mac">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/my-main/main/images/ios-1.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-1.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/my-mac">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/my-main/main/images/ios-2.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-2.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/my-mac">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/my-main/main/images/ios-3.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-3.png"></a>
 
 > iOS screens. All described in detail below.
 
