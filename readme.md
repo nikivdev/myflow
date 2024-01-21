@@ -29,7 +29,6 @@
   - [Music](#music)
   - [Video](#video)
   - [Browsers](#browsers)
-    - [Safari Extensions](#safari-extensions)
 - [macOS CLIs](#macos-clis)
 - [macOS Config](#macos-config)
 - [Clean install/replicate macOS](#clean-installreplicate-macos)
