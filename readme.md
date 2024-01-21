@@ -72,42 +72,42 @@ My workflow is described in more detail in [wiki](https://wiki.nikiv.dev/sharing
 - [Fantastical](https://wiki.nikiv.dev/macOS/apps/fantastical) to manage my calendar and events.
 - [CleanShot](https://getcleanshot.com) for quick editing of screenshots/screencasts.
 - [Obsidian](https://wiki.nikiv.dev/tools/obsidian) for [note taking](https://wiki.nikiv.dev/other/wiki-workflow). Love its linking feature and various plugins it has. Also use it as a thinking scratchpad of todos.
-- [Notion](https://wiki.nikiv.dev/tools/notion) for managing some personal and organisational knowledge.
+- [Notion](https://wiki.nikiv.dev/tools/notion) for managing personal and organisational knowledge.
 - [Transmission](https://www.transmissionbt.com/) for downloading [torrents](https://wiki.nikiv.dev/networking/peer-to-peer/bittorrent).
 - [1Password](https://wiki.nikiv.dev/macOS/apps/1password) to keep all passwords and secret info. I prefer to use Passkeys or Single Sign On via GitHub/Google.
 
 ### Code
 
 - [Cursor Nightly](https://www.cursor.sh/) as my main code editor. It is a fork of [VS Code](https://wiki.nikiv.dev/text-editors/vs-code) but gives nice AI features I use often. Use many [VSCode extensions](https://wiki.nikiv.dev/text-editors/vs-code/vs-code-extensions) with it. Keep my UI minimal and useful.
-- [Sublime Merge](https://www.sublimemerge.com) as visual Git client. It gives nice overview of files changed, what branches exist and more. I have custom actions bound to go through Git tasks fast. I also use [gitupdate](https://github.com/nikitavoloboev/gitupdate) for throwaway commits either on PR branches where main commit will be written when squashed or some random doc related repos.
-- [Warp](https://wiki.nikiv.dev/unix/shell/warp) use it my primary terminal together with [Fish Shell](https://wiki.nikiv.dev/unix/shell/fish).
-- [Dash](https://kapeli.com/dash) use it to [search for APIs fast](https://i.imgur.com/P5LQaLz.png). Use it through [Alfred workflow](https://www.alfredapp.com/blog/productivity/dash-quicker-api-documentation-search/).
+- [Sublime Merge](https://www.sublimemerge.com) as visual Git client. It gives nice overview of files changed, what branches exist and more. I have custom actions bound to go through Git tasks fast.
+- [Warp](https://wiki.nikiv.dev/unix/shell/warp) as primary terminal together with [Fish Shell](https://wiki.nikiv.dev/unix/shell/fish).
+- [Dash](https://kapeli.com/dash) to search APIs fast.
 - [Pathfinder](https://pathfinder.dev/) for GraphQL requests (use [Grafbase](https://grafbase.com)). And [HTTPie](https://httpie.io/) for regular HTTP requests.
-- [Xcode](https://wiki.nikiv.dev/macOS/apps/xcode/) use it to build [iOS](https://wiki.nikiv.dev/operating-systems/ios) apps in [SwiftUI](https://wiki.nikiv.dev/programming-languages/swift/swift-libraries/swiftui).
+- [Xcode](https://wiki.nikiv.dev/macOS/apps/xcode/) to build [iOS](https://wiki.nikiv.dev/operating-systems/ios) apps in [SwiftUI](https://wiki.nikiv.dev/programming-languages/swift/swift-libraries/swiftui).
 
 ### Social
 
-- [Telegram](https://wiki.nikiv.dev/tools/telegram) use it as my main messenger and absolutely love it. Love its stickers, the speed and honestly everything about it.
-- [Spark](https://sparkmailapp.com) use it as my email client. Does good job of sorting mail and getting out of my way when writing/replying to things.
-- [Discord](https://wiki.nikiv.dev/tools/discord) use it the main way to interact with various communities. Much better than [Slack](https://wiki.nikiv.dev/tools/slack) as it keeps the history forever and recently added a nice Forum feature better question asking.
+- [Telegram](https://wiki.nikiv.dev/tools/telegram) as my main messenger. Love its stickers, speed and simplicity.
+- [Spark](https://sparkmailapp.com) as my email client. Does good job of sorting mail and getting out of my way when writing/replying to things.
+- [Discord](https://wiki.nikiv.dev/tools/discord) as main way to interact with various communities.
 
 ### Design
 
-- [Figma](https://wiki.nikiv.dev/design/figma) use it as my primary design tool.
+- [Figma](https://wiki.nikiv.dev/design/figma) as my primary design tool.
 
 ### Music
 
-- [Spotify](https://www.spotify.com) use it to stream all [my music](https://wiki.nikiv.dev/music). Keep all my liked songs in a [playlist](https://open.spotify.com/playlist/0ERn0U4qZIKC8Dy7RrMMsn).
+- [Spotify](https://www.spotify.com) to stream all [my music](https://wiki.nikiv.dev/music). Keep all my liked songs in a [playlist](https://open.spotify.com/playlist/0ERn0U4qZIKC8Dy7RrMMsn).
 
 ### Video
 
-- [IINA](https://github.com/lhc70000/iina) use it to play video files of movies/series.
+- [IINA](https://github.com/lhc70000/iina) to play video files of movies/series.
 
 ### Browsers
 
-- [Safari](https://wiki.nikiv.dev/web/browsers/safari) spend majority of time on mac in the app.
-- [Google Chrome Canary](https://wiki.nikiv.dev/web/browsers/google-chrome) use Canary over regular as I don't use Chrome for browsing but for development as its [dev tools](https://wiki.nikiv.dev/web/browsers/google-chrome/chrome-dev-tools) are superior. Sometimes canary builds break so I go to regular Chrome.
-- [Safari Technology Preview](https://developer.apple.com/safari/technology-preview/) use it only for browsing [Twitter](https://wiki.nikiv.dev/tools/twitter) and sometimes dev. Have 2 feeds open in tab 1/2 and have bind `space+k` to instantly open it.
+- [Safari](https://wiki.nikiv.dev/web/browsers/safari) as main browser for everything.
+- [Google Chrome Canary](https://wiki.nikiv.dev/web/browsers/google-chrome) for web development as its [dev tools](https://wiki.nikiv.dev/web/browsers/google-chrome/chrome-dev-tools) are superior to Safari.
+- [Safari Technology Preview](https://developer.apple.com/safari/technology-preview/) as browser for my [X](https://wiki.nikiv.dev/tools/twitter) feed and sometimes dev.
 
 ## macOS CLIs
 
