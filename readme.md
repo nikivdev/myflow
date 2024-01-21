@@ -1,4 +1,4 @@
-# Config (macOS / iOS)
+# My macOS / iOS
 
 > Apps/CLIs/configs I use on macOS/iOS. Fish, Karabiner, Cursor..
 
