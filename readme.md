@@ -55,7 +55,11 @@
 
 ## macOS Apps
 
-Below is a list of all the [apps](https://wiki.nikiv.dev/code/config#macos-apps-i-have-installed) & CLIs I use and how. Together with the [config](macos-config) I use for everything.
+<!-- TODO: link `CLIs` to wiki where it shows all the CLIs I have installed with descriptions or to file here that I parse with CLI of my own (fuzzy search command + what command/CLI does) (fish functions / CLIs / builtins / ..) (JSON?) -->
+
+<!-- TODO: maybe do same for `apps`, can have list of all apps installed + location from where to install the app -->
+
+Below is a list of all the [apps](https://wiki.nikiv.dev/code/config#macos-apps-i-have-installed) & [CLIs](#macos-clis) I use and how. Together with the [config](#macos-config) I use for everything.
 
 My workflow is described in more detail in [wiki](https://wiki.nikiv.dev/sharing/my-workflow) and [course](https://macos.nikiv.dev).
 
