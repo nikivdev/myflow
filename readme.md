@@ -30,21 +30,13 @@
   - [Video](#video)
   - [Browsers](#browsers)
     - [Safari Extensions](#safari-extensions)
-- [macOS CLIs](#command-line-apps)
+- [macOS CLIs](#macos-clis)
 - [macOS Config](#macos-config)
-- [iOS Apps](#ios)
-  - [Productivity](#productivity)
-  - [Social](#socialk)
-  - [Photos](#photos)
-  - [Learn](#learn)
-  - [Write](#write)
-  - [Music](#music)
-  - [Travel](#travel)
-  - [Automation](#automation)
-  - [Games](#games)
-- [iOS Widgets](#widgets)
-- [iOS Shortcuts](#shortcuts)
-- [iOS Control Center](#control-center)
+- [Clean install/replicate macOS](#clean-installreplicate-macos)
+- [iOS Apps](#ios-apps)
+- [iOS Widgets](#ios-widgets)
+- [iOS Shortcuts](#ios-shortcuts)
+- [iOS Control Center](#ios-control-center)
 - [WatchOS](#watchos)
 - [iPad](#ipad)
 - [Similar Setups](#similar-setups)
@@ -111,9 +103,9 @@ My workflow is described in more detail in [wiki](https://wiki.nikiv.dev/sharing
 
 ## macOS CLIs
 
-Use [Brew](https://wiki.nikiv.dev/package-managers/brew) and global [pnpm](https://pnpm.io/) packages for most of my CLIs. Although eventually want to settle down on [Nix](https://wiki.nikiv.dev/package-managers/nix) as I learn it more.
+Use [Brew](https://wiki.nikiv.dev/package-managers/brew) and global [Bun](https://bun.sh) packages for most of my CLIs. Eventually want to settle down on [Nix](https://wiki.nikiv.dev/package-managers/nix) as I learn it more.
 
-I try to keep my macOS declarative. Currently it's a [Go file](https://github.com/nikitavoloboev/config/blob/master/magefile.go) in my [config](https://github.com/nikitavoloboev/config) and is not up to date.
+I try to keep my macOS declarative. Currently it's one [magefile.go](magefile.go) but it's not up to date. Most likely be moved to [chezmoi](https://www.chezmoi.io/).
 
 I list CLIs I use [here](https://wiki.nikiv.dev/cli).
 
@@ -123,10 +115,13 @@ All config files are part of this repo. They include configs for [fish](fish), [
 
 ## Clean install/replicate macOS
 
-1. Boot latest macOS version. Remember that username is the name you want the home folder to be (by default its first name & last name).
+1. Boot latest macOS version. Remember that username is the name you want the home folder to be (by default its first name & last name). Mine is `nikiv`.
+<!-- TODO: needs update -->
 2. Go through [preferences](https://imgur.com/a/KoVAxFQ) & set everything up.
 3. Download & install apps I use (mentioned above).
-4. Clone dotfiles & sync them.
+4. Sync/link all config files.
+
+<!-- TODO: needs update/testing -->
 
 Take a look at [install](install) shell script. It will install [brew](https://brew.sh), [go](https://go.dev) & [mage](https://github.com/magefile/mage).
 
@@ -138,56 +133,70 @@ In short, it will create appropriate symlinks pointing at files in `~/.dotfiles`
 
 It will also install CLI tools & apps.
 
-5. [Sync settings](https://github.com/zenangst/Syncalicious) for apps I use.5. [Sync settings](https://github.com/zenangst/Syncalicious) for apps I use.
+5. [Sync settings](https://github.com/zenangst/Syncalicious) for apps I use.
 
 ## iOS Apps
 
 I only use 2 active spaces on my phone without any folders to minimize hand movement. Everything is optimized for reachability and partly aesthetics. I nearly always use dark mode as I prefer it unless I am outside and it's hard to read the text.
 
-iOS for me is a consumption and communication device primarily so I try to offload heavy busy work to macOS.
+I minimize push notifications to nearly only messaging apps (Telegram/Discord/..). I also keep it nearly always on Do Not Disturb mode. Especially when I work on my mac and keep the phone on the side so as to not duplicate notifications.
 
-I minimize push notifications I actually receive to only messaging apps. Mostly just [Telegram](https://wiki.nikiv.dev/tools/telegram). Everything else I have to go inside the apps to check what's new so as to not distract me from day to day life. I also keep it on Do Not Disturb nearly always too. Especially when I work on my mac and keep the phone on the side so as to not duplicate notifications.
+Apps are listed in order they appear in each of the screens.
 
-### Productivity
+- [Fantastical](https://wiki.nikiv.dev/macOS/apps/fantastical) widget to see my current and upcoming events. I click on the widget to open the app itself to make new events or see full week/month view of events.
+- App Store to search for apps to download and sometimes check and manually trigger updates for all apps as iOS does not often do it automatically.
+- Settings to connect to Wi-Fi mostly or tweak settings.
+- Files to search for files like books/PDFs/.. in ~/Documents and ~/Desktop.
+- [Spark](https://sparkmailapp.com) to check on mail. Don't have notifications set for emails.
+- [GitHub](https://github.com/mobile) to check on notifications, reply to issues or search for repos/issues.
+- [Notion](https://wiki.nikiv.dev/tools/notion) for managing personal and organisational knowledge.
+- Photos to see/search photos I took and saved. Love its Memories feature.
+- [Google Maps](https://itunes.apple.com/us/app/google-maps-transit-food/id585027354) for navigating around the world. Saving [lists of places I want to visit and places I loved seeing](https://wiki.nikiv.dev/travel/visited).
+- [Audible](https://itunes.apple.com/us/app/audible-audio-books-podcasts/id379693831?mt=8) to listen to audio books.
+- Reddit to read new posts or do searches
+- [Instagram](https://wiki.nikiv.dev/social-networks/instagram) to [share photos/videos](https://www.instagram.com/nikitavoloboev/) in form of stories/posts.
+- Notes to write down quick notes or ideas.
+- [Overcast](https://overcast.fm) to listen to [podcasts I like](https://wiki.nikiv.dev/podcasts). I love its [smart speed](https://medium.com/@eped/overcasts-smart-speed-vs-real-time-a759549ab48b#.f05tiojfo) feature to cut out on silent pauses.
+- [Reader](https://readwise.io/read) to read PDFs/ePubs + RSS feeds.
+- X to read posts, search and messages
+- [Perplexity](https://www.perplexity.ai/) to make search queries. Replacement for Google mostly.
+- [Slack](https://wiki.nikiv.dev/tools/slack) to check up on communities I am in. Prefer Discord.
+- [Spotify](https://www.spotify.com) to stream all [my music](https://wiki.nikiv.dev/music) and some exclusive podcasts.
+- [Telegram](https://wiki.nikiv.dev/tools/telegram) to chat and read groups/channel updates.
+- [Discord](https://wiki.nikiv.dev/tools/discord) to check up on communities I am in.
+- [Things](https://culturedcode.com/things/) to add todos. On macOS I use [2Do](https://www.2doapp.com/) as its superior. In future, will only use [LA Todos](https://github.com/learn-anything/todo).
+- [Safari](https://wiki.nikiv.dev/web/browsers/safari) for all web browsing. Keep [top sites in bookmarks bar for fast access](https://i.imgur.com/uDjnhwX.jpg).
+- [ChatGPT](https://apps.apple.com/us/app/chatgpt/id6448311069) to ask questions of all kind (textual / audio / visual).
+- [Trading 212](https://www.trading212.com) to to buy/sell stocks/ETFs.
+- [1Password](https://wiki.nikiv.dev/macOS/apps/1password) to search for passwords/notes/..
+- [Luma](https://lu.ma/) to check on events.
+- [Tailscale](https://tailscale.com/) to connect to my exit node server that I use as my VPN in places I need a VPN. Use [Bitfolk](https://bitfolk.com/) for my server.
+- [Bluesky](https://blueskyweb.xyz/) to read posts.
+- [Mastodon](https://joinmastodon.org/) to read posts.
+- [Solflare](https://solflare.com/) to send Solana. It also has Safari extension I use to connect to some Solana apps.
+- Phone to search for some contact or update some contact info or add new contact.
+- Skyscanner to search for flight tickets.
+- Booking to search for hotels to stay in.
+- Airbnb to search for rooms to stay in.
+- Wise as my primary bank. Sending money and checking on past transactions.
+- CapCut to edit videos
+- VSCO to edit photos
+- Pinterest to see posts and organise them into collections
+- YouTube to see/search videos
+- Uber to get a ride to some place
+- Glass to see photographs and post some
+- TikTok to see videos
+- Cosmos to see new posts
 
-- [Fantastical](https://wiki.nikiv.dev/macOS/apps/fantastical) use to manage my calendar and events. I like their widget to show my current schedule of the day.
-- [GitHub](https://github.com/mobile) don't use often but is nice when I need to reply to an urgent issue.
-- [Safari](https://wiki.nikiv.dev/web/browsers/safari) absolutely love it for reading and opening pages. Works fast. I like keeping [top used sites in bookmarks bar](https://i.imgur.com/uDjnhwX.jpg) so I can open them fast.
-- [1Password](https://wiki.nikiv.dev/macOS/apps/1password) use it whenver I need to find some specific secret file like Passport photo or details.
-- [Wipr](https://itunes.apple.com/us/app/wipr/id1030595027) - Safari ad blocker. Works well.
+2 pages is often enough to have nearly all apps I need within super fast access. However I do have last third page of 'other' apps.
 
-### Social
+<a align="center" href="https://github.com/nikitavoloboev/my-ios">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-4.png"></a>
 
-- [Telegram](https://wiki.nikiv.dev/tools/telegram) use it chat and read groups. Want to start using it more heavily by creating specialized bots.
-- [Spark](https://sparkmailapp.com) use it to check on mail. I don't have notifications set for email.
-- [Slack](https://wiki.nikiv.dev/tools/slack) & [Discord](https://wiki.nikiv.dev/tools/discord) to check up on communities I am in.
+<!-- TODO: add other apps -->
+<!-- - [Wipr](https://itunes.apple.com/us/app/wipr/id1030595027) - Safari ad blocker -->
 
-### Photos
-
-- [Photos](http://www.apple.com/lae/ios/photos/) does good job of managing and searching for photos I need. I have few albums I made for myself to make finding things easier too. Love its Memories feature and use the Photos Widget to remind myself of the past photos I took or saved.
-- [VSCO](https://www.vsco.co/) & [Darkroom](https://darkroom.co) for photo editing. Don't pay for VSCO as it's quite expensive but they both do a good job at editing photos.
-- [Slidebox](https://itunes.apple.com/us/app/slidebox-photo-manager/id984305203?mt=8) use it to quickly clean up photos, especially duplicates or bad takes.
-- [Instagram](https://wiki.nikiv.dev/social-networks/instagram) not a fan of how many ads IG pushes to the feeds/stories but I do love content of many accounts there so I still use it. Share some [photos and stories of my life](https://www.instagram.com/nikitavoloboev/) in there.
-
-### Learn
-
-- [Overcast](https://overcast.fm) use it to listen to [podcasts I like](https://wiki.nikiv.dev/podcasts). I love its [smart speed](https://medium.com/@eped/overcasts-smart-speed-vs-real-time-a759549ab48b#.f05tiojfo) feature to cut out on silent pauses.
-- [Audible](https://itunes.apple.com/us/app/audible-audio-books-podcasts/id379693831?mt=8) listen to audio books there.
-- [Books](https://www.apple.com/ibooks/) use it to read some books. It recently added a nice [digital narration](https://authors.apple.com/support/4519-digital-narration-audiobooks).
-
-### Music
-
-- [Spotify](https://www.spotify.com) use it to stream all [my music](https://wiki.nikiv.dev/music).
-
-### Travel
-
-- [Google Maps](https://itunes.apple.com/us/app/google-maps-transit-food/id585027354?mt=8) use it as my main navigation app and a travel guide. Collect [lists of places I want to visit and places I loved seeing](https://wiki.nikiv.dev/travel/visited).
-
-### Automation
-
-- [Scriptable](https://itunes.apple.com/us/app/scriptable/id1405459188?mt=8) don't use it much but want to.
-
-## Widgets
+## iOS Widgets
 
 I use 3 widgets in lock screen.
 
@@ -198,9 +207,9 @@ I use 3 widgets in lock screen.
 I keep common shortcut actions as widgets on the side (just need to scroll left to access):
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/my-ios/main/shortcuts.png"></a>
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-shortcuts.png"></a>
 
-## Shortcuts
+## iOS Shortcuts
 
 I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I use with gray color for consistency.
 
@@ -223,22 +232,15 @@ I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I
 
 I use `Test` shortcut to prototype new actions/ideas quickly. I then duplicate the working prototype & give it appropriate name. I use the same prototyping idea with [KM macros](https://wiki.nikiv.dev/macOS/apps/keyboard-maestro/km-macros).
 
-<a align="center" href="https://github.com/nikitavoloboev/my-ios">
+<a align="center" href="https://github.com/nikitavoloboev/config">
     <img width="250" heigth="400" src="https://i.imgur.com/bbohfKP.png"></a>
 
-## Control Center
+## iOS Control Center
 
 Here is how my control center looks:
 
-<a align="center" href="https://github.com/nikitavoloboev/my-ios">
+<a align="center" href="https://github.com/nikitavoloboev/config">
     <img width="250" heigth="400" src="https://i.imgur.com/JFxssYt.jpg"></a>
-
-## Third page for other + testing apps
-
-I only use the 2 pages of apps and that's often enough. The third page is mostly 'other' apps I rarely need plus a way to test out new apps or develop apps of my own.
-
-<a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/my-ios/main/4.png"></a>
 
 ## WatchOS
 
