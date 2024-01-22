@@ -147,6 +147,7 @@
         {:des "tabkey (things)"
          :rules [:tab-mode
                  [:f [:km "Get time in SF"]]
+                 [:t [:km "Save open tabs in safari"]]
                  [:i [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
                  [:k [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
