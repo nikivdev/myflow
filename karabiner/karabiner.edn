@@ -588,7 +588,8 @@
                  ;[:escape :!CTOu] ; Sip color picker
                  [:escape [:km "open: Cosmos"]]
                  [:a [:km "open: Chrome Canary"]]
-                 [:s [:km "open: Spline"]]
+                 [:s [:km "open: Simulator"]]
+                 ;[:s [:km "open: Spline"]]
                  ;[:s [:km "open: Simulator"]]
                  ;[:s [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
                  ;[:a [:km "open: Chrome Canary"]]
@@ -612,7 +613,7 @@
                  [:j [:km "open: Learn Anything Web"]]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
-                 [:semicolon [:km "open: Simulator"]]
+                 ;[:semicolon [:km "open: Simulator"]]
                  ;[:semicolon [:km "open: Learn Anything Web"]]
                  ;[:semicolon [:escape :!Sa :semicolon :return_or_enter]]
                  ;[:semicolon [:km "open: MindNode"]]
