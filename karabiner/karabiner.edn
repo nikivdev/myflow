@@ -544,7 +544,8 @@
                  [:##k :up_arrow]
                  [:##l :right_arrow]
                  ;[:semicolon [:km "Selected text -> Alfred Snippet"]]
-                 [:semicolon :!Sreturn_or_enter]
+                 [:semicolon [:km "New active todo"]]
+                 [:period :!Sreturn_or_enter]
                  ;[:semicolon :!CTO0] ; Search Alfred Snippets
                  [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
                  [:c :!Cdelete_or_backspace]
@@ -617,6 +618,7 @@
                  ;[:semicolon [:km "open: Learn Anything Web"]]
                  ;[:semicolon [:escape :!Sa :semicolon :return_or_enter]]
                  ;[:semicolon [:km "open: MindNode"]]
+                 [:semicolon [:km "Show active todo"]]
                  ;[:quote [:km "Goku Run"]]
                  [:quote [:km "edit: Fish functions and alias"]]
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)

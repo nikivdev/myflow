@@ -79,8 +79,14 @@ end
 #end
 
 function :w
-    bun --watch $argv
+    if not set -q argv[1]
+        # TODO: replace with own wrapper that will watch for any `.ts` file in current dir (recursive). if file found, run it with `bun --watch <file-path>`
+        bun --watch
+    else
+        bun --watch $argv
+    end
 end
+
 # function wb
 #     watchexec --no-vcs-ignore --restart --exts ts "tput reset && bun run $argv" --project-origin .
 # end
@@ -270,7 +276,6 @@ alias :id="bun i -d" # dev dep install
 alias :d="bun dev"
 alias :t="bun test --watch"
 alias e="edgedb"
-alias .="open ."
 alias :s="cd ~/src/ts/packages/solid && bun dev" # run solid web server
 alias :j="cd ~/src/ts && bun dev"
 alias :r="cd ~/src/rust && bun dev"
@@ -281,3 +286,4 @@ alias w.="cursor-nightly .env"
 alias pw='pnpm add -w'
 alias gmt='go mod tidy'
 alias findAll.gitInCurrentDir="find . -type d -name .git"
+alias .="open ."
