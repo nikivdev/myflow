@@ -605,9 +605,8 @@
                  ;[:s [:km "open: Eagle"]]
                  [:d [:km "Save link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
-                 [:j [:km "Show active todo (clear todo and go to 2Do if activated again within 3 seconds)"]]
+                 [:j [:km "open: Learn Anything (dev)"]]
                  ;[:j [:km "edit: 1st Warp tab"]]
-                 ;[:j [:km "open: Learn Anything (dev)"]]
                  ;[:j [:!Sreturn_or_enter :!Cs]]
                  ;[:j [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  ;[:j :!CTO0] ; Search Alfred Snippets
@@ -616,7 +615,7 @@
                  [:o :!Oreturn_or_enter]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
-                 [:semicolon [:km "open: Dash (with search)"]]
+                 [:semicolon [:km "Show active todo (clear todo and go to 2Do if activated again within 3 seconds)"]]
                  ;[:semicolon [:km "open: Simulator"]]
                  ;[:semicolon [:km "open: Learn Anything Web"]]
                  ;[:semicolon [:km "New 2Do task"]] ; TODO: replace with nice native modal to do new todo. cmd+return on it moves it to `active todo` and tracks in LA Todo
@@ -1033,13 +1032,15 @@
                  ;[:h [:km "w: HN submit"]]
                  ;[:k :!COS9] ; Raycast
                  ;[:k [:open "raycast://extensions/loris/safari/cloud-tabs"]] ; TODO: improve on it, slow
-                 [:i [:km "New tweet with current URL"]]
-                 [:o [:open "raycast://extensions/loris/safari/search-history"]]
+                 [:i [:open "raycast://extensions/loris/safari/search-history"]]
+                 [:o [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:j :!CTO0] ; Search Alfred Snippets
-                 [:k :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up
+                 [:k :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing?
                  [:l [:km "New tweet"]] ; TODO: can be generic `LA Post` function later maybe or have another bind for `LA Post`
-                 [:semicolon [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
+                 [:semicolon [:km "open: Dash (with search)"]]
                  [:period [:km "open: Safari Technology Preview"]]
+                 [:n [:km "New tweet with @"]]
+                 [:m [:km "New tweet with current URL"]]
                  ;[:l [:km "New LA post"]]
                  ;[:k [:km "w: GitHub"]]
                  ;[:l [:km "w: Localhost"]]
@@ -1051,11 +1052,9 @@
                  ;[:n [:km "w: GCP"]]
                  ;[:m [:km "w: AWS"]]
                  ;[:comma [:km "w: Diagrams"]]
-                 [:n [:km "New 2Do task"]]
-                 [:m [:km "New Linear task"]]
+                 ;[:n [:km "New 2Do task"]]
+                 ;[:m [:km "New Linear task"]]
                  [:b [:km "w: Lobsters submit"]]
-                 [:comma [:km "New tweet with current URL"]]
-                 ;[:comma [:km "New tweet with @"]]
                  ;[:n [:km "w: Reddit submit"]]
                  ;[:m [:km "New Mastodon post"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
