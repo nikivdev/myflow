@@ -74,8 +74,8 @@
                  [:j :!Sj]
                  [:k :!Sk]
                  [:l :!Sl]
-                 ;[:tab [:km "Clear TODO"]]
-                 ;[:escape [:km "Add to TODO"]]
+                 [:tab [:km "New tweet with current URL"]]
+                 [:escape [:km "New tweet"]] ; TODO: can be generic `LA Post` function later maybe or have another bind for `LA Post`
                  [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
                  [:z :!Sz]
                  [:x :!Sx]
@@ -230,7 +230,8 @@
                  [:comma :!CScomma]
                  [:period :!CSperiod]
                  [:slash :!CSslash]
-                 [:spacebar [:km "Explain selected text"]]]}
+                 [:spacebar [:km "Selected text into Google Lucky search"]]]}
+                 ;[:spacebar [:km "Explain selected text"]]]} ; TODO: seems not needed, as there is e+spacebar
                  ;[:spacebar :!CSOe]]} ; Selection -> YouTube
         {:des "wkey (apps)"
          :rules [:w-mode
@@ -579,7 +580,11 @@
                  [:3 [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
                  [:tab [:km "Go to test macro"]]
                  ;[:q [:km "open: Photos"]]
-                 ;[:q [:km "open: Pixave"]]
+                 [:escape [:km "open: Pixave"]]
+                 ;[:q [:km "open: Cosmos"]]
+                 ;[:q [:km "open: Excalidraw"]]
+                 ;[:q [:km "Clear active todo"]]
+                 [:q [:km "open: Framer"]]
                  [:w [:km "open: Figma"]]
                  [:grave_accent_and_tilde [:km "Test"]]
                  [:e :!CO8] ; Alfred clipboard history search
@@ -587,8 +592,6 @@
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
                  ;[:escape :!CTOu] ; Sip color picker
-                 ;[:escape [:km "open: Cosmos"]]
-                 [:escape [:km "Show active todo"]]
                  [:a [:km "open: Chrome Canary"]]
                  [:s [:km "open: Simulator"]]
                  ;[:s [:km "open: Spline"]]
@@ -612,15 +615,17 @@
                  ;[:j [:km "open: Learn Anything (dev)"]]
                  [:i :!Treturn_or_enter]
                  [:o :!Oreturn_or_enter]
-                 [:j [:km "open: Learn Anything Web"]]
+                 [:j [:km "Show active todo"]]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
                  ;[:semicolon [:km "open: Simulator"]]
                  ;[:semicolon [:km "open: Learn Anything Web"]]
+                 ;[:semicolon [:km "New 2Do task"]] ; TODO: replace with nice native modal to do new todo. cmd+return on it moves it to `active todo` and tracks in LA Todo
+                 ;[:semicolon [:km "open: Learn Anything Web"]]
                  ;[:semicolon [:escape :!Sa :semicolon :return_or_enter]]
                  ;[:semicolon [:km "open: MindNode"]]
-                 [:semicolon [:km "Show active todo"]]
-                 [:quote [:km "Clear active todo"]]
+                 ;[:semicolon [:km "New todo"]]
+                 ;[:semicolon [:km "Show active todo"]]
                  ;[:quote [:km "Goku Run"]]
                  ;[:quote [:km "edit: Fish functions and alias"]]
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
@@ -632,7 +637,6 @@
                  [:slash :!CTO4] ; Alfred file action
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
                  [:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
-                 ;[:spacebar [:km "open: Excalidraw"]]]}
                  ;[:spacebar [:km "open: Eagle"]]]}
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
         {:des "gkey (actions)"
@@ -718,7 +722,6 @@
                  [:m [:km "open: Element"]]
                  ;[:b [:km "w: Twitter"]]
                  ;[:n [:km "w: Typefully"]]
-                 ;[:m [:km "w: Typefully with current URL pasted"]]
                  ;[:n [:km "w: Twitter Compose"]]
                  ;[:m [:km "w: Twitter Compose with current URL pasted"]]
                  [:period [:km "w: Twitter Search"]]
@@ -886,7 +889,8 @@
                  [:v [:alfred "search links" "nikivi.mind"]]
                  ;[:v [:alfred "search pinboard" "nikivi.search.the.web"]] ; TODO: topics/search/more?
                  [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
-                 [:spacebar [:alfred "search history" "net.deanishe.alfred.safari"]]]}
+                 [:spacebar [:km "New 2Do task"]]]}
+                 ;[:spacebar [:alfred "search history" "net.deanishe.alfred.safari"]]]}
         {:des "mkey (dash)"
          :rules [:m-mode
                  ;[:3 [:alfred "search alfred" "nikivi.utilities" "d3 "]]
@@ -905,7 +909,8 @@
                  ;[:c [:alfred "search alfred" "nikivi.utilities" "css "]]
                  ;[:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
                  ;[:b [:alfred "search alfred" "nikivi.utilities" "bash "]]
-                 [:spacebar :!OSC1]]} ; Open Dash
+                 [:spacebar [:km "New Linear task"]]]}
+                 ;[:spacebar :!OSC1]]} ; Open Dash
         {:des "commakey (words)"
          :rules [:comma-mode
                  [:w [:n :i :k :i :v]] ; -> nikiv
@@ -1027,13 +1032,12 @@
                  ;[:j [:km "open: ChatGPT"]]
                  ;[:h [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  ;[:h [:km "w: HN submit"]]
-                 [:i [:open "raycast://extensions/loris/safari/search-history"]]
-                 [:o [:open "raycast://extensions/loris/safari/search-bookmarks"]]
                  [:j :!CTO0] ; Search Alfred Snippets
                  ;[:k :!COS9] ; Raycast
                  ;[:k [:open "raycast://extensions/loris/safari/cloud-tabs"]] ; TODO: improve on it, slow
-                 [:k :!TSC0] ; Raycast: Search open tabs
-                 [:l [:km "New tweet"]]
+                 [:o [:open "raycast://extensions/loris/safari/search-history"]]
+                 [:k :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up
+                 [:l [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:semicolon [:km "open: Dash (with search)"]]
                  [:period [:km "open: Safari Technology Preview"]]
                  ;[:l [:km "New LA post"]]
