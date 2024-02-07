@@ -579,7 +579,7 @@
                  [:3 [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
                  [:tab [:km "Go to test macro"]]
                  ;[:q [:km "open: Photos"]]
-                 [:q [:km "open: Pixave"]]
+                 ;[:q [:km "open: Pixave"]]
                  [:w [:km "open: Figma"]]
                  [:grave_accent_and_tilde [:km "Test"]]
                  [:e :!CO8] ; Alfred clipboard history search
@@ -587,7 +587,8 @@
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
                  ;[:escape :!CTOu] ; Sip color picker
-                 [:escape [:km "open: Cosmos"]]
+                 ;[:escape [:km "open: Cosmos"]]
+                 [:escape [:km "Show active todo"]]
                  [:a [:km "open: Chrome Canary"]]
                  [:s [:km "open: Simulator"]]
                  ;[:s [:km "open: Spline"]]
@@ -1054,6 +1055,6 @@
                  ;[:n [:km "w: Reddit submit"]]
                  ;[:m [:km "New Mastodon post"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
-        {:des "left cmd -> cmd+tab"
-         :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
+        ;{:des "left cmd -> cmd+tab"
+         ;:rules [[:left_command :left_command nil {:alone :!Ctab}]]}
 ]}
