@@ -1033,11 +1033,11 @@
                  ;[:h [:km "w: HN submit"]]
                  ;[:k :!COS9] ; Raycast
                  ;[:k [:open "raycast://extensions/loris/safari/cloud-tabs"]] ; TODO: improve on it, slow
+                 [:i [:km "New tweet with current URL"]]
                  [:o [:open "raycast://extensions/loris/safari/search-history"]]
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:k :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up
                  [:l [:km "New tweet"]] ; TODO: can be generic `LA Post` function later maybe or have another bind for `LA Post`
-                 ;[:tab [:km "New tweet with current URL"]]
                  [:semicolon [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:period [:km "open: Safari Technology Preview"]]
                  ;[:l [:km "New LA post"]]
