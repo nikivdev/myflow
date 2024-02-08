@@ -603,7 +603,7 @@
                  ;[:grave_accent_and_tilde [:km "open: Excalidraw"]]
                  ;[:s [:!TOreturn_or_enter :!Cs]]
                  ;[:s [:km "open: Eagle"]]
-                 [:semicolon [:km "open: Learn Anything (dev)"]] ; TODO: focus on tauri windows in general, dev more tauri apps
+                 [:semicolon [:km "open: Learn Anything (dev)"]] ; TODO: focus on tauri windows in general, dev more tauri apps. or better focus on simulator if it's open or tauri window if that is open
                  ;[:d [:km "Save link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  ;[:j [:km "edit: 1st Warp tab"]]
@@ -613,7 +613,6 @@
                  ;[:j [:km "open: Learn Anything (dev)"]]
                  [:i :!Treturn_or_enter]
                  [:o :!Oreturn_or_enter]
-                 [:j [:km "Show active todo (clear todo and go to 2Do if activated again within 3 seconds)"]]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
                  ;[:semicolon [:km "open: Simulator"]]
@@ -626,6 +625,7 @@
                  ;[:semicolon [:km "Show active todo"]]
                  ;[:quote [:km "Goku Run"]]
                  ;[:quote [:km "edit: Fish functions and alias"]]
+                 [:j [:km "Show active todo (clear todo and go to 2Do if activated again within 3 seconds)"]]
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]
                  [:m :!Sreturn_or_enter]
