@@ -250,10 +250,12 @@ end
 alias d="cd"
 alias da="cd ~/src"
 alias dg="cd ~/src/config"
-alias dt='cd ~/test'
 alias de="cd ~/Desktop"
 alias ds="cd ~/try"
+alias dv="cd ~/try/private"
+alias dt="cd ~/data"
 alias dw="cd ~/data/wiki"
+alias d.="cd ~/.scripts"
 
 # rust
 # alias rbnowarning="RUSTFLAGS="-A warnings" cargo build"

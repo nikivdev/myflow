@@ -605,7 +605,7 @@
                  ;[:s [:km "open: Eagle"]]
                  [:d [:km "Save link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
-                 [:j [:km "open: Learn Anything (dev)"]]
+                 [:j [:km "open: Learn Anything (dev)"]] ; TODO: focus on tauri windows in general, dev more tauri apps
                  ;[:j [:km "edit: 1st Warp tab"]]
                  ;[:j [:!Sreturn_or_enter :!Cs]]
                  ;[:j [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
@@ -1039,8 +1039,8 @@
                  [:l [:km "New tweet"]] ; TODO: can be generic `LA Post` function later maybe or have another bind for `LA Post`
                  [:semicolon [:km "open: Dash (with search)"]]
                  [:period [:km "open: Safari Technology Preview"]]
-                 [:n [:km "New tweet with @"]]
-                 [:m [:km "New tweet with current URL"]]
+                 ;[:n [:km "New tweet with @"]]
+                 ;[:m [:km "New tweet with current URL"]]
                  ;[:l [:km "New LA post"]]
                  ;[:k [:km "w: GitHub"]]
                  ;[:l [:km "w: Localhost"]]
