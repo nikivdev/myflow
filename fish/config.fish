@@ -32,7 +32,7 @@ set -gx PATH /usr/local/lib/ruby/gems/2.7.0/bin $PATH
 
 # TODO: uncomment if things break, trying to use bun only
 # pnpm
-set -gx PNPM_HOME "/Users/nikiv/Library/pnpm"
+set -gx PNPM_HOME /Users/nikiv/Library/pnpm
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
 
@@ -42,14 +42,14 @@ set -Ux NODE_OPTIONS "--max-old-space-size=8096"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-if test -f /Users/nikiv/miniconda3/bin/conda
-    eval /Users/nikiv/miniconda3/bin/conda "shell.fish" "hook" $argv | source
-else
-    if test -f "/Users/nikiv/miniconda3/etc/fish/conf.d/conda.fish"
-        . "/Users/nikiv/miniconda3/etc/fish/conf.d/conda.fish"
-    else
-        set -x PATH "/Users/nikiv/miniconda3/bin" $PATH
-    end
-end
+# TODO: adds `base` to shell which is annoying
+# if test -f /Users/nikiv/miniconda3/bin/conda
+#     eval /Users/nikiv/miniconda3/bin/conda "shell.fish" hook $argv | source
+# else
+#     if test -f "/Users/nikiv/miniconda3/etc/fish/conf.d/conda.fish"
+#         . "/Users/nikiv/miniconda3/etc/fish/conf.d/conda.fish"
+#     else
+#         set -x PATH /Users/nikiv/miniconda3/bin $PATH
+#     end
+# end
 # <<< conda initialize <<<
-

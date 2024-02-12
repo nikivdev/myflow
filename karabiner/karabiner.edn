@@ -249,7 +249,7 @@
                  [:escape [:km "open: Finder"]]
                  [:d [:km "open: SQLiteFlow"]]
                  [:f [:km "open: 2Do"]]
-                 [:g [:km "Journal"]]
+                 ;[:g [:km "Journal"]] ; TODO: complete to use LA
                  ;[:g [:km "open: Day One"]]
                  ;[:h [:km "open: Notes"]]
                  ;[:f [:km "open: Learn Anything"]]

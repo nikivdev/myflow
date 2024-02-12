@@ -14,10 +14,10 @@
     <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-1.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/my-mac">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-2.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-2.jpg"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/my-mac">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-3.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-3.jpg"></a>
 
 > iOS screens. All described in detail below.
 
@@ -206,7 +206,7 @@ I use 3 widgets in lock screen.
 I keep common shortcut actions as widgets on the side (just need to scroll left to access):
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-shortcuts.png"></a>
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-shortcuts.jpg"></a>
 
 ## iOS Shortcuts
 
