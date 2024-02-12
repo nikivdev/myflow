@@ -190,7 +190,7 @@ Apps are listed in order they appear in each of the screens.
 2 pages is often enough to have nearly all apps I need within super fast access. However I do have last third page of 'other' apps.
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-4.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-4.jpg"></a>
 
 <!-- TODO: add other apps -->
 <!-- - [Wipr](https://itunes.apple.com/us/app/wipr/id1030595027) - Safari ad blocker -->
