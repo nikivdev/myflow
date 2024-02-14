@@ -233,10 +233,11 @@
                  ;[:spacebar :!CSOe]]} ; Selection -> YouTube
         {:des "wkey (apps)"
          :rules [:w-mode
-                 [:e [:km "open: Fantastical"]]
-                 [:r [:km "open: Notion"]]
+                 [:e [:km "open: Fantastical"]]; TODO: LA todos (or separate app?) (show calendar, same quality as Fantastical/Amie)
+                 ;[:r [:km "open: Obsidian"]]
                  [:t [:km "open: Pitch"]]
-                 [:a [:km "open: Obsidian"]]
+                 [:r [:km "open: Obsidian"]]
+                 [:a [:km "open: Notion"]]
                  ;[:a [:km "open: Obsidian (first tab focus)"]]
                  ;[:r [:km "open: Spacedrive"]]
                  ;[:t [:km "open: Activity Monitor"]]
@@ -248,9 +249,9 @@
                  [:p [:km "open wip.md with Cursor Nightly"]]
                  [:escape [:km "open: Finder"]]
                  [:d [:km "open: SQLiteFlow"]]
-                 [:f [:km "open: 2Do"]]
-                 ;[:g [:km "Journal"]] ; TODO: complete to use LA
+                 [:f [:km "open: 2Do"]] ; LA (everything but todos unless possible to hack in todos nicely)
                  ;[:g [:km "open: Day One"]]
+                 ;[:g [:km "Journal"]] ; TODO: complete to use LA
                  ;[:h [:km "open: Notes"]]
                  ;[:f [:km "open: Learn Anything"]]
                  ;[:d [:km "open: Postico"]]
@@ -265,13 +266,14 @@
                  [:semicolon [:km "open: Cursor"]]
                  [:quote [:km "Open ts-rust-python-go.code-workspace"]]
                  [:c [:km "open: Spotify"]]
-                 [:v [:km "open: Pathfinder"]]
+                 ;[:n [:km "open: Obsidian"]]
                  ;[:v [:km "open: TablePlus"]]
                  ;[:v [:km "open: RapidAPI"]]
                  [:b [:km "open: BetterTouchTool"]]
                  ;[:n [:km "open: Learn Anything (prefer dev)"]]
-                 [:n [:km "open: Hoppscotch"]]
+                 [:n [:km "open: Pathfinder"]]
                  [:m [:km "open: Sublime Merge"]]
+                 [:v [:km "open: Hoppscotch"]]
                  [:comma [:km "open: Proxyman"]]
                  [:period [:km "open: Xcode"]]
                  ;[:period [:km "open: Xcode (beta)"]]
