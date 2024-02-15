@@ -233,11 +233,11 @@
                  ;[:spacebar :!CSOe]]} ; Selection -> YouTube
         {:des "wkey (apps)"
          :rules [:w-mode
-                 [:e [:km "open: Fantastical"]]; TODO: LA todos (or separate app?) (show calendar, same quality as Fantastical/Amie)
                  ;[:r [:km "open: Obsidian"]]
                  [:t [:km "open: Pitch"]]
-                 [:r [:km "open: Obsidian"]]
+                 [:v [:km "open: Fantastical"]] ; to be moved to LA Todo
                  [:a [:km "open: Notion"]]
+                 [:e [:km "open: Obsidian"]] ; LA (everything but todos/calendar)
                  ;[:a [:km "open: Obsidian (first tab focus)"]]
                  ;[:r [:km "open: Spacedrive"]]
                  ;[:t [:km "open: Activity Monitor"]]
@@ -248,8 +248,8 @@
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open wip.md with Cursor Nightly"]]
                  [:escape [:km "open: Finder"]]
-                 [:d [:km "open: SQLiteFlow"]]
-                 [:f [:km "open: 2Do"]] ; LA (everything but todos unless possible to hack in todos nicely)
+                 [:r [:km "open: SQLiteFlow"]] ; TODO: move to personal EdgeDB
+                 [:f [:km "open: 2Do"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  ;[:g [:km "open: Day One"]]
                  ;[:g [:km "Journal"]] ; TODO: complete to use LA
                  ;[:h [:km "open: Notes"]]
@@ -273,7 +273,7 @@
                  ;[:n [:km "open: Learn Anything (prefer dev)"]]
                  [:n [:km "open: Pathfinder"]]
                  [:m [:km "open: Sublime Merge"]]
-                 [:v [:km "open: Hoppscotch"]]
+                 [:i [:km "open: Hoppscotch"]]
                  [:comma [:km "open: Proxyman"]]
                  [:period [:km "open: Xcode"]]
                  ;[:period [:km "open: Xcode (beta)"]]
@@ -435,9 +435,9 @@
                  ;[:w [:km "open: Dash (search off)"]]
                  ;[:e [:km "open: Dash (with search)"]]
                  ;[:e [:km "open: ChatGPT GPTs"]]
-                 [:w [:km "open: Midjourney"]]
-                 [:e [:km "open: Gemini"]]
-                 [:g [:km "open: EdgeDB Cloud"]]
+                 [:q [:km "open: Midjourney"]]
+                 [:w [:km "open: Gemini"]]
+                 [:e [:km "open: EdgeDB Cloud"]]
                  ;[:e [:km "open: Typefully"]]
                  ;[:e [:km "Make 2Do task"]]
                  ;[:r [:km "Make 2Do task with note as current URL"]]
@@ -665,8 +665,10 @@
                   [:r [:km "paste: 🙏"]]
                   [:s [:km "paste: ✨"]]
                   ;[:j [:km "paste: Thanks ♥️"]]
-                  [:j [:km "paste: thanks"]]
-                  [:k [:km "paste: Thank you."]]
+                  ;[:j [:km "paste: thanks"]]
+                  [:j [:km "paste: Thanks 🖤"]]
+                  [:k [:km "paste: That worked 🖤"]]
+                  ;[:k [:km "paste: Thank you."]]
                   [:l [:km "paste: Cal.com (15 min)️"]]
                   [:m [:km "paste: Cal.com (30 min)️"]]
                   [:c [:km "paste: 😿"]]
@@ -674,7 +676,7 @@
                   [:h [:km "paste: 😺"]]
                   [:f [:km "paste: explain"]]
                   [:semicolon [:km "paste: 🖤"]]
-                  [:period [:km "paste: that worked, thanks"]]
+                  ;[:period [:km "paste: that worked 🖤"]]
                   [:g [:km "paste: Telegram (personal)️"]]
                   ;[:n [:km "paste: Nikita"]]
                   [:n [:km "paste: nikitavoloboev"]]

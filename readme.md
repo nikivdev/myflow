@@ -36,8 +36,9 @@
 - [iOS Widgets](#ios-widgets)
 - [iOS Shortcuts](#ios-shortcuts)
 - [iOS Control Center](#ios-control-center)
+<!-- - [VisionOS](#visionos)
 - [WatchOS](#watchos)
-- [iPad](#ipad)
+- [iPad](#ipad) -->
 - [Similar Setups](#similar-setups)
 - [Related](#related)
 - [Automation course](#automation-course)
@@ -241,21 +242,23 @@ Here is how my control center looks:
 <a align="center" href="https://github.com/nikitavoloboev/config">
     <img width="250" heigth="400" src="https://i.imgur.com/JFxssYt.jpg"></a>
 
-## WatchOS
+<!-- TODO: uncomment/udpate when I get iPad again and find use for it -->
+<!-- ## WatchOS
 
 I stopped wearing a watch. But when I did I mostly used it to track my health and fitness and view useful information at a glance like current time and events.
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
     <img width="250" heigth="400" src="https://i.imgur.com/qzFn7Ot.jpg"></a>
 
-I used only one Infograph Modular watch face. It showed the current time and day, the weather and my current or future calendar events (with [Fantastical](https://flexibits.com/fantastical)). It also let me quickly start cardio workout (running/biking) or bodyweight workout (with [Streaks Workout](https://streaksworkout.com)). I could also start a timer or see the time of a timer if one is already running.
+I used only one Infograph Modular watch face. It showed the current time and day, the weather and my current or future calendar events (with [Fantastical](https://flexibits.com/fantastical)). It also let me quickly start cardio workout (running/biking) or bodyweight workout (with [Streaks Workout](https://streaksworkout.com)). I could also start a timer or see the time of a timer if one is already running. -->
 
-## iPad
+<!-- TODO: uncomment/udpate when I get iPad again and find use for it -->
+<!-- ## iPad
 
 I don't use iPad either. When I did, I mostly used it to draw with [Procreate](https://procreate.art) or noting/sketching in [Notes](https://www.icloud.com/notes)/[Muse](https://museapp.com/) with the pencil. I also sometimes used it as second screen with [Sidecar](https://support.apple.com/en-me/HT210380).
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="450" heigth="450" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ipad.png"></a>
+    <img width="450" heigth="450" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ipad.png"></a> -->
 
 ## Automation course
 
