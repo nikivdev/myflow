@@ -25,10 +25,9 @@ __fish_cursor_xterm line # make cursor into thin line (doesn't make a difference
 direnv hook fish | source # TODO: not sure it works, fish integration for direnv
 
 # https://docs.nativescript.org/setup/macos#setting-up-macos-for-ios
-set -gx PATH /usr/local/lib/ruby/gems/2.7.0/bin $PATH
+fish_add_path /opt/homebrew/lib/ruby/gems/2.7.0/bin
 
-
-# testing
+# testing area below (anything useful is moved up)
 
 # TODO: uncomment if things break, trying to use bun only
 # pnpm
