@@ -233,11 +233,10 @@
                  ;[:spacebar :!CSOe]]} ; Selection -> YouTube
         {:des "wkey (apps)"
          :rules [:w-mode
-                 ;[:r [:km "open: Obsidian"]]
                  [:t [:km "open: Pitch"]]
-                 [:v [:km "open: Fantastical"]] ; to be moved to LA Todo
+                 [:e [:km "open: Fantastical"]] ; to be moved to LA Todo
                  [:a [:km "open: Notion"]]
-                 [:e [:km "open: Obsidian"]] ; LA (everything but todos/calendar)
+                 [:v [:km "open: Obsidian"]] ; LA (everything but todos/calendar)
                  ;[:a [:km "open: Obsidian (first tab focus)"]]
                  ;[:r [:km "open: Spacedrive"]]
                  ;[:t [:km "open: Activity Monitor"]]
@@ -250,7 +249,7 @@
                  [:escape [:km "open: Finder"]]
                  [:r [:km "open: SQLiteFlow"]] ; TODO: move to personal EdgeDB
                  [:f [:km "open: 2Do"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
-                 ;[:g [:km "open: Day One"]]
+                 [:d [:km "open: Day One"]]
                  ;[:g [:km "Journal"]] ; TODO: complete to use LA
                  ;[:h [:km "open: Notes"]]
                  ;[:f [:km "open: Learn Anything"]]
@@ -264,7 +263,8 @@
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor Nightly"]]
                  [:semicolon [:km "open: Cursor"]]
-                 [:quote [:km "Open ts-rust-python-go.code-workspace"]]
+                 [:quote [:km "Open src.code-workspace and learn-anything.code-workspace"]]
+                 ;[:quote [:km "Open learn-anything.code-workspace"]]
                  [:c [:km "open: Spotify"]]
                  ;[:n [:km "open: Obsidian"]]
                  ;[:v [:km "open: TablePlus"]]

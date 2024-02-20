@@ -289,3 +289,8 @@ alias pw='pnpm add -w'
 alias gmt='go mod tidy'
 alias findAll.gitInCurrentDir="find . -type d -name .git"
 alias .="open ."
+
+# TODO: not sure how useful
+# function runPrettierOnAllGitFiles
+#     git ls-files | grep -E '\.(js|css|html|ts|tsx)$' | xargs prettier --write
+# end
