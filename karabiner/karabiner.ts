@@ -3,14 +3,19 @@
 // and make editing even faster than .edn
 // allow sharing of config between users nicely
 
-type KMMacros = "open: Safari" | "open: Cursor";
+// TODO: maybe even allow calling into shell directly nicely
+// without going through KM
+// same for maybe doing fetch requests, processing it without KM
+// just call a function! handle errors nicely abstracted by fetch call (with effect)
+
+type KMMacros = "open: Safari" | "open: Cursor"
 function km(macroName: KMMacros) {
-  return;
+  return
 }
 
-type AlfredWorkflow = "Searchio: search google";
+type AlfredWorkflow = "Searchio: search google"
 function alfred(workflow: AlfredWorkflow) {
-  return;
+  return
 }
 
 function karabinerConfig() {
@@ -34,5 +39,5 @@ function karabinerConfig() {
         comma: km("open: Safari"),
       },
     },
-  };
+  }
 }

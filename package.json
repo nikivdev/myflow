@@ -1,0 +1,10 @@
+{
+  "name": "config",
+  "devDependencies": {
+    "bun-types": "canary"
+  },
+  "type": "module",
+  "prettier": {
+    "semi": false
+  }
+}
