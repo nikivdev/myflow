@@ -8,7 +8,8 @@
 // same for maybe doing fetch requests, processing it without KM
 // just call a function! handle errors nicely abstracted by fetch call (with effect)
 
-type KMMacros = "open: Safari" | "open: Cursor"
+// type KMMacros = "open: Safari" | "open: Cursor"
+export type KMMacros = "open: Safari" | "open: Cursor"
 function km(macroName: KMMacros) {
   return
 }
@@ -17,6 +18,8 @@ type AlfredWorkflow = "Searchio: search google"
 function alfred(workflow: AlfredWorkflow) {
   return
 }
+
+function shell(cmd: string) {}
 
 function karabinerConfig() {
   return {
@@ -38,6 +41,11 @@ function karabinerConfig() {
         // TODO: maybe include the KM group in the function call optionally
         comma: km("open: Safari"),
       },
+      w: {
+        q: shell("ls.."),
+      },
     },
   }
 }
+
+karabinerConfig()
