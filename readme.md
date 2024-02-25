@@ -201,8 +201,8 @@ Apps are listed in order they appear in each of the screens.
 I use 3 widgets in lock screen.
 
 - Show upcoming event with Fantastical
+- Overcast play my `Top` playlist
 - Create new task with [Things](https://culturedcode.com/things/)
-- Create new event with Fantastical
 
 I keep common shortcut actions as widgets on the side (just need to scroll left to access):
 
@@ -214,19 +214,18 @@ I keep common shortcut actions as widgets on the side (just need to scroll left 
 I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I use with gray color for consistency.
 
 - [Shortcuts](https://www.icloud.com/shortcuts/6dd13bc13cd14a30b2577dbd6816f39a) - Open Shortcuts app
+- [Draw](https://www.icloud.com/shortcuts/95d7a485469945db8e71f2df2c914f88) - Open [Freeform](https://apps.apple.com/us/app/freeform/id6443742539) app
 - [Next](https://www.icloud.com/shortcuts/566ac7c0e414428aaa2c2b391357affc) - Get Google Maps directions for next event
-- [Phone](https://www.icloud.com/shortcuts/24c85af28dd041b3ae1d143f1b3c44d4) - Open Phone app
-- [Places](https://www.icloud.com/shortcuts/2cb21d99b8314e7a8231c634c7876ece) - Search for Restaraunts/Attractions/.. on Google Maps
-- [Ride/Food](https://www.icloud.com/shortcuts/8e9560d24b0c4087b0c40b989799e9fb) - Open Uber app
 - [Translate](https://www.icloud.com/shortcuts/0cf085c93795473d89833b7bbbb2c254) - Open Google Translate app
-- [Weather](https://www.icloud.com/shortcuts/486c35625d5045d08f5a01164e7d80b6) - Open Weather app
-- [Workout](https://www.icloud.com/shortcuts/669d5a52700f4ab09255966cc96e31bc) - Open [Caliber](https://caliberstrong.com) app
-- [Sort](https://www.icloud.com/shortcuts/e64c50fa3f4746bb9c0cdb2624077ed9) - Open [Slidebox](http://slidebox.co) app
-- [Photo](https://www.icloud.com/shortcuts/39c4e384596b4b2fa20a10c8c8512190) - Open Camera app
-- [Podcast](https://www.icloud.com/shortcuts/28799800f81f42d68f42849c129834fe) - Start playing [Overcast](https://overcast.fm) podcast
+- [Places](https://www.icloud.com/shortcuts/2cb21d99b8314e7a8231c634c7876ece) - Search nearby Restaraunts/Attractions/.. in Google Maps
+- [Home](https://www.icloud.com/shortcuts/ad16ef26924d4bb0b66a68d4af0460b0) - Get walk directions to `Home` in Google Maps
 - [Voice](https://www.icloud.com/shortcuts/960ebd64ee76488b96bf50ad7513e063) - Start voice conversation with ChatGPT
-- [Memos](https://www.icloud.com/shortcuts/77865133130d4e16b8f6edf46b0e1a83) - Open Voice Memos app
+- [Ride/Food](https://www.icloud.com/shortcuts/8e9560d24b0c4087b0c40b989799e9fb) - Open Uber app
+- [Phone](https://www.icloud.com/shortcuts/24c85af28dd041b3ae1d143f1b3c44d4) - Open Phone app
 - [Record](https://www.icloud.com/shortcuts/14e3dbd846f54270ac699ab6e0ef661e) - Create voice recording
+- [Todo](https://www.icloud.com/shortcuts/bc3fc96cc1d3499cb5eab8f6005a0049) - Create todo in Things with Quick Entry
+- [Audible](https://www.icloud.com/shortcuts/76c982768d93441596d563084b0aeb77) - Open Audible app
+- [Overcast](https://www.icloud.com/shortcuts/cb90243f48d34c5491ffdbd55d975037) - Open Overcast app and start playing podcast
 - [Focus](https://www.icloud.com/shortcuts/3a919eba5e254436be827bf4a51b0e0c) - Open [Endel](https://endel.io) app
 - [Contacts](https://www.icloud.com/shortcuts/9ccbfdc7897f47259c493a39fea13ed5) - Start searching [Cardhop](https://flexibits.com/cardhop) for contacts
 
