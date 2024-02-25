@@ -11,7 +11,7 @@
 > Light appearance. Use light themes when outside or when there is glare from the sun as it makes text more readable.
 
 <a align="center" href="https://github.com/nikitavoloboev/my-mac">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-1.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-1.jpg"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/my-mac">
     <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-2.jpg"></a>
@@ -233,14 +233,14 @@ I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I
 I use `Test` shortcut to prototype new actions/ideas quickly. I then duplicate the working prototype & give it appropriate name. I use the same prototyping idea with [KM macros](https://wiki.nikiv.dev/macOS/apps/keyboard-maestro/km-macros).
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://i.imgur.com/bbohfKP.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/test-shortcut.jpg"></a>
 
 ## iOS Control Center
 
 Here is how my control center looks:
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://i.imgur.com/JFxssYt.jpg"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-control-center.jpg"></a>
 
 <!-- TODO: uncomment/udpate when I get iPad again and find use for it -->
 <!-- ## WatchOS
