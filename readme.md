@@ -218,10 +218,11 @@ I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I
 - [Next](https://www.icloud.com/shortcuts/566ac7c0e414428aaa2c2b391357affc) - Get Google Maps directions for next event
 - [Translate](https://www.icloud.com/shortcuts/0cf085c93795473d89833b7bbbb2c254) - Open Google Translate app
 - [Places](https://www.icloud.com/shortcuts/2cb21d99b8314e7a8231c634c7876ece) - Search nearby Restaraunts/Attractions/.. in Google Maps
+- [Workout](https://www.icloud.com/shortcuts/669d5a52700f4ab09255966cc96e31bc) - Open [Caliber](https://caliberstrong.com) app
 - [Home](https://www.icloud.com/shortcuts/ad16ef26924d4bb0b66a68d4af0460b0) - Get walk directions to `Home` in Google Maps
 - [Voice](https://www.icloud.com/shortcuts/960ebd64ee76488b96bf50ad7513e063) - Start voice conversation with ChatGPT
 - [Ride/Food](https://www.icloud.com/shortcuts/8e9560d24b0c4087b0c40b989799e9fb) - Open Uber app
-- [Phone](https://www.icloud.com/shortcuts/24c85af28dd041b3ae1d143f1b3c44d4) - Open Phone app
+- [Photo](https://www.icloud.com/shortcuts/39c4e384596b4b2fa20a10c8c8512190) - Open Camera app
 - [Record](https://www.icloud.com/shortcuts/14e3dbd846f54270ac699ab6e0ef661e) - Create voice recording
 - [Todo](https://www.icloud.com/shortcuts/bc3fc96cc1d3499cb5eab8f6005a0049) - Create todo in Things with Quick Entry
 - [Audible](https://www.icloud.com/shortcuts/76c982768d93441596d563084b0aeb77) - Open Audible app
@@ -233,6 +234,8 @@ I use `Test` shortcut to prototype new actions/ideas quickly. I then duplicate t
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
     <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/test-shortcut.jpg"></a>
+
+And I mapped the action button to run [Quick Note](https://www.icloud.com/shortcuts/526e2896d4df4b06b33ccab37f4f6eee) shortcut.
 
 ## iOS Control Center
 
