@@ -250,7 +250,8 @@
                  ;[:r [:km "open: SQLiteFlow"]] ; TODO: move to personal EdgeDB
                  [:f [:km "open: 2Do"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:r [:km "open: Things"]]
-                 [:d [:km "open: Day One"]]
+                 [:d [:km "open: Music"]]
+                 ;[:d [:km "open: Day One"]]
                  ;[:g [:km "Journal"]] ; TODO: complete to use LA
                  ;[:h [:km "open: Notes"]]
                  ;[:f [:km "open: Learn Anything"]]
