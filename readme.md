@@ -11,13 +11,13 @@
 > Light appearance. Use light themes when outside or when there is glare from the sun as it makes text more readable.
 
 <a align="center" href="https://github.com/nikitavoloboev/my-mac">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-1.jpg"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/1-ios.jpg"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/my-mac">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-2.jpg"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/2-ios.jpg"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/my-mac">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-3.jpg"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/3-ios.jpg"></a>
 
 > iOS screens. All described in detail below.
 
@@ -191,7 +191,7 @@ Apps are listed in order they appear in each of the screens.
 2 pages is often enough to have nearly all apps I need within super fast access. However I do have last third page of 'other' apps.
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-4.jpg"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/4-ios.jpg"></a>
 
 <!-- TODO: add other apps -->
 <!-- - [Wipr](https://itunes.apple.com/us/app/wipr/id1030595027) - Safari ad blocker -->
@@ -207,7 +207,7 @@ I use 3 widgets in lock screen.
 I keep common shortcut actions as widgets on the side (just need to scroll left to access):
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-shortcuts.jpg"></a>
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/shortcuts-ios.jpg"></a>
 
 ## iOS Shortcuts
 
