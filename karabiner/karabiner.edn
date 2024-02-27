@@ -412,6 +412,7 @@
                  [:d :backslash]
                  [:f :hyphen]
                  [:g :!S4]
+                 [:h [:km "paste: €"]]
                  [:j :equal_sign]
                  [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
                  [:semicolon :semicolon]
