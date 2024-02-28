@@ -228,7 +228,8 @@
                  [:comma :!CScomma]
                  [:period :!CSperiod]
                  [:slash :!CSslash]
-                 [:spacebar [:km "Selected text into Google Lucky search"]]]}
+                 [:spacebar [:km "Explain selected text with ChatGPT or explain .."]]]}
+                 ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
                  ;[:spacebar [:km "Explain selected text"]]]} ; TODO: seems not needed, as there is e+spacebar
                  ;[:spacebar :!CSOe]]} ; Selection -> YouTube
         {:des "wkey (apps)"
@@ -339,7 +340,7 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 [:spacebar [:km "Explain selected text with ChatGPT or explain .."]]]}
+                 [:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
                  ;[:spacebar [:km "Explain selected text (or just explain ..)"]]]}
                  ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
         {:des "rkey (apps)"
@@ -603,7 +604,8 @@
                  [:open_bracket :!CT5] ; Turn display on/off
                  ;[:escape :!CTOu] ; Sip color picker
                  [:a [:km "open: Chrome Canary"]]
-                 [:s :!TOS8] ; Move focus to status menus (show menu bar) (system settings > keyboard > keyboard)
+                 ;[:s :!TOS8] ; Move focus to status menus (show menu bar) (system settings > keyboard > keyboard)
+                 ;[:s :!TOSe] ; Start Superwhisper transcription
                  ;[:s [:km "open: Simulator"]]
                  ;[:s [:km "open: Spline"]]
                  ;[:s [:km "open: Simulator"]]
@@ -648,7 +650,7 @@
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
-                 [:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
+                 [:spacebar :!TOSe]]} ; Start Superwhisper transcription
                  ;[:spacebar [:km "open: Eagle"]]]}
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
         {:des "gkey (actions)"
