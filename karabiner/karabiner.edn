@@ -228,7 +228,7 @@
                  [:comma :!CScomma]
                  [:period :!CSperiod]
                  [:slash :!CSslash]
-                 [:spacebar [:km "Explain selected text with ChatGPT or explain .."]]]}
+                 [:spacebar [:km "Explain selected text with ChatGPT or explain .."]]]} ; TODO: make it use my own tool, similar to https://superwhisper.com record window, select text, then stream explain selected text in window
                  ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
                  ;[:spacebar [:km "Explain selected text"]]]} ; TODO: seems not needed, as there is e+spacebar
                  ;[:spacebar :!CSOe]]} ; Selection -> YouTube
@@ -356,9 +356,10 @@
                  ;[:escape [:km "open: Preview"]]
                  [:escape [:km "open: IINA"]]
                  [:a [:km "open: Alfred Preferences"]]
-                 [:j [:km "open: Dictionary"]]
+                 [:j [:km "open: Preview"]]
                  [:k [:km "open: Reader"]]
-                 [:l [:km "Open Reader with Nightly TS- workspace split 50/50"]]
+                 [:l [:km "open: Dictionary"]]
+                 ;[:l [:km "Open Reader with Nightly TS- workspace split 50/50"]]
                  ;[:semicolon [:km "open: Day One"]]
                  ;[:semicolon [:km "open: Crouton"]]
                  ;[:l [:km "open: Books"]]

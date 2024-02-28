@@ -2,11 +2,11 @@
 
 > Apps/CLIs/configs I use on macOS/iOS. Fish, Karabiner, Cursor..
 
-![](images/mac-night.png)
+![](images/mac-night-feb.png)
 
 > Dark appearance. All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
 
-![](images/mac-day.png)
+![](images/mac-day-feb.png)
 
 > Light appearance. Use light themes when outside or when there is glare from the sun as it makes text more readable.
 
@@ -21,6 +21,7 @@
 
 > iOS screens. All described in detail below.
 
+- [Clean install / replicate my macOS fully](#clean-install--replicate-my-macos-fully)
 - [macOS Apps](#macos-apps)
   - [Productivity](#productivity)
   - [Code](#code)
@@ -31,7 +32,6 @@
   - [Browsers](#browsers)
 - [macOS CLIs](#macos-clis)
 - [macOS Config](#macos-config)
-- [Clean install/replicate macOS](#clean-installreplicate-macos)
 - [iOS Apps](#ios-apps)
 - [iOS Widgets](#ios-widgets)
 - [iOS Shortcuts](#ios-shortcuts)
@@ -45,15 +45,41 @@
 - [macOS/iOS Telegram group](#macosios-telegram-group)
 - [Contribute](#contribute)
 
+## Clean install / replicate my macOS fully
+
+Read [through this](https://learnany.notion.site/Mac-clean-setup-ee58edc4a991483491333e9e3fc20292). It lists all settings I use on macOS, all apps I install with settings I use etc.
+
+It's what I used to move from old mac to new one cleanly from scratch.
+
+> Some things like config file symlinking, alfred, KM macros moving is not yet documented/fully-shared but will be soon.
+
+<!-- TODO: do above! -->
+
+<!-- TODO: fix below. needs updating and is broken, I need to write a cleaner sync up approach -->
+
+<!-- Take a look at [install](install) shell script. It will install [brew](https://brew.sh), [go](https://go.dev) & [mage](https://github.com/magefile/mage).
+
+Run it with `./install`. As part of the script it will run `mage setup`. Take a look at [magefile.go](magefile.go) `Setup` function to see what it will do.
+
+You can also run `mage` alone to see what commands you can run with descriptions of them.
+
+In short, it will create appropriate symlinks pointing at files in `~/.dotfiles`. It is assumed that the dotfiles repo is placed there.
+
+It will also install CLI tools & apps.
+
+5. [Sync settings](https://github.com/zenangst/Syncalicious) for apps I use. -->
+
+<!-- TODO: Syncalicious looks neat, try use and test it works -->
+
 ## macOS Apps
 
 <!-- TODO: link `CLIs` to wiki where it shows all the CLIs I have installed with descriptions or to file here that I parse with CLI of my own (fuzzy search command + what command/CLI does) (fish functions / CLIs / builtins / ..) (JSON?) -->
 
 <!-- TODO: maybe do same for `apps`, can have list of all apps installed + location from where to install the app -->
 
-Below is a list of all the [apps](https://wiki.nikiv.dev/code/config#macos-apps-i-have-installed) & [CLIs](#macos-clis) I use and how. Together with the [config](#macos-config) I use for everything.
+<!-- TODO: make [apps] and [CLIs] hyperlinks, for now it's broken/outdated thus removed -->
 
-My workflow is described in more detail in [wiki](https://wiki.nikiv.dev/sharing/my-workflow) and [course](https://macos.nikiv.dev).
+Below is a list of all the apps & CLIs I use and how. Together with the [config](#macos-config) I use for everything.
 
 ### Productivity
 
@@ -105,35 +131,13 @@ My workflow is described in more detail in [wiki](https://wiki.nikiv.dev/sharing
 
 Use [Brew](https://wiki.nikiv.dev/package-managers/brew) and global [Bun](https://bun.sh) packages for most of my CLIs. Eventually want to settle down on [Nix](https://wiki.nikiv.dev/package-managers/nix) as I learn it more.
 
-I try to keep my macOS declarative. Currently it's one [magefile.go](magefile.go) but it's not up to date. Most likely be moved to [chezmoi](https://www.chezmoi.io/).
+I'd love to keep my macOS declarative but it's currently not. I tried getting there with [magefile.go](magefile.go) but it's not up to date. Most likely be moved to [chezmoi](https://www.chezmoi.io/) or written from scratch in Bun/Go.
 
-I list CLIs I use [here](https://wiki.nikiv.dev/cli).
+I list CLIs I use [here](https://wiki.nikiv.dev/cli) (out of date).
 
 ## macOS Config
 
 All config files are part of this repo. They include configs for [fish](fish), [karabiner](karabiner), [git](git) and more. Configs for tools I stopped using are in [archive](archive).
-
-## Clean install / replicate my macOS fully
-
-Read [through this](https://learnany.notion.site/Mac-clean-setup-ee58edc4a991483491333e9e3fc20292). It lists all settings I use on macOS, all apps I install with settings I use etc.
-
-It's what I used to move from old mac to new one cleanly from scratch.
-
-<!-- TODO: fix below. needs updating and is broken, I need to write a cleaner sync up approach -->
-
-<!-- Take a look at [install](install) shell script. It will install [brew](https://brew.sh), [go](https://go.dev) & [mage](https://github.com/magefile/mage).
-
-Run it with `./install`. As part of the script it will run `mage setup`. Take a look at [magefile.go](magefile.go) `Setup` function to see what it will do.
-
-You can also run `mage` alone to see what commands you can run with descriptions of them.
-
-In short, it will create appropriate symlinks pointing at files in `~/.dotfiles`. It is assumed that the dotfiles repo is placed there.
-
-It will also install CLI tools & apps.
-
-5. [Sync settings](https://github.com/zenangst/Syncalicious) for apps I use. -->
-
-<!-- TODO: Syncalicious looks neat, try use and test it works -->
 
 ## iOS Apps
 
@@ -265,6 +269,8 @@ I don't use iPad either. When I did, I mostly used it to draw with [Procreate](h
 ## Automation course
 
 I describe my macOS/iOS setup in greater detail in [my course](https://macos.nikiv.dev).
+
+And I describe my workflow in a lot of detail in [wiki](https://wiki.nikiv.dev/sharing/my-workflow).
 
 ## macOS/iOS Telegram group
 
