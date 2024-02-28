@@ -113,7 +113,9 @@ I list CLIs I use [here](https://wiki.nikiv.dev/cli).
 
 All config files are part of this repo. They include configs for [fish](fish), [karabiner](karabiner), [git](git) and more. Configs for tools I stopped using are in [archive](archive).
 
-## Clean install/replicate macOS
+## Clean install / replicate my macOS fully
+
+Read [through this](https://learnany.notion.site/Mac-clean-setup-ee58edc4a991483491333e9e3fc20292).
 
 1. Boot latest macOS version. Remember that username is the name you want the home folder to be (by default its first name & last name). Mine is `nikiv`.
 <!-- TODO: needs update -->

@@ -8,6 +8,8 @@
 // same for maybe doing fetch requests, processing it without KM
 // just call a function! handle errors nicely abstracted by fetch call (with effect)
 
+// TODO: solve problem with clashes on keys. i.e. in system settings > keyboard > shortcuts (I bind many keys to odd keys, I need fast way to know what's taken and what's not)
+
 // type KMMacros = "open: Safari" | "open: Cursor"
 export type KMMacros = "open: Safari" | "open: Cursor"
 function km(macroName: KMMacros) {

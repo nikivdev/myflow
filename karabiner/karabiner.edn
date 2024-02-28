@@ -233,7 +233,8 @@
                  ;[:spacebar :!CSOe]]} ; Selection -> YouTube
         {:des "wkey (apps)"
          :rules [:w-mode
-                 [:t [:km "open: Pitch"]]
+                 ;[:t [:km "open: Pitch"]]
+                 [:t [:km "open: 2Do"]]
                  [:e [:km "open: Fantastical"]] ; to be moved to LA Todo
                  [:a [:km "open: Notion"]]
                  [:v [:km "open: Obsidian"]] ; LA (everything but todos/calendar)
@@ -248,10 +249,13 @@
                  [:p [:km "open wip.md with Cursor Nightly"]]
                  [:escape [:km "open: Finder"]]
                  ;[:r [:km "open: SQLiteFlow"]] ; TODO: move to personal EdgeDB
-                 [:f [:km "open: 2Do"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
-                 [:r [:km "open: Things"]]
-                 [:d [:km "open: Music"]]
+                 [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
+                 ;[:r [:km "open: Things"]]
+                 [:r [:km "open: 1Password"]]
+                 ;[:t [:km "open: Notes"]]
+                 ;[:d [:km "open: Music"]]
                  ;[:d [:km "open: Day One"]]
+                 [:d [:km "open: System Settings"]]
                  ;[:g [:km "Journal"]] ; TODO: complete to use LA
                  ;[:h [:km "open: Notes"]]
                  ;[:f [:km "open: Learn Anything"]]
@@ -362,7 +366,7 @@
                  ;[:l [:km "open: Reeder"]]
                  [:b [:km "Edit keyboard shortcuts"]]
                  ;[:n [:km "open: ScreenFlow"]]
-                 [:m [:km "open: Music"]]
+                 ;[:m [:km "open: Music"]]
                  [:comma [:km "open: Arq"]]
                  [:period [:km "open: Preview"]]
                  ;[:period [:km "open: Final Cut Pro"]]
@@ -449,7 +453,8 @@
                  ;[:i [:km "Search Dash app"]]
                  [:i [:km "open: Dash (with search)"]]
                  ;[:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
-                 [:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
+                 [:a :!TOSw] ; Notion Command Search
+                 ;[:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
                  ;[:s [:alfred "search code" "nikivi.manage.notes"]]
                  [:s [:alfred "search folders" "nikivi.search.folders"]]
                  ;[:d [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
@@ -576,8 +581,8 @@
                  [:b {:pkey :button3}] ; Middle click
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:m [:km "Google Lucky selected word"]]
-                 [:comma :!TO8] ; Show Launchpad
-                 [:period :!CTO3] ; Mission control
+                 [:comma :!TOS1] ; Show Launchpad (system settings > keyboard > launchpad & dock)
+                 [:period :!TOS2] ; Mission Control (system settings > keyboard > mission control)
                  [:spacebar :!CT8]]} ; Selection -> Dictionary (wiki)
         {:des "fkey (essential)"
          :rules [:f-mode
@@ -598,6 +603,7 @@
                  [:open_bracket :!CT5] ; Turn display on/off
                  ;[:escape :!CTOu] ; Sip color picker
                  [:a [:km "open: Chrome Canary"]]
+                 [:s :!TOS8] ; Move focus to status menus (show menu bar) (system settings > keyboard > keyboard)
                  ;[:s [:km "open: Simulator"]]
                  ;[:s [:km "open: Spline"]]
                  ;[:s [:km "open: Simulator"]]
@@ -659,8 +665,13 @@
                  ;[:semicolon :!COSs] ; Move window to right desktop
                  [:semicolon :!COSs] ; Move window between different screen & maximize
                  ;[:z :!CO0] ; Show Dropzone dropdown
-                 [:n :!CTOg] ; Turn on/off notifications
-                 [:m :!COslash] ; Show/hide notification centre
+                 [:u :!TOS7] ; Move focus to the Dock (system settings > keyboard > keyboard)
+                 [:i :!TOS6] ; Move focus to the menu bar (system settings > keyboard > keyboard)
+                 [:o :!CSslash] ; Search menu bar (can also jump around menu bar items after with left/right arrow)
+                 [:n :!TOS4] ; Turn Do Not Disturb on/off (system settings > keyboard > mission control)
+                 [:m :!TOS3] ; Show Notification Centre (system settings > keyboard > mission control)
+                 [:period :!Tdown_arrow] ; Application Windows (system settings > keyboard > mission control)
+                 [:comma :!TOS5] ; Show Desktop (system settings > keyboard > mission control)
                  [:quote :!COS6]]} ; Toggle Night Shift on/off.
         {:des "capskey (paste)"
          :rules [:escape-mode
@@ -998,10 +1009,13 @@
         {:des "spacekey"
          :rules [:spacebar-mode
                  ;[:tab :!CO5] ; TODO: Configure ScreenFlow recording
+                 [:1 :!TOSq] ; Screenshot and recording options (system settings > keyboard > screenshots)
+                 [:2 :!TOS9] ; Copy picture of screen to the clipboard (system settings > keyboard > screenshots)
+                 [:3 :!CS3] ; Save picture of screen as a file (~/Desktop) (system settings > keyboard > screenshots)
                  [:q [:km "open: CleanShot"]]
                  [:w :!TO3] ; Screenshot -> CleanShot
-                 [:e :!TO2] ; Screenshot -> Clipboard
-                 [:r :!CS4] ; Screenshot -> ~/Desktop
+                 [:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots)
+                 [:r :!CS4] ; Save picture of selected area as a file (~/Desktop) (system settings > keyboard > screenshots)
                  [:t [:km "w: Twitter (personal)"]]
                  ;[:t [:km "w: YouTube submit"]]
                  ;[:t :!TOCp] ; Screenshot -> Imgur

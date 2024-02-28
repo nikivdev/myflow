@@ -1,7 +1,13 @@
+# TODO: what is this?
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+
 source ~/src/config/fish/functions-and-alias.fish
 source ~/src/config/fish/private.fish
 
 # path
+fish_add_path /opt/homebrew/bin
 fish_add_path ~/.bun/bin/
 fish_add_path ~/src/config/bin
 fish_add_path ~/src/config/bin/private
@@ -13,16 +19,20 @@ fnm env --use-on-cd | source # https://github.com/Schniz/fnm#fish-shell setup
 
 # edgedb
 # TODO: don't hard code /nikiv/ (how to do ~/ in fish?)
-source "/Users/nikiv/Library/Application Support/edgedb/env"
+# source "/Users/nikiv/Library/Application Support/edgedb/env"
 
 # go
 set -x GOPATH (go env GOPATH)
 set -x PATH $PATH (go env GOPATH)/bin
 
-# other
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+# -- other
 __fish_cursor_xterm line # make cursor into thin line (doesn't make a difference in Warp.dev)
 #set fish_cursor_unknown block
-direnv hook fish | source # TODO: not sure it works, fish integration for direnv
+# direnv hook fish | source # TODO: not sure it works, fish integration for direnv
 
 # https://docs.nativescript.org/setup/macos#setting-up-macos-for-ios
 fish_add_path /opt/homebrew/lib/ruby/gems/2.7.0/bin
