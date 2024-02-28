@@ -594,7 +594,7 @@
                  ;[:q [:km "open: Photos"]]
                  [:escape [:km "open: Pixave"]]
                  ;[:q [:km "open: Cosmos"]]
-                 ;[:q [:km "open: Excalidraw"]]
+                 [:s [:km "open: Excalidraw"]]
                  ;[:q [:km "Clear active todo"]]
                  [:q [:km "open: Framer"]]
                  [:w [:km "open: Figma"]]
@@ -977,7 +977,7 @@
                   [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:spacebar [:a :w :a :i :t :spacebar]]]} ; -> await
         {:des "godot"
-         :rules[:go-mode
+         :rules [:go-mode
                 [:tab [:km "w: GoDoc"]]
                 [:a [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow]] ; -> fmt.Println()
                 [:s [:!Ssemicolon :equal_sign :spacebar]] ; -> :=
@@ -991,17 +991,17 @@
                 [:v [:g :o :l :a :n :g :spacebar]] ; -> golang
                 [:b [:l :o :g :period :!Sf :a :t :a :l :!S9 :e :r :r :!S0]]]} ; -> log.Fatal(err)
         {:des "pydot"
-          :rules[:py-mode
+          :rules [:py-mode
                  [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]] ; -> print()
                  [:s [:hyphen :!Speriod]] ; -> ->
                  [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                  [:v [:p :y :t :h :o :n :spacebar]]]} ; -> python
         {:des "swiftdot"
-         :rules[:swift-mode
+         :rules [:swift-mode
                 [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]] ; -> print()
                 [:v [:s :w :i :f :t :spacebar]]]} ; -> swift
         {:des "rustdot"
-          :rules[:rust-mode
+          :rules [:rust-mode
                  [:a [:l :o :g :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow]] ; -> log!();
                  ;[:a [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow :!Squote :!Sopen_bracket :!Sclose_bracket :right_arrow :comma :spacebar]] ; -> println!("{}", )
                  [:s [:a :s :s :e :r :t :!Shyphen :e :q :!S1 :!S9]] ; assert_eq!();
