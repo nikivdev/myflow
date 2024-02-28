@@ -115,17 +115,13 @@ All config files are part of this repo. They include configs for [fish](fish), [
 
 ## Clean install / replicate my macOS fully
 
-Read [through this](https://learnany.notion.site/Mac-clean-setup-ee58edc4a991483491333e9e3fc20292).
+Read [through this](https://learnany.notion.site/Mac-clean-setup-ee58edc4a991483491333e9e3fc20292). It lists all settings I use on macOS, all apps I install with settings I use etc.
 
-1. Boot latest macOS version. Remember that username is the name you want the home folder to be (by default its first name & last name). Mine is `nikiv`.
-<!-- TODO: needs update -->
-2. Go through [preferences](https://imgur.com/a/KoVAxFQ) & set everything up.
-3. Download & install apps I use (mentioned above).
-4. Sync/link all config files.
+It's what I used to move from old mac to new one cleanly from scratch.
 
-<!-- TODO: needs update/testing -->
+<!-- TODO: fix below. needs updating and is broken, I need to write a cleaner sync up approach -->
 
-Take a look at [install](install) shell script. It will install [brew](https://brew.sh), [go](https://go.dev) & [mage](https://github.com/magefile/mage).
+<!-- Take a look at [install](install) shell script. It will install [brew](https://brew.sh), [go](https://go.dev) & [mage](https://github.com/magefile/mage).
 
 Run it with `./install`. As part of the script it will run `mage setup`. Take a look at [magefile.go](magefile.go) `Setup` function to see what it will do.
 
@@ -135,7 +131,9 @@ In short, it will create appropriate symlinks pointing at files in `~/.dotfiles`
 
 It will also install CLI tools & apps.
 
-5. [Sync settings](https://github.com/zenangst/Syncalicious) for apps I use.
+5. [Sync settings](https://github.com/zenangst/Syncalicious) for apps I use. -->
+
+<!-- TODO: Syncalicious looks neat, try use and test it works -->
 
 ## iOS Apps
 
