@@ -180,7 +180,7 @@ end
 # n <cmd> - `bun run ..`
 function n
     if not set -q argv[1]
-        bun run dev
+        bun dev
     else
         bun run $argv
     end

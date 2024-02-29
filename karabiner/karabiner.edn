@@ -340,8 +340,7 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 [:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
-                 ;[:spacebar [:km "Explain selected text (or just explain ..)"]]]}
+                 [:spacebar [:km "Explain selected text (or open ChatGPT Explain)"]]]}
                  ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
         {:des "rkey (apps)"
          :rules [:r-mode
@@ -594,7 +593,8 @@
                  ;[:q [:km "open: Photos"]]
                  [:escape [:km "open: Pixave"]]
                  ;[:q [:km "open: Cosmos"]]
-                 [:s [:km "open: Excalidraw"]]
+                 ;[:s [:km "open: Excalidraw"]]
+                 [:s :!TOSe] ; Start Superwhisper transcription
                  ;[:q [:km "Clear active todo"]]
                  [:q [:km "open: Framer"]]
                  [:w [:km "open: Figma"]]
@@ -651,7 +651,7 @@
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
-                 [:spacebar :!TOSe]]} ; Start Superwhisper transcription
+                 [:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
                  ;[:spacebar [:km "open: Eagle"]]]}
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
         {:des "gkey (actions)"
