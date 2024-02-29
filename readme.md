@@ -227,7 +227,7 @@ I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I
 - [Voice](https://www.icloud.com/shortcuts/960ebd64ee76488b96bf50ad7513e063) - Start voice conversation with ChatGPT
 - [Ride/Food](https://www.icloud.com/shortcuts/8e9560d24b0c4087b0c40b989799e9fb) - Open Uber app
 - [Photo](https://www.icloud.com/shortcuts/39c4e384596b4b2fa20a10c8c8512190) - Open Camera app
-- [Record](https://www.icloud.com/shortcuts/14e3dbd846f54270ac699ab6e0ef661e) - Create voice recording
+- [Record](https://www.icloud.com/shortcuts/4940845d6b694195bda6e18e61f6aa24) - Create voice recording with [superwhisper](https://superwhisper.com/)
 - [Todo](https://www.icloud.com/shortcuts/bc3fc96cc1d3499cb5eab8f6005a0049) - Create todo in Things with Quick Entry
 - [Audible](https://www.icloud.com/shortcuts/76c982768d93441596d563084b0aeb77) - Open Audible app
 - [Overcast](https://www.icloud.com/shortcuts/cb90243f48d34c5491ffdbd55d975037) - Open Overcast app and start playing podcast
@@ -246,7 +246,7 @@ And I mapped the action button to run [Quick Note](https://www.icloud.com/shortc
 Here is how my control center looks:
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-control-center.jpg"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-control-center-feb.jpg"></a>
 
 <!-- TODO: uncomment/udpate when I get iPad again and find use for it -->
 <!-- ## WatchOS
