@@ -597,7 +597,8 @@
                  ;[:s [:km "open: Excalidraw"]]
                  [:s :!TOSe] ; Start Superwhisper transcription
                  ;[:q [:km "Clear active todo"]]
-                 [:q [:km "open: Framer"]]
+                 ;[:q [:km "open: Framer"]]
+                 [:q [:km "open: Midjourney"]]
                  [:w [:km "open: Figma"]]
                  [:grave_accent_and_tilde [:km "Test"]]
                  [:e :!CO8] ; Alfred clipboard history search
