@@ -255,8 +255,8 @@
                  [:r [:km "open: 1Password"]]
                  ;[:t [:km "open: Notes"]]
                  ;[:d [:km "open: Music"]]
-                 ;[:d [:km "open: Day One"]]
-                 [:d [:km "open: System Settings"]]
+                 [:d [:km "open: Day One"]]
+                 ;[:d [:km "open: System Settings"]]
                  ;[:g [:km "Journal"]] ; TODO: complete to use LA
                  ;[:h [:km "open: Notes"]]
                  ;[:f [:km "open: Learn Anything"]]
@@ -1066,6 +1066,7 @@
                  [:o [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:k :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing?
+
                  [:l [:km "New tweet"]] ; TODO: can be generic `LA Post` function later maybe or have another bind for `LA Post`
                  [:semicolon [:km "open: Dash (with search)"]]
                  [:period [:km "open: Safari Technology Preview"]]
