@@ -245,6 +245,10 @@ function pw
     watchexec --no-vcs-ignore --restart --exts ts "tput reset && pnpm --silent run $argv" --project-origin .
 end
 
+function goGetLatestPackage
+    go get -u $argv@latest
+end
+
 # Aliases
 # cd places
 alias d="cd"
