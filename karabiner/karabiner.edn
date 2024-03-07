@@ -255,7 +255,8 @@
                  [:r [:km "open: 1Password"]]
                  ;[:t [:km "open: Notes"]]
                  ;[:d [:km "open: Music"]]
-                 [:d [:km "open: Day One"]]
+                 ;[:d [:km "open: Day One"]]
+                 [:d [:km "open: SnippetsLab"]]
                  ;[:d [:km "open: System Settings"]]
                  ;[:g [:km "Journal"]] ; TODO: complete to use LA
                  ;[:h [:km "open: Notes"]]
@@ -443,25 +444,28 @@
                  ;[:w [:km "open: Dash (search off)"]]
                  ;[:e [:km "open: Dash (with search)"]]
                  ;[:e [:km "open: ChatGPT GPTs"]]
-                 [:q [:km "open: Midjourney"]]
-                 [:w [:km "open: Gemini"]]
+                 ;[:q [:km "open: Midjourney"]]
+                 ;[:w [:km "open: Gemini"]]
+                 ;[:q [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  [:e [:km "open: EdgeDB Cloud"]]
+                 [:d [:km "open: Claude"]]
+                 [:r [:km "open: Cloudflare"]]
                  ;[:e [:km "open: Typefully"]]
                  ;[:e [:km "Make 2Do task"]]
                  ;[:r [:km "Make 2Do task with note as current URL"]]
                  ;[:t [:km "Make 2Do task with Safari title as name + note as current URL"]]
                  ;[:i [:alfred "search alfred" "nikivi.utilities" "?"]]
                  ;[:i [:km "Search Dash app"]]
-                 [:i [:km "open: Dash (with search)"]]
+                 ;[:i [:km "open: Dash (with search)"]]
                  ;[:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:a :!TOSw] ; Notion Command Search
                  ;[:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
                  ;[:s [:alfred "search code" "nikivi.manage.notes"]]
                  [:s [:alfred "search folders" "nikivi.search.folders"]]
                  ;[:d [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
-                 [:d [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
+                 [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:f [:km "open: Perplexity"]]
-                 [:b [:km "open: Grafbase"]]
+                 [:g [:km "open: Grafbase"]]
                  ;[:g [:km "2Do with current url as note (github)"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  ;[:j [:alfred "search dash" "com.kapeli.dash.workflow"]]
@@ -1066,8 +1070,9 @@
                  [:o [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:k :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing?
-
-                 [:l [:km "New tweet"]] ; TODO: can be generic `LA Post` function later maybe or have another bind for `LA Post`
+                 [:l [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
+                 [:n [:km "New tweet"]] ; TODO: can be generic `LA Post` function later maybe or have another bind for `LA Post`
+                 [:m [:km "w: Reddit submit"]]
                  [:semicolon [:km "open: Dash (with search)"]]
                  [:period [:km "open: Safari Technology Preview"]]
                  ;[:n [:km "New tweet with @"]]
@@ -1086,7 +1091,6 @@
                  ;[:n [:km "New 2Do task"]]
                  ;[:m [:km "New Linear task"]]
                  [:b [:km "w: Lobsters submit"]]
-                 ;[:n [:km "w: Reddit submit"]]
                  ;[:m [:km "New Mastodon post"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
         ;{:des "left cmd -> cmd+tab"
