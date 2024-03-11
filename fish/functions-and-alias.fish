@@ -293,6 +293,7 @@ alias pw='pnpm add -w'
 alias gmt='go mod tidy'
 alias findAll.gitInCurrentDir="find . -type d -name .git"
 alias .="open ."
+alias :g="bun install -g"
 
 # TODO: not sure how useful
 # function runPrettierOnAllGitFiles
