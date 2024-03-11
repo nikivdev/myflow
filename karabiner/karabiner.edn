@@ -649,7 +649,7 @@
                  ;[:quote [:km "Goku Run"]]
                  ;[:quote [:km "edit: Fish functions and alias"]]
                  [:semicolon [:km "Show active todo (clear todo and go to 2Do if activated again within 3 seconds)"]]
-                 [:j :!Tspacebar] ; Things Quick Entry
+                 [:j :!TSspacebar] ; Things Quick Entry
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]
                  [:m :!Sreturn_or_enter]
