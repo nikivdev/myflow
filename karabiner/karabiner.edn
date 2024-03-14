@@ -658,7 +658,8 @@
                  ;[:semicolon [:km "Show active todo"]]
                  ;[:quote [:km "Goku Run"]]
                  ;[:quote [:km "edit: Fish functions and alias"]]
-                 [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
+                 [:semicolon [:km "New Things task (Today)"]]
+                 ;[:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  ;[:semicolon [:km "Show active todo (clear todo and go to 2Do if activated again within 3 seconds)"]]
                  [:j :!TSspacebar] ; Things Quick Entry
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
@@ -680,7 +681,7 @@
                  [:a [:km "Go to KM group of current app"]]
                  [:s [:km "Dismiss notifications"]]
                  [:h :!CSOa] ; Move window left
-                 [:j :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
+                 ;[:j :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  [:k :!COSf] ; Maximize window
                  [:l :!CSOd] ; Move window right
                  ;[:semicolon :!COSs] ; Move window to right desktop
@@ -1081,10 +1082,11 @@
                  [:o [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:k :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing?
-                 [:l [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
+                 ;[:l [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
+                 [:l [:km "open: Dash (with search)"]]
                  [:n [:km "New tweet"]] ; TODO: can be generic `LA Post` function later maybe or have another bind for `LA Post`
                  [:m [:km "w: Reddit submit"]]
-                 [:semicolon [:km "open: Dash (with search)"]]
+                 [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  [:period [:km "open: Safari Technology Preview"]]
                  ;[:n [:km "New tweet with @"]]
                  ;[:m [:km "New tweet with current URL"]]
