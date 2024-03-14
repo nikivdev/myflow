@@ -682,6 +682,8 @@
                  [:s [:km "Dismiss notifications"]]
                  [:h :!CSOa] ; Move window left
                  ;[:j :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
+                 [:j [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
+                 ;[:j [:km "New open app's macro"]] ; TODO: macro that will start a new macro in currently open app KM group
                  [:k :!COSf] ; Maximize window
                  [:l :!CSOd] ; Move window right
                  ;[:semicolon :!COSs] ; Move window to right desktop
