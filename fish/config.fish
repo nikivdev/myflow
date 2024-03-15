@@ -62,3 +62,5 @@ set -Ux NODE_OPTIONS "--max-old-space-size=8096"
 #     end
 # end
 # <<< conda initialize <<<
+
+# mise activate fish | source

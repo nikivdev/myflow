@@ -458,7 +458,7 @@
                  ;[:w [:km "open: Gemini"]]
                  ;[:q [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  [:e [:km "open: EdgeDB Cloud"]]
-                 [:j [:km "open: Claude"]]
+                 [:j [:km "open: ChatGPT"]]
                  [:r [:km "open: Cloudflare"]]
                  ;[:e [:km "open: Typefully"]]
                  ;[:e [:km "Make 2Do task"]]
@@ -492,7 +492,7 @@
                  ;[:n [:alfred "search lists" "nikivi.learn.anything"]]
                  ;[:m [:alfred "search lists" "nikivi.awesome.lists"]]
                  ;[:spacebar [:alfred "search PDFs" "nikivi.search.files"]]]}
-                 [:spacebar [:km "open: ChatGPT"]]]}
+                 [:spacebar [:km "open: Claude"]]]}
                  ;[:spacebar [:km "open: Ask"]]]}
         ;; TODO: not used, move it to other keys, whatever is useful
         ;{:des ".."
@@ -804,13 +804,13 @@
                  [:l [:km "edit: Solid"]]
                  ;[:k [:km "edit: TS todo"]]
                  [:semicolon [:km "edit: Fish functions and alias"]]
-                 [:quote [:km "edit: Fish config"]]
+                 [:period [:km "edit: Fish config"]]
                  ;[:semicolon [:alfred "search learning" "nikivi.private.directories"]]
                  ;[:quote [:km "proj: Go"]]
                  ;[:n [:km "run: Node"]]
                  ;[:m [:km "run: Swift"]]
                  [:comma [:km "edit: Config todo"]]
-                 [:period [:km "edit: LA todo"]]
+                 ;[:period [:km "edit: LA todo"]]
                  [:slash [:km "edit: KusKus todo"]]
                  ;[:period [:km "edit: Dotfiles Magefile"]]
                  ;[:j :!SOTw] ; Replies
