@@ -137,7 +137,7 @@ I list CLIs I use [here](https://wiki.nikiv.dev/cli) (out of date).
 
 ## macOS Config
 
-All config files are part of this repo. They include configs for [fish](fish), [karabiner](karabiner), [git](git) and more. Configs for tools I stopped using are in [archive](archive).
+All config files are part of this repo. They include configs for [fish](fish), [karabiner](karabiner), [git](git) and more. Configs for tools I stopped using are in [archive](https://github.com/nikitavoloboev/archive/tree/main/config).
 
 ## iOS Apps
 
