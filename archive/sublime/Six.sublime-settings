@@ -1,5 +1,0 @@
-// Settings in here override those in "Six/Six.sublime-settings".
-{
-	"use_system_clipboard": true,
-	"enable_ignore_case": true
-}

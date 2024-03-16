@@ -1,8 +1,0 @@
-{
-  "auto_format_on_save": true,
-  "auto_format_on_save_excludes": [
-    "*/node_modules/*",
-  ],
-  "trailingComma": "es5",
-  "prettier_cli_path": "/usr/local/bin/prettier",
-}
