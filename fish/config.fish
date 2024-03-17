@@ -64,3 +64,7 @@ set -Ux NODE_OPTIONS "--max-old-space-size=8096"
 # <<< conda initialize <<<
 
 # mise activate fish | source
+
+# Deno
+set -gx DENO_INSTALL "/Users/nikiv/.deno"
+set -gx PATH "$DENO_INSTALL/bin" $PATH
