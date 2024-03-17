@@ -215,6 +215,11 @@ function g.
     git push
 end
 
+function gitCheckoutRemote
+    git fetch origin
+    git checkout -b $argv[1] origin/$argv[1]
+end
+
 # gi - go get package
 # `go get -u github.com/spf13/cobra@latest
 # function gi
@@ -294,6 +299,24 @@ alias gmt='go mod tidy'
 alias findAll.gitInCurrentDir="find . -type d -name .git"
 alias .="open ."
 alias :g="bun install -g"
+alias nv="sudo nvim"
+
+function deleteGitLocalAndRemoteBranch
+    set -l branch_name $argv[1]
+
+    if test -z "$branch_name"
+        echo "Please provide a branch name."
+        return 1
+    end
+
+    # Delete local branch
+    git branch -D $branch_name
+    echo "Deleted local branch: $branch_name"
+
+    # Delete remote branch
+    git push origin --delete $branch_name
+    echo "Deleted remote branch: $branch_name"
+end
 
 # TODO: not sure how useful
 # function runPrettierOnAllGitFiles
