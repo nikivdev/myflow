@@ -176,16 +176,6 @@ function rt
     end
 end
 
-# n - `bun dev`
-# n <cmd> - `bun run ..`
-function n
-    if not set -q argv[1]
-        bun dev
-    else
-        bun run $argv
-    end
-end
-
 # forceRemoteGitBranchToBeThisCommit <commit-hash>:<branch-name>
 function forceRemoteGitBranchToBeThisCommit
     set commit_hash (string split ":" $argv)[1]
@@ -289,7 +279,7 @@ alias :t="bun test --watch"
 alias e="edgedb"
 alias :s="cd ~/src/ts/packages/solid && bun dev" # run solid web server
 alias :j="cd ~/src/ts && bun dev"
-alias :r="cd ~/src/rust && bun dev"
+# alias :r="cd ~/src/rust && bun dev"
 alias :t="cd ~/src/python && bun dev"
 alias getLastCommitHash="git log -1 --format=\"%H\""
 alias pr="pnpm run"
@@ -300,6 +290,15 @@ alias findAll.gitInCurrentDir="find . -type d -name .git"
 alias .="open ."
 alias :g="bun install -g"
 alias nv="sudo nvim"
+
+function :r
+    if not set -q argv[1]
+        # TODO: list all packages installed with bunx with fzf (top result is most recently ran bunx <package>)
+    else
+        bunx $argv
+    end
+end
+
 
 function deleteGitLocalAndRemoteBranch
     set -l branch_name $argv[1]

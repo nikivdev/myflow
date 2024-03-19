@@ -241,7 +241,7 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  ;[:t [:km "open: Pitch"]]
-                 [:t [:km "open: 2Do"]]
+                 ;[:t [:km "open: 2Do"]]
                  [:e [:km "open: Fantastical"]] ; to be moved to LA Todo
                  [:a [:km "open: Notion"]]
                  [:v [:km "open: Obsidian"]] ; LA (everything but todos/calendar)
@@ -275,7 +275,8 @@
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor Nightly"]]
-                 [:semicolon [:km "open: Xcode"]]
+                 [:semicolon [:km "open: Cursor"]]
+                 [:period [:km "open: Xcode"]]
                  ;[:semicolon [:km "open: Cursor"]]
                  ;[:quote [:km "Open src.code-workspace and learn-anything.code-workspace"]]
                  ;[:quote [:km "Open learn-anything.code-workspace"]]
@@ -290,7 +291,7 @@
                  ;[:i [:km "open: Hoppscotch"]]
                  [:i [:km "open: Bruno"]]
                  [:comma [:km "open: Proxyman"]]
-                 [:period [:km "open: Instruments"]]
+                 [:slash [:km "open: Instruments"]]
                  ;[:period [:km "open: Bruno"]]
                  ;[:period [:km "open: Zed"]]
                  ;[:period [:km "open: Xcode"]]
@@ -299,9 +300,7 @@
                  ;[:spacebar [:km "open: TablePlus"]]]}
                  ;[:spacebar [:km "open: Dash"]]]}
                  ;[:spacebar [:km "open: Beekeepr Studio Ultimate"]]]}
-                 ;[:period [:km "open: VS Code Insiders"]]
                  ;[:period [:km "open: Commander One"]]
-                 ;[:period [:km "open: Cypress"]]]}
                 ;;  [:spacebar :!CT7]]} ; Start Google search with selection
                  ;[:spacebar [:km "open: Learn Anything"]]]}
                  ;[:spacebar [:km "Explain with ChatGPT"]]]}
