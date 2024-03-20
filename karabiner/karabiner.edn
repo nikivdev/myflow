@@ -350,7 +350,8 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 [:spacebar [:km "Explain selected text (or open ChatGPT Explain)"]]]}
+                 ;[:spacebar [:km "Explain selected text (or open ChatGPT Explain)"]]]}
+                 [:spacebar [:km "Explain selected text (or open Claude Explain)"]]]}
                  ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
         {:des "rkey (apps)"
          :rules [:r-mode
@@ -669,7 +670,8 @@
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
-                 [:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
+                 ;[:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
+                 [:spacebar [:km "Move selected text to Claude or select area screenshot to Claude"]]]}
                  ;[:spacebar [:km "open: Eagle"]]]}
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
         {:des "gkey (actions)"

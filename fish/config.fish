@@ -68,3 +68,14 @@ set -Ux NODE_OPTIONS "--max-old-space-size=8096"
 # Deno
 set -gx DENO_INSTALL "/Users/nikiv/.deno"
 set -gx PATH "$DENO_INSTALL/bin" $PATH
+
+# Atuin (shell history)
+set -gx ATUIN_NOBIND true
+atuin init fish | source
+# bind to ctrl-r in normal and insert mode, add any other bindings you want here too
+# TODO: doesn't work due to https://github.com/warpdotdev/Warp/issues/537..
+bind \cr _atuin_search
+bind -M insert \cr _atuin_search
+
+# LLVM
+fish_add_path /opt/homebrew/opt/llvm/bin

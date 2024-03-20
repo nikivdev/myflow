@@ -287,9 +287,19 @@ alias w.="cursor-nightly .env"
 alias pw='pnpm add -w'
 alias gmt='go mod tidy'
 alias findAll.gitInCurrentDir="find . -type d -name .git"
-alias .="open ."
 alias :g="bun install -g"
 alias nv="sudo nvim"
+# alias .="open ."
+
+function .
+    if not set -q argv[1]
+        open .
+    else
+        # copy output to clipboard
+        set -l output (eval $argv)
+        echo $output | pbcopy
+    end
+end
 
 function :r
     if not set -q argv[1]
