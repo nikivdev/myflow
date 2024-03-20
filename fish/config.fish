@@ -79,3 +79,6 @@ bind -M insert \cr _atuin_search
 
 # LLVM
 fish_add_path /opt/homebrew/opt/llvm/bin
+
+# https://github.com/ajeetdsouza/zoxide
+zoxide init fish | source

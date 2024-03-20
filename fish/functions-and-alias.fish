@@ -246,7 +246,7 @@ end
 
 # Aliases
 # cd places
-alias d="cd"
+alias d="z"
 alias da="cd ~/src"
 alias dg="cd ~/src/config"
 alias de="cd ~/Desktop"
