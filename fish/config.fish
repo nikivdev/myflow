@@ -32,7 +32,6 @@ set --export PATH $BUN_INSTALL/bin $PATH
 # -- other
 __fish_cursor_xterm line # make cursor into thin line (doesn't make a difference in Warp.dev)
 #set fish_cursor_unknown block
-# direnv hook fish | source # TODO: not sure it works, fish integration for direnv
 
 # https://docs.nativescript.org/setup/macos#setting-up-macos-for-ios
 fish_add_path /opt/homebrew/lib/ruby/gems/2.7.0/bin
@@ -82,3 +81,6 @@ fish_add_path /opt/homebrew/opt/llvm/bin
 
 # https://github.com/ajeetdsouza/zoxide
 zoxide init fish | source
+
+# direnv
+direnv hook fish | source
