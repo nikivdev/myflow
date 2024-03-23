@@ -40,9 +40,9 @@ fish_add_path /opt/homebrew/lib/ruby/gems/2.7.0/bin
 
 # TODO: uncomment if things break, trying to use bun only
 # pnpm
-set -gx PNPM_HOME "/Users/nikiv/Library/pnpm"
+set -gx PNPM_HOME /Users/nikiv/Library/pnpm
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
 
@@ -86,3 +86,11 @@ zoxide init fish | source
 
 # direnv
 direnv hook fish | source
+
+# odin TODO: fix below, LSP doesn't work, not sure about what `if test -d` purpose is, test it works on https://github.com/thetarnav/odin-graphql-parser
+# set -x ODIN_ROOT "$HOME/clones/odin"
+# if test -d $ODIN_ROOT
+#     set -x PATH $PATH $ODIN_ROOT
+# else
+#     echo "ODIN LANG NOT FOUND IN \"$ODIN_ROOT\"!"
+# end
