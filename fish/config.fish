@@ -40,8 +40,10 @@ fish_add_path /opt/homebrew/lib/ruby/gems/2.7.0/bin
 
 # TODO: uncomment if things break, trying to use bun only
 # pnpm
-set -gx PNPM_HOME /Users/nikiv/Library/pnpm
-set -gx PATH "$PNPM_HOME" $PATH
+set -gx PNPM_HOME "/Users/nikiv/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
 # pnpm end
 
 

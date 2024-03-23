@@ -331,3 +331,11 @@ end
 # function runPrettierOnAllGitFiles
 #     git ls-files | grep -E '\.(js|css|html|ts|tsx)$' | xargs prettier --write
 # end
+
+function findFolder
+    find . -type d -name $argv[1] -prune
+end
+
+function deleteNodeModules
+    find . -type d -name node_modules -prune -print | xargs rm -rf
+end
