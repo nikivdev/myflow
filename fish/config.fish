@@ -88,9 +88,9 @@ zoxide init fish | source
 direnv hook fish | source
 
 # odin TODO: fix below, LSP doesn't work, not sure about what `if test -d` purpose is, test it works on https://github.com/thetarnav/odin-graphql-parser
-# set -x ODIN_ROOT "$HOME/clones/odin"
-# if test -d $ODIN_ROOT
-#     set -x PATH $PATH $ODIN_ROOT
-# else
-#     echo "ODIN LANG NOT FOUND IN \"$ODIN_ROOT\"!"
-# end
+set -x ODIN_ROOT "$HOME/clones/odin"
+if test -d $ODIN_ROOT
+    set -x PATH $PATH $ODIN_ROOT
+else
+    echo "ODIN LANG NOT FOUND IN \"$ODIN_ROOT\"!"
+end
