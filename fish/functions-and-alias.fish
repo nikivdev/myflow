@@ -339,3 +339,8 @@ end
 function deleteNodeModules
     find . -type d -name node_modules -prune -print | xargs rm -rf
 end
+
+function revertLastCommitAndPushForce
+    git reset --hard HEAD~1
+    git push origin HEAD --force
+end
