@@ -263,6 +263,7 @@ alias d.="cd ~/.scripts"
 alias :ts="fish -c 'cd ~/src/ts; bun dev'"
 
 # other
+alias :id="bun i -d" # dev dep install
 alias a="eza" # list files
 alias aa="eza -la" # list files (with hidden)
 alias cwd='pwd | pbcopy'
