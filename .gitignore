@@ -1,10 +1,10 @@
-/sublime/oscrypto-ca-bundle.crt
-/sublime/Package Control.cache
-/sublime/Package Control.merged-ca-bundle
-/sublime/Package Control.user-ca-bundle
-/sublime/Package Control.last-run
-/bin/private
-/run/
-*.DS_Store
+# core
+.DS_Store
+node_modules
+.env
+.env*.local
+
+bin/private
+run
 workspaces
 fish/private.fish

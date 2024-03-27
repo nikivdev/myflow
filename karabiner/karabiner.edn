@@ -184,6 +184,7 @@
                  [:n [:km "list: Events"]]]}
         {:des "tabkey (things)"
          :rules [:tab-mode
+                 [:3 [:km "Add/remove explore to focus workspace"]]
                  [:f [:km "Get time in SF"]]
                  [:t [:km "Save open tabs in safari"]]
                  [:i [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python

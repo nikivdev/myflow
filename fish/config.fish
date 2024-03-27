@@ -94,3 +94,5 @@ if test -d $ODIN_ROOT
 else
     echo "ODIN LANG NOT FOUND IN \"$ODIN_ROOT\"!"
 end
+
+fish_add_path ~/bin
