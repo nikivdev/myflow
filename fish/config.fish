@@ -3,7 +3,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-source ~/src/config/fish/functions-and-alias.fish
+source ~/src/config/fish/alias.fish
+source ~/src/config/fish/functions.fish
 source ~/src/config/fish/private.fish
 
 # path
