@@ -110,8 +110,9 @@
                  [:##k :up_arrow]
                  [:##l :right_arrow]
                  [:t :!Sreturn_or_enter]
+                 [:semicolon [:km "Autocomplete"]]
                  ;[:semicolon [:km "Autocomplete"]] ; TODO:
-                 [:semicolon [:km "New active todo"]] ; TODO: make LLM try to give hints on making this task, start processing it
+                 ;[:semicolon [:km "New active todo"]] ; TODO: make LLM try to give hints on making this task, start processing it
                  ;[:semicolon [:km "Selected text -> Alfred Snippet"]]
                  ;[:##semicolon [:km "New active todo"]]
                  [:period [:km "Show active todo"]]
@@ -659,7 +660,7 @@
                  ;[:semicolon [:km "Show active todo"]]
                  ;[:quote [:km "Goku Run"]]
                  ;[:quote [:km "edit: Fish functions and alias"]]
-                 [:semicolon [:km "New Things task (Today)"]]
+                 [:semicolon [:km "New Things task (Today + At Bottom)"]]
                  ;[:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  ;[:semicolon [:km "Show active todo (clear todo and go to 2Do if activated again within 3 seconds)"]]
                  [:j :!TSspacebar] ; Things Quick Entry
