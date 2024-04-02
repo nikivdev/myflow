@@ -352,8 +352,8 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 ;[:spacebar [:km "Explain selected text (or open ChatGPT Explain)"]]]}
                  [:spacebar [:km "Explain selected text (or open Claude Explain)"]]]}
+                 ;[:spacebar [:km "Explain selected text (or open ChatGPT Explain)"]]]}
                  ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
         {:des "rkey (apps)"
          :rules [:r-mode
@@ -478,6 +478,7 @@
                  [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:f [:km "open: Perplexity"]]
                  [:g [:km "open: Grafbase"]]
+                 [:semicolon [:km "open: Claude 2"]]
                  ;[:g [:km "2Do with current url as note (github)"]]
                  [:i [:alfred "run" "iansinnott.keyboardmaestro"]]
                  ;[:j [:alfred "search dash" "com.kapeli.dash.workflow"]]

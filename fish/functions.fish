@@ -297,3 +297,7 @@ function revertLastCommitAndPushForce
     git reset --hard HEAD~1
     git push origin HEAD --force
 end
+
+function killPort
+    lsof -ti:$argv | xargs kill
+end
