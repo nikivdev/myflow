@@ -4,8 +4,10 @@
          :held    50 ; TODO: not sure what it's for
          :delay   0 ; time after which the key press is delayed
          :sim     30}} ; keys need to be pressed within this threshold to be considered simultaneous
- :templates {:alfred "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
+ :templates {
+             :alfred "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
+             :raycast "open \"raycast://extensions/raycast/%s\""
              :open "open \"%s\""
              :open-g "open -g \"%s\""
              :shell "%s"
@@ -1095,6 +1097,7 @@
                  [:n [:km "New tweet"]] ; TODO: can be generic `LA Post` function later maybe or have another bind for `LA Post`
                  [:m [:km "w: Reddit submit"]]
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
+                 [:quote [:raycast "navigation/switch-windows"]]
                  [:period [:km "open: Safari Technology Preview"]]
                  ;[:n [:km "New tweet with @"]]
                  ;[:m [:km "New tweet with current URL"]]
