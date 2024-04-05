@@ -1094,10 +1094,10 @@
                  [:k :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing?
                  ;[:l [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  [:l [:km "open: Dash (with search)"]]
+                 [:b [:km "w: Reddit submit"]]
                  [:n [:km "New tweet"]] ; TODO: can be generic `LA Post` function later maybe or have another bind for `LA Post`
-                 [:m [:km "w: Reddit submit"]]
+                 [:m [:km "Search Cursor windows"]]
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
-                 [:quote [:raycast "navigation/switch-windows"]]
                  [:period [:km "open: Safari Technology Preview"]]
                  ;[:n [:km "New tweet with @"]]
                  ;[:m [:km "New tweet with current URL"]]
