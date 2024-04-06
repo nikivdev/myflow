@@ -117,7 +117,8 @@
                  ;[:semicolon [:km "New active todo"]] ; TODO: make LLM try to give hints on making this task, start processing it
                  ;[:semicolon [:km "Selected text -> Alfred Snippet"]]
                  ;[:##semicolon [:km "New active todo"]]
-                 [:period [:km "Show active todo"]]
+                 [:period [:km "New active todo"]]
+                 [:comma [:km "Show active todo"]]
                  ;[:semicolon :!CTO0] ; Search Alfred Snippets
                  [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
                  [:c :!Cdelete_or_backspace]
