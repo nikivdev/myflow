@@ -72,6 +72,14 @@ function W
     end
 end
 
+function we
+    if not set -q argv[1]
+        zed .
+    else
+        zed $argv
+    end
+end
+
 # TODO: pass arg for extension, and also the command to rerun
 # for now `js` is hardcoded
 #function W
@@ -227,11 +235,19 @@ end
 
 # :i = bun i
 # :i <package> = bun add <package>
+# function :i
+#     if not set -q argv[1]
+#         bun i
+#     else
+#         bun add $argv
+#     end
+# end
+
 function :i
     if not set -q argv[1]
-        bun i
+        pnpm i
     else
-        bun add $argv
+        pnpm add $argv
     end
 end
 
