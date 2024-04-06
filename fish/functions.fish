@@ -186,18 +186,18 @@ end
 
 # forceRemoteGitBranchToBeThisCommit <commit-hash>:<branch-name>
 function forceRemoteGitBranchToBeThisCommit
-    set commit_hash (string split ":" $argv)[1]
+    set commit_hash (string split ":" $argv)[1]m i
     set branch_name (string split ":" $argv)[2]
     git push origin $commit_hash:$branch_name --force
 end
 
-# p - pnpm install dependencies
-# p <cmd> - pnpm <cmd>
+# p - pnpm i
+# p <dep> - pnpm i <dep>
 function p
     if not set -q argv[1]
         pnpm i
     else
-        pnpm add $argv
+        pnpm i $argv
     end
 end
 
@@ -245,16 +245,16 @@ end
 
 function :i
     if not set -q argv[1]
-        pnpm i
+        bun i
     else
-        pnpm add $argv
+        bun i $argv
     end
 end
 
 # pw <package.json command> - rerun command if .ts files change
-function pw
-    watchexec --no-vcs-ignore --restart --exts ts "tput reset && pnpm --silent run $argv" --project-origin .
-end
+# function pw
+#     watchexec --no-vcs-ignore --restart --exts ts "tput reset && pnpm --silent run $argv" --project-origin .
+# end
 
 function goGetLatestPackage
     go get -u $argv@latest
