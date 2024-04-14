@@ -245,7 +245,7 @@
                  ;[:spacebar [:km "Explain selected text"]]]} ; TODO: seems not needed, as there is e+spacebar
         {:des "wkey (apps)"
          :rules [:w-mode
-                 ;[:t [:km "open: Pitch"]]
+                 [:t [:km "open: Pitch"]]
                  ;[:t [:km "open: 2Do"]]
                  [:e [:km "open: Fantastical"]] ; to be moved to LA Todo
                  [:a [:km "open: Notion"]]
@@ -268,7 +268,7 @@
                  ;[:t [:km "open: Notes"]]
                  ;[:d [:km "open: Music"]]
                  ;[:d [:km "open: Day One"]]
-                 [:d [:km "open: SnippetsLab"]]
+                 ;[:d [:km "open: SnippetsLab"]]
                  ;[:d [:km "open: System Settings"]]
                  ;[:g [:km "Journal"]] ; TODO: complete to use LA
                  ;[:h [:km "open: Notes"]]
@@ -373,7 +373,7 @@
                  [:escape [:km "open: IINA"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:j [:km "open: Preview"]]
-                 [:k [:km "open: Reader"]]
+                 ;[:k [:km "open: Reader"]]
                  [:l [:km "open: Dictionary"]]
                  ;[:l [:km "Open Reader with Nightly TS- workspace split 50/50"]]
                  ;[:semicolon [:km "open: Day One"]]
