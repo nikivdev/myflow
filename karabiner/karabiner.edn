@@ -464,7 +464,7 @@
                  ;[:w [:km "open: Gemini"]]
                  ;[:q [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  [:d [:km "open: EdgeDB Cloud"]]
-                 [:j [:km "open: ChatGPT"]]
+                 [:j [:km "open: Claude"]]
                  [:e [:km "open: Cloudflare"]]
                  ;[:e [:km "open: Typefully"]]
                  ;[:e [:km "Make 2Do task"]]
@@ -482,7 +482,7 @@
                  [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:f [:km "open: Perplexity"]]
                  [:g [:km "open: Grafbase"]]
-                 [:semicolon [:km "open: Claude 2"]]
+                 [:semicolon [:km "open: ChatGPT 2"]]
                  ;[:g [:km "2Do with current url as note (github)"]]
                  [:i [:alfred "run" "iansinnott.keyboardmaestro"]]
                  ;[:j [:alfred "search dash" "com.kapeli.dash.workflow"]]
@@ -499,7 +499,7 @@
                  ;[:n [:alfred "search lists" "nikivi.learn.anything"]]
                  ;[:m [:alfred "search lists" "nikivi.awesome.lists"]]
                  ;[:spacebar [:alfred "search PDFs" "nikivi.search.files"]]]}
-                 [:spacebar [:km "open: Claude"]]]}
+                 [:spacebar [:km "open: ChatGPT"]]]}
                  ;[:spacebar [:km "open: Ask"]]]}
         ;; TODO: not used, move it to other keys, whatever is useful
         ;{:des ".."
