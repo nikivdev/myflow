@@ -12,6 +12,48 @@ function af
     type $argv
 end
 
+function o
+    ollama run llama3:8b-instruct-q5_K_M "$argv"
+end
+
+# TODO: breaks down, move to https://github.com/sobelio/llm-chain or update the code
+function os
+    set max_attempts 3
+    set attempt 1
+    set command_failed true
+    set output ""
+    set error_output ""
+
+    while test $attempt -le $max_attempts
+        set command (ollama run llama3:8b-instruct-q5_K_M "return with the command I can enter in my terminal for this task: $argv. Just the command, so it runs. If you are uncertain, reply `false`")
+
+        if test "$command" = false
+            if test $attempt -eq $max_attempts
+                echo "Command could not be determined."
+            end
+            return 1
+        end
+
+        # Attempt to run the command, capturing stdout and stderr
+        set output (eval $command 2>&1 | tee /dev/stderr)
+
+        # Check if the command was successful
+        if test $status -eq 0
+            set command_failed false
+            echo $output
+            break
+        else
+            set error_output $output
+            set attempt (math $attempt + 1)
+        end
+    end
+
+    if test $command_failed = true
+        echo $error_output
+        echo "Failed to execute command after $max_attempts attempts."
+    end
+end
+
 function la
     command la # overwrite `la` fish builtin function
 end
@@ -166,6 +208,8 @@ function r
         cargo watch -q -- sh -c "tput reset && cargo run -q"
     else
         cargo watch -q -- sh -c "tput reset && cargo run -q -- $argv"
+        # TODO: test below, supposedly it's better and safer (per https://matrix.to/#/!YLTeaulxSDauOOxBoR:matrix.org/$mM0QC4VSo5BmI1o3qfKg5vjDs6sok1FwBtKy2UlI4Xs?via=gitter.im&via=matrix.org&via=tchncs.de)
+        # cargo watch -q -- sh -c 'tput reset && cargo run -q -- "$@"' watchscript $argv
     end
 end
 
