@@ -3,17 +3,13 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-source ~/src/config/fish/alias.fish
-source ~/src/config/fish/functions.fish
-source ~/src/config/fish/private.fish
-
 # path
 fish_add_path /opt/homebrew/bin
 fish_add_path ~/.bun/bin/
-fish_add_path ~/src/config/bin
-fish_add_path ~/src/config/bin/private
 fish_add_path ~/.local/share/solana/install/active_release/bin
 fish_add_path ~/.cargo/bin
+fish_add_path ~/bin
+fish_add_path ~/bin/private
 
 # node version switcher
 fnm env --use-on-cd | source # https://github.com/Schniz/fnm#fish-shell setup
@@ -97,3 +93,7 @@ else
 end
 
 fish_add_path ~/bin
+
+source ~/src/config/fish/alias.fish
+source ~/src/config/fish/functions.fish
+source ~/src/config/fish/private.fish

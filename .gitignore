@@ -4,7 +4,7 @@ node_modules
 .env
 .env*.local
 
-bin/private
+# other
 run
 workspaces
 fish/private.fish
