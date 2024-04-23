@@ -755,6 +755,7 @@
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
+                 [:o [:km "open: Zoom"]]
                  ;[:i [:km "open: WhatsApp"]]
                  ;[:o [:km "open: FaceTime"]]
                  ;[:d [:km "New Spark email"]]

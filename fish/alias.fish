@@ -7,8 +7,10 @@ alias ds="cd ~/try"
 alias dm="cd ~/temp"
 alias dv="cd ~/try/private"
 alias dt="cd ~/data"
-alias dw="cd ~/data/wiki"
+alias dwi="cd ~/data/wiki"
 alias d.="cd ~/.scripts"
+alias db="cd ~/bin"
+alias dw="cd ~/Downloads"
 
 # rust
 # alias rbnowarning="RUSTFLAGS="-A warnings" cargo build"
