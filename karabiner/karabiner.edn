@@ -245,7 +245,8 @@
                  ;[:spacebar [:km "Explain selected text"]]]} ; TODO: seems not needed, as there is e+spacebar
         {:des "wkey (apps)"
          :rules [:w-mode
-                 [:t [:km "open: Pitch"]]
+                 ;[:t [:km "open: Pitch"]]
+                 [:t [:km "open: Color Picker"]]
                  ;[:t [:km "open: 2Do"]]
                  [:e [:km "open: Fantastical"]] ; to be moved to LA Todo
                  [:a [:km "open: Notion"]]
