@@ -389,3 +389,17 @@ function gitRemoteAddOriginWhileRemovingOldOne
     git remote add origin $new_origin_url
     echo "Remote 'origin' set to $new_origin_url"
 end
+
+function fileToClipboard
+    osascript \
+        -e 'on run args' \
+        -e 'set the clipboard to POSIX file (first item of args)' \
+        -e end \
+        $argv
+end
+
+# TODO: fix https://github.com/chand1012/git2gpt/issues/7
+function turnCurrentFolderIntoZipForGpt
+    git ls-files | zip ~/do/repo.zip -@; and fileToClipboard ~/do/repo.zip
+    # rm -rf ~/do/repo.zip
+end

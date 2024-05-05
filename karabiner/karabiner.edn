@@ -259,7 +259,8 @@
                  ;[:i [:km "open: Learn Anything"]]
                  ;[:u [:km "open: Bruno"]]
                  ;[:i [:km "open: Hoppscotch"]]
-                 [:i [:km "open: Yaak"]]
+                 ;[:i [:km "open: Yaak"]]
+                 [:i [:km "open: Zed"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  ;[:p [:km "open wip.md with Cursor Nightly"]]
                  [:escape [:km "open: Finder"]]
@@ -1072,9 +1073,10 @@
                  ;[:escape :!CTOSi] ; Screen Studio (record entire display)
                  [:tab [:km "Start Screen Studio (record entire display)"]]
                  [:escape [:km "New tweet with clipboard (image or text)"]]
-                 [:a :!CS8] ; Screenshot -> Pixave
-                 [:s :!CTOSg] ; Screen Studio recording
-                 ;[:s :!CTOSg] ; Loom recording
+                 ;[:a :!CS8] ; Screenshot -> Pixave
+                 ;[:s :!CTOSg] ; Screen Studio recording
+                 [:a :!CTOSg] ; Loom recording
+                 [:s :!CTOSh] ; Loom recording cancel
                  ;[:f :!CTOS7] ; Screen Studio area recording
                  [:f :!CS9] ; CleanShot screen recording
                  ;[:a :!CTOSi] ; OBS stream scene on
