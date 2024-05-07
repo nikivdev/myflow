@@ -323,13 +323,14 @@ function .
     end
 end
 
-function :r
-    if not set -q argv[1]
-        # TODO: list all packages installed with bunx with fzf (top result is most recently ran bunx <package>)
-    else
-        bunx $argv
-    end
-end
+# TODO:
+# function :r
+#     if not set -q argv[1]
+#         # TODO: list all packages installed with bunx with fzf (top result is most recently ran bunx <package>)
+#     else
+#         bunx $argv
+#     end
+# end
 
 
 function deleteGitLocalAndRemoteBranch
@@ -402,4 +403,9 @@ end
 function turnCurrentFolderIntoZipForGpt
     git ls-files | zip ~/do/repo.zip -@; and fileToClipboard ~/do/repo.zip
     # rm -rf ~/do/repo.zip
+end
+
+# run rust with watch, log output/errors to log file
+function :r
+    env CARGO_TERM_COLOR=always cargo watch -q -- sh -c "tput reset && cargo run -q" 2>&1 | tee ~/log/cmd.log
 end
