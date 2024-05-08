@@ -61,6 +61,8 @@
                  ;[:2 [:km "Cursor: src.workspace"]]
                  ;[:3 [:km "Cursor: learn-anything.workspace"]];[:3 :!T3]
                  ;[:4 [:km "Cursor: clones.workspace"]]
+                 [:tab [:km "Smart Autocomplete & new line"]]
+                 [:escape [:km "Smart Autocomplete"]]
                  [:q :!Sq]
                  [:w :!Sw]
                  [:e :!Se]
@@ -112,7 +114,6 @@
                  [:##k :up_arrow]
                  [:##l :right_arrow]
                  [:t :!Sreturn_or_enter]
-                 [:semicolon [:km "Autocomplete"]]
                  ;[:semicolon [:km "Autocomplete"]] ; TODO:
                  ;[:semicolon [:km "New active todo"]] ; TODO: make LLM try to give hints on making this task, start processing it
                  ;[:semicolon [:km "Selected text -> Alfred Snippet"]]
@@ -670,10 +671,10 @@
                  ;[:semicolon [:km "Show active todo"]]
                  ;[:quote [:km "Goku Run"]]
                  ;[:quote [:km "edit: Fish functions and alias"]]
-                 [:semicolon [:km "New Things task (Today + At Bottom)"]]
+                 [:j :!TSspacebar] ; Things Quick Entry (with context)
+                 [:semicolon :!TOCspacebar] ; Things Quick Entry (without context)
                  ;[:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  ;[:semicolon [:km "Show active todo (clear todo and go to 2Do if activated again within 3 seconds)"]]
-                 [:j :!TSspacebar] ; Things Quick Entry
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]
                  [:m :!Sreturn_or_enter]
@@ -814,7 +815,7 @@
                  ;[:l [:km "run: Python"]]
                  [:i [:km "edit: Python"]]
                  [:o [:km "edit: Go"]]
-                 [:j [:km "edit: TS"]]
+                 [:j [:km "try: ts"]]
                  [:k [:km "edit: Rust"]]
                  [:l [:km "edit: Solid"]]
                  ;[:k [:km "edit: TS todo"]]

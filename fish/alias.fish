@@ -16,7 +16,7 @@ alias dw="cd ~/Downloads"
 # alias rbnowarning="RUSTFLAGS="-A warnings" cargo build"
 
 # run code fast
-alias :ts="fish -c 'cd ~/src/ts; bun dev'"
+alias :ts="fish -c 'cd ~/src/ts; bun run try'"
 
 # other
 alias :id="bun i -d" # dev dep install
