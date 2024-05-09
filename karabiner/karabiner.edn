@@ -251,7 +251,7 @@
                  ;[:t [:km "open: 2Do"]]
                  [:e [:km "open: Fantastical"]] ; to be moved to LA Todo
                  [:a [:km "open: Notion"]]
-                 [:v [:km "open: Obsidian"]] ; LA (everything but todos/calendar)
+                 ;[:v [:km "open: Obsidian"]] ; LA (everything but todos/calendar)
                  ;[:a [:km "open: Obsidian (first tab focus)"]]
                  ;[:r [:km "open: Spacedrive"]]
                  ;[:t [:km "open: Activity Monitor"]]
@@ -260,7 +260,8 @@
                  ;[:i [:km "open: Learn Anything"]]
                  ;[:u [:km "open: Bruno"]]
                  ;[:i [:km "open: Hoppscotch"]]
-                 ;[:i [:km "open: Yaak"]]
+                 [:v [:km "open: Yaak"]]
+                 [:d [:km "open: Pathfinder"]]
                  ;[:period [:km "open: Zed"]]
                  [:i [:km "open: RustRover"]]
                  [:o [:km "open: Keyboard Maestro"]]
@@ -270,7 +271,7 @@
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  ;[:r [:km "open: Things"]]
                  [:r [:km "open: 1Password"]]
-                 [:g [:km "open: Keynote"]]
+                 ;[:g [:km "open: Keynote"]]
                  ;[:t [:km "open: Notes"]]
                  ;[:d [:km "open: Music"]]
                  ;[:d [:km "open: Day One"]]
@@ -294,12 +295,11 @@
                  ;[:quote [:km "Open src.code-workspace and learn-anything.code-workspace"]]
                  ;[:quote [:km "Open learn-anything.code-workspace"]]
                  [:c [:km "open: Spotify"]]
-                 ;[:n [:km "open: Obsidian"]]
                  ;[:v [:km "open: TablePlus"]]
                  ;[:v [:km "open: RapidAPI"]]
                  [:b [:km "open: BetterTouchTool"]]
                  ;[:n [:km "open: Learn Anything (prefer dev)"]]
-                 [:n [:km "open: Pathfinder"]]
+                 [:n [:km "open: Xcode"]]
                  [:m [:km "open: Sublime Merge"]]
                  ;[:i [:km "open: Hoppscotch"]]
                  [:comma [:km "open: Proxyman"]]
@@ -755,12 +755,14 @@
                  ;[:e [:km "w: Baselime LA logs"]]
                  ;[:f [:km "w: Cloudflare LA deployments"]]
                  ;[:g [:km "w: Grafbase LA logs"]]
+                 [:g [:km "New KM global macro"]]
                  ;[:v [:km "w: Pitch"]]
                  [:spacebar :!COSn]]} ; Selection -> GitHub
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
-                 [:o [:km "open: Zoom"]]
+                 [:m [:km "open: Multi"]]
+                 ;[:o [:km "open: Zoom"]]
                  ;[:i [:km "open: WhatsApp"]]
                  ;[:o [:km "open: FaceTime"]]
                  ;[:d [:km "New Spark email"]]
@@ -778,7 +780,6 @@
                  ;[:v [:km "open: Mimestream"]]
                  ;[:n [:km "open: Signal"]]
                  [:n [:km "open: Element"]]
-                 [:m [:km "open: Multi"]]
                  ;[:b [:km "w: Twitter"]]
                  ;[:n [:km "w: Typefully"]]
                  ;[:n [:km "w: Twitter Compose"]]
