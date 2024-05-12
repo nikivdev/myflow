@@ -358,23 +358,21 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 ;[:spacebar [:km "Explain selected text (or open ChatGPT Explain)"]]]}
                  ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
-                 [:spacebar [:km "Explain selected text (or open Claude Explain)"]]]}
+                 ;[:spacebar [:km "Explain selected text (or open Claude Explain)"]]]}
+                 [:spacebar [:km "Explain selected text (or open ChatGPT Explain)"]]]}
         {:des "rkey (apps)"
          :rules [:r-mode
                  [:tab [:km "open: Transmission"]]
-                 [:q [:km "open: IINA"]]
-                 [:w [:km "open: 1Password"]]
-                 [:escape [:km "open: IINA"]]
+                 [:w [:km "open: IINA"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:j [:km "open: Preview"]]
-                 [:l [:km "open: Dictionary"]]
                  [:b [:km "Edit keyboard shortcuts"]]
-                 [:comma [:km "open: Arq"]]
                  [:period [:km "open: Preview"]]
                  [:k [:km "open: Reader"]]
+                 [:l [:km "open: Dictionary"]]
                  ;[:l [:km "Open Reader with Nightly TS- workspace split 50/50"]]
+                 ;[:comma [:km "open: Arq"]]
                  ;[:semicolon [:km "open: Day One"]]
                  ;[:semicolon [:km "open: Crouton"]]
                  ;[:l [:km "open: Books"]]
