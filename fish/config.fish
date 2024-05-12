@@ -97,3 +97,6 @@ fish_add_path ~/bin
 source ~/src/config/fish/alias.fish
 source ~/src/config/fish/functions.fish
 source ~/src/config/fish/private.fish
+
+# Created by `pipx` on 2024-05-12 15:06:10
+set PATH $PATH /Users/nikiv/.local/bin

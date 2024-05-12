@@ -373,7 +373,7 @@
                  [:b [:km "Edit keyboard shortcuts"]]
                  [:comma [:km "open: Arq"]]
                  [:period [:km "open: Preview"]]
-                 ;[:k [:km "open: Reader"]]
+                 [:k [:km "open: Reader"]]
                  ;[:l [:km "Open Reader with Nightly TS- workspace split 50/50"]]
                  ;[:semicolon [:km "open: Day One"]]
                  ;[:semicolon [:km "open: Crouton"]]
