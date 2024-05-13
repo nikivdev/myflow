@@ -452,9 +452,11 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
-                 [:tab [:km "open: Google Cloud"]]
-                 [:escape [:km "open: Yandex Cloud"]]
-                 [:grave_accent_and_tilde [:km "open: AWS"]]
+                 [:tab [:km "open: AWS"]]
+                 [:t [:km "open: Stripe"]]
+                 [:escape [:km "open: OpenAI API"]]
+                 [:grave_accent_and_tilde [:km "open: Google Cloud"]]
+                 [:z [:km "open: Yandex Cloud"]]
                  [:q [:km "open: Ronin"]]
                  [:d [:km "open: EdgeDB Cloud"]]
                  [:e [:km "open: Cloudflare"]]
@@ -621,7 +623,8 @@
                  [:q [:km "open: Pixave"]]
                  [:s :!TOSe] ; Start Superwhisper transcription
                  [:w [:km "open: Figma"]]
-                 [:grave_accent_and_tilde [:km "Test"]]
+                 [:grave_accent_and_tilde [:km "open: v0"]]
+                 ;[:grave_accent_and_tilde [:km "Test"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
                  [:p :!CTOc] ; Sleep
@@ -677,7 +680,6 @@
                  ;[:semicolon [:km "Show active todo (clear todo and go to 2Do if activated again within 3 seconds)"]]
                  ;[:comma [:km "edit: Fish Functions"]]
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
-                 ;[:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
                  ;[:escape :!CTOu] ; Sip color picker
                  ;[:tab [:km "Go to test macro"]]
                  ;[:q [:km "open: Photos"]]
@@ -688,7 +690,8 @@
                  ;[:q [:km "open: Midjourney"]]
                  ;[:spacebar [:km "open: Eagle"]]]}
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
-                 [:spacebar [:km "Move selected text to Claude or select area screenshot to Claude"]]]}
+                 ;[:spacebar [:km "Move selected text to Claude or select area screenshot to Claude"]]]}
+                 [:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
@@ -764,8 +767,9 @@
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
                  [:m [:km "open: Multi"]]
-                 [:v [:km "New Spark email"]]
+                 [:v [:km "open: Loops"]]
                  [:f [:km "open: Spark"]]
+                 [:c [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
                  [:j [:km "open: Discord"]]
@@ -953,8 +957,12 @@
                  ;[:v [:alfred "search pinboard" "nikivi.search.the.web"]] ; TODO: topics/search/more?
                  ;[:spacebar [:alfred "search history" "net.deanishe.alfred.safari"]]]}
                  [:spacebar [:km "New 2Do task"]]]}
-        {:des "mkey (dash)"
+        {:des "mkey (docs)"
          :rules [:m-mode
+                 [:w [:km "open: AWS Docs"]]
+                 [:e [:km "open: EdgeDB Docs"]]
+                 [:c [:km "open: Encore Docs"]]
+                 [:f [:km "open: Cloudflare Docs"]]
                  ;[:3 [:alfred "search alfred" "nikivi.utilities" "d3 "]]
                  ;[:q [:alfred "search alfred" "nikivi.utilities" "tldr "]]
                  ;[:w [:alfred "search alfred" "nikivi.utilities" "django "]]
