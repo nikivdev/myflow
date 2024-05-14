@@ -256,12 +256,12 @@
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor Nightly"]]
                  [:semicolon [:km "open: Cursor"]]
-                 [:period [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:n [:km "open: Xcode"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
+                 [:period [:km "open: PyCharm"]]
                  [:slash [:km "open: Instruments"]]
                  ;[:i [:km "open: Hoppscotch"]]
                  ;[:period [:km "open: Bruno"]]
@@ -454,10 +454,9 @@
                  [:6 :!C6]
                  [:tab [:km "open: AWS"]]
                  [:t [:km "open: Stripe"]]
-                 [:escape [:km "open: OpenAI API"]]
-                 [:grave_accent_and_tilde [:km "open: Google Cloud"]]
+                 [:escape [:km "open: OpenAI Platform"]]
                  [:z [:km "open: Yandex Cloud"]]
-                 [:q [:km "open: Ronin"]]
+                 [:grave_accent_and_tilde [:km "open: Ronin"]]
                  [:d [:km "open: EdgeDB Cloud"]]
                  [:e [:km "open: Cloudflare"]]
                  [:r [:km "open: Vercel"]]
@@ -475,6 +474,7 @@
                  [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:n :!CTOS9] ; search npm packages
                  [:z :!TCspacebar] ; macOS Emoji Picker
+                 ;[:grave_accent_and_tilde [:km "open: Google Cloud"]]
                  ;[:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  ;[:escape [:km "1Password Search"]]
                  ;[:j [:km "open: Claude"]]
@@ -956,11 +956,13 @@
                  ;[:d [:alfred "search packages" "com.sindresorhus.npms"]]
                  ;[:v [:alfred "search pinboard" "nikivi.search.the.web"]] ; TODO: topics/search/more?
                  ;[:spacebar [:alfred "search history" "net.deanishe.alfred.safari"]]]}
-                 [:spacebar [:km "New 2Do task"]]]}
+                 ;[:spacebar [:km "New 2Do task"]]]}
+                 [:spacebar [:alfred "search websites" "nikivi.web.searches"]]]} ; TODO: change
         {:des "mkey (docs)"
          :rules [:m-mode
                  [:w [:km "open: AWS Docs"]]
                  [:e [:km "open: EdgeDB Docs"]]
+                 [:r [:km "open: React Docs"]] ; RN, nextjs add
                  [:c [:km "open: Encore Docs"]]
                  [:f [:km "open: Cloudflare Docs"]]
                  ;[:3 [:alfred "search alfred" "nikivi.utilities" "d3 "]]
@@ -1013,16 +1015,16 @@
                   [:grave_accent_and_tilde [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sclose_bracket :left_arrow]] ; -> style={}
                   [:z [:c :o :n :s :o :l :e :period :e :r :r :o :r :!S9 :!S0 :left_arrow]] ; -> console.error()
                   [:x [:p :r :o :c :e :s :s :period :e :n :v :period]] ; -> process.env.
-                  [:c [:spacebar :c :l :a :s :s :equal_sign :!Squote :!Squote :left_arrow]] ; -> class=""
+                  [:c [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
                   [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
+                  ;[:c [:spacebar :c :l :a :s :s :equal_sign :!Squote :!Squote :left_arrow]] ; -> class=""
                   ;[:tab [:km "w: MDN"]]
                   ;[:a [:km "console.log()"]]
                   ;[:a [:c :o :n :s :o :l :e :period :w :a :r :n :!S9 :!S0 :left_arrow]] ; -> console.warn()
                   ;[:f [:!Cf :c :o :n :s :o :l :e :period :w :a :r :n :!S9 :return_or_enter]] ; -> search console.warn( in file
                   ;[:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
                   ;[:c [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
-                  ;[:c [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
                   [:spacebar [:a :w :a :i :t :spacebar]]]} ; -> await
         {:des "godot"
          :rules [:go-mode
