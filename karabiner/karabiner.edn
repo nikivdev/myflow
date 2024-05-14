@@ -452,11 +452,11 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
-                 [:tab [:km "open: AWS"]]
+                 [:tab [:km "open: Google Cloud"]]
                  [:t [:km "open: Stripe"]]
-                 [:escape [:km "open: OpenAI Platform"]]
+                 [:escape [:km "open: Ronin"]]
+                 [:i [:km "open: OpenAI Platform"]]
                  [:z [:km "open: Yandex Cloud"]]
-                 [:grave_accent_and_tilde [:km "open: Ronin"]]
                  [:d [:km "open: EdgeDB Cloud"]]
                  [:e [:km "open: Cloudflare"]]
                  [:r [:km "open: Vercel"]]
@@ -474,7 +474,7 @@
                  [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:n :!CTOS9] ; search npm packages
                  [:z :!TCspacebar] ; macOS Emoji Picker
-                 ;[:grave_accent_and_tilde [:km "open: Google Cloud"]]
+                 ;[:tab [:km "open: AWS"]]
                  ;[:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  ;[:escape [:km "1Password Search"]]
                  ;[:j [:km "open: Claude"]]
@@ -960,9 +960,9 @@
                  [:spacebar [:alfred "search websites" "nikivi.web.searches"]]]} ; TODO: change
         {:des "mkey (docs)"
          :rules [:m-mode
-                 [:w [:km "open: AWS Docs"]]
-                 [:e [:km "open: EdgeDB Docs"]]
-                 [:r [:km "open: React Docs"]] ; RN, nextjs add
+                 [:w [:km "web: AWS Docs and search"]]
+                 [:e [:km "web: EdgeDB Docs and search"]]
+                 [:r [:km "web: React Docs and search"]] ; RN, nextjs add
                  [:c [:km "open: Encore Docs"]]
                  [:f [:km "open: Cloudflare Docs"]]
                  ;[:3 [:alfred "search alfred" "nikivi.utilities" "d3 "]]
