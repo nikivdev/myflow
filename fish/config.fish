@@ -100,3 +100,6 @@ source ~/src/config/fish/private.fish
 
 # Created by `pipx` on 2024-05-12 15:06:10
 set PATH $PATH /Users/nikiv/.local/bin
+
+# The next line updates PATH for the Google Cloud SDK.
+# if [ -f '/Users/nikiv/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/nikiv/Downloads/google-cloud-sdk/path.fish.inc'; end

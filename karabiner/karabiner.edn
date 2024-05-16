@@ -252,7 +252,8 @@
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:r [:km "open: 1Password"]]
-                 [:j [:km "open: Warp"]]
+                 ;[:j [:km "open: Warp"]]
+                 [:j [:km "open: Terminal"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor Nightly"]]
                  [:semicolon [:km "open: Cursor"]]
@@ -461,16 +462,17 @@
                  [:e [:km "open: Cloudflare"]]
                  [:r [:km "open: Vercel"]]
                  [:a :!TOSw] ; Notion Command Search
+                 [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:d [:alfred "search files" "nikivi.manage.notes"]] ; TODO: (make it open in obsidian)
                  [:s [:alfred "search folders" "nikivi.search.folders"]]
                  [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:f [:km "open: Perplexity"]]
-                 [:g [:km "open: Grafbase"]]
+                 [:g [:km "open: Grok"]]
+                 ;[:g [:km "open: Grafbase"]]
                  [:semicolon [:km "open: ChatGPT 2"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
-                 [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:n :!CTOS9] ; search npm packages
                  [:z :!TCspacebar] ; macOS Emoji Picker
@@ -963,7 +965,7 @@
                  [:w [:km "web: AWS Docs and search"]]
                  [:e [:km "web: EdgeDB Docs and search"]]
                  [:r [:km "web: React Docs and search"]] ; RN, nextjs add
-                 [:c [:km "open: Encore Docs"]]
+                 [:c [:km "web: Encore Docs and search"]]
                  [:f [:km "open: Cloudflare Docs"]]
                  ;[:3 [:alfred "search alfred" "nikivi.utilities" "d3 "]]
                  ;[:q [:alfred "search alfred" "nikivi.utilities" "tldr "]]
