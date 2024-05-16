@@ -252,8 +252,7 @@
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:r [:km "open: 1Password"]]
-                 ;[:j [:km "open: Warp"]]
-                 [:j [:km "open: Terminal"]]
+                 [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor Nightly"]]
                  [:semicolon [:km "open: Cursor"]]
@@ -620,13 +619,11 @@
          :rules [:f-mode
                  [:1 [:km "View Sip"]]
                  [:3 [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
-                 [:tab [:km "open: Dingboard"]]
                  [:escape [:km "open: Midjourney"]]
                  [:q [:km "open: Pixave"]]
-                 [:s :!TOSe] ; Start Superwhisper transcription
                  [:w [:km "open: Figma"]]
+                 [:s :!TOSe] ; Start Superwhisper transcription
                  [:grave_accent_and_tilde [:km "open: v0"]]
-                 ;[:grave_accent_and_tilde [:km "Test"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
                  [:p :!CTOc] ; Sleep
@@ -634,7 +631,6 @@
                  [:a [:km "open: Chrome Canary"]]
                  [:grave_accent_and_tilde [:km "Test"]]
                  [:n [:km "New Linear task"]]
-                 [:s [:km "open: Learn Anything (dev)"]] ; TODO: focus on tauri windows in general, dev more tauri apps. or better focus on simulator if it's open or tauri window if that is open
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:i :!Treturn_or_enter]
                  [:o :!Oreturn_or_enter]
@@ -649,9 +645,11 @@
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
+                 ;[:tab [:km "open: Dingboard"]]
+                 ;[:grave_accent_and_tilde [:km "Test"]]
+                 ;[:s [:km "open: Learn Anything (dev)"]] ; TODO: focus on tauri windows in general, dev more tauri apps. or better focus on simulator if it's open or tauri window if that is open
                  ;[:s :!TOS8] ; Move focus to status menus (show menu bar) (system settings > keyboard > keyboard)
                  ;[:s :!TOSe] ; Start Superwhisper transcription
-                 ;[:s [:km "open: Simulator"]]
                  ;[:s [:km "open: Spline"]]
                  ;[:s [:km "open: Simulator"]]
                  ;[:s [:km "open: Learn Anything (dev)"]] ; TODO: make it work on any tauri dev app (KusKus + future tauri dev apps)
@@ -693,7 +691,8 @@
                  ;[:spacebar [:km "open: Eagle"]]]}
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
                  ;[:spacebar [:km "Move selected text to Claude or select area screenshot to Claude"]]]}
-                 [:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
+                 ;[:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
+                 [:spacebar [:km "open: Simulator"]]]}
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
