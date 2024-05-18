@@ -358,9 +358,11 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
-                 ;[:spacebar [:km "Explain selected text (or open Claude Explain)"]]]}
-                 [:spacebar [:km "Explain selected text (or open ChatGPT Explain)"]]]}
+                ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
+                ;[:spacebar [:km "Explain selected text (or open Claude Explain)"]]]}
+                ;[:spacebar [:km "Explain selected text (or open ChatGPT Explain)"]]]}
+                ;[:spacebar [:km "Explain selected text (or explain selected image)"]]]}
+                [:spacebar [:km "Explain selected text with ChatGPT"]]]}
         {:des "rkey (apps)"
          :rules [:r-mode
                  [:tab [:km "open: Transmission"]]
@@ -473,6 +475,7 @@
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
+                 [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:n :!CTOS9] ; search npm packages
                  [:z :!TCspacebar] ; macOS Emoji Picker
                  ;[:tab [:km "open: AWS"]]
