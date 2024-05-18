@@ -71,6 +71,8 @@ It will also install CLI tools & apps.
 
 <!-- TODO: Syncalicious looks neat, try use and test it works -->
 
+<!-- TODO: mention [~/bin](https://github.com/nikitavoloboev/bin) -->
+
 ## macOS Apps
 
 <!-- TODO: link `CLIs` to wiki where it shows all the CLIs I have installed with descriptions or to file here that I parse with CLI of my own (fuzzy search command + what command/CLI does) (fish functions / CLIs / builtins / ..) (JSON?) -->
