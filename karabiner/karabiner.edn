@@ -391,7 +391,8 @@
                  ;[:o [:km "open: Developer"]]
                  ;[:i [:km "open: NetNewsWire"]]
                  ;[:escape [:km "open: Preview"]]
-                 [:spacebar [:km "Copied image into ChatGPT"]]]}
+                 ;[:spacebar [:km "Copied image into ChatGPT"]]]}
+                 [:spacebar [:km "Screenshot into ChatGPT and explain"]]]}
         {:des "tkey (palettes + websites)"
          :rules [:t-mode
                  ;[:0 [:km "w: regex101"]]
@@ -744,7 +745,8 @@
                   ;[:k [:km "paste: Thank you."]]
                   ;[:period [:km "paste: that worked 🖤"]]
                   ;[:n [:km "paste: Nikita"]]
-                  [:spacebar [:km "Selected text into Google Lucky search"]]]}
+                  ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
+                  [:spacebar [:km "Screenshot into ChatGPT and explain"]]]}
         {:des "tilkey (code switches + websites)"
          :rules [:tilde-mode
                  [:v :left_shift]
@@ -1075,8 +1077,9 @@
                  [:t [:km "w: Twitter (personal)"]]
                  [:tab [:km "Start Screen Studio (record entire display)"]]
                  [:escape [:km "New tweet with clipboard (image or text)"]]
-                 [:a :!CTOSg] ; Loom recording
-                 [:s :!CTOSh] ; Loom recording cancel
+                 [:a [:km "Screenshot into ChatGPT and explain"]]
+                 [:s :!CTOSg] ; Loom recording
+                 [:d :!CTOSh] ; Loom recording cancel
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
