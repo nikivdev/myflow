@@ -966,11 +966,16 @@
                  [:spacebar [:alfred "search websites" "nikivi.web.searches"]]]} ; TODO: change
         {:des "mkey (docs)"
          :rules [:m-mode
-                 [:w [:km "web: AWS Docs and search"]]
+                 [:q [:km "web: AWS Docs and search"]]
+                 [:w [:km "web: Expo Docs and search"]]
                  [:e [:km "web: EdgeDB Docs and search"]]
-                 [:r [:km "web: React Docs and search"]] ; RN, nextjs add
-                 [:c [:km "web: Encore Docs and search"]]
-                 [:f [:km "open: Cloudflare Docs"]]
+                 [:r [:km "web: RN Docs and search"]]
+                 [:a [:km "web: React Docs and search"]]
+                 [:s [:km "web: Legend State Docs and search"]]
+                 [:d [:km "web: Encore Docs and search"]]
+                 [:f [:km "web: Next Docs and search"]]
+                 [:c [:km "web: Cloudflare Docs and search"]]
+                 [:v [:km "web: Orama Docs and search"]]
                  ;[:3 [:alfred "search alfred" "nikivi.utilities" "d3 "]]
                  ;[:q [:alfred "search alfred" "nikivi.utilities" "tldr "]]
                  ;[:w [:alfred "search alfred" "nikivi.utilities" "django "]]
