@@ -455,6 +455,7 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
+                 [:q [:km "open: Expo"]]
                  [:tab [:km "open: Google Cloud"]]
                  [:t [:km "open: Stripe"]]
                  [:escape [:km "open: Ronin"]]
