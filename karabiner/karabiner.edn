@@ -641,9 +641,10 @@
                  [:o :!Oreturn_or_enter]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
-                 [:j :!TSspacebar] ; Things Quick Entry (with context)
-                 [:semicolon [:km "Things task (next in today)"]]
-                 [:quote :!TOCspacebar] ; Things Quick Entry (without context)
+                 [:j :!CSspacebar]
+                 [:semicolon :!TSspacebar] ; Things Quick Entry (with context)
+                 [:quote [:km "Things task (next in today)"]]
+                 [:open_bracket :!TOCspacebar] ; Things Quick Entry (without context)
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]
                  [:m :!Sreturn_or_enter]
