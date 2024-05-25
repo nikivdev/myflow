@@ -463,14 +463,14 @@
                  [:z [:km "open: Yandex Cloud"]]
                  [:d [:km "open: EdgeDB Cloud"]]
                  [:e [:km "open: Cloudflare"]]
-                 [:escape [:km "open: Vercel"]]
                  [:grave_accent_and_tilde [:km "open: Ronin"]]
                  [:a :!TOSw] ; Notion Command Search
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:d [:alfred "search files" "nikivi.manage.notes"]] ; TODO: (make it open in obsidian)
                  [:s [:alfred "search folders" "nikivi.search.folders"]]
                  [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 [:f [:km "open: Perplexity"]]
+                 ;[:f [:km "open: Perplexity"]]
+                 [:f [:km "open: Vercel"]]
                  [:g [:km "open: Grok"]]
                  [:semicolon [:km "open: ChatGPT 2"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
@@ -1029,6 +1029,7 @@
                   [:z [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
                   [:x [:p :r :o :c :e :s :s :period :e :n :v :period]] ; -> process.env.
                   [:c [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
+                  [:tab [:a :s :y :n :c :spacebar]] ; -> async
                   [:escape [:a :w :a :i :t :spacebar]] ; -> await
                   [:grave_accent_and_tilde [:period :s :e :t :!S9 :!S0 :left_arrow]] ; -> .set()
                   [:left_command [:period :g :e :t :!S9 :!S0]] ; -> .get()
