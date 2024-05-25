@@ -313,6 +313,14 @@ function goGetLatestPackage
     go get -u $argv@latest
 end
 
+function ios
+    yarn ios
+end
+
+function iosCleanBuild
+    expo prebuild --clean --ios
+end
+
 function .
     if not set -q argv[1]
         open .

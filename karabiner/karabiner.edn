@@ -263,6 +263,7 @@
                  [:comma [:km "open: Proxyman"]]
                  [:period [:km "open: PyCharm"]]
                  [:slash [:km "open: Instruments"]]
+                 ;[:d [:km "open: System Settings"]]
                  ;[:i [:km "open: Hoppscotch"]]
                  ;[:period [:km "open: Bruno"]]
                  ;[:period [:km "open: Zed"]]
@@ -289,7 +290,6 @@
                  ;[:d [:km "open: Music"]]
                  ;[:d [:km "open: Day One"]]
                  ;[:d [:km "open: SnippetsLab"]]
-                 ;[:d [:km "open: System Settings"]]
                  ;[:g [:km "Journal"]] ; TODO: complete to use LA
                  ;[:h [:km "open: Notes"]]
                  ;[:f [:km "open: Learn Anything"]]
@@ -374,6 +374,7 @@
                  [:k [:km "open: Reader"]]
                  [:l [:km "open: Dictionary"]]
                  [:i [:km "open: Feedback Assistant"]]
+                 [:n [:km "open: System Settings: Network"]]
                  ;[:l [:km "Open Reader with Nightly TS- workspace split 50/50"]]
                  ;[:comma [:km "open: Arq"]]
                  ;[:semicolon [:km "open: Day One"]]
@@ -455,15 +456,15 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
+                 [:tab [:km "open: AWS"]]
                  [:q [:km "open: Expo"]]
-                 [:tab [:km "open: Google Cloud"]]
                  [:t [:km "open: Stripe"]]
-                 [:escape [:km "open: Ronin"]]
                  [:i [:km "open: OpenAI Platform"]]
                  [:z [:km "open: Yandex Cloud"]]
                  [:d [:km "open: EdgeDB Cloud"]]
                  [:e [:km "open: Cloudflare"]]
-                 [:r [:km "open: Vercel"]]
+                 [:escape [:km "open: Vercel"]]
+                 [:grave_accent_and_tilde [:km "open: Ronin"]]
                  [:a :!TOSw] ; Notion Command Search
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:d [:alfred "search files" "nikivi.manage.notes"]] ; TODO: (make it open in obsidian)
@@ -471,7 +472,6 @@
                  [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:f [:km "open: Perplexity"]]
                  [:g [:km "open: Grok"]]
-                 ;[:g [:km "open: Grafbase"]]
                  [:semicolon [:km "open: ChatGPT 2"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
@@ -480,7 +480,8 @@
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:n :!CTOS9] ; search npm packages
                  [:z :!TCspacebar] ; macOS Emoji Picker
-                 ;[:tab [:km "open: AWS"]]
+                 ;[:tab [:km "open: Google Cloud"]]
+                 ;[:g [:km "open: Grafbase"]]
                  ;[:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  ;[:escape [:km "1Password Search"]]
                  ;[:j [:km "open: Claude"]]
@@ -1010,14 +1011,14 @@
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:r [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE:
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
-                  [:grave_accent_and_tilde [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
                   [:y [:p :l :e :a :s :e :spacebar]] ; -> please
                   [:u [:u :p :d :a :t :e :spacebar]]]} ; -> update
+                  ;[:grave_accent_and_tilde [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
                   ;[:spacebar [:km "paste: Thanks ♥️"]]]} ; -> Thanks ♥️ (TODO: change to something code related and useful)
          {:des "tsdot"
           :rules [:ts-mode
-                  [:tab [:a :s :y :n :c :spacebar :f :u :n :c :t :i :o :n :spacebar]] ; -> async function
-                  [:escape [:f :u :n :c :t :i :o :n :spacebar]] ; -> function
+                  ;[:tab [:f :u :n :c :t :i :o :n :spacebar]] ; -> function
+                  ;[:tab [:a :s :y :n :c :spacebar :f :u :n :c :t :i :o :n :spacebar]] ; -> async function
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
@@ -1025,20 +1026,23 @@
                   [:g [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
                   [:j [:right_arrow :spacebar :equal_sign :spacebar]] ; -> =
                   [:k [:right_arrow :spacebar :!Sopen_bracket :return_or_enter]] ; -> {  }
-                  [:grave_accent_and_tilde [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sclose_bracket :left_arrow]] ; -> style={}
-                  [:z [:c :o :n :s :o :l :e :period :e :r :r :o :r :!S9 :!S0 :left_arrow]] ; -> console.error()
+                  [:z [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
                   [:x [:p :r :o :c :e :s :s :period :e :n :v :period]] ; -> process.env.
                   [:c [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
-                  [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
-                  [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
+                  [:escape [:a :w :a :i :t :spacebar]] ; -> await
+                  [:grave_accent_and_tilde [:period :s :e :t :!S9 :!S0 :left_arrow]] ; -> .set()
+                  [:left_command [:period :g :e :t :!S9 :!S0]] ; -> .get()
+                  [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
+                  ;[:n [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
                   ;[:c [:spacebar :c :l :a :s :s :equal_sign :!Squote :!Squote :left_arrow]] ; -> class=""
+                  ;[:z [:c :o :n :s :o :l :e :period :e :r :r :o :r :!S9 :!S0 :left_arrow]] ; -> console.error()
                   ;[:tab [:km "w: MDN"]]
                   ;[:a [:km "console.log()"]]
                   ;[:a [:c :o :n :s :o :l :e :period :w :a :r :n :!S9 :!S0 :left_arrow]] ; -> console.warn()
                   ;[:f [:!Cf :c :o :n :s :o :l :e :period :w :a :r :n :!S9 :return_or_enter]] ; -> search console.warn( in file
                   ;[:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
                   ;[:c [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
-                  [:spacebar [:a :w :a :i :t :spacebar]]]} ; -> await
+                  [:spacebar [:l :o :c :a :l :period]]]} ; -> local.
         {:des "godot"
          :rules [:go-mode
                 [:tab [:km "w: GoDoc"]]
