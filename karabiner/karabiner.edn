@@ -247,7 +247,8 @@
                  [:a [:km "open: Notion"]]
                  [:v [:km "open: Yaak"]]
                  [:d [:km "open: Pathfinder"]]
-                 [:i [:km "open: RustRover"]]
+                 ;[:i [:km "open: RustRover"]]
+                 [:i [:km "open: GoLand"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
@@ -458,19 +459,18 @@
                  [:6 :!C6]
                  [:tab [:km "open: AWS"]]
                  [:q [:km "open: Expo"]]
+                 [:w [:km "open: Vercel"]]
                  [:t [:km "open: Stripe"]]
                  [:i [:km "open: OpenAI Platform"]]
                  [:z [:km "open: Yandex Cloud"]]
                  [:d [:km "open: EdgeDB Cloud"]]
                  [:e [:km "open: Cloudflare"]]
-                 [:grave_accent_and_tilde [:km "open: Ronin"]]
+                 [:escape [:km "open: Ronin"]]
+                 [:f [:km "open: Perplexity"]]
                  [:a :!TOSw] ; Notion Command Search
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:d [:alfred "search files" "nikivi.manage.notes"]] ; TODO: (make it open in obsidian)
-                 [:s [:alfred "search folders" "nikivi.search.folders"]]
-                 [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 ;[:f [:km "open: Perplexity"]]
-                 [:f [:km "open: Vercel"]]
+                 [:s [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:g [:km "open: Grok"]]
                  [:semicolon [:km "open: ChatGPT 2"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
@@ -480,6 +480,7 @@
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:n :!CTOS9] ; search npm packages
                  [:z :!TCspacebar] ; macOS Emoji Picker
+                 ;[:s [:alfred "search folders" "nikivi.search.folders"]]
                  ;[:tab [:km "open: Google Cloud"]]
                  ;[:g [:km "open: Grafbase"]]
                  ;[:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
