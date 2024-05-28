@@ -259,11 +259,11 @@
                  [:semicolon [:km "open: Cursor"]]
                  [:c [:km "open: Spotify"]]
                  [:b [:km "open: BetterTouchTool"]]
-                 [:n [:km "open: Xcode"]]
+                 [:n [:km "open: PyCharm"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
-                 [:period [:km "open: PyCharm"]]
                  [:slash [:km "open: Instruments"]]
+                 [:period [:km "open: Xcode"]]
                  ;[:d [:km "open: System Settings"]]
                  ;[:i [:km "open: Hoppscotch"]]
                  ;[:period [:km "open: Bruno"]]
@@ -784,11 +784,12 @@
                  [:h [:km "Create new contact"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
-                 [:l [:km "open: X Pro"]]
+                 [:o [:km "open: X Pro"]]
+                 [:l [:km "open: X Messages"]]
                  [:semicolon [:km "open: Slack"]]
                  [:c [:km "open: Contacts"]]
                  [:n [:km "open: Element"]]
-                 [:period [:km "w: Twitter Search"]]
+                 ;[:period [:km "w: Twitter Search"]]
                  ;[:b [:km "w: Twitter"]]
                  ;[:n [:km "w: Typefully"]]
                  ;[:n [:km "w: Twitter Compose"]]
@@ -1097,16 +1098,16 @@
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
                  [:i [:open "raycast://extensions/loris/safari/search-history"]]
-                 [:o [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
+                 [:o [:km "open: Safari Technology Preview"]]
                  [:j :!CTO0] ; Search Alfred Snippets
-                 [:k :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing?
+                 [:k :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:l [:km "open: Dash (with search)"]]
                  [:b [:km "w: Reddit submit"]]
                  [:n [:km "New tweet"]] ; TODO: can be generic `LA Post` function later maybe or have another bind for `LA Post`
                  [:m [:km "Search Cursor windows"]]
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
-                 [:period [:km "open: Safari Technology Preview"]]
                  [:b [:km "w: Lobsters submit"]]
+                 [:period [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  ;[:escape [:km "New tweet with clipboard (image or text)"]]
                  ;[:l [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  ;[:n [:km "New tweet with @"]]

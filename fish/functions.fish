@@ -421,3 +421,7 @@ end
 function prettierAll
     npx prettier --write "**/*.{js,json,css,tsx,ts}"
 end
+
+function deleteAllGitFoldersRecursivelyExceptRootOne
+    find . -type d -name ".git" -not -path "./.git" -exec rm -rf {} +
+end
