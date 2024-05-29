@@ -953,7 +953,6 @@
                  [:g [:alfred "search repos" "me.lachlan.githubjump"]]
                  [:q [:alfred "search github" "nikivi.search.the.web"]]
                  [:r [:alfred "search reddit" "nikivi.search.the.web"]]
-                 [:t [:alfred "ssh" "net.deanishe.alfred-ssh"]]
                  [:d [:alfred "search stack overflow" "net.deanishe.alfred-stackoverflow"]]
                  [:h [:alfred "search hn" "nikivi.search.the.web"]]
                  [:grave_accent_and_tilde [:alfred "search learn anything" "nikivi.learn.anything"]]
@@ -961,7 +960,8 @@
                  [:c [:alfred "search wiki" "nikivi.mind"]]
                  [:v [:alfred "search links" "nikivi.mind"]]
                  [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
-                 [:r [:alfred "search subs" "net.deanishe.alfred-reddit"]]
+                 ;[:t [:alfred "search subs" "net.deanishe.alfred-reddit"]]
+                 ;[:t [:alfred "ssh" "net.deanishe.alfred-ssh"]]
                  ;[:r [:km "Search Reddit"]]
                  ;[:w [:alfred "search twitter" "nikivi.search.the.web"]]
                  ;[:g [:alfred "search godoc" "nikivi.search.the.web"]]
@@ -1089,7 +1089,7 @@
                  [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots)
                  [:r :!CS4] ; Save picture of selected area as a file (~/Desktop) (system settings > keyboard > screenshots)
-                 [:t [:km "w: Twitter (personal)"]]
+                 [:t [:km "w: X (personal)"]]
                  [:tab [:km "Start Screen Studio (record entire display)"]]
                  [:escape [:km "Entire Screen into ChatGPT and explain"]]
                  [:a [:km "Screenshot into ChatGPT and explain"]]
