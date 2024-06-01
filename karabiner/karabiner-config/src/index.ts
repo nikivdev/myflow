@@ -13,7 +13,7 @@ writeToProfile(
     "basic.to_if_alone_timeout_milliseconds": 80,
     "basic.to_if_held_down_threshold_milliseconds": 50,
     "basic.to_delayed_action_delay_milliseconds": 0,
-    "simlayer.threshold_milliseconds": 30,
+    "simlayer.threshold_milliseconds": 250,
   }
 )
 
