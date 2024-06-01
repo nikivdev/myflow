@@ -1,9 +1,25 @@
-import { simlayer, to$, writeToProfile } from "karabiner.ts"
-const $ = to$
+import { FromKeyParam, map, simlayer, to$ as $, ToKeyParam, withMapper, writeToProfile } from "karabiner.ts"
 
 writeToProfile(
   "--dry-run", // prints to console
   [
+    simlayer("semicolon").description('colonkey (shift)').manipulators([
+      {
+        tab: km('Smart Autocomplete & new line'),
+        escape: km('Smart Autocomplete & new line'),
+      },
+      withMapper([1, 2, 3, 4, 5])((k) => map(k).to(k, '⌃')),
+      withMapper([
+        'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',
+        'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', '~',
+        'z', 'x', 'c', 'v', 'b', 'n', 'm'
+      ] as Array<FromKeyParam & ToKeyParam>)((k) => map(k).to(k, '⇧')),
+    ]),
+
+    simlayer("s").description('skey (essential)').manipulators([
+      map('w').to('←', '⌥').to('→', '⌥⇧') // Highlight word
+    ]),
+
     simlayer("w").manipulators({
       e: km("open: Fantastical"),
     }),
@@ -12,7 +28,7 @@ writeToProfile(
     "basic.to_if_alone_timeout_milliseconds": 80,
     "basic.to_if_held_down_threshold_milliseconds": 50,
     "basic.to_delayed_action_delay_milliseconds": 0,
-    "simlayer.threshold_milliseconds": 30,
+    "simlayer.threshold_milliseconds": 250,
   }
 )
 
@@ -24,7 +40,7 @@ function alfred(identifier: string, bundleId: string, argument: string = "") {
 
 function km(macroName: string) {
   return $(
-    `osascript -e 'tell application "Keyboard Maestro Engine" to do script "${macroName}"`
+    `osascript -e 'tell application "Keyboard Maestro Engine" to do script "${macroName}"'`
   )
 }
 
