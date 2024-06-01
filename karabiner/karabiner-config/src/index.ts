@@ -2,7 +2,8 @@ import { simlayer, to$, writeToProfile } from "karabiner.ts"
 const $ = to$
 
 writeToProfile(
-  "--dry-run", // prints to console
+  // "--dry-run", // prints to console
+  "karabiner.ts", // adds it to karabiner.ts profile
   [
     simlayer("w").manipulators({
       e: km("open: Fantastical"),
@@ -24,7 +25,7 @@ function alfred(identifier: string, bundleId: string, argument: string = "") {
 
 function km(macroName: string) {
   return $(
-    `osascript -e 'tell application "Keyboard Maestro Engine" to do script "${macroName}"`
+    `osascript -e 'tell application "Keyboard Maestro Engine" to do script "${macroName}"'`
   )
 }
 
