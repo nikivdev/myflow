@@ -1,4 +1,17 @@
-import { FromKeyParam, map, rule, simlayer, to$ as $, toKey, ToKeyParam, withMapper, withModifier, writeToProfile } from "karabiner.ts"
+import {
+  FromAndToKeyCode,
+  ifVar,
+  map,
+  rule,
+  simlayer,
+  to$ as $,
+  toKey,
+  toTypeSequence,
+  withCondition,
+  withMapper,
+  withModifier,
+  writeToProfile
+} from "karabiner.ts"
 
 writeToProfile(
   // "--dry-run", // prints to console
@@ -12,9 +25,9 @@ writeToProfile(
       withMapper([1, 2, 3, 4, 5])((k) => map(k).to(k, '⌃')),
       withMapper([
         'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',
-        'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', '~',
+        'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'grave_accent_and_tilde',
         'z', 'x', 'c', 'v', 'b', 'n', 'm'
-      ] as Array<FromKeyParam & ToKeyParam>)((k) => map(k).to(k, '⇧')),
+      ] as FromAndToKeyCode[])((k) => map(k).to(k, '⇧')),
     ]),
 
     simlayer("s").description('skey (essential)').manipulators([
@@ -52,6 +65,17 @@ writeToProfile(
     simlayer("w").manipulators({
       e: km("open: Fantastical"),
     }),
+
+    simlayer('tab').description('tabkey (things)').manipulators([
+      map('j').toVar('in-lang', 'ts')
+        .to(openInBackground('"dash-plugin://query=.tsprofile%3A&prevent_activation=true"'))
+    ]),
+    simlayer('period').manipulators([
+      withCondition(ifVar('in-lang', 'ts'))({
+        a: toTypeSequence('console.log()←'),
+        s: toTypeSequence('=>␣'),
+      }),
+    ]),
   ],
   {
     "basic.to_if_alone_timeout_milliseconds": 80,
