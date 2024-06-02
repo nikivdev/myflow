@@ -15,15 +15,26 @@ import {
 const leftSideNums = [1, 2, 3, 4, 5] as const
 const rightSideNums = [6, 7, 8, 9, 0] as const
 const numbers = [...leftSideNums, ...rightSideNums] as const
-// prettier-ignore
 const letters = [
-  'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',
-  'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l',
-  'z', 'x', 'c', 'v', 'b', 'n', 'm'
+  ...["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
+  ...["a", "s", "d", "f", "g", "h", "j", "k", "l"],
+  ...["z", "x", "c", "v", "b", "n", "m"],
 ] as const
 const symbols = ["[", "]", ";", "'", ",", ".", "/"] as const
 const lettersAndSymbols = [...letters, ...symbols] as const
 const allKeys = [...numbers, ...letters, ...symbols] as const
+
+const dash = {
+  python: open('"dash://.python:"'),
+  ts: openInBackground(
+    '"dash-plugin://query=.tsprofile%3A&prevent_activation=true"'
+  ),
+  rust: openInBackground(
+    '"dash-plugin://query=.tsprofile%3A&prevent_activation=true"'
+  ),
+  swift: open('"dash-plugin://query=.swiftprofile%3A&prevent_activation=true"'),
+  go: open('"dash-plugin://query=.goprofile%3A&prevent_activation=true"'),
+}
 
 writeToProfile(
   // "--dry-run", // prints to console
@@ -98,19 +109,29 @@ writeToProfile(
 
     // tabkey (things)
     simlayer("tab").manipulators([
-      map("j")
-        .toVar("in-lang", "ts")
-        .to(
-          openInBackground(
-            '"dash-plugin://query=.tsprofile%3A&prevent_activation=true"'
-          )
-        ),
+      map("i").toVar("in-lang", "python").to(dash.python),
+      map("j").toVar("in-lang", "ts").to(dash.ts),
+      map("k").toVar("in-lang", "rust").to(dash.rust),
+      map(";").toVar("in-lang", "go").to(dash.go),
     ]),
 
     simlayer("period").manipulators([
       withCondition(ifVar("in-lang", "ts"))({
         a: toTypeSequence("console.log()←"),
         s: toTypeSequence("=>␣"),
+      }),
+      withCondition(ifVar("in-lang", "go"))({
+        tab: km("w: GoDoc"),
+        a: toTypeSequence("fmt.Println()←"),
+      }),
+      withCondition(ifVar("in-lang", "python"))({
+        a: toTypeSequence("print()←"),
+      }),
+      withCondition(ifVar("in-lang", "swift"))({
+        a: toTypeSequence("print()←"),
+      }),
+      withCondition(ifVar("in-lang", "rust"))({
+        a: toTypeSequence("log!()←"),
       }),
     ]),
   ],
