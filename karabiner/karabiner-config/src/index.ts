@@ -1,5 +1,4 @@
 import {
-  FromAndToKeyCode,
   ifVar,
   map,
   rule,
@@ -10,70 +9,108 @@ import {
   withCondition,
   withMapper,
   withModifier,
-  writeToProfile
+  writeToProfile,
 } from "karabiner.ts"
+
+const leftSideNums = [1, 2, 3, 4, 5] as const
+const rightSideNums = [6, 7, 8, 9, 0] as const
+const numbers = [...leftSideNums, ...rightSideNums] as const
+// prettier-ignore
+const letters = [
+  'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',
+  'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l',
+  'z', 'x', 'c', 'v', 'b', 'n', 'm'
+] as const
+const symbols = ["[", "]", ";", "'", ",", ".", "/"] as const
+const lettersAndSymbols = [...letters, ...symbols] as const
+const allKeys = [...numbers, ...letters, ...symbols] as const
 
 writeToProfile(
   // "--dry-run", // prints to console
   "karabiner.ts", // adds it to karabiner.ts profile
   [
-    simlayer("semicolon").description('colonkey (shift)').manipulators([
+    // colonkey (shift)
+    simlayer("semicolon").manipulators([
       {
-        tab: km('Smart Autocomplete & new line'),
-        escape: km('Smart Autocomplete & new line'),
+        tab: km("Smart Autocomplete & new line"),
+        escape: km("Smart Autocomplete & new line"),
       },
-      withMapper([1, 2, 3, 4, 5])((k) => map(k).to(k, '⌃')),
-      withMapper([
-        'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',
-        'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'grave_accent_and_tilde',
-        'z', 'x', 'c', 'v', 'b', 'n', 'm'
-      ] as FromAndToKeyCode[])((k) => map(k).to(k, '⇧')),
+      withMapper(leftSideNums)((k) => map(k).to(k, "⌃")),
+      withMapper([...letters, "`"])((k) => map(k).to(k, "⇧")),
     ]),
 
-    simlayer("s").description('skey (essential)').manipulators([
-      map('w').to('←', '⌥').to('→', '⌥⇧'), // Highlight word
-      map('quote').to('←', '⌘').to('→', '⌘⇧'), // Highlight current line
+    // qkey (cmd + shift)
+    simlayer("q").manipulators([
+      withMapper([3, 4, ...rightSideNums, ...lettersAndSymbols])((k) =>
+        map(k).to(k, "⌘⇧")
+      ),
+      map("␣").to("e", "⌘⌥⇧"), // Selection -> YouTube
+    ]),
+
+    // ekey (cmd)
+    simlayer("e").manipulators([
+      withMapper(allKeys)((k) => map(k).to(k, "⌘")),
+      { "␣": km("Explain selected text with ChatGPT") },
+    ]),
+
+    // akey (ctrl)
+    simlayer("a").manipulators([
+      withMapper(allKeys)((k) => map(k).to(k, "⌃")),
+      map("␣").to(9, "⌘⌃"), // Selection -> Google
+    ]),
+
+    // skey (essential)
+    simlayer("s").manipulators([
+      map("w").to("←", "⌥").to("→", "⌥⇧"), // Highlight word
+      map("quote").to("←", "⌘").to("→", "⌘⇧"), // Highlight current line
 
       // Or map('e').to('⇥'),
       {
-        e: toKey('tab'),
-        r: toKey('tab', '⇧'),
+        e: toKey("tab"),
+        r: toKey("tab", "⇧"),
 
-        a: toKey('c', '⌘'), // Copy
-        n: toKey('v', '⌘'), // Paste
-        o: toKey('x', '⌘'), // Cut
+        a: toKey("c", "⌘"), // Copy
+        n: toKey("v", "⌘"), // Paste
+        o: toKey("x", "⌘"), // Cut
       },
 
       // Or map('h', '??').to('←'),
-      withModifier('optionalAny')({
-        h: toKey('←'),
-        j: toKey('↓'),
-        k: toKey('↑'),
-        l: toKey('→'),
+      withModifier("optionalAny")({
+        h: toKey("←"),
+        j: toKey("↓"),
+        k: toKey("↑"),
+        l: toKey("→"),
 
-        b: toKey('←', '⌘'),
-        m: toKey('→', '⌘'),
+        b: toKey("←", "⌘"),
+        m: toKey("→", "⌘"),
       }),
     ]),
 
-    rule('swap : and ;').manipulators([
+    rule("swap : and ;").manipulators([
       // Or map(';', '?⇪').to(';', '⇧'),
-      map('semicolon', {optional: 'caps_lock'}).to('semicolon', 'shift'),
-      map('semicolon', 'shift').to('semicolon')
+      map("semicolon", { optional: "caps_lock" }).to("semicolon", "shift"),
+      map("semicolon", "shift").to("semicolon"),
     ]),
 
     simlayer("w").manipulators({
       e: km("open: Fantastical"),
     }),
 
-    simlayer('tab').description('tabkey (things)').manipulators([
-      map('j').toVar('in-lang', 'ts')
-        .to(openInBackground('"dash-plugin://query=.tsprofile%3A&prevent_activation=true"'))
+    // tabkey (things)
+    simlayer("tab").manipulators([
+      map("j")
+        .toVar("in-lang", "ts")
+        .to(
+          openInBackground(
+            '"dash-plugin://query=.tsprofile%3A&prevent_activation=true"'
+          )
+        ),
     ]),
-    simlayer('period').manipulators([
-      withCondition(ifVar('in-lang', 'ts'))({
-        a: toTypeSequence('console.log()←'),
-        s: toTypeSequence('=>␣'),
+
+    simlayer("period").manipulators([
+      withCondition(ifVar("in-lang", "ts"))({
+        a: toTypeSequence("console.log()←"),
+        s: toTypeSequence("=>␣"),
       }),
     ]),
   ],
@@ -81,7 +118,7 @@ writeToProfile(
     "basic.to_if_alone_timeout_milliseconds": 80,
     "basic.to_if_held_down_threshold_milliseconds": 50,
     "basic.to_delayed_action_delay_milliseconds": 0,
-    'basic.simultaneous_threshold_milliseconds': 30,
+    "basic.simultaneous_threshold_milliseconds": 30,
     "simlayer.threshold_milliseconds": 250,
   }
 )
