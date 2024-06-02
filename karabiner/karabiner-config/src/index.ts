@@ -1,6 +1,7 @@
 import {
   ifVar,
   map,
+  mapSimultaneous,
   rule,
   simlayer,
   to$ as $,
@@ -26,12 +27,8 @@ const allKeys = [...numbers, ...letters, ...symbols] as const
 
 const dash = {
   python: open('"dash://.python:"'),
-  ts: openInBackground(
-    '"dash-plugin://query=.tsprofile%3A&prevent_activation=true"'
-  ),
-  rust: openInBackground(
-    '"dash-plugin://query=.tsprofile%3A&prevent_activation=true"'
-  ),
+  ts: openInBackground('"dash-plugin://query=.tsprofile%3A&prevent_activation=true"'),
+  rust: openInBackground('"dash-plugin://query=.tsprofile%3A&prevent_activation=true"'),
   swift: open('"dash-plugin://query=.swiftprofile%3A&prevent_activation=true"'),
   go: open('"dash-plugin://query=.goprofile%3A&prevent_activation=true"'),
 }
@@ -103,9 +100,31 @@ writeToProfile(
       map("semicolon", "shift").to("semicolon"),
     ]),
 
+    rule("jsim").manipulators([
+      mapSimultaneous(["j", "k"]).to(alfred("search google", "net.deanishe.alfred-searchio")),
+      mapSimultaneous(["j", ";"]).to(9, "⌘⌥⇧"), // Raycast
+      mapSimultaneous(["j", "l"]).to("␣", "Hyper"), // Raycast
+    ]),
+
+    rule("ksim").manipulators([
+      mapSimultaneous(["k", "l"]).to(alfred("search dash", "com.kapeli.dash.workflow")),
+    ]),
+
     simlayer("w").manipulators({
       e: km("open: Fantastical"),
     }),
+
+    // dkey (mouse)
+    simlayer("d").manipulators([
+      map("i").to("keypad_hyphen", "⌘"), // Zoom out
+      map("o").to("keypad_plus", "⌘"), // Zoom in
+      map("a").to("c", "⌘").to("tab", "⌘"), // Copy & activate previous app
+      map("j").toMouseKey({ vertical_wheel: 60 }), // Scroll down
+      map("k").toMouseKey({ vertical_wheel: -60 }), // Scroll down
+      map("z").toPointingButton("button2"), // Right click
+      map("v").toPointingButton("button1"), // Left click
+      map("b").toPointingButton("button3"), // Middle click
+    ]),
 
     // tabkey (things)
     simlayer("tab").manipulators([
@@ -144,7 +163,7 @@ writeToProfile(
   }
 )
 
-function alfred(identifier: string, bundleId: string, argument: string = "") {
+function alfred(identifier: string, bundleId: string, argument = "") {
   return $(
     `osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "${identifier}" in workflow "${bundleId}" with argument "${argument}"'`
   )
