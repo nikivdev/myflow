@@ -1,0 +1,12 @@
+{
+  "name": "karabiner",
+  "scripts": {
+    "dev": "bun --watch karabiner.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.3",
+    "@types/node": "^20.1.3",
+    "karabiner.ts": "latest",
+    "typescript": "^5.0.4"
+  }
+}
