@@ -13,6 +13,9 @@ import {
   writeToProfile,
 } from "karabiner.ts"
 
+// _definitions
+const args = Bun.argv
+const dryRun = args[2] === "--dry-run"
 const leftSideNums = [1, 2, 3, 4, 5] as const
 const rightSideNums = [6, 7, 8, 9, 0] as const
 const numbers = [...leftSideNums, ...rightSideNums] as const
@@ -24,7 +27,6 @@ const letters = [
 const symbols = ["[", "]", ";", "'", ",", ".", "/"] as const
 const lettersAndSymbols = [...letters, ...symbols] as const
 const allKeys = [...numbers, ...letters, ...symbols] as const
-
 const dash = {
   python: open('"dash://.python:"'),
   ts: openInBackground(
@@ -37,9 +39,9 @@ const dash = {
   go: open('"dash-plugin://query=.goprofile%3A&prevent_activation=true"'),
 }
 
+// _config
 writeToProfile(
-  // "--dry-run",
-  "karabiner.ts",
+  dryRun ? "--dry-run" : "karabiner.ts",
   [
     // colonkey (shift)
     simlayer("semicolon").manipulators([
@@ -47,7 +49,7 @@ writeToProfile(
         tab: km("Smart Autocomplete & new line"),
         escape: km("Smart Autocomplete & new line"),
       },
-      withMapper(leftSideNums)((k) => map(k).to(k, "⌃")),
+      withMapper(leftSideNums)((k) => map(k).to(k, ["control", "shift"])),
       withMapper([...letters, "`"])((k) => map(k).to(k, "⇧")),
     ]),
 
@@ -163,35 +165,32 @@ writeToProfile(
     ]),
   ],
   {
-    "basic.to_if_alone_timeout_milliseconds": 80,
-    "basic.to_if_held_down_threshold_milliseconds": 50,
-    "basic.to_delayed_action_delay_milliseconds": 0,
-    "basic.simultaneous_threshold_milliseconds": 30,
-    "simlayer.threshold_milliseconds": 250,
+    "basic.to_if_alone_timeout_milliseconds": 80, // hold for .. ms to register single tap
+    "basic.to_delayed_action_delay_milliseconds": 0, // time after which the key press is delayed
+    "basic.simultaneous_threshold_milliseconds": 30, // keys need to be pressed within this threshold to be considered simultaneous
+    "basic.to_if_held_down_threshold_milliseconds": 50, // TODO:
+    "simlayer.threshold_milliseconds": 250, // TODO:
   }
 )
 
+// _functions
 function alfred(identifier: string, bundleId: string, argument = "") {
   return $(
     `osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "${identifier}" in workflow "${bundleId}" with argument "${argument}"'`
   )
 }
-
 function km(macroName: string) {
   return $(
     `osascript -e 'tell application "Keyboard Maestro Engine" to do script "${macroName}"'`
   )
 }
-
 // TODO: https://github.com/evan-liu/karabiner-config/blob/main/src/apps/raycast.ts (better types)
 function raycast(extension: string) {
   return $(`open "raycast://extensions/raycast/${extension}"`)
 }
-
 function open(arg: string) {
   return $(`open ${arg}`)
 }
-
 function openInBackground(arg: string) {
   return $(`open -g ${arg}`)
 }

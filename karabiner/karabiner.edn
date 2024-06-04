@@ -435,8 +435,12 @@
                  [:t :quote]
                  [:o :open_bracket] ; [
                  [:p :close_bracket] ; ]
+                 [:left_command [:km "paste: ⌘"]]
+                 [:left_option [:km "paste: ⌥"]]
+                 [:left_control [:km "paste: ⌃"]]
+                 [:left_shift [:km "paste: ⇧"]]
                  [:open_bracket :!Sclose_bracket] ; }
-                 [:caps_lock [:km "Match symbols"]]
+                 ;[:caps_lock [:km "Match symbols"]] ; TODO: check if works well
                  [:a :slash]
                  [:s :!Shyphen]
                  [:d :backslash]
