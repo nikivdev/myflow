@@ -425,3 +425,7 @@ end
 function deleteAllGitFoldersRecursivelyExceptRootOne
     find . -type d -name ".git" -not -path "./.git" -exec rm -rf {} +
 end
+
+function :u
+    bun update --latest
+end

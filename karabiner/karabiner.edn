@@ -143,8 +143,9 @@
                  ]}
         {:des "ksim"
          :rules [
-                 [[:k :l] [:alfred "search dash" "com.kapeli.dash.workflow"]]
+                 [[:k :l] :!TOSw] ; Notion Command Search TODO: replace with LA global search (with same Notion like raycast window)
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
+                 ;[[:k :l] [:alfred "search dash" "com.kapeli.dash.workflow"]]
                  ]}
         {:des "2key (move + alfred)"
          :rules [:2-mode
@@ -247,13 +248,13 @@
                  [:a [:km "open: Notion"]]
                  [:v [:km "open: Yaak"]]
                  [:g [:km "open: Pathfinder"]]
-                 ;[:i [:km "open: RustRover"]]
-                 [:i [:km "open: GoLand"]] ; TODO: move to IntelliJ
+                 [:i [:km "open: PyCharm"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:r [:km "open: 1Password"]]
-                 [:d [:km "open: Anytype"]]
+                 ;[:d [:km "open: Anytype"]]
+                 [:d [:km "open: Val Town"]]
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor Nightly"]]
@@ -264,7 +265,8 @@
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
                  [:slash [:km "open: Instruments"]]
-                 [:period [:km "open: PyCharm"]]
+                 [:period [:km "open: GoLand"]] ; TODO: move to IntelliJ
+                 ;[:period [:km "open: RustRover"]]
                  ;[:d [:km "open: System Settings"]]
                  ;[:i [:km "open: Hoppscotch"]]
                  ;[:period [:km "open: Bruno"]]
@@ -370,7 +372,7 @@
                  [:tab [:km "open: Transmission"]]
                  [:w [:km "open: IINA"]]
                  [:a [:km "open: Alfred Preferences"]]
-                 [:j [:km "open: Preview"]]
+                 ;[:j [:km "open: Preview"]]
                  [:b [:km "Edit keyboard shortcuts"]]
                  [:period [:km "open: Preview"]]
                  [:k [:km "open: Reader"]]
@@ -468,7 +470,7 @@
                  [:e [:km "open: Cloudflare"]]
                  [:escape [:km "open: Ronin"]]
                  [:f [:km "open: Perplexity"]]
-                 [:a :!TOSw] ; Notion Command Search
+                 [:a [:km "open: Preview"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:d [:alfred "search files" "nikivi.manage.notes"]] ; TODO: (make it open in obsidian)
                  [:s [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
@@ -949,9 +951,9 @@
                  [:5 :!O5]
                  [:6 :!O6]
                  [:e [:km "Search X"]]
-                 [:s [:alfred "search websites" "nikivi.web.searches"]]
+                 [:f [:alfred "search repos" "me.lachlan.githubjump"]]
                  [:a [:alfred "search shares" "nikivi.ask.create.share"]]
-                 [:g [:alfred "search repos" "me.lachlan.githubjump"]]
+                 [:s [:alfred "search websites" "nikivi.web.searches"]]
                  [:q [:alfred "search github" "nikivi.search.the.web"]]
                  [:r [:alfred "search reddit" "nikivi.search.the.web"]]
                  [:d [:alfred "search stack overflow" "net.deanishe.alfred-stackoverflow"]]
