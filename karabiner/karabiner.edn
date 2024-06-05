@@ -439,6 +439,7 @@
                  [:left_option [:km "paste: ⌥"]]
                  [:left_control [:km "paste: ⌃"]]
                  [:left_shift [:km "paste: ⇧"]]
+                 [:fn [:km "paste: ⇧"]]
                  [:open_bracket :!Sclose_bracket] ; }
                  ;[:caps_lock [:km "Match symbols"]] ; TODO: check if works well
                  [:a :slash]

@@ -16,9 +16,9 @@ import {
 // _definitions
 const args = Bun.argv
 const dryRun = args[2] === "--dry-run"
-const leftSideNums = [1, 2, 3, 4, 5] as const
-const rightSideNums = [6, 7, 8, 9, 0] as const
-const numbers = [...leftSideNums, ...rightSideNums] as const
+const oneToFive = [1, 2, 3, 4, 5] as const
+const sixToZero = [6, 7, 8, 9, 0] as const
+const oneToZero = [...oneToFive, ...sixToZero] as const
 const letters = [
   ...["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
   ...["a", "s", "d", "f", "g", "h", "j", "k", "l"],
@@ -26,7 +26,7 @@ const letters = [
 ] as const
 const symbols = ["[", "]", ";", "'", ",", ".", "/"] as const
 const lettersAndSymbols = [...letters, ...symbols] as const
-const allKeys = [...numbers, ...letters, ...symbols] as const
+const allKeys = [...oneToZero, ...letters, ...symbols] as const
 const dash = {
   python: open('"dash://.python:"'),
   ts: openInBackground(
@@ -45,17 +45,18 @@ writeToProfile(
   [
     // colonkey (shift)
     simlayer("semicolon").manipulators([
+      withMapper(oneToFive)((k) => map(k).to(k, ["control", "shift"])),
       {
         tab: km("Smart Autocomplete & new line"),
-        escape: km("Smart Autocomplete & new line"),
+        escape: km("Smart Autocomplete"),
+        "`": toKey("`", "⇧"),
       },
-      withMapper(leftSideNums)((k) => map(k).to(k, ["control", "shift"])),
       withMapper([...letters, "`"])((k) => map(k).to(k, "⇧")),
     ]),
 
     // qkey (cmd + shift)
     simlayer("q").manipulators([
-      withMapper([3, 4, ...rightSideNums, ...lettersAndSymbols])((k) =>
+      withMapper([3, 4, ...sixToZero, ...lettersAndSymbols])((k) =>
         map(k).to(k, "⌘⇧")
       ),
       map("␣").to("e", "⌘⌥⇧"), // Selection -> YouTube
