@@ -13,7 +13,13 @@ function af
 end
 
 function o
-    ollama run llama3:8b-instruct-q5_K_M "$argv"
+    # ollama run llama3:8b-text-fp16 "$argv"
+    ls | ask "$argv"
+end
+
+function oo
+    ollama run llama3:8b-text-fp16 "$argv"
+    # ask "$argv"
 end
 
 # TODO: breaks down, move to https://github.com/sobelio/llm-chain or update the code
@@ -428,4 +434,8 @@ end
 
 function :u
     bun update --latest
+end
+
+function :b
+    bun web
 end

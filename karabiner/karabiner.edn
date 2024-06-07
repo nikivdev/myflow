@@ -716,7 +716,7 @@
                  [:a [:km "Go to KM group of current app"]]
                  [:s [:km "Dismiss notifications"]]
                  [:h :!CSOa] ; Move window left
-                 [:j [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
+                 [:j [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (maybe, don't use `Test` any more as much)
                  [:k :!COSf] ; Maximize window
                  [:l :!CSOd] ; Move window right
                  [:semicolon :!COSs] ; Move window between different screen & maximize
