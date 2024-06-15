@@ -40,7 +40,7 @@ alias :j="cd ~/src/ts && bun dev"
 alias :t="cd ~/src/python && bun dev"
 alias getLastCommitHash="git log -1 --format=\"%H\""
 # alias pr="pnpm run"
-alias w.="cursor-nightly .env"
+alias w.="cursor .env"
 # alias pw='pnpm add -w'
 alias gmt='go mod tidy'
 alias findAll.gitInCurrentDir="find . -type d -name .git"

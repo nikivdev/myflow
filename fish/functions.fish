@@ -115,19 +115,27 @@ end
 
 function w
     if not set -q argv[1]
-        cursor-nightly .
-    else
-        cursor-nightly $argv
-    end
-end
-
-function W
-    if not set -q argv[1]
         cursor .
     else
         cursor $argv
     end
 end
+
+# function w
+#     if not set -q argv[1]
+#         cursor .
+#     else
+#         cursor $argv
+#     end
+# end
+
+# function W
+#     if not set -q argv[1]
+#         cursor .
+#     else
+#         cursor $argv
+#     end
+# end
 
 function we
     if not set -q argv[1]
@@ -438,4 +446,12 @@ end
 
 function :b
     bun web
+end
+
+function find.EnvFiles
+    for env_file in (find . -type d -name node_modules -prune -o -type f -name ".env" -print)
+        echo $env_file
+        cat $env_file
+        echo ""
+    end
 end
