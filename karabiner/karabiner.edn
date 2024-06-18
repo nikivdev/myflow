@@ -716,7 +716,8 @@
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:caps_lock [:km "Go to KM group of current app from picklist"]]
                  [:a [:km "Go to KM group of current app"]]
-                 [:s [:km "Dismiss notifications"]]
+                 [:s [:km "New KM global macro"]]
+                 [:d [:km "Dismiss notifications"]]
                  [:h :!CSOa] ; Move window left
                  [:j [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (maybe, don't use `Test` any more as much)
                  [:k :!COSf] ; Maximize window
@@ -761,14 +762,17 @@
                   ;[:n [:km "paste: Nikita"]]
                   ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
                   [:spacebar [:km "Screenshot into ChatGPT and explain"]]]}
-        {:des "tilkey (project switches + KM)"
+        {:des "tilkey (project/code switches)"
          :rules [:tilde-mode
-                 [:period [:km "New KM global macro"]]
                  [:h [:km "cursor: Drophunt"]]
                  [:j [:km "cursor: src workspace"]]
-                 [:k [:km "cursor: KusKus"]]
+                 [:k [:km "cursor: solpay.co"]]
                  [:l [:km "cursor: LA"]]
-                 [:semicolon [:km "cursor: solpay.co"]]
+                 [:semicolon [:km "cursor: clones"]]
+                 [:period [:km "cursor: forks"]]
+                 [:m [:km "cursor: KusKus"]]
+                 [:o [:km "cursor: other"]]
+                 ;[:semicolon [:km "cursor: solpay.co"]]
                  ; TODO: consider adding back
                  ;[:v :left_shift]
                  ;[:##j :!Cdown_arrow]
