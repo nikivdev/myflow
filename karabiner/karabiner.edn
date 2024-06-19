@@ -135,17 +135,14 @@
         ; :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         ;{:des "§ -> Karabiner on/off"
         ; :rules [[:non_us_backslash [:km "Karabiner on/off"]]]}
-        {:des "jsim"
+        {:des "sim"
          :rules [
                  [[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
-                 [[:j :semicolon] :!COS9] ; Raycast
                  [[:j :l] :!CTOSspacebar] ; Alfred
-                 ]}
-        {:des "ksim"
-         :rules [
-                 [[:k :l] :!TOSw] ; Notion Command Search TODO: replace with LA global search (with same Notion like raycast window)
+                 [[:j :semicolon] :!TOSw] ; Notion Command Search TODO: replace with LA global search (with same Notion like raycast window)
+                 [[:l :m] :!TOSt] ; Raycast AI
+                 [[:k :l] :!COS9] ; Raycast
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
-                 ;[[:k :l] [:alfred "search dash" "com.kapeli.dash.workflow"]]
                  ]}
         {:des "2key (move + alfred)"
          :rules [:2-mode
@@ -258,15 +255,16 @@
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
-                 [:semicolon [:km "open: Xcode"]]
+                 [:semicolon [:km "open: Xcode Beta"]]
                  [:n [:km "open: PyCharm"]]
-                 ;[:l [:km "open: Cursor main window"]]
-                 ;[:semicolon [:km "open: Cursor (but not main window)"]]
                  [:c [:km "open: Spotify"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
                  [:slash [:km "open: Instruments"]]
+                 ;[:semicolon [:km "open: Xcode"]]
+                 ;[:l [:km "open: Cursor main window"]]
+                 ;[:semicolon [:km "open: Cursor (but not main window)"]]
                  ;[:period [:km "open: RustRover"]]
                  ;[:d [:km "open: System Settings"]]
                  ;[:i [:km "open: Hoppscotch"]]
@@ -646,7 +644,6 @@
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:a [:km "open: Chrome Canary"]]
-                 [:grave_accent_and_tilde [:km "Test"]]
                  [:n [:km "New Linear task"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:i :!Treturn_or_enter]
@@ -699,7 +696,6 @@
                  ;[:comma [:km "edit: Fish Functions"]]
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
                  ;[:escape :!CTOu] ; Sip color picker
-                 ;[:tab [:km "Go to test macro"]]
                  ;[:q [:km "open: Photos"]]
                  ;[:q [:km "open: Cosmos"]]
                  ;[:s [:km "open: Excalidraw"]]
@@ -762,7 +758,7 @@
                   ;[:n [:km "paste: Nikita"]]
                   ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
                   [:spacebar [:km "Screenshot into ChatGPT and explain"]]]}
-        {:des "tilkey (project/code switches)"
+        {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
                  [:h [:km "cursor: Drophunt"]]
                  [:j [:km "cursor: src workspace"]]
@@ -1111,7 +1107,7 @@
                  [:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots)
                  [:r :!CS4] ; Save picture of selected area as a file (~/Desktop) (system settings > keyboard > screenshots)
                  [:t [:km "w: X (personal)"]]
-                 [:tab [:km "Start Screen Studio (record entire display)"]]
+                 ;[:tab [:km "Start Screen Studio (record entire display)"]]
                  [:escape [:km "Entire Screen into ChatGPT and explain"]]
                  [:a [:km "Screenshot into ChatGPT and explain"]]
                  [:s :!CTOSg] ; Loom recording
@@ -1130,6 +1126,8 @@
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  [:b [:km "w: Lobsters submit"]]
                  [:period [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
+                 ;[:escape [:km "Test"]]
+                 ;[:escape [:km "Go to test macro"]]
                  ;[:escape [:km "New tweet with clipboard (image or text)"]]
                  ;[:l [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  ;[:n [:km "New tweet with @"]]
