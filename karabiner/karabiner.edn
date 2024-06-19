@@ -768,10 +768,11 @@
                  [:j [:km "cursor: src workspace"]]
                  [:k [:km "cursor: solpay.co"]]
                  [:l [:km "cursor: LA"]]
+                 [:u [:km "cursor: KusKus"]]
+                 [:i [:km "cursor: lisa"]]
+                 [:o [:km "cursor: other"]]
                  [:semicolon [:km "cursor: clones"]]
                  [:period [:km "cursor: forks"]]
-                 [:m [:km "cursor: KusKus"]]
-                 [:o [:km "cursor: other"]]
                  ;[:semicolon [:km "cursor: solpay.co"]]
                  ; TODO: consider adding back
                  ;[:v :left_shift]
