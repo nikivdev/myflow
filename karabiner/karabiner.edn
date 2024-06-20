@@ -142,6 +142,7 @@
                  [[:l :m] :!TOSt] ; Raycast AI qiuck chat
                  [[:k :l] :!COS9] ; Raycast
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
+                 [[:k :n] :!TOSu] ; Raycast AI window
                  ;[[:j :semicolon] :!TOSw] ; Notion Command Search TODO: replace with LA global search (with same Notion like raycast window) (inline info!)
                  ]}
         {:des "2key (move + alfred)"
@@ -467,7 +468,6 @@
                  [:a [:km "open: Railway"]]
                  [:w [:km "open: Vercel"]]
                  [:t [:km "open: Stripe"]]
-                 [:z [:km "open: Yandex Cloud"]]
                  [:d [:km "open: Preview"]]
                  [:e [:km "open: Cloudflare"]]
                  [:escape [:km "open: Ronin"]]
@@ -488,13 +488,13 @@
                  [:tab [:km "open: OpenAI Platform"]]
                  [:q [:km "open: Expo"]]
                  [:grave_accent_and_tilde [:km "open: Google Cloud"]]
-                 [:left_command :!TOSu] ; Raycast AI window
+                 [:left_command [:km "open: Claude"]]
+                 ;[:z [:km "open: Yandex Cloud"]]
                  ;[:tab [:km "open: AWS"]]
                  ;[:s [:alfred "search folders" "nikivi.search.folders"]]
                  ;[:g [:km "open: Grafbase"]]
                  ;[:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  ;[:escape [:km "1Password Search"]]
-                 ;[:j [:km "open: Claude"]]
                  ;[:e [:km "open: Cloudflare"]]
                  ;[:e [:km "open: Typefully"]]
                  ;[:e [:km "Make 2Do task"]]
