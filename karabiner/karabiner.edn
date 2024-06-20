@@ -1052,9 +1052,10 @@
                   [:c [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
                   [:tab [:a :s :y :n :c :spacebar]] ; -> async
                   [:escape [:a :w :a :i :t :spacebar]] ; -> await
-                  [:grave_accent_and_tilde [:period :s :e :t :!S9 :!S0 :left_arrow]] ; -> .set()
-                  [:left_command [:period :g :e :t :!S9 :!S0]] ; -> .get()
+                  [:left_command [:spacebar :equal_sign :spacebar]] ; -> =
                   [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
+                  ;[:grave_accent_and_tilde [:period :s :e :t :!S9 :!S0 :left_arrow]] ; -> .set()
+                  ;[:left_command [:period :g :e :t :!S9 :!S0]] ; -> .get()
                   ;[:n [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
                   ;[:c [:spacebar :c :l :a :s :s :equal_sign :!Squote :!Squote :left_arrow]] ; -> class=""
                   ;[:z [:c :o :n :s :o :l :e :period :e :r :r :o :r :!S9 :!S0 :left_arrow]] ; -> console.error()
