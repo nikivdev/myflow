@@ -139,10 +139,11 @@
          :rules [
                  [[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  [[:j :l] :!CTOSspacebar] ; Alfred
-                 [[:j :semicolon] :!TOSw] ; Notion Command Search TODO: replace with LA global search (with same Notion like raycast window)
-                 [[:l :m] :!TOSt] ; Raycast AI
+                 [[:l :m] :!TOSt] ; Raycast AI qiuck chat
                  [[:k :l] :!COS9] ; Raycast
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
+                 ;[[:j :semicolon] :!TOSu] ; Raycast AI window
+                 ;[[:j :semicolon] :!TOSw] ; Notion Command Search TODO: replace with LA global search (with same Notion like raycast window)
                  ]}
         {:des "2key (move + alfred)"
          :rules [:2-mode
@@ -250,7 +251,6 @@
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:r [:km "open: 1Password"]]
-                 ;[:d [:km "open: Anytype"]]
                  [:d [:km "open: Val Town"]]
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
@@ -262,6 +262,7 @@
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
                  [:slash [:km "open: Instruments"]]
+                 ;[:d [:km "open: Anytype"]]
                  ;[:semicolon [:km "open: Xcode"]]
                  ;[:l [:km "open: Cursor main window"]]
                  ;[:semicolon [:km "open: Cursor (but not main window)"]]
@@ -464,32 +465,32 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
-                 [:tab [:km "open: AWS"]]
-                 [:q [:km "open: Expo"]]
                  [:a [:km "open: Railway"]]
                  [:w [:km "open: Vercel"]]
                  [:t [:km "open: Stripe"]]
-                 [:i [:km "open: OpenAI Platform"]]
                  [:z [:km "open: Yandex Cloud"]]
-                 [:d [:km "open: EdgeDB Cloud"]]
+                 [:d [:km "open: Preview"]]
                  [:e [:km "open: Cloudflare"]]
                  [:escape [:km "open: Ronin"]]
-                 ;[:f [:km "open: Perplexity"]] ; TODO: add back
-                 [:f [:km "open: Preview"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:d [:alfred "search files" "nikivi.manage.notes"]] ; TODO: (make it open in obsidian)
                  [:s [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 [:g [:km "open: Grok"]]
+                 [:f [:km "open: Perplexity"]]
                  [:semicolon [:km "open: ChatGPT 2"]]
-                 [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
+                 [:i [:alfred "run" "iansinnott.keyboardmaestro"]]
+                 [:j [:km "Notion global search (in app)"]]
+                 [:g [:km "open: EdgeDB Cloud"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:n :!CTOS9] ; search npm packages
                  [:z :!TCspacebar] ; macOS Emoji Picker
+                 [:tab [:km "open: OpenAI Platform"]]
+                 [:q [:km "open: Expo"]]
+                 [:grave_accent_and_tilde [:km "open: Google Cloud"]]
+                 ;[:tab [:km "open: AWS"]]
                  ;[:s [:alfred "search folders" "nikivi.search.folders"]]
-                 ;[:tab [:km "open: Google Cloud"]]
                  ;[:g [:km "open: Grafbase"]]
                  ;[:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  ;[:escape [:km "1Password Search"]]
