@@ -187,9 +187,9 @@
                  [:3 [:km "Add/remove explore to focus workspace"]]
                  [:f [:km "Get time in SF"]]
                  [:t [:km "Save open tabs in safari"]]
-                 [:i [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
+                 [:i [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
-                 [:k [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
+                 [:k [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  [:l [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
                  [:semicolon [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
                  [:s [:km "Open Dash and search docsets"]]]}
@@ -246,7 +246,7 @@
                  [:a [:km "open: Notion"]]
                  [:v [:km "open: Yaak"]]
                  [:g [:km "open: Pathfinder"]]
-                 [:i [:km "open: GoLand"]] ; TODO: move to IntelliJ
+                 ;[:i [:km "open: GoLand"]] ; TODO: move to IntelliJ
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
@@ -258,10 +258,11 @@
                  [:semicolon [:km "open: Xcode Beta"]]
                  [:c [:km "open: Spotify"]]
                  [:b [:km "open: BetterTouchTool"]]
+                 [:n :!OC9] ; open 2nd mac space with Xcode + Terminal
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
                  [:slash [:km "open: Instruments"]]
-                 [:n [:km "open: PyCharm"]]
+                 ;[:n [:km "open: PyCharm"]]
                  ;[:d [:km "open: Anytype"]]
                  ;[:semicolon [:km "open: Xcode"]]
                  ;[:l [:km "open: Cursor main window"]]
@@ -466,16 +467,18 @@
                  [:5 :!C5]
                  [:6 :!C6]
                  [:a [:km "open: Railway"]]
+                 [:tab [:km "open: Modal"]]
                  [:w [:km "open: Vercel"]]
                  [:t [:km "open: Stripe"]]
-                 [:d [:km "open: Preview"]]
                  [:e [:km "open: Cloudflare"]]
                  [:escape [:km "open: Ronin"]]
+                 [:d [:km "open: Preview"]]
+                 [:q [:km "open: Expo"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:s [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:left_command [:km "open: Perplexity"]]
                  [:i [:alfred "run" "iansinnott.keyboardmaestro"]]
-                 [:f [:km "open: Claude"]]
+                 [:f [:km "open: ChatGPT"]]
                  [:j [:km "Notion global search (in app)"]]
                  [:g [:km "open: EdgeDB Cloud"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
@@ -485,7 +488,6 @@
                  [:n :!CTOS9] ; search npm packages
                  [:z :!TCspacebar] ; macOS Emoji Picker
                  [:tab [:km "open: OpenAI Platform"]]
-                 [:q [:km "open: Expo"]]
                  [:grave_accent_and_tilde [:km "open: Google Cloud"]]
                  ;[:s [:alfred "search files" "nikivi.manage.notes"]] ; TODO: (make it open in obsidian)
                  ;[:semicolon [:km "open: ChatGPT 2"]]
@@ -525,7 +527,7 @@
                  ;[:w [:km "open: Gemini"]]
                  ;[:q [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  ;[:spacebar [:km "open: Ask"]]]}
-                 [:spacebar [:km "open: ChatGPT"]]]}
+                 [:spacebar [:km "open: Claude"]]]}
         ;; TODO: not used, move it to other keys, whatever is useful
         ;{:des ".."
          ;:rules [:caps-mode
@@ -764,7 +766,6 @@
          :rules [:tilde-mode
                  [:u [:km "cursor: kuskus"]]
                  [:i [:km "cursor: lisa"]]
-                 [:u [:km "cursor: rust"]]
                  [:o [:km "cursor: go"]]
                  [:h [:km "cursor: drophunt"]]
                  [:j [:km "cursor: src workspace"]]
@@ -773,6 +774,7 @@
                  [:n [:km "cursor: python"]]
                  [:m [:km "cursor: swift"]]
                  [:semicolon [:km "cursor: clones"]]
+                 ;[:u [:km "cursor: rust"]]
                  ;[:i [:km "cursor: config"]]
                  ;[:k [:km "cursor: nikiv.dev"]]
                  ;[:o [:km "cursor: other"]]
@@ -997,16 +999,17 @@
                  [:spacebar [:alfred "search websites" "nikivi.web.searches"]]]} ; TODO: change
         {:des "mkey (docs)"
          :rules [:m-mode
-                 [:q [:km "web: AWS Docs and search"]]
-                 [:w [:km "web: Expo Docs and search"]]
-                 [:e [:km "web: EdgeDB Docs and search"]]
-                 [:r [:km "web: RN Docs and search"]]
-                 [:a [:km "web: React Docs and search"]]
-                 [:s [:km "web: Legend State Docs and search"]]
-                 [:d [:km "web: Encore Docs and search"]]
-                 [:f [:km "web: Next Docs and search"]]
-                 [:c [:km "web: Cloudflare Docs and search"]]
-                 [:v [:km "web: Orama Docs and search"]]
+                 [:a [:km "open: Swift Documentation"]]
+                 ;[:q [:km "web: AWS Docs and search"]]
+                 ;[:w [:km "web: Expo Docs and search"]]
+                 ;[:e [:km "web: EdgeDB Docs and search"]]
+                 ;[:r [:km "web: RN Docs and search"]]
+                 ;[:a [:km "web: React Docs and search"]]
+                 ;[:s [:km "web: Legend State Docs and search"]]
+                 ;[:d [:km "web: Encore Docs and search"]]
+                 ;[:f [:km "web: Next Docs and search"]]
+                 ;[:c [:km "web: Cloudflare Docs and search"]]
+                 ;[:v [:km "web: Orama Docs and search"]]
                  ;[:3 [:alfred "search alfred" "nikivi.utilities" "d3 "]]
                  ;[:q [:alfred "search alfred" "nikivi.utilities" "tldr "]]
                  ;[:w [:alfred "search alfred" "nikivi.utilities" "django "]]
