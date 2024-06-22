@@ -57,8 +57,12 @@
                  [:3 :!T3]
                  [:4 :!T4]
                  [:5 :!T5]
-                 [:tab [:km "Smart Autocomplete & new line"]]
-                 [:escape [:km "Smart Autocomplete"]]
+                 ;[:tab [:km "Smart Autocomplete & new line"]]
+                 ;[:escape [:km "Smart Autocomplete"]]
+                 ;[:tab [:km ""]]
+                 ;[:escape [:km "get last error from ~/log/cmd.log + current file as context"]]
+                 ;[:escape [:km "get last error from ~/log/cmd.log + current file as context and paste into claude to fix"]]
+                 [:escape [:km "get last error from ~/log/cmd.log + current file as context and paste into chatgpt to fix"]]
                  [:q :!Sq]
                  [:w :!Sw]
                  [:e :!Se]
@@ -143,6 +147,7 @@
                  [[:k :l] :!COS9] ; Raycast
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
                  [[:k :n] :!TOSu] ; Raycast AI window
+                 [[:j :semicolon] [:km "Notion global search (in app)"]]
                  ;[[:j :semicolon] :!TOSw] ; Notion Command Search TODO: replace with LA global search (with same Notion like raycast window) (inline info!)
                  ]}
         {:des "2key (move + alfred)"
@@ -255,13 +260,15 @@
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
-                 [:semicolon [:km "open: Xcode Beta"]]
+                 ;[:semicolon [:km "open: Xcode Beta"]]
+                 [:semicolon [:km "open: Xcode Beta (but not xcode test project)"]]
                  [:c [:km "open: Spotify"]]
                  [:b [:km "open: BetterTouchTool"]]
-                 [:n :!OC9] ; open 2nd mac space with Xcode + Terminal
+                 [:n [:km "Open Xcode test"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
                  [:slash [:km "open: Instruments"]]
+                 ;[:n :!OC9] ; open 2nd mac space with Xcode + Terminal
                  ;[:n [:km "open: PyCharm"]]
                  ;[:d [:km "open: Anytype"]]
                  ;[:semicolon [:km "open: Xcode"]]
@@ -477,9 +484,8 @@
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:s [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:left_command [:km "open: Perplexity"]]
-                 [:i [:alfred "run" "iansinnott.keyboardmaestro"]]
+                 [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [:f [:km "open: ChatGPT"]]
-                 [:j [:km "Notion global search (in app)"]]
                  [:g [:km "open: EdgeDB Cloud"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
@@ -487,8 +493,8 @@
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:n :!CTOS9] ; search npm packages
                  [:z :!TCspacebar] ; macOS Emoji Picker
-                 [:tab [:km "open: OpenAI Platform"]]
                  [:grave_accent_and_tilde [:km "open: Google Cloud"]]
+                 ;[:i [:km "open: OpenAI Platform"]]
                  ;[:s [:alfred "search files" "nikivi.manage.notes"]] ; TODO: (make it open in obsidian)
                  ;[:semicolon [:km "open: ChatGPT 2"]]
                  ;[:left_command [:km "open: Claude"]]
@@ -803,19 +809,24 @@
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
-                 [:m [:km "open: Multi"]]
+                 [:c [:km "New Spark email"]]
                  [:v [:km "open: Loops"]]
                  [:f [:km "open: Spark"]]
-                 [:c [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
-                 [:h [:km "Create new contact"]]
+                 [:t [:km "Create new contact"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
                  [:o [:km "open: X Pro"]]
                  [:l [:km "open: X Messages"]]
                  [:semicolon [:km "open: Slack"]]
-                 [:c [:km "open: Contacts"]]
-                 [:n [:km "open: Element"]]
+                 [:s [:km "open: Contacts"]]
+                 [:d [:km "w: Reddit submit"]]
+                 [:n [:km "New X post"]]
+                 [:m [:km "open: Multi"]]
+                 [:period [:km "open: Element"]]
+                 [:h [:km "w: HN submit"]]
+                 [:b [:km "w: Lobsters submit"]]
+                 ; TODO: add generic `LA Post` function later maybe or have another bind for `LA Post`
                  ;[:period [:km "w: Twitter Search"]]
                  ;[:b [:km "w: Twitter"]]
                  ;[:n [:km "w: Typefully"]]
@@ -1132,11 +1143,8 @@
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:k :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:l [:km "open: Dash (with search)"]]
-                 [:b [:km "w: Reddit submit"]]
-                 [:n [:km "New tweet"]] ; TODO: can be generic `LA Post` function later maybe or have another bind for `LA Post`
                  [:m [:km "Search Cursor windows"]]
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
-                 [:b [:km "w: Lobsters submit"]]
                  [:period [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  ;[:escape [:km "Test"]]
                  ;[:escape [:km "Go to test macro"]]

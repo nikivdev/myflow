@@ -164,6 +164,190 @@ end
 #     watchexec --no-vcs-ignore --restart --exts ts "tput reset && bun run $argv" --project-origin .
 # end
 
+# function runSwiftAndLogErrorsInFile
+#     # Ensure the log file exists and is empty
+#     echo -n "" > ~/log/cmd.log
+
+#     # Run the command, display output, and append to log file
+#     watchexec --no-vcs-ignore --restart --exts swift "tput reset && swift run.swift" --project-origin . 2>&1 | \
+#     while read -l line
+#         echo $line
+#         echo $line | sed -E "s/\x1B\[([0-9]{1,3}(;[0-9]{1,3})*)?[mGK]//g" >> ~/log/cmd.log
+#     end
+# end
+
+# function runSwiftAndLogErrorsInFile
+#     # Ensure the log file exists and is empty
+#     echo -n "" > ~/log/cmd.log
+
+#     # Run the command, display output, and append to log file
+#     watchexec --no-vcs-ignore --restart --exts swift "tput reset && swift run.swift" --project-origin . 2>&1 | \
+#     while read -l line
+#         # Display the line to the console
+#         echo $line
+
+#         # Remove ANSI escape codes and [Running: ...] lines before logging
+#         echo $line | \
+#         sed -E 's/\x1B\[[0-9;]*[mGK]//g' | \
+#         sed -E 's/\[Running: .*\]//g' | \
+#         sed -E '/^\s*$/d' >> ~/log/cmd.log
+#     end
+# end
+
+# function runSwiftAndLogErrorsInFile
+#     # Ensure the log file exists and is empty
+#     echo -n "" > ~/log/cmd.log
+
+#     # Run the command, display output, and append to log file
+#     watchexec --no-vcs-ignore --restart --exts swift "tput reset && swift run.swift" --project-origin . 2>&1 | \
+#     while read -l line
+#         # Display the line to the console
+#         echo $line
+
+#         # Clean up and log the output using awk
+#         echo $line | \
+#         awk '
+#         BEGIN { skip = 1 }
+#         /^[[:space:]]*$/ { next }  # Skip empty lines
+#         /^\[?[0-9]+ qc\[!p\[?[0-9;]*l?/ { sub(/^\[?[0-9]+ qc\[!p\[?[0-9;]*l?>/, ""); skip = 0 }
+#         /^<unknown>:0: warning:/ || /^run\.swift:/ { skip = 0 }
+#         !skip { gsub(/\x1B\[[0-9;]*[mK]/, ""); print }
+#         ' >> ~/log/cmd.log
+#     end
+# end
+
+# clean output but losing things
+# function runSwiftAndLogErrorsInFile
+#     # Ensure the log file exists and is empty
+#     echo -n "" > ~/log/cmd.log
+
+#     # Run the command, display output, and append to log file
+#     watchexec --no-vcs-ignore --restart --exts swift "tput reset && swift run.swift" --project-origin . 2>&1 | \
+#     while read -l line
+#         # Display the line to the console
+#         echo $line
+
+#         # Clean up and log the output using awk
+#         echo $line | \
+#         awk '
+#         BEGIN { skip = 1; buffer = "" }
+#         /^\[?[0-9]+ qc\[!p\[?[0-9;]*l?/ { sub(/^\[?[0-9]+ qc\[!p\[?[0-9;]*l?>/, ""); skip = 0 }
+#         /^<unknown>:0: warning:/ || /^run\.swift:/ { skip = 0 }
+#         !skip {
+#             gsub(/\x1B\[[0-9;]*[mK]/, "")
+#             if ($0 ~ /^run\.swift:/) {
+#                 if (buffer != "") print buffer
+#                 buffer = $0
+#             } else if ($0 ~ /^\[Command exited with/) {
+#                 print buffer
+#                 print $0
+#                 buffer = ""
+#             } else {
+#                 buffer = buffer "\n" $0
+#             }
+#         }
+#         END { if (buffer != "") print buffer }
+#         ' >> ~/log/cmd.log
+#     end
+# end
+
+# function runSwiftAndLogErrorsInFile
+#     # Wipe the log file at the start of each run
+#     echo -n "" > ~/log/cmd.log
+
+#     # Run the command, display output, and process for logging
+#     watchexec --no-vcs-ignore --restart --exts swift "tput reset && swift run.swift" --project-origin . 2>&1 | \
+#     awk '
+#     BEGIN { skip = 1; buffer = "" }
+#     /^\[?[0-9]+ qc\[!p\[?[0-9;]*l?/ { sub(/^\[?[0-9]+ qc\[!p\[?[0-9;]*l?>/, ""); skip = 0 }
+#     /^<unknown>:0: warning:/ || /^run\.swift:/ { skip = 0 }
+#     {
+#         # Always print to console
+#         print $0
+#     }
+#     !skip {
+#         gsub(/\x1B\[[0-9;]*[mK]/, "")
+#         if ($0 ~ /^run\.swift:/) {
+#             if (buffer != "") print buffer >> "'"$HOME"'/log/cmd.log"
+#             buffer = $0
+#         } else if ($0 ~ /^\[Command exited with/) {
+#             print buffer >> "'"$HOME"'/log/cmd.log"
+#             print $0 >> "'"$HOME"'/log/cmd.log"
+#             buffer = ""
+#         } else {
+#             buffer = buffer "\n" $0
+#         }
+#     }
+#     END { if (buffer != "") print buffer >> "'"$HOME"'/log/cmd.log" }
+#     '
+# end
+
+function extractLastErrorBlockAndCopyToClipboard
+    awk '
+        /^run\.swift:/ {buf=""; flag=1}
+        flag && !/\[Command exited with/ {
+            gsub(/\x1B\[[0-9;]*[mGK]/, "")  # Remove ANSI color codes
+            gsub(/^\[0m|\[31m/, "")         # Remove specific color codes
+            buf = buf $0 "\n"
+        }
+        /\[Command exited with 1\]/ {
+            last = buf
+        }
+        END {printf "%s", last}
+    ' ~/log/cmd.log | sed '/^$/d' | pbcopy
+end
+
+
+function runSwiftAndLogErrorsInFile
+    # Wipe the log file at the start of each run
+    echo -n "" > ~/log/cmd.log
+
+    # Run the command, display output, and process for logging
+    watchexec --no-vcs-ignore --restart --exts swift "tput reset && swift run.swift" --project-origin . 2>&1 | \
+    awk '
+    BEGIN { skip = 1; buffer = "" }
+    /^\[?[0-9]+ qc\[!p\[?[0-9;]*l?/ { sub(/^\[?[0-9]+ qc\[!p\[?[0-9;]*l?>/, ""); skip = 0 }
+    /^<unknown>:0: warning:/ || /^run\.swift:/ { skip = 0 }
+    {
+        # Always print to console
+        print $0
+    }
+    !skip {
+        gsub(/\x1B\[[0-9;]*[mK]/, "")
+        if ($0 ~ /^run\.swift:/) {
+            if (buffer != "") print buffer >> "'"$HOME"'/log/cmd.log"
+            buffer = $0
+        } else if ($0 ~ /^\[Command exited with/) {
+            print buffer >> "'"$HOME"'/log/cmd.log"
+            print $0 >> "'"$HOME"'/log/cmd.log"
+            buffer = ""
+        } else {
+            buffer = buffer "\n" $0
+        }
+    }
+    END { if (buffer != "") print buffer >> "'"$HOME"'/log/cmd.log" }
+    '
+
+    # Extract the last error block and copy to clipboard
+    awk '/^run\.swift:/ {buf=""; flag=1} flag {buf = buf $0 "\n"} /\[Command exited with 1\]/ {last=buf} END {printf "%s", last}' ~/log/cmd.log | pbcopy
+
+    echo "Last error block copied to clipboard."
+end
+
+function runSwiftAndLogErrorsInFile
+    # Run the command and log output
+    watchexec --no-vcs-ignore --restart --exts swift "tput reset && swift run.swift" --project-origin . 2>&1 | tee ~/log/cmd.log
+
+    # Extract the last error block and copy to clipboard
+    awk '/^run\.swift:/ {buf=""; flag=1} flag {buf = buf $0 "\n"} /\[Command exited with 1\]/ {last=buf} END {printf "%s", last}' ~/log/cmd.log | pbcopy
+
+    echo "Last error block copied to clipboard."
+end
+
+# TODO:
+function runSwiftAndLogErrorsInFileAndSaveErrorToClipboard
+end
+
 function wbi
     watchexec --no-vcs-ignore --restart --exts ts "tput reset && bun run index.ts" --project-origin .
 end
@@ -454,4 +638,9 @@ function find.EnvFiles
         cat $env_file
         echo ""
     end
+end
+
+
+function printFilesOneLevelDeep
+    find . -maxdepth 2 -not -path '*/.*' -print0 | xargs -0 ls -ld
 end
