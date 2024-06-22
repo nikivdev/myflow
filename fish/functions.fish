@@ -292,7 +292,8 @@ end
 #     echo "Last error block copied to clipboard."
 # end
 
-function runSwiftAndLogErrorsInFile
+# swift watch
+function sw
     # Wipe the log file at the start of each run
     echo -n "" > ~/log/cmd.log
 
