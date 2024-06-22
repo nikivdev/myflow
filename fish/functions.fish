@@ -282,21 +282,15 @@ end
 #     '
 # end
 
-function extractLastErrorBlockAndCopyToClipboard
-    awk '
-        /^run\.swift:/ {buf=""; flag=1}
-        flag && !/\[Command exited with/ {
-            gsub(/\x1B\[[0-9;]*[mGK]/, "")  # Remove ANSI color codes
-            gsub(/^\[0m|\[31m/, "")         # Remove specific color codes
-            buf = buf $0 "\n"
-        }
-        /\[Command exited with 1\]/ {
-            last = buf
-        }
-        END {printf "%s", last}
-    ' ~/log/cmd.log | sed '/^$/d' | pbcopy
-end
+# function runSwiftAndLogErrorsInFile
+#     # Run the command and log output
+#     watchexec --no-vcs-ignore --restart --exts swift "tput reset && swift run.swift" --project-origin . 2>&1 | tee ~/log/cmd.log
 
+#     # Extract the last error block and copy to clipboard
+#     awk '/^run\.swift:/ {buf=""; flag=1} flag {buf = buf $0 "\n"} /\[Command exited with 1\]/ {last=buf} END {printf "%s", last}' ~/log/cmd.log | pbcopy
+
+#     echo "Last error block copied to clipboard."
+# end
 
 function runSwiftAndLogErrorsInFile
     # Wipe the log file at the start of each run
@@ -334,14 +328,19 @@ function runSwiftAndLogErrorsInFile
     echo "Last error block copied to clipboard."
 end
 
-function runSwiftAndLogErrorsInFile
-    # Run the command and log output
-    watchexec --no-vcs-ignore --restart --exts swift "tput reset && swift run.swift" --project-origin . 2>&1 | tee ~/log/cmd.log
-
-    # Extract the last error block and copy to clipboard
-    awk '/^run\.swift:/ {buf=""; flag=1} flag {buf = buf $0 "\n"} /\[Command exited with 1\]/ {last=buf} END {printf "%s", last}' ~/log/cmd.log | pbcopy
-
-    echo "Last error block copied to clipboard."
+function extractLastErrorBlockAndCopyToClipboard
+    awk '
+        /^run\.swift:/ {buf=""; flag=1}
+        flag && !/\[Command exited with/ {
+            gsub(/\x1B\[[0-9;]*[mGK]/, "")  # Remove ANSI color codes
+            gsub(/^\[0m|\[31m/, "")         # Remove specific color codes
+            buf = buf $0 "\n"
+        }
+        /\[Command exited with 1\]/ {
+            last = buf
+        }
+        END {printf "%s", last}
+    ' ~/log/cmd.log | sed '/^$/d' | pbcopy
 end
 
 # TODO:
