@@ -809,8 +809,8 @@
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
-                 [:v [:km "New Spark email"]]
-                 [:o [:km "open: Loops"]]
+                 [:n [:km "New Spark email"]]
+                 [:o [:km "open: X Pro (or make post if in app)"]]
                  [:f [:km "open: Spark"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:c [:km "Create new contact"]]
@@ -819,12 +819,12 @@
                  [:l [:km "open: X Messages"]]
                  [:semicolon [:km "open: Slack"]]
                  [:d [:km "w: Reddit submit"]]
-                 [:n [:km "open: X Pro (or make post if in app)"]]
                  [:m [:km "open: Multi"]]
                  [:period [:km "open: Element"]]
                  [:h [:km "w: HN submit"]]
                  [:b [:km "w: Lobsters submit"]]
                  [:t [:km "open: Contacts"]]
+                 [:v [:km "open: Loops"]]
                  ; TODO: add generic `LA Post` function later maybe or have another bind for `LA Post`
                  ;[:period [:km "w: Twitter Search"]]
                  ;[:b [:km "w: Twitter"]]
