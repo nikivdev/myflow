@@ -250,7 +250,7 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:t [:km "open: Color Picker"]]
-                 [:e [:km "open: Fantastical"]] ; to be moved to LA Todo
+                 [:e [:km "open: Linear"]]
                  [:a [:km "open: Notion"]]
                  [:v [:km "open: Yaak"]]
                  [:g [:km "open: Pathfinder"]]
@@ -327,7 +327,7 @@
                  ;[:spacebar [:km "Explain with ChatGPT"]]]}
                  ;[:spacebar [:km "open: Zen"]]]}
                  ;[:spacebar [:km "Explain with Ask"]]]}
-                 [:spacebar [:km "open: Linear"]]]}
+                 [:spacebar [:km "open: Fantastical"]]]}
         {:des "ekey (cmd)"
          :rules [:e-mode
                  [:q :!Cq]
