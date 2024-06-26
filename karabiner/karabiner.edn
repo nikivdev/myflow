@@ -110,7 +110,7 @@
                  [:semicolon [:km "Selected text to Claude"]]
                  [:period [:km "Select word & move to Claude"]]
                  [:comma [:km "Select word & move to Claude (and run instantly)"]]
-                 [:quote [:km "Select line & move to Claude"]]
+                 [:slash [:km "Select line & move to Claude"]]
                  [:##h :left_arrow]
                  [:##j :down_arrow]
                  [:##k :up_arrow]
@@ -155,8 +155,8 @@
                  [[:l :m] :!TOSt] ; Raycast AI qiuck chat
                  [[:k :l] :!COS9] ; Raycast
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
-                 [[:k :n] :!TOSu] ; Raycast AI window
                  [[:j :semicolon] [:km "Notion global search (in app)"]]
+                 ;[[:k :n] :!TOSu] ; Raycast AI window
                  ;[[:j :semicolon] :!TOSw] ; Notion Command Search TODO: replace with LA global search (with same Notion like raycast window) (inline info!)
                  ]}
         {:des "2key (move + alfred)"
