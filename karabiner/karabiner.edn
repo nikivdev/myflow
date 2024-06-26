@@ -413,7 +413,7 @@
                  ;[:i [:km "open: NetNewsWire"]]
                  ;[:escape [:km "open: Preview"]]
                  ;[:spacebar [:km "Copied image into ChatGPT"]]]}
-                 [:spacebar [:km "Screenshot into ChatGPT and explain"]]]}
+                 [:spacebar [:km "Screenshot into ChatGPT"]]]}
         {:des "tkey (palettes + websites)"
          :rules [:t-mode
                  ;[:0 [:km "w: regex101"]]
@@ -1150,10 +1150,10 @@
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
-                 [:o [:km "Select word & search in Dash"]]
-                 [:n :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
-                 [:i [:open "raycast://extensions/loris/safari/search-history"]]
-                 [:m [:km "Select word & move to Claude"]]
+                 [:i [:km "Select word & search in Dash"]]
+                 [:o [:km "Select word & move to Claude"]]
+                 [:n [:open "raycast://extensions/loris/safari/search-history"]]
+                 [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:comma [:km "Select line & move to Claude"]]
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:k :!Ctab]
