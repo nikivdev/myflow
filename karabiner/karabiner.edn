@@ -95,6 +95,7 @@
                  [:m :!Sm]]}
         {:des "skey (essential)"
          :rules [:s-mode
+                 ; TODO: keybind for AI rewrite on selected text (raycast like prompt? maybe raycast has somthing as AI action)
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
                  [:e :tab]
                  [:r :!Stab]
@@ -106,18 +107,22 @@
                  [:d :delete_or_backspace]
                  [:f :return_or_enter]
                  [:g :!Ctab]
+                 [:semicolon [:km "Selected text to Claude"]]
+                 [:period [:km "Select word & move to Claude"]]
+                 [:comma [:km "Select line & move to Claude"]]
                  [:##h :left_arrow]
                  [:##j :down_arrow]
                  [:##k :up_arrow]
                  [:##l :right_arrow]
                  [:t :!Sreturn_or_enter]
-                 [:period [:km "New active todo"]]
-                 [:comma [:km "Show active todo"]]
                  [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
                  [:c :!Cdelete_or_backspace]
                  [:v :left_shift]
                  [:##b :!Cleft_arrow]
                  [:n :!Cv] ; Paste
+                 ;[:comma [:km "Show active todo"]]
+                 ;[:i [:km "Select word & jump to next occurance"]]
+                 ;[:i [:km "Select word & copy"]]
                  ;[:u :!COp] ; Selection -> HasteBin link
                  ;[:i :!CTperiod] ; Contexts search active windows ; TODO: maybe replace with alfred/raycast workflow to search active windows to jump to (similar to https://contexts.co)
                  ;[:i [:km "Selected text -> Alfred Snippet"]]
@@ -267,7 +272,7 @@
                  [:semicolon [:km "open: Xcode Beta (but not xcode test project)"]]
                  [:c [:km "open: Spotify"]]
                  [:b [:km "open: BetterTouchTool"]]
-                 [:n [:km "Open Xcode test"]]
+                 [:n [:km "Open Xcode personal"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
                  [:slash [:km "open: Instruments"]]
@@ -376,7 +381,7 @@
                 ;[:spacebar [:km "Explain selected text (or open Claude Explain)"]]]}
                 ;[:spacebar [:km "Explain selected text (or open ChatGPT Explain)"]]]}
                 ;[:spacebar [:km "Explain selected text (or explain selected image)"]]]}
-                [:spacebar [:km "Explain selected text with ChatGPT"]]]}
+                [:spacebar [:km "Selected text to Claude (run instantly)"]]]} ; TODO: move to something else (separate window, 0 context to explain things fast, overlay window ideally)
         {:des "rkey (apps)"
          :rules [:r-mode
                  [:tab [:km "open: Transmission"]]
@@ -438,21 +443,16 @@
                  [:2 :!S2]
                  [:3 :!Sequal_sign]
                  [:4 :!S8]
-                 [:5 :!S5]
-                 [:q :!Sopen_bracket]
                  [:w :!S9]
                  [:e :!S3]
+                 [:q :!Sopen_bracket]
+                 [:escape :!Sopen_bracket]
+                 [:left_command :!S8]
                  [:r :!Squote]
                  [:t :quote]
                  [:o :open_bracket] ; [
                  [:p :close_bracket] ; ]
-                 [:left_command [:km "paste: ⌘"]]
-                 [:left_option [:km "paste: ⌥"]]
-                 [:left_control [:km "paste: ⌃"]]
-                 [:left_shift [:km "paste: ⇧"]]
-                 [:fn [:km "paste: ⇧"]]
                  [:open_bracket :!Sclose_bracket] ; }
-                 ;[:caps_lock [:km "Match symbols"]] ; TODO: check if works well
                  [:a :slash]
                  [:s :!Shyphen]
                  [:d :backslash]
@@ -467,6 +467,14 @@
                  [:x :!Sbackslash]
                  [:c :!S7]
                  [:v :!Scomma]
+                 ;[:3 :!S5]
+                 ;[:4 :!S8]
+                 ;[:left_command [:km "paste: ⌘"]]
+                 ;[:left_option [:km "paste: ⌥"]]
+                 ;[:left_control [:km "paste: ⌃"]]
+                 ;[:left_shift [:km "paste: ⇧"]]
+                 ;[:fn [:km "paste: ⇧"]]
+                 ;[:caps_lock [:km "Match symbols"]] ; TODO: check if works well
                  [:b [:slash :slash :spacebar]]]} ; -> //
         {:des "okey (alfred)"
          :rules [:o-mode
@@ -477,17 +485,15 @@
                  [:5 :!C5]
                  [:6 :!C6]
                  [:tab [:km "open: Modal"]]
+                 [:q [:km "open: Expo"]]
                  [:w [:km "open: Vercel"]]
-                 [:i [:km "open: Stripe"]]
                  [:e [:km "open: Cloudflare"]]
                  [:a [:km "open: Railway"]]
                  [:escape [:km "open: Ronin"]]
                  [:d [:km "open: Preview"]]
-                 [:q [:km "open: Expo"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:s [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:left_command [:km "open: Perplexity"]]
-                 [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [:f [:km "open: ChatGPT"]]
                  [:g [:km "open: EdgeDB Cloud"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
@@ -496,7 +502,10 @@
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:n :!CTOS9] ; search npm packages
                  [:z :!TCspacebar] ; macOS Emoji Picker
+                 [:i [:alfred "run" "iansinnott.keyboardmaestro"]]
+                 [:j [:km "open: Safari Technology Preview"]]
                  [:grave_accent_and_tilde [:km "open: Google Cloud"]]
+                 ;[:i [:km "open: Stripe"]]
                  ;[:i [:km "open: OpenAI Platform"]]
                  ;[:s [:alfred "search files" "nikivi.manage.notes"]] ; TODO: (make it open in obsidian)
                  ;[:semicolon [:km "open: ChatGPT 2"]]
@@ -665,8 +674,8 @@
                  [:l :!Creturn_or_enter]
                  [:j :!CSspacebar]
                  [:semicolon :!TSspacebar] ; Things Quick Entry (with context)
-                 [:quote [:km "Things task (next in today)"]]
-                 [:open_bracket :!TOCspacebar] ; Things Quick Entry (without context)
+                 ;[:period [:km "Things task (next in today)"]] ; TODO: make it top Things task. open Things and start writing task that will after `return` be on top
+                 [:quote :!TOCspacebar] ; Things Quick Entry (without context)
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]
                  [:m :!Sreturn_or_enter]
@@ -1141,14 +1150,18 @@
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
+                 [:o [:km "Select word & search in Dash"]]
+                 [:n :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:i [:open "raycast://extensions/loris/safari/search-history"]]
-                 [:o [:km "open: Safari Technology Preview"]]
+                 [:m [:km "Select word & move to Claude"]]
+                 [:comma [:km "Select line & move to Claude"]]
                  [:j :!CTO0] ; Search Alfred Snippets
-                 [:k :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
+                 [:k :!Ctab]
                  [:l [:km "open: Dash (with search)"]]
-                 [:m [:km "Search Cursor windows"]]
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  [:period [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
+                 ;[:m [:km "Search Cursor windows"]]
+                 ;[:n [:km "Select word & move to Claude"]]
                  ;[:escape [:km "Test"]]
                  ;[:escape [:km "Go to test macro"]]
                  ;[:escape [:km "New tweet with clipboard (image or text)"]]
