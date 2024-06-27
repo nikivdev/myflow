@@ -503,8 +503,7 @@
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:n :!CTOS9] ; search npm packages
                  [:z :!TCspacebar] ; macOS Emoji Picker
-                 [:i [:alfred "run" "iansinnott.keyboardmaestro"]]
-                 [:j [:km "open: Safari Technology Preview"]]
+                 [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [:grave_accent_and_tilde [:km "open: Google Cloud"]]
                  ;[:i [:km "open: Stripe"]]
                  ;[:i [:km "open: OpenAI Platform"]]
@@ -1143,7 +1142,6 @@
                  [:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots)
                  [:r :!CS4] ; Save picture of selected area as a file (~/Desktop) (system settings > keyboard > screenshots)
                  [:t [:km "w: X (personal)"]]
-                 ;[:tab [:km "Start Screen Studio (record entire display)"]]
                  [:escape [:km "Entire Screen into ChatGPT and explain"]]
                  [:a [:km "Screenshot into ChatGPT and explain"]]
                  [:s :!CTOSg] ; Loom recording
@@ -1151,8 +1149,9 @@
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
-                 [:i [:km "Select word & search in Dash"]]
-                 [:o [:km "Select word & move to Claude"]]
+                 [:u [:km "Select word & search in Dash"]]
+                 [:i [:km "Select word & move to Claude"]]
+                 [:o [:km "open: Safari Technology Preview"]]
                  [:n [:open "raycast://extensions/loris/safari/search-history"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:comma [:km "Select line & move to Claude"]]
@@ -1161,6 +1160,7 @@
                  [:l [:km "open: Dash (with search)"]]
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  [:period [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
+                 ;[:tab [:km "Start Screen Studio (record entire display)"]]
                  ;[:m [:km "Search Cursor windows"]]
                  ;[:n [:km "Select word & move to Claude"]]
                  ;[:escape [:km "Test"]]
