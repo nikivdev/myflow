@@ -674,7 +674,6 @@
                  [:l :!Creturn_or_enter]
                  [:j :!CSspacebar]
                  [:semicolon :!TSspacebar] ; Things Quick Entry (with context)
-                 ;[:period [:km "Things task (next in today)"]] ; TODO: make it top Things task. open Things and start writing task that will after `return` be on top
                  [:quote :!TOCspacebar] ; Things Quick Entry (without context)
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]
@@ -682,6 +681,7 @@
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
+                 ;[:period [:km "Things task (next in today)"]] ; TODO: make it top Things task. open Things and start writing task that will after `return` be on top
                  ;[:tab [:km "open: Dingboard"]]
                  ;[:grave_accent_and_tilde [:km "Test"]]
                  ;[:s [:km "open: Learn Anything (dev)"]] ; TODO: focus on tauri windows in general, dev more tauri apps. or better focus on simulator if it's open or tauri window if that is open
@@ -1085,8 +1085,9 @@
                   [:c [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
                   [:tab [:a :s :y :n :c :spacebar]] ; -> async
                   [:escape [:a :w :a :i :t :spacebar]] ; -> await
-                  [:left_command [:spacebar :equal_sign :spacebar]] ; -> =
+                  [:left_command [:p :r :o :p :s :period]] ; -> props.
                   [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
+                  ;[:left_command [:spacebar :equal_sign :spacebar]] ; -> =
                   ;[:grave_accent_and_tilde [:period :s :e :t :!S9 :!S0 :left_arrow]] ; -> .set()
                   ;[:left_command [:period :g :e :t :!S9 :!S0]] ; -> .get()
                   ;[:n [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
@@ -1098,7 +1099,8 @@
                   ;[:f [:!Cf :c :o :n :s :o :l :e :period :w :a :r :n :!S9 :return_or_enter]] ; -> search console.warn( in file
                   ;[:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
                   ;[:c [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
-                  [:spacebar [:l :o :c :a :l :period]]]} ; -> local.
+                  ;[:spacebar [:l :o :c :a :l :period]]]} ; -> local.
+                  [:spacebar [:s :t :a :t :e :period]]]} ; -> state.
         {:des "godot"
          :rules [:go-mode
                 [:tab [:km "w: GoDoc"]]
