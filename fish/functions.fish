@@ -644,3 +644,14 @@ end
 function printFilesOneLevelDeep
     find . -maxdepth 2 -not -path '*/.*' -print0 | xargs -0 ls -ld
 end
+
+function gitAll
+    # fetch all history
+    git fetch --unshallow
+    # fetch all branches
+    git fetch --all
+    # fetch all tags
+    git fetch --tags
+    # upadate local branches
+    git pull --all
+end

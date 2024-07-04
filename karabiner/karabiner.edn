@@ -782,9 +782,9 @@
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
                  [:u [:km "cursor: kuskus"]]
+                 [:g [:km "cursor: genx"]]
                  [:i [:km "cursor: python"]]
                  [:o [:km "cursor: go"]]
-                 [:x [:km "cursor: x"]]
                  [:h [:km "cursor: drophunt"]]
                  [:j [:km "cursor: src workspace"]]
                  [:k [:km "cursor: solbond"]]

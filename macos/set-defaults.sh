@@ -32,3 +32,6 @@ defaults write -g WebAutomaticTextReplacementEnabled -bool false
 echo 'Disable macOS/iOS text expansion'
 
 echo 'Some commands here require restart! Please do that for them to take effect.'
+
+# removes annoying asking for passwords for git
+git config --global credential.helper osxkeychain
