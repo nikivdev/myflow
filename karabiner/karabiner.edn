@@ -672,15 +672,15 @@
                  [:o :!Oreturn_or_enter]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
-                 [:j :!CSspacebar]
-                 [:semicolon :!TSspacebar] ; Things Quick Entry (with context)
-                 [:quote :!TOCspacebar] ; Things Quick Entry (without context)
+                 [:j :!TSspacebar] ; Things Quick Entry (with context)
+                 [:semicolon :!TOCspacebar] ; Things Quick Entry (without context)
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]
                  [:m :!Sreturn_or_enter]
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file action
+                 ;[:j :!CSspacebar]
                  ;[:period [:km "Things task (next in today)"]] ; TODO: make it top Things task. open Things and start writing task that will after `return` be on top
                  ;[:tab [:km "open: Dingboard"]]
                  ;[:grave_accent_and_tilde [:km "Test"]]
