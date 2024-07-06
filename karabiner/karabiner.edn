@@ -261,6 +261,7 @@
                  [:v [:km "open: Yaak"]]
                  [:g [:km "open: Pathfinder"]]
                  ;[:i [:km "open: GoLand"]] ; TODO: move to IntelliJ
+                 ;[:i [:km "open: Yaak"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
@@ -415,10 +416,11 @@
                  ;[:escape [:km "open: Preview"]]
                  ;[:spacebar [:km "Copied image into ChatGPT"]]]}
                  [:spacebar [:km "Screenshot into ChatGPT"]]]}
-        {:des "tkey (palettes + websites)"
+        {:des "tkey (sites)"
          :rules [:t-mode
                  ;[:0 [:km "w: regex101"]]
                  ;[:e [:km "w: Facebook"]]
+                 ;[:n [:km "w: Facebook"]]
                  ;[:u [:km "w: Medium"]]
                  ;[:i [:km "w: Arxiv"]]
                  ;[:o [:km "w: Stack Overflow"]]
@@ -782,17 +784,17 @@
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
                  [:u [:km "cursor: kuskus"]]
-                 [:g [:km "cursor: genx"]]
-                 [:i [:km "cursor: python"]]
+                 [:i [:km "cursor: rust"]]
                  [:o [:km "cursor: go"]]
                  [:h [:km "cursor: drophunt"]]
                  [:j [:km "cursor: src workspace"]]
                  [:k [:km "cursor: solbond"]]
                  [:l [:km "cursor: la"]]
-                 [:n [:km "cursor: swift"]]
-                 [:m [:km "cursor: lisa"]]
+                 [:n [:km "cursor: python"]]
+                 [:m [:km "cursor: swift"]]
+                 ;[:m [:km "cursor: lisa"]]
+                 [:period [:km "cursor: genx"]]
                  [:semicolon [:km "cursor: clones"]]
-                 ;[:u [:km "cursor: rust"]]
                  ;[:i [:km "cursor: config"]]
                  ;[:k [:km "cursor: nikiv.dev"]]
                  ;[:o [:km "cursor: other"]]
@@ -876,11 +878,11 @@
                  [:j [:km "edit: ts"]]
                  [:k [:km "edit: Rust"]]
                  [:l [:km "edit: Solid"]]
-                 [:semicolon [:km "edit: Fish functions"]]
-                 [:quote [:km "edit: Fish alias"]]
-                 [:period [:km "edit: Fish config"]]
-                 [:comma [:km "edit: Config todo"]]
-                 [:slash [:km "edit: KusKus todo"]]
+                 ;[:semicolon [:km "edit: Fish functions"]]
+                 ;[:period [:km "edit: Fish alias"]]
+                 ;[:comma [:km "edit: Fish config"]]
+                 ;[:slash [:km "edit: KusKus todo"]]
+                 ;[:comma [:km "edit: Config todo"]]
                  ;[:u [:km "run: Rust"]]
                  ;[:i [:km "run: Julia"]] ; TODO: maybe use Pluto.jl notebook
                  ;[:o [:km "run: Deno"]]
@@ -949,13 +951,14 @@
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:52o0rOFFGNEekY4o0xV0AK"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:493uQXwZsTDHAkjWXImR7K"]] ; Focus song (slow)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
-        {:des "bkey (break)"
+        {:des "bkey (sites)"
          :rules [:b-mode
                  [:9 [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
                  [:0 [:km "w: HN (show new)"]]
                  [:q [:km "w: KM forum"]]
                  [:w [:km "w: Swift forum"]]
                  [:e [:km "w: Behance"]]
+                 [:n [:km "w: genx"]]
                  [:r [:km "w: Medium (network)"]]
                  [:t [:km "w: Medium (bookmarks)"]]
                  [:u [:km "w: Product Hunt"]]

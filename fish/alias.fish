@@ -12,13 +12,10 @@ alias d.="cd ~/.scripts"
 alias db="cd ~/bin"
 alias dw="cd ~/Downloads"
 alias do="cd ~/src/org"
-
 # rust
 # alias rbnowarning="RUSTFLAGS="-A warnings" cargo build"
-
 # run code fast
 alias :ts="fish -c 'cd ~/src/ts; bun run try'"
-
 # other
 alias :id="bun i -d" # dev dep install
 # alias :id="pnpm add -d" # dev dep install
