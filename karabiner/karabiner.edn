@@ -255,7 +255,7 @@
                  [:spacebar :!CSOe]]} ; Selection -> YouTube
         {:des "wkey (apps)"
          :rules [:w-mode
-                 [:t [:km "open: Color Picker"]]
+                 ;[:t [:km "open: Color Picker"]]
                  [:e [:km "open: Linear"]]
                  [:a [:km "open: Notion"]]
                  [:v [:km "open: Yaak"]]
@@ -659,9 +659,10 @@
                  [:1 [:km "View Sip"]]
                  [:3 [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
                  [:escape [:km "open: Midjourney"]]
-                 [:q [:km "open: Pixave"]]
+                 [:q [:km "open: Color Picker"]]
                  [:w [:km "open: Figma"]]
-                 [:s :!TOSe] ; Start Superwhisper transcription
+                 [:s [:km "open: Simulator"]]
+                 ;[:s :!TOSe] ; Start Superwhisper transcription
                  [:grave_accent_and_tilde [:km "open: v0"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
@@ -730,7 +731,7 @@
                  ;[:spacebar [:km "Copy text to ChatGPT"]]]}
                  ;[:spacebar [:km "Move selected text to Claude or select area screenshot to Claude"]]]}
                  ;[:spacebar [:km "Move selected text to ChatGPT or select area screenshot to ChatGPT"]]]}
-                 [:spacebar [:km "open: Simulator"]]]}
+                 [:spacebar [:km "open: Eagle"]]]}
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
@@ -783,6 +784,8 @@
                   [:spacebar [:km "Screenshot into ChatGPT and explain"]]]}
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
+                 [:e [:km "Go to test macro"]]
+                 [:f [:km "Test"]]
                  [:u [:km "cursor: kuskus"]]
                  [:i [:km "cursor: rust"]]
                  [:o [:km "cursor: go"]]
@@ -1150,7 +1153,8 @@
                  [:r :!CS4] ; Save picture of selected area as a file (~/Desktop) (system settings > keyboard > screenshots)
                  [:t [:km "w: X (personal)"]]
                  [:escape [:km "Entire Screen into ChatGPT and explain"]]
-                 [:a [:km "Screenshot into ChatGPT and explain"]]
+                 [:grave_accent_and_tilde [:km "Screenshot into ChatGPT and explain"]]
+                 [:a :!CS8] ; Screenshot -> Eagle
                  [:s :!CTOSg] ; Loom recording
                  [:d :!CTOSh] ; Loom recording cancel
                  [:f :!CS9] ; CleanShot screen recording
@@ -1170,8 +1174,6 @@
                  ;[:tab [:km "Start Screen Studio (record entire display)"]]
                  ;[:m [:km "Search Cursor windows"]]
                  ;[:n [:km "Select word & move to Claude"]]
-                 ;[:escape [:km "Test"]]
-                 ;[:escape [:km "Go to test macro"]]
                  ;[:escape [:km "New tweet with clipboard (image or text)"]]
                  ;[:l [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  ;[:n [:km "New tweet with @"]]
@@ -1206,7 +1208,6 @@
                  ;[:s [:km "OBS stream scene off"]]
                  ;[:s [:t :h :a :n :k :s]] ; -> thanks
                  ;[:escape :!CTOSi] ; Screen Studio (record entire display)
-                 ;[:a :!CS8] ; Screenshot -> Pixave
                  ;[:s :!CTOSg] ; Screen Studio recording
                  ;[:f :!CTOS7] ; Screen Studio area recording
                  ;[:a :!CTOSi] ; OBS stream scene on
