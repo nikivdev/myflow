@@ -255,11 +255,12 @@
                  [:spacebar :!CSOe]]} ; Selection -> YouTube
         {:des "wkey (apps)"
          :rules [:w-mode
-                 ;[:t [:km "open: Color Picker"]]
                  [:e [:km "open: Linear"]]
+                 [:t [:km "open: JuxtaText"]]
                  [:a [:km "open: Notion"]]
                  [:v [:km "open: Yaak"]]
                  [:g [:km "open: Pathfinder"]]
+                 ;[:t [:km "open: Color Picker"]]
                  ;[:i [:km "open: GoLand"]] ; TODO: move to IntelliJ
                  ;[:i [:km "open: Yaak"]]
                  [:o [:km "open: Keyboard Maestro"]]
