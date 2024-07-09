@@ -171,14 +171,12 @@
                  [:spacebar :!COSu]]} ; Selection -> HN
         {:des "3key (open files + projects)"
          :rules [:3-mode
-                 [:o [:km "edit: GitHub Bio"]]
-                 [:j [:km "edit: Fish aliases"]]
                  [:semicolon [:km "proj: Wiki"]]
                  [:quote [:km "wiki: Summary"]]
                  [:n [:km "proj: Dotfiles"]]
                  [:m [:km "proj: Home"]]
                  [:comma [:km "edit: Now"]]
-                 [:period [:km "edit: GitHub Bio"]] ; TODO:
+                 ;[:j [:km "edit: Fish aliases"]]
                  ;[:r [:km "proj: LA"]]
                  ;[:i [:km "edit: Likes"]]
                  ;[:o [:km "edit: Projects"]]
@@ -658,7 +656,6 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:1 [:km "View Sip"]]
-                 [:3 [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
                  [:escape [:km "open: Midjourney"]]
                  [:q [:km "open: Color Picker"]]
                  [:w [:km "open: Figma"]]
@@ -787,6 +784,8 @@
          :rules [:tilde-mode
                  [:e [:km "Go to test macro"]]
                  [:f [:km "Test"]]
+                 [:w [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
+                 [:g [:km "edit: GitHub Bio"]]
                  [:u [:km "cursor: kuskus"]]
                  [:i [:km "cursor: rust"]]
                  [:o [:km "cursor: go"]]
@@ -883,9 +882,9 @@
                  [:j [:km "edit: ts"]]
                  [:k [:km "edit: Rust"]]
                  [:l [:km "edit: Solid"]]
-                 ;[:semicolon [:km "edit: Fish functions"]]
-                 ;[:period [:km "edit: Fish alias"]]
-                 ;[:comma [:km "edit: Fish config"]]
+                 [:semicolon [:km "edit: Fish functions"]]
+                 [:period [:km "edit: Fish alias"]]
+                 [:comma [:km "edit: Fish config"]]
                  ;[:slash [:km "edit: KusKus todo"]]
                  ;[:comma [:km "edit: Config todo"]]
                  ;[:u [:km "run: Rust"]]
@@ -1161,7 +1160,7 @@
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
-                 [:u [:km "Select word & search in Dash"]]
+                 ;[:u [:km "Select word & search in Dash"]]
                  [:i [:km "Select word & move to Claude"]]
                  [:o [:km "open: Safari Technology Preview"]]
                  [:n [:open "raycast://extensions/loris/safari/search-history"]]
