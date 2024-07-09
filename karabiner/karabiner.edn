@@ -1162,7 +1162,8 @@
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
                  ;[:u [:km "Select word & search in Dash"]]
-                 [:i [:km "Select word & move to Claude"]]
+                 ;[:i [:km "Select word & move to Claude"]]
+                 [:i [:km "New X post"]]
                  [:o [:km "open: Safari Technology Preview"]]
                  [:n [:open "raycast://extensions/loris/safari/search-history"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
