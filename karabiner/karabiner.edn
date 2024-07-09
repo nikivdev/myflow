@@ -782,9 +782,10 @@
                   [:spacebar [:km "Screenshot into ChatGPT and explain"]]]}
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
+                 [:w [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
                  [:e [:km "Go to test macro"]]
+                 [:c [:km "Commit repo from file path in clipboard"]]
                  [:f [:km "Test"]]
-                 [:w [:km "New global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
                  [:g [:km "edit: GitHub Bio"]]
                  [:u [:km "cursor: kuskus"]]
                  [:i [:km "cursor: rust"]]
