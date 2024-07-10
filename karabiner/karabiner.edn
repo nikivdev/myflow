@@ -675,7 +675,7 @@
                  [:l :!Creturn_or_enter]
                  [:j :!TSspacebar] ; Things Quick Entry (with context)
                  [:semicolon [:km "x"]]
-                 ;[:semicolon :!TOCspacebar] ; Things Quick Entry (without context)
+                 [:quote :!TOCspacebar] ; Things Quick Entry (without context)
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]
                  [:m :!Sreturn_or_enter]
