@@ -12,7 +12,7 @@
              :open-g "open -g \"%s\""
              :shell "%s"
              }
- :simlayers { ; test2
+ :simlayers {
              :2-mode {:key :2}
              :3-mode {:key :3}
              :4-mode {:key :4}
