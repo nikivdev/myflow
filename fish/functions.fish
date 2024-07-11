@@ -661,50 +661,36 @@ function checkGitRepoIsUsingSsh
 end
 
 function moveGitRepoToUseSsh
-    # Check if we're in a Git repository
     if not git rev-parse --is-inside-work-tree >/dev/null 2>&1
-        echo "Error: Not in a Git repository. Please run this command from within a Git repository."
+        echo "Error: Not in a Git repository."
         return 1
     end
 
-    # Get the current remote URL
     set current_url (git remote get-url origin 2>/dev/null)
     if test $status -ne 0
-        echo "Error: No remote named 'origin' found in this repository."
+        echo "Error: No remote named 'origin' found."
         return 1
     end
 
-    # Clean up and normalize the URL
-    set cleaned_url (echo $current_url | sed -E 's/(git@github\.com:)+/git@github.com:/' | sed -E 's/\.git(\.git)+/.git/')
+    # Extract username and repo name, handling both HTTPS and SSH URLs
+    set repo_path (echo $current_url | sed -E 's/.*github\.com[:/]([^/]+\/[^/]+)(\.git)?/\1/')
 
-    # Check if it's already a clean SSH URL
-    if string match -q 'git@github.com:*/*.git' -- $cleaned_url
-        echo "Remote URL is already using SSH: $cleaned_url"
-        set new_url $cleaned_url
-    else
-        # Extract the repository path
-        set repo_path (echo $cleaned_url | sed -E 's/.*github\.com[:/](.*)\.git/\1/')
-
-        # Set the new SSH URL
-        set new_url "git@github.com:$repo_path.git"
-    end
+    # Construct new SSH URL
+    set new_url "git@github.com:$repo_path.git"
 
     # Update the remote URL
     git remote set-url origin $new_url
-
     echo "Remote URL updated to use SSH: $new_url"
 
     # Configure Git to use SSH for signing
     git config user.signingkey ~/.ssh/id_rsa.pub
     git config commit.gpgsign true
     git config gpg.format ssh
-
     echo "Git configured to use SSH for commit signing"
 
     # Verify the changes
     echo "Current remote URL:"
     git remote -v
-
     echo "Signing configuration:"
     git config --get user.signingkey
     git config --get commit.gpgsign
@@ -737,3 +723,47 @@ function fixGitRemote
            end
        end
    end
+
+function fix_git_remote_url
+    # Check if we're in a Git repository
+    if not git rev-parse --is-inside-work-tree >/dev/null 2>&1
+        echo "Error: Not in a Git repository. Please run this command from within a Git repository."
+        return 1
+    end
+
+    # Get the current remote URL
+    set current_url (git remote get-url origin 2>/dev/null)
+    if test $status -ne 0
+        echo "Error: No remote named 'origin' found in this repository."
+        return 1
+    end
+
+    # Extract the username and repository name
+    set repo_info (echo $current_url | sed -E 's/.*github\.com[:/]([^/]+)\/([^/.]+)(\.git)?/\1 \2/')
+    set username (echo $repo_info | cut -d ' ' -f 1)
+    set repo_name (echo $repo_info | cut -d ' ' -f 2)
+
+    # Construct the new SSH URL
+    set new_url "git@github.com:$username/$repo_name.git"
+
+    # Update the remote URL
+    git remote set-url origin $new_url
+    echo "Remote URL updated to use SSH: $new_url"
+
+    # Verify the changes
+    echo "Current remote URL:"
+    git remote -v
+
+    # Optionally configure Git to use SSH for signing
+    read -l -P "Do you want to configure Git to use SSH for commit signing? (y/n) " configure_ssh
+    if test "$configure_ssh" = "y"
+        git config user.signingkey ~/.ssh/id_rsa.pub
+        git config commit.gpgsign true
+        git config gpg.format ssh
+        echo "Git configured to use SSH for commit signing"
+        echo "Signing configuration:"
+        git config --get user.signingkey
+        git config --get commit.gpgsign
+        git config --get gpg.format
+    end
+end
