@@ -655,3 +655,85 @@ function gitAll
     # upadate local branches
     git pull --all
 end
+
+function checkGitRepoIsUsingSsh
+    git remote -v | grep -q 'git@\|ssh://' && echo "Using SSH" || echo "Not using SSH"
+end
+
+function moveGitRepoToUseSsh
+    # Check if we're in a Git repository
+    if not git rev-parse --is-inside-work-tree >/dev/null 2>&1
+        echo "Error: Not in a Git repository. Please run this command from within a Git repository."
+        return 1
+    end
+
+    # Get the current remote URL
+    set current_url (git remote get-url origin 2>/dev/null)
+    if test $status -ne 0
+        echo "Error: No remote named 'origin' found in this repository."
+        return 1
+    end
+
+    # Clean up and normalize the URL
+    set cleaned_url (echo $current_url | sed -E 's/(git@github\.com:)+/git@github.com:/' | sed -E 's/\.git(\.git)+/.git/')
+
+    # Check if it's already a clean SSH URL
+    if string match -q 'git@github.com:*/*.git' -- $cleaned_url
+        echo "Remote URL is already using SSH: $cleaned_url"
+        set new_url $cleaned_url
+    else
+        # Extract the repository path
+        set repo_path (echo $cleaned_url | sed -E 's/.*github\.com[:/](.*)\.git/\1/')
+
+        # Set the new SSH URL
+        set new_url "git@github.com:$repo_path.git"
+    end
+
+    # Update the remote URL
+    git remote set-url origin $new_url
+
+    echo "Remote URL updated to use SSH: $new_url"
+
+    # Configure Git to use SSH for signing
+    git config user.signingkey ~/.ssh/id_rsa.pub
+    git config commit.gpgsign true
+    git config gpg.format ssh
+
+    echo "Git configured to use SSH for commit signing"
+
+    # Verify the changes
+    echo "Current remote URL:"
+    git remote -v
+
+    echo "Signing configuration:"
+    git config --get user.signingkey
+    git config --get commit.gpgsign
+    git config --get gpg.format
+end
+
+function fixGitRemote
+       # Get the current remote URL
+       set current_url (git remote get-url origin)
+
+       # Check if the URL is already in the correct SSH format
+       if string match -q 'git@github.com:*' $current_url
+           echo "Remote URL is already in the correct SSH format: $current_url"
+       else
+           # Extract the username and repo name
+           set repo_info (string match -r 'github\.com[:/](.+)/(.+)(?:\.git)?' $current_url)
+           set username $repo_info[2]
+           set repo_name $repo_info[3]
+
+           if test -n "$username" -a -n "$repo_name"
+               # Construct the new SSH URL
+               set new_url "git@github.com:$username/$repo_name.git"
+
+               # Update the remote URL
+               git remote set-url origin $new_url
+               echo "Remote URL updated to: $new_url"
+           else
+               echo "Unable to parse the current URL. Please manually set the correct SSH URL."
+               echo "Use: git remote set-url origin git@github.com:username/repo.git"
+           end
+       end
+   end
