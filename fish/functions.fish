@@ -724,7 +724,7 @@ function fixGitRemote
        end
    end
 
-function fix_git_remote_url
+function fixGitRemoteUrl
     # Check if we're in a Git repository
     if not git rev-parse --is-inside-work-tree >/dev/null 2>&1
         echo "Error: Not in a Git repository. Please run this command from within a Git repository."
