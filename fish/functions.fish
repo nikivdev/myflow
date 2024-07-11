@@ -753,17 +753,4 @@ function fixGitRemoteUrl
     # Verify the changes
     echo "Current remote URL:"
     git remote -v
-
-    # Optionally configure Git to use SSH for signing
-    read -l -P "Do you want to configure Git to use SSH for commit signing? (y/n) " configure_ssh
-    if test "$configure_ssh" = "y"
-        git config user.signingkey ~/.ssh/id_rsa.pub
-        git config commit.gpgsign true
-        git config gpg.format ssh
-        echo "Git configured to use SSH for commit signing"
-        echo "Signing configuration:"
-        git config --get user.signingkey
-        git config --get commit.gpgsign
-        git config --get gpg.format
-    end
 end
