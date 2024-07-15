@@ -632,6 +632,17 @@ function :b
     bun web
 end
 
+function find.GitFolders
+    for git_folder in (find . -type d -name ".git" -print)
+        echo "Git repository found: $git_folder"
+        echo "Remote URLs:"
+        git --git-dir=$git_folder remote -v
+        echo "Current branch:"
+        git --git-dir=$git_folder --work-tree=(dirname $git_folder) branch --show-current
+        echo ""
+    end
+end
+
 function find.EnvFiles
     for env_file in (find . -type d -name node_modules -prune -o -type f -name ".env" -print)
         echo $env_file
@@ -754,3 +765,8 @@ function fixGitRemoteUrl
     echo "Current remote URL:"
     git remote -v
 end
+
+# `git remote set-url origin git@github.com:learn-anything/learn-anything.xyz.git`
+# function gitSetUrlOrigin
+# TODO:
+# end
