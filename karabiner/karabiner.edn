@@ -674,8 +674,8 @@
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
                  [:j :!TSspacebar] ; Things Quick Entry (with context)
-                 [:semicolon [:km "Things (top task)"]]
-                 ;[:semicolon [:km "x"]]
+                 ;[:semicolon [:km "Things (top task)"]]
+                 [:semicolon [:km "x"]]
                  [:quote :!TOCspacebar] ; Things Quick Entry (without context)
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]
@@ -1009,9 +1009,9 @@
                  [:6 :!O6]
                  [:e [:km "Search X"]]
                  [:f [:alfred "search repos" "me.lachlan.githubjump"]]
-                 [:a [:alfred "search shares" "nikivi.ask.create.share"]]
+                 ;[:a [:alfred "search shares" "nikivi.ask.create.share"]]
                  [:s [:alfred "search websites" "nikivi.web.searches"]]
-                 [:q [:alfred "search github" "nikivi.search.the.web"]]
+                 [:a [:alfred "search github" "nikiv.search.the.web"]]
                  [:r [:alfred "search reddit" "nikivi.search.the.web"]]
                  [:d [:alfred "search stack overflow" "net.deanishe.alfred-stackoverflow"]]
                  [:h [:alfred "search hn" "nikivi.search.the.web"]]

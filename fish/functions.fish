@@ -767,6 +767,26 @@ function fixGitRemoteUrl
 end
 
 # `git remote set-url origin git@github.com:learn-anything/learn-anything.xyz.git`
-# function gitSetUrlOrigin
-# TODO:
-# end
+function gitSetUrlOrigin
+    if test (count $argv) -lt 1
+        echo "Usage: gitSetUrlOrigin <new-origin-url>"
+        return 1
+    end
+
+    set -l new_origin_url $argv[1]
+
+    # Check if the 'origin' remote exists
+    if git remote show | grep -q "^origin\$"
+        # Remove the existing 'origin' remote
+        git remote remove origin
+        echo "Removed existing 'origin' remote"
+    end
+
+    # Add the new 'origin' remote
+    git remote add origin $new_origin_url
+    echo "Added new 'origin' remote: $new_origin_url"
+
+    # Verify the changes
+    echo "Current remotes:"
+    git remote -v
+end
