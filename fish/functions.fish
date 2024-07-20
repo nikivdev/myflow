@@ -790,3 +790,27 @@ function gitSetUrlOrigin
     echo "Current remotes:"
     git remote -v
 end
+
+
+function lt
+    if test (count $argv) -eq 1 && string match -qr '^[0-9]+$' -- $argv[1]
+        # If exactly one argument is provided and it's a number, use it as a port
+        command lt --port $argv[1] | tee /dev/tty | pbcopy
+    else
+        # Otherwise, pass all arguments to lt command as-is
+        command lt $argv | tee /dev/tty | pbcopy
+    end
+end
+
+# TODO: attempt at also copying result url into clipboard
+# function lt
+#     if test (count $argv) -eq 1 && string match -qr '^[0-9]+$' -- $argv[1]
+#         # If exactly one argument is provided and it's a number, use it as a port
+#         set output (command lt --port $argv[1])
+#     else
+#         # Otherwise, pass all arguments to lt command as-is
+#         set output (command lt $argv)
+#     end
+#     # Display the output and copy to clipboard
+#     echo $output | tee /dev/tty | pbcopy
+# end
