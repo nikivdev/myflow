@@ -13,8 +13,8 @@ function af
 end
 
 function o
-    # ollama run llama3:8b-text-fp16 "$argv"
-    ls | ask "$argv"
+    ls | ollama run llama3.1:8b
+    # ls | ask "$argv"
 end
 
 function oo
