@@ -442,13 +442,48 @@ function forceRemoteGitBranchToBeThisCommit
     git push origin $commit_hash:$branch_name --force
 end
 
-# p - pnpm i
-# p <dep> - pnpm i <dep>
+# # p - pnpm i
+# # p <dep> - pnpm i <dep>
+# function p
+#     if not set -q argv[1]
+#         pnpm i
+#     else
+#         pnpm i $argv
+#     end
+# end
+
+# p - pip3
+# p <dep> - pip3 install <dep>
+# function p
+#     if not set -q argv[1]
+#         pip3
+#     else
+#         poetry run python $argv
+#         watchexec --no-vcs-ignore --restart --exts swift "tput reset && swift run.swift" --project-origin . 2>&1 | tee ~/log/cmd.log
+#     end
+# end
+
 function p
+    if test (count $argv) -eq 0
+        echo "Usage: pw <python_script.py>"
+        return 1
+    end
+
+    set script_name $argv[1]
+    set log_file ~/log/cmd.log
+
+    echo "" > $log_file  # Clear the log file
+
+    watchexec --no-vcs-ignore --restart --exts py \
+        "tput reset && poetry run python $script_name $argv[2..-1]" \
+        --project-origin . 2>&1 | tee $log_file
+end
+
+function pi
     if not set -q argv[1]
-        pnpm i
+        pip3
     else
-        pnpm i $argv
+        pip3 install $argv
     end
 end
 

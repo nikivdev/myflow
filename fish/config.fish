@@ -103,3 +103,14 @@ set PATH $PATH /Users/nikiv/.local/bin
 
 # The next line updates PATH for the Google Cloud SDK.
 # if [ -f '/Users/nikiv/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/nikiv/Downloads/google-cloud-sdk/path.fish.inc'; end
+
+# TODO: too slow with it https://python-poetry.org/docs/
+# poetry completions fish > ~/.config/fish/completions/poetry.fish
+
+# Setting PATH for Python 3.12
+# The original version is saved in /Users/nikiv/.config/fish/config.fish.pysave
+set -x PATH "/Library/Frameworks/Python.framework/Versions/3.12/bin" "$PATH"
+
+# activate global flox
+# TODO: can specify with `flox -dir`
+eval $(flox activate -d $HOME)
