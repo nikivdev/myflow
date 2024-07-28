@@ -1,8 +1,3 @@
-# TODO: what is this?
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-
 # path
 fish_add_path /opt/homebrew/bin
 fish_add_path ~/.bun/bin/
@@ -112,8 +107,7 @@ set PATH $PATH /Users/nikiv/.local/bin
 set -x PATH "/Library/Frameworks/Python.framework/Versions/3.12/bin" "$PATH"
 
 # activate global flox
-# TODO: can specify with `flox -dir`
-# TODO: slows down fish startup, on warp only (it seems)
-# eval $(flox activate -d $HOME)
-# eval $(flox --debug -vv activate -d $HOME)
-# eval $(flox activate -d $HOME/src/config/flox-private)
+# TODO: some startup issues, https://floxcommunitygroup.slack.com/archives/C06NYALM8P8/p1722188670770679
+if set -q SHLVL
+  eval $(flox activate -d $HOME)
+end
