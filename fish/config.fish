@@ -113,5 +113,6 @@ set -x PATH "/Library/Frameworks/Python.framework/Versions/3.12/bin" "$PATH"
 
 # activate global flox
 # TODO: can specify with `flox -dir`
+# eval $(flox --debug -vv activate -d $HOME)
 eval $(flox activate -d $HOME)
 # eval $(flox activate -d $HOME/src/config/flox-private)

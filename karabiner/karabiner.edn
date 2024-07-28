@@ -505,7 +505,7 @@
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:n :!CTOS9] ; search npm packages
                  [:z :!TCspacebar] ; macOS Emoji Picker
-                 [:j [:km "open: PostHog"]]
+                 ;[:j [:km "open: PostHog"]]
                  [:tab [:km "open: AWS"]]
                  [:escape [:km "open: Google Cloud"]]
                  [:grave_accent_and_tilde [:km "open: Modal"]]
@@ -889,8 +889,8 @@
                  [:k [:km "edit: Rust"]]
                  [:l [:km "edit: Solid"]]
                  [:semicolon [:km "edit: Fish functions"]]
-                 [:period [:km "edit: Fish alias"]]
-                 [:comma [:km "edit: Fish config"]]
+                 [:period [:km "edit: Fish config"]]
+                 [:comma [:km "edit: Fish alias"]]
                  ;[:slash [:km "edit: KusKus todo"]]
                  ;[:comma [:km "edit: Config todo"]]
                  ;[:u [:km "run: Rust"]]
