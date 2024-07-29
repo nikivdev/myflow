@@ -17,7 +17,6 @@ alias :ts="fish -c 'cd ~/src/ts; bun run try'"
 # other
 alias :id="bun i -d" # dev dep install
 # alias :id="pnpm add -d" # dev dep install
-alias a="eza" # list files
 alias aa="eza -la" # list files (with hidden)
 alias cwd='pwd | pbcopy'
 alias v="mv" # move files/folders or rename
@@ -58,11 +57,6 @@ function envsource
         set -gx $item[1] $item[2]
         echo "Exported key $item[1]"
     end
-end
-
-# af <cmd> - view definition of <cmd>
-function af
-    type $argv
 end
 
 function o
@@ -126,16 +120,6 @@ end
 #        code-insiders $argv
 #    end
 #end
-
-# TODO: make completions for `: ` so it gets the scripts found in package.json
-# below is maybe hacky way to do it but it has to by dynamic
-function :
-    if not set -q argv[1]
-        bun dev
-    else
-        bun $argv
-    end
-end
 
 # function generate_completions_for_colon_function
 #     for script in (jq -r '.scripts | keys[]' package.json)
