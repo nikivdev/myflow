@@ -849,3 +849,11 @@ end
 #     # Display the output and copy to clipboard
 #     echo $output | tee /dev/tty | pbcopy
 # end
+
+# function timeIt
+#     set -l start_time (date +%s%N)
+#     source $argv[1]
+#     set -l end_time (date +%s%N)
+#     set -l duration (math "($end_time - $start_time) / 1000000")
+#     echo "Sourcing $argv[1] took $duration ms"
+# end

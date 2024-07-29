@@ -1,6 +1,4 @@
 # cd places
-alias d="z"
-alias da="cd ~/src"
 alias dg="cd ~/src/config"
 alias de="cd ~/Desktop"
 alias ds="cd ~/try"
