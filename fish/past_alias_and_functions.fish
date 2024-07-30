@@ -9,7 +9,6 @@ alias dwi="cd ~/data/wiki"
 alias d.="cd ~/.scripts"
 alias db="cd ~/bin"
 alias dw="cd ~/Downloads"
-alias do="cd ~/src/org"
 # rust
 # alias rbnowarning="RUSTFLAGS="-A warnings" cargo build"
 # run code fast

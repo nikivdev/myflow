@@ -2,6 +2,7 @@ alias d="z"
 alias da="cd ~/src"
 alias a="eza" # list files
 alias af="type" # <cmd> - view definition of <cmd>
+alias do="cd ~/src/org"
 
 # _functions
 # TODO: make completions for `: ` so it gets the scripts found in package.json
