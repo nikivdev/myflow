@@ -7,6 +7,7 @@ source ~/src/config/fish/alias_and_functions.fish
 
 # direnv (cd into folder, will get the `.env` etc.)
 direnv hook fish | source
+set -x DIRENV_LOG_FORMAT "" # hide direnv unloading messages
 
 # activates global flox env TODO: disabled as it slows down shell by quite a bit
 # if set -q SHLVL
