@@ -260,7 +260,7 @@
                  [:v [:km "open: Yaak"]]
                  [:g [:km "open: Pathfinder"]]
                  ;[:t [:km "open: Color Picker"]]
-                 ;[:i [:km "open: GoLand"]] ; TODO: move to IntelliJ
+                 [:i [:km "open: GoLand"]] ; TODO: move to IntelliJ
                  ;[:i [:km "open: Yaak"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
@@ -275,9 +275,10 @@
                  [:c [:km "open: Spotify"]]
                  [:b [:km "open: BetterTouchTool"]]
                  ;[:n [:km "Open Xcode personal"]]
-                 [:n [:km "open: JuxtaCode"]]
+                 [:n [:km "open: Midjourney"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: Proxyman"]]
+                 [:period [:km "open: JuxtaCode"]]
                  [:slash [:km "open: Instruments"]]
                  ;[:n :!OC9] ; open 2nd mac space with Xcode + Terminal
                  ;[:n [:km "open: PyCharm"]]
@@ -506,6 +507,7 @@
                  [:n :!CTOS9] ; search npm packages
                  [:z :!TCspacebar] ; macOS Emoji Picker
                  ;[:j [:km "open: PostHog"]]
+                 [:j [:km "open: Honeycomb"]]
                  [:tab [:km "open: AWS"]]
                  [:escape [:km "open: Google Cloud"]]
                  [:grave_accent_and_tilde [:km "open: Modal"]]
@@ -658,7 +660,6 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:1 [:km "View Sip"]]
-                 [:escape [:km "open: Midjourney"]]
                  [:q [:km "open: Color Picker"]]
                  [:w [:km "open: Figma"]]
                  [:s [:km "open: Simulator"]]
@@ -676,8 +677,8 @@
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
                  [:j :!TSspacebar] ; Things Quick Entry (with context)
-                 ;[:semicolon [:km "Things (top task)"]]
-                 [:semicolon [:km "x"]]
+                 [:semicolon [:km "Things (top task)"]]
+                 ;[:semicolon [:km "x"]]
                  [:quote :!TOCspacebar] ; Things Quick Entry (without context)
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]

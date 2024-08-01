@@ -20,7 +20,6 @@ alias aa="eza -la" # list files (with hidden)
 alias cwd='pwd | pbcopy'
 alias v="mv" # move files/folders or rename
 alias sf="source ~/.config/fish/config.fish" # source fish config
-alias rr="rm -rf"
 alias md="mkdir"
 alias wgi="watchexec --restart --exts go \"tput reset && go install .\""
 alias wg="watchexec --restart --exts go \"tput reset && go run .\""
@@ -43,10 +42,8 @@ alias nv="sudo nvim"
 # alias .="open ."
 alias o="ollama"
 alias z="zig"
-alias gl="git pull"
 alias python="python3"
 alias s="swift"
-alias wr="cursor readme.md"
 alias dr="cd ~/private"
 
 # from https://gist.github.com/nikoheikkila/dd4357a178c8679411566ba2ca280fcc
@@ -148,14 +145,6 @@ end
 #         zed $argv
 #     end
 # end
-
-function w
-    if not set -q argv[1]
-        cursor .
-    else
-        cursor $argv
-    end
-end
 
 # function w
 #     if not set -q argv[1]
@@ -526,13 +515,6 @@ end
 # R <flags or things to pass to CLI>
 function R
     cargo watch -q -x "run -q -- $argv"
-end
-
-# ga. - commit all with `.` as message
-function g.
-    git add .
-    git commit -m "."
-    git push
 end
 
 function gitCheckoutRemote
