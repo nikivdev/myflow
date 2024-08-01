@@ -39,3 +39,7 @@ function g.
     git commit -m "."
     git push
 end
+
+function prettierAll
+    npx prettier --write "**/*.{js,json,css,tsx,ts}"
+end

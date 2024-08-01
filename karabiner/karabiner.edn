@@ -64,7 +64,7 @@
                  ;[:escape [:km "get last error from ~/log/cmd.log + current file as context and paste into claude to fix"]]
                  ;[:escape [:km "get last error from ~/log/cmd.log + current file as context and paste into chatgpt to fix"]]
                  [:escape [:km "lisa: autocomplete"]]
-                 [:left_command [:km "paste: explain"]]
+                 [:left_command [:km "enter: explain"]]
                  [:grave_accent_and_tilde [:km "paste: explain (and return)"]]
                  [:q :!Sq]
                  [:w :!Sw]
@@ -255,7 +255,7 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:e [:km "open: Linear"]]
-                 [:t [:km "open: JuxtaText"]]
+                 ;[:t [:km "open: JuxtaText"]]
                  [:a [:km "open: Notion"]]
                  [:v [:km "open: Yaak"]]
                  [:g [:km "open: Pathfinder"]]
@@ -266,6 +266,7 @@
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:r [:km "open: 1Password"]]
+                 [:t [:km "open: Passwords"]]
                  [:d [:km "open: Val Town"]]
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
@@ -678,7 +679,6 @@
                  [:l :!Creturn_or_enter]
                  [:j :!TSspacebar] ; Things Quick Entry (with context)
                  [:semicolon [:km "Things (top task)"]]
-                 ;[:semicolon [:km "x"]]
                  [:quote :!TOCspacebar] ; Things Quick Entry (without context)
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]

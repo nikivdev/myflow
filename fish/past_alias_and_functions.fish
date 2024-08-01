@@ -669,10 +669,6 @@ function :r
     env CARGO_TERM_COLOR=always cargo watch -q -- sh -c "tput reset && cargo run -q" 2>&1 | tee ~/log/cmd.log
 end
 
-function prettierAll
-    npx prettier --write "**/*.{js,json,css,tsx,ts}"
-end
-
 function deleteAllGitFoldersRecursivelyExceptRootOne
     find . -type d -name ".git" -not -path "./.git" -exec rm -rf {} +
 end

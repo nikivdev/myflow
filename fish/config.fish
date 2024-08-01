@@ -4,6 +4,7 @@ fish_add_path ~/.bun/bin
 fish_add_path ~/.cargo/bin
 
 source ~/src/config/fish/alias_and_functions.fish
+source ~/src/config/fish/private.fish
 
 # direnv (cd into folder, will get the `.env` etc.)
 direnv hook fish | source
