@@ -2,22 +2,28 @@
 
 > Apps/CLIs/configs I use on macOS/iOS. Fish, Karabiner, Cursor..
 
-![](images/mac-night-feb.png)
+![](https://raw.githubusercontent.com/media/config/main/mac-dark-aug.png)
 
 > Dark appearance. All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
 
-![](images/mac-day-feb.png)
+![](https://raw.githubusercontent.com/media/config/main/mac-light-aug.png)
 
 > Light appearance. Use light themes when outside or when there is glare from the sun as it makes text more readable.
 
-<a align="center" href="https://github.com/nikitavoloboev/my-mac">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/1-ios.jpg"></a>
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/media/config/main/1-ios.png"></a>
 
-<a align="center" href="https://github.com/nikitavoloboev/my-mac">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/2-ios.jpg"></a>
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/media/config/main/2-ios.png"></a>
 
-<a align="center" href="https://github.com/nikitavoloboev/my-mac">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/3-ios.jpg"></a>
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/media/config/main/3-ios.png"></a>
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/media/config/main/4-ios.png"></a>
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/media/config/main/5-ios.png"></a>
 
 > iOS screens. All described in detail below.
 
@@ -194,11 +200,6 @@ Apps are listed in order they appear in each of the screens.
 - TikTok to see videos
 - Cosmos to see new posts
 
-2 pages is often enough to have nearly all apps I need within super fast access. However I do have last third page of 'other' apps.
-
-<a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/4-ios.jpg"></a>
-
 <!-- TODO: add other apps -->
 <!-- - [Wipr](https://itunes.apple.com/us/app/wipr/id1030595027) - Safari ad blocker -->
 
@@ -213,7 +214,7 @@ I use 3 widgets in lock screen.
 I keep common shortcut actions as widgets on the side (just need to scroll left to access):
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/shortcuts-ios.jpg"></a>
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/6-ios.png"></a>
 
 ## iOS Shortcuts
 
@@ -239,7 +240,7 @@ I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I
 I use `Test` shortcut to prototype new actions/ideas quickly. I then duplicate the working prototype & give it appropriate name. I use the same prototyping idea with [KM macros](https://wiki.nikiv.dev/macOS/apps/keyboard-maestro/km-macros).
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/test-shortcut.jpg"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/test-shortcut.jpg"></a>
 
 And I mapped the action button to run [Quick Note](https://www.icloud.com/shortcuts/526e2896d4df4b06b33ccab37f4f6eee) shortcut.
 
@@ -248,7 +249,7 @@ And I mapped the action button to run [Quick Note](https://www.icloud.com/shortc
 Here is how my control center looks:
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/ios-control-center-feb.jpg"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/7-ios.png"></a>
 
 <!-- TODO: uncomment/udpate when I get iPad again and find use for it -->
 <!-- ## WatchOS
