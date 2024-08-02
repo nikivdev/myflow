@@ -249,7 +249,7 @@ And I mapped the action button to run [Quick Note](https://www.icloud.com/shortc
 Here is how my control center looks:
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/config/main/images/7-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/7-ios.png"></a>
 
 <!-- TODO: uncomment/udpate when I get iPad again and find use for it -->
 <!-- ## WatchOS
