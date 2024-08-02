@@ -11,19 +11,19 @@
 > Light appearance. Use light themes when outside or when there is glare from the sun as it makes text more readable.
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/media/config/main/1-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/1-ios.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/media/config/main/2-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/2-ios.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/media/config/main/3-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/3-ios.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/media/config/main/4-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/4-ios.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/media/config/main/5-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/5-ios.png"></a>
 
 > iOS screens. All described in detail below.
 
