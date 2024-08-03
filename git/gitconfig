@@ -1,8 +1,8 @@
 [user]
-	name = Nikita Voloboev
-	email = nikita.voloboev@gmail.com
+	name = Nikita
+	email = github@nikiv.dev
 [alias]
-    addu = add -u .
+	addu = add -u .
 	unstage = reset HEAD
 	untracked = status -u .
 	untracked-at = status -u
