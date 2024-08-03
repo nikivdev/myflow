@@ -46,3 +46,22 @@ end
 function prettierAll
     npx prettier --write "**/*.{js,json,css,tsx,ts}"
 end
+
+# TODO: might be buggy
+function gitSetSshOrigin
+    set -l repo_url $argv[1]
+
+    # Extract username and repo name from the URL
+    set -l repo_path (echo $repo_url | sed -E 's/.*github\.com[:/]([^/]+\/[^/]+)(\.git)?$/\1/')
+
+    # Construct the SSH URL
+    set -l ssh_url "git@github.com:$repo_path.git"
+
+    # Remove existing origin
+    git remote remove origin
+
+    # Add new origin with SSH URL
+    git remote add origin $ssh_url
+
+    echo "Remote origin set to: $ssh_url"
+end
