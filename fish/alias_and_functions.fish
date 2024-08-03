@@ -6,6 +6,9 @@ alias do="cd ~/src/org"
 alias gl="git pull"
 alias rr="rm -rf"
 alias wr="cursor readme.md"
+alias df="cd ~/src/config"
+alias dw="cd ~/src/wiki"
+alias aa="eza -la" # list files (with hidden)
 
 # _functions
 # TODO: make completions for `: ` so it gets the scripts found in package.json

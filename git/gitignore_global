@@ -1,341 +1,427 @@
 # https://gist.github.com/octocat/9257657
 
 # Private test folders (useful for testing code that won't be tracked to keep git diff clean)
-*testp
+
+\*testp
 
 # Compiled source
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+
+_.com
+_.class
+_.dll
+_.exe
+_.o
+_.so
 
 # Node
+
 node_modules
 
 # Packages
+
 # it's better to unpack these files and commit the raw source
+
 # git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+
+_.7z
+_.dmg
+_.gz
+_.iso
+_.jar
+_.rar
+_.tar
+_.zip
 
 # Logs and databases
-*.log
-#*.sql
-*.sqlite
+
+_.log #_.sql
+\*.sqlite
 
 # macOS
-*.DS_Store
+
+_.DS*Store
 .DS_Store
 .DS_Store?
-._*
+.*_
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
-*.Ulysses
+\*.Ulysses
 .Ulysses-favorites.plist
 .Ulysses-Group.plist
 .UlyssesRoot
 
-### https://github.com/github/gitignore/blob/master/Global/Vim.gitignore ###
+### https://github.com/github/gitignore/blob/master/Global/Vim.gitignore
+
 # Swap
-[._]*.s[a-v][a-z]
-[._]*.sw[a-p]
+
+[._]_.s[a-v][a-z]
+[._]_.sw[a-p]
 [._]s[a-v][a-z]
 [._]sw[a-p]
 
 # Session
+
 Session.vim
 
 # Temporary
+
 .netrwhist
-*~
+\*~
+
 # Auto-generated tag files
+
 tags
 
-### https://github.com/github/gitignore/blob/master/Global/Linux.gitignore ###
-*~
+### https://github.com/github/gitignore/blob/master/Global/Linux.gitignore
+
+\*~
 
 # temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
+
+.fuse_hidden\*
 
 # KDE directory preferences
+
 .directory
 
 # Linux trash folder which might appear on any partition or disk
-.Trash-*
+
+.Trash-\*
 
 # .nfs files are created when an open file is removed but is still being accessed
-.nfs*
 
-### https://github.com/github/gitignore/blob/master/Go.gitignore ###
+.nfs\*
+
+### https://github.com/github/gitignore/blob/master/Go.gitignore
+
 # Binaries for programs and plugins
-*.exe
-*.dll
-*.so
-*.dylib
+
+_.exe
+_.dll
+_.so
+_.dylib
 
 # Test binary, build with `go test -c`
-*.test
+
+\*.test
 
 # Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+
+\*.out
 
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
+
 .glide/
 
-### https://github.com/github/gitignore/blob/master/Java.gitignore ###
+### https://github.com/github/gitignore/blob/master/Java.gitignore
+
 # Compiled class file
-*.class
+
+\*.class
 
 # Log file
-*.log
+
+\*.log
 
 # BlueJ files
-*.ctxt
+
+\*.ctxt
 
 # Mobile Tools for Java (J2ME)
+
 .mtj.tmp/
 
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# Package Files
+
+_.jar
+_.war
+_.ear
+_.zip
+_.tar.gz
+_.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
 
-### https://raw.githubusercontent.com/github/gitignore/master/TeX.gitignore ###
+hs_err_pid\*
+
+### https://raw.githubusercontent.com/github/gitignore/master/TeX.gitignore
+
 ## Core latex/pdflatex auxiliary files:
-*.aux
-*.lof
-*.log
-*.lot
-*.fls
-*.out
-*.toc
-*.fmt
-*.fot
-*.cb
-*.cb2
+
+_.aux
+_.lof
+_.log
+_.lot
+_.fls
+_.out
+_.toc
+_.fmt
+_.fot
+_.cb
+\*.cb2
 
 ## Intermediate documents:
-*.dvi
-*-converted-to.*
+
+_.dvi
+_-converted-to.\*
+
 # these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
+
+# \*.ps
+
+# \*.eps
+
+# \*.pdf
 
 ## Generated if empty string is given at "Please type another file name for output:"
+
 .pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
-*.bbl
-*.bcf
-*.blg
-*-blx.aux
-*-blx.bib
-*.run.xml
+
+_.bbl
+_.bcf
+_.blg
+_-blx.aux
+_-blx.bib
+_.run.xml
 
 ## Build tool auxiliary files:
-*.fdb_latexmk
-*.synctex
-*.synctex(busy)
-*.synctex.gz
-*.synctex.gz(busy)
-*.pdfsync
+
+_.fdb_latexmk
+_.synctex
+_.synctex(busy)
+_.synctex.gz
+_.synctex.gz(busy)
+_.pdfsync
 
 ## Auxiliary and intermediate files from other packages:
+
 # algorithms
-*.alg
-*.loa
+
+_.alg
+_.loa
 
 # achemso
-acs-*.bib
+
+acs-\*.bib
 
 # amsthm
-*.thm
+
+\*.thm
 
 # beamer
-*.nav
-*.pre
-*.snm
-*.vrb
+
+_.nav
+_.pre
+_.snm
+_.vrb
 
 # changes
-*.soc
+
+\*.soc
 
 # cprotect
-*.cpt
+
+\*.cpt
 
 # elsarticle (documentclass of Elsevier journals)
-*.spl
+
+\*.spl
 
 # endnotes
-*.ent
+
+\*.ent
 
 # fixme
-*.lox
+
+\*.lox
 
 # feynmf/feynmp
-*.mf
-*.mp
-*.t[1-9]
-*.t[1-9][0-9]
-*.tfm
+
+_.mf
+_.mp
+_.t[1-9]
+_.t[1-9][0-9]
+\*.tfm
 
 #(r)(e)ledmac/(r)(e)ledpar
-*.end
-*.?end
-*.[1-9]
-*.[1-9][0-9]
-*.[1-9][0-9][0-9]
-*.[1-9]R
-*.[1-9][0-9]R
-*.[1-9][0-9][0-9]R
-*.eledsec[1-9]
-*.eledsec[1-9]R
-*.eledsec[1-9][0-9]
-*.eledsec[1-9][0-9]R
-*.eledsec[1-9][0-9][0-9]
-*.eledsec[1-9][0-9][0-9]R
+_.end
+_.?end
+_.[1-9]
+_.[1-9][0-9]
+_.[1-9][0-9][0-9]
+_.[1-9]R
+_.[1-9][0-9]R
+_.[1-9][0-9][0-9]R
+_.eledsec[1-9]
+_.eledsec[1-9]R
+_.eledsec[1-9][0-9]
+_.eledsec[1-9][0-9]R
+_.eledsec[1-9][0-9][0-9]
+_.eledsec[1-9][0-9][0-9]R
 
 # glossaries
-*.acn
-*.acr
-*.glg
-*.glo
-*.gls
-*.glsdefs
+
+_.acn
+_.acr
+_.glg
+_.glo
+_.gls
+_.glsdefs
 
 # gnuplottex
-*-gnuplottex-*
+
+_-gnuplottex-_
 
 # gregoriotex
-*.gaux
-*.gtex
+
+_.gaux
+_.gtex
 
 # hyperref
-*.brf
+
+\*.brf
 
 # knitr
-*-concordance.tex
+
+\*-concordance.tex
+
 # TODO: comment the next line if you want to keep your tikz graphics files
-*.tikz
-*-tikzDictionary
+
+_.tikz
+_-tikzDictionary
 
 # listings
-*.lol
+
+\*.lol
 
 # makeidx
-*.idx
-*.ilg
-*.ind
-*.ist
+
+_.idx
+_.ilg
+_.ind
+_.ist
 
 # minitoc
-*.maf
-*.mlf
-*.mlt
-*.mtc[0-9]*
-*.slf[0-9]*
-*.slt[0-9]*
-*.stc[0-9]*
+
+_.maf
+_.mlf
+_.mlt
+_.mtc[0-9]\*
+_.slf[0-9]_
+_.slt[0-9]_
+_.stc[0-9]_
 
 # minted
-_minted*
-*.pyg
+
+\_minted\*
+\*.pyg
 
 # morewrites
-*.mw
+
+\*.mw
 
 # nomencl
-*.nlo
+
+\*.nlo
 
 # pax
-*.pax
+
+\*.pax
 
 # pdfpcnotes
-*.pdfpc
+
+\*.pdfpc
 
 # sagetex
-*.sagetex.sage
-*.sagetex.py
-*.sagetex.scmd
+
+_.sagetex.sage
+_.sagetex.py
+\*.sagetex.scmd
 
 # scrwfile
-*.wrt
+
+\*.wrt
 
 # sympy
-*.sout
-*.sympy
-sympy-plots-for-*.tex/
+
+_.sout
+_.sympy
+sympy-plots-for-\*.tex/
 
 # pdfcomment
-*.upa
-*.upb
+
+_.upa
+_.upb
 
 # pythontex
-*.pytxcode
-pythontex-files-*/
+
+_.pytxcode
+pythontex-files-_/
 
 # thmtools
-*.loe
+
+\*.loe
 
 # TikZ & PGF
-*.dpth
-*.md5
-*.auxlock
+
+_.dpth
+_.md5
+\*.auxlock
 
 # todonotes
-*.tdo
+
+\*.tdo
 
 # easy-todo
-*.lod
+
+\*.lod
 
 # xindy
-*.xdy
+
+\*.xdy
 
 # xypic precompiled matrices
-*.xyc
+
+\*.xyc
 
 # endfloat
-*.ttt
-*.fff
+
+_.ttt
+_.fff
 
 # Latexian
-TSWLatexianTemp*
+
+TSWLatexianTemp\*
 
 ## Editors:
+
 # WinEdt
-*.bak
-*.sav
+
+_.bak
+_.sav
 
 # Kile
-*.backup
+
+\*.backup
 
 # KBibTeX
-*~[0-9]*
+
+_~[0-9]_
 
 # auto folder when using emacs and auctex
-/auto/*
+
+/auto/\*
 
 # expex forward references with \gathertags
-*-tags.tex
+
+\*-tags.tex
 
 token
 
 .envrc
 .direnv*
+past\_*

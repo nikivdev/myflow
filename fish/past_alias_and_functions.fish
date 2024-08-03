@@ -1,5 +1,4 @@
 # cd places
-alias dg="cd ~/src/config"
 alias de="cd ~/Desktop"
 alias ds="cd ~/try"
 alias dm="cd ~/temp"
@@ -16,7 +15,6 @@ alias :ts="fish -c 'cd ~/src/ts; bun run try'"
 # other
 alias :id="bun i -d" # dev dep install
 # alias :id="pnpm add -d" # dev dep install
-alias aa="eza -la" # list files (with hidden)
 alias cwd='pwd | pbcopy'
 alias v="mv" # move files/folders or rename
 alias sf="source ~/.config/fish/config.fish" # source fish config
