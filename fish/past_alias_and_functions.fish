@@ -616,10 +616,6 @@ function findFolder
     find . -type d -name $argv[1] -prune
 end
 
-function deleteNodeModules
-    find . -type d -name node_modules -prune -print | xargs rm -rf
-end
-
 function revertLastCommitAndPushForce
     git reset --hard HEAD~1
     git push origin HEAD --force

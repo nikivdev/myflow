@@ -65,3 +65,7 @@ function gitSetSshOrigin
 
     echo "Remote origin set to: $ssh_url"
 end
+
+function deleteNodeModules
+    find . -type d -name node_modules -prune -print | xargs rm -rf
+end
