@@ -31,7 +31,6 @@ alias :j="cd ~/src/ts && bun dev"
 alias :t="cd ~/src/python && bun dev"
 alias getLastCommitHash="git log -1 --format=\"%H\""
 # alias pr="pnpm run"
-alias w.="cursor .env"
 # alias pw='pnpm add -w'
 alias gmt='go mod tidy'
 alias findAll.gitInCurrentDir="find . -type d -name .git"
@@ -685,15 +684,6 @@ function find.GitFolders
         echo ""
     end
 end
-
-function find.EnvFiles
-    for env_file in (find . -type d -name node_modules -prune -o -type f -name ".env" -print)
-        echo $env_file
-        cat $env_file
-        echo ""
-    end
-end
-
 
 function printFilesOneLevelDeep
     find . -maxdepth 2 -not -path '*/.*' -print0 | xargs -0 ls -ld

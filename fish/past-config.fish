@@ -29,11 +29,6 @@ __fish_cursor_xterm line
 # https://docs.nativescript.org/setup/macos#setting-up-macos-for-ios
 fish_add_path /opt/homebrew/lib/ruby/gems/2.7.0/bin
 
-set -gx PNPM_HOME /Users/nikiv/Library/pnpm
-if not string match -q -- $PNPM_HOME $PATH
-    set -gx PATH "$PNPM_HOME" $PATH
-end
-
 # useful for node TODO: need?
 ulimit -f unlimited
 set -Ux NODE_OPTIONS "--max-old-space-size=8096"
