@@ -116,3 +116,7 @@ end
 function w.
     cursor .env
 end
+
+function .
+    open .
+end

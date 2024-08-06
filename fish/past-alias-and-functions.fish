@@ -36,7 +36,6 @@ alias gmt='go mod tidy'
 alias findAll.gitInCurrentDir="find . -type d -name .git"
 alias :g="bun install -g"
 alias nv="sudo nvim"
-# alias .="open ."
 alias o="ollama"
 alias z="zig"
 alias python="python3"
