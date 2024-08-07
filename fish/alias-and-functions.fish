@@ -8,6 +8,7 @@ alias rr="rm -rf"
 alias wr="cursor readme.md"
 alias df="cd ~/src/config"
 alias dw="cd ~/src/wiki"
+alias dt="cd ~/tmp"
 alias aa="eza -la" # list files (with hidden)
 
 # _functions
