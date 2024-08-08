@@ -10,6 +10,7 @@ alias df="cd ~/src/config"
 alias dw="cd ~/src/wiki"
 alias dt="cd ~/tmp"
 alias aa="eza -la" # list files (with hidden)
+alias r="ronin"
 
 # _functions
 # TODO: make completions for `: ` so it gets the scripts found in package.json
