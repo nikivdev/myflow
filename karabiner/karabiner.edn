@@ -847,12 +847,13 @@
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
                  [:n [:km "New X post"]]
-                 [:o [:km "open: Multi"]] ; TODO: move to https://tuple.app
+                 [:v [:km "open: Multi"]] ; TODO: move to https://tuple.app
                  [:d [:km "New Spark email"]]
                  ; TODO: bind LA post (nice one)
                  ; TODO: have have way to make emails (that can be mass sent from say Loops or smth else, check that email platform thats oss)
                  [:f [:km "open: Spark"]]
-                 [:v [:km "open: Loops"]]
+                 ;[:o [:km "open: Loops"]]
+                 [:o [:km "open: Cal.com"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:c [:km "Create new contact"]]
                  [:j [:km "open: Discord"]]
@@ -865,6 +866,7 @@
                  [:m [:km "open: X Pro"]]
                  [:i [:km "w: Reddit submit"]]
                  [:period [:km "open: Element"]]
+                 ;[:o [:km "open: Zoom"]]
                  ; TODO: add generic `LA Post` function later maybe or have another bind for `LA Post`
                  ;[:period [:km "w: Twitter Search"]]
                  ;[:b [:km "w: Twitter"]]
@@ -873,7 +875,6 @@
                  ;[:m [:km "w: Twitter Compose with current URL pasted"]]
                  ;[:v [:km "open: Mimestream"]]
                  ;[:n [:km "open: Signal"]]
-                 ;[:o [:km "open: Zoom"]]
                  ;[:i [:km "open: WhatsApp"]]
                  ;[:o [:km "open: FaceTime"]]
                  ;[:o [:km "open: Around"]]
