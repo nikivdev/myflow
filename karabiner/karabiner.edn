@@ -156,6 +156,7 @@
                  [[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  [[:j :l] :!CTOSspacebar] ; Alfred
                  [[:l :m] [:alfred "run" "iansinnott.keyboardmaestro"]]
+                 [[:l :n] :!TOSr] ; ScriptKit
                  [[:k :l] :!COS9] ; Raycast
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
                  [[:j :semicolon] [:km "Notion global search (in app)"]]
