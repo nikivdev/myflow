@@ -57,6 +57,8 @@
                  [:3 :!T3]
                  [:4 :!T4]
                  [:5 :!T5]
+                 [:6 :!T6]
+                 [:7 :!T7]
                  [:escape :!CTO4] ; Alfred file/text action
                  ;[:tab [:km "lisa: autocomplete"]] ; TODO: make lisa work
                  [:left_command [:km "enter: explain"]]
@@ -843,22 +845,25 @@
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
-                 [:n [:km "New Spark email"]]
-                 [:o [:km "open: X Pro (or make post if in app)"]]
+                 [:n [:km "New X post"]]
+                 [:o [:km "open: Multi"]] ; TODO: move to https://tuple.app
+                 [:d [:km "New Spark email"]]
+                 ; TODO: bind LA post (nice one)
+                 ; TODO: have have way to make emails (that can be mass sent from say Loops or smth else, check that email platform thats oss)
                  [:f [:km "open: Spark"]]
+                 [:v [:km "open: Loops"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:c [:km "Create new contact"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
                  [:l [:km "open: X Messages"]]
                  [:semicolon [:km "open: Slack"]]
-                 [:d [:km "w: Reddit submit"]]
-                 [:m [:km "open: Multi"]]
-                 [:period [:km "open: Element"]]
                  [:h [:km "w: HN submit"]]
                  [:b [:km "w: Lobsters submit"]]
                  [:t [:km "open: Contacts"]]
-                 [:v [:km "open: Loops"]]
+                 [:m [:km "open: X Pro"]]
+                 [:i [:km "w: Reddit submit"]]
+                 [:period [:km "open: Element"]]
                  ; TODO: add generic `LA Post` function later maybe or have another bind for `LA Post`
                  ;[:period [:km "w: Twitter Search"]]
                  ;[:b [:km "w: Twitter"]]
@@ -1179,7 +1184,6 @@
                  [:h [:km "web: GitHub Learn Anything"]]
                  ;[:u [:km "Select word & search in Dash"]]
                  ;[:i [:km "Select word & move to Claude"]]
-                 [:i [:km "New X post"]]
                  [:o [:km "open: Safari Technology Preview"]]
                  [:n [:open "raycast://extensions/loris/safari/search-history"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
