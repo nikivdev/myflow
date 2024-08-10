@@ -403,6 +403,7 @@
                  [:l [:km "open: Dictionary"]]
                  [:i [:km "open: Feedback Assistant"]]
                  [:n [:km "open: System Settings: Network"]]
+                 [:m [:km "open: MacUpdater"]]
                  [:semicolon [:km "open: Notes"]]
                  ;[:l [:km "Open Reader with Nightly TS- workspace split 50/50"]]
                  ;[:comma [:km "open: Arq"]]

@@ -23,6 +23,14 @@ function :
     end
 end
 
+function ::
+    if not set -q argv[1]
+        deno repl # TODO: change
+    else
+        deno $argv
+    end
+end
+
 function :se
     bun seed $argv
 end
@@ -76,17 +84,20 @@ function deleteNodeModules
     find . -type d -name node_modules -prune -print | xargs rm -rf
 end
 
-function find.EnvFiles
+# find .env files
+function f.
     for env_file in (find . -type d -name node_modules -prune -o -type f -name ".env" -print)
         bat $env_file
     end
 end
 
-function f
+function fg
     if not set -q argv[1]
-        flox init
+        # cd ~/
+        # flox list
     else
-        flox search $argv
+        # cd ~/
+        # flox install $argv
     end
 end
 
@@ -120,5 +131,9 @@ function w.
 end
 
 function .
-    open .
+    if not set -q argv[1]
+        open .
+    else
+        open $argv
+    end
 end
