@@ -1,8 +1,6 @@
 # cd places
 alias de="cd ~/Desktop"
-alias ds="cd ~/try"
 alias dm="cd ~/temp"
-alias dv="cd ~/try/private"
 alias dt="cd ~/data"
 alias dwi="cd ~/data/wiki"
 alias d.="cd ~/.scripts"

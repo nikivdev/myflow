@@ -1,5 +1,4 @@
 alias d="z"
-alias da="cd ~/src"
 alias a="eza" # list files
 alias af="type" # <cmd> - view definition of <cmd>
 alias do="cd ~/src/org"
@@ -8,7 +7,10 @@ alias rr="rm -rf"
 alias wr="cursor readme.md"
 alias df="cd ~/src/config"
 alias dw="cd ~/src/wiki"
-alias dt="cd ~/tmp"
+alias da="cd ~/src"
+alias dm="cd ~/tmp"
+alias ds="cd ~/try"
+alias dr="cd ~/private"
 alias aa="eza -la" # list files (with hidden)
 alias r="ronin"
 
