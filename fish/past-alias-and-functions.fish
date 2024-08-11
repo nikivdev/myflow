@@ -16,7 +16,6 @@ alias :id="bun i -d" # dev dep install
 alias cwd='pwd | pbcopy'
 alias v="mv" # move files/folders or rename
 alias sf="source ~/.config/fish/config.fish" # source fish config
-alias md="mkdir"
 alias wgi="watchexec --restart --exts go \"tput reset && go install .\""
 alias wg="watchexec --restart --exts go \"tput reset && go run .\""
 # alias dw="deno task watch"
