@@ -88,3 +88,6 @@ set PATH $PATH /Users/nikiv/.local/bin
 # Setting PATH for Python 3.12
 # The original version is saved in /Users/nikiv/.config/fish/config.fish.pysave
 set -x PATH "/Library/Frameworks/Python.framework/Versions/3.12/bin" "$PATH"
+
+# was needed for https://github.com/NixOS/nix/issues/10892
+set -Ux NIX_FIRST_BUILD_UID 331

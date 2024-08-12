@@ -260,7 +260,7 @@
          :rules [:w-mode
                  [:e [:km "open: Linear"]]
                  [:a [:km "open: Learn Anything"]] ; TODO: for now web, later map to desktop app
-                 [:d [:km "open: SolBond"]]
+                 [:d [:km "open: Notion"]]
                  [:g [:km "open: genx"]]
                  [:v [:km "open: Yaak"]]
                  [:o [:km "open: Keyboard Maestro"]]
@@ -277,11 +277,12 @@
                  [:b [:km "open: BetterTouchTool"]]
                  [:u [:km "open: Reflect"]]
                  [:i [:km "open: Obsidian"]]
-                 [:n [:km "open: Notion"]]
+                 [:n [:km "open: RustRover"]]
                  [:m [:km "open: Sublime Merge"]]
                  [:comma [:km "open: JuxtaCode"]]
-                 [:period [:km "open: GoLand"]] ; TODO: move to IntelliJ
                  [:slash [:km "open: Instruments"]]
+                 ;[:period [:km "open: GoLand"]] ; TODO: move to IntelliJ
+                 ;[:d [:km "open: SolBond"]]
                  ;[:comma [:km "open: Proxyman"]]
                  ;[:t [:km "open: JuxtaText"]]
                  ;[:g [:km "open: Pathfinder"]]
@@ -295,7 +296,6 @@
                  ;[:semicolon [:km "open: Xcode"]]
                  ;[:l [:km "open: Cursor main window"]]
                  ;[:semicolon [:km "open: Cursor (but not main window)"]]
-                 ;[:period [:km "open: RustRover"]]
                  ;[:d [:km "open: System Settings"]]
                  ;[:i [:km "open: Hoppscotch"]]
                  ;[:period [:km "open: Bruno"]]
