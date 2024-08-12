@@ -18,7 +18,7 @@ else
     echo "EdgeDB environment file not found: $edgedb_env"
 end
 
-# go TODO: not sure if still need https://gophers.slack.com/archives/C02A8LZKT/p1722263561936829
+# go TODO: not sure if still need https://gophers.slack.com/archives/C02A8LZKT/p1722263561936829. most likely not
 set -x GOPATH (go env GOPATH)
 set -x PATH $PATH (go env GOPATH)/bin
 
