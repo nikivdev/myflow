@@ -898,7 +898,7 @@
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]]}
         {:des "ckey (files/websites)"
          :rules [:c-mode
-                 [:a [:km "Clone repo to ~/clones and open with Cursor"]] ; TODO: fix up clone structure org--name
+                 [:a [:km "Clone repo to ~/clones and open with Cursor"]]
                  [:s [:km "Clone repo to ~/clones"]]
                  [:i [:km "edit: run.py"]]
                  [:o [:km "edit: run.go"]]
