@@ -540,14 +540,6 @@ end
 #     end
 # end
 
-function :i
-    if not set -q argv[1]
-        bun i
-    else
-        bun i $argv
-    end
-end
-
 # pw <package.json command> - rerun command if .ts files change
 # function pw
 #     watchexec --no-vcs-ignore --restart --exts ts "tput reset && pnpm --silent run $argv" --project-origin .

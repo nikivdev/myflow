@@ -45,8 +45,8 @@ function w
     end
 end
 
-# tunnels local telegram mini app
-function ng
+# tunnels local telegram mini app (usually on port 5173 with the `tma.internal` domain)
+function ngTelegram
     set -l port 5173
     set -l domain "tma.internal"
     ngrok http "https://$domain:$port" --host-header="$domain:$port"
@@ -142,4 +142,12 @@ end
 
 function md
     mkdir -p $argv[1] && cd $argv[1]
+end
+
+function :i
+    if not set -q argv[1]
+        bun i
+    else
+        bun i $argv
+    end
 end
