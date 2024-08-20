@@ -151,3 +151,23 @@ function :i
         bun i $argv
     end
 end
+
+function :id
+    bun i -d $argv
+end
+
+function :g
+    bun i -g $argv
+end
+
+# set env vars in current shell
+function x
+    if test (count $argv) -eq 1
+        set -x $argv[1]
+    else if test (count $argv) -ge 2
+        set -x $argv[1] $argv[2..-1]
+    else
+        echo "Usage: x VARIABLE [VALUE]"
+        return 1
+    end
+end

@@ -11,7 +11,6 @@ alias dw="cd ~/Downloads"
 # run code fast
 alias :ts="fish -c 'cd ~/src/ts; bun run try'"
 # other
-alias :id="bun i -d" # dev dep install
 # alias :id="pnpm add -d" # dev dep install
 alias cwd='pwd | pbcopy'
 alias v="mv" # move files/folders or rename
@@ -31,7 +30,6 @@ alias getLastCommitHash="git log -1 --format=\"%H\""
 # alias pw='pnpm add -w'
 alias gmt='go mod tidy'
 alias findAll.gitInCurrentDir="find . -type d -name .git"
-alias :g="bun install -g"
 alias nv="sudo nvim"
 alias o="ollama"
 alias z="zig"
