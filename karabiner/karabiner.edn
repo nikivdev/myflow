@@ -808,6 +808,7 @@
                  [:u [:km "cursor: kuskus"]]
                  [:i [:km "cursor: rust"]]
                  ;[:m [:km "cursor: swift"]]
+                 [:v [:km "cursor: nix"]]
                  [:m [:km "cursor: go"]]
                  [:h [:km "cursor: drophunt"]]
                  [:j [:km "cursor: src workspace"]]

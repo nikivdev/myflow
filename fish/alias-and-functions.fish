@@ -1,3 +1,4 @@
+alias nb="nix-build"
 alias d="z"
 alias a="eza" # list files
 alias af="type" # <cmd> - view definition of <cmd>
