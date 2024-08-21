@@ -173,11 +173,12 @@ function x
     end
 end
 
-# nix-eval a fille (with watch)
+# nix eval file
 function ne
-    set -l file $argv[1]
-    if test -z "$file"
-        set file "learn.nix"
+    if test -z "$argv[1]"
+        echo "Usage: ne <nix_file>"
+        return 1
     end
-    watchexec --no-vcs-ignore --restart --exts nix --clear --project-origin . "tput reset && nix-instantiate --eval $file"
+    set -l file $argv[1]
+    watchexec --no-vcs-ignore --restart --exts nix --clear --project-origin . "tput reset && nix-instantiate --eval --strict --json $file | jq"
 end
