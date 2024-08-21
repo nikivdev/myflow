@@ -172,3 +172,12 @@ function x
         return 1
     end
 end
+
+# nix-eval a fille (with watch)
+function ne
+    set -l file $argv[1]
+    if test -z "$file"
+        set file "learn.nix"
+    end
+    watchexec --no-vcs-ignore --restart --exts nix --clear --project-origin . "tput reset && nix-instantiate --eval $file"
+end
