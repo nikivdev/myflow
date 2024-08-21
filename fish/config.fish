@@ -1,9 +1,3 @@
-# alias _date="/Users/nikiv/.flox/run/aarch64-darwin.default/bin/date" # for debugging how long things take (wrap around lines to measure and see time diffs)
-fish_add_path ~/.flox/run/aarch64-darwin.default/bin
-fish_add_path /opt/homebrew/bin # TODO: remove in favor of flox
-fish_add_path ~/.bun/bin
-fish_add_path ~/.cargo/bin
-
 source ~/src/config/fish/alias-and-functions.fish
 source ~/src/config/fish/private.fish
 

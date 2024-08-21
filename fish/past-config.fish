@@ -1,3 +1,5 @@
+# alias _date="/Users/nikiv/.flox/run/aarch64-darwin.default/bin/date" # for debugging how long things take (wrap around lines to measure and see time diffs)
+
 # path TODO: not used mostly
 fish_add_path ~/.local/share/solana/install/active_release/bin
 # TODO: can I use flox for this?
@@ -17,10 +19,6 @@ if test -f $edgedb_env
 else
     echo "EdgeDB environment file not found: $edgedb_env"
 end
-
-# go TODO: not sure if still need https://gophers.slack.com/archives/C02A8LZKT/p1722263561936829. most likely not
-set -x GOPATH (go env GOPATH)
-set -x PATH $PATH (go env GOPATH)/bin
 
 # make cursor into thin line (doesn't make a difference in Warp.dev)
 __fish_cursor_xterm line
