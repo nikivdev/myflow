@@ -173,7 +173,7 @@ function x
     end
 end
 
-# nix eval file (with watch)
+# nix eval file (with watch, test)
 function ne
     if test -z "$argv[1]"
         echo "Usage: ne <nix_file>"
