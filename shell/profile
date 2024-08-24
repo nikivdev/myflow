@@ -2,9 +2,7 @@ export PATH="$HOME/.flox/run/aarch64-darwin.default/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$HOME/Library/Application Support/edgedb/bin:$PATH"
 export PATH="$HOME/.bun/bin:$PATH"
-
-. "$HOME/.cargo/env"
-. "$HOME/.rye/env"
-
 export GOROOT=$HOME/go
 export PATH=$PATH:$GOROOT/bin
+
+. "$HOME/.cargo/env"

@@ -1,3 +1,4 @@
+alias dl="cd ~/clones"
 alias nb="nix-build"
 alias d="z"
 alias a="eza" # list files
@@ -173,7 +174,7 @@ function x
     end
 end
 
-# nix eval file (with watch, test)
+# nix eval file (with watch)
 function ne
     if test -z "$argv[1]"
         echo "Usage: ne <nix_file>"
