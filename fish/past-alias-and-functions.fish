@@ -13,7 +13,6 @@ alias :ts="fish -c 'cd ~/src/ts; bun run try'"
 # other
 # alias :id="pnpm add -d" # dev dep install
 alias cwd='pwd | pbcopy'
-alias v="mv" # move files/folders or rename
 alias sf="source ~/.config/fish/config.fish" # source fish config
 alias wgi="watchexec --restart --exts go \"tput reset && go install .\""
 alias wg="watchexec --restart --exts go \"tput reset && go run .\""
@@ -803,4 +802,14 @@ end
 #     set -l end_time (date +%s%N)
 #     set -l duration (math "($end_time - $start_time) / 1000000")
 #     echo "Sourcing $argv[1] took $duration ms"
+# end
+
+
+# TODO: have to modify for each project, for now made to work with https://github.com/pqrs-org/osx-hid-inspector
+# also header files
+# function cpp
+#     if test -z "$argv[1]"
+#         watchexec --no-vcs-ignore --restart --exts cpp --clear --project-origin . "tput reset && make && src/build/Release/hid-inspector"
+#         return 1
+#     end
 # end

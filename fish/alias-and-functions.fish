@@ -15,6 +15,7 @@ alias ds="cd ~/try"
 alias dr="cd ~/private"
 alias aa="eza -la" # list files (with hidden)
 alias r="ronin"
+alias v="mv" # move files/folders or rename
 
 # _functions
 # TODO: make completions for `: ` so it gets the scripts found in package.json
@@ -182,4 +183,17 @@ function ne
     end
     set -l file $argv[1]
     watchexec --no-vcs-ignore --restart --exts nix --clear --project-origin . "tput reset && nix-instantiate --eval --strict --json $file | jq"
+end
+
+# unstable, but does work for https://github.com/nikitavoloboev/cpp
+function cpp
+    watchexec --no-vcs-ignore --restart --exts cpp --clear --project-origin . "tput reset && make -C build && src/main"
+end
+
+function nv
+    if not set -q argv[1]
+        nvim .
+    else
+        nvim $argv
+    end
 end
