@@ -135,7 +135,7 @@ function w.
     cursor .env
 end
 
-function .
+function f
     if not set -q argv[1]
         open .
     else
@@ -195,5 +195,14 @@ function nv
         nvim .
     else
         nvim $argv
+    end
+end
+
+
+function g
+    if not set -q argv[1]
+        smerge .
+    else
+        git $argv
     end
 end

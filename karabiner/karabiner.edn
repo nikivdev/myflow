@@ -818,11 +818,11 @@
                  [:m [:km "cursor: rust."]]
                  [:period [:km "cursor: swift."]]
                  [:d [:km "cursor: clients."]]
+                 [:h [:km "edit: GitHub Bio"]]
 
                  ;[:period [:km "cursor: zig."]]
                  ;[:i [:km "cursor: cpp."]]
                  ;[:g [:km "cursor: genx"]]
-                 ;[:b [:km "edit: GitHub Bio"]]
                  ;[:quote [:km "cursor: forks"]] ; TODO: with 3 `---`?
                  ;[:k [:km "cursor: solbond"]]
                  ;[:v [:km "cursor: nikiv.dev"]]
