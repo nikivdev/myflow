@@ -1,3 +1,4 @@
+alias cwd='pwd | pbcopy'
 alias dl="cd ~/clones"
 alias nb="nix-build"
 alias d="z"

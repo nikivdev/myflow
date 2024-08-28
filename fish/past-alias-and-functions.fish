@@ -12,7 +12,6 @@ alias dw="cd ~/Downloads"
 alias :ts="fish -c 'cd ~/src/ts; bun run try'"
 # other
 # alias :id="pnpm add -d" # dev dep install
-alias cwd='pwd | pbcopy'
 alias sf="source ~/.config/fish/config.fish" # source fish config
 alias wgi="watchexec --restart --exts go \"tput reset && go install .\""
 alias wg="watchexec --restart --exts go \"tput reset && go run .\""
