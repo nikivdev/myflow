@@ -504,8 +504,6 @@
                  [:d [:km "open: Cloudflare"]]
                  [:i [:km "open: Railway"]]
                  [:a [:km "open: Ronin"]]
-                 ;[:q [:km "open: Expo"]]
-                 ;[:d [:km "open: Preview"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:s [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:left_command [:km "open: Perplexity"]]
@@ -516,12 +514,14 @@
                  [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:n :!CTOS9] ; search npm packages
-                 ;[:j [:km "open: PostHog"]]
-                 [:j [:km "open: Honeycomb"]]
                  [:tab [:km "open: AWS"]]
-                 ;[:escape [:km "open: Google Cloud"]]
                  [:grave_accent_and_tilde [:km "open: Modal"]]
                  [:z [:km "open: Yandex Cloud"]]
+                 ;[:q [:km "open: Expo"]]
+                 ;[:d [:km "open: Preview"]]
+                 ;[:j [:km "open: PostHog"]]
+                 ;[:j [:km "open: Honeycomb"]]
+                 ;[:escape [:km "open: Google Cloud"]]
                  ;[:z :!TCspacebar] ; macOS Emoji Picker
                  ;[:i [:km "open: Stripe"]]
                  ;[:i [:km "open: OpenAI Platform"]]
@@ -671,7 +671,8 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:1 [:km "View Sip"]]
-                 [:q [:km "open: Color Picker"]] ; TODO: start picker too fast
+                 ;[:q [:km "open: Color Picker"]] ; TODO: start picker too fast
+                 [:q [:km "open: Photos"]]
                  [:w [:km "open: Figma"]]
                  [:m [:km "open: Midjourney"]]
                  [:e :!CO8] ; Alfred clipboard history search
@@ -739,7 +740,6 @@
                  ;[:comma [:km "edit: Fish Functions"]]
                  ;[:spacebar :!CTq]]} ; Selection -> Web Searches
                  ;[:escape :!CTOu] ; Sip color picker
-                 ;[:q [:km "open: Photos"]]
                  ;[:q [:km "open: Cosmos"]]
                  ;[:s [:km "open: Excalidraw"]]
                  ;[:q [:km "Clear active todo"]]
