@@ -18,6 +18,7 @@ alias aa="eza -la" # list files (with hidden)
 alias r="ronin"
 alias v="mv" # move files/folders or rename
 alias p="pip3"
+alias pr="gh pr checkout"
 
 # _functions
 # TODO: make completions for `: ` so it gets the scripts found in package.json
