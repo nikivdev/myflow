@@ -263,7 +263,6 @@
          :rules [:w-mode
                  [:e [:km "open: Linear"]]
                  [:a [:km "open: Learn Anything"]] ; TODO: for now web, later map to desktop app
-                 [:d [:km "open: Obsidian"]]
                  [:t [:km "open: Notion"]]
                  [:v [:km "open: Yaak"]]
                  [:o [:km "open: Keyboard Maestro"]]
@@ -272,18 +271,19 @@
                  [:r [:km "open: 1Password"]]
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
-                 [:n [:km "open: GoLand"]]
                  [:l [:km "open: Cursor"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:semicolon [:km "open: Xcode Beta"]]
                  [:c [:km "open: Spotify"]]
                  [:comma [:km "open: Zed"]]
                  [:slash [:km "open: Instruments"]]
+                 [:d [:km "open: Proxyman"]]
                  [:h [:km "open: GitButler"]]
+                 [:b [:km "open: PyCharm"]]
+                 [:n [:km "open: GoLand"]]
                  [:m [:km "open: RustRover"]]
-                 [:i [:km "open: PyCharm"]]
-                 [:b [:km "open: Proxyman"]]
-                 ;[:h [:km "open: JuxtaCode"]]
+                 [:i [:km "open: Obsidian"]]
+                 ;[:d [:km "open: JuxtaCode"]]
                  ;[:t [:km "open: Voice Memos"]]
                  ;[:b [:km "open: BetterTouchTool"]]
                  ;[:h [:km "open: Val Town"]]
@@ -814,7 +814,7 @@
                  [:k [:km "cursor: sites."]]
                  [:f [:km "cursor: config."]]
                  [:l [:km "cursor: la."]]
-                 [:c [:km "cursor: tg."]]
+                 [:d [:km "cursor: tg."]]
                  [:v [:km "cursor: x."]]
                  [:semicolon [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
                  [:o [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
@@ -824,8 +824,8 @@
                  [:m [:km "cursor: rust."]]
                  [:period [:km "cursor: swift."]]
                  [:h [:km "edit: GitHub Bio"]]
+                 [:c [:km "cursor: clients."]] ; TODO: add when I have client work (add on website)
 
-                 ;[:t [:km "cursor: clients."]] ; TODO: add when I have client work (add on website)
                  ;[:period [:km "cursor: zig."]]
                  ;[:i [:km "cursor: cpp."]]
                  ;[:g [:km "cursor: genx"]]
