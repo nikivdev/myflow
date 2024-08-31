@@ -824,7 +824,7 @@
                  [:m [:km "cursor: rust."]]
                  [:period [:km "cursor: swift."]]
                  [:h [:km "edit: GitHub Bio"]]
-                 [:c [:km "cursor: clients."]] ; TODO: add when I have client work (add on website)
+                 ;[:c [:km "cursor: clients."]] ; TODO: add when I have client work (add on LA profile as services)
 
                  ;[:period [:km "cursor: zig."]]
                  ;[:i [:km "cursor: cpp."]]
