@@ -676,7 +676,8 @@
                  ;[:q [:km "open: Color Picker"]] ; TODO: start picker too fast
                  [:q [:km "open: Photos"]]
                  [:w [:km "open: Figma"]]
-                 [:n [:km "open: v0"]]
+                 [:i [:km "open: Rive"]]
+                 [:o [:km "open: v0"]]
                  [:m [:km "open: Midjourney"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
@@ -685,8 +686,8 @@
                  [:a [:km "open: Chrome Canary"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:escape [:km "open: Framer"]]
-                 [:i [:km "open: Play"]] ; TODO: play app / lottie?
-                 [:o [:km "open: Rive"]] ; TODO:
+                 [:n [:km "open: Play"]]
+                 ; TODO: lottie
                  ;[:n [:km "open: Simulator"]]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
