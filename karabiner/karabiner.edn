@@ -89,6 +89,7 @@
                  [:v :!Sv]
                  [:b :!Sb]
                  [:n :!Sn]
+                 [:spacebar :!SCspacebar] ; Homerow search
                  ;[:tab [:km "Smart Autocomplete & new line"]]
                  ;[:escape [:km "Smart Autocomplete"]]
                  ;[:tab [:km ""]]
@@ -271,15 +272,16 @@
                  [:k [:km "open: Safari"]]
                  [:n [:km "open: GoLand"]]
                  [:l [:km "open: Cursor"]]
-                 [:h [:km "open: JuxtaCode"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:semicolon [:km "open: Xcode Beta"]]
                  [:c [:km "open: Spotify"]]
                  [:comma [:km "open: Zed"]]
                  [:slash [:km "open: Instruments"]]
+                 [:h [:km "open: GitButler"]]
                  [:m [:km "open: RustRover"]]
                  [:i [:km "open: PyCharm"]]
                  [:b [:km "open: Proxyman"]]
+                 ;[:h [:km "open: JuxtaCode"]]
                  ;[:t [:km "open: Voice Memos"]]
                  ;[:b [:km "open: BetterTouchTool"]]
                  ;[:h [:km "open: Val Town"]]
@@ -674,6 +676,7 @@
                  ;[:q [:km "open: Color Picker"]] ; TODO: start picker too fast
                  [:q [:km "open: Photos"]]
                  [:w [:km "open: Figma"]]
+                 [:n [:km "open: v0"]]
                  [:m [:km "open: Midjourney"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
@@ -684,7 +687,7 @@
                  [:escape [:km "open: Framer"]]
                  [:i [:km "open: Play"]] ; TODO: play app / lottie?
                  [:o [:km "open: Rive"]] ; TODO:
-                 [:n [:km "open: Simulator"]]
+                 ;[:n [:km "open: Simulator"]]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
                  [:j :!TSspacebar] ; Things Quick Entry (with context)
@@ -692,7 +695,6 @@
                  [:quote :!TOCspacebar] ; Things Quick Entry (without context) TODO: should just be part of f+j (after the fact new bind to remove context)
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:period [:km "edit: Karabiner"]]
-                 [:grave_accent_and_tilde [:km "open: v0"]]
                  [:slash :!CTO4] ; Alfred file/text action
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  ;[:z [:km "open: v0"]]
@@ -804,6 +806,7 @@
                  [:q [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
                  [:w [:km "Go to test macro"]]
                  [:e [:km "Test"]]
+                 ; TODO: move active actions in `Test` macro to new global macro (delete those actions from `Test` too) (similar to `New KM global macro`)
                  [:c [:km "Commit repo from cursor file path in clipboard"]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: sites."]]
@@ -817,9 +820,10 @@
                  [:i [:km "cursor: python."]]
                  [:m [:km "cursor: rust."]]
                  [:period [:km "cursor: swift."]]
-                 [:d [:km "cursor: clients."]]
+                 [:d [:km "cursor: tg."]]
                  [:h [:km "edit: GitHub Bio"]]
 
+                 ;[:t [:km "cursor: clients."]] ; TODO: add when I have client work (add on website)
                  ;[:period [:km "cursor: zig."]]
                  ;[:i [:km "cursor: cpp."]]
                  ;[:g [:km "cursor: genx"]]
