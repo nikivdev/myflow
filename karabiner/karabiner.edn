@@ -277,12 +277,12 @@
                  [:c [:km "open: Spotify"]]
                  [:comma [:km "open: Zed"]]
                  [:slash [:km "open: Instruments"]]
-                 [:d [:km "open: Proxyman"]]
+                 [:g [:km "open: Proxyman"]]
                  [:h [:km "open: GitButler"]]
-                 [:b [:km "open: PyCharm"]]
                  [:n [:km "open: GoLand"]]
                  [:m [:km "open: RustRover"]]
-                 [:i [:km "open: Obsidian"]]
+                 [:i [:km "open: PyCharm"]]
+                 [:d [:km "open: Fantastical"]]
                  ;[:d [:km "open: JuxtaCode"]]
                  ;[:t [:km "open: Voice Memos"]]
                  ;[:b [:km "open: BetterTouchTool"]]
@@ -350,7 +350,7 @@
                  ;[:spacebar [:km "Explain with ChatGPT"]]]}
                  ;[:spacebar [:km "open: Zen"]]]}
                  ;[:spacebar [:km "Explain with Ask"]]]}
-                 [:spacebar [:km "open: Fantastical"]]]}
+                 [:spacebar [:km "open: Obsidian"]]]}
         {:des "ekey (cmd)"
          :rules [:e-mode
                  [:q :!Cq]
