@@ -60,7 +60,8 @@
                  [:6 :!T6]
                  [:7 :!T7]
                  [:escape [:km "Cursor = Open sublime merge to commit current project | All = Homerow"]]
-                 [:grave_accent_and_tilde [:km "Cursor = commit all | All = "]] ; TODO: map useful to all, la capture?
+                 [:grave_accent_and_tilde [:km "Cursor = commit all | All = clone open repo and open in Cursor"]]
+                 ; TODO: LA capture, maybe map to f key. f+j or smth (universal)
                  [:left_command [:km "enter: explain"]]
                  [:q :!Sq]
                  [:w :!Sw]
@@ -208,11 +209,12 @@
                  [:3 [:km "Add/remove explore to focus workspace"]]
                  [:f [:km "Get time in SF"]]
                  [:t [:km "Save open tabs in safari"]]
-                 [:i [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
+                 ; TODO: should be automated, i should never run these myself
+                 [:n [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
+                 [:m [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
-                 [:k [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
-                 [:l [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
-                 [:semicolon [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
+                 [:i [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
+                 [:semicolon [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
                  [:s [:km "Open Dash and search docsets"]]]}
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
@@ -283,7 +285,7 @@
                  [:n [:km "open: GoLand"]]
                  [:m [:km "open: RustRover"]]
                  [:i [:km "open: PyCharm"]]
-                 ;[:d [:km "open: JuxtaCode"]]
+                 [:g [:km "open: JuxtaCode"]]
                  ;[:t [:km "open: Voice Memos"]]
                  ;[:b [:km "open: BetterTouchTool"]]
                  ;[:h [:km "open: Val Town"]]
