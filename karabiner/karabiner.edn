@@ -284,9 +284,9 @@
                  [:slash [:km "open: Instruments"]]
                  [:d [:km "open: Proxyman"]]
                  [:h [:km "open: GitButler"]]
-                 [:n [:km "open: GoLand"]]
                  [:m [:km "open: RustRover"]]
-                 [:i [:km "open: PyCharm"]]
+                 [:i [:km "open: GoLand"]]
+                 [:n [:km "open: PyCharm"]]
                  [:g [:km "open: JuxtaCode"]]
                  ;[:t [:km "open: Voice Memos"]]
                  ;[:b [:km "open: BetterTouchTool"]]
@@ -823,8 +823,8 @@
                  [:semicolon [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
                  [:o [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
                  ; TODO: make alfred/raycast thing to search for folders/files etc.
-                 [:n [:km "cursor: go."]]
-                 [:i [:km "cursor: python."]]
+                 [:i [:km "cursor: go."]]
+                 [:n [:km "cursor: python."]]
                  [:m [:km "cursor: rust."]]
                  [:period [:km "cursor: swift."]]
                  [:h [:km "edit: GitHub Bio"]]
