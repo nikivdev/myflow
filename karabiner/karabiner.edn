@@ -512,6 +512,7 @@
                  [:d [:km "open: Cloudflare"]]
                  [:i [:km "open: Railway"]]
                  [:a [:km "open: Ronin"]]
+                 [:j [:km "open: Sentry"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:s [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:left_command [:km "open: Perplexity"]]

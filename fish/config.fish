@@ -20,3 +20,6 @@ source /opt/homebrew/Caskroom/miniconda/base/etc/fish/conf.d/conda.fish
 #   # _date +%T.%N >> ~/log/config.fish
 #   # echo ">>>>>>>>>>" >> ~/log/config.fish
 # end
+
+# TODO: for some reason, not all things in ~/.profile are being added to PATH (i.e. `brew doctor` was failing without below line)
+fish_add_path /opt/homebrew/sbin

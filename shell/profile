@@ -4,5 +4,6 @@ export PATH="$HOME/Library/Application Support/edgedb/bin:$PATH"
 export PATH="$HOME/.bun/bin:$PATH"
 export GOROOT=$HOME/go
 export PATH=$PATH:$GOROOT/bin
+export PATH="/opt/homebrew/sbin:$PATH"
 
 . "$HOME/.cargo/env"
