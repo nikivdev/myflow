@@ -24,6 +24,7 @@
              ;:t-mode {:key :t}
              :i-mode {:key :i}
              :o-mode {:key :o}
+             :p-mode {:key :p}
              :a-mode {:key :a}
              :s-mode {:key :s}
              :d-mode {:key :d}
@@ -571,6 +572,10 @@
                  ;[:q [:alfred "search" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  ;[:spacebar [:km "open: Ask"]]]}
                  [:spacebar [:km "open: Claude"]]]}
+        {:des "pkey (paste)"
+         :rules [:p-mode
+                 [:d [:km "paste: delete"]]
+                 [:spacebar [:km "test"]]]} ; TODO:
         ;; TODO: not used, move it to other keys, whatever is useful
         ;{:des ".."
          ;:rules [:caps-mode
@@ -1117,7 +1122,7 @@
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
                   [:w [:km "Comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
-                  [:r [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE:
+                  ;[:r [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: | TODO: is NOTE: ever useful?
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:y [:p :l :e :a :s :e :spacebar]] ; -> please
                   [:u [:u :p :d :a :t :e :spacebar]]]} ; -> update
