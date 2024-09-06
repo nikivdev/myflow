@@ -31,6 +31,14 @@ function :
     end
 end
 
+function i
+    if not set -q argv[1]
+        bun i
+    else
+        bun i $argv
+    end
+end
+
 function ::
     if not set -q argv[1]
         deno repl # TODO: change
