@@ -92,7 +92,9 @@
                  [:v :!Sv]
                  [:b :!Sb]
                  [:n :!Sn]
-                 [:spacebar [:km "open: Obsidian"]] ; TODO: LA map, move obsidian to nice place too
+                 ; TODO: LA map, move obsidian to nice place too
+                 [:spacebar [:km "open: Haptic"]]
+                 ;[:spacebar [:km "open: Obsidian"]] ; TODO: LA map, move obsidian to nice place too
                  ;[:spacebar :!SCspacebar] ; Homerow search
                  ;[:escape :!CTO4] ; Alfred file/text action
                  ;[:tab [:km "lisa: autocomplete"]] ; TODO: make lisa work
