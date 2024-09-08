@@ -822,7 +822,6 @@
                  [:w [:km "Go to test macro"]]
                  [:e [:km "Test"]]
                  ; TODO: move active actions in `Test` macro to new global macro (delete those actions from `Test` too) (similar to `New KM global macro`)
-                 [:t [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: sites."]]
                  [:f [:km "cursor: config."]]
@@ -837,6 +836,7 @@
                  [:m [:km "cursor: go."]]
                  [:period [:km "cursor: swift."]]
                  [:h [:km "edit: GitHub Bio"]]
+                 [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
                  ;[:c [:km "cursor: clients."]] ; TODO: add when I have client work (add on LA profile as services)
 
                  ;[:period [:km "cursor: zig."]]
