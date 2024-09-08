@@ -31,6 +31,14 @@ function :
     end
 end
 
+function e
+    if not set -q argv[1]
+        encore run
+    else
+        encore $argv
+    end
+end
+
 function i
     if not set -q argv[1]
         bun i
@@ -226,5 +234,20 @@ function r
         cargo watch -q -- sh -c "tput reset && cargo run -q -- $argv"
         # TODO: test below, supposedly it's better and safer (per https://matrix.to/#/!YLTeaulxSDauOOxBoR:matrix.org/$mM0QC4VSo5BmI1o3qfKg5vjDs6sok1FwBtKy2UlI4Xs?via=gitter.im&via=matrix.org&via=tchncs.de)
         # cargo watch -q -- sh -c 'tput reset && cargo run -q -- "$@"' watchscript $argv
+    end
+end
+
+function :c
+    if not set -q argv[1]
+        set cli_file (fd -t f -p "cli.ts" | head -n 1)
+        if test -n "$cli_file"
+            cursor "$cli_file"
+            bun cli
+        else
+            # TODO:
+            # bun cli
+        end
+    else
+        # TODO:
     end
 end
