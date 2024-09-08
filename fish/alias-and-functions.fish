@@ -251,3 +251,25 @@ function :c
         # TODO:
     end
 end
+
+function :r
+    if not set -q argv[1]
+        set run_file (fd -t f -p "run.ts" | head -n 1)
+        if test -n "$run_file"
+            cursor "$run_file"
+            bun run ts
+        else
+            # TODO:
+        end
+    else
+        # TODO:
+    end
+end
+
+function find.git
+    find . -type d -name ".git"
+end
+
+function find.DS_Store
+    find . -type f -name ".DS_Store"
+end

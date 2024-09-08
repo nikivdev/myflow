@@ -511,8 +511,8 @@
                  [:6 :!C6]
                  [:q [:km "open: Clerk"]]
                  [:w [:km "open: Vercel"]]
-                 [:e [:km "open: Sourcegraph"]]
-                 [:d [:km "open: Cloudflare"]]
+                 [:e [:km "open: Cloudflare"]]
+                 ;[:e [:km "open: Sourcegraph"]] ; TODO:
                  [:i [:km "open: Railway"]]
                  [:a [:km "open: Ronin"]]
                  [:j [:km "open: Sentry"]]
