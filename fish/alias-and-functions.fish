@@ -273,3 +273,12 @@ end
 function find.DS_Store
     find . -type f -name ".DS_Store"
 end
+
+
+function o
+    if not set -q argv[1]
+        go run .
+    else
+        go $argv
+    end
+end

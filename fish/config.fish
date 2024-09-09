@@ -8,9 +8,6 @@ set -x NIX_SSL_CERT_FILE /etc/ssl/certs/ca-certificates.crt # needed for flox/ni
 direnv hook fish | source # direnv (cd into folder, will get the `.env` etc.)
 set -x DIRENV_LOG_FORMAT "" # hide direnv unloading messages
 
-# conda
-source /opt/homebrew/Caskroom/miniconda/base/etc/fish/conf.d/conda.fish
-
 # activates global flox env
 # TODO: disabled now as it slows down shell massively (mostly due to network call) (what flox is doing: https://gist.github.com/nikitavoloboev/4435ba3afa291bda38f9373aa1a3adef)
 # if set -q SHLVL
@@ -23,3 +20,4 @@ source /opt/homebrew/Caskroom/miniconda/base/etc/fish/conf.d/conda.fish
 
 # TODO: for some reason, not all things in ~/.profile are being added to PATH (i.e. `brew doctor` was failing without below line)
 fish_add_path /opt/homebrew/sbin
+fish_add_path ~/go/bin

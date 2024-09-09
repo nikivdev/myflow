@@ -286,7 +286,8 @@
                  [:comma [:km "open: Zed"]]
                  [:slash [:km "open: Instruments"]]
                  [:d [:km "open: Proxyman"]]
-                 [:h [:km "open: GitButler"]]
+                 ;[:h [:km "open: GitButler"]]
+                 [:h [:km "open: Terminal"]] ; TODO: using it for daemons for now, get flox to do it
                  [:i [:km "open: RustRover"]]
                  [:n [:km "open: PyCharm"]]
                  [:m [:km "open: GoLand"]]
@@ -834,7 +835,7 @@
                  [:o [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
                  ; TODO: make alfred/raycast thing to search for folders/files etc.
                  [:i [:km "cursor: rust."]]
-                 [:n [:km "cursor: python."]]
+                 [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
                  [:period [:km "cursor: swift."]]
                  [:h [:km "edit: GitHub Bio"]]

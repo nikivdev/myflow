@@ -89,3 +89,7 @@ set -x PATH "/Library/Frameworks/Python.framework/Versions/3.12/bin" "$PATH"
 
 # was needed for https://github.com/NixOS/nix/issues/10892
 set -Ux NIX_FIRST_BUILD_UID 331
+
+# TODO: replace fully with uv
+# conda
+# source /opt/homebrew/Caskroom/miniconda/base/etc/fish/conf.d/conda.fish
