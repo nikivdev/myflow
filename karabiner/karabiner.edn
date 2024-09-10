@@ -512,11 +512,11 @@
                  [:6 :!C6]
                  [:q [:km "open: Clerk"]]
                  [:w [:km "open: Vercel"]]
-                 [:e [:km "open: Cloudflare"]]
-                 [:a [:km "open: Google Cloud"]]
-                 ;[:e [:km "open: Sourcegraph"]] ; TODO:
+                 [:d [:km "open: Google Cloud"]]
+                 [:e [:km "open: Sourcegraph"]]
+                 [:r [:km "open: Cloudflare"]]
                  [:i [:km "open: Railway"]]
-                 [:escape [:km "open: Ronin"]]
+                 [:a [:km "open: Ronin"]]
                  [:j [:km "open: Sentry"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:s [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
@@ -527,8 +527,8 @@
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
-                 [:n :!CTOS9] ; search npm packages
                  [:grave_accent_and_tilde [:km "open: Modal"]]
+                 ;[:n :!CTOS9] ; search npm packages TODO: useful, make work
                  ;[:z [:km "open: Yandex Cloud"]]
                  ;[:tab [:km "open: AWS"]]
                  ;[:q [:km "open: Expo"]]
