@@ -21,7 +21,7 @@
              :w-mode {:key :w}
              :e-mode {:key :e}
              :r-mode {:key :r}
-             ;:t-mode {:key :t}
+             :t-mode {:key :t}
              :i-mode {:key :i}
              :o-mode {:key :o}
              :p-mode {:key :p}
@@ -879,15 +879,13 @@
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
-                 [:n [:km "New X post"]]
-                 [:v [:km "open: Multi"]] ; TODO: move to https://tuple.app
                  [:d [:km "New Spark email"]]
                  ; TODO: bind LA post (nice one)
                  ; TODO: have have way to make emails (that can be mass sent from say Loops or smth else, check that email platform thats oss)
                  [:f [:km "open: Spark"]]
-                 ;[:o [:km "open: Loops"]]
-                 [:i [:km "open: Cal.com"]]
-                 [:o [:km "web: Cal.video"]]
+                 ;[:i [:km "web: Cal.video"]]
+                 [:i [:km "open: Tuple"]]
+                 [:o :!CO7] ; open Tuple menu bar
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:c [:km "Create new contact"]]
                  [:j [:km "open: Discord"]]
@@ -897,9 +895,13 @@
                  [:h [:km "w: HN submit"]]
                  [:b [:km "w: Lobsters submit"]]
                  [:t [:km "open: Contacts"]]
+                 [:n [:km "New X post"]]
                  [:m [:km "open: X Pro"]]
                  [:i [:km "w: Reddit submit"]]
                  [:period [:km "open: Element"]]
+                 [:v [:km "open: Loops"]]
+                 ;[:i [:km "open: Cal.com"]]
+                 ;[:v [:km "open: Multi"]]
                  ;[:o [:km "open: Zoom"]]
                  ; TODO: add generic `LA Post` function later maybe or have another bind for `LA Post`
                  ;[:period [:km "w: Twitter Search"]]
