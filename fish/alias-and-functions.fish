@@ -282,3 +282,16 @@ function o
         go $argv
     end
 end
+
+
+# oi = go install ..
+function oi
+    if not set -q argv[1]
+        echo "Usage: oi <github-user/repo>"
+        return 1
+    else
+        # TODO: turn this into ts script
+        # example cmd: go install github.com/no-src/gofs/...@latest
+        go install github.com/$argv[1]/...@latest
+    end
+end
