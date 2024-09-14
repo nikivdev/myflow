@@ -299,3 +299,11 @@ function oi
         go install github.com/$argv[1]/...@latest
     end
 end
+
+function .
+    if not set -q argv[1]
+        open .
+    else
+        open $argv
+    end
+end
