@@ -821,27 +821,29 @@
                   [:spacebar [:km "Screenshot into ChatGPT and explain"]]]}
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
-                 [:q [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
-                 [:w [:km "Go to test macro"]]
-                 [:e [:km "Test"]]
+                 [:q [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (not needed with )
+                 [:w [:km "Test"]]
+                 ;[:d [:km "Move active `Test` KM macro actions"]] to a group with custom name (alfred show a list of groups to current actions in `Test` into)
                  ; TODO: move active actions in `Test` macro to new global macro (delete those actions from `Test` too) (similar to `New KM global macro`)
-                 [:j [:km "cursor: ts."]]
-                 [:f [:km "cursor: config."]]
-                 [:k [:km "cursor: personal."]]
-                 [:l [:km "cursor: la."]]
-                 [:d [:km "cursor: tg."]]
-                 ;[:k [:km "cursor: sites."]]
-                 [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
-                 [:v [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
                  ; TODO: make alfred/raycast thing to search for folders/files etc.
+                 [:j [:km "cursor: ts."]]
+                 [:k [:km "cursor: nikiv."]]
+                 [:l [:km "cursor: la."]]
+                 [:e [:km "cursor: config."]]
+                 [:f [:km "cursor: focus."]]
+                 [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
+                 [:period [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
                  [:i [:km "cursor: rust."]]
                  [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
+                 [:v [:km "cursor: data."]]
+                 [:b [:km "cursor: past."]]
                  [:semicolon [:km "cursor: swift."]]
                  [:h [:km "edit: GitHub Bio"]]
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
-                 ;[:c [:km "cursor: clients."]] ; TODO: add when I have client work (add on LA profile as services)
 
+                 ;[:c [:km "cursor: clients."]] ; TODO: add when I have client work (add on LA profile as services)
+                 ;[:k [:km "cursor: sites."]]
                  ;[:v [:km "cursor: x."]]
                  ;[:period [:km "cursor: zig."]]
                  ;[:i [:km "cursor: cpp."]]
@@ -875,8 +877,8 @@
                  ;[:e [:km "w: Baselime LA logs"]]
                  ;[:f [:km "w: Cloudflare LA deployments"]]
                  ;[:g [:km "w: Grafbase LA logs"]]
-                 ;[:spacebar [:km "cursor: clones"]]]}
-                 [:spacebar :!COSn]]} ; Selection -> GitHub
+                 [:spacebar [:km "Go to test macro"]]]}
+                 ;[:spacebar :!COSn]]} ; Selection -> GitHub ; TODO: move it to another key (on s?)
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
