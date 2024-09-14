@@ -285,11 +285,11 @@
                  [:slash [:km "open: Instruments"]]
                  [:d [:km "open: Proxyman"]]
                  ;[:h [:km "open: GitButler"]]
-                 [:h [:km "open: Terminal"]] ; TODO: using it for daemons for now, get flox to do it
                  [:i [:km "open: RustRover"]]
                  [:n [:km "open: PyCharm"]]
                  [:m [:km "open: GoLand"]]
-                 [:g [:km "open: JuxtaCode"]]
+                 [:h [:km "open: JuxtaCode"]]
+                 ;[:h [:km "open: Terminal"]] ; TODO: using it for daemons for now, get flox to do it
                  ;[:t [:km "open: Voice Memos"]]
                  ;[:b [:km "open: BetterTouchTool"]]
                  ;[:h [:km "open: Val Town"]]
@@ -826,23 +826,23 @@
                  [:e [:km "Test"]]
                  ; TODO: move active actions in `Test` macro to new global macro (delete those actions from `Test` too) (similar to `New KM global macro`)
                  [:j [:km "cursor: ts."]]
-                 [:k [:km "cursor: personal."]]
                  [:f [:km "cursor: config."]]
+                 [:k [:km "cursor: personal."]]
                  [:l [:km "cursor: la."]]
                  [:d [:km "cursor: tg."]]
-                 [:v [:km "cursor: x."]]
                  ;[:k [:km "cursor: sites."]]
-                 [:semicolon [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
-                 [:o [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
+                 [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
+                 [:v [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
                  ; TODO: make alfred/raycast thing to search for folders/files etc.
                  [:i [:km "cursor: rust."]]
                  [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
-                 [:period [:km "cursor: swift."]]
+                 [:semicolon [:km "cursor: swift."]]
                  [:h [:km "edit: GitHub Bio"]]
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
                  ;[:c [:km "cursor: clients."]] ; TODO: add when I have client work (add on LA profile as services)
 
+                 ;[:v [:km "cursor: x."]]
                  ;[:period [:km "cursor: zig."]]
                  ;[:i [:km "cursor: cpp."]]
                  ;[:g [:km "cursor: genx"]]
@@ -875,15 +875,13 @@
                  ;[:e [:km "w: Baselime LA logs"]]
                  ;[:f [:km "w: Cloudflare LA deployments"]]
                  ;[:g [:km "w: Grafbase LA logs"]]
+                 ;[:spacebar [:km "cursor: clones"]]]}
                  [:spacebar :!COSn]]} ; Selection -> GitHub
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
                  [:d [:km "New Spark email"]]
-                 ; TODO: bind LA post (nice one)
-                 ; TODO: have have way to make emails (that can be mass sent from say Loops or smth else, check that email platform thats oss)
                  [:f [:km "open: Spark"]]
-                 ;[:i [:km "web: Cal.video"]]
                  [:i [:km "open: Tuple"]]
                  [:o :!CO7] ; open Tuple menu bar
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
@@ -892,14 +890,18 @@
                  [:k [:km "open: Telegram"]]
                  [:l [:km "open: X Messages"]]
                  [:semicolon [:km "open: Slack"]]
-                 [:h [:km "w: HN submit"]]
-                 [:b [:km "w: Lobsters submit"]]
+                 [:h :!COTS6] ; Tuple hang up
                  [:t [:km "open: Contacts"]]
                  [:n [:km "New X post"]]
                  [:m [:km "open: X Pro"]]
                  [:i [:km "w: Reddit submit"]]
                  [:period [:km "open: Element"]]
                  [:v [:km "open: Loops"]]
+                 ; TODO: bind LA post (nice one)
+                 ; TODO: have have way to make emails (that can be mass sent from say Loops or smth else, check that email platform thats oss)
+                 ;[:i [:km "web: Cal.video"]]
+                 ;[:h [:km "w: HN submit"]] ; TODO: move this to nicer keys outside of z
+                 ;[:b [:km "w: Lobsters submit"]]
                  ;[:i [:km "open: Cal.com"]]
                  ;[:v [:km "open: Multi"]]
                  ;[:o [:km "open: Zoom"]]
