@@ -1,3 +1,15 @@
+# activates global flox env
+# TODO: disabled now as it slows down shell too much
+# related issues: https://github.com/flox/flox/issues/2076 & https://github.com/warpdotdev/Warp/issues/5297
+# the `_date` commented out can be found in ./past-config.fish
+# if set -q SHLVL
+#   _date +%T.%N >> ~/log/config.fish
+#   # eval $(flox activate -d $HOME -vvvvv)
+#   eval $(flox activate -d $HOME)
+#   _date +%T.%N >> ~/log/config.fish
+#   # echo ">>>>>>>>>>" >> ~/log/config.fish
+# end
+
 # alias _date="/Users/nikiv/.flox/run/aarch64-darwin.default/bin/date" # for debugging how long things take (wrap around lines to measure and see time diffs)
 
 # path TODO: not used mostly

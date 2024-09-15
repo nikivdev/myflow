@@ -7,4 +7,13 @@ node_modules
 # other
 run
 workspaces
-fish/private.fish
+
+# other
+past.*
+private.*
+cache
+flox/run
+flox/lib
+flox/log
+# TODO: maybe no ignore this? how useful is it?
+flox/env/manifest.lock
