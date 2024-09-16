@@ -513,8 +513,10 @@
                  [:6 :!C6]
                  [:q [:km "open: Clerk"]]
                  [:w [:km "open: Vercel"]]
-                 [:r [:km "open: Google Cloud"]]
                  [:e [:km "open: Sourcegraph"]]
+                 [:r [:km "open: Yandex Cloud"]]
+                 [:g [:km "open: AWS"]]
+                 [:escape [:km "open: Google Cloud"]]
                  [:d [:km "open: Cloudflare"]]
                  [:i [:km "open: Railway"]]
                  [:a [:km "open: Ronin"]]
@@ -530,8 +532,6 @@
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:grave_accent_and_tilde [:km "open: Modal"]]
                  ;[:n :!CTOS9] ; search npm packages TODO: useful, make work
-                 ;[:z [:km "open: Yandex Cloud"]]
-                 ;[:tab [:km "open: AWS"]]
                  ;[:q [:km "open: Expo"]]
                  ;[:d [:km "open: Preview"]]
                  ;[:j [:km "open: PostHog"]]
@@ -1225,7 +1225,7 @@
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
                  [:o [:km "open: Safari Technology Preview"]]
-                 [:n [:open "raycast://extensions/loris/safari/search-history"]]
+                 [:i [:open "raycast://extensions/loris/safari/search-history"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:comma [:km "Select line & move to Claude"]]
                  [:j :!CTO0] ; Search Alfred Snippets
