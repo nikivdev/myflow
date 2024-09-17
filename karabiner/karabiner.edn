@@ -881,13 +881,13 @@
                  ;[:spacebar :!COSn]]} ; Selection -> GitHub ; TODO: move it to another key (on s?)
         {:des "zkey (chat)"
          :rules [:z-mode
+                 [:w [:km "New Spark email"]]
                  [:e [:km "open: Telegram"]]
-                 [:d [:km "New Spark email"]]
+                 [:r [:km "open: Loops"]]
                  [:f [:km "open: Spark"]]
                  [:i [:km "open: Tuple"]]
                  [:o :!CO7] ; open Tuple menu bar
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
-                 [:c [:km "Create new contact"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
                  [:l [:km "open: X Messages"]]
@@ -898,7 +898,12 @@
                  [:m [:km "open: X Pro"]]
                  [:i [:km "w: Reddit submit"]]
                  [:period [:km "open: Element"]]
-                 [:v [:km "open: Loops"]]
+                 [:s :!CTOSe] ; Loom recording restart
+                 [:d :!CTOSr] ; Loom recording pause/unpause
+                 [:c :!CTOSh] ; Loom recording cancel
+                 [:v :!CTOSg] ; Loom recording
+                 [:u [:km "Create new contact"]] ; TODO: move
+                 ;[:b :!CTOSw] ; Loom recording draw ; TODO: fails on loom..
                  ; TODO: bind LA post (nice one)
                  ; TODO: have have way to make emails (that can be mass sent from say Loops or smth else, check that email platform thats oss)
                  ;[:i [:km "web: Cal.video"]]
@@ -1219,8 +1224,6 @@
                  [:escape [:km "Entire Screen into ChatGPT and explain"]]
                  [:grave_accent_and_tilde [:km "Screenshot into ChatGPT and explain"]]
                  [:a :!CS8] ; Screenshot -> Eagle
-                 [:s :!CTOSg] ; Loom recording
-                 [:d :!CTOSh] ; Loom recording cancel
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
