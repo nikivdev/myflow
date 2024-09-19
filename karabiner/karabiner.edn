@@ -60,7 +60,8 @@
                  [:5 :!T5]
                  [:6 :!T6]
                  [:7 :!T7]
-                 [:escape [:km "Cursor = Open sublime merge to commit current project | All = Homerow"]]
+                 ;[:escape [:km "Cursor = Open sublime merge to commit current project | All = Homerow"]] ; TODO: bind smth nicer
+                 ; TODO: have auto commit somewhere here with nice commits
                  [:grave_accent_and_tilde [:km "Cursor = commit all | All = clone open repo and open in Cursor"]]
                  ; TODO: LA capture, maybe map to f key. f+j or smth (universal)
                  [:left_command [:km "explain (selection, or paste)"]]
@@ -834,13 +835,13 @@
                  [:e [:km "cursor: config."]]
                  [:f [:km "cursor: focus."]]
                  [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
-                 [:period [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
                  [:i [:km "cursor: rust."]]
                  [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
                  [:v [:km "cursor: data."]]
                  [:b [:km "cursor: past."]]
                  [:semicolon [:km "cursor: swift."]]
+                 [:period [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
                  [:h [:km "edit: GitHub Bio"]]
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
 
