@@ -307,3 +307,12 @@ function .
         open $argv
     end
 end
+
+
+function re
+    if not set -q argv[1]
+        repopack .
+    else
+        repopack $argv
+    end
+end
