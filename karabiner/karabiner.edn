@@ -838,7 +838,8 @@
                  [:i [:km "cursor: rust."]]
                  [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
-                 [:v [:km "cursor: data."]]
+                 [:c [:km "cursor: data."]]
+                 [:v [:km "cursor: test."]]
                  [:b [:km "cursor: past."]]
                  [:semicolon [:km "cursor: swift."]]
                  [:period [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
