@@ -283,7 +283,7 @@ And I have a [personal Discord](https://discord.com/invite/TVafwaD23d) where you
 
 ## Contribute
 
-Whilst this is a personal config/setup, I am always open to useful suggestions/ideas or new tools/apps.
+Whilst this is a personal config/setup, I am always open to useful suggestions/ideas.
 
 Can see [existing issues](../../issues) for things being worked on. See [main issue](../../issues/140) for what's in focus right now.
 
