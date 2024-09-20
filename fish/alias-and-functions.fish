@@ -25,6 +25,23 @@ alias v="mv" # move files/folders or rename
 alias p="pip3"
 alias pr="gh pr checkout"
 
+function run_ts_script
+    set script_name $argv[1]
+    set script_path ~/src/ts/scripts/$script_name.ts
+
+    if test -f $script_path
+        set -e argv[1]
+        bun $script_path $argv
+    else
+        echo "Script not found: $script_path"
+        return 1
+    end
+end
+for script in ~/src/ts/scripts/*.ts
+    set script_name (basename $script .ts)
+    alias $script_name "run_ts_script $script_name"
+end
+
 # _functions
 # TODO: make completions for `: ` so it gets the scripts found in package.json
 # below is maybe hacky way to do it but it has to by dynamic
