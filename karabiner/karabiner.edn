@@ -291,8 +291,8 @@
                  [:i [:km "open: RustRover"]]
                  [:n [:km "open: PyCharm"]]
                  [:m [:km "open: GoLand"]]
-                 [:h [:km "open: JuxtaCode"]]
-                 ;[:h [:km "open: Terminal"]] ; TODO: using it for daemons for now, get flox to do it
+                 [:h [:km "open: Terminal"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only), swap to Ghostty
+                 ;[:h [:km "open: JuxtaCode"]]
                  ;[:t [:km "open: Voice Memos"]]
                  ;[:b [:km "open: BetterTouchTool"]]
                  ;[:h [:km "open: Val Town"]]
@@ -714,7 +714,7 @@
                  [:j :!TSspacebar] ; Things Quick Entry (with context)
                  [:semicolon [:km "Things (top task)"]]
                  [:quote :!TOCspacebar] ; Things Quick Entry (without context) TODO: should just be part of f+j (after the fact new bind to remove context)
-                 [:comma  [:km "Add safari link to selected markdown text"]]
+                 [:comma  [:km "Add safari link to selected markdown text"]] ; TODO: move to another key, s?
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file/text action
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
@@ -953,8 +953,9 @@
                  [:j [:km "edit: run.ts"]]
                  [:k [:km "edit: run.rs"]]
                  [:semicolon [:km "edit: Fish alias/functions"]]
+                 [:comma [:km "edit: Flox"]]
                  [:period [:km "edit: Fish config"]]
-                 [:comma [:km "edit: Fish alias/functions (past)"]]
+                 [:slash [:km "edit: Fish alias/functions (past)"]]
                  ;[:l [:km "edit: Solid"]]
                  ;[:tab [:km "proj: Learning"]]
                  ;[:slash [:km "edit: KusKus todo"]]

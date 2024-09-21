@@ -75,5 +75,8 @@ systems = ["aarch64-darwin", "aarch64-linux", "x86_64-darwin", "x86_64-linux"]
 # Uncomment to disable CUDA detection.
 cuda-detection = false
 
-[services.watch-test]
-command = "gofs -source=/Users/nikiv/tmp/test-folder-sync/source -dest=/Users/nikiv/tmp/test-folder-sync/dest"
+[services.react-dev]
+command = "cd ~/src/test/react && bun dev"
+
+[services.goku]
+command = "bun ~/src/ts/daemons/goku-watch.ts"

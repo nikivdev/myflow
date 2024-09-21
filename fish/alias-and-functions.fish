@@ -176,7 +176,7 @@ function w.
     cursor .env
 end
 
-function f
+function .
     if not set -q argv[1]
         open .
     else
@@ -322,19 +322,18 @@ function oi
     end
 end
 
-function .
-    if not set -q argv[1]
-        open .
-    else
-        open $argv
-    end
-end
-
-
 function re
     if not set -q argv[1]
         repopack .
     else
         repopack $argv
     end
+end
+
+function fs
+    flox activate -s
+end
+
+function fsl
+   flox services logs --follow
 end
