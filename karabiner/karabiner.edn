@@ -711,7 +711,7 @@
                  ;[:n [:km "open: Simulator"]]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
-                 [:j :!TSspacebar] ; Things Quick Entry (with context)
+                 [:j :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
                  [:semicolon [:km "Things (top task)"]]
                  [:quote :!TOCspacebar] ; Things Quick Entry (without context) TODO: should just be part of f+j (after the fact new bind to remove context)
                  [:comma  [:km "Add safari link to selected markdown text"]] ; TODO: move to another key, s?
@@ -824,11 +824,12 @@
                   [:spacebar [:km "Screenshot into ChatGPT and explain"]]]}
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
-                 [:q [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (not needed with )
-                 [:w [:km "Test"]]
+                 ;[:q [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (not needed with )
+                 ;[:w [:km "Test"]] ; TODO: map to nice key
                  ;[:d [:km "Move active `Test` KM macro actions"]] to a group with custom name (alfred show a list of groups to current actions in `Test` into)
                  ; TODO: move active actions in `Test` macro to new global macro (delete those actions from `Test` too) (similar to `New KM global macro`)
                  ; TODO: make alfred/raycast thing to search for folders/files etc.
+                 [:w [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]]
                  [:l [:km "cursor: la."]]
@@ -842,7 +843,6 @@
                  [:v [:km "cursor: test."]]
                  [:b [:km "cursor: past."]]
                  [:semicolon [:km "cursor: swift."]]
-                 [:period [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
                  [:h [:km "edit: GitHub Bio"]]
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
 
