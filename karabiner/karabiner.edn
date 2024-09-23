@@ -288,9 +288,9 @@
                  [:slash [:km "open: Instruments"]]
                  [:d [:km "open: Proxyman"]]
                  ;[:h [:km "open: GitButler"]]
-                 [:i [:km "open: RustRover"]]
                  [:n [:km "open: PyCharm"]]
-                 [:m [:km "open: GoLand"]]
+                 [:i [:km "open: GoLand"]]
+                 [:m [:km "open: RustRover"]]
                  [:h [:km "open: Terminal"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only), swap to Ghostty
                  ;[:h [:km "open: JuxtaCode"]]
                  ;[:t [:km "open: Voice Memos"]]
@@ -714,7 +714,8 @@
                  [:j :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
                  [:semicolon [:km "Things (top task)"]]
                  [:quote :!TOCspacebar] ; Things Quick Entry (without context) TODO: should just be part of f+j (after the fact new bind to remove context)
-                 [:comma  [:km "Add safari link to selected markdown text"]] ; TODO: move to another key, s?
+                 [:comma [:km "edit: Flox"]]
+                 ;[:comma  [:km "Add safari link to selected markdown text"]] ; TODO: move to another key, s?
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file/text action
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
@@ -836,9 +837,9 @@
                  [:e [:km "cursor: config."]]
                  [:f [:km "cursor: focus."]]
                  [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
-                 [:i [:km "cursor: rust."]]
+                 [:m [:km "cursor: rust."]]
                  [:n [:km "cursor: py."]]
-                 [:m [:km "cursor: go."]]
+                 [:i [:km "cursor: go."]]
                  [:c [:km "cursor: data."]]
                  [:v [:km "cursor: test."]]
                  [:b [:km "cursor: past."]]
@@ -953,7 +954,6 @@
                  [:j [:km "edit: run.ts"]]
                  [:k [:km "edit: run.rs"]]
                  [:semicolon [:km "edit: Fish alias/functions"]]
-                 [:comma [:km "edit: Flox"]]
                  [:period [:km "edit: Fish config"]]
                  [:slash [:km "edit: Fish alias/functions (past)"]]
                  ;[:l [:km "edit: Solid"]]

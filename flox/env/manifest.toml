@@ -75,8 +75,11 @@ systems = ["aarch64-darwin", "aarch64-linux", "x86_64-darwin", "x86_64-linux"]
 # Uncomment to disable CUDA detection.
 cuda-detection = false
 
-[services.react-dev]
-command = "cd ~/src/test/react && bun dev"
-
 [services.goku]
 command = "bun ~/src/ts/daemons/goku-watch.ts"
+
+# [services.nikiv.dev]
+# command = "cd ~/src/nikiv.dev && bun dev"
+
+# [services.react]
+# command = "cd ~/src/test/react && bun dev"

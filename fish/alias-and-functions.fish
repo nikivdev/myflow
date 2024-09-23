@@ -55,13 +55,14 @@ function :
     end
 end
 
-function e
-    if not set -q argv[1]
-        encore run
-    else
-        encore $argv
-    end
-end
+# TODO: add nice
+# function en
+#     if not set -q argv[1]
+#         encore run
+#     else
+#         encore $argv
+#     end
+# end
 
 function i
     if not set -q argv[1]
@@ -339,3 +340,17 @@ end
 function fsl
    flox services logs --follow
 end
+
+function fsr
+   flox services restart
+end
+
+
+function e
+    if not set -q argv[1]
+        code2prompt .
+    else
+        code2prompt $argv
+    end
+end
+
