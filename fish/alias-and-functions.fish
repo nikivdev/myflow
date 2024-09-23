@@ -1,7 +1,7 @@
 alias cwd='pwd | pbcopy'
 alias dc="cd ~/clones" # wrapping over dc existing cmd
 alias nb="nix-build"
-alias d="z"
+alias d="cd" # TODO: move to https://github.com/ClementNerma/Jumpy/issues/5
 alias a="eza" # list files
 alias af="type" # <cmd> - view definition of <cmd>
 alias do="cd ~/src/org"
@@ -11,6 +11,8 @@ alias wr="cursor readme.md"
 alias df="cd ~/src/config"
 alias da="cd ~/src"
 alias dj="cd ~/src/ts"
+alias dt="cd ~/src/test"
+alias dtr="cd ~/src/test/react"
 alias dk="cd ~/src/nikiv.dev"
 alias dK="cd ~/src/nikiv.dev/private"
 alias dl="cd ~/src/org/learn-anything"
