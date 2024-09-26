@@ -337,6 +337,10 @@ function fs
     flox activate -s
 end
 
+function :u
+    bun update --latest
+end
+
 function fsl
    flox services logs --follow
 end
