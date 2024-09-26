@@ -781,7 +781,8 @@
                  [:s [:km "New KM global macro"]]
                  [:d [:km "Dismiss notifications"]]
                  [:h :!CSOa] ; Move window left
-                 [:j [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (maybe, don't use `Test` any more as much)
+                 [:j [:km "switch between windows of same app"]]
+                 ;[:j [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (maybe, don't use `Test` any more as much)
                  [:k :!COSf] ; Maximize window
                  [:l :!CSOd] ; Move window right
                  [:semicolon :!COSs] ; Move window between different screen & maximize
@@ -826,7 +827,6 @@
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
                  ;[:q [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (not needed with )
-                 ;[:w [:km "Test"]] ; TODO: map to nice key
                  ;[:d [:km "Move active `Test` KM macro actions"]] to a group with custom name (alfred show a list of groups to current actions in `Test` into)
                  ; TODO: move active actions in `Test` macro to new global macro (delete those actions from `Test` too) (similar to `New KM global macro`)
                  ; TODO: make alfred/raycast thing to search for folders/files etc.
@@ -883,8 +883,9 @@
                  ;[:e [:km "w: Baselime LA logs"]]
                  ;[:f [:km "w: Cloudflare LA deployments"]]
                  ;[:g [:km "w: Grafbase LA logs"]]
-                 [:spacebar [:km "Go to test macro"]]]}
                  ;[:spacebar :!COSn]]} ; Selection -> GitHub ; TODO: move it to another key (on s?)
+                 [:spacebar [:km "Test"]] ; TODO: map to nice key
+                 [:left_command [:km "Go to test macro"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:w [:km "New Spark email"]]
