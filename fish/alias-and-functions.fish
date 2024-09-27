@@ -19,12 +19,13 @@ alias dl="cd ~/src/org/learn-anything"
 alias dL="cd ~/src/org/learn-anything/private"
 alias dm="cd ~/tmp"
 alias ds="cd ~/try"
+alias dn="cd ~/new"
 alias dp="cd ~/past"
 alias dd="cd ~/data"
 alias aa="eza -la" # list files (with hidden)
 alias r="ronin"
 alias v="mv" # move files/folders or rename
-alias p="pip3"
+alias p="python3"
 alias pr="gh pr checkout"
 
 function run_ts_script

@@ -271,9 +271,9 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:e [:km "open: Linear"]]
-                 [:a [:km "open: Learn Anything"]] ; TODO: for now web, later map to desktop app
                  [:t [:km "open: Notion"]]
-                 [:v [:km "open: Yaak"]]
+                 [:a [:km "open: Yaak"]]
+                 [:v [:km "open: dbx"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
@@ -287,11 +287,12 @@
                  [:comma [:km "open: Zed"]]
                  [:slash [:km "open: Instruments"]]
                  [:d [:km "open: Proxyman"]]
-                 ;[:h [:km "open: GitButler"]]
                  [:n [:km "open: PyCharm"]]
                  [:i [:km "open: GoLand"]]
                  [:m [:km "open: RustRover"]]
                  [:h [:km "open: Terminal"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only), swap to Ghostty
+                 ;[:a [:km "open: GitButler"]]
+                 ;[:a [:km "open: Learn Anything"]] ; TODO: for now web, later map to desktop app
                  ;[:h [:km "open: JuxtaCode"]]
                  ;[:t [:km "open: Voice Memos"]]
                  ;[:b [:km "open: BetterTouchTool"]]
@@ -517,10 +518,10 @@
                  [:q [:km "open: Clerk"]]
                  [:w [:km "open: Vercel"]]
                  [:e [:km "open: Sourcegraph"]]
+                 [:d [:km "open: Cloudflare"]]
                  [:r [:km "open: Yandex Cloud"]]
                  [:g [:km "open: AWS"]]
                  [:escape [:km "open: Google Cloud"]]
-                 [:d [:km "open: Cloudflare"]]
                  [:i [:km "open: Railway"]]
                  [:a [:km "open: Ronin"]]
                  ;[:j [:km "open: Sentry"]] ; TODO: enable back
@@ -697,7 +698,6 @@
                  [:q [:km "open: Photos"]]
                  [:w [:km "open: Figma"]]
                  [:i [:km "open: Rive"]]
-                 [:o [:km "open: v0"]]
                  [:m [:km "open: Midjourney"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
@@ -706,14 +706,15 @@
                  [:a [:km "open: Chrome Canary"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:escape [:km "open: Framer"]]
+                 [:o [:km "open: v0"]]
                  [:n [:km "open: Play"]]
                  ; TODO: lottie
                  ;[:n [:km "open: Simulator"]]
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
                  [:j :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
-                 [:semicolon [:km "Things (top task)"]]
-                 [:quote :!TOCspacebar] ; Things Quick Entry (without context) TODO: should just be part of f+j (after the fact new bind to remove context)
+                 [:semicolon :!TOCspacebar] ; Things Quick Entry (without context) TODO: should just be part of f+j (after the fact new bind to remove context)
+                 [:quote [:km "Things (top task)"]]
                  [:comma [:km "edit: Flox"]]
                  ;[:comma  [:km "Add safari link to selected markdown text"]] ; TODO: move to another key, s?
                  [:period [:km "edit: Karabiner"]]
