@@ -1,8 +1,9 @@
 alias cwd='pwd | pbcopy'
 alias dc="cd ~/clones" # wrapping over dc existing cmd
-alias a="eza" # list files
+alias a="eza -I 'license'" # list files (without license)
 alias af="type" # <cmd> - view definition of <cmd>
 alias df="cd ~/src/do && eza"
+alias dF="cd ~/src/pause && eza"
 alias gl="git pull"
 alias rr="rm -rf"
 alias wr="cursor readme.md"
@@ -15,13 +16,15 @@ alias dk="cd ~/src/nikiv.dev && eza"
 alias dK="cd ~/src/nikiv.dev/private && eza"
 alias dl="cd ~/src/do/learn-anything && eza"
 alias dL="cd ~/src/do/learn-anything/private && eza"
-alias dm="cd ~/tmp && eza"
+alias dz="cd ~/tmp && eza"
 alias ds="cd ~/try && eza"
 alias dS="cd ~/try/private && eza"
 alias dn="cd ~/new && eza"
 alias dp="cd ~/past && eza"
 alias dP="cd ~/past/private && eza"
 alias dd="cd ~/data && eza"
+alias dw="cd ~/downloads && eza"
+alias do="cd ~/desktop && eza"
 alias aa="eza -la" # list files (with hidden)
 alias r="ronin"
 alias v="mv" # move files/folders or rename
@@ -396,4 +399,8 @@ function d
             return 1
         end
     end
+end
+
+function :w
+   bun --watch $argv
 end
