@@ -1,32 +1,31 @@
 alias cwd='pwd | pbcopy'
 alias dc="cd ~/clones" # wrapping over dc existing cmd
-alias nb="nix-build"
-alias d="cd" # TODO: move to https://github.com/ClementNerma/Jumpy/issues/5
 alias a="eza" # list files
 alias af="type" # <cmd> - view definition of <cmd>
-alias do="cd ~/src/org"
+alias df="cd ~/src/org && eza"
 alias gl="git pull"
 alias rr="rm -rf"
 alias wr="cursor readme.md"
-alias df="cd ~/src/config"
-alias da="cd ~/src"
-alias dj="cd ~/src/ts"
-alias dt="cd ~/src/test"
-alias dtr="cd ~/src/test/react"
-alias dk="cd ~/src/nikiv.dev"
-alias dK="cd ~/src/nikiv.dev/private"
-alias dl="cd ~/src/org/learn-anything"
-alias dL="cd ~/src/org/learn-anything/private"
-alias dm="cd ~/tmp"
-alias ds="cd ~/try"
-alias dn="cd ~/new"
-alias dp="cd ~/past"
-alias dd="cd ~/data"
+# alias df="cd ~/src/config"
+alias da="cd ~/src && eza"
+alias dj="cd ~/src/ts && eza"
+alias de="cd ~/src/test && eza"
+alias der="cd ~/src/test/react && eza"
+alias dk="cd ~/src/nikiv.dev && eza"
+alias dK="cd ~/src/nikiv.dev/private && eza"
+alias dl="cd ~/src/org/learn-anything && eza"
+alias dL="cd ~/src/org/learn-anything/private && eza"
+alias dm="cd ~/tmp && eza"
+alias ds="cd ~/try && eza"
+alias dn="cd ~/new && eza"
+alias dp="cd ~/past && eza"
+alias dd="cd ~/data && eza"
 alias aa="eza -la" # list files (with hidden)
 alias r="ronin"
 alias v="mv" # move files/folders or rename
 alias p="python3"
 alias pr="gh pr checkout"
+alias nb="nix-build"
 
 function run_ts_script
     set script_name $argv[1]
@@ -160,7 +159,7 @@ function fi
 end
 
 
-function fs
+function f
     if not set -q argv[1]
         # flox TODO:
     else
@@ -380,5 +379,15 @@ function changeRemoteToFork
         git remote -v
     else
         echo "Error: Failed to change remote URL"
+    end
+end
+
+# TODO: move to https://github.com/ClementNerma/Jumpy/issues/5
+function d
+    if not set -q argv[1]
+        cd
+    else
+        cd $argv
+        eza
     end
 end
