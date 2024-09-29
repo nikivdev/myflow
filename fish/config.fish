@@ -8,6 +8,9 @@ set -x NIX_SSL_CERT_FILE /etc/ssl/certs/ca-certificates.crt # needed for flox/ni
 direnv hook fish | source # direnv (cd into folder, will get the `.env` etc.)
 set -x DIRENV_LOG_FORMAT "" # hide direnv unloading messages
 
-# TODO: for some reason, not all things in ~/.profile are being added to PATH (i.e. `brew doctor` was failing without below line)
-fish_add_path /opt/homebrew/sbin
+fish_add_path $HOME/.flox/run/aarch64-darwin.default/bin
 fish_add_path ~/go/bin
+fish_add_path /opt/homebrew/bin
+fish_add_path "$HOME/Library/Application Support/edgedb/bin"
+fish_add_path "$HOME/.bun/bin"
+fish_add_path "$HOME/.cargo/bin"
