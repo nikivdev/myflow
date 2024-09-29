@@ -2,7 +2,7 @@ alias cwd='pwd | pbcopy'
 alias dc="cd ~/clones" # wrapping over dc existing cmd
 alias a="eza" # list files
 alias af="type" # <cmd> - view definition of <cmd>
-alias df="cd ~/src/org && eza"
+alias df="cd ~/src/do && eza"
 alias gl="git pull"
 alias rr="rm -rf"
 alias wr="cursor readme.md"
@@ -13,12 +13,14 @@ alias de="cd ~/src/test && eza"
 alias der="cd ~/src/test/react && eza"
 alias dk="cd ~/src/nikiv.dev && eza"
 alias dK="cd ~/src/nikiv.dev/private && eza"
-alias dl="cd ~/src/org/learn-anything && eza"
-alias dL="cd ~/src/org/learn-anything/private && eza"
+alias dl="cd ~/src/do/learn-anything && eza"
+alias dL="cd ~/src/do/learn-anything/private && eza"
 alias dm="cd ~/tmp && eza"
 alias ds="cd ~/try && eza"
+alias dS="cd ~/try/private && eza"
 alias dn="cd ~/new && eza"
 alias dp="cd ~/past && eza"
+alias dP="cd ~/past/private && eza"
 alias dd="cd ~/data && eza"
 alias aa="eza -la" # list files (with hidden)
 alias r="ronin"
@@ -387,7 +389,11 @@ function d
     if not set -q argv[1]
         cd
     else
-        cd $argv
-        eza
+        if cd $argv
+            eza
+        else
+            # cd failed, so we don't run eza
+            return 1
+        end
     end
 end
