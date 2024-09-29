@@ -359,3 +359,26 @@ function e
     end
 end
 
+function changeRemoteToFork
+    set -l repo_url $argv[1]
+
+    # Extract the repo name from the URL
+    set -l repo_name (string split '/' $repo_url | tail -n 1)
+
+    # Set the GitHub username directly in the function
+    set -l github_username "nikitavoloboev"
+
+    # Construct the new URL
+    set -l new_url "https://github.com/$github_username/$repo_name"
+
+    # Change the remote URL
+    git remote set-url origin $new_url
+
+    if test $status -eq 0
+        echo "Remote URL changed successfully to: $new_url"
+        echo "Current remotes:"
+        git remote -v
+    else
+        echo "Error: Failed to change remote URL"
+    end
+end
