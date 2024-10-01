@@ -60,6 +60,7 @@
                  [:5 :!T5]
                  [:6 :!T6]
                  [:7 :!T7]
+                 [:escape [:km "switch between windows of same app"]]
                  ;[:escape [:km "Cursor = Open sublime merge to commit current project | All = Homerow"]] ; TODO: bind smth nicer
                  ; TODO: have auto commit somewhere here with nice commits
                  [:grave_accent_and_tilde [:km "Cursor = commit all | All = clone open repo and open in Cursor"]]
@@ -782,7 +783,6 @@
                  [:s [:km "New KM global macro"]]
                  [:d [:km "Dismiss notifications"]]
                  [:h :!CSOa] ; Move window left
-                 [:j [:km "switch between windows of same app"]]
                  ;[:j [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (maybe, don't use `Test` any more as much)
                  [:k :!COSf] ; Maximize window
                  [:l :!CSOd] ; Move window right
