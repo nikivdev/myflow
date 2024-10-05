@@ -247,10 +247,11 @@ function nv
     end
 end
 
-function gh
-    git fetch --unshallow
-    juxta .
-end
+# TODO: change
+# function gh
+#     git fetch --unshallow
+#     juxta .
+# end
 
 function g
     if not set -q argv[1]
