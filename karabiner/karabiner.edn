@@ -169,7 +169,7 @@
                  [[:l :n] :!TOSr] ; ScriptKit
                  [[:l :m] :!COS9] ; Raycast
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
-                 [[:j :semicolon] :!CSspacebar] ; Homerow
+                 ;[[:j :semicolon] :!CSspacebar] ; Homerow ; TODO: check if it's useful
                  ;[[:j :semicolon] [:km "Notion global search (in app)"]]
                  ;[[:j :semicolon] [:km "Cursor = Open sublime merge to commit current project | All = Homerow"]] ; TODO: think it better
                  ;[[:l :m] :!TOSt] ; Raycast AI quick chat
