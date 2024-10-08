@@ -14,3 +14,5 @@ fish_add_path /opt/homebrew/bin
 fish_add_path "$HOME/Library/Application Support/edgedb/bin"
 fish_add_path "$HOME/.bun/bin"
 fish_add_path "$HOME/.cargo/bin"
+
+set -gx PATH /Users/nikiv/.local/share/solana/install/active_release/bin $PATH # solana https://solana.com/docs/intro/installation

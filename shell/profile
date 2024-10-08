@@ -8,3 +8,5 @@
 # export PATH=$PATH:$GOROOT/bin
 # export PATH="/opt/homebrew/sbin:$PATH"
 # . "$HOME/.cargo/env"
+
+export PATH="/Users/nikiv/.local/share/solana/install/active_release/bin:$PATH"
