@@ -416,7 +416,7 @@
                  [:w [:km "open: IINA"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:b [:km "Edit keyboard shortcuts"]]
-                 [:period [:km "open: Preview"]]
+                 [:j [:km "open: Preview"]]
                  [:k [:km "open: Reader"]]
                  [:l [:km "open: Dictionary"]]
                  [:i [:km "open: Feedback Assistant"]]
@@ -681,6 +681,7 @@
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
                  [:l [:km "Google clipboard"]]
+                 ;[:f :!CSspacebar] ; Homerow ; TODO: check if useful
                  [:semicolon [:km "Google Searchio selected word"]]
                  [:quote [:km "Select line and google"]]
                  [:z {:pkey :button2}] ; Right click
