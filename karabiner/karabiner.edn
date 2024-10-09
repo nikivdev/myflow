@@ -63,8 +63,9 @@
                  [:escape [:km "switch between windows of same app"]]
                  ;[:escape [:km "Cursor = Open sublime merge to commit current project | All = Homerow"]] ; TODO: bind smth nicer
                  ; TODO: have auto commit somewhere here with nice commits
-                 [:grave_accent_and_tilde [:km "Cursor = commit all | All = clone open repo and open in Cursor"]]
                  ; TODO: LA capture, maybe map to f key. f+j or smth (universal)
+                 ;[:grave_accent_and_tilde [:km "Cursor = commit all | All = clone open repo and open in Cursor"]] ; TODO: fix up
+                 [:grave_accent_and_tilde :!Tspacebar]
                  [:left_command [:km "explain (selection, or paste)"]]
                  [:tab [:km "better (selection)"]]
                  ;[:left_command [:km "enter: explain"]]
