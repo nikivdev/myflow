@@ -218,10 +218,10 @@
                  [:f [:km "Get time in SF"]]
                  [:t [:km "Save open tabs in safari"]]
                  ; TODO: should be automated, i should never run these myself
-                 [:n [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
-                 [:m [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
+                 [:i [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
-                 [:i [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
+                 [:n [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
+                 [:m [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
                  [:semicolon [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
                  [:s [:km "Open Dash and search docsets"]]]}
         {:des "qkey (cmd + shift)"
