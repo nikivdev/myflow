@@ -65,6 +65,7 @@
                  ; TODO: have auto commit somewhere here with nice commits
                  ; TODO: LA capture, maybe map to f key. f+j or smth (universal)
                  ;[:grave_accent_and_tilde [:km "Cursor = commit all | All = clone open repo and open in Cursor"]] ; TODO: fix up
+                 ;[:grave_accent_and_tilde [:km "cursor: do"]]
                  [:grave_accent_and_tilde :!Tspacebar] ; contexts window search (only cursor)
                  [:left_command [:km "explain (selection, or paste)"]]
                  [:tab [:km "better (selection)"]]
@@ -274,8 +275,9 @@
          :rules [:w-mode
                  [:e [:km "open: Linear"]]
                  [:t [:km "open: Notion"]]
-                 [:a [:km "open: Yaak"]]
-                 [:v [:km "open: dbx"]]
+                 [:a [:km "open: Bike"]]
+                 [:d [:km "open: dbx"]]
+                 [:v [:km "open: Yaak"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
@@ -288,7 +290,7 @@
                  [:c [:km "open: Spotify"]]
                  [:comma [:km "open: Zed"]]
                  [:slash [:km "open: Instruments"]]
-                 [:d [:km "open: Proxyman"]]
+                 [:g [:km "open: Proxyman"]]
                  [:n [:km "open: PyCharm"]]
                  [:i [:km "open: RustRover"]]
                  [:m [:km "open: GoLand"]]
