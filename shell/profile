@@ -10,3 +10,4 @@
 # . "$HOME/.cargo/env"
 
 export PATH="/Users/nikiv/.local/share/solana/install/active_release/bin:$PATH"
+. "/Users/nikiv/.deno/env"
