@@ -61,6 +61,10 @@ function :
     end
 end
 
+function :t
+    bun dev --port $argv
+end
+
 # TODO: add nice
 # function en
 #     if not set -q argv[1]
