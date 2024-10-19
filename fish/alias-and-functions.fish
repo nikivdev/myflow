@@ -29,7 +29,7 @@ alias do="cd ~/src/org && eza"
 alias aa="eza -la" # list files (with hidden)
 alias r="ronin"
 alias v="mv" # move files/folders or rename
-alias p="python3"
+# alias p="python3"
 alias pr="gh pr checkout"
 alias nb="nix-build"
 
@@ -190,6 +190,14 @@ function w.
 end
 
 function .
+    if not set -q argv[1]
+        # TODO:
+    else
+        python3 $argv
+    end
+end
+
+function ,
     if not set -q argv[1]
         open .
     else
