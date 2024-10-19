@@ -294,7 +294,7 @@
                  [:i [:km "open: PyCharm"]]
                  [:n [:km "open: RustRover"]]
                  [:m [:km "open: GoLand"]]
-                 [:h [:km "open: Terminal"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only), swap to Ghostty
+                 [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
                  ;[:a [:km "open: GitButler"]]
                  ;[:a [:km "open: Learn Anything"]] ; TODO: for now web, later map to desktop app
                  ;[:h [:km "open: JuxtaCode"]]
