@@ -29,6 +29,7 @@ lsof.pkg-path = "lsof"
 fd.pkg-path = "fd"
 topgrade.pkg-path = "topgrade"
 mkpasswd.pkg-path = "mkpasswd"
+poetry.pkg-path = "poetry"
 # hello.pkg-path = "hello"
 # nodejs = { version = "^18.4.2", pkg-path = "nodejs_18" }
 
