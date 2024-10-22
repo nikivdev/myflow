@@ -292,8 +292,8 @@
                  [:slash [:km "open: Instruments"]]
                  [:g [:km "open: Proxyman"]]
                  [:i [:km "open: PyCharm"]]
-                 [:n [:km "open: GoLand"]]
-                 [:m [:km "open: RustRover"]]
+                 [:n [:km "open: RustRover"]]
+                 [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
                  ;[:a [:km "open: GitButler"]]
                  ;[:a [:km "open: Learn Anything"]] ; TODO: for now web, later map to desktop app
@@ -843,8 +843,8 @@
                  [:f [:km "cursor: focus."]]
                  [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
                  [:period [:km "cursor: py."]]
-                 [:n [:km "cursor: go."]]
-                 [:m [:km "cursor: rust."]]
+                 [:n [:km "cursor: rust."]]
+                 [:m [:km "cursor: go."]]
                  [:d [:km "cursor: data."]]
                  [:c [:km "cursor: new."]]
                  [:v [:km "cursor: test."]]
