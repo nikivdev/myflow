@@ -852,7 +852,6 @@
                  [:semicolon [:km "cursor: swift."]]
                  [:h [:km "edit: GitHub Bio"]]
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
-
                  ;[:c [:km "cursor: clients."]] ; TODO: add when I have client work (add on LA profile as services)
                  ;[:k [:km "cursor: sites."]]
                  ;[:v [:km "cursor: x."]]
@@ -1239,6 +1238,7 @@
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
+                 [:i [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:o [:km "open: Safari Technology Preview"]]
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:comma [:km "Select line & move to Claude"]]
@@ -1246,7 +1246,6 @@
                  [:k [:open "raycast://extensions/loris/safari/search-history"]]
                  [:l [:km "open: Dash (with search)"]]
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
-                 [:period [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  ;[:u [:km "Select word & search in Dash"]]
                  ;[:i [:km "Select word & move to Claude"]]
                  ;[:k :!Ctab]
