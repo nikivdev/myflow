@@ -841,6 +841,7 @@
                  [:l [:km "cursor: la."]]
                  [:e [:km "cursor: config."]]
                  [:f [:km "cursor: focus."]]
+                 [:i [:km "cursor: zig."]]
                  [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
                  [:period [:km "cursor: py."]]
                  [:n [:km "cursor: rust."]]
