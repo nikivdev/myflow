@@ -521,17 +521,15 @@
                  [:6 :!C6]
                  [:q [:km "open: Clerk"]]
                  [:w [:km "open: Vercel"]]
-                 [:e [:km "open: Sourcegraph"]]
+                 [:j [:km "open: Perplexity"]]
                  [:d [:km "open: Cloudflare"]]
                  [:r [:km "open: Yandex Cloud"]]
                  [:g [:km "open: AWS"]]
                  [:escape [:km "open: Google Cloud"]]
-                 [:i [:km "open: Railway"]]
                  [:a [:km "open: Ronin"]]
-                 ;[:j [:km "open: Sentry"]] ; TODO: enable back
+                 [:e [:km "open: Sourcegraph"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:s [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 [:left_command [:km "open: Perplexity"]]
                  [:f [:km "open: ChatGPT"]]
                  [:tab [:km "open: EdgeDB Cloud"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
@@ -539,6 +537,9 @@
                  [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:grave_accent_and_tilde [:km "open: Modal"]]
+                 ; TODO: map i to sentry or honeycomb or axiom..
+                 ;[:j [:km "open: Sentry"]] ; TODO: enable back
+                 ;[:i [:km "open: Railway"]]
                  ;[:n :!CTOS9] ; search npm packages TODO: useful, make work
                  ;[:q [:km "open: Expo"]]
                  ;[:d [:km "open: Preview"]]
