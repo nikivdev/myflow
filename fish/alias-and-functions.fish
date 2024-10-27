@@ -169,7 +169,7 @@ function fi
 end
 
 
-function f
+function fs
     if not set -q argv[1]
         # flox TODO:
     else
@@ -189,15 +189,15 @@ function w.
     cursor .env
 end
 
-function .
-    if not set -q argv[1]
-        # TODO:
-    else
-        python3 $argv
-    end
-end
+# function .
+#     if not set -q argv[1]
+#         # TODO:
+#     else
+#         python3 $argv
+#     end
+# end
 
-function ,
+function f
     if not set -q argv[1]
         open .
     else
