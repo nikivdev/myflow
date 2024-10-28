@@ -1244,9 +1244,9 @@
                  [:o [:km "open: Safari Technology Preview"]]
                  [:comma [:km "Select line & move to Claude"]]
                  [:j :!CTO0] ; Search Alfred Snippets
-                 [:k [:km "open: Dash (with search)"]]
                  [:n :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
-                 [:l [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
+                 [:k [:open "raycast://extensions/loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
+                 [:l [:km "open: Dash (with search)"]]
                  [:m [:open "raycast://extensions/loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  ;[:u [:km "Select word & search in Dash"]]
