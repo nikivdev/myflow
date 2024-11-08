@@ -1249,6 +1249,7 @@
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:k [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
+                 ;[:n :!CTequal_sign] ; Anybox search
                  [:n [:raycast "anybox/anybox/search"]]
                  [:l [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
