@@ -539,6 +539,7 @@
                  [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:grave_accent_and_tilde [:km "open: Modal"]]
+                 [:left_command [:km "open: Claude 2"]]
                  ; TODO: map i to sentry or honeycomb or axiom..
                  ;[:j [:km "open: Sentry"]] ; TODO: enable back
                  ;[:i [:km "open: Railway"]]
@@ -553,7 +554,6 @@
                  ;[:i [:km "open: OpenAI Platform"]]
                  ;[:s [:alfred "search files" "nikivi.manage.notes"]] ; TODO: (make it open in obsidian)
                  ;[:semicolon [:km "open: ChatGPT 2"]]
-                 ;[:left_command [:km "open: Claude"]]
                  ;[:s [:alfred "search folders" "nikivi.search.folders"]]
                  ;[:g [:km "open: Grafbase"]]
                  ;[:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]

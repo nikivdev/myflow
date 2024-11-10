@@ -425,3 +425,16 @@ function ..
     cd ..
     eza
 end
+
+function l
+    ollama $argv
+end
+
+
+function p
+    if not set -q argv[1]
+        pnpm i
+    else
+        pnpm add $argv
+    end
+end
