@@ -9,7 +9,6 @@ version = 1
 # the `[install]` section.
 [install]
 eza.pkg-path = "eza"
-pnpm.pkg-path = "pnpm"
 bat.pkg-path = "bat"
 edgedb.pkg-path = "edgedb"
 python3.pkg-path = "python3"
