@@ -2,28 +2,28 @@
 
 > Apps/CLIs/configs I use on macOS/iOS. Fish, Karabiner, Cursor..
 
-![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/mac-dark-aug.png)
+![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/mac-dark.png)
 
 > Dark appearance. All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
 
-![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/mac-light-aug.png)
+![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/mac-light.png)
 
 > Light appearance. Use light themes when outside or when there is glare from the sun as it makes text more readable.
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/1-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/1-ios.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/2-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/2-ios.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/3-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/3-ios.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/4-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/4-ios.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/5-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/5-ios.png"></a>
 
 > iOS screens. All described in detail below.
 
@@ -214,7 +214,7 @@ I use 3 widgets in lock screen.
 I keep common shortcut actions as widgets on the side (just need to scroll left to access):
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/6-ios.png"></a>
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/6-ios.png"></a>
 
 ## iOS Shortcuts
 
@@ -240,7 +240,7 @@ I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I
 I use `Test` shortcut to prototype new actions/ideas quickly. I then duplicate the working prototype & give it appropriate name. I use the same prototyping idea with [KM macros](https://wiki.nikiv.dev/macOS/apps/keyboard-maestro/km-macros).
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/test-shortcut.jpg"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-august/test-shortcut.jpg"></a>
 
 And I mapped the action button to run [Quick Note](https://www.icloud.com/shortcuts/526e2896d4df4b06b33ccab37f4f6eee) shortcut.
 
@@ -249,7 +249,7 @@ And I mapped the action button to run [Quick Note](https://www.icloud.com/shortc
 Here is how my control center looks:
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/7-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/7-ios.png"></a>
 
 <!-- TODO: uncomment/udpate when I get iPad again and find use for it -->
 <!-- ## WatchOS
