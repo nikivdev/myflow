@@ -290,11 +290,11 @@
                  [:period [:km "open: Sublime Merge"]]
                  [:semicolon [:km "open: Xcode Beta"]]
                  [:c [:km "open: Spotify"]]
-                 [:comma [:km "open: Zed"]]
                  [:slash [:km "open: Instruments"]]
                  [:g [:km "open: Proxyman"]]
                  [:i [:km "open: PyCharm"]]
-                 [:n [:km "open: RustRover"]]
+                 [:comma [:km "open: RustRover"]] ; TODO: move to nicer key, maybe to n again?
+                 [:n [:km "open: Zed"]]
                  [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
                  ;[:a [:km "open: GitButler"]]
