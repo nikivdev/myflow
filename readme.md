@@ -97,10 +97,8 @@ Below is a list of all the apps & CLIs I use and how. Together with the [config]
 - [BetterTouchTool](https://wiki.nikiv.dev/macOS/apps/bettertouchtool) for custom trackpad gestures. Specifically love three finger swipe left/right to move between tabs in [Safari](https://wiki.nikiv.dev/web/browsers/safari). Three finger swipe up to create new tab. Three down to close. Four finger swipe global swipe to show Safari. Four to right to open [Cursor](https://cursor.sh). Four left to open [Warp](https://wiki.nikiv.dev/unix/shell/warp).
 - [Fantastical](https://wiki.nikiv.dev/macOS/apps/fantastical) to manage my calendar and events.
 - [CleanShot](https://getcleanshot.com) for quick editing of screenshots/screencasts.
-- [Notion](https://wiki.nikiv.dev/tools/notion) for managing personal and organisational knowledge.
 - [Transmission](https://www.transmissionbt.com/) for downloading [torrents](https://wiki.nikiv.dev/networking/peer-to-peer/bittorrent).
 - [1Password](https://wiki.nikiv.dev/macOS/apps/1password) to keep all passwords and secret info. I prefer to use Passkeys or Single Sign On via GitHub/Google.
-<!-- - [Obsidian](https://wiki.nikiv.dev/tools/obsidian) for [note taking](https://wiki.nikiv.dev/other/wiki-workflow). Love its linking feature and various plugins it has. Also use it as a thinking scratchpad of todos. -->
 
 ### Code
 
@@ -109,7 +107,6 @@ Below is a list of all the apps & CLIs I use and how. Together with the [config]
 - [Warp](https://wiki.nikiv.dev/unix/shell/warp) as primary terminal together with [Fish Shell](https://wiki.nikiv.dev/unix/shell/fish).
 - [Dash](https://kapeli.com/dash) to search APIs fast.
 - [Xcode](https://wiki.nikiv.dev/macOS/apps/xcode/) to build [iOS](https://wiki.nikiv.dev/operating-systems/ios) apps in [SwiftUI](https://wiki.nikiv.dev/programming-languages/swift/swift-libraries/swiftui).
-<!-- - [Pathfinder](https://pathfinder.dev/) for GraphQL requests (use [Grafbase](https://grafbase.com)). And [HTTPie](https://httpie.io/) for regular HTTP requests. -->
 
 ### Social
 
@@ -161,7 +158,6 @@ Apps are listed in order they appear in each of the screens.
 - Files to search for files like books/PDFs/.. in ~/Documents and ~/Desktop.
 - [Spark](https://sparkmailapp.com) to check on mail. Don't have notifications set for emails.
 - [GitHub](https://github.com/mobile) to check on notifications, reply to issues or search for repos/issues.
-- [Notion](https://wiki.nikiv.dev/tools/notion) for managing personal and organisational knowledge.
 - Photos to see/search photos I took and saved. Love its Memories feature.
 - [Google Maps](https://itunes.apple.com/us/app/google-maps-transit-food/id585027354) for navigating around the world. Saving [lists of places I want to visit and places I loved seeing](https://wiki.nikiv.dev/travel/visited).
 - [Audible](https://itunes.apple.com/us/app/audible-audio-books-podcasts/id379693831?mt=8) to listen to audio books.
@@ -182,7 +178,7 @@ Apps are listed in order they appear in each of the screens.
 - [Trading 212](https://www.trading212.com) to to buy/sell stocks/ETFs.
 - [1Password](https://wiki.nikiv.dev/macOS/apps/1password) to search for passwords/notes/..
 - [Luma](https://lu.ma/) to check on events.
-- [Tailscale](https://tailscale.com/) to connect to my exit node server that I use as my VPN in places I need a VPN. Use [Bitfolk](https://bitfolk.com/) for my server.
+- [Tailscale](https://tailscale.com/) to connect to my exit node server that I use as my VPN in places I need a VPN.
 - [Bluesky](https://blueskyweb.xyz/) to read posts.
 - [Mastodon](https://joinmastodon.org/) to read posts.
 - [Solflare](https://solflare.com/) to send Solana. It also has Safari extension I use to connect to some Solana apps.
