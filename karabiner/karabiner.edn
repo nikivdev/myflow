@@ -710,6 +710,7 @@
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:a [:km "open: Chrome Canary"]]
+                 [:s [:km "open: Excalidraw"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:escape [:km "open: Framer"]]
                  [:k [:km "open: v0"]]
@@ -750,7 +751,6 @@
                  ;[:s [:km "edit: 2nd Warp tab"]]
                  ;[:escape [:km "open: Draw my UI"]]
                  ;[:n :!STh] ; Record macro TODO: rebind it
-                 ;[:grave_accent_and_tilde [:km "open: Excalidraw"]]
                  ;[:s [:!TOreturn_or_enter :!Cs]]
                  ;[:s [:km "open: Eagle"]]
                  ;[:d [:km "Save app state (Safari = top link, etc.)"]]
