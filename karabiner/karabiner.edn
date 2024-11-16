@@ -124,7 +124,8 @@
                  [:d :delete_or_backspace]
                  [:f :return_or_enter]
                  [:g :!Ctab]
-                 [:semicolon [:km "Selected text to Claude"]]
+                 [:semicolon :!OS1] ; ChatGPT selected text
+                 ;[:semicolon [:km "Selected text to Claude"]]
                  [:period [:km "Select word & move to Claude"]]
                  [:comma [:km "Select word & move to Claude (and run instantly)"]]
                  [:slash [:km "Select line & move to Claude"]]
@@ -169,10 +170,11 @@
          :rules [
                  [[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  [[:j :l] :!CTOSspacebar] ; Alfred
-                 [[:k :l] [:alfred "run" "iansinnott.keyboardmaestro"]]
-                 [[:l :n] :!TOSr] ; ScriptKit
+                 [[:k :l] [:raycast "renfei_song/snippetslab/index"]]
+                 [[:j :semicolon] [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [[:l :m] :!COS9] ; Raycast
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
+                 ;[[:l :n] :!TOSr] ; ScriptKit
                  ;[[:j :semicolon] :!CSspacebar] ; Homerow ; TODO: check if it's useful
                  ;[[:j :semicolon] [:km "Notion global search (in app)"]]
                  ;[[:j :semicolon] [:km "Cursor = Open sublime merge to commit current project | All = Homerow"]] ; TODO: think it better
@@ -278,7 +280,7 @@
                  [:e [:km "open: Linear"]]
                  [:t [:km "open: Notion"]]
                  [:a [:km "open: Bike"]]
-                 [:d [:km "open: dbx"]]
+                 [:d [:km "open: SnippetsLab"]]
                  [:v [:km "open: Yaak"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
@@ -297,6 +299,7 @@
                  [:n [:km "open: Zed"]]
                  [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
+                 ;[:d [:km "open: dbx"]] ; TODO: bind key #now
                  ;[:a [:km "open: GitButler"]]
                  ;[:a [:km "open: Learn Anything"]] ; TODO: for now web, later map to desktop app
                  ;[:h [:km "open: JuxtaCode"]]
@@ -341,7 +344,6 @@
                  ;[:g [:km "open: Keynote"]]
                  ;[:d [:km "open: Music"]]
                  ;[:d [:km "open: Day One"]]
-                 ;[:d [:km "open: SnippetsLab"]]
                  ;[:g [:km "Journal"]] ; TODO: complete to use LA
                  ;[:h [:km "open: Notes"]]
                  ;[:f [:km "open: Learn Anything"]]
@@ -853,6 +855,7 @@
                  [:c [:km "cursor: new."]]
                  [:v [:km "cursor: test."]]
                  [:b [:km "cursor: past."]]
+                 [:g [:km "cursor: gen."]]
                  [:semicolon [:km "cursor: swift."]]
                  [:h [:km "edit: GitHub Bio"]]
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`

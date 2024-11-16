@@ -18,8 +18,7 @@ alias dl="cd ~/src/do/learn-anything && eza"
 alias dL="cd ~/src/do/learn-anything/private && eza"
 alias dz="cd ~/tmp && eza"
 alias ds="cd ~/try && eza"
-alias dr="cd ~/try/repos && eza"
-alias dS="cd ~/try/private && eza"
+alias dr="cd ~/try/private && eza"
 alias dw="cd ~/src/new && eza"
 alias dq="cd ~/Documents && eza"
 alias dp="cd ~/past && eza"
@@ -372,11 +371,19 @@ function fsr
 end
 
 
+# TODO: replace with own tool
 function e
     if not set -q argv[1]
         code2prompt .
     else
         code2prompt $argv
+    end
+end
+
+function c
+    if not set -q argv[1]
+    else
+        bat $argv
     end
 end
 
@@ -437,5 +444,12 @@ function p
         pnpm i
     else
         pnpm add $argv
+    end
+end
+
+function s
+    if not set -q argv[1]
+    else
+        watchexec --no-vcs-ignore --restart --exts swift --clear --project-origin . "tput reset && swift $argv"
     end
 end
