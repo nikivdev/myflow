@@ -1,19 +1,16 @@
 # core
 .DS_Store
-node_modules
 .env
 .env*.local
-
-# other
-run
-workspaces
-
-# other
-past.*
+output
+dist
+target
+.idea
+node_modules
+package-lock.json
+pnpm-lock.yaml
+.vercel
+private
 private.*
-cache
-flox/run
-flox/lib
-flox/log
-# TODO: maybe no ignore this? how useful is it?
-flox/env/manifest.lock
+private-*
+past.*
