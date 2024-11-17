@@ -718,15 +718,15 @@
                  [:k [:km "open: v0"]]
                  [:l [:km "open: Rive"]]
                  [:o [:km "open: bolt"]]
-                 ;[:l :!Creturn_or_enter] ; TODO: move it to nicer place
-                 [:j :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
+                 [:j :!TOCspacebar] ; Things Quick Entry (without context)
                  [:semicolon [:km "Things (top task)"]]
-                 [:quote :!TOCspacebar] ; Things Quick Entry (without context) TODO: should just be part of f+j (after the fact new bind to remove context)
                  [:comma [:km "edit: Flox"]]
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file/text action
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:m [:km "open: Midjourney"]]
+                 ;[:j :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
+                 ;[:l :!Creturn_or_enter] ; TODO: move it to nicer place
                  ;[:n [:km "open: Play"]] ; TODO: use
                  ; TODO: use lottie
                  ;[:n [:km "open: Simulator"]]
