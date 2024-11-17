@@ -1,5 +1,6 @@
 alias cwd='pwd | pbcopy'
 alias dc="cd ~/clones" # wrapping over dc existing cmd
+alias dr="cd ~/forks"
 alias a="eza -I 'license'" # list files (without license)
 alias af="type" # <cmd> - view definition of <cmd>
 alias df="cd ~/src/do && eza"
@@ -17,7 +18,6 @@ alias dl="cd ~/src/do/learn-anything && eza"
 alias dL="cd ~/src/do/learn-anything/private && eza"
 alias dz="cd ~/tmp && eza"
 alias ds="cd ~/try && eza"
-alias dr="cd ~/try/private && eza"
 alias dw="cd ~/src/new && eza"
 alias dq="cd ~/Documents && eza"
 alias dp="cd ~/past && eza"
