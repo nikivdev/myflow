@@ -724,8 +724,8 @@
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file/text action
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
+                 [:n :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
                  [:m [:km "open: Midjourney"]]
-                 ;[:j :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
                  ;[:l :!Creturn_or_enter] ; TODO: move it to nicer place
                  ;[:n [:km "open: Play"]] ; TODO: use
                  ; TODO: use lottie
