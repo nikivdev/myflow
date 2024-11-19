@@ -8,7 +8,7 @@ set -x NIX_SSL_CERT_FILE /etc/ssl/certs/ca-certificates.crt # needed for flox/ni
 direnv hook fish | source # direnv (cd into folder, will get the `.env` etc.)
 set -x DIRENV_LOG_FORMAT "" # hide direnv unloading messages
 
-fish_add_path $HOME/.flox/run/aarch64-darwin.default/bin
+fish_add_path $HOME/.flox/run/aarch64-darwin.default.dev/bin
 fish_add_path ~/go/bin
 fish_add_path /opt/homebrew/bin
 fish_add_path "$HOME/Library/Application Support/edgedb/bin"
