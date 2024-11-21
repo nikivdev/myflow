@@ -717,8 +717,7 @@
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:escape [:km "open: Framer"]]
                  [:k [:km "open: v0"]]
-                 [:l [:km "open: Rive"]]
-                 [:o [:km "open: bolt"]]
+                 [:l [:km "open: bolt"]]
                  [:j :!TOCspacebar] ; Things Quick Entry (without context)
                  [:semicolon [:km "Things (top task)"]]
                  [:comma [:km "edit: Flox"]]
@@ -727,6 +726,7 @@
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
                  [:m [:km "open: Midjourney"]]
+                 ;[:l [:km "open: Rive"]]
                  ;[:l :!Creturn_or_enter] ; TODO: move it to nicer place
                  ;[:n [:km "open: Play"]] ; TODO: use
                  ; TODO: use lottie
