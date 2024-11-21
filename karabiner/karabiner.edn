@@ -1239,9 +1239,13 @@
                  [:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots)
                  [:r :!CS4] ; Save picture of selected area as a file (~/Desktop) (system settings > keyboard > screenshots)
                  [:t [:km "w: X (personal)"]]
-                 [:escape [:km "Entire Screen into ChatGPT and explain"]]
-                 [:grave_accent_and_tilde [:km "Screenshot into ChatGPT and explain"]]
-                 [:a :!CS8] ; Screenshot -> Eagle
+                 [:a :!CTOSF1] ; SuperCut start recording
+                 [:s :!CTOSF2] ; SuperCut finish recording TODO: hope supercut adds a way to finish recording from the `start recording` bind itself. this one would be `pause` bind then
+                 [:d :!CTOSF3] ; SuperCut cancel recording
+                 [:c :!CTOSF4] ; SuperCut restart recording
+                 [:z :!CTOSF5] ; SuperCut pause recording ; TODO: move it to `:s` once supercut adds a way to override the `start recording` bind to finish recording too
+                 [:escape :!CS8] ; Screenshot -> Eagle
+                 [:grave_accent_and_tilde :!CS7] ; TRex get text from screenshot
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
@@ -1250,11 +1254,13 @@
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:k [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
-                 ;[:n :!CTequal_sign] ; Anybox search
                  [:n [:raycast "anybox/anybox/search"]]
                  [:l [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  [:period [:km "open: Dash (with search)"]]
+                 ;[:n :!CTequal_sign] ; Anybox search
+                 ;[:escape [:km "Entire Screen into ChatGPT and explain"]]
+                 ;[:grave_accent_and_tilde [:km "Screenshot into ChatGPT and explain"]]
                  ;[:u [:km "Select word & search in Dash"]]
                  ;[:i [:km "Select word & move to Claude"]]
                  ;[:k :!Ctab]
