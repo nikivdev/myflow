@@ -296,9 +296,10 @@
                  [:g [:km "open: Proxyman"]]
                  [:i [:km "open: PyCharm"]]
                  [:comma [:km "open: RustRover"]] ; TODO: move to nicer key, maybe to n again?
-                 [:n [:km "open: Zed"]]
+                 [:n [:km "open: RustRover"]]
                  [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
+                 [:grave_accent_and_tilde [:km "open: Zed"]]
                  ;[:d [:km "open: dbx"]] ; TODO: bind key #now
                  ;[:a [:km "open: GitButler"]]
                  ;[:a [:km "open: Learn Anything"]] ; TODO: for now web, later map to desktop app
