@@ -453,3 +453,7 @@ function s
         watchexec --no-vcs-ignore --restart --exts swift --clear --project-origin . "tput reset && swift $argv"
     end
 end
+
+function :e
+    bunx $argv
+end
