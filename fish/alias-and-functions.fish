@@ -63,7 +63,7 @@ function :
     end
 end
 
-function :t
+function :p
     bun dev --port $argv
 end
 
@@ -302,7 +302,7 @@ function :c
     end
 end
 
-function :r
+function :n
     if not set -q argv[1]
         set run_file (fd -t f -p "run.ts" | head -n 1)
         if test -n "$run_file"
@@ -457,3 +457,12 @@ end
 function :e
     bunx $argv
 end
+
+function :ts
+    bun --watch ~/src/ts/lib/ts-utils/scripts/run.ts
+end
+
+function :r
+    bun --watch $argv
+end
+
