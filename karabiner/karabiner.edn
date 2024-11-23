@@ -842,25 +842,25 @@
                  ;[:d [:km "Move active `Test` KM macro actions"]] to a group with custom name (alfred show a list of groups to current actions in `Test` into)
                  ; TODO: move active actions in `Test` macro to new global macro (delete those actions from `Test` too) (similar to `New KM global macro`)
                  ; TODO: make alfred/raycast thing to search for folders/files etc.
-                 [:w [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
+                 [:w [:km "cursor: new."]]
+                 [:e [:km "cursor: test."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: nikiv."]]
                  [:l [:km "cursor: la."]]
-                 [:e [:km "cursor: config."]]
                  [:f [:km "cursor: focus."]]
-                 [:i [:km "cursor: zig."]]
+                 [:i [:km "cursor: swift."]]
                  [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
-                 [:period [:km "cursor: py."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
                  [:d [:km "cursor: data."]]
-                 [:c [:km "cursor: new."]]
-                 [:v [:km "cursor: test."]]
+                 [:c [:km "cursor: config."]]
                  [:b [:km "cursor: past."]]
                  [:g [:km "cursor: gen."]]
-                 [:semicolon [:km "cursor: swift."]]
+                 [:semicolon [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
                  [:h [:km "edit: GitHub Bio"]]
+                 [:period [:km "cursor: py."]]
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
+                 ;[:i [:km "cursor: zig."]]
                  ;[:c [:km "cursor: clients."]] ; TODO: add when I have client work (add on LA profile as services)
                  ;[:k [:km "cursor: sites."]]
                  ;[:v [:km "cursor: x."]]
