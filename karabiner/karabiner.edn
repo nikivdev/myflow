@@ -857,7 +857,7 @@
                  [:v [:km "cursor: swift."]]
                  [:b [:km "cursor: past."]]
                  [:g [:km "cursor: gen."]]
-                 [:semicolon [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
+                 [:semicolon [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:h [:km "edit: GitHub Bio"]]
                  [:period [:km "cursor: py."]]
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
