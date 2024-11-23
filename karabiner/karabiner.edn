@@ -848,12 +848,13 @@
                  [:k [:km "cursor: nikiv."]]
                  [:l [:km "cursor: la."]]
                  [:f [:km "cursor: focus."]]
-                 [:i [:km "cursor: swift."]]
+                 [:i [:km "cursor: forks"]]
                  [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
                  [:d [:km "cursor: data."]]
                  [:c [:km "cursor: config."]]
+                 [:v [:km "cursor: swift."]]
                  [:b [:km "cursor: past."]]
                  [:g [:km "cursor: gen."]]
                  [:semicolon [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`))
