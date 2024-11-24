@@ -302,7 +302,7 @@ function :c
     end
 end
 
-function :n
+function :s
     if not set -q argv[1]
         set run_file (fd -t f -p "run.ts" | head -n 1)
         if test -n "$run_file"
