@@ -465,3 +465,12 @@ end
 function :r
     bun --watch ~/src/test/ts/scripts/run.ts
 end
+
+# TODO: make into proper tool with completions etc.
+# TODO: do I miss anything by taking over `.` builtin?
+function .
+    bun ~/src/ts/scripts/new.ts $argv
+    eza
+    # TODO: only do it if its folder, the script should return something in that case, check for the return
+    cd $argv
+end
