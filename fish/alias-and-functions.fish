@@ -463,6 +463,5 @@ function :ts
 end
 
 function :r
-    bun --watch $argv
+    bun --watch ~/src/test/ts/scripts/run.ts
 end
-
