@@ -16,3 +16,6 @@ fish_add_path "$HOME/.bun/bin"
 fish_add_path "$HOME/.cargo/bin"
 
 set -gx PATH /Users/nikiv/.local/share/solana/install/active_release/bin $PATH # solana https://solana.com/docs/intro/installation
+
+# Added by Windsurf
+fish_add_path /Users/nikiv/.codeium/windsurf/bin
