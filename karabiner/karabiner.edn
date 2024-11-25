@@ -171,9 +171,10 @@
                  [[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  [[:j :l] :!CTOSspacebar] ; Alfred
                  [[:k :l] [:raycast "renfei_song/snippetslab/index"]]
-                 [[:j :semicolon] [:alfred "run" "iansinnott.keyboardmaestro"]]
+                 [[:l :n] [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [[:l :m] :!COS9] ; Raycast
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
+                 ;[[:j :semicolon] [:alfred "run" "iansinnott.keyboardmaestro"]]
                  ;[[:l :n] :!TOSr] ; ScriptKit
                  ;[[:j :semicolon] :!CSspacebar] ; Homerow ; TODO: check if it's useful
                  ;[[:j :semicolon] [:km "Notion global search (in app)"]]
@@ -221,6 +222,7 @@
          :rules [:tab-mode
                  [:3 [:km "Add/remove explore to focus workspace"]]
                  [:f [:km "Get time in SF"]]
+                 ;[:f [:km "Get time in SF"]]
                  [:t [:km "Save open tabs in safari"]]
                  ; TODO: should be automated, i should never run these myself
                  [:i [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
