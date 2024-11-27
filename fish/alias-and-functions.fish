@@ -474,3 +474,25 @@ function .
     # TODO: only do it if its folder, the script should return something in that case, check for the return
     cd $argv
 end
+
+function gitOpenRemoteInBrowser
+    git remote get-url origin | sed -e 's/git@github.com:/https:\/\/github.com\//' | xargs open
+end
+
+function gitChangeRemote
+    if not set -q argv[1]
+        echo "Please provide a new repository URL"
+        return 1
+    end
+
+    # Extract username and repo name from the URL
+    set -l repo_path (echo $argv[1] | sed -E 's/.*github\.com[:/]([^/]+\/[^/]+)(\.git)?$/\1/')
+
+    # Construct the SSH URL
+    set -l ssh_url "git@github.com:$repo_path.git"
+
+    git remote remove origin
+    git remote add origin $ssh_url
+
+    echo "Remote origin set to: $ssh_url"
+end

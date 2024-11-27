@@ -92,7 +92,6 @@
                  [:spacebar [:km "open: Reflect"]]
                  ;[:spacebar [:km "open: Learn Anything"]]
                  ;[:tab [:km "better (selection)"]] ; TODO: move it to cursor
-                 ;[:left_command [:km "enter: explain"]]
                  ;[:escape [:km "Cursor = Open sublime merge to commit current project | All = Homerow"]] ; TODO: bind smth nicer
                  ; TODO: have auto commit somewhere here with nice commits
                  ; TODO: LA capture, maybe map to f key. f+j or smth (universal)
@@ -856,7 +855,7 @@
                  [:m [:km "cursor: go."]]
                  [:d [:km "cursor: data."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: swift."]]
+                 ;[:v [:km "cursor: swift."]]
                  [:b [:km "cursor: past."]]
                  [:g [:km "cursor: gen."]]
                  [:semicolon [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
@@ -1123,6 +1122,7 @@
                  [:a [:km "open: Apple Developer Documentation"]]
                  [:w [:km "open: Swift Documentation"]]
                  [:f [:km "web: Swift Forums"]]
+                 [:spacebar [:km "New Linear task"]]]}
                  ;[:q [:km "web: AWS Docs and search"]]
                  ;[:w [:km "web: Expo Docs and search"]]
                  ;[:e [:km "web: EdgeDB Docs and search"]]
@@ -1150,7 +1150,6 @@
                  ;[:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
                  ;[:b [:alfred "search alfred" "nikivi.utilities" "bash "]]
                  ;[:spacebar :!OSC1]]} ; Open Dash
-                 [:spacebar [:km "New Linear task"]]]}
         {:des "commakey (words)"
          :rules [:comma-mode
                  [:w [:n :i :k :i :v]] ; -> nikiv
@@ -1163,16 +1162,15 @@
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
                   [:w [:km "Comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
-                  ;[:r [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: | TODO: is NOTE: ever useful?
+                  [:spacebar [:km "enter: explain"]]
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:y [:p :l :e :a :s :e :spacebar]] ; -> please
                   [:u [:u :p :d :a :t :e :spacebar]]]} ; -> update
+                  ;[:r [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: | TODO: is NOTE: ever useful?
                   ;[:grave_accent_and_tilde [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
                   ;[:spacebar [:km "paste: Thanks ♥️"]]]} ; -> Thanks ♥️ (TODO: change to something code related and useful)
          {:des "tsdot"
           :rules [:ts-mode
-                  ;[:tab [:f :u :n :c :t :i :o :n :spacebar]] ; -> function
-                  ;[:tab [:a :s :y :n :c :spacebar :f :u :n :c :t :i :o :n :spacebar]] ; -> async function
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
@@ -1186,7 +1184,9 @@
                   [:tab [:a :s :y :n :c :spacebar]] ; -> async
                   [:escape [:a :w :a :i :t :spacebar]] ; -> await
                   [:left_command [:p :r :o :p :s :period]] ; -> props.
-                  [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
+                  [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]]]} ; -> typescript
+                  ;[:tab [:f :u :n :c :t :i :o :n :spacebar]] ; -> function
+                  ;[:tab [:a :s :y :n :c :spacebar :f :u :n :c :t :i :o :n :spacebar]] ; -> async function
                   ;[:left_command [:spacebar :equal_sign :spacebar]] ; -> =
                   ;[:grave_accent_and_tilde [:period :s :e :t :!S9 :!S0 :left_arrow]] ; -> .set()
                   ;[:left_command [:period :g :e :t :!S9 :!S0]] ; -> .get()
@@ -1200,7 +1200,7 @@
                   ;[:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
                   ;[:c [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
                   ;[:spacebar [:l :o :c :a :l :period]]]} ; -> local.
-                  [:spacebar [:s :t :a :t :e :period]]]} ; -> state.
+                  ;[:spacebar [:s :t :a :t :e :period]]]} ; -> state.
         {:des "godot"
          :rules [:go-mode
                 [:tab [:km "w: GoDoc"]]
