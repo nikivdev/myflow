@@ -14,16 +14,22 @@
     <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/1-ios.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/2-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/2-ios-2.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/3-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/3-ios-2.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/4-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/4-ios-2.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/5-ios.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/5-ios-2.png"></a>
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/6-ios-2.png"></a>
+
+<a align="center" href="https://github.com/nikitavoloboev/config">
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/7-ios-2.png"></a>
 
 > iOS screens. All described in detail below.
 
@@ -195,7 +201,7 @@ The 2 action buttons on bottom in lock screen are `create voice recording` and `
 I keep common shortcut actions as widgets on the side (scroll left from lock screen or first home screen to access):
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
-    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/6-ios.png"></a>
+    <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/8-ios.png"></a>
 
 ## iOS Shortcuts
 
@@ -208,11 +214,11 @@ I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I
 - [Draw](https://www.icloud.com/shortcuts/95d7a485469945db8e71f2df2c914f88) opens [Freeform](https://apps.apple.com/us/app/freeform/id6443742539) app (for fast sketching/drawing on the go)
 - [Phone](https://www.icloud.com/shortcuts/cee3a88e59084520beaeb312bb0897cc) opens Phone app (for searching, making new contacts or entering a phone number)
 - [Places](https://www.icloud.com/shortcuts/54bfaffe332542a1947e514d2c16537e) opens list of options like `Parks/Restaurants/Cafes` and on tap opens search for them in [Google Maps](https://apps.apple.com/us/app/google-maps/id585027354)
-- [Ask](https://www.icloud.com/shortcuts/1c71b0630c634f5a85a181407022c84b) opens [Google Voice](https://apps.apple.com/us/app/google/id284815942) (nice to ask questions that needs the Google know how, usually I ask ChatGPT voice)
+- [AI](https://www.icloud.com/shortcuts/7a747e6e284f4b3ca4f3beecb29c65d4) opens [Gemini](https://apps.apple.com/us/app/google-gemini/id6477489729) app (nice to ask questions that needs Google know how)
 - [Workout](https://www.icloud.com/shortcuts/669d5a52700f4ab09255966cc96e31bc) opens [Caliber](https://apps.apple.com/us/app/caliber-strength-training/id1482405410) app to start or view past workouts
 - [Lens](https://www.icloud.com/shortcuts/c0458ec52a1547e4a4cb101dc2905751) opens [Google Lens](https://apps.apple.com/us/app/google/id284815942) (to know what camera is point at or what the image represents)
 - [Ride/Food](https://www.icloud.com/shortcuts/8e9560d24b0c4087b0c40b989799e9fb) opens [Uber](https://apps.apple.com/us/app/uber-request-a-ride/id368677368) app (to request food or ride)
-- [Photo](https://www.icloud.com/shortcuts/39c4e384596b4b2fa20a10c8c8512190) opens Camera app to quickly take photo/video
+- [Todo](https://www.icloud.com/shortcuts/7656a88946074b128cf7a9fa36904e75) opens [Things](https://apps.apple.com/us/app/things-3/id904237743) with quick entry for creating a todo
 - [Overcast](https://www.icloud.com/shortcuts/7224125bae5a49a29598215a465a3d59) - instantly start playing the current podcast on my feed
 - [Tab](https://www.icloud.com/shortcuts/e77dc26750fe4e96a9f37842908df6ef) - opens new tab in Safari
 - [Audible](https://www.icloud.com/shortcuts/76c982768d93441596d563084b0aeb77) opens [Audible](https://apps.apple.com/us/app/audible-audio-entertainment/id379693831) app to listen to audiobooks
