@@ -539,6 +539,7 @@
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
+                 [:z [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:grave_accent_and_tilde [:km "open: Modal"]]
                  [:left_command [:km "open: Claude 2"]]
@@ -920,11 +921,13 @@
                  [:m [:km "open: X Pro"]]
                  [:i [:km "w: Reddit submit"]]
                  [:period [:km "open: Element"]]
-                 [:s :!CTOSe] ; Loom recording restart
-                 [:d :!CTOSr] ; Loom recording pause/unpause
-                 [:c :!CTOSh] ; Loom recording cancel
-                 [:v :!CTOSg] ; Loom recording
                  [:u [:km "Create new contact"]] ; TODO: move
+                 [:v [:km "open: Zoom"]]
+                 [:spacebar :!CSOz]]} ; Selection -> Twitter
+                 ;[:s :!CTOSe] ; Loom recording restart
+                 ;[:d :!CTOSr] ; Loom recording pause/unpause
+                 ;[:c :!CTOSh] ; Loom recording cancel
+                 ;[:v :!CTOSg] ; Loom recording
                  ;[:b :!CTOSw] ; Loom recording draw ; TODO: fails on loom..
                  ; TODO: bind LA post (nice one)
                  ; TODO: have have way to make emails (that can be mass sent from say Loops or smth else, check that email platform thats oss)
@@ -933,7 +936,6 @@
                  ;[:b [:km "w: Lobsters submit"]]
                  ;[:i [:km "open: Cal.com"]]
                  ;[:v [:km "open: Multi"]]
-                 ;[:o [:km "open: Zoom"]]
                  ; TODO: add generic `LA Post` function later maybe or have another bind for `LA Post`
                  ;[:period [:km "w: Twitter Search"]]
                  ;[:b [:km "w: Twitter"]]
@@ -946,7 +948,6 @@
                  ;[:o [:km "open: FaceTime"]]
                  ;[:o [:km "open: Around"]]
                  ;[:d [:km "open: Mimestream"]]
-                 [:spacebar :!CSOz]]} ; Selection -> Twitter
         {:des "xkey (spotify)"
          :rules [:x-mode
                  [:o [:km "Paste current Spotify song link"]]
