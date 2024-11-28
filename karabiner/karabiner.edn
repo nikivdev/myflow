@@ -1247,17 +1247,16 @@
                  [:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots)
                  [:r :!CS4] ; Save picture of selected area as a file (~/Desktop) (system settings > keyboard > screenshots)
                  [:t [:km "w: X (personal)"]]
-                 [:a :!CTOSF1] ; SuperCut start recording
-                 [:s :!CTOSF2] ; SuperCut finish recording TODO: hope supercut adds a way to finish recording from the `start recording` bind itself. this one would be `pause` bind then
-                 [:d :!CTOSF3] ; SuperCut cancel recording
-                 [:c :!CTOSF4] ; SuperCut restart recording
-                 [:z :!CTOSF5] ; SuperCut pause recording ; TODO: move it to `:s` once supercut adds a way to override the `start recording` bind to finish recording too
+                 [:a [:km "open: Arc"]]
+                 [:grave_accent_and_tilde :!CTOSF5] ; SuperCut pause recording ; TODO: move it to `:s` once supercut adds a way to override the `start recording` bind to finish recording too
+                 [:z :!CTOSF4] ; SuperCut restart recording
                  [:escape :!CS8] ; Screenshot -> Eagle
-                 [:grave_accent_and_tilde :!CS7] ; TRex get text from screenshot
+                 [:s :!CTOSF2] ; SuperCut finish recording TODO: hope supercut adds a way to finish recording from the `start recording` bind itself. this one would be `pause` bind then
+                 [:c :!CTOSF3] ; SuperCut cancel recording
+                 [:d :!CTOSF1] ; SuperCut start recording
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
-                 [:i [:km "open: Arc"]]
                  [:o [:km "open: Safari Technology Preview"]]
                  [:comma [:km "Select line & move to Claude"]]
                  [:j :!CTO0] ; Search Alfred Snippets
@@ -1268,6 +1267,7 @@
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  [:period [:km "activate GitHub search in Arc"]]
                  [:tab [:raycast "anybox/anybox/search"]] ; move to k (after safari bookmark search becomes less useful)
+                 ;[:grave_accent_and_tilde :!CS7] ; TRex get text from screenshot ; TODO: bind to nice key
                  ;[:period [:km "open: Dash (with search)"]]
                  ;[:n :!CTequal_sign] ; Anybox search
                  ;[:escape [:km "Entire Screen into ChatGPT and explain"]]
