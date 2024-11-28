@@ -63,7 +63,8 @@
                  [:tab [:km "open: Anybox"]]
                  [:escape [:km "switch between windows of same app"]]
                  [:grave_accent_and_tilde :!Tspacebar] ; contexts window search (only cursor)
-                 [:left_command [:km "open: Learn Anything"]]
+                 ;[:left_command [:km "open: Learn Anything"]] ; TODO: bind
+                 [:left_command [:km "open: Arc"]]
                  [:q :!Sq]
                  [:w :!Sw]
                  [:e :!Se]
@@ -487,7 +488,7 @@
                  [:e :!S3]
                  [:q :!Sopen_bracket]
                  [:escape :!Sopen_bracket]
-                 [:left_command [:km "explain (selection, or paste)"]]
+                 [:left_command [:km "explain (selection, or paste)"]] ; TODO: bind that to global lisa explain
                  [:r :!Squote]
                  [:t :quote]
                  [:o :open_bracket] ; [
@@ -524,32 +525,35 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
-                 [:q [:km "open: Clerk"]]
+                 [:tab [:km "open: Clerk"]]
+                 [:q [:km "open: Expo"]]
                  [:w [:km "open: Vercel"]]
                  [:e [:km "open: Sourcegraph"]]
                  [:d [:km "open: Cloudflare"]]
                  [:j [:km "open: Perplexity"]]
                  [:i [:km "open: Sentry"]]
-                 [:g [:km "open: AWS"]]
-                 [:escape [:km "open: Google Cloud"]]
                  [:a [:km "open: Ronin"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:s [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:f [:km "open: ChatGPT"]]
-                 [:tab [:km "open: EdgeDB Cloud"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:z [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
-                 [:grave_accent_and_tilde [:km "open: Modal"]]
-                 [:left_command [:km "open: Claude 2"]]
+                 [:escape [:km "open: Railway"]]
+                 [:grave_accent_and_tilde [:km "activate GitHub search in Arc (repos)"]]
+                 [:left_command [:km "open: Grep"]]
+                 [:g [:km "open: EdgeDB Cloud"]]
+                 ;[:g [:km "open: AWS"]]
+                 ;[:escape [:km "open: Google Cloud"]]
+                 ;[:grave_accent_and_tilde [:km "activate GitHub search in Arc (code)"]] ; TODO: bind it too, with grep, find use for both
+                 ;[:grave_accent_and_tilde [:km "open: Modal"]] ; TODO: bind
+                 ;[:left_command [:km "open: Claude 2"]] ; TODO: make use of this
                  ;[:r [:km "open: Yandex Cloud"]]
                  ; TODO: map i to sentry or honeycomb or axiom..
                  ;[:j [:km "open: Sentry"]] ; TODO: enable back
-                 ;[:i [:km "open: Railway"]]
                  ;[:n :!CTOS9] ; search npm packages TODO: useful, make work
-                 ;[:q [:km "open: Expo"]]
                  ;[:d [:km "open: Preview"]]
                  ;[:j [:km "open: PostHog"]]
                  ;[:j [:km "open: Honeycomb"]]
@@ -1240,20 +1244,21 @@
         {:des "spacekey"
          :rules [:spacebar-mode
                  [:1 :!TOSq] ; Screenshot and recording options (system settings > keyboard > screenshots)
-                 [:2 :!TOS9] ; Copy picture of screen to the clipboard (system settings > keyboard > screenshots)
-                 [:3 :!CS3] ; Save picture of screen as a file (~/Desktop) (system settings > keyboard > screenshots)
+                 [:2 :!CS4] ; Save picture of selected area as a file (~/Desktop) (system settings > keyboard > screenshots)
+                 [:3 :!TOS9] ; Copy picture of screen to the clipboard (system settings > keyboard > screenshots)
+                 [:4 :!CS3] ; Save picture of screen as a file (~/Desktop) (system settings > keyboard > screenshots)
                  [:q [:km "open: CleanShot"]]
                  [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots)
-                 [:r :!CS4] ; Save picture of selected area as a file (~/Desktop) (system settings > keyboard > screenshots)
+                 [:r :!CS7] ; TRex get text from screenshot ; TODO: bind to nice key
                  [:t [:km "w: X (personal)"]]
-                 [:a [:km "open: Arc"]]
-                 [:grave_accent_and_tilde :!CTOSF5] ; SuperCut pause recording ; TODO: move it to `:s` once supercut adds a way to override the `start recording` bind to finish recording too
                  [:z :!CTOSF4] ; SuperCut restart recording
                  [:escape :!CS8] ; Screenshot -> Eagle
-                 [:s :!CTOSF2] ; SuperCut finish recording TODO: hope supercut adds a way to finish recording from the `start recording` bind itself. this one would be `pause` bind then
+                 [:a :!CTOSF1] ; SuperCut start recording
+                 [:s :!CTOSF5] ; SuperCut pause recording ; TODO: move it to `:s` once supercut adds a way to override the `start recording` bind to finish recording too
+                 [:d :!CTOSF2] ; SuperCut finish recording TODO: hope supercut adds a way to finish recording from the `start recording` bind itself. this one would be `pause` bind then
                  [:c :!CTOSF3] ; SuperCut cancel recording
-                 [:d :!CTOSF1] ; SuperCut start recording
+                 [:v [:km "web: SuperCut workspace"]]
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
@@ -1265,9 +1270,7 @@
                  [:n [:km "New X post"]]
                  [:l [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
-                 [:period [:km "activate GitHub search in Arc"]]
-                 [:tab [:raycast "anybox/anybox/search"]] ; move to k (after safari bookmark search becomes less useful)
-                 ;[:grave_accent_and_tilde :!CS7] ; TRex get text from screenshot ; TODO: bind to nice key
+                 [:tab [:raycast "anybox/anybox/search"]] ; move to k (after safari bookmark search becomes less useful) ; TODO: mby rebind to screenshot/image search?
                  ;[:period [:km "open: Dash (with search)"]]
                  ;[:n :!CTequal_sign] ; Anybox search
                  ;[:escape [:km "Entire Screen into ChatGPT and explain"]]
