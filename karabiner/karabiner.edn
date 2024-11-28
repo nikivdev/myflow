@@ -713,7 +713,6 @@
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
                  [:p :!CTOc] ; Sleep
-                 [:open_bracket :!CT5] ; Turn display on/off
                  [:a [:km "open: Chrome Canary"]]
                  [:s [:km "open: Excalidraw"]]
                  [:h [:km "Make markdown link from selection {link}"]]
@@ -721,15 +720,18 @@
                  [:k [:km "clear active todo"]]
                  [:l [:alfred "active todo" "nikiv"]]
                  [:j :!TOCspacebar] ; Things Quick Entry (without context)
-                 [:semicolon [:km "Things (top task)"]]
+                 [:o [:km "Things: new top task"]]
+                 [:m [:km "Things: new today task at bottom"]]
+                 [:semicolon [:km "Things: new 2nd from top task"]]
                  [:comma [:km "edit: Flox"]]
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file/text action
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
-                 [:m [:km "open: Midjourney"]]
                  [:i [:km "open: bolt"]]
                  [:o [:km "open: v0"]]
+                 ;[:open_bracket :!CT5] ; Turn display on/off
+                 ;[:m [:km "open: Midjourney"]]
                  ;[:l [:km "open: Rive"]]
                  ;[:l :!Creturn_or_enter] ; TODO: move it to nicer place
                  ;[:n [:km "open: Play"]] ; TODO: use
