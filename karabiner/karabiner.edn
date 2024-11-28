@@ -300,11 +300,11 @@
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
                  [:b [:km "open: Zed"]]
                  [:i [:km "open: PyCharm"]]
+                 [:comma [:km "open: JuxtaCode"]]
                  ;[:i [:km "open: Zen Browser"]]
                  ;[:d [:km "open: dbx"]] ; TODO: bind key #now
                  ;[:a [:km "open: GitButler"]]
                  ;[:a [:km "open: Learn Anything"]] ; TODO: for now web, later map to desktop app
-                 ;[:h [:km "open: JuxtaCode"]]
                  ;[:t [:km "open: Voice Memos"]]
                  ;[:b [:km "open: BetterTouchTool"]]
                  ;[:h [:km "open: Val Town"]]
@@ -1266,8 +1266,9 @@
                  [:n [:km "New X post"]]
                  [:l [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
-                 [:period [:km "open: Dash (with search)"]]
+                 [:period [:km "activate GitHub search in Arc"]]
                  [:tab [:raycast "anybox/anybox/search"]] ; move to k (after safari bookmark search becomes less useful)
+                 ;[:period [:km "open: Dash (with search)"]]
                  ;[:n :!CTequal_sign] ; Anybox search
                  ;[:escape [:km "Entire Screen into ChatGPT and explain"]]
                  ;[:grave_accent_and_tilde [:km "Screenshot into ChatGPT and explain"]]
