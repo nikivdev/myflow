@@ -1126,10 +1126,12 @@
                  [:spacebar [:alfred "search websites" "nikivi.web.searches"]]]} ; TODO: change
         {:des "mkey (docs)"
          :rules [:m-mode
+                 ; TODO: add binds for doc search fast
                  [:a [:km "open: Apple Developer Documentation"]]
                  [:w [:km "open: Swift Documentation"]]
                  [:f [:km "web: Swift Forums"]]
-                 [:spacebar [:km "New Linear task"]]]}
+                 [:spacebar [:km "open: Dash (with search)"]]]}
+                 ;[:spacebar [:km "New Linear task"]]]} ; TODO: move it
                  ;[:q [:km "web: AWS Docs and search"]]
                  ;[:w [:km "web: Expo Docs and search"]]
                  ;[:e [:km "web: EdgeDB Docs and search"]]
@@ -1271,7 +1273,6 @@
                  [:l [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  [:tab [:raycast "anybox/anybox/search"]] ; move to k (after safari bookmark search becomes less useful) ; TODO: mby rebind to screenshot/image search?
-                 ;[:period [:km "open: Dash (with search)"]]
                  ;[:n :!CTequal_sign] ; Anybox search
                  ;[:escape [:km "Entire Screen into ChatGPT and explain"]]
                  ;[:grave_accent_and_tilde [:km "Screenshot into ChatGPT and explain"]]
