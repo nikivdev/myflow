@@ -486,7 +486,7 @@ function .
     cd $argv
 end
 
-function gitOpenRemoteInBrowser
+function gitRemoteOpen
     git remote get-url origin | sed -e 's/git@github.com:/https:\/\/github.com\//' | xargs open
 end
 
