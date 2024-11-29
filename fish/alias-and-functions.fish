@@ -298,6 +298,11 @@ function R
     end
 end
 
+# rs - run rust test code for quick edits
+function rs
+    cargo watch -q -- sh -c "tput reset && cargo test -q --lib -- run --nocapture"
+end
+
 function :c
     if not set -q argv[1]
         set cli_file (fd -t f -p "cli.ts" | head -n 1)
