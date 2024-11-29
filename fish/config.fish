@@ -19,3 +19,6 @@ set -gx PATH /Users/nikiv/.local/share/solana/install/active_release/bin $PATH #
 
 # Added by Windsurf
 fish_add_path /Users/nikiv/.codeium/windsurf/bin
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/nikiv/.cache/lm-studio/bin
