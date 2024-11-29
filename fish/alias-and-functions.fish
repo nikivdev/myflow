@@ -287,6 +287,17 @@ function r
     end
 end
 
+# R - run tests with cargo and watch
+function R
+    if not set -q argv[1]
+        cargo watch -q -- sh -c "tput reset && cargo test -q --lib"
+    else
+        cargo watch -q -- sh -c "tput reset && cargo test -q --lib -- $argv --nocapture"
+        # TODO: prob move it to separate cmd as there is use case of running specific test and not see logs as is usual
+        # cargo watch -q -- sh -c "tput reset && cargo test -q --lib -- $argv"
+    end
+end
+
 function :c
     if not set -q argv[1]
         set cli_file (fd -t f -p "cli.ts" | head -n 1)
