@@ -878,6 +878,7 @@
                  [:semicolon [:km "cursor: swift."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
+                 [:s [:km "cursor: data."]]
                  [:d [:km "cursor: docs."]]
                  [:c [:km "cursor: config."]]
                  [:g [:km "cursor: gen."]]
@@ -889,9 +890,10 @@
                  [:spacebar [:km "Test"]] ; TODO: map to nice key
                  [:left_command [:km "Go to test macro"]]
                  ]}
+                 ;[:g [:km "cursor: odin."]]
+                 ;[:g [:km "cursor: zig."]]
                  ;[:r [:km "cursor: past (past month)"]] ; TODO: do (see how useful, maybe best do just search over it as opening it in zed/cursor is too cpu intensive with checks)
                  ;[:t [:km "cursor: past (all)"]] ; TODO: do (see how useful, maybe best do just search over it as opening it in zed/cursor is too cpu intensive with checks)
-                 ;[:g [:km "cursor: zig."]]
                  ;[:q [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (not needed with )
                  ;[:d [:km "Move active `Test` KM macro actions"]] to a group with custom name (alfred show a list of groups to current actions in `Test` into)
                  ; TODO: move active actions in `Test` macro to new global macro (delete those actions from `Test` too) (similar to `New KM global macro`)
@@ -1132,19 +1134,19 @@
                  [:5 :!O5]
                  [:6 :!O6]
                  [:e [:km "Search X"]]
-                 [:f [:alfred "search repos" "me.lachlan.githubjump"]]
+                 [:a [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
                  [:s [:alfred "search websites" "nikivi.web.searches"]]
-                 [:a [:alfred "search github" "nikiv.search.the.web"]]
+                 [:d [:alfred "search hn" "nikiv.search.the.web"]]
+                 [:f [:alfred "search repos" "me.lachlan.githubjump"]]
                  [:r [:alfred "search reddit" "nikivi.search.the.web"]]
-                 [:d [:alfred "search stack overflow" "net.deanishe.alfred-stackoverflow"]]
-                 [:h [:alfred "search hn" "nikivi.search.the.web"]]
                  [:grave_accent_and_tilde [:alfred "search learn anything" "nikivi.learn.anything"]]
                  [:z [:alfred "search lobsters" "nikivi.search.the.web"]]
                  [:c [:alfred "search wiki" "nikivi.mind"]]
-                 [:v [:alfred "search links" "nikivi.mind"]]
-                 [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
                  [:spacebar [:km "New X post"]]
+                 [:a [:alfred "search github" "nikiv.search.the.web"]]
                  ]}
+                 ;[:d [:alfred "search stack overflow" "net.deanishe.alfred-stackoverflow"]]
+                 ;[:v [:alfred "search links" "nikivi.mind"]]
                  ;[:a [:alfred "search shares" "nikivi.ask.create.share"]]
                  ;[:t [:alfred "search subs" "net.deanishe.alfred-reddit"]]
                  ;[:t [:alfred "ssh" "net.deanishe.alfred-ssh"]]
