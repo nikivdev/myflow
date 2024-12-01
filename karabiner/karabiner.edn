@@ -90,7 +90,8 @@
                  [:b :!Sb]
                  [:n :!Sn]
                  [:spacebar [:km "open: Reflect"]]
-                 [:m :!Sm]]}
+                 [:m :!Sm]
+                 ]}
                  ;[:left_command [:km "open: Learn Anything"]] ; TODO: bind
                  ;[:spacebar [:km "open: Learn Anything"]]
                  ;[:tab [:km "better (selection)"]] ; TODO: move it to cursor
@@ -137,7 +138,8 @@
                  [:v :left_shift]
                  [:##b :!Cleft_arrow]
                  [:n :!Cv] ; Paste
-                 [:##m :!Cright_arrow]]}
+                 [:##m :!Cright_arrow]
+                 ]}
                  ;[:semicolon [:km "Selected text to Claude"]]
                  ; TODO: keybind for AI rewrite on selected text (raycast like prompt? maybe raycast has somthing as AI action)
                  ;[:comma [:km "Show active todo"]]
@@ -174,6 +176,8 @@
                  [[:l :n] [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [[:l :m] :!COS9] ; Raycast
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
+                 [[:k :n] [:km "open: Dash (with search)"]]
+                 ]}
                  ;[[:j :semicolon] [:alfred "run" "iansinnott.keyboardmaestro"]]
                  ;[[:l :n] :!TOSr] ; ScriptKit
                  ;[[:j :semicolon] :!CSspacebar] ; Homerow ; TODO: check if it's useful
@@ -182,7 +186,6 @@
                  ;[[:l :m] :!TOSt] ; Raycast AI quick chat
                  ;[[:k :n] :!TOSu] ; Raycast AI window
                  ;[[:j :semicolon] :!TOSw] ; Notion Command Search TODO: replace with LA global search (with same Notion like raycast window) (inline info!)
-                 ]}
         {:des "2key (move + alfred)"
          :rules [:2-mode
                  [:j :!Cdown_arrow]
@@ -191,7 +194,8 @@
                  [:h :!Cleft_arrow]
                  [:semicolon :!Oup_arrow]
                  [:quote :!Odown_arrow]
-                 [:spacebar :!COSu]]} ; Selection -> HN
+                 [:spacebar :!COSu] ; Selection -> HN
+                 ]}
                  ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
         {:des "3key (open files + projects)"
          :rules [:3-mode
@@ -200,7 +204,8 @@
                  [:n [:km "proj: Dotfiles"]]
                  [:m [:km "proj: Home"]]
                  [:comma [:km "edit: Now"]]
-                 [:spacebar :!CSOp]]} ; Selection -> Reddit
+                 [:spacebar :!CSOp] ; Selection -> Reddit
+                 ]}
                  ;[:j [:km "edit: Fish aliases"]]
                  ;[:r [:km "proj: LA"]]
                  ;[:i [:km "edit: Likes"]]
@@ -229,7 +234,8 @@
                  [:m [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
                  [:period [[:open "dash-plugin://query=.pyprofile%3A&prevent_activation=true"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  [:semicolon [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
-                 [:s [:km "Open Dash and search docsets"]]]}
+                 [:s [:km "Open Dash and search docsets"]]
+                 ]}
                  ;[:f [:km "Get time in SF"]]
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
@@ -273,7 +279,8 @@
                  [:comma :!CScomma]
                  [:period :!CSperiod]
                  [:slash :!CSslash]
-                 [:spacebar :!CSOe]]} ; Selection -> YouTube
+                 [:spacebar :!CSOe]
+                 ]} ; Selection -> YouTube
                  ;[:spacebar [:km "Explain selected text with ChatGPT or explain .."]]]} ; TODO: make it use my own tool, similar to https://superwhisper.com record window, select text, then stream explain selected text in window
                  ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
                  ;[:spacebar [:km "Explain selected text"]]]} ; TODO: seems not needed, as there is e+spacebar
@@ -302,7 +309,8 @@
                  [:b [:km "open: Zed"]]
                  [:i [:km "open: PyCharm"]]
                  [:comma [:km "open: JuxtaCode"]]
-                 [:spacebar [:km "open: Fantastical"]]]}
+                 [:spacebar [:km "open: Fantastical"]]
+                 ]}
                  ;[:i [:km "open: Zen Browser"]]
                  ;[:d [:km "open: dbx"]] ; TODO: bind key #now
                  ;[:a [:km "open: GitButler"]]
@@ -415,7 +423,8 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 [:spacebar [:km "Selected text to Claude (run instantly)"]]]} ; TODO: move to something else (separate window, 0 context to explain things fast, overlay window ideally) (bind that to onefocus explain)
+                 [:spacebar [:km "Selected text to Claude (run instantly)"]] ; TODO: move to something else (separate window, 0 context to explain things fast, overlay window ideally) (bind that to onefocus explain)
+                 ]}
                 ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
                 ;[:spacebar [:km "Explain selected text (or open Claude Explain)"]]]}
                 ;[:spacebar [:km "Explain selected text (or open ChatGPT Explain)"]]]}
@@ -433,7 +442,8 @@
                  [:n [:km "open: System Settings: Network"]]
                  [:m [:km "open: MacUpdater"]]
                  [:semicolon [:km "open: Notes"]]
-                 [:spacebar [:km "Screenshot into ChatGPT"]]]}
+                 [:spacebar [:km "Screenshot into ChatGPT"]]
+                 ]}
                  ;[:l [:km "Open Reader with Nightly TS- workspace split 50/50"]]
                  ;[:comma [:km "open: Arq"]]
                  ;[:semicolon [:km "open: Day One"]]
@@ -456,7 +466,8 @@
                  [:k [:km "open: Obsidian"]]
                  [:l [:km "open: Haptic"]]
                  [:semicolon [:km "open: Supernotes"]]
-                 [:spacebar :!CTOSi]]} ; Loom cancel record
+                 [:spacebar :!CTOSi] ; Loom cancel record
+                 ]}
                  ;[:0 [:km "w: regex101"]]
                  ;[:e [:km "w: Facebook"]]
                  ;[:n [:km "w: Facebook"]]
@@ -508,7 +519,8 @@
                  [:x :!Sbackslash]
                  [:c :!S7]
                  [:v :!Scomma]
-                 [:b [:slash :slash :spacebar]]]} ; -> //
+                 [:b [:slash :slash :spacebar]] ; -> //
+                 ]}
                  ;[:3 :!S5]
                  ;[:4 :!S8]
                  ;[:left_command [:km "paste: ⌘"]]
@@ -545,7 +557,8 @@
                  [:grave_accent_and_tilde [:km "activate GitHub search in Arc (repos)"]]
                  [:left_command [:km "open: Grep"]]
                  [:g [:km "open: EdgeDB Cloud"]]
-                 [:spacebar [:km "open: Claude"]]]}
+                 [:spacebar [:km "open: Claude"]]
+                 ]}
                  ;[:g [:km "open: AWS"]]
                  ;[:escape [:km "open: Google Cloud"]]
                  ;[:grave_accent_and_tilde [:km "activate GitHub search in Arc (code)"]] ; TODO: bind it too, with grep, find use for both
@@ -600,7 +613,8 @@
         {:des "pkey (paste)"
          :rules [:p-mode
                  [:d [:km "paste: delete"]]
-                 [:spacebar [:km "test"]]]} ; TODO:
+                 [:spacebar [:km "test"]] ; TODO:
+                 ]}
         ;; TODO: not used, move it to other keys, whatever is useful
         ;{:des ".."
          ;:rules [:caps-mode
@@ -687,7 +701,8 @@
                  [:comma :!Tcomma]
                  [:period :!Tperiod]
                  [:slash :!Tslash]
-                 [:spacebar :!CT9]]} ; Selection -> Google
+                 [:spacebar :!CT9] ; Selection -> Google
+                 ]}
         {:des "dkey (mouse)"
          :rules [:d-mode
                  [:i :!Ckeypad_hyphen] ; Zoom out
@@ -705,7 +720,8 @@
                  [:m [:km "Google Lucky selected word"]]
                  [:comma :!TOS1] ; Show Launchpad (system settings > keyboard > launchpad & dock)
                  [:period :!TOS2] ; Mission Control (system settings > keyboard > mission control)
-                 [:spacebar :!CT8]]} ; Selection -> Dictionary (wiki)
+                 [:spacebar :!CT8] ; Selection -> Dictionary (wiki)
+                 ]}
                  ;[:semicolon [:km "Google Searchio selected word"]]
                  ;[:l [:km "Google selected word"]]
                  ;[:f :!CSspacebar] ; Homerow ; TODO: check if useful
@@ -734,7 +750,8 @@
                  [:n :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
                  [:i [:km "open: bolt"]]
                  [:o [:km "open: v0"]]
-                 [:spacebar [:km "open: Eagle"]]]}
+                 [:spacebar [:km "open: Eagle"]]
+                 ]}
                  ;[:open_bracket :!CT5] ; Turn display on/off
                  ;[:m [:km "open: Midjourney"]]
                  ;[:l [:km "open: Rive"]]
@@ -813,7 +830,8 @@
                  [:n :!TOS4] ; Turn Do Not Disturb on/off (system settings > keyboard > mission control)
                  [:m :!TOS3] ; Show Notification Centre (system settings > keyboard > mission control)
                  [:comma :!TOS5] ; Show Desktop (system settings > keyboard > mission control)
-                 [:quote :!COS6]]} ; Toggle Night Shift on/off.
+                 [:quote :!COS6] ; Toggle Night Shift on/off.
+                 ]}
                  ;[:q :!CT3] ; Search bartender menu items
                  ;[:j [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (maybe, don't use `Test` any more as much)
                  ;[:j :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
@@ -838,7 +856,8 @@
                   [:n [:km "paste: nikitavoloboev"]]
                   [:u [:km "paste: update"]]
                   [:p [:km "paste: please"]]
-                  [:spacebar [:km "Screenshot into ChatGPT and explain"]]]}
+                  [:spacebar [:km "Screenshot into ChatGPT and explain"]]
+                  ]}
                   ;[:j [:km "paste: Thanks ♥️"]]
                   ;[:j [:km "paste: thanks"]]
                   ;[:k [:km "paste: Thank you."]]
@@ -849,26 +868,29 @@
          :rules [:tilde-mode
                  [:w [:km "cursor: new."]]
                  [:e [:km "cursor: test."]]
+                 [:r [:km "cursor: try."]]
                  [:j [:km "cursor: ts."]]
                  [:v [:km "cursor: projects"]] ; TODO: for now hard opens onefocus, make it smarter, do search over things
                  [:k [:km "cursor: nikiv."]]
                  [:l [:km "cursor: la."]]
                  [:f [:km "cursor: focus."]]
-                 [:i [:km "cursor: zig."]]
-                 [:s [:km "cursor: swift."]]
-                 [:o [:km "cursor: clones/forks"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
+                 [:semicolon [:km "cursor: swift."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
                  [:d [:km "cursor: docs."]]
                  [:c [:km "cursor: config."]]
-                 [:b [:km "cursor: past."]]
                  [:g [:km "cursor: gen."]]
-                 [:semicolon [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
+                 [:i [:km "cursor: clones/forks"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
+                 [:o [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:h [:km "edit: GitHub Bio"]]
                  [:period [:km "cursor: py."]] ; maybe have some data there too in workspace
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
                  [:spacebar [:km "Test"]] ; TODO: map to nice key
-                 [:left_command [:km "Go to test macro"]]]}
+                 [:left_command [:km "Go to test macro"]]
+                 ]}
+                 ;[:r [:km "cursor: past (past month)"]] ; TODO: do (see how useful, maybe best do just search over it as opening it in zed/cursor is too cpu intensive with checks)
+                 ;[:t [:km "cursor: past (all)"]] ; TODO: do (see how useful, maybe best do just search over it as opening it in zed/cursor is too cpu intensive with checks)
+                 ;[:g [:km "cursor: zig."]]
                  ;[:q [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (not needed with )
                  ;[:d [:km "Move active `Test` KM macro actions"]] to a group with custom name (alfred show a list of groups to current actions in `Test` into)
                  ; TODO: move active actions in `Test` macro to new global macro (delete those actions from `Test` too) (similar to `New KM global macro`)
@@ -931,7 +953,8 @@
                  [:period [:km "open: Element"]]
                  [:u [:km "Create new contact"]] ; TODO: move
                  [:v [:km "open: Zoom"]]
-                 [:spacebar :!CSOz]]} ; Selection -> Twitter
+                 [:spacebar :!CSOz]
+                 ]} ; Selection -> Twitter
                  ;[:s :!CTOSe] ; Loom recording restart
                  ;[:d :!CTOSr] ; Loom recording pause/unpause
                  ;[:c :!CTOSh] ; Loom recording cancel
@@ -969,7 +992,8 @@
                  [:m [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
                  [:comma [:alfred "show_search_online" "com.vdesabou.spotify.mini.player"]] ; TODO: split up further into binds for direct searches of tracks/artists/all
                  [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]]}
+                 [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 ]}
                  ;[:comma [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]] ; TODO: twitter search
         {:des "ckey (files/websites)"
          :rules [:c-mode
@@ -982,7 +1006,8 @@
                  [:semicolon [:km "edit: Fish alias/functions"]]
                  [:period [:km "edit: Fish config"]]
                  [:slash [:km "edit: Fish alias/functions (past)"]]
-                 [:spacebar :!CSOy]]} ; Selection -> Stack Overflow
+                 [:spacebar :!CSOy] ; Selection -> Stack Overflow
+                 ]}
                  ;[:l [:km "edit: Solid"]]
                  ;[:tab [:km "proj: Learning"]]
                  ;[:slash [:km "edit: KusKus todo"]]
@@ -1028,7 +1053,8 @@
                  [:semicolon [:km "Search Spotify"]]
                  [:n :volume_decrement]
                  [:m :volume_increment]
-                 [:spacebar :!CSOv]]} ; Selection -> Google Images
+                 [:spacebar :!CSOv] ; Selection -> Google Images
+                 ]}
                  ;[:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]] ; TODO: fix up, useful
                  ;[:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]] ; TODO: raycast
                  ;[:semicolon [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]] ; TODO: raycast spotify
@@ -1084,7 +1110,8 @@
                  [:comma [:km "w: GitHub (trending)"]]
                  [:period [:km "Get break"]]
                  [:slash [:km "w: GitHub (explore)"]]
-                 [:spacebar :!TOSs]]} ; Selection -> DuckDuckGo
+                 [:spacebar :!TOSs] ; Selection -> DuckDuckGo
+                 ]}
                  ;[:h [:km "w: Product Hunt (new)"]]
                  ;[:j [:km "w: Reddit (new)"]]
                  ;[:j [:km "w: Reddit (in Safari Tech Preview)"]]
@@ -1115,7 +1142,8 @@
                  [:c [:alfred "search wiki" "nikivi.mind"]]
                  [:v [:alfred "search links" "nikivi.mind"]]
                  [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
-                 [:spacebar [:km "New Linear task"]]]}
+                 [:spacebar [:km "New Linear task"]]
+                 ]}
                  ;[:a [:alfred "search shares" "nikivi.ask.create.share"]]
                  ;[:t [:alfred "search subs" "net.deanishe.alfred-reddit"]]
                  ;[:t [:alfred "ssh" "net.deanishe.alfred-ssh"]]
@@ -1132,7 +1160,8 @@
                  [:a [:km "open: Apple Developer Documentation"]]
                  [:w [:km "open: Swift Documentation"]]
                  [:f [:km "web: Swift Forums"]]
-                 [:spacebar [:km "open: Dash (with search)"]]]}
+                 [:spacebar [:km "New X post"]]
+                 ]}
                  ; TODO: add binds for doc search fast
                  ;[:q [:km "web: AWS Docs and search"]]
                  ;[:w [:km "web: Expo Docs and search"]]
@@ -1176,7 +1205,8 @@
                   [:spacebar [:km "enter: explain"]]
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:y [:p :l :e :a :s :e :spacebar]] ; -> please
-                  [:u [:u :p :d :a :t :e :spacebar]]]} ; -> update
+                  [:u [:u :p :d :a :t :e :spacebar]] ; -> update
+                  ]}
                   ;[:r [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: | TODO: is NOTE: ever useful?
                   ;[:grave_accent_and_tilde [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
                   ;[:spacebar [:km "paste: Thanks ♥️"]]]} ; -> Thanks ♥️ (TODO: change to something code related and useful)
@@ -1195,7 +1225,8 @@
                   [:tab [:a :s :y :n :c :spacebar]] ; -> async
                   [:escape [:a :w :a :i :t :spacebar]] ; -> await
                   [:left_command [:p :r :o :p :s :period]] ; -> props.
-                  [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]]]} ; -> typescript
+                  [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
+                  ]}
                   ;[:tab [:f :u :n :c :t :i :o :n :spacebar]] ; -> function
                   ;[:tab [:a :s :y :n :c :spacebar :f :u :n :c :t :i :o :n :spacebar]] ; -> async function
                   ;[:left_command [:spacebar :equal_sign :spacebar]] ; -> =
@@ -1225,24 +1256,28 @@
                 [:x [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow :!Squote :hyphen :hyphen]] ; -> fmt.Println("--")
                 [:c [:!STsemicolon]] ; Selection -> Go Playground
                 [:v [:g :o :l :a :n :g :spacebar]] ; -> golang
-                [:b [:l :o :g :period :!Sf :a :t :a :l :!S9 :e :r :r :!S0]]]} ; -> log.Fatal(err)
+                [:b [:l :o :g :period :!Sf :a :t :a :l :!S9 :e :r :r :!S0]] ; -> log.Fatal(err)
+                ]}
         {:des "pydot"
           :rules [:py-mode
                  [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]] ; -> print()
                  [:s [:hyphen :!Speriod]] ; -> ->
                  [:d [:r :e :t :u :r :n :spacebar]] ; -> return
-                 [:v [:p :y :t :h :o :n :spacebar]]]} ; -> python
+                 [:v [:p :y :t :h :o :n :spacebar]] ; -> python
+                 ]}
         {:des "swiftdot"
          :rules [:swift-mode
                 [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]] ; -> print()
-                [:v [:s :w :i :f :t :spacebar]]]} ; -> swift
+                [:v [:s :w :i :f :t :spacebar]] ; -> swift
+                ]}
         {:des "rustdot"
           :rules [:rust-mode
                  [:a [:l :o :g :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow]] ; -> log!();
                  [:s [:a :s :s :e :r :t :!Shyphen :e :q :!S1 :!S9]] ; assert_eq!();
                  [:d [:hyphen :!Speriod :spacebar]] ; ->
                  [:f [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow :!Squote :!Sopen_bracket :!Ssemicolon :!Sslash :!Sclose_bracket :right_arrow :comma :spacebar]] ; -> println!("{:?}", );
-                 [:v [:r :u :s :t :spacebar]]]} ; -> rust
+                 [:v [:r :u :s :t :spacebar]] ; -> rust
+                 ]}
                  ;[:f [:l :o :g :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow]] ; -> log!();
                  ;[:a [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :semicolon :left_arrow :left_arrow :!Squote :!Sopen_bracket :!Sclose_bracket :right_arrow :comma :spacebar]] ; -> println!("{}", )
         {:des "spacekey"
@@ -1269,13 +1304,13 @@
                  [:o [:km "open: Safari Technology Preview"]]
                  [:comma [:km "Select line & move to Claude"]]
                  [:j :!CTO0] ; Search Alfred Snippets
+                 [:n [:raycast "anybox/anybox/search"]] ; move to k (after safari bookmark search becomes less useful) ; TODO: mby rebind to screenshot/image search?
                  [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:k [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
-                 [:n [:km "New X post"]]
                  [:l [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
-                 [:tab [:raycast "anybox/anybox/search"]] ; move to k (after safari bookmark search becomes less useful) ; TODO: mby rebind to screenshot/image search?
-                 [:slash [:km "w: GitHub PR"]]]} ; TODO:
+                 [:slash [:km "w: GitHub PR"]] ; TODO:
+                 ]}
                  ;[:n :!CTequal_sign] ; Anybox search
                  ;[:escape [:km "Entire Screen into ChatGPT and explain"]]
                  ;[:grave_accent_and_tilde [:km "Screenshot into ChatGPT and explain"]]
