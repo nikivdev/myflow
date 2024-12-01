@@ -737,9 +737,10 @@
                  [:s [:km "open: Excalidraw"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:escape [:km "open: Framer"]]
-                 [:k [:km "clear active todo"]]
+                 [:k [:km "New Linear task"]]
                  [:l [:alfred "active todo" "nikiv"]]
                  [:j :!TOCspacebar] ; Things Quick Entry (without context)
+                 [:i [:km "clear active todo"]]
                  [:o [:km "Things: new top task"]]
                  [:m [:km "Things: new today task at bottom"]]
                  [:semicolon [:km "Things: new 2nd from top task"]]
@@ -748,10 +749,10 @@
                  [:slash :!CTO4] ; Alfred file/text action
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
-                 [:i [:km "open: bolt"]]
-                 [:o [:km "open: v0"]]
                  [:spacebar [:km "open: Eagle"]]
                  ]}
+                 ;[:o [:km "open: v0"]]
+                 ;[:i [:km "open: bolt"]]
                  ;[:open_bracket :!CT5] ; Turn display on/off
                  ;[:m [:km "open: Midjourney"]]
                  ;[:l [:km "open: Rive"]]
@@ -1142,7 +1143,7 @@
                  [:c [:alfred "search wiki" "nikivi.mind"]]
                  [:v [:alfred "search links" "nikivi.mind"]]
                  [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
-                 [:spacebar [:km "New Linear task"]]
+                 [:spacebar [:km "New X post"]]
                  ]}
                  ;[:a [:alfred "search shares" "nikivi.ask.create.share"]]
                  ;[:t [:alfred "search subs" "net.deanishe.alfred-reddit"]]
@@ -1160,7 +1161,7 @@
                  [:a [:km "open: Apple Developer Documentation"]]
                  [:w [:km "open: Swift Documentation"]]
                  [:f [:km "web: Swift Forums"]]
-                 [:spacebar [:km "New X post"]]
+                 [:spacebar [:km "open: Dash (with search)"]]
                  ]}
                  ; TODO: add binds for doc search fast
                  ;[:q [:km "web: AWS Docs and search"]]
