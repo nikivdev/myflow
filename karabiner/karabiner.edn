@@ -423,7 +423,7 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 [:spacebar [:km "Selected text to Claude (run instantly)"]] ; TODO: move to something else (separate window, 0 context to explain things fast, overlay window ideally) (bind that to onefocus explain)
+                 [:spacebar [:km "Selected text to Claude (run instantly)"]] ; TODO: move to something else (separate window, 0 context to explain things fast, overlay window ideally) (bind that to 1focus explain)
                  ]}
                 ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
                 ;[:spacebar [:km "Explain selected text (or open Claude Explain)"]]]}
@@ -871,7 +871,7 @@
                  [:e [:km "cursor: test."]]
                  [:r [:km "cursor: try."]]
                  [:j [:km "cursor: ts."]]
-                 [:v [:km "cursor: projects"]] ; TODO: for now hard opens onefocus, make it smarter, do search over things
+                 [:v [:km "cursor: projects"]] ; TODO: for now hard opens 1focus, make it smarter, do search over things
                  [:k [:km "cursor: nikiv."]]
                  [:l [:km "cursor: la."]]
                  [:f [:km "cursor: focus."]]
