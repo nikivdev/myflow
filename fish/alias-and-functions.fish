@@ -1,6 +1,6 @@
 alias cwd='pwd | pbcopy'
-alias dc="cd ~/clones" # wrapping over dc existing cmd
-alias dr="cd ~/forks"
+alias do="cd ~/clones && eza"
+alias dr="cd ~/forks && eza"
 alias a="eza -I 'license'" # list files (without license)
 alias af="type" # <cmd> - view definition of <cmd>
 alias df="cd ~/src/do && eza"
@@ -14,8 +14,8 @@ alias de="cd ~/src/test && eza"
 alias der="cd ~/src/test/react && eza"
 alias dk="cd ~/src/nikiv.dev && eza"
 alias dK="cd ~/src/nikiv.dev/private && eza"
-alias dl="cd ~/src/do/learn-anything && eza"
-alias dL="cd ~/src/do/learn-anything/private && eza"
+alias dl="cd ~/src/org/learn-anything/learn-anything && eza"
+alias dL="cd ~/src/org/learn-anything/x && eza"
 alias dz="cd ~/tmp && eza"
 alias ds="cd ~/try && eza"
 alias dw="cd ~/src/new && eza"
@@ -26,14 +26,14 @@ alias dd="cd ~/data && eza"
 alias dD="cd ~/data/private && eza"
 alias dv="cd ~/downloads && eza"
 alias dt="cd ~/desktop && eza"
-alias do="cd ~/src/org && eza"
+alias dg="cd ~/src/org && eza"
 alias aa="eza -la" # list files (with hidden)
 alias r="ronin"
 alias v="mv" # move files/folders or rename
-# alias df="cd ~/src/config"
-# alias p="python3"
+alias dc="cd ~/src/config && eza"
 alias pr="gh pr checkout"
 alias nb="nix-build"
+# alias p="python3"
 
 function run_ts_script
     set script_name $argv[1]
