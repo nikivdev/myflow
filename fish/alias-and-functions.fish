@@ -512,3 +512,11 @@ function gitChangeRemote
 
     echo "Remote origin set to: $ssh_url"
 end
+
+function j
+    if not set -q argv[1]
+        cody --help
+    else
+        cody $argv
+    end
+end
