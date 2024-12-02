@@ -872,10 +872,9 @@
                  [:e [:km "cursor: test."]]
                  [:r [:km "cursor: try."]]
                  [:j [:km "cursor: ts."]]
-                 [:v [:km "cursor: projects"]] ; TODO: for now hard opens 1focus, make it smarter, do search over things
+                 [:f [:km "cursor: projects"]]
                  [:k [:km "cursor: nikiv."]]
                  [:l [:km "cursor: la."]]
-                 [:f [:km "cursor: focus."]]
                  [:semicolon [:km "cursor: swift."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
@@ -883,16 +882,17 @@
                  [:d [:km "cursor: docs."]]
                  [:c [:km "cursor: config."]]
                  [:g [:km "cursor: gen."]]
-                 [:i [:km "cursor: clones/forks"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
-                 [:o [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
+                 [:v [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
+                 [:i [:km "cursor: zig."]]
+                 [:o [:km "cursor: clones/forks"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
                  [:h [:km "edit: GitHub Bio"]]
                  [:period [:km "cursor: py."]] ; maybe have some data there too in workspace
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
                  [:spacebar [:km "Test"]] ; TODO: map to nice key
                  [:left_command [:km "Go to test macro"]]
                  ]}
+                 ;[:v [:km "cursor: projects"]] ; TODO: for now hard opens 1focus, make it smarter, do search over things
                  ;[:g [:km "cursor: odin."]]
-                 ;[:g [:km "cursor: zig."]]
                  ;[:r [:km "cursor: past (past month)"]] ; TODO: do (see how useful, maybe best do just search over it as opening it in zed/cursor is too cpu intensive with checks)
                  ;[:t [:km "cursor: past (all)"]] ; TODO: do (see how useful, maybe best do just search over it as opening it in zed/cursor is too cpu intensive with checks)
                  ;[:q [:km "New KM global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) (not needed with )
