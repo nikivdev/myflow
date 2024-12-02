@@ -423,8 +423,9 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 [:spacebar [:km "Selected text to Claude (run instantly)"]] ; TODO: move to something else (separate window, 0 context to explain things fast, overlay window ideally) (bind that to 1focus explain)
+                 [:spacebar :!CS7] ; TRex get text from screenshot
                  ]}
+                 ;[:spacebar [:km "Selected text to Claude (run instantly)"]] ; TODO: move to something else (separate window, 0 context to explain things fast, overlay window ideally) (bind that to 1focus explain)
                 ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
                 ;[:spacebar [:km "Explain selected text (or open Claude Explain)"]]]}
                 ;[:spacebar [:km "Explain selected text (or open ChatGPT Explain)"]]]}
@@ -1292,7 +1293,6 @@
                  [:q [:km "open: CleanShot"]]
                  [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots)
-                 [:r :!CS7] ; TRex get text from screenshot ; TODO: bind to nice key
                  [:t [:km "w: X (personal)"]]
                  [:z :!CTOSF4] ; SuperCut restart recording
                  [:escape :!CS8] ; Screenshot -> Eagle
@@ -1314,6 +1314,7 @@
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  [:slash [:km "w: GitHub PR"]] ; TODO:
                  ]}
+                 ;[:r :!CS7] ; TRex get text from screenshot ; TODO: bind to nice key
                  ;[:n :!CTequal_sign] ; Anybox search
                  ;[:escape [:km "Entire Screen into ChatGPT and explain"]]
                  ;[:grave_accent_and_tilde [:km "Screenshot into ChatGPT and explain"]]
