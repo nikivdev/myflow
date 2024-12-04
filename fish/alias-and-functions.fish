@@ -22,10 +22,10 @@ alias dp="cd ~/past && eza"
 alias dP="cd ~/past/private && eza"
 alias dd="cd ~/data && eza"
 alias dD="cd ~/data/private && eza"
-alias do="cd ~/downloads && eza"
 alias dt="cd ~/desktop && eza"
 alias df="cd ~/src/org && eza"
-alias dv="cd ~/src/do && eza"
+alias dv="cd ~/x && eza"
+alias do="cd ~/src/do && eza"
 alias aa="eza -la" # list files (with hidden)
 alias r="ronin"
 alias v="mv" # move files/folders or rename
@@ -520,3 +520,12 @@ function j
         cody $argv
     end
 end
+
+function d:
+    cd ~/src/swift && eza
+end
+
+function d.
+    cd ~/src/py && eza
+end
+
