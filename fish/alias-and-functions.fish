@@ -9,8 +9,8 @@ alias rr="rm -rf"
 alias wr="cursor readme.md"
 alias da="cd ~/src && eza"
 alias dj="cd ~/src/ts && eza"
-alias de="cd ~/src/test && eza"
-alias der="cd ~/src/test/react && eza"
+alias de="cd ~/test && eza"
+alias der="cd ~/test/react && eza"
 alias dk="cd ~/src/nikiv.dev && eza"
 alias dK="cd ~/src/nikiv.dev/private && eza"
 alias dl="cd ~/src/org/learn-anything/learn-anything && eza"
@@ -479,7 +479,7 @@ function :ts
 end
 
 function :r
-    bun --watch ~/src/test/ts/scripts/run.ts
+    bun --watch ~/test/ts/scripts/run.ts
 end
 
 # TODO: make into proper tool with completions etc.
