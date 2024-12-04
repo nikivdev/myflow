@@ -1,5 +1,4 @@
 alias cwd='pwd | pbcopy'
-# alias do="cd ~/clones && eza"
 alias dr="cd ~/forks && eza"
 alias a="eza -I 'license'" # list files (without license)
 alias af="type" # <cmd> - view definition of <cmd>
@@ -34,6 +33,7 @@ alias dc="cd ~/src/config && eza"
 alias pr="gh pr checkout"
 alias nb="nix-build"
 # alias p="python3"
+# alias do="cd ~/clones && eza"
 
 function run_ts_script
     set script_name $argv[1]
