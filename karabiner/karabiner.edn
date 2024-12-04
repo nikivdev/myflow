@@ -422,7 +422,7 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 [:spacebar :!CS7] ; TRex get text from screenshot
+                 [:spacebar :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots)
                  ]}
                  ;[:spacebar [:km "Selected text to Claude (run instantly)"]] ; TODO: move to something else (separate window, 0 context to explain things fast, overlay window ideally) (bind that to 1focus explain)
                 ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
@@ -1296,7 +1296,8 @@
                  [:4 :!CS3] ; Save picture of screen as a file (~/Desktop) (system settings > keyboard > screenshots)
                  [:q [:km "open: CleanShot"]]
                  [:w :!TO3] ; Screenshot -> CleanShot
-                 [:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots)
+                 [:e :!CS7] ; TRex get text from screenshot (bind to k)
+                 ;[:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots) TODO: got moved to e+space, is it ok?
                  [:t [:km "w: X (personal)"]]
                  [:z :!CTOSF4] ; SuperCut restart recording
                  [:escape :!CS8] ; Screenshot -> Eagle
