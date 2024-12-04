@@ -291,6 +291,7 @@
                  [:a [:km "open: Bike"]]
                  [:d [:km "open: SnippetsLab"]]
                  [:v [:km "open: Yaak"]]
+                 [:g [:km "open: Proxyman"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
@@ -302,7 +303,6 @@
                  [:semicolon [:km "open: Xcode Beta"]]
                  [:c [:km "open: Spotify"]]
                  [:slash [:km "open: Instruments"]]
-                 [:g [:km "open: Proxyman"]]
                  [:n [:km "open: RustRover"]]
                  [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
@@ -317,7 +317,6 @@
                  ;[:a [:km "open: Learn Anything"]] ; TODO: for now web, later map to desktop app
                  ;[:t [:km "open: Voice Memos"]]
                  ;[:b [:km "open: BetterTouchTool"]]
-                 ;[:h [:km "open: Val Town"]]
                  ;[:t [:km "open: Passwords"]]
                  ;[:d [:km "open: SolBond"]]
                  ;[:g [:km "open: genx"]]
@@ -1002,19 +1001,21 @@
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  ]}
                  ;[:comma [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]] ; TODO: twitter search
-        {:des "ckey (files/websites)"
+        {:des "ckey (files/code)"
          :rules [:c-mode
                  [:a [:km "Clone repo to ~/clones and open with Cursor"]]
                  [:s [:km "Clone repo to ~/clones"]]
-                 [:i [:km "edit: run.py"]]
-                 [:o [:km "edit: run.go"]]
                  [:j [:km "edit: run.ts"]]
-                 [:k [:km "edit: run.rs"]]
-                 [:semicolon [:km "edit: Fish alias/functions"]]
-                 [:period [:km "edit: Fish config"]]
+                 [:k [:km "open: Membrane"]]
+                 [:l [:km "open: Val Town"]]
+                 [:n [:km "edit: run.rs"]]
+                 [:m [:km "edit: run.go"]]
+                 [:period [:km "edit: run.py"]]
+                 [:semicolon [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
                  [:slash [:km "edit: Fish alias/functions (past)"]]
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
                  ]}
+                 ;[:o [:km "edit: Fish config"]] ; TODO: bind somewhere
                  ;[:l [:km "edit: Solid"]]
                  ;[:tab [:km "proj: Learning"]]
                  ;[:slash [:km "edit: KusKus todo"]]
