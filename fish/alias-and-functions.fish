@@ -1,5 +1,4 @@
 alias cwd='pwd | pbcopy'
-alias dr="cd ~/forks && eza"
 alias a="eza -I 'license'" # list files (without license)
 alias af="type" # <cmd> - view definition of <cmd>
 alias dF="cd ~/src/pause && eza"
@@ -10,8 +9,8 @@ alias da="cd ~/src && eza"
 alias dj="cd ~/src/ts && eza"
 alias de="cd ~/test && eza"
 alias der="cd ~/test/react && eza"
-alias dk="cd ~/src/nikiv.dev && eza"
-alias dK="cd ~/src/nikiv.dev/private && eza"
+alias dv="cd ~/src/nikiv.dev && eza"
+alias dk="cd ~/src/py && eza"
 alias dl="cd ~/src/org/learn-anything/learn-anything && eza"
 alias dL="cd ~/src/org/learn-anything/x && eza"
 alias dz="cd ~/tmp && eza"
@@ -24,8 +23,10 @@ alias dd="cd ~/data && eza"
 alias dD="cd ~/data/private && eza"
 alias dt="cd ~/desktop && eza"
 alias df="cd ~/src/org && eza"
-alias dv="cd ~/x && eza"
+alias dv="cd ~/src/nikiv.dev && eza"
 alias do="cd ~/src/do && eza"
+alias di="cd ~/clones && eza"
+alias dh="cd ~/forks && eza"
 alias aa="eza -la" # list files (with hidden)
 alias r="ronin"
 alias v="mv" # move files/folders or rename
@@ -33,7 +34,6 @@ alias dc="cd ~/src/config && eza"
 alias pr="gh pr checkout"
 alias nb="nix-build"
 # alias p="python3"
-# alias do="cd ~/clones && eza"
 
 function run_ts_script
     set script_name $argv[1]
@@ -277,7 +277,7 @@ function g
 end
 
 # r - run `cargo run` when rust files change
-function r
+function n
     if not set -q argv[1]
         cargo watch -q -- sh -c "tput reset && cargo run -q"
     else
@@ -341,7 +341,7 @@ function find.DS_Store
 end
 
 
-function o
+function m
     if not set -q argv[1]
         go run .
     else
@@ -351,7 +351,7 @@ end
 
 
 # oi = go install ..
-function oi
+function mi
     if not set -q argv[1]
         echo "Usage: oi <github-user/repo>"
         return 1
@@ -526,6 +526,15 @@ function d:
 end
 
 function d.
-    cd ~/src/py && eza
+    cd ~/x && eza
 end
 
+function k
+    if not set -q argv[1]
+        # TODO: what is equivalent to `bun dev` in uv
+        # uv run main.py
+        watchexec --no-vcs-ignore --restart --exts py --clear --project-origin . "tput reset && uv run main.py"
+    else
+        uv $argv
+    end
+end

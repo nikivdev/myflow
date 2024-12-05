@@ -873,10 +873,11 @@
                  [:e [:km "cursor: test."]]
                  [:r [:km "cursor: try."]]
                  [:j [:km "cursor: ts."]]
+                 [:k [:km "cursor: py."]]
                  [:f [:km "cursor: projects"]]
-                 [:k [:km "cursor: nikiv."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
+                 [:period [:km "cursor: x."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
                  [:s [:km "cursor: solbond."]]
@@ -886,11 +887,10 @@
                  [:v [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:i [:km "cursor: zig."]]
                  [:o [:km "cursor: clones/forks"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
-                 [:h [:km "edit: GitHub Bio"]]
-                 [:period [:km "cursor: py."]] ; maybe have some data there too in workspace
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
-                 [:spacebar [:km "Test"]] ; TODO: map to nice key
-                 [:left_command [:km "Go to test macro"]]
+                 [:spacebar [:km "cursor: nikiv."]]
+                 ;[:spacebar [:km "Test"]] ; TODO: map to nice key
+                 ;[:left_command [:km "Go to test macro"]]
                  ]}
                  ;[:s [:km "cursor: data."]]
                  ;[:v [:km "cursor: projects"]] ; TODO: for now hard opens 1focus, make it smarter, do search over things
@@ -905,7 +905,6 @@
                  ;[:i [:km "cursor: forks"]]
                  ;[:c [:km "cursor: clients."]] ; TODO: add when I have client work (add on LA profile as services)
                  ;[:k [:km "cursor: sites."]]
-                 ;[:v [:km "cursor: x."]]
                  ;[:period [:km "cursor: zig."]]
                  ;[:i [:km "cursor: cpp."]]
                  ;[:g [:km "cursor: genx"]]
@@ -1005,6 +1004,7 @@
          :rules [:c-mode
                  [:a [:km "Clone repo to ~/clones and open with Cursor"]]
                  [:s [:km "Clone repo to ~/clones"]]
+                 [:h [:km "edit: GitHub Bio"]]
                  [:j [:km "edit: run.ts"]]
                  [:k [:km "open: Membrane"]]
                  [:l [:km "open: Val Town"]]
