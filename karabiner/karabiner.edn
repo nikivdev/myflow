@@ -422,7 +422,7 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 [:spacebar :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots)
+                 ;[:spacebar :!TO2] ; TODO: 1Focus explain selected text (if text is selected, otherwise do area selection)
                  ]}
                  ;[:spacebar [:km "Selected text to Claude (run instantly)"]] ; TODO: move to something else (separate window, 0 context to explain things fast, overlay window ideally) (bind that to 1focus explain)
                 ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
@@ -859,8 +859,10 @@
                   [:n [:km "paste: nikitavoloboev"]]
                   [:u [:km "paste: update"]]
                   [:p [:km "paste: please"]]
-                  [:spacebar [:km "Screenshot into ChatGPT and explain"]]
+                  [:spacebar [:km "Test"]]
+                  [:left_command [:km "Go to test macro"]]
                   ]}
+                  ;[:spacebar [:km "Screenshot into ChatGPT and explain"]]
                   ;[:j [:km "paste: Thanks ♥️"]]
                   ;[:j [:km "paste: thanks"]]
                   ;[:k [:km "paste: Thank you."]]
@@ -880,8 +882,8 @@
                  [:period [:km "cursor: x."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
-                 [:s [:km "cursor: solbond."]]
-                 [:d [:km "cursor: docs."]]
+                 ;[:d [:km "cursor: docs."]] ; TODO: bind to better key
+                 [:d [:km "cursor: solbond."]]
                  [:c [:km "cursor: config."]]
                  [:g [:km "cursor: gen."]]
                  [:v [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
@@ -889,8 +891,6 @@
                  [:o [:km "cursor: clones/forks"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
                  [:spacebar [:km "cursor: nikiv."]]
-                 ;[:spacebar [:km "Test"]] ; TODO: map to nice key
-                 ;[:left_command [:km "Go to test macro"]]
                  ]}
                  ;[:s [:km "cursor: data."]]
                  ;[:v [:km "cursor: projects"]] ; TODO: for now hard opens 1focus, make it smarter, do search over things
@@ -1296,8 +1296,8 @@
                  [:4 :!CS3] ; Save picture of screen as a file (~/Desktop) (system settings > keyboard > screenshots)
                  [:q [:km "open: CleanShot"]]
                  [:w :!TO3] ; Screenshot -> CleanShot
-                 [:e :!CS7] ; TRex get text from screenshot (bind to k)
-                 ;[:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots) TODO: got moved to e+space, is it ok?
+                 [:e :!TO2] ; Copy picture of selected area to the clipboard (system settings > keyboard > screenshots) TODO: got moved to e+space, is it ok?
+                 [:r :!CS7] ; TRex get text from screenshot (bind to k)
                  [:t [:km "w: X (personal)"]]
                  [:z :!CTOSF4] ; SuperCut restart recording
                  [:escape :!CS8] ; Screenshot -> Eagle
