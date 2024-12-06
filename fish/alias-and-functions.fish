@@ -319,17 +319,19 @@ function :c
 end
 
 function :s
-    if not set -q argv[1]
-        set run_file (fd -t f -p "run.ts" | head -n 1)
-        if test -n "$run_file"
-            cursor "$run_file"
-            bun run ts
-        else
-            # TODO:
-        end
-    else
-        # TODO:
+    set run_file (fd -t f -p "scripts/run.ts" | head -n 1)
+    if test -n "$run_file"
+        cursor "$run_file"
     end
+    bun s
+end
+
+function :sr
+    set run_file (find . -name "private-run.ts" -path "*/scripts/*" | head -n 1)
+    if test -n "$run_file"
+        cursor "$run_file"
+    end
+    bun sr
 end
 
 function find.git
