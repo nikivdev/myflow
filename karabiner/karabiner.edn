@@ -731,7 +731,7 @@
          :rules [:f-mode
                  [:1 [:km "View Sip"]]
                  [:q [:km "open: Photos"]]
-                 [:w [:km "open: Figma"]]
+                 [:w [:km "open: Figma Beta"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
                  [:p :!CTOc] ; Sleep
@@ -875,18 +875,21 @@
                  [:w [:km "cursor: new."]]
                  [:e [:km "cursor: test."]]
                  [:r [:km "cursor: try."]]
+                 ;[:h [:km "cursor: moonbit."]]
+                 [:h [:km "cursor: deno."]] ; move it to ts.
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: py."]]
                  [:f [:km "cursor: projects"]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
                  [:period [:km "cursor: x."]]
+                 ;[:b [:km "cursor: odin."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
-                 ;[:d [:km "cursor: docs."]] ; TODO: bind to better key
-                 [:d [:km "cursor: solbond."]]
+                 [:s [:km "cursor: solbond."]]
+                 [:d [:km "cursor: docs."]]
                  [:c [:km "cursor: config."]]
-                 [:g [:km "cursor: gen."]]
+                 [:g [:km "cursor: genx."]]
                  [:v [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:i [:km "cursor: zig."]]
                  [:o [:km "cursor: clones/forks"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
@@ -1006,17 +1009,18 @@
                  [:a [:km "Clone repo to ~/clones and open with Cursor"]]
                  [:s [:km "Clone repo to ~/clones"]]
                  [:h [:km "edit: GitHub Bio"]]
-                 [:j [:km "edit: run.ts"]]
-                 [:k [:km "open: Membrane"]]
+                 [:j [:km "cursor: ts:scripts/run.ts"]]
                  [:l [:km "open: Val Town"]]
                  [:n [:km "edit: run.rs"]]
                  [:m [:km "edit: run.go"]]
-                 [:period [:km "edit: run.py"]]
+                 [:comma [:km "cursor: .flox:env/manifest.toml"]]
+                 [:period [:km "cursor: config:fish/config.fish"]]
                  [:semicolon [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
                  [:slash [:km "edit: Fish alias/functions (past)"]]
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
                  ]}
-                 ;[:o [:km "edit: Fish config"]] ; TODO: bind somewhere
+                 ;[:k [:km "open: Membrane"]]
+                 ;[:period [:km "edit: run.py"]]
                  ;[:l [:km "edit: Solid"]]
                  ;[:tab [:km "proj: Learning"]]
                  ;[:slash [:km "edit: KusKus todo"]]
