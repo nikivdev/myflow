@@ -537,15 +537,14 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
+                 [:i [:km "open: EdgeDB Cloud"]]
+                 [:j [:km "open: SQLiteFlow"]]
                  [:tab [:km "open: Clerk"]]
-                 ;[:escape [:km "open: Membrane"]] ; TODO: move
                  [:escape [:km "open: Railway"]]
                  [:q [:km "open: Expo"]]
                  [:w [:km "open: Vercel"]]
                  [:e [:km "open: Sourcegraph"]]
                  [:d [:km "open: Cloudflare"]]
-                 [:j [:km "open: Perplexity"]]
-                 [:i [:km "open: Sentry"]]
                  [:a [:km "open: Ronin"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:s [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
@@ -560,6 +559,9 @@
                  [:g [:km "open: EdgeDB Cloud"]]
                  [:spacebar [:km "open: Claude"]]
                  ]}
+                 ;[:j [:km "open: Perplexity"]]
+                 ;[:i [:km "open: Sentry"]]
+                 ;[:escape [:km "open: Membrane"]] ; TODO: move
                  ;[:g [:km "open: AWS"]]
                  ;[:escape [:km "open: Google Cloud"]]
                  ;[:grave_accent_and_tilde [:km "activate GitHub search in Arc (code)"]] ; TODO: bind it too, with grep, find use for both
@@ -736,7 +738,6 @@
                  [:p :!CTOc] ; Sleep
                  [:a [:km "open: Chrome Canary"]]
                  [:s [:km "open: Excalidraw"]]
-                 [:d [:km "open: SQLiteFlow"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:escape [:km "open: Framer"]]
                  [:k [:km "New Linear task"]]
@@ -1056,7 +1057,6 @@
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:escape [:km "open: Endel"]]
-                 [:a [:km "Play/Pause Endel"]] ; TODO: in background, email them again
                  [:s [:km "Play/Pause Spotify"]]
                  [:d [:km "Repeat Spotify song"]] ; TODO: do in background
                  [:h :vk_consumer_previous]
@@ -1068,6 +1068,7 @@
                  [:m :volume_increment]
                  [:spacebar :!CSOv] ; Selection -> Google Images
                  ]}
+                 ;[:a [:km "Play/Pause Endel"]] ; TODO: in background, email them again
                  ;[:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]] ; TODO: fix up, useful
                  ;[:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]] ; TODO: raycast
                  ;[:semicolon [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]] ; TODO: raycast spotify
@@ -1215,6 +1216,7 @@
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
                   [:w [:km "Comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
+                  [:left_command [:km "enter: ok?"]]
                   [:spacebar [:km "enter: explain"]]
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:y [:p :l :e :a :s :e :spacebar]] ; -> please
@@ -1237,9 +1239,9 @@
                   [:c [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
                   [:tab [:a :s :y :n :c :spacebar]] ; -> async
                   [:escape [:a :w :a :i :t :spacebar]] ; -> await
-                  [:left_command [:p :r :o :p :s :period]] ; -> props.
                   [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   ]}
+                  ;[:left_command [:p :r :o :p :s :period]] ; -> props.
                   ;[:tab [:f :u :n :c :t :i :o :n :spacebar]] ; -> function
                   ;[:tab [:a :s :y :n :c :spacebar :f :u :n :c :t :i :o :n :spacebar]] ; -> async function
                   ;[:left_command [:spacebar :equal_sign :spacebar]] ; -> =
