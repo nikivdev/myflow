@@ -422,8 +422,9 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 ;[:spacebar :!TO2] ; TODO: 1Focus explain selected text (if text is selected, otherwise do area selection)
+                 [:spacebar :!COequal_sign] ; 1Focus
                  ]}
+                 ;[:spacebar :!TO2] ; TODO: 1Focus explain selected text (if text is selected, otherwise do area selection)
                  ;[:spacebar [:km "Selected text to Claude (run instantly)"]] ; TODO: move to something else (separate window, 0 context to explain things fast, overlay window ideally) (bind that to 1focus explain)
                 ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
                 ;[:spacebar [:km "Explain selected text (or open Claude Explain)"]]]}
