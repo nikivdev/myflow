@@ -350,7 +350,6 @@
                  ;[:i [:km "open: Hoppscotch"]]
                  ;[:period [:km "open: Zed"]]
                  ;[:p [:km "open wip.md with Cursor Nightly"]]
-                 ;[:r [:km "open: SQLiteFlow"]] ; TODO: move to personal EdgeDB
                  ;[:r [:km "open: Things"]]
                  ;[:g [:km "open: Keynote"]]
                  ;[:d [:km "open: Music"]]
@@ -737,6 +736,7 @@
                  [:p :!CTOc] ; Sleep
                  [:a [:km "open: Chrome Canary"]]
                  [:s [:km "open: Excalidraw"]]
+                 [:d [:km "open: SQLiteFlow"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:escape [:km "open: Framer"]]
                  [:k [:km "New Linear task"]]
