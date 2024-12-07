@@ -444,7 +444,18 @@ function d
 end
 
 function :w
-   bun --watch $argv
+    if test -n "$argv[1]"
+        if test -f "$argv[1]"
+            bun --watch "$argv[1]"
+        else if test -f "scripts/$argv[1]"
+            bun --watch "scripts/$argv[1]"
+        else
+            echo "Could not find file: $argv[1] or scripts/$argv[1]"
+            return 1
+        end
+    else
+        bun --watch
+    end
 end
 
 function ..
@@ -544,8 +555,18 @@ end
 
 function dk
     if not set -q argv[1]
-        bunx drizzle-kit
+        # bunx drizzle-kit generate && bunx drizzle-kit migrate
+        bunx drizzle-kit generate
     else
         bunx drizzle-kit $argv
     end
 end
+
+function dkm
+    if not set -q argv[1]
+        bunx drizzle-kit migrate
+    else
+        bunx drizzle-kit $argv
+    end
+end
+
