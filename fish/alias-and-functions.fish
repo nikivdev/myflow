@@ -540,3 +540,12 @@ function k
         uv $argv
     end
 end
+
+
+function dk
+    if not set -q argv[1]
+        bunx drizzle-kit
+    else
+        bunx drizzle-kit $argv
+    end
+end
