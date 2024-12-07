@@ -472,7 +472,6 @@ function l
     ollama $argv
 end
 
-
 function p
     if not set -q argv[1]
         pnpm i
@@ -575,3 +574,27 @@ function dkm
     end
 end
 
+function .a
+    set bike_file (find . -name "*.bike" | head -n 1)
+    if test -n "$bike_file"
+        open -a "Bike" "$bike_file"
+    else
+        pwd | pbcopy
+        open -a "Bike"
+        # TODO: maybe run KM macro and automate creating the file via the `new file` thing in bike
+        # https://support.hogbaysoftware.com/t/why-is-it-when-i-create-a-bike-file-from-shell-it-will-show-extension-in-app/6020 due to this issue
+    end
+end
+
+# TODO: not used until https://support.hogbaysoftware.com/t/why-is-it-when-i-create-a-bike-file-from-shell-it-will-show-extension-in-app/6020 is fixed
+# function .a
+#     set bike_file (find . -name "*.bike" | head -n 1)
+#     if test -n "$bike_file"
+#         open -a "Bike" "$bike_file"
+#     else
+#         set dir_name (basename (pwd))
+#         set new_file "$dir_name.bike"
+#         touch "$new_file"
+#         open -a "Bike" "$new_file"
+#     end
+# end
