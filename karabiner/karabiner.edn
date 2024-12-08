@@ -874,9 +874,9 @@
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
                  [:w [:km "cursor: new."]]
-                 [:e [:km "cursor: test."]]
+                 ;[:e [:km "cursor: test."]]
+                 [:e [:km "cursor: test.."]]
                  [:r [:km "cursor: try."]]
-                 ;[:h [:km "cursor: moonbit."]]
                  [:h [:km "cursor: deno."]] ; move it to ts.
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: py."]]
@@ -884,7 +884,6 @@
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
                  [:period [:km "cursor: x."]]
-                 ;[:b [:km "cursor: odin."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
                  [:s [:km "cursor: solbond."]]
@@ -897,6 +896,8 @@
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
                  [:spacebar [:km "cursor: nikiv."]]
                  ]}
+                 ;[:h [:km "cursor: moonbit."]]
+                 ;[:b [:km "cursor: odin."]]
                  ;[:s [:km "cursor: data."]]
                  ;[:v [:km "cursor: projects"]] ; TODO: for now hard opens 1focus, make it smarter, do search over things
                  ;[:g [:km "cursor: odin."]]
