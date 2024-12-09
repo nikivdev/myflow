@@ -873,7 +873,7 @@
                   ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
-                 [:w [:km "cursor: new."]]
+                 [:w [:km "cursor: _new"]]
                  [:e [:km "cursor: _test"]]
                  [:r [:km "cursor: try."]]
                  [:h [:km "cursor: deno."]] ; move it to ts.
@@ -1010,7 +1010,7 @@
                  [:a [:km "Clone repo to ~/clones and open with Cursor"]]
                  [:s [:km "Clone repo to ~/clones"]]
                  [:h [:km "edit: GitHub Bio"]]
-                 [:j [:km "cursor: ts:scripts/run.ts"]]
+                 [:j [:km "cursor: ts:scripts/p-run.ts"]]
                  [:l [:km "open: Val Town"]]
                  [:n [:km "edit: run.rs"]]
                  [:m [:km "edit: run.go"]]

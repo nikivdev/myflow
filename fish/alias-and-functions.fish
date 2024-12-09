@@ -15,7 +15,7 @@ alias dl="cd ~/src/org/learn-anything/learn-anything && eza"
 alias dL="cd ~/src/org/learn-anything/x && eza"
 alias dz="cd ~/tmp && eza"
 alias ds="cd ~/try && eza"
-alias dw="cd ~/src/new && eza"
+alias dw="cd ~/new && eza"
 alias dq="cd ~/Documents && eza"
 alias dp="cd ~/past && eza"
 alias dP="cd ~/past/private && eza"
@@ -327,7 +327,7 @@ function :s
 end
 
 function :sr
-    set run_file (find . -name "private-run.ts" -path "*/scripts/*" | head -n 1)
+    set run_file (find . -name "p-run.ts" -path "*/scripts/*" | head -n 1)
     if test -n "$run_file"
         cursor "$run_file"
     end
