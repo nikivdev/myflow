@@ -874,13 +874,12 @@
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
                  [:w [:km "cursor: new."]]
-                 ;[:e [:km "cursor: test."]]
-                 [:e [:km "cursor: test.."]]
+                 [:e [:km "cursor: _test"]]
                  [:r [:km "cursor: try."]]
                  [:h [:km "cursor: deno."]] ; move it to ts.
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: py."]]
-                 [:f [:km "cursor: projects"]]
+                 [:f [:km "cursor: __projects"]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
                  [:period [:km "cursor: x."]]
