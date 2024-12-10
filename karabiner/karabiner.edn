@@ -1152,8 +1152,9 @@
                  [:a [:alfred "search websites" "nikivi.web.searches"]]
                  [:s [:alfred "search github" "nikiv.search.the.web"]]
                  [:d [:alfred "search hn" "nikiv.search.the.web"]]
-                 [:e [:alfred "search lobsters" "nikivi.search.the.web"]]
-                 [:f [:alfred "search repos" "me.lachlan.githubjump"]]
+                 [:w [:alfred "search lobsters" "nikivi.search.the.web"]]
+                 [:e [:alfred "search repos" "me.lachlan.githubjump"]]
+                 [:f [:raycast "anybox/anybox/search"]]
                  [:r [:alfred "search reddit" "nikivi.search.the.web"]]
                  [:grave_accent_and_tilde [:alfred "search learn anything" "nikivi.learn.anything"]]
                  ]}
@@ -1322,13 +1323,13 @@
                  [:o [:km "open: Safari Technology Preview"]]
                  [:comma [:km "Select line & move to Claude"]]
                  [:j :!CTO0] ; Search Alfred Snippets
-                 [:i [:raycast "anybox/anybox/search"]] ; move to k (after safari bookmark search becomes less useful) ; TODO: mby rebind to screenshot/image search?
-                 [:n :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
+                 [:i :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:k [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:l [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:slash [:km "w: GitHub PR"]] ; TODO:
-                 [:semicolon [:km "open: X Pro (post)"]]
-                 [:period [:km "open: X Pro (grok)"]]
+                 [:semicolon [:km "open: X Pro (post)"]] ; TODO: replace with typefully like service for `just post` or `new ..` (rally to X, bluesky, LA etc.)
+                 [:period [:km "open: Typefully"]]
+                 [:n [:km "open: X Pro (grok)"]]
                  [:m [:km "open: X Pro (search)"]]
                  ]}
                  ;[:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
