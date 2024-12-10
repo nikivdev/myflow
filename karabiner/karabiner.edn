@@ -951,7 +951,6 @@
          :rules [:z-mode
                  [:w [:km "New Spark email"]]
                  [:e [:km "open: Telegram"]]
-                 [:r [:km "open: Loops"]]
                  [:f [:km "open: Spark"]]
                  [:i [:km "open: Tuple"]] ; TODO: doesn't seem to do anything
                  [:o :!CO7] ; open Tuple menu bar
@@ -965,8 +964,9 @@
                  [:i [:km "w: Reddit submit"]]
                  [:period [:km "open: Element"]]
                  [:u [:km "Create new contact"]] ; TODO: move
-                 [:v [:km "open: Zoom"]]
-                 ]} ; Selection -> Twitter
+                 [:v [:km "open: Loops"]]
+                 ]}
+                 ;[:v [:km "open: Zoom"]]
                  ;[:spacebar :!CSOz] ; X search TODO: check bind
                  ;[:s :!CTOSe] ; Loom recording restart
                  ;[:d :!CTOSr] ; Loom recording pause/unpause
@@ -1311,7 +1311,7 @@
                  [:r :!CS7] ; TRex get text from screenshot (bind to k)
                  [:t [:km "w: X (personal)"]]
                  [:z :!CTOSF4] ; SuperCut restart recording
-                 [:escape :!CS8] ; Screenshot -> Eagle
+                 [:escape :!CS8] ; Screenshot -> Eagle ; TODO: use genx, add as metadata url/app it's taken from. do another for video too, mby from cleanshot
                  [:a :!CTOSF1] ; SuperCut start recording
                  [:s :!CTOSF5] ; SuperCut pause recording ; TODO: move it to `:s` once supercut adds a way to override the `start recording` bind to finish recording too
                  [:d :!CTOSF2] ; SuperCut finish recording TODO: hope supercut adds a way to finish recording from the `start recording` bind itself. this one would be `pause` bind then
