@@ -590,7 +590,6 @@
                  ;[:r [:km "Make 2Do task with note as current URL"]]
                  ;[:t [:km "Make 2Do task with Safari title as name + note as current URL"]]
                  ;[:i [:alfred "search alfred" "nikivi.utilities" "?"]]
-                 ;[:i [:km "Search Dash app"]]
                  ;[:i [:km "open: Dash (with search)"]]
                  ;[:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  ;[:s [:alfred "search code" "nikivi.manage.notes"]]
@@ -963,13 +962,12 @@
                  [:semicolon [:km "open: Slack"]]
                  [:h :!COTS6] ; Tuple hang up
                  [:t [:km "open: Contacts"]]
-                 [:m [:km "open: X Pro"]]
                  [:i [:km "w: Reddit submit"]]
                  [:period [:km "open: Element"]]
                  [:u [:km "Create new contact"]] ; TODO: move
                  [:v [:km "open: Zoom"]]
-                 [:spacebar :!CSOz]
                  ]} ; Selection -> Twitter
+                 ;[:spacebar :!CSOz] ; X search TODO: check bind
                  ;[:s :!CTOSe] ; Loom recording restart
                  ;[:d :!CTOSr] ; Loom recording pause/unpause
                  ;[:c :!CTOSh] ; Loom recording cancel
@@ -1016,6 +1014,7 @@
                  [:s [:km "Clone repo to ~/clones"]]
                  [:h [:km "edit: GitHub Bio"]]
                  [:j [:km "cursor: ts:scripts/p-run.ts"]]
+                 ;[:k [:km "cursor: py:scripts/p-run.ts"]]
                  [:l [:km "open: Val Town"]]
                  [:n [:km "edit: run.rs"]]
                  [:m [:km "edit: run.go"]]
@@ -1149,18 +1148,17 @@
                  [:4 :!O4]
                  [:5 :!O5]
                  [:6 :!O6]
-                 [:e [:km "Search X"]]
-                 [:a [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
-                 [:s [:alfred "search websites" "nikivi.web.searches"]]
+                 [:spacebar [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
+                 [:a [:alfred "search websites" "nikivi.web.searches"]]
+                 [:s [:alfred "search github" "nikiv.search.the.web"]]
                  [:d [:alfred "search hn" "nikiv.search.the.web"]]
+                 [:e [:alfred "search lobsters" "nikivi.search.the.web"]]
                  [:f [:alfred "search repos" "me.lachlan.githubjump"]]
                  [:r [:alfred "search reddit" "nikivi.search.the.web"]]
                  [:grave_accent_and_tilde [:alfred "search learn anything" "nikivi.learn.anything"]]
-                 [:z [:alfred "search lobsters" "nikivi.search.the.web"]]
-                 [:c [:alfred "search wiki" "nikivi.mind"]]
-                 [:spacebar [:km "New X post"]]
-                 [:a [:alfred "search github" "nikiv.search.the.web"]]
                  ]}
+                 ; TODO: bind good things to e, w, s, d, r, escape
+                 ;[:c [:alfred "search wiki" "nikivi.mind"]]
                  ;[:d [:alfred "search stack overflow" "net.deanishe.alfred-stackoverflow"]]
                  ;[:v [:alfred "search links" "nikivi.mind"]]
                  ;[:a [:alfred "search shares" "nikivi.ask.create.share"]]
@@ -1324,13 +1322,16 @@
                  [:o [:km "open: Safari Technology Preview"]]
                  [:comma [:km "Select line & move to Claude"]]
                  [:j :!CTO0] ; Search Alfred Snippets
-                 [:n [:raycast "anybox/anybox/search"]] ; move to k (after safari bookmark search becomes less useful) ; TODO: mby rebind to screenshot/image search?
-                 [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
+                 [:i [:raycast "anybox/anybox/search"]] ; move to k (after safari bookmark search becomes less useful) ; TODO: mby rebind to screenshot/image search?
+                 [:n :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:k [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:l [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
-                 [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  [:slash [:km "w: GitHub PR"]] ; TODO:
+                 [:semicolon [:km "open: X Pro (post)"]]
+                 [:period [:km "open: X Pro (grok)"]]
+                 [:m [:km "open: X Pro (search)"]]
                  ]}
+                 ;[:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  ;[:r :!CS7] ; TRex get text from screenshot ; TODO: bind to nice key
                  ;[:n :!CTequal_sign] ; Anybox search
                  ;[:escape [:km "Entire Screen into ChatGPT and explain"]]
