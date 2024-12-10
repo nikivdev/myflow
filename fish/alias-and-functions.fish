@@ -598,3 +598,18 @@ end
 #         open -a "Bike" "$new_file"
 #     end
 # end
+
+function replace
+    if test (count $argv) -ne 2
+        echo "Usage: replace <from> <to>"
+        echo "Example: replace '~' '~~'"
+        return 1
+    end
+
+    for file in *
+        set newname (string replace -a "$argv[1]" "$argv[2]" "$file")
+        if test "$file" != "$newname"
+            mv "$file" "$newname"
+        end
+    end
+end
