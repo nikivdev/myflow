@@ -876,8 +876,8 @@
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
                  [:w [:km "cursor: _new"]]
-                 [:e [:km "cursor: _test"]]
-                 [:r [:km "cursor: try."]]
+                 [:e [:km "cursor: _test"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
+                 [:r [:!Tspacebar :!Shyphen :t :e :s :t :spacebar]] ; search cursor windows with `_test`
                  [:h [:km "cursor: deno."]] ; move it to ts.
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: py."]]
@@ -897,6 +897,8 @@
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
                  [:spacebar [:km "cursor: nikiv."]]
                  ]}
+                 ;[:r [:alfred "search test code-workspace" "nikiv", " "]] ; TODO: there should be no need for this, remove
+                 ;[:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace
                  ;[:i [:km "cursor: zig."]]
                  ;[:h [:km "cursor: moonbit."]]
                  ;[:b [:km "cursor: odin."]]
