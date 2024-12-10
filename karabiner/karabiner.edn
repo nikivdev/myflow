@@ -892,6 +892,7 @@
                  [:c [:km "cursor: config."]]
                  [:g [:km "cursor: genx."]]
                  [:v [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
+                 [:i [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]]
                  [:o [:km "cursor: clones/forks"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
                  [:spacebar [:km "cursor: nikiv."]]
@@ -1068,8 +1069,8 @@
                  [:semicolon [:km "Search Spotify"]]
                  [:n :volume_decrement]
                  [:m :volume_increment]
-                 [:spacebar :!CSOv] ; Selection -> Google Images
                  ]}
+                 ;[:spacebar :!CSOv] ; Selection -> Google Images ; TODO: bind, useful
                  ;[:a [:km "Play/Pause Endel"]] ; TODO: in background, email them again
                  ;[:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]] ; TODO: fix up, useful
                  ;[:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]] ; TODO: raycast
