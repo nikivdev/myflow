@@ -63,7 +63,7 @@
                  [:tab [:km "open: Anybox"]]
                  [:escape [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
                  [:grave_accent_and_tilde :!Tspacebar] ; contexts window search (only cursor)
-                 [:left_command [:km "open: Arc"]]
+                 [:left_command [:km "open: Learn Anything"]]
                  [:q :!Sq]
                  [:w :!Sw]
                  [:e :!Se]
@@ -92,7 +92,6 @@
                  [:spacebar [:km "open: Reflect"]]
                  [:m :!Sm]
                  ]}
-                 ;[:left_command [:km "open: Learn Anything"]] ; TODO: bind
                  ;[:spacebar [:km "open: Learn Anything"]]
                  ;[:tab [:km "better (selection)"]] ; TODO: move it to cursor
                  ;[:escape [:km "Cursor = Open sublime merge to commit current project | All = Homerow"]] ; TODO: bind smth nicer
@@ -308,6 +307,7 @@
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
                  [:b [:km "open: Zed"]]
                  [:i [:km "open: PyCharm"]]
+                 [:left_command [:km "open: Arc"]]
                  [:comma [:km "open: JuxtaCode"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
@@ -499,7 +499,7 @@
                  [:e :!S3]
                  [:q :!Sopen_bracket]
                  [:escape :!Sopen_bracket]
-                 [:left_command [:km "explain (selection, or paste)"]] ; TODO: bind that to global lisa explain
+                 [:left_command [:km "explain (selection, or paste)"]] ; TODO: bind that to global 1focus explain
                  [:r :!Squote]
                  [:t :quote]
                  [:o :open_bracket] ; [
@@ -543,8 +543,8 @@
                  [:escape [:km "open: Railway"]]
                  [:q [:km "open: Expo"]]
                  [:w [:km "open: Vercel"]]
-                 [:e [:km "open: Sourcegraph"]]
-                 [:v [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]]
+                 [:e [:km "open: Axiom"]]
+                 [:r [:km "open: Sentry"]]
                  [:d [:km "open: Cloudflare"]]
                  [:a [:km "open: Ronin"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
@@ -553,14 +553,13 @@
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
-                 [:g [:km "open: EdgeDB Cloud"]]
-                 [:left_command [:km "open: Grep"]]
+                 [:v [:km "open: Perplexity"]]
+                 [:grave_accent_and_tilde [:km "open: Grep"]]
+                 [:left_command [:km "open: Sourcegraph"]]
                  [:spacebar [:km "open: Claude"]]
                  ]}
                  ;[:grave_accent_and_tilde [:km "activate GitHub search in Arc (repos)"]]
                  ;[:z [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
-                 ;[:j [:km "open: Perplexity"]]
-                 ;[:i [:km "open: Sentry"]]
                  ;[:escape [:km "open: Membrane"]] ; TODO: move
                  ;[:g [:km "open: AWS"]]
                  ;[:escape [:km "open: Google Cloud"]]
@@ -890,11 +889,12 @@
                  [:c [:km "cursor: config."]]
                  [:g [:km "cursor: genx."]]
                  [:v [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
-                 [:i [:km "cursor: zig."]]
+                 [:i [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]]
                  [:o [:km "cursor: clones/forks"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
                  [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
                  [:spacebar [:km "cursor: nikiv."]]
                  ]}
+                 ;[:i [:km "cursor: zig."]]
                  ;[:h [:km "cursor: moonbit."]]
                  ;[:b [:km "cursor: odin."]]
                  ;[:s [:km "cursor: data."]]
