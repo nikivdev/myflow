@@ -613,3 +613,8 @@ function replace
         end
     end
 end
+
+
+function gc
+    git clone $argv
+end
