@@ -746,7 +746,7 @@
                  [:escape [:km "open: Excalidraw"]]
                  [:grave_accent_and_tilde [:km "open: tldraw"]]
                  [:semicolon [:km "Things: new 2nd from top task"]]
-                 [:comma [:km "edit: Flox"]]
+                 ;[:comma [:km "edit: Flox"]] ; TODO: fix, manifest?
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file/text action
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
@@ -878,29 +878,29 @@
                  [:e [:km "cursor: test#"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  [:r [:!Tspacebar :!S3]] ; search cursor windows with `#`
                  [:t [:alfred "search all code-workspace" "nikiv", " "]]
-                 [:h [:km "cursor: deno#"]] ; move it to ts. maybe
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: py."]]
                  [:f [:km "cursor: projects+"]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
+                 [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: x."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
+                 [:v [:km "cursor: 1focus."]]
                  [:s [:km "cursor: solbond."]]
                  [:d [:km "cursor: docs."]]
                  [:c [:km "cursor: config."]]
-                 ;[:g [:km "cursor: 1focus."]]
-                 [:g [:km "cursor: genx."]]
-                 [:v [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
-                 [:i [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]]
-                 [:o [:km "cursor: clones/forks"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
-                 [:comma [:km "zed: cursor-workspaces"]] ; TODO: rename `workspaces` folder in config to `cursor-workspaces`
+                 [:g [:km "cursor: gen."]] ; TODO: change to genx
+                 [:i [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories", "="]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
+                 [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
+                 [:h [:km "cursor: nix."]]
                  [:spacebar [:km "cursor: nikiv."]]
+                 [:left_command [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
+                 ;[:h [:km "cursor: deno#"]] ; move it to ts. maybe
                  ;[:r [:alfred "search test code-workspace" "nikiv", " "]] ; TODO: there should be no need for this, remove
                  ;[:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace
-                 ;[:i [:km "cursor: zig."]]
                  ;[:h [:km "cursor: moonbit."]]
                  ;[:b [:km "cursor: odin."]]
                  ;[:s [:km "cursor: data."]]
@@ -1026,6 +1026,7 @@
                  [:slash [:km "edit: Fish alias/functions (past)"]]
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
                  ]}
+                 ;[:comma [:km "zed: workspaces"]]
                  ;[:k [:km "open: Membrane"]]
                  ;[:period [:km "edit: run.py"]]
                  ;[:l [:km "edit: Solid"]]
