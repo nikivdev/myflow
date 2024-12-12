@@ -305,12 +305,12 @@
                  [:n [:km "open: RustRover"]]
                  [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
-                 [:b [:km "open: Zed"]]
-                 [:i [:km "open: PyCharm"]]
+                 [:i [:km "open: Zed"]]
                  [:comma [:km "open: JuxtaCode"]]
                  [:left_command [:km "open: System Settings"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
+                 ;[:i [:km "open: PyCharm"]] ; TODO: bind
                  ;[:i [:km "open: Zen Browser"]]
                  ;[:d [:km "open: dbx"]] ; TODO: bind key #now
                  ;[:a [:km "open: GitButler"]]
