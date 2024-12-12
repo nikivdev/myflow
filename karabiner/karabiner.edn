@@ -875,12 +875,13 @@
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
                  [:w [:km "cursor: _new"]]
-                 [:e [:km "cursor: _test"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
-                 [:r [:!Tspacebar :!Shyphen :t :e :s :t :spacebar]] ; search cursor windows with `_test`
-                 [:h [:km "cursor: deno."]] ; move it to ts.
+                 [:e [:km "cursor: test#"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
+                 [:r [:!Tspacebar :!S3]] ; search cursor windows with `#`
+                 [:t [:alfred "search all code-workspace" "nikiv", " "]]
+                 [:h [:km "cursor: deno#"]] ; move it to ts. maybe
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: py."]]
-                 [:f [:km "cursor: __projects"]]
+                 [:f [:km "cursor: projects+"]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
                  [:period [:km "cursor: x."]]
@@ -889,6 +890,7 @@
                  [:s [:km "cursor: solbond."]]
                  [:d [:km "cursor: docs."]]
                  [:c [:km "cursor: config."]]
+                 ;[:g [:km "cursor: 1focus."]]
                  [:g [:km "cursor: genx."]]
                  [:v [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:i [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]]
