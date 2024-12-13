@@ -891,6 +891,7 @@
                  [:d [:km "cursor: docs."]]
                  [:c [:km "cursor: config."]]
                  [:g [:km "cursor: gen."]] ; TODO: change to genx
+                 ; TODO: make it work
                  [:i [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories", "="]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
                  [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
                  [:comma [:km "cursor: zig."]]
