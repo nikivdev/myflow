@@ -1,4 +1,5 @@
 alias cwd='pwd | pbcopy'
+alias go="go1.24rc1"
 alias a="eza -I 'license'" # list files (without license)
 alias af="type" # <cmd> - view definition of <cmd>
 alias dF="cd ~/src/pause && eza"
@@ -25,9 +26,9 @@ alias dD="cd ~/data/private && eza"
 alias dt="cd ~/desktop && eza"
 alias df="cd ~/src/org && eza"
 alias dv="cd ~/src/nikiv.dev && eza"
-alias do="cd ~/src/do && eza"
+alias dg="cd ~/src/do && eza"
 alias di="cd ~/clones && eza"
-alias dh="cd ~/forks && eza"
+alias do="cd ~/forks && eza"
 alias aa="eza -la" # list files (with hidden)
 alias r="ronin"
 alias v="mv" # move files/folders or rename
