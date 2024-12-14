@@ -876,29 +876,31 @@
          :rules [:tilde-mode
                  [:w [:km "cursor: _new"]]
                  [:e [:km "cursor: test#"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
-                 [:r [:km "cursor: gridchess."]]
                  [:h [:km "cursor: nix."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: py."]]
                  [:f [:km "cursor: projects+"]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
-                 [:b [:km "cursor: odin."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
                  [:v [:km "cursor: 1focus."]]
-                 [:s [:km "cursor: solbond."]]
+                 [:s [:km "cursor: alfred-raycast."]]
                  [:d [:km "cursor: docs."]]
+                 [:b [:km "cursor: solbond."]]
                  [:c [:km "cursor: config."]]
-                 [:g [:km "cursor: gen."]] ; TODO: change to genx
+                 [:g [:km "cursor: gen."]]
                  ; TODO: make it work
                  [:i [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories", "="]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
                  [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
-                 [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: x."]]
                  [:spacebar [:km "cursor: nikiv."]]
                  [:left_command [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
+                 ;[:b [:km "cursor: odin."]]
+                 ;[:a [:km "cursor: raycast."]]
+                 ;[:r [:km "cursor: alfred."]]
+                 ;[:comma [:km "cursor: zig."]]
                  ;[:r [:!Tspacebar :!S3]] ; search cursor windows with `#`
                  ;[:t [:alfred "search all code-workspace" "nikiv", " "]]
                  ;[:h [:km "cursor: deno#"]] ; move it to ts. maybe
