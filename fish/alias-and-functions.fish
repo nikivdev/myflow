@@ -113,6 +113,10 @@ function ngTelegram
     ngrok http "https://$domain:$port" --host-header="$domain:$port"
 end
 
+function ng
+    ngrok http 3000
+end
+
 # g. - commit all with `.` as message
 function g.
     git add .
