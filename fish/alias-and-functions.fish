@@ -309,20 +309,20 @@ function rs
     cargo watch -q -- sh -c "tput reset && cargo test -q --lib -- run --nocapture"
 end
 
-function :c
-    if not set -q argv[1]
-        set cli_file (fd -t f -p "cli.ts" | head -n 1)
-        if test -n "$cli_file"
-            cursor "$cli_file"
-            bun cli
-        else
-            # TODO:
-            # bun cli
-        end
-    else
-        # TODO:
-    end
-end
+# function :c
+#     if not set -q argv[1]
+#         set cli_file (fd -t f -p "cli.ts" | head -n 1)
+#         if test -n "$cli_file"
+#             cursor "$cli_file"
+#             bun cli
+#         else
+#             # TODO:
+#             # bun cli
+#         end
+#     else
+#         # TODO:
+#     end
+# end
 
 function :s
     set run_file (fd -t f -p "scripts/run.ts" | head -n 1)
@@ -623,4 +623,9 @@ end
 
 function gc
     git clone $argv
+end
+
+function :c
+    find . -type d -name node_modules -prune -print | xargs rm -rf
+    bun i
 end
