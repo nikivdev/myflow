@@ -876,7 +876,7 @@
          :rules [:tilde-mode
                  [:w [:km "cursor: _new"]]
                  [:e [:km "cursor: test#"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
-                 [:r [:!Tspacebar :!S3]] ; search cursor windows with `#` TODO: change with custom search workflow
+                 [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: py."]]
                  [:f [:km "cursor: projects+"]]
@@ -885,20 +885,21 @@
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
                  [:v [:km "cursor: 1focus."]]
+                 [:b [:km "cursor: base."]]
                  [:h [:km "cursor: alfred-raycast."]]
+                 [:s [:km "cursor: solbond."]]
                  [:d [:km "cursor: docs."]]
-                 [:b [:km "cursor: solbond."]]
                  [:c [:km "cursor: config."]]
                  [:g [:km "cursor: gen."]]
-                 [:s [:km "cursor: nix."]]
                  ; TODO: make it work
                  [:i [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories", "="]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
                  [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
+                 [:comma [:km "cursor: nix."]]
                  [:period [:km "cursor: x."]]
                  [:spacebar [:km "cursor: nikiv."]]
                  [:left_command [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
-                 ;[:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
+                 ;[:r [:!Tspacebar :!S3]] ; search cursor windows with `#` TODO: change with custom search workflow
                  ;[:b [:km "cursor: odin."]]
                  ;[:a [:km "cursor: raycast."]]
                  ;[:r [:km "cursor: alfred."]]
