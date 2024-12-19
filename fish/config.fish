@@ -34,3 +34,6 @@ set -gx FNM_NODE_DIST_MIRROR "https://nodejs.org/dist";
 set -gx FNM_COREPACK_ENABLED "false";
 set -gx FNM_RESOLVE_ENGINES "true";
 set -gx FNM_ARCH "arm64";
+
+# moonbit
+fish_add_path "$HOME/.moon/bin"

@@ -298,19 +298,20 @@
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
-                 [:period [:km "open: Sublime Merge"]]
                  [:semicolon [:km "open: Xcode Beta"]]
                  [:c [:km "open: Spotify"]]
                  [:slash [:km "open: Instruments"]]
+                 [:b [:km "open: IntelliJ IDEA"]]
                  [:n [:km "open: RustRover"]]
                  [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
-                 [:i [:km "open: Zed"]]
-                 [:comma [:km "open: JuxtaCode"]]
+                 [:i [:km "open: PyCharm"]]
+                 [:comma [:km "open: Zed"]]
+                 [:period [:km "open: Sublime Merge"]]
                  [:left_command [:km "open: System Settings"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
-                 ;[:i [:km "open: PyCharm"]] ; TODO: bind
+                 ;[:comma [:km "open: JuxtaCode"]]
                  ;[:i [:km "open: Zen Browser"]]
                  ;[:d [:km "open: dbx"]] ; TODO: bind key #now
                  ;[:a [:km "open: GitButler"]]
@@ -554,10 +555,12 @@
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:v [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]]
-                 [:grave_accent_and_tilde [:km "open: Grep"]]
+                 ; TODO: improve
+                 [:grave_accent_and_tilde [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories", "="]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
                  [:left_command [:km "open: Sourcegraph"]]
                  [:spacebar [:km "open: Claude"]]
                  ]}
+                 ;[:grave_accent_and_tilde [:km "open: Grep"]] ; TODO: rebind
                  ;[:v [:km "open: Perplexity"]]
                  ;[:grave_accent_and_tilde [:km "activate GitHub search in Arc (repos)"]]
                  ;[:z [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
@@ -877,29 +880,32 @@
                  [:w [:km "cursor: _new"]]
                  [:e [:km "cursor: test#"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
-                 [:t [:km "cursor: notlost."]]
+                 [:t [:km "cursor: moonbit."]]
+                 [:y [:km "cursor: odin."]]
+                 [:u [:km "cursor: zig."]]
+                 [:i [:km "cursor: py."]]
+                 [:s [:km "cursor: notlost."]]
+                 [:d [:km "cursor: docs."]]
+                 [:h [:km "cursor: solbond."]]
                  [:j [:km "cursor: ts."]]
-                 [:k [:km "cursor: py."]]
                  [:f [:km "cursor: projects+"]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
+                 [:b [:km "cursor: kotlin."]]
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
                  [:v [:km "cursor: 1focus."]]
-                 [:h [:km "cursor: alfred-raycast."]]
-                 [:s [:km "cursor: base."]]
-                 [:b [:km "cursor: solbond."]]
-                 [:d [:km "cursor: docs."]]
+                 [:k [:km "cursor: base-alfred-raycast."]]
                  [:c [:km "cursor: config."]]
                  [:g [:km "cursor: gen."]]
                  ; TODO: make it work
-                 [:i [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories", "="]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
                  [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
                  [:comma [:km "cursor: nix."]]
                  [:period [:km "cursor: x."]]
                  [:spacebar [:km "cursor: nikiv-ui."]]
                  [:left_command [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
+                 ;[:b [:km "cursor: gridchess."]]
                  ;[:r [:!Tspacebar :!S3]] ; search cursor windows with `#` TODO: change with custom search workflow
                  ;[:b [:km "cursor: odin."]]
                  ;[:a [:km "cursor: raycast."]]
@@ -909,7 +915,6 @@
                  ;[:t [:alfred "search all code-workspace" "nikiv", " "]]
                  ;[:h [:km "cursor: deno#"]] ; move it to ts. maybe
                  ;[:r [:alfred "search test code-workspace" "nikiv", " "]] ; TODO: there should be no need for this, remove
-                 ;[:h [:km "cursor: moonbit."]]
                  ;[:b [:km "cursor: odin."]]
                  ;[:s [:km "cursor: data."]]
                  ;[:v [:km "cursor: projects"]] ; TODO: for now hard opens 1focus, make it smarter, do search over things
