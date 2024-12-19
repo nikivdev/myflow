@@ -878,7 +878,7 @@
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
                  [:w [:km "cursor: _new"]]
-                 [:e [:km "cursor: test#"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
+                 [:e [:km "cursor: test!"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
                  [:t [:km "cursor: moonbit."]]
                  [:y [:km "cursor: odin."]]
@@ -898,13 +898,13 @@
                  [:k [:km "cursor: base-alfred-raycast."]]
                  [:c [:km "cursor: config."]]
                  [:g [:km "cursor: gen."]]
-                 ; TODO: make it work
-                 [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
+                 [:o [:km "cursor: clones/forks"]]
                  [:comma [:km "cursor: nix."]]
                  [:period [:km "cursor: x."]]
                  [:spacebar [:km "cursor: nikiv-ui."]]
                  [:left_command [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
+                 ;[:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
                  ;[:b [:km "cursor: gridchess."]]
                  ;[:r [:!Tspacebar :!S3]] ; search cursor windows with `#` TODO: change with custom search workflow
                  ;[:b [:km "cursor: odin."]]
