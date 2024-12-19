@@ -877,6 +877,7 @@
                  [:w [:km "cursor: _new"]]
                  [:e [:km "cursor: test#"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
+                 [:t [:km "cursor: notlost."]]
                  [:j [:km "cursor: ts."]]
                  [:k [:km "cursor: py."]]
                  [:f [:km "cursor: projects+"]]
@@ -885,9 +886,9 @@
                  [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
                  [:v [:km "cursor: 1focus."]]
-                 [:b [:km "cursor: base."]]
                  [:h [:km "cursor: alfred-raycast."]]
-                 [:s [:km "cursor: solbond."]]
+                 [:s [:km "cursor: base."]]
+                 [:b [:km "cursor: solbond."]]
                  [:d [:km "cursor: docs."]]
                  [:c [:km "cursor: config."]]
                  [:g [:km "cursor: gen."]]
@@ -896,7 +897,7 @@
                  [:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
                  [:comma [:km "cursor: nix."]]
                  [:period [:km "cursor: x."]]
-                 [:spacebar [:km "cursor: nikiv."]]
+                 [:spacebar [:km "cursor: nikiv-ui."]]
                  [:left_command [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
                  ;[:r [:!Tspacebar :!S3]] ; search cursor windows with `#` TODO: change with custom search workflow
