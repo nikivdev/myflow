@@ -352,7 +352,7 @@ end
 
 function m
     if not set -q argv[1]
-        go run .
+        watchexec --no-vcs-ignore --restart --quiet --exts go --clear --project-origin . "go run ."
     else
         go $argv
     end
@@ -379,7 +379,7 @@ function re
     end
 end
 
-function fs
+function fa
     flox activate -s
 end
 
@@ -387,11 +387,11 @@ function :u
     bun update --latest
 end
 
-function fsl
+function fl
    flox services logs --follow
 end
 
-function fsr
+function fr
    flox services restart
 end
 
