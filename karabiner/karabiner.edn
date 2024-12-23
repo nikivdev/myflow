@@ -880,19 +880,16 @@
                  [:w [:km "cursor: _new"]]
                  [:e [:km "cursor: test!"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
-                 [:t [:km "cursor: moonbit."]]
+                 [:t [:km "cursor: notlost."]]
                  [:y [:km "cursor: odin."]]
                  [:u [:km "cursor: zig."]]
                  [:n [:km "cursor: py."]]
-                 [:s [:km "cursor: notlost."]]
-                 [:d [:km "cursor: docs."]]
-                 [:h [:km "cursor: solbond."]]
+                 [:s [:km "cursor: docs."]]
+                 [:d [:km "cursor: solbond."]]
                  [:j [:km "cursor: ts."]]
                  [:f [:km "cursor: projects+"]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
-                 [:b [:km "cursor: kotlin."]]
-                 ;[:i [:km "cursor: scala."]]
                  [:i [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
                  [:v [:km "cursor: 1focus."]]
@@ -905,8 +902,11 @@
                  [:spacebar [:km "cursor: nikiv-ui."]]
                  [:left_command [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
+                 ;[:t [:km "cursor: moonbit."]]
+                 ;[:h [:km "cursor: gridchess."]]
+                 ;[:b [:km "cursor: kotlin."]]
+                 ;[:i [:km "cursor: scala."]]
                  ;[:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
-                 ;[:b [:km "cursor: gridchess."]]
                  ;[:r [:!Tspacebar :!S3]] ; search cursor windows with `#` TODO: change with custom search workflow
                  ;[:b [:km "cursor: odin."]]
                  ;[:a [:km "cursor: raycast."]]
