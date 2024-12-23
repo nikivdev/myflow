@@ -880,12 +880,14 @@
                  [:w [:km "cursor: _new"]]
                  [:e [:km "cursor: test!"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
-                 [:t [:km "cursor: notlost."]]
+                 [:t [:km "cursor: moonbit."]]
                  [:y [:km "cursor: odin."]]
                  [:u [:km "cursor: zig."]]
                  [:n [:km "cursor: py."]]
-                 [:s [:km "cursor: docs."]]
-                 [:d [:km "cursor: solbond."]]
+                 [:s [:km "cursor: notlost."]]
+                 [:d [:km "cursor: docs."]]
+                 [:b [:km "cursor: solbond."]]
+                 [:h [:km "cursor: gridchess."]]
                  [:j [:km "cursor: ts."]]
                  [:f [:km "cursor: projects+"]]
                  [:l [:km "cursor: la."]]
@@ -902,8 +904,6 @@
                  [:spacebar [:km "cursor: nikiv-ui."]]
                  [:left_command [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
-                 ;[:t [:km "cursor: moonbit."]]
-                 ;[:h [:km "cursor: gridchess."]]
                  ;[:b [:km "cursor: kotlin."]]
                  ;[:i [:km "cursor: scala."]]
                  ;[:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
