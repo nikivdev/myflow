@@ -286,6 +286,7 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:e [:km "open: Linear"]]
+                 [:r [:km "open: 1Password"]]
                  [:t [:km "open: Notion"]]
                  [:a [:km "open: Bike"]]
                  [:d [:km "open: SnippetsLab"]]
@@ -294,7 +295,6 @@
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
-                 [:r [:km "open: 1Password"]]
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
@@ -433,6 +433,7 @@
         {:des "rkey (apps)"
          :rules [:r-mode
                  [:tab [:km "open: Transmission"]]
+                 [:o [:km "open: Obsidian"]]
                  [:w [:km "open: IINA"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:b [:km "Edit keyboard shortcuts"]]
@@ -464,7 +465,6 @@
                  ;[:spacebar [:km "Copied image into ChatGPT"]]]}
         {:des "tkey (sites + tests)"
          :rules [:t-mode
-                 [:k [:km "open: Obsidian"]]
                  [:l [:km "open: Haptic"]]
                  [:semicolon [:km "open: Supernotes"]]
                  [:spacebar :!CTOSi] ; Loom cancel record
