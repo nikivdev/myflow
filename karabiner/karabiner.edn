@@ -540,7 +540,9 @@
                  [:6 :!C6]
                  [:i [:km "open: EdgeDB Cloud"]]
                  [:j [:km "open: Axiom"]]
-                 [:n [:km "open: SQLiteFlow"]]
+                 [:n [:km "open: Sourcegraph"]]
+                 [:m [:km "open: Grep"]]
+                 [:h [:km "open: SQLiteFlow"]]
                  [:tab [:km "open: Clerk"]]
                  [:escape [:km "open: Railway"]]
                  [:q [:km "open: Expo"]]
@@ -552,17 +554,15 @@
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:s [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:f [:km "open: ChatGPT"]]
+                 [:g [:km "open: Perplexity"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  [:v [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]]
                  ; TODO: improve
                  [:grave_accent_and_tilde [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories", "="]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
-                 [:left_command [:km "open: Sourcegraph"]]
                  [:spacebar [:km "open: Claude"]]
                  ]}
-                 ;[:grave_accent_and_tilde [:km "open: Grep"]] ; TODO: rebind
-                 ;[:v [:km "open: Perplexity"]]
                  ;[:grave_accent_and_tilde [:km "activate GitHub search in Arc (repos)"]]
                  ;[:z [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  ;[:escape [:km "open: Membrane"]] ; TODO: move
