@@ -298,7 +298,7 @@
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
-                 [:semicolon [:km "open: Xcode Beta"]]
+                 [:semicolon [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
                  [:slash [:km "open: Instruments"]]
                  [:b [:km "open: IntelliJ IDEA"]]
