@@ -557,12 +557,13 @@
                  [:g [:km "open: Perplexity"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
-                 [:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
-                 [:v [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]]
                  ; TODO: improve
                  [:grave_accent_and_tilde [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories", "="]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
+                 [:v [:km "open: Grok"]]
                  [:spacebar [:km "open: Claude"]]
                  ]}
+                 ;[:b [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
+                 ;[:v [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]]
                  ;[:grave_accent_and_tilde [:km "activate GitHub search in Arc (repos)"]]
                  ;[:z [:alfred "search forks" "com.vitorgalvao.alfred.directories"]]
                  ;[:escape [:km "open: Membrane"]] ; TODO: move
@@ -734,8 +735,9 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:1 [:km "View Sip"]]
-                 [:q [:km "open: Framer"]]
-                 [:w [:km "open: Eagle"]]
+                 ;[:q [:km "open: Framer"]]
+                 [:q [:km "open: Figma Beta (FigJam)"]]
+                 [:w [:km "open: Figma Beta"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
                  [:a [:km "open: Chrome Canary"]]
@@ -755,7 +757,7 @@
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
                  [:m [:km "Things: Quick Entry (with context) (into Someday)"]]
-                 [:spacebar [:km "open: Figma Beta"]]
+                 [:spacebar [:km "open: Eagle"]]
                  ]}
                  ;[:comma [:km "edit: Flox"]] ; TODO: fix, manifest?
                  ;[:p :!CTOc] ; Sleep
@@ -1345,10 +1347,9 @@
                  [:k [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:l [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:slash [:km "w: GitHub PR"]] ; TODO:
-                 [:semicolon [:km "open: X Pro (post)"]] ; TODO: replace with typefully like service for `just post` or `new ..` (rally to X, bluesky, LA etc.)
                  [:period [:km "open: Typefully"]]
-                 [:n [:km "open: X Pro (grok)"]]
                  [:m [:km "open: X Pro (search)"]]
+                 [:semicolon [:km "open: X Pro (post)"]] ; TODO: replace with typefully like service for `just post` or `new ..` (rally to X, bluesky, LA etc.)
                  ]}
                  ;[:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
                  ;[:r :!CS7] ; TRex get text from screenshot ; TODO: bind to nice key
