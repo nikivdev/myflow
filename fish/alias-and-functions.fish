@@ -623,11 +623,19 @@ function replace
 end
 
 
-function gc
-    git clone $argv
-end
-
 function :c
     find . -type d -name node_modules -prune -print | xargs rm -rf
     bun i
+end
+
+# clone using SSH URL format
+function gc
+    if not set -q argv[1]
+        echo "Usage: gc <github-url>"
+        return 1
+    end
+    # extract repo path from the URL
+    set repo_path (string replace -r 'https://github.com/' '' $argv[1])
+    # clone using SSH URL format
+    git clone "git@github.com:$repo_path.git"
 end
