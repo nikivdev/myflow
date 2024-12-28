@@ -1348,6 +1348,7 @@
                  [:l [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:slash [:km "w: GitHub PR"]] ; TODO:
                  [:period [:km "open: Typefully"]]
+                 [:n [:km "new safari tab"]]
                  [:m [:km "open: X Pro (search)"]]
                  [:semicolon [:km "open: X Pro (post)"]] ; TODO: replace with typefully like service for `just post` or `new ..` (rally to X, bluesky, LA etc.)
                  ]}
