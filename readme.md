@@ -31,9 +31,6 @@
 <a align="center" href="https://github.com/nikitavoloboev/config">
     <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/24-dec/7-ios.png"></a>
 
-<a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/24-dec/8-ios.png"></a>
-
 > iOS screens. All described in detail below.
 
 - [Replicate macOS setup](#clean-install--replicate-my-macos-fully)
