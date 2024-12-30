@@ -433,7 +433,8 @@
         {:des "rkey (apps)"
          :rules [:r-mode
                  [:tab [:km "open: Transmission"]]
-                 [:o [:km "open: Obsidian"]]
+                 [:i [:km "open: Obsidian"]]
+                 [:o [:km "open: OrbStack"]]
                  [:w [:km "open: IINA"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:b [:km "Edit keyboard shortcuts"]]
