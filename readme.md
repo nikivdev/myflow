@@ -2,11 +2,11 @@
 
 > Apps/CLIs/configs I use on macOS/iOS. Fish, Karabiner, Cursor..
 
-![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/mac-dark.png)
+![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-dec/mac-dark.png)
 
 > Dark appearance. All apps are in one desktop since there is delay in switching between macOS multiple desktops. Dock is hidden.
 
-![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-nov/mac-light.png)
+![](https://raw.githubusercontent.com/nikitavoloboev/media/main/config/24-dec/mac-light.png)
 
 > Light appearance. Use light themes when outside or when there is glare from the sun as it makes text more readable.
 
