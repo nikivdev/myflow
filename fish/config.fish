@@ -37,3 +37,5 @@ set -gx FNM_ARCH "arm64";
 
 # moonbit
 fish_add_path "$HOME/.moon/bin"
+
+atuin init fish | source
