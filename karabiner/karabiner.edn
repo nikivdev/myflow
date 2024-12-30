@@ -1341,16 +1341,16 @@
                  [:f :!CS9] ; CleanShot screen recording
                  [:g [:km "web: GitHub (personal)"]]
                  [:h [:km "web: GitHub Learn Anything"]]
+                 [:i [:km "open: X Pro (search)"]]
                  [:o [:km "open: Safari Technology Preview"]]
                  [:comma [:km "Select line & move to Claude"]]
                  [:j :!CTO0] ; Search Alfred Snippets
-                 [:i :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:k [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:l [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
                  [:slash [:km "w: GitHub PR"]] ; TODO:
                  [:period [:km "open: Typefully"]]
                  [:n [:km "new safari tab"]]
-                 [:m [:km "open: X Pro (search)"]]
+                 [:m :!TSC0] ; Raycast: Search open tabs TODO: fix wrong safari tab from showing up TODO: combine it with LA bookmarks? all in one thing? should include bookmarks
                  [:semicolon [:km "open: X Pro (post)"]] ; TODO: replace with typefully like service for `just post` or `new ..` (rally to X, bluesky, LA etc.)
                  ]}
                  ;[:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows (go down)
