@@ -639,3 +639,14 @@ function gc
     # clone using SSH URL format
     git clone "git@github.com:$repo_path.git"
 end
+
+function repoCleanup
+    find . -type f -name "README.md" -exec sh -c '
+        tmp="$1.tmp"
+        mv "$1" "$tmp" && mv "$tmp" "$(dirname "$1")/readme.md"
+    ' _ {} \;
+    find . -type f -name "CHANGELOG.md" -exec sh -c '
+        tmp="$1.tmp"
+        mv "$1" "$tmp" && mv "$tmp" "$(dirname "$1")/changelog.md"
+    ' _ {} \;
+end
