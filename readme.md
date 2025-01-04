@@ -215,7 +215,7 @@ I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I
 - [Phone](https://www.icloud.com/shortcuts/cee3a88e59084520beaeb312bb0897cc) opens Phone app (for searching, making new contacts or entering a phone number)
 - [Places](https://www.icloud.com/shortcuts/54bfaffe332542a1947e514d2c16537e) opens list of options like `Parks/Restaurants/Cafes` and on tap opens search for them in [Google Maps](https://apps.apple.com/us/app/google-maps/id585027354)
 - [AI](https://www.icloud.com/shortcuts/7a747e6e284f4b3ca4f3beecb29c65d4) opens [Gemini](https://apps.apple.com/us/app/google-gemini/id6477489729) app (nice to ask questions that needs Google know how)
-- [Workout](https://www.icloud.com/shortcuts/669d5a52700f4ab09255966cc96e31bc) opens [Caliber](https://apps.apple.com/us/app/caliber-strength-training/id1482405410) app to start or view past workouts
+- [Workout](https://www.icloud.com/shortcuts/02a9f3db29f2432fbdf39dfc330475d6) opens [SmartGym](https://apps.apple.com/us/app/smartgym-gym-home-workouts/id922744883) app and does today's workout
 - [Lens](https://www.icloud.com/shortcuts/c0458ec52a1547e4a4cb101dc2905751) opens [Google Lens](https://apps.apple.com/us/app/google/id284815942) (to know what camera is point at or what the image represents)
 - [Ride/Food](https://www.icloud.com/shortcuts/8e9560d24b0c4087b0c40b989799e9fb) opens [Uber](https://apps.apple.com/us/app/uber-request-a-ride/id368677368) app (to request food or ride)
 - [Todo](https://www.icloud.com/shortcuts/7656a88946074b128cf7a9fa36904e75) opens [Things](https://apps.apple.com/us/app/things-3/id904237743) with quick entry for creating a todo
