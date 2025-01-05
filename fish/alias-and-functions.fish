@@ -641,11 +641,11 @@ function gc
 end
 
 function repoCleanup
-    find . -type f -name "README.md" -exec sh -c '
+    find . -type f -name "README.md" -not -path "*/node_modules/*" -exec sh -c '
         tmp="$1.tmp"
         mv "$1" "$tmp" && mv "$tmp" "$(dirname "$1")/readme.md"
     ' _ {} \;
-    find . -type f -name "CHANGELOG.md" -exec sh -c '
+    find . -type f -name "CHANGELOG.md" -not -path "*/node_modules/*" -exec sh -c '
         tmp="$1.tmp"
         mv "$1" "$tmp" && mv "$tmp" "$(dirname "$1")/changelog.md"
     ' _ {} \;
