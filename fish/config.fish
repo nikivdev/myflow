@@ -24,7 +24,7 @@ fish_add_path /Users/nikiv/.codeium/windsurf/bin
 set -gx PATH $PATH /Users/nikiv/.cache/lm-studio/bin
 
 # fnm
-# TODO: lookgs ugly and seems wrong to commit this in config.fish, fix it
+# TODO: looks ugly and seems wrong to commit this in config.fish, fix it
 set -gx PATH "/Users/nikiv/.local/state/fnm_multishells/6982_1733503676213/bin" $PATH;
 set -gx FNM_MULTISHELL_PATH "/Users/nikiv/.local/state/fnm_multishells/6982_1733503676213";
 set -gx FNM_VERSION_FILE_STRATEGY "local";
