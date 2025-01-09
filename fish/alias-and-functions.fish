@@ -661,4 +661,5 @@ function gs
         return 1
     end
     gh repo sync "nikitavoloboev/$repo_name" --source "git@github.com:$original_author/$repo_name"
+    git pull
 end
