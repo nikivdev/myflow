@@ -649,3 +649,16 @@ function repoCleanup
         mv "$1" "$tmp" && mv "$tmp" "$(dirname "$1")/changelog.md"
     ' _ {} \;
 end
+
+# sync local .git folder with remote repo
+function gs
+    set current_folder (basename $PWD)
+    set original_author (string split '#' $current_folder)[1]
+    set repo_name (string split '#' $current_folder)[2]
+    if test -z "$repo_name" -o -z "$original_author"
+        echo "Error: Could not parse repository info from directory name"
+        echo "Directory should be in format: author#repo"
+        return 1
+    end
+    gh repo sync "nikitavoloboev/$repo_name" --source "git@github.com:$original_author/$repo_name"
+end
