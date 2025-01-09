@@ -889,7 +889,7 @@
                  [:u [:km "cursor: zig."]]
                  [:b [:km "cursor: moonbit."]]
                  [:n [:km "cursor: py."]]
-                 [:d [:km "cursor: base-alfred-raycast."]]
+                 ;[:d [:km "cursor: base-alfred-raycast."]]
                  [:t [:km "cursor: notlost."]]
                  [:k [:km "cursor: solbond."]]
                  [:h [:km "cursor: gridchess."]]
@@ -905,7 +905,7 @@
                  [:o [:km "cursor: clones/forks"]]
                  [:comma [:km "cursor: nix."]]
                  [:period [:km "cursor: x."]]
-                 [:spacebar [:km "cursor: nikiv-ui."]]
+                 [:spacebar [:km "cursor: nikiv-base-alfred-raycast."]]
                  [:left_command [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
                  ;[:g [:km "cursor: gen."]]
