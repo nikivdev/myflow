@@ -882,14 +882,14 @@
                   ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
-                 [:w [:km "cursor: _new"]]
+                 [:d [:km "cursor: _new"]]
+                 [:w [:km "cursor: nikiv-base."]]
                  [:e [:km "cursor: test!"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
                  [:y [:km "cursor: odin."]]
                  [:u [:km "cursor: zig."]]
                  [:b [:km "cursor: moonbit."]]
                  [:n [:km "cursor: py."]]
-                 ;[:d [:km "cursor: base-alfred-raycast."]]
                  [:t [:km "cursor: notlost."]]
                  [:k [:km "cursor: solbond."]]
                  [:h [:km "cursor: gridchess."]]
@@ -903,9 +903,9 @@
                  [:c [:km "cursor: config."]]
                  [:g [:km "cursor: gpton."]]
                  [:o [:km "cursor: clones/forks"]]
+                 [:spacebar [:km "cursor: alfred-raycast."]]
                  [:comma [:km "cursor: nix."]]
                  [:period [:km "cursor: x."]]
-                 [:spacebar [:km "cursor: nikiv-base-alfred-raycast."]]
                  [:left_command [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
                  ;[:g [:km "cursor: gen."]]
