@@ -291,8 +291,9 @@
                  [:t [:km "open: Notion"]]
                  [:a [:km "open: Bike"]]
                  [:d [:km "open: SnippetsLab"]]
-                 [:v [:km "open: Yaak"]]
                  [:g [:km "open: Proxyman"]]
+                 [:v [:km "open: Yaak"]]
+                 [:i [:km "open: Repo Prompt"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
@@ -303,7 +304,7 @@
                  [:c [:km "open: Spotify"]]
                  [:slash [:km "open: Instruments"]]
                  [:b [:km "open: IntelliJ IDEA"]]
-                 [:i [:km "open: GoLand"]]
+                 ;[:i [:km "open: GoLand"]]
                  [:m [:km "open: RustRover"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
                  [:n [:km "open: PyCharm"]]
