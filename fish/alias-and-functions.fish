@@ -132,21 +132,29 @@ end
 # TODO: might be buggy
 function gitSetSshOrigin
     set -l repo_url $argv[1]
-
     # Extract username and repo name from the URL
     set -l repo_path (echo $repo_url | sed -E 's/.*github\.com[:/]([^/]+\/[^/]+)(\.git)?$/\1/')
-
     # Construct the SSH URL
     set -l ssh_url "git@github.com:$repo_path.git"
-
-    # Remove existing origin
-    git remote remove origin
-
+    # Remove existing origin if it exists
+    git remote remove origin 2>/dev/null
     # Add new origin with SSH URL
     git remote add origin $ssh_url
+    # Get current branch name
+    set -l current_branch (git rev-parse --abbrev-ref HEAD)
+
+    # Check if this is a new repository
+    if test (git rev-parse HEAD 2>/dev/null)
+        # If repository has commits, try to set upstream
+        git push -u origin $current_branch
+    else
+        echo "New repository detected. Please make an initial commit first, then run:"
+        echo "git push -u origin $current_branch"
+    end
 
     echo "Remote origin set to: $ssh_url"
 end
+
 
 function deleteNodeModules
     find . -type d -name node_modules -prune -print | xargs rm -rf
