@@ -882,7 +882,6 @@
                   ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
-                 [:d [:km "cursor: _new"]]
                  [:w [:km "cursor: nikiv-base."]]
                  [:e [:km "cursor: test!"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
@@ -906,7 +905,8 @@
                  [:spacebar [:km "cursor: alfred-raycast."]]
                  [:comma [:km "cursor: nix."]]
                  [:period [:km "cursor: x."]]
-                 [:left_command [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
+                 [:s [:km "cursor: _new"]]
+                 [:d [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
                  ;[:g [:km "cursor: gen."]]
                  ;[:b [:km "cursor: kotlin."]]
