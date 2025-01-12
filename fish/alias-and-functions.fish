@@ -661,13 +661,22 @@ end
 # sync local .git folder with remote repo
 function gs
     set current_folder (basename $PWD)
-    set original_author (string split '#' $current_folder)[1]
-    set repo_name (string split '#' $current_folder)[2]
-    if test -z "$repo_name" -o -z "$original_author"
+    if string match -rq '^([^-]+)--(.+)$' $current_folder
+        set -l original_author (string match -r '^([^-]+)--(.+)$' $current_folder)[2]
+        set -l repo_name (string match -r '^([^-]+)--(.+)$' $current_folder)[3]
+        gh repo sync "nikitavoloboev/$repo_name" --source "git@github.com:$original_author/$repo_name"
+        git pull
+    else
         echo "Error: Could not parse repository info from directory name"
-        echo "Directory should be in format: author#repo"
+        echo "Directory should be in format: author--repo"
         return 1
     end
-    gh repo sync "nikitavoloboev/$repo_name" --source "git@github.com:$original_author/$repo_name"
-    git pull
+end
+
+# used as catch all for fast scripts
+function ,
+    for dir in *=*
+        set newdir (string replace --all "=" "__" "$dir")
+        mv "$dir" "$newdir"
+    end
 end
