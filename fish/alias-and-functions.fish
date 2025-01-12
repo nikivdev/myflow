@@ -1,3 +1,4 @@
+alias sf="sitefetch"
 alias cwd='pwd | pbcopy'
 alias go="go1.24rc1"
 alias a="eza -I 'license'" # list files (without license)
@@ -661,9 +662,9 @@ end
 # sync local .git folder with remote repo
 function gs
     set current_folder (basename $PWD)
-    if string match -rq '^([^-]+)--(.+)$' $current_folder
-        set -l original_author (string match -r '^([^-]+)--(.+)$' $current_folder)[2]
-        set -l repo_name (string match -r '^([^-]+)--(.+)$' $current_folder)[3]
+    if string match -rq '(.+)--(.+)' $current_folder
+        set -l original_author (string match -r '(.+)--(.+)' $current_folder)[2]
+        set -l repo_name (string match -r '(.+)--(.+)' $current_folder)[3]
         gh repo sync "nikitavoloboev/$repo_name" --source "git@github.com:$original_author/$repo_name"
         git pull
     else
