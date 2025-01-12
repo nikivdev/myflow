@@ -544,6 +544,7 @@
                  [:j [:km "open: Axiom"]]
                  [:h [:km "open: SQLiteFlow"]]
                  [:r [:km "open: Repo Prompt"]]
+                 [:tab [:km "open: AI Studio"]]
                  [:escape [:km "open: Railway"]]
                  [:q [:km "open: Expo"]]
                  [:w [:km "open: Vercel"]]
