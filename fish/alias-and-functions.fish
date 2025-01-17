@@ -22,10 +22,11 @@ alias dw="cd ~/new && eza"
 alias db="cd ~/src/base && eza"
 alias dq="cd ~/Documents && eza"
 alias dp="cd ~/past && eza"
+alias dg="cd ~/src/other && eza"
 alias dP="cd ~/past/private && eza"
 alias dd="cd ~/data && eza"
 alias dD="cd ~/data/private && eza"
-alias dh="cd ~/src/org/solbond/solbond && eza"
+alias dk="cd ~/src/org/solbond/solbond && eza"
 alias dt="cd ~/desktop && eza"
 alias df="cd ~/src/org && eza"
 alias dv="cd ~/src/nikiv.dev && eza"
@@ -573,14 +574,14 @@ function k
 end
 
 
-function dk
-    if not set -q argv[1]
-        # bunx drizzle-kit generate && bunx drizzle-kit migrate
-        bunx drizzle-kit generate
-    else
-        bunx drizzle-kit $argv
-    end
-end
+# function dk
+#     if not set -q argv[1]
+#         # bunx drizzle-kit generate && bunx drizzle-kit migrate
+#         bunx drizzle-kit generate
+#     else
+#         bunx drizzle-kit $argv
+#     end
+# end
 
 function dkm
     if not set -q argv[1]
