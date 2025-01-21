@@ -23,7 +23,6 @@ alias db="cd ~/src/base && eza"
 alias dq="cd ~/Documents && eza"
 alias dp="cd ~/past && eza"
 alias dg="cd ~/src/other && eza"
-
 alias dP="cd ~/past/private && eza"
 alias dd="cd ~/data && eza"
 alias dD="cd ~/data/private && eza"
@@ -39,7 +38,6 @@ alias v="mv" # move files/folders or rename
 alias dc="cd ~/src/config && eza"
 alias pr="gh pr checkout"
 alias nb="nix-build"
-# alias p="python3"
 
 function run_ts_script
     set script_name $argv[1]
@@ -209,13 +207,13 @@ function w.
     cursor .env
 end
 
-# function .
-#     if not set -q argv[1]
-#         # TODO:
-#     else
-#         python3 $argv
-#     end
-# end
+function n
+    if not set -q argv[1]
+        # TODO:
+    else
+        python3 $argv
+    end
+end
 
 function f
     if not set -q argv[1]
@@ -294,8 +292,8 @@ function g
     end
 end
 
-# r - run `cargo run` when rust files change
-function n
+# run `cargo run` when rust files change | <query> - run with query
+function i
     if not set -q argv[1]
         cargo watch -q -- sh -c "tput reset && cargo run -q"
     else
