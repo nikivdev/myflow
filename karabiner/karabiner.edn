@@ -1197,8 +1197,8 @@
                  ;[:spacebar [:alfred "search websites" "nikivi.web.searches"]]]}
         {:des "mkey (apps)"
          :rules [:m-mode
-                 [:w [:km "open: JuxtaCode"]]
-                 [:e [:km "open: OrbStack"]]
+                 [:w [:km "open: OrbStack"]]
+                 [:e [:km "open: JuxtaCode"]]
                  [:a [:km "open: TablePlus"]]
                  [:spacebar [:km "open: Dash (with search)"]]
                  ]}

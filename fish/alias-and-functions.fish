@@ -445,16 +445,19 @@ function changeRemoteToFork
     end
 end
 
-# TODO: move to https://github.com/ClementNerma/Jumpy/issues/5
 function d
     if not set -q argv[1]
         cd
     else
-        if cd $argv
+        if cd $argv 2>/dev/null
             eza
         else
-            # cd failed, so we don't run eza
-            return 1
+            z $argv
+            if test $status -eq 0
+                eza
+            else
+                return 1
+            end
         end
     end
 end
