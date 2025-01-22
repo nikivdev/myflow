@@ -550,16 +550,16 @@
                  [:d [:km "open: Cloudflare"]]
                  [:a [:km "open: Ronin"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
+                 [:v [:km "open: Console"]] ; TODO: move it?
                  [:f [:km "open: ChatGPT"]]
                  [:g [:km "open: Perplexity"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  ; TODO: improve
                  [:grave_accent_and_tilde [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories", "__"]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
-                 [:v [:km "open: Grok"]]
                  [:spacebar [:km "open: Claude"]]
                  ]}
-                 ;[:q [:km "open: Console"]]
+                 ;[:v [:km "open: Grok"]] ; TODO: add when it's not on x.com domain but on x.ai or grok.com (as it messes up X link opening..)
                  ;[:r [:km "open: Sentry"]]
                  ;[:n [:km "open: Sourcegraph"]]
                  ;[:m [:km "open: Grep"]]
@@ -978,7 +978,7 @@
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
-                 [:l [:km "open: X Messages"]]
+                 [:l [:km "open: Texts"]]
                  [:semicolon [:km "open: Slack"]]
                  [:h :!COTS6] ; Tuple hang up
                  [:t [:km "open: Contacts"]]
