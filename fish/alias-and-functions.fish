@@ -161,6 +161,14 @@ function deleteNodeModules
     find . -type d -name node_modules -prune -print | xargs rm -rf
 end
 
+# full `bun i` reset
+function :d
+    find . -type d -name node_modules -prune -print | xargs rm -rf
+    rm bun.lock
+    rm bun.lockb
+    bun i
+end
+
 # find .env files
 function f.
     for env_file in (find . -type d -name node_modules -prune -o -type f -name ".env" -print)
