@@ -739,13 +739,13 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:1 [:km "View Sip"]]
-                 ;[:q [:km "open: Framer"]]
                  [:q [:km "open: Figma Beta (FigJam)"]]
                  [:w [:km "open: Figma Beta"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:r [:km "Centre mouse to active app"]]
                  [:a [:km "open: Chrome Canary"]]
-                 [:s [:km "open: Arc"]]
+                 [:s [:km "open: Lovable"]]
+                 [:d [:km "open: Arc"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:k [:km "New Linear task"]]
                  [:l [:alfred "active todo" "nikiv"]]
@@ -763,6 +763,7 @@
                  [:m [:km "Things: Quick Entry (with context) (into Someday)"]]
                  [:spacebar [:km "open: Eagle"]]
                  ]}
+                 ;[:q [:km "open: Framer"]]
                  ;[:comma [:km "edit: Flox"]] ; TODO: fix, manifest?
                  ;[:p :!CTOc] ; Sleep
                  ;[:m [:km "Things: new today task at bottom"]]
