@@ -540,7 +540,6 @@
                  [:6 :!C6]
                  [:i [:km "open: EdgeDB Cloud"]]
                  [:j [:km "open: Axiom"]]
-                 [:h [:km "open: SQLiteFlow"]]
                  [:e [:km "open: Repo Prompt"]]
                  [:r [:km "open: AlexSideBar"]]
                  [:tab [:km "open: AI Studio"]]
@@ -1203,7 +1202,8 @@
          :rules [:m-mode
                  [:w [:km "open: OrbStack"]]
                  [:e [:km "open: JuxtaCode"]]
-                 [:a [:km "open: TablePlus"]]
+                 [:a [:km "open: SQLiteFlow"]]
+                 [:s [:km "open: TablePlus"]]
                  [:spacebar [:km "open: Dash (with search)"]]
                  ]}
                  ;[:a [:km "open: Apple Developer Documentation"]]
