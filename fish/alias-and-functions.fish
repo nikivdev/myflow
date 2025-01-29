@@ -711,8 +711,7 @@ function triggerBuildWithNoCommit
         git reset HEAD~1; return 1
     end
 
-    # Wait and cleanup
-    sleep 1
+    # Cleanup immediately
     git reset HEAD~1
     git push --force origin $current_branch || begin
         echo "Error: Failed to cleanup. Run: git reset HEAD~1 && git push --force"
