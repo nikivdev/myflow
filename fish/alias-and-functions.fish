@@ -692,3 +692,32 @@ function ,
         mv "$dir" "$newdir"
     end
 end
+
+
+function triggerBuildWithNoCommit
+    set current_branch (git rev-parse --abbrev-ref HEAD)
+
+    # Validate git state
+    if not git rev-parse --git-dir >/dev/null 2>&1
+        echo "Error: Not in a git repository"; return 1
+    end
+    if not git diff --quiet HEAD
+        echo "Error: Working directory not clean"; return 1
+    end
+
+    # Push empty commit
+    git commit --allow-empty -m "temp: trigger build"
+    if not git push origin $current_branch
+        git reset HEAD~1; return 1
+    end
+
+    # Wait and cleanup
+    sleep 1
+    git reset HEAD~1
+    git push --force origin $current_branch || begin
+        echo "Error: Failed to cleanup. Run: git reset HEAD~1 && git push --force"
+        return 1
+    end
+
+    echo "✓ Build triggered"
+end
