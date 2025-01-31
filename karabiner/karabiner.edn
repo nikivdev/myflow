@@ -553,13 +553,13 @@
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:v [:km "open: Railway"]]
                  [:left_command [:km "open: DeepSeek"]]
-                 [:f [:km "open: ChatGPT"]]
+                 [:f [:km "open: Claude"]]
                  [:g [:km "open: Perplexity"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  ; TODO: improve
                  [:grave_accent_and_tilde [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories", "__"]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
-                 [:spacebar [:km "open: Claude"]]
+                 [:spacebar [:km "open: ChatGPT"]]
                  ]}
                  ;[:g [:km "open: Console"]]
                  ;[:v [:km "open: Console"]] ; TODO: move it?
