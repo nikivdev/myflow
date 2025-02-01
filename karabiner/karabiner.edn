@@ -1201,6 +1201,7 @@
          :rules [:m-mode
                  [:w [:km "open: OrbStack"]]
                  [:e [:km "open: JuxtaCode"]]
+                 [:r [:km "open: Windsurf"]]
                  [:a [:km "open: v0"]]
                  [:s [:km "open: bolt"]]
                  [:c [:km "open: TablePlus"]]
