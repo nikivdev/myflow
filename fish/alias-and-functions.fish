@@ -1,4 +1,4 @@
-alias sf="sitefetch"
+# alias sf="sitefetch"
 alias cwd='pwd | pbcopy'
 alias a="eza -I 'license'" # list files (without license)
 alias af="type" # <cmd> - view definition of <cmd>
@@ -726,4 +726,28 @@ function triggerBuildWithNoCommit
     end
 
     echo "✓ Build triggered"
+end
+
+
+function sf
+    if test -z "$argv[1]"
+        echo "Usage: sf <url>"
+        return 1
+    end
+
+    # Extract domain from URL (remove protocol if present and path)
+    set domain (echo $argv[1] | sed -E 's|^https?://||' | cut -d'/' -f1)
+    # Create filename from domain
+    set filename "$HOME/sites/$domain.txt"
+
+    # Check if URL already starts with http(s)://
+    if string match -q 'http*://*' $argv[1]
+        sitefetch "$argv[1]" -o $filename
+    else
+        sitefetch "https://$argv[1]" -o $filename
+    end
+
+    # Copy content to clipboard
+    cat $filename | pbcopy
+    echo "Saved to $filename (content copied to clipboard)"
 end
