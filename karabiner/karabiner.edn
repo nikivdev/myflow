@@ -745,8 +745,7 @@
                  [:r [:km "Centre mouse to active app"]]
                  [:a [:km "open: Chrome Canary"]]
                  [:s [:km "open: Lovable"]]
-                 [:d [:km "open: v0"]]
-                 ;[:d [:km "open: Arc"]]
+                 [:d [:km "open: Arc"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:k [:km "New Linear task"]]
                  [:l [:alfred "active todo" "nikiv"]]
@@ -1202,8 +1201,10 @@
          :rules [:m-mode
                  [:w [:km "open: OrbStack"]]
                  [:e [:km "open: JuxtaCode"]]
-                 [:a [:km "open: SQLiteFlow"]]
-                 [:s [:km "open: TablePlus"]]
+                 [:a [:km "open: v0"]]
+                 [:s [:km "open: bolt"]]
+                 [:c [:km "open: TablePlus"]]
+                 [:v [:km "open: SQLiteFlow"]]
                  [:spacebar [:km "open: Dash (with search)"]]
                  ]}
                  ;[:a [:km "open: Apple Developer Documentation"]]
