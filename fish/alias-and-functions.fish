@@ -1,6 +1,5 @@
 alias sf="sitefetch"
 alias cwd='pwd | pbcopy'
-alias go="go1.24rc1"
 alias a="eza -I 'license'" # list files (without license)
 alias af="type" # <cmd> - view definition of <cmd>
 alias dF="cd ~/src/pause && eza"
