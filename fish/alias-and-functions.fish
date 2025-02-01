@@ -667,6 +667,14 @@ function repoCleanup
         tmp="$1.tmp"
         mv "$1" "$tmp" && mv "$tmp" "$(dirname "$1")/changelog.md"
     ' _ {} \;
+    find . -type f -name "CODE_OF_CONDUCT.md" -not -path "*/node_modules/*" -exec sh -c '
+        tmp="$1.tmp"
+        mv "$1" "$tmp" && mv "$tmp" "$(dirname "$1")/code-of-conduct.md"
+    ' _ {} \;
+    find . -type f -name "CONTRIBUTING.md" -not -path "*/node_modules/*" -exec sh -c '
+        tmp="$1.tmp"
+        mv "$1" "$tmp" && mv "$tmp" "$(dirname "$1")/contributing.md"
+    ' _ {} \;
 end
 
 # sync local .git folder with remote repo
