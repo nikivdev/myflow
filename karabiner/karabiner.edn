@@ -745,7 +745,6 @@
                  [:r [:km "Centre mouse to active app"]]
                  [:a [:km "open: Chrome Canary"]]
                  [:s [:km "open: Lovable"]]
-                 [:d [:km "open: Arc"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:k [:km "New Linear task"]]
                  [:l [:alfred "active todo" "nikiv"]]
@@ -1353,8 +1352,9 @@
                  [:h [:km "web: GitHub Learn Anything"]]
                  [:period [:km "open: X Pro (post)"]] ; TODO: replace with typefully like service for `just post` or `new ..` (rally to X, bluesky, LA etc.)
                  [:semicolon [:km "open: X Pro (search)"]]
+                 [:i [:km "open: Arc"]]
                  [:o [:km "open: Safari Technology Preview"]]
-                 [:comma [:km "Select line & move to Claude"]]
+                 [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
                  [:j :!CTO0] ; Search Alfred Snippets
                  [:k [:raycast "loris/safari/search-bookmarks"]] ; TODO: bind to LA bookmarks
                  [:l [:raycast "loris/safari/search-history"]] ; TODO: search LA bookmarks
