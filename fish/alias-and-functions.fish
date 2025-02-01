@@ -751,3 +751,29 @@ function sf
     cat $filename | pbcopy
     echo "Saved to $filename (content copied to clipboard)"
 end
+
+
+function killPort
+    if test -z "$argv[1]"
+        echo "Usage: killPort <port_number>"
+        return 1
+    end
+
+    set port_processes (lsof -ti:$argv[1])
+    if test -z "$port_processes"
+        echo "No processes found on port $argv[1]"
+        return 0
+    end
+
+    kill $port_processes
+    echo "Killed process(es) on port $argv[1]"
+end
+
+
+function portCheck
+    if test -z "$argv[1]"
+        echo "Usage: portCheck <port_number>"
+        return 1
+    end
+    lsof -i :$argv[1]
+end
