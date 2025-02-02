@@ -558,7 +558,7 @@ end
 
 function j
     if not set -q argv[1]
-        just --help
+        just run
     else
         just $argv
     end
