@@ -218,7 +218,8 @@ function n
     if not set -q argv[1]
         # TODO:
     else
-        python3 $argv
+        # python3 $argv
+        uv run -m $argv
     end
 end
 
