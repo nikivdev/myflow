@@ -1203,8 +1203,9 @@
                  [:r [:km "open: Windsurf"]]
                  [:a [:km "open: v0"]]
                  [:s [:km "open: bolt"]]
-                 [:c [:km "open: TablePlus"]]
-                 [:v [:km "open: SQLiteFlow"]]
+                 [:d [:km "open: TablePlus"]]
+                 [:f [:km "open: SQLiteFlow"]]
+                 [:v [:km "open: Kulve"]]
                  [:spacebar [:km "open: Dash (with search)"]]
                  ]}
                  ;[:a [:km "open: Apple Developer Documentation"]]
