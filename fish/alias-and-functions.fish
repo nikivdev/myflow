@@ -1,5 +1,5 @@
-# alias sf="sitefetch"
 alias cwd='pwd | pbcopy'
+alias js="just s" # TODO: do with watch like bun --watch
 alias a="eza -I 'license'" # list files (without license)
 alias af="type" # <cmd> - view definition of <cmd>
 alias dF="cd ~/src/pause && eza"
@@ -557,6 +557,14 @@ function gitChangeRemote
 end
 
 function j
+    if not set -q argv[1]
+        just --help
+    else
+        just $argv
+    end
+end
+
+function co
     if not set -q argv[1]
         cody --help
     else
