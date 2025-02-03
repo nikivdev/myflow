@@ -896,6 +896,7 @@
                  [:j [:km "cursor: ts."]]
                  [:f [:km "cursor: projects+"]]
                  [:l [:km "cursor: la."]]
+                 ;[:l [:km "cursor: webprompt."]]
                  [:semicolon [:km "cursor: swift."]]
                  [:m [:km "cursor: go."]]
                  [:i [:km "cursor: rust."]]
@@ -979,7 +980,7 @@
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
-                 [:l [:km "open: Texts"]]
+                 [:l [:km "open: Beeper"]]
                  [:semicolon [:km "open: Slack"]]
                  [:h :!COTS6] ; Tuple hang up
                  [:t [:km "open: Contacts"]]
@@ -988,6 +989,7 @@
                  [:u [:km "Create new contact"]] ; TODO: move
                  [:v [:km "open: Loops"]]
                  ]}
+                 ;[:l [:km "open: Texts"]]
                  ;[:v [:km "open: Zoom"]]
                  ;[:spacebar :!CSOz] ; X search TODO: check bind
                  ;[:s :!CTOSe] ; Loom recording restart
