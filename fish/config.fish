@@ -41,3 +41,6 @@ fish_add_path "$HOME/.moon/bin"
 atuin init fish | source
 
 jumpy completions fish | source
+
+# for pg_dump
+fish_add_path /opt/homebrew/opt/libpq/bin
