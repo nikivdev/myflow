@@ -548,6 +548,7 @@
                  [:s [:km "open: Axiom"]]
                  [:d [:km "open: Cloudflare"]]
                  [:f [:km "open: Claude"]]
+                 [:g [:km "open: RunPod"]]
                  [:tab [:km "open: AWS"]]
                  [:escape [:km "open: Google Cloud"]]
                  [:z [:km "open: AI Studio"]]
