@@ -552,16 +552,16 @@
                  [:b [:km "open: EdgeDB Cloud"]]
                  [:escape [:km "open: Google Cloud"]]
                  [:a [:km "open: AI Studio"]]
+                 [:z [:km "open: DeepSeek"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:v [:km "open: Railway"]]
-                 [:left_command [:km "open: DeepSeek"]]
+                 [:left_command [:km "open: Perplexity"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  ; TODO: improve. i passed in `__` to make it filter out for clones only before
                  [:grave_accent_and_tilde [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
                  [:spacebar [:km "open: ChatGPT"]]
                  ]}
-                 ;[:g [:km "open: Perplexity"]]
                  ;[:g [:km "open: Console"]]
                  ;[:v [:km "open: Console"]] ; TODO: move it?
                  ;[:v [:km "open: Grok"]] ; TODO: add when it's not on x.com domain but on x.ai or grok.com (as it messes up X link opening..)
