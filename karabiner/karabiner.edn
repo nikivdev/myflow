@@ -906,8 +906,8 @@
                  [:semicolon [:km "cursor: swift."]]
                  [:m [:km "cursor: go."]]
                  [:i [:km "cursor: rust."]]
-                 [:v [:km "cursor: 1focus."]]
                  [:c [:km "cursor: config."]]
+                 [:v [:km "cursor: preprompt."]]
                  [:g [:km "cursor: gpton."]]
                  [:o [:km "cursor: clones/forks"]]
                  [:period [:km "cursor: alfred-raycast."]]
@@ -916,7 +916,7 @@
                  [:s [:km "cursor: _new"]]
                  [:d [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
-                 ;[:l [:km "cursor: webprompt."]]
+                 ;[:v [:km "cursor: 1focus."]] ; TODO: bind
                  ;[:g [:km "cursor: gen."]]
                  ;[:b [:km "cursor: kotlin."]]
                  ;[:i [:km "cursor: scala."]]
