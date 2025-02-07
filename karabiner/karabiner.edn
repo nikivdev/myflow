@@ -547,6 +547,7 @@
                  [:s [:km "open: Axiom"]]
                  [:d [:km "open: Cloudflare"]]
                  [:f [:km "open: Claude"]]
+                 [:m [:km "open: Mistral Chat"]]
                  [:g [:km "open: RunPod"]]
                  [:tab [:km "open: AWS"]]
                  [:b [:km "open: EdgeDB Cloud"]]
