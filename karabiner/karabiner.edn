@@ -117,7 +117,7 @@
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
                  [:e :tab]
                  [:r :!Stab]
-                 [:t :!OS1] ; ChatGPT selected text
+                 ;:t TODO: make it save a gist or smth useful
                  [:i [:km "Selected text -> Alfred Snippet"]]
                  [:o :!Cx] ; Cut
                  [:open_bracket [:km "Lowercase selected text"]]
@@ -141,6 +141,7 @@
                  [:n :!Cv] ; Paste
                  [:##m :!Cright_arrow]
                  ]}
+                 ;[:t :!OS1] ; ChatGPT selected text
                  ;[:semicolon [:km "Selected text to Claude"]]
                  ; TODO: keybind for AI rewrite on selected text (raycast like prompt? maybe raycast has somthing as AI action)
                  ;[:comma [:km "Show active todo"]]
@@ -422,12 +423,12 @@
                  [:8 :!C8]
                  [:9 :!C9]
                  [:0 :!C0]
-                 ;[:spacebar :!COequal_sign] ; 1Focus. TODO: get it working
+                 [:spacebar :!CT7] ; google search selected text
                  ]}
+                 ;[:spacebar :!COequal_sign] ; 1Focus. TODO: get it working
                  ;[:spacebar :!TO2] ; TODO: 1Focus explain selected text (if text is selected, otherwise do area selection)
                  ;[:spacebar [:km "Selected text to Claude (run instantly)"]] ; TODO: move to something else (separate window, 0 context to explain things fast, overlay window ideally) (bind that to 1focus explain)
                 ;[:spacebar :!CSO7]]} ; Selection -> Google Lucky TODO: no work..
-                ;[:spacebar [:km "Explain selected text (or open Claude Explain)"]]]}
                 ;[:spacebar [:km "Explain selected text (or open ChatGPT Explain)"]]]}
                 ;[:spacebar [:km "Explain selected text (or explain selected image)"]]]}
         {:des "rkey (apps)"
@@ -444,7 +445,7 @@
                  [:n [:km "open: System Settings: Network"]]
                  [:m [:km "open: MacUpdater"]]
                  [:semicolon [:km "open: Notes"]]
-                 [:spacebar [:km "Screenshot into ChatGPT"]]
+                 [:spacebar [:km "Screenshot into Claude"]]
                  ]}
                  ;[:l [:km "Open Reader with Nightly TS- workspace split 50/50"]]
                  ;[:comma [:km "open: Arq"]]
@@ -732,9 +733,10 @@
                  [:m [:km "Google Lucky selected word"]]
                  [:comma :!TOS1] ; Show Launchpad (system settings > keyboard > launchpad & dock)
                  [:period :!TOS2] ; Mission Control (system settings > keyboard > mission control)
-                 [:spacebar :!CT8] ; Selection -> Dictionary (wiki)
+                 [:spacebar [:km "Selected text into Claude"]]
                  ]}
-                 ;[:semicolon [:km "Google Searchio selected word"]]
+                 ;[:spacebar [:km "Google Searchio selected word"]]
+                 ;[:spacebar :!CT8] ; Selection -> Dictionary (wiki)
                  ;[:l [:km "Google selected word"]]
                  ;[:f :!CSspacebar] ; Homerow ; TODO: check if useful
         {:des "fkey (essential)"
