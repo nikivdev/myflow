@@ -903,7 +903,6 @@
                  [:j [:km "cursor: ts."]]
                  [:f [:km "cursor: projects+"]]
                  [:l [:km "cursor: la."]]
-                 ;[:l [:km "cursor: webprompt."]]
                  [:semicolon [:km "cursor: swift."]]
                  [:m [:km "cursor: go."]]
                  [:i [:km "cursor: rust."]]
@@ -911,12 +910,13 @@
                  [:c [:km "cursor: config."]]
                  [:g [:km "cursor: gpton."]]
                  [:o [:km "cursor: clones/forks"]]
-                 [:spacebar [:km "cursor: alfred-raycast."]]
+                 [:period [:km "cursor: alfred-raycast."]]
                  [:comma [:km "cursor: nix."]]
-                 [:period [:km "cursor: x."]]
+                 [:spacebar [:km "cursor: x."]]
                  [:s [:km "cursor: _new"]]
                  [:d [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
+                 ;[:l [:km "cursor: webprompt."]]
                  ;[:g [:km "cursor: gen."]]
                  ;[:b [:km "cursor: kotlin."]]
                  ;[:i [:km "cursor: scala."]]
