@@ -892,7 +892,7 @@
          :rules [:tilde-mode
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: test!"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
-                 [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
+                 [:r [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:y [:km "cursor: odin."]]
                  [:u [:km "cursor: zig."]]
                  [:b [:km "cursor: moonbit."]]
@@ -914,8 +914,8 @@
                  [:period [:km "cursor: alfred-raycast."]]
                  [:comma [:km "cursor: nix."]]
                  [:s [:km "cursor: _new"]]
-                 [:d [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  ]}
+                 ;[:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
                  ;[:v [:km "cursor: 1focus."]] ; TODO: bind
                  ;[:g [:km "cursor: gen."]]
                  ;[:b [:km "cursor: kotlin."]]
