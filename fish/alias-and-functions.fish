@@ -126,7 +126,7 @@ function g.
 end
 
 function prettierAll
-    npx prettier --write "**/*.{js,json,css,tsx,ts}"
+    bunx prettier --write "**/*.{js,json,css,tsx,ts}"
 end
 
 # TODO: might be buggy
