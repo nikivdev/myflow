@@ -414,16 +414,24 @@ end
 
 
 # TODO: replace with own tool
+# function e
+#     if not set -q argv[1]
+#         code2prompt .
+#     else
+#         code2prompt $argv
+#     end
+# end
+
+# function c
+#     if not set -q argv[1]
+#     else
+#         bat $argv
+#     end
+# end
+
 function e
     if not set -q argv[1]
-        code2prompt .
-    else
-        code2prompt $argv
-    end
-end
-
-function c
-    if not set -q argv[1]
+        pwd | pbcopy $argv
     else
         bat $argv
     end
