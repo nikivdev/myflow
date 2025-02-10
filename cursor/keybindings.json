@@ -563,5 +563,9 @@
     "key": "shift+cmd+r",
     "command": "workbench.action.pinEditor",
     "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "workbench.panel.composerViewPane2.view.focus"
   }
 ]
