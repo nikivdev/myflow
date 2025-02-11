@@ -995,9 +995,10 @@
                  [:period [:km "open: Element"]]
                  [:u [:km "Create new contact"]] ; TODO: move
                  [:v [:km "open: Loops"]]
+                 [:m [:km "open: Zoom"]]
                  ]}
+                 ;[:i [:km "web: Cal.video"]] TODO: use. as app
                  ;[:l [:km "open: Texts"]]
-                 ;[:v [:km "open: Zoom"]]
                  ;[:spacebar :!CSOz] ; X search TODO: check bind
                  ;[:s :!CTOSe] ; Loom recording restart
                  ;[:d :!CTOSr] ; Loom recording pause/unpause
@@ -1006,7 +1007,6 @@
                  ;[:b :!CTOSw] ; Loom recording draw ; TODO: fails on loom..
                  ; TODO: bind LA post (nice one)
                  ; TODO: have have way to make emails (that can be mass sent from say Loops or smth else, check that email platform thats oss)
-                 ;[:i [:km "web: Cal.video"]]
                  ;[:h [:km "w: HN submit"]] ; TODO: move this to nicer keys outside of z
                  ;[:b [:km "w: Lobsters submit"]]
                  ;[:i [:km "open: Cal.com"]]
