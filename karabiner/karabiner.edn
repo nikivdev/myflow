@@ -901,6 +901,8 @@
                  [:k [:km "cursor: solbond."]]
                  [:h [:km "cursor: gridchess."]]
                  [:j [:km "cursor: ts."]]
+                 [:s [:km "cursor: genx."]]
+                 [:d [:km "cursor: 1focus."]]
                  [:f [:km "cursor: projects+"]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
@@ -916,8 +918,6 @@
                  [:s [:km "cursor: _new"]]
                  ]}
                  ;[:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
-                 ;[:v [:km "cursor: 1focus."]] ; TODO: bind
-                 ;[:g [:km "cursor: gen."]]
                  ;[:b [:km "cursor: kotlin."]]
                  ;[:i [:km "cursor: scala."]]
                  ;[:o [:km "cursor: clones"]] ; TODO: make it robust, so it switches to last clone you went to always (sqlite store etc.)
