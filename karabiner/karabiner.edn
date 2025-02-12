@@ -305,15 +305,16 @@
                  [:c [:km "open: Spotify"]]
                  [:slash [:km "open: Instruments"]]
                  [:b [:km "open: IntelliJ IDEA"]]
+                 [:n [:km "open: Colab"]]
                  [:m [:km "open: GoLand"]]
                  [:i [:km "open: RustRover"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
-                 [:n [:km "open: PyCharm"]]
                  [:comma [:km "open: Zed"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:left_command [:km "open: System Settings"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
+                 ;[:n [:km "open: PyCharm"]]
                  ;[:i [:km "open: Zen Browser"]]
                  ;[:d [:km "open: dbx"]] ; TODO: bind key #now
                  ;[:a [:km "open: GitButler"]]
