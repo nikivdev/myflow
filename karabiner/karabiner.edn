@@ -549,7 +549,6 @@
                  [:s [:km "open: Axiom"]]
                  [:d [:km "open: Cloudflare"]]
                  [:f [:km "open: Claude"]]
-                 [:m [:km "open: Mistral Chat"]]
                  [:g [:km "open: RunPod"]]
                  [:tab [:km "open: AWS"]]
                  [:b [:km "open: EdgeDB Cloud"]]
@@ -566,6 +565,7 @@
                  [:left_command [:km "open: Perplexity"]]
                  [:spacebar [:km "open: ChatGPT"]]
                  ]}
+                 ;[:m [:km "open: Mistral Chat"]]
                  ;[:c [:km "open: T3 Chat"]]
                  ;[:i [:km "open: SQLiteFlow"]]
                  ;[:g [:km "open: Console"]]
