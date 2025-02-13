@@ -760,6 +760,7 @@
                  [:escape [:km "open: Excalidraw"]]
                  [:grave_accent_and_tilde [:km "open: tldraw"]]
                  [:semicolon [:km "Things: new 2nd from top task"]]
+                 [:comma [:km "cursor: .flox:env/manifest.toml"]]
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file/text action
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
@@ -1048,12 +1049,11 @@
                  [:j [:km "cursor: ts:scripts/run.ts"]]
                  [:n [:km "edit: run.rs"]]
                  [:m [:km "edit: run.go"]]
-                 [:comma [:km "cursor: .flox:env/manifest.toml"]]
                  [:period [:km "cursor: config:fish/config.fish"]]
                  [:semicolon [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
-                 [:slash [:km "edit: Fish alias/functions (past)"]]
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
                  ]}
+                 ;[:slash [:km "edit: Fish alias/functions (past)"]]
                  ;[:k [:km "cursor: py:scripts/p-run.ts"]]
                  ;[:l [:km "open: Val Town"]]
                  ;[:comma [:km "zed: workspaces"]]
