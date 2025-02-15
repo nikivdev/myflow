@@ -915,8 +915,8 @@
                  [:g [:km "cursor: gpton."]]
                  [:o [:km "cursor: clones/forks"]]
                  [:spacebar [:km "cursor: nikiv-ui."]]
-                 [:period [:km "cursor: zig."]]
                  [:comma [:km "cursor: nix."]]
+                 [:period [:km "cursor: zig."]]
                  [:s [:km "cursor: _new"]]
                  ]}
                  ;[:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
