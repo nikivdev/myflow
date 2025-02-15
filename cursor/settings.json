@@ -43,6 +43,7 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "files.exclude": {
+    "**/__pycache__": true,
     "**/.idea": true,
     "license/": true,
     "LICENSE/": true,
