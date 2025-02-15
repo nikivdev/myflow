@@ -272,7 +272,7 @@
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
   "python.terminal.activateEnvironment": false,
-  "workbench.statusBar.visible": false,
+  "workbench.statusBar.visible": false
   // past
   // "ReactNativeIDE.panelLocation": "tab",
   // "direnv.path.executable": "/Users/nikiv/.flox/run/aarch64-darwin.default.dev/bin/direnv",

@@ -295,6 +295,7 @@
                  [:d [:km "open: SnippetsLab"]]
                  [:g [:km "open: Proxyman"]]
                  [:v [:km "open: Yaak"]]
+                 [:i [:km "open: n8n"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
@@ -304,20 +305,18 @@
                  [:semicolon [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
                  [:slash [:km "open: Instruments"]]
-                 [:b [:km "open: IntelliJ IDEA"]]
-                 [:n [:km "open: Colab"]]
+                 [:b [:km "open: Colab"]]
+                 [:n [:km "open: Zed"]]
                  [:m [:km "open: GoLand"]]
-                 [:i [:km "open: RustRover"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
-                 [:comma [:km "open: Zed"]]
+                 [:comma [:km "open: GitButler"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:left_command [:km "open: System Settings"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
-                 ;[:n [:km "open: PyCharm"]]
+                 ;[:b [:km "open: IntelliJ IDEA"]]
                  ;[:i [:km "open: Zen Browser"]]
                  ;[:d [:km "open: dbx"]] ; TODO: bind key #now
-                 ;[:a [:km "open: GitButler"]]
                  ;[:a [:km "open: Learn Anything"]] ; TODO: for now web, later map to desktop app
                  ;[:t [:km "open: Voice Memos"]]
                  ;[:b [:km "open: BetterTouchTool"]]
@@ -897,7 +896,6 @@
                  [:r [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:t [:km "cursor: odin."]]
                  [:u [:km "cursor: moonbit."]]
-                 [:n [:km "cursor: py."]]
                  [:t [:km "cursor: notlost."]]
                  [:k [:km "cursor: solbond."]]
                  [:h [:km "cursor: gridchess."]]
@@ -907,16 +905,17 @@
                  [:f [:km "cursor: projects+"]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
+                 [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
-                 [:i [:km "cursor: rust."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: preprompt."]]
                  [:b [:km "cursor: 1focus."]]
                  [:g [:km "cursor: gpton."]]
+                 [:i [:km "cursor: zig."]]
                  [:o [:km "cursor: clones/forks"]]
                  [:spacebar [:km "cursor: nikiv-ui."]]
                  [:comma [:km "cursor: nix."]]
-                 [:period [:km "cursor: zig."]]
+                 [:period [:km "cursor: py."]]
                  [:s [:km "cursor: _new"]]
                  ]}
                  ;[:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
@@ -1219,6 +1218,8 @@
                  [:v [:km "open: Kulve"]]
                  [:spacebar [:km "open: Dash (with search)"]]
                  ]}
+                 ;[:i [:km "open: RustRover"]]
+                 ;[:n [:km "open: PyCharm"]]
                  ;[:a [:km "open: TablePlus"]]
                  ;[:a [:km "open: Apple Developer Documentation"]]
                  ;[:w [:km "open: Swift Documentation"]]
