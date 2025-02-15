@@ -223,6 +223,15 @@ function n
     end
 end
 
+
+function nw
+    if test -z "$argv[1]"
+        echo "Usage: nw <script_name>"
+        return 1
+    end
+    watchexec --no-vcs-ignore --restart --exts py --clear --project-origin . "tput reset && uv run -m scripts.$argv"
+end
+
 function f
     if not set -q argv[1]
         open .
