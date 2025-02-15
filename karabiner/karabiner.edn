@@ -295,6 +295,7 @@
                  [:d [:km "open: SnippetsLab"]]
                  [:g [:km "open: Proxyman"]]
                  [:v [:km "open: Yaak"]]
+                 [:u [:km "open: Replit"]] ; TODO: move
                  [:i [:km "open: n8n"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
