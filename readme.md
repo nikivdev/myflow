@@ -198,7 +198,7 @@ I use 3 widgets in lock screen.
 
 The 2 action buttons on bottom in lock screen are `create voice recording` and `open ChatGPT`.
 
-I keep common shortcut actions as widgets on the side (scroll left from lock screen or first home screen to access):
+I keep common shortcut actions as widgets on the side (left swipe of lock screen or first home screen):
 
 <a align="center" href="https://github.com/nikitavoloboev/my-ios">
     <img width="250" helgth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/main/config/25-feb/ios-widgets.png"></a>

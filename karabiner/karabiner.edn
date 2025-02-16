@@ -126,9 +126,10 @@
                  [:d :delete_or_backspace]
                  [:f :return_or_enter]
                  [:g :!Ctab]
-                 [:period [:km "Select word & move to Claude"]]
-                 [:comma [:km "Select word & move to Claude (and run instantly)"]]
-                 [:slash [:km "Select line & move to Claude"]]
+                 ; TODO: fix up
+                 ;[:period [:km "Select word & move to Claude"]]
+                 ;[:comma [:km "Select word & move to Claude (and run instantly)"]]
+                 ;[:slash [:km "Select line & move to Claude"]]
                  [:##h :left_arrow]
                  [:##j :down_arrow]
                  [:##k :up_arrow]
