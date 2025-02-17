@@ -307,16 +307,18 @@
                  [:c [:km "open: Spotify"]]
                  [:slash [:km "open: Instruments"]]
                  [:b [:km "open: Colab"]]
+                 [:n [:km "open: Zed"]]
                  [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
-                 [:comma [:km "open: Zed"]]
+                 [:comma [:km "open: GitButler"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:left_command [:km "open: System Settings"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
+                 ; TODO: add somewhere
+                 ;[:n [:km "open: RustRover"]]
                  ;[:y [:km "open: PyCharm"]]
                  ;[:u [:km "open: Replit"]] ; TODO: move
-                 ;[:n [:km "open: RustRover"]]
                  ;[:b [:km "open: IntelliJ IDEA"]]
                  ;[:i [:km "open: Zen Browser"]]
                  ;[:d [:km "open: dbx"]] ; TODO: bind key #now
@@ -908,7 +910,7 @@
                  [:f [:km "cursor: projects+"]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
-                 [:n [:km "cursor: rust."]]
+                 [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: preprompt."]]
@@ -918,7 +920,7 @@
                  [:o [:km "cursor: clones/forks"]]
                  [:spacebar [:km "cursor: nikiv-ui."]]
                  [:comma [:km "cursor: nix."]]
-                 [:period [:km "cursor: py."]]
+                 [:period [:km "cursor: rust."]]
                  [:s [:km "cursor: _new"]]
                  ]}
                  ;[:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
@@ -1049,10 +1051,14 @@
                  [:s [:km "Clone repo to ~/clones"]]
                  [:h [:km "edit: GitHub Bio"]]
                  [:j [:km "cursor: ts:scripts/run.ts"]]
-                 [:n [:km "edit: run.rs"]]
+                 [:i [:km "edit: run.zig"]]
+                 ; TODO: fix
+                 [:n [:km "edit: run.py"]]
                  [:m [:km "edit: run.go"]]
-                 [:period [:km "cursor: config:fish/config.fish"]]
-                 [:semicolon [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
+                 [:k [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
+                 [:l [:km "cursor: config:fish/config.fish"]]
+                 [:semicolon [:km "edit: run.swift"]]
+                 [:period [:km "edit: run.rs"]]
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
                  ]}
                  ;[:slash [:km "edit: Fish alias/functions (past)"]]
