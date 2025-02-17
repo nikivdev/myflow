@@ -523,12 +523,13 @@ function p
     end
 end
 
-function s
-    if not set -q argv[1]
-    else
-        watchexec --no-vcs-ignore --restart --exts swift --clear --project-origin . "tput reset && swift $argv"
-    end
-end
+# TODO: move
+# function s
+#     if not set -q argv[1]
+#     else
+#         watchexec --no-vcs-ignore --restart --exts swift --clear --project-origin . "tput reset && swift $argv"
+#     end
+# end
 
 function :e
     bunx $argv
@@ -770,6 +771,32 @@ function sf
         sitefetch "$argv[1]" -o $filename
     else
         sitefetch "https://$argv[1]" -o $filename
+    end
+
+    # Copy content to clipboard
+    cat $filename | pbcopy
+    echo "Saved to $filename (content copied to clipboard)"
+end
+
+function s
+    if test -z "$argv[1]"
+        echo "Usage: sf <url>"
+        return 1
+    end
+
+    # Extract domain and path from URL
+    set url (echo $argv[1] | sed -E 's|^https?://||')
+    set domain (echo $url | cut -d'/' -f1)
+    set path (echo $url | grep -o '/.*$' || echo '/')
+
+    # Create filename from domain
+    set filename "$HOME/sites/$domain.txt"
+
+    # Build the sitefetch command with exact path matching
+    if string match -q 'http*://*' $argv[1]
+        sitefetch "$argv[1]" -o $filename -m "$path"
+    else
+        sitefetch "https://$argv[1]" -o $filename -m "$path"
     end
 
     # Copy content to clipboard
