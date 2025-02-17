@@ -214,11 +214,10 @@ function w.
     cursor .env
 end
 
-function n
+function .
     if not set -q argv[1]
-        # TODO:
+        python3
     else
-        # python3 $argv
         uv run -m $argv
     end
 end
@@ -545,7 +544,7 @@ end
 
 # TODO: make into proper tool with completions etc.
 # TODO: do I miss anything by taking over `.` builtin?
-function .
+function `
     bun ~/src/ts/scripts/new.ts $argv
     eza
     # TODO: only do it if its folder, the script should return something in that case, check for the return

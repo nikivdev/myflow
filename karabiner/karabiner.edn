@@ -910,7 +910,7 @@
                  [:f [:km "cursor: projects+"]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
-                 [:n [:km "cursor: py."]]
+                 [:n [:km "cursor: rust."]]
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: preprompt."]]
@@ -919,8 +919,8 @@
                  [:i [:km "cursor: zig."]]
                  [:o [:km "cursor: clones/forks"]]
                  [:spacebar [:km "cursor: nikiv-ui."]]
+                 [:period [:km "cursor: py."]]
                  [:comma [:km "cursor: nix."]]
-                 [:period [:km "cursor: rust."]]
                  [:s [:km "cursor: _new"]]
                  ]}
                  ;[:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
@@ -1053,12 +1053,13 @@
                  [:j [:km "cursor: ts:scripts/run.ts"]]
                  [:i [:km "edit: run.zig"]]
                  ; TODO: fix
-                 [:n [:km "edit: run.py"]]
+                 [:n [:km "edit: run.rs"]]
                  [:m [:km "edit: run.go"]]
-                 [:k [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
+                 [:o [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
+                 ;[:k [:km "cursor: ui"]] ; TODO: do
                  [:l [:km "cursor: config:fish/config.fish"]]
                  [:semicolon [:km "edit: run.swift"]]
-                 [:period [:km "edit: run.rs"]]
+                 [:period [:km "edit: run.py"]]
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
                  ]}
                  ;[:slash [:km "edit: Fish alias/functions (past)"]]
