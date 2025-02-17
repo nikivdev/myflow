@@ -12,12 +12,15 @@ alias de="cd ~/test && eza"
 alias pip="pip3"
 alias der="cd ~/test/react && eza"
 alias dv="cd ~/src/nikiv.dev && eza"
-alias dk="cd ~/src/py && eza"
+alias dn="cd ~/src/py && eza"
+alias dm="cd ~/src/go && eza"
 alias dl="cd ~/src/org/la/la && eza"
 alias dL="cd ~/src/org/la/x && eza"
 alias dz="cd ~/tmp && eza"
+alias dr="cd ~/try && eza"
 alias ds="cd ~/try && eza"
-alias dw="cd ~/new && eza"
+alias dw="cd ~/x && eza"
+alias ds="cd ~/new && eza"
 alias db="cd ~/src/base && eza"
 alias dq="cd ~/Documents && eza"
 alias dp="cd ~/past && eza"
@@ -595,7 +598,7 @@ function d:
 end
 
 function d.
-    cd ~/x && eza
+    cd ~/rust && eza
 end
 
 function k
