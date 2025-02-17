@@ -911,7 +911,7 @@
                  [:f [:km "cursor: projects+"]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
-                 [:n [:km "cursor: rust."]]
+                 [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: preprompt."]]
@@ -920,7 +920,7 @@
                  [:i [:km "cursor: zig."]]
                  [:o [:km "cursor: clones/forks"]]
                  [:spacebar [:km "cursor: nikiv-ui."]]
-                 [:period [:km "cursor: py."]]
+                 [:period [:km "cursor: rust."]]
                  [:comma [:km "cursor: nix."]]
                  [:s [:km "cursor: _new"]]
                  ]}
@@ -1061,7 +1061,8 @@
                  [:l [:km "cursor: config:fish/config.fish"]]
                  [:semicolon [:km "edit: run.swift"]]
                  [:period [:km "edit: run.py"]]
-                 [:spacebar :!CSOy] ; Selection -> Stack Overflow
+                 ; TODO: do smth better
+                 ;[:spacebar :!CSOy] ; Selection -> Stack Overflow
                  ]}
                  ;[:slash [:km "edit: Fish alias/functions (past)"]]
                  ;[:k [:km "cursor: py:scripts/p-run.ts"]]
