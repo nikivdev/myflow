@@ -802,3 +802,20 @@ function portCheck
     end
     lsof -i :$argv[1]
 end
+
+# TODO: find how to do smth like `tree-layout | tee /dev/tty | pbcopy` but preserve colors
+# print folder/file layout deeply + copy to clipboard
+function t
+    tree-layout
+    tree-layout | pbcopy
+end
+
+function T
+    set current_path (string replace -r "^$HOME" "~" (pwd))
+    echo $current_path
+    tree-layout
+    begin
+        echo $current_path
+        tree-layout
+    end | pbcopy
+end
