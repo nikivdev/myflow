@@ -770,6 +770,7 @@
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file/text action
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
+                 [:b [:km "Things: Quick Entry (into Someday)"]]
                  [:n :!TSspacebar] ; Things Quick Entry (with context) TODO: move to LA quick add
                  [:m [:km "Things: Quick Entry (with context) (into Someday)"]]
                  [:spacebar [:km "open: Eagle"]]
