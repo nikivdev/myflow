@@ -211,12 +211,12 @@ I color all [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) I
 
 - [Shortcuts](https://www.icloud.com/shortcuts/6dd13bc13cd14a30b2577dbd6816f39a) opens Shortcuts app (so I can fast edit/search shortcuts)
 - [Translate](https://www.icloud.com/shortcuts/38909c417cf34d788205b152b510417e) opens [Google Translate](https://apps.apple.com/us/app/google-translate/id414706506) app (for fast translates of camera or text)
-- [Draw](https://www.icloud.com/shortcuts/95d7a485469945db8e71f2df2c914f88) opens [Freeform](https://apps.apple.com/us/app/freeform/id6443742539) app (for fast sketching/drawing on the go)
-- [Phone](https://www.icloud.com/shortcuts/cee3a88e59084520beaeb312bb0897cc) opens Phone app (for searching, making new contacts or entering a phone number)
 - [Places](https://www.icloud.com/shortcuts/54bfaffe332542a1947e514d2c16537e) opens list of options like `Parks/Restaurants/Cafes` and on tap opens search for them in [Google Maps](https://apps.apple.com/us/app/google-maps/id585027354)
+- [Phone](https://www.icloud.com/shortcuts/cee3a88e59084520beaeb312bb0897cc) opens Phone app (for searching, making new contacts or entering a phone number)
+- [Focus](https://www.icloud.com/shortcuts/9f152d99f7a74da08c36defcf9de1727) starts focus session for 30 min (blocks X, IG, .. apps) with [Jomo](https://jomo.so)
 - [AI](https://www.icloud.com/shortcuts/7a747e6e284f4b3ca4f3beecb29c65d4) opens [Gemini](https://apps.apple.com/us/app/google-gemini/id6477489729) app (nice to ask questions that needs Google know how)
-- [Workout](https://www.icloud.com/shortcuts/02a9f3db29f2432fbdf39dfc330475d6) opens [SmartGym](https://apps.apple.com/us/app/smartgym-gym-home-workouts/id922744883) app and does today's workout
 - [Lens](https://www.icloud.com/shortcuts/c0458ec52a1547e4a4cb101dc2905751) opens [Google Lens](https://apps.apple.com/us/app/google/id284815942) (to know what camera is point at or what the image represents)
+- [Record](https://www.icloud.com/shortcuts/8b66fb6027224aa893d35d33582de5b7) starts/stops recording with [Superwhisper](https://superwhisper.com) (use it for recordings with transcription)
 - [Ride/Food](https://www.icloud.com/shortcuts/8e9560d24b0c4087b0c40b989799e9fb) opens [Uber](https://apps.apple.com/us/app/uber-request-a-ride/id368677368) app (to request food or ride)
 - [Todo](https://www.icloud.com/shortcuts/7656a88946074b128cf7a9fa36904e75) opens [Things](https://apps.apple.com/us/app/things-3/id904237743) with quick entry for creating a todo
 - [Overcast](https://www.icloud.com/shortcuts/7224125bae5a49a29598215a465a3d59) - instantly start playing the current podcast on my feed
