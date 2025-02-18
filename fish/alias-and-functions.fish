@@ -217,7 +217,7 @@ function w.
     cursor .env
 end
 
-function .
+function n
     if not set -q argv[1]
         python3
     else
