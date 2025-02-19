@@ -63,7 +63,7 @@
                  [:tab [:alfred "list_windows_of_active_app" "com.alfredapp.vitor.windowswitcher"]]
                  [:escape [:km "switch between windows of same app (or switch to another app if no more than 1 window)"]]
                  [:grave_accent_and_tilde :!Tspacebar] ; contexts window search (only cursor)
-                 [:left_command [:km "cursor: docs."]]
+                 [:left_command [:km "cursor: nikiv."]]
                  [:q :!Sq]
                  [:w :!Sw]
                  [:e :!Se]
