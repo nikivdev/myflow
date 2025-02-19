@@ -294,12 +294,13 @@
                  [:t [:km "open: Notion"]]
                  [:a [:km "open: Bike"]]
                  [:d [:km "open: SnippetsLab"]]
-                 [:g [:km "open: Proxyman"]]
                  [:v [:km "open: Yaak"]]
-                 [:i [:km "open: n8n"]]
+                 [:i [:km "open: Windsurf"]]
                  [:o [:km "open: Keyboard Maestro"]]
+                 [:p [:km "open: Proxyman"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
+                 [:g [:km "open: n8n"]]
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
@@ -1223,7 +1224,6 @@
          :rules [:m-mode
                  [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:e [:km "open: JuxtaCode"]]
-                 [:r [:km "open: Windsurf"]]
                  [:a [:km "open: SQLiteFlow"]]
                  [:s [:km "open: v0"]]
                  [:d [:km "open: bolt"]]
