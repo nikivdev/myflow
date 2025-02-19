@@ -14,22 +14,22 @@
     <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-feb/ios-lock-screen.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-feb/ios-screen-1.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-feb/ios-1.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-feb/ios-screen-2.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-feb/ios-2.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-feb/ios-screen-3.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-feb/ios-3.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-feb/ios-screen-4.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-feb/ios-4.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-feb/ios-screen-5.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-feb/ios-5.png"></a>
 
 <a align="center" href="https://github.com/nikitavoloboev/config">
-    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-feb/ios-screen-6.png"></a>
+    <img width="250" heigth="400" src="https://raw.githubusercontent.com/nikitavoloboev/media/refs/heads/main/config/25-feb/ios-6.png"></a>
 
 > iOS screens. All described in detail below.
 
