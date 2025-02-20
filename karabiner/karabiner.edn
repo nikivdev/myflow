@@ -305,6 +305,7 @@
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
                  [:semicolon [:km "open: Xcode"]]
+                 [:quote [:km "open: Simulator"]]
                  [:c [:km "open: Spotify"]]
                  [:slash [:km "open: Instruments"]]
                  [:b [:km "open: Colab"]]
@@ -768,6 +769,7 @@
                  [:left_command [:km "open: Photos"]]
                  [:grave_accent_and_tilde [:km "open: Excalidraw"]]
                  [:semicolon [:km "Things: new 2nd from top task"]]
+                 [:quote :!CT5] ; Sleep display
                  [:comma [:km "cursor: .flox:env/manifest.toml"]]
                  [:period [:km "edit: Karabiner"]]
                  [:slash :!CTO4] ; Alfred file/text action
@@ -779,7 +781,6 @@
                  ]}
                  ;[:q [:km "open: Framer"]]
                  ;[:comma [:km "edit: Flox"]] ; TODO: fix, manifest?
-                 ;[:p :!CTOc] ; Sleep
                  ;[:m [:km "Things: new today task at bottom"]]
                  ;[:i [:km "open: bolt"]]
                  ;[:open_bracket :!CT5] ; Turn display on/off
@@ -1068,6 +1069,7 @@
                  ; TODO: do smth better
                  ;[:spacebar :!CSOy] ; Selection -> Stack Overflow
                  ]}
+                 ; TODO: ' bind nice
                  ;[:slash [:km "edit: Fish alias/functions (past)"]]
                  ;[:k [:km "cursor: py:scripts/p-run.ts"]]
                  ;[:l [:km "open: Val Town"]]
@@ -1119,6 +1121,7 @@
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  ]}
+                 ; TODO: bind nice for ' (play `One` or `Past One's`)
                  ;[:spacebar :!CSOv] ; Selection -> Google Images ; TODO: bind, useful
                  ;[:a [:km "Play/Pause Endel"]] ; TODO: in background, email them again
                  ;[:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]] ; TODO: fix up, useful
@@ -1380,6 +1383,7 @@
                  [:h [:km "web: GitHub Learn Anything"]]
                  [:period [:km "open: X Pro (post)"]] ; TODO: replace with typefully like service for `just post` or `new ..` (rally to X, bluesky, LA etc.)
                  [:semicolon [:km "open: X Pro (search)"]]
+                 [:quote [:km "open: Chrome Canary (x.com > account switch)"]]
                  [:i [:km "open: Safari Technology Preview"]]
                  [:o [:km "open: Arc"]]
                  [:comma [:km "Select line & move to Claude"]] ; TODO: find better bind
