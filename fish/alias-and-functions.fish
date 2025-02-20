@@ -848,3 +848,8 @@ function T
         tree-layout
     end | pbcopy
 end
+
+
+function :b
+    bun run build
+end
