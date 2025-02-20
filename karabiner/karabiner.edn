@@ -911,6 +911,7 @@
                  [:s [:km "cursor: genx."]]
                  [:d [:km "cursor: 1focus."]]
                  [:f [:km "cursor: projects+"]]
+                 [:g [:km "cursor: gpton."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
                  [:quote [:km "cursor: nix."]]
@@ -918,13 +919,12 @@
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: preprompt."]]
-                 [:b [:km "cursor: alfred-raycast."]] ; TODO: rebind?
-                 [:g [:km "cursor: gpton."]]
                  [:u [:km "cursor: ocaml."]]
-                 [:i [:km "cursor: zig."]]
+                 [:i [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
                  [:o [:km "cursor: clones/forks"]]
-                 [:comma [:km "cursor: odin."]]
+                 [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
+                 [:slash [:km "cursor: odin."]]
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
