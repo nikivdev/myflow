@@ -166,8 +166,8 @@ end
 # full `bun i` reset
 function :d
     find . -type d -name node_modules -prune -print | xargs rm -rf
-    rm bun.lock
-    rm bun.lockb
+    test -f bun.lock && rm bun.lock
+    test -f bun.lockb && rm bun.lockb
     bun i
 end
 
