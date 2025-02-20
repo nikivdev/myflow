@@ -558,20 +558,20 @@
                  [:s [:km "open: Axiom"]]
                  [:d [:km "open: Cloudflare"]]
                  [:f [:km "open: Claude"]]
-                 [:g [:km "open: Sourcegraph"]]
                  [:b [:km "open: EdgeDB Cloud"]]
                  [:tab [:km "open: Google Cloud"]]
-                 [:z [:km "open: DeepSeek"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:v [:km "open: Railway"]]
                  [:i [:km "open: AI Studio"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
+                 [:grave_accent_and_tilde [:km "open: Sourcegraph"]]
                  ; TODO: improve. i passed in `__` to make it filter out for clones only before
-                 [:grave_accent_and_tilde [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
+                 [:z [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
                  [:left_command [:km "open: Perplexity"]]
                  [:spacebar [:km "open: ChatGPT"]]
                  ]}
+                 ;[:z [:km "open: DeepSeek"]]
                  ;[:tab [:km "open: AWS"]] ; TODO: bind
                  ;[:m [:km "open: Mistral Chat"]]
                  ;[:c [:km "open: T3 Chat"]]
