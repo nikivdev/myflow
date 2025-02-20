@@ -63,7 +63,8 @@
     "*.toml": "toml",
     "*.njk": "html",
     "*.json5": "jsonc",
-    "*.css": "tailwindcss"
+    "*.css": "tailwindcss",
+    "package.json": "jsonc"
   },
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
