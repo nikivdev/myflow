@@ -312,15 +312,14 @@
                  [:n [:km "open: Zed"]]
                  [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
+                 [:left_command [:km "open: Replit"]]
                  [:comma [:km "open: GitButler"]]
                  [:period [:km "open: Sublime Merge"]]
-                 [:left_command [:km "open: System Settings"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
                  ; TODO: add somewhere
                  ;[:n [:km "open: RustRover"]]
                  ;[:y [:km "open: PyCharm"]]
-                 ;[:u [:km "open: Replit"]] ; TODO: move
                  ;[:b [:km "open: IntelliJ IDEA"]]
                  ;[:i [:km "open: Zen Browser"]]
                  ;[:d [:km "open: dbx"]] ; TODO: bind key #now
@@ -442,18 +441,20 @@
          :rules [:r-mode
                  [:tab [:km "open: Transmission"]]
                  [:w [:km "open: IINA"]]
+                 [:e [:km "open: System Settings"]]
                  [:i [:km "open: Obsidian"]]
+                 [:escape [:km "open: Final Cut Pro"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:b [:km "Edit keyboard shortcuts"]]
                  [:j [:km "open: Preview"]]
                  [:k [:km "open: Reader"]]
                  [:l [:km "open: Dictionary"]]
-                 [:i [:km "open: Feedback Assistant"]]
                  [:n [:km "open: System Settings: Network"]]
                  [:m [:km "open: MacUpdater"]]
                  [:semicolon [:km "open: Notes"]]
                  [:spacebar [:km "Screenshot into Claude"]]
                  ]}
+                 ;[:i [:km "open: Feedback Assistant"]]
                  ;[:l [:km "Open Reader with Nightly TS- workspace split 50/50"]]
                  ;[:comma [:km "open: Arq"]]
                  ;[:semicolon [:km "open: Day One"]]
@@ -463,7 +464,6 @@
                  ;[:l [:km "open: Reeder"]]
                  ;[:n [:km "open: ScreenFlow"]]
                  ;[:m [:km "open: Music"]]
-                 ;[:period [:km "open: Final Cut Pro"]]
                  ;[:spacebar :!COSx]]} ; Selection -> Reddit
                  ;[:e [:km "open: Keynote"]]
                  ;[:i [:km "open: Flume"]]
