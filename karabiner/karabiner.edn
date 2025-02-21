@@ -1281,7 +1281,7 @@
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
                   [:w [:km "Comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
-                  [:left_command [:km "enter: ok?"]]
+                  [:left_command [:km "enter: correct?"]]
                   [:spacebar [:km "enter: explain"]]
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:u [:u :p :d :a :t :e :spacebar]] ; -> update
