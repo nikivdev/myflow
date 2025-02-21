@@ -910,18 +910,18 @@
                  [:h [:km "cursor: gridchess."]]
                  [:j [:km "cursor: ts."]]
                  [:s [:km "cursor: genx."]]
-                 [:d [:km "cursor: 1focus."]]
+                 [:d [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
                  [:f [:km "cursor: projects+"]]
                  [:g [:km "cursor: gpton."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
-                 [:quote [:km "cursor: nix."]]
                  [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: preprompt."]]
+                 [:b [:km "cursor: 1focus."]]
                  [:u [:km "cursor: ocaml."]]
-                 [:i [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
+                 [:i [:km "cursor: nix-infra."]] ; TODO: move infra into config. eventually
                  [:o [:km "cursor: clones/forks"]]
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
