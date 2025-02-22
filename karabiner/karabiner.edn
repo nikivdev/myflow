@@ -915,13 +915,12 @@
                  [:g [:km "cursor: gpton."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
-                 [:quote [:km "cursor: ocaml."]]
                  [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: preprompt."]]
-                 [:b [:km "cursor: mojo."]]
                  [:u [:km "cursor: 1focus."]]
+                 [:quote [:km "cursor: mojo."]]
                  [:i [:km "cursor: nix-infra."]] ; TODO: move infra into config. eventually
                  [:o [:km "cursor: clones/forks"]]
                  [:comma [:km "cursor: zig."]]
@@ -930,6 +929,7 @@
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
+                 ;[:quote [:km "cursor: ocaml."]]
                  ;[:b [:km "cursor: moonbit."]]
                  ;[:spacebar [:km "cursor: nikiv-ui."]]
                  ;[:b [:km "cursor: kotlin."]]

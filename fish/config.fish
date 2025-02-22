@@ -44,3 +44,5 @@ jumpy completions fish | source
 
 # for pg_dump
 fish_add_path /opt/homebrew/opt/libpq/bin
+
+fish_add_path /Users/nikiv/.modular/bin
