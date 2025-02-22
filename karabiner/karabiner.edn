@@ -911,15 +911,16 @@
                  [:j [:km "cursor: ts."]]
                  [:s [:km "cursor: genx."]]
                  [:d [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
+                 [:left_command [:km "cursor: 1focus."]]
                  [:f [:km "cursor: projects+"]]
                  [:g [:km "cursor: gpton."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
+                 [:b [:km "cursor: moonbit."]]
                  [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: preprompt."]]
-                 [:u [:km "cursor: 1focus."]]
                  [:quote [:km "cursor: mojo."]]
                  [:i [:km "cursor: nix-infra."]] ; TODO: move infra into config. eventually
                  [:o [:km "cursor: clones/forks"]]
@@ -930,7 +931,6 @@
                  [:s [:km "cursor: _new"]]
                  ]}
                  ;[:quote [:km "cursor: ocaml."]]
-                 ;[:b [:km "cursor: moonbit."]]
                  ;[:spacebar [:km "cursor: nikiv-ui."]]
                  ;[:b [:km "cursor: kotlin."]]
                  ;[:i [:km "cursor: scala."]]
