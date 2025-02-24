@@ -291,8 +291,7 @@
          :rules [:w-mode
                  [:e [:km "open: Linear"]]
                  [:r [:km "open: 1Password"]]
-                 [:t [:km "open: Replit"]]
-                 [:u [:km "open: Notion"]]
+                 [:t [:km "open: Notion"]]
                  [:a [:km "open: Bike"]]
                  [:v [:km "open: Yaak"]]
                  [:i [:km "open: Windsurf"]]
@@ -314,8 +313,9 @@
                  [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
                  [:left_command [:km "open: Craft"]]
-                 [:comma [:km "open: GitButler"]]
+                 [:comma [:km "open: Replit"]]
                  [:period [:km "open: Sublime Merge"]]
+                 [:slash [:km "open: GitButler"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
                  ; TODO: add somewhere
