@@ -291,16 +291,17 @@
          :rules [:w-mode
                  [:e [:km "open: Linear"]]
                  [:r [:km "open: 1Password"]]
-                 [:t [:km "open: Notion"]]
+                 [:t [:km "open: Replit"]]
+                 [:u [:km "open: Notion"]]
                  [:a [:km "open: Bike"]]
-                 [:d [:km "open: SnippetsLab"]]
                  [:v [:km "open: Yaak"]]
                  [:i [:km "open: Windsurf"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Proxyman"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
-                 [:g [:km "open: Craft"]]
+                 [:g [:km "open: n8n"]]
+                 [:d [:km "open: SnippetsLab"]]
                  [:j [:km "open: Warp"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
@@ -312,12 +313,11 @@
                  [:n [:km "open: Zed"]]
                  [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
-                 [:left_command [:km "open: n8n"]]
+                 [:left_command [:km "open: Craft"]]
                  [:comma [:km "open: GitButler"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
-                 ;[:left_command [:km "open: Replit"]] ; TODO: bind nice
                  ; TODO: add somewhere
                  ;[:n [:km "open: RustRover"]]
                  ;[:y [:km "open: PyCharm"]]
