@@ -178,6 +178,7 @@
                  [[:k :l] [:raycast "renfei_song/snippetslab/index"]]
                  [[:l :n] [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [[:l :m] :!COS9] ; Raycast
+                 [[:j :semicolon] :!CSspacebar] ; Kunkun
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
                  [[:k :n] [:km "open: Dash (with search)"]]
                  ]}
