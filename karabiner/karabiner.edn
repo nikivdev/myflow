@@ -313,12 +313,12 @@
                  [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
                  [:left_command [:km "open: Craft"]]
-                 [:comma [:km "open: Replit"]]
+                 [:comma [:km "open: GitButler"]]
                  [:period [:km "open: Sublime Merge"]]
-                 [:slash [:km "open: GitButler"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
                  ; TODO: add somewhere
+                 ;[:comma [:km "open: Replit"]] ; TODO: bind nicer
                  ;[:n [:km "open: RustRover"]]
                  ;[:y [:km "open: PyCharm"]]
                  ;[:b [:km "open: IntelliJ IDEA"]]
