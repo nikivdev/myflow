@@ -532,6 +532,10 @@
   },
   {
     "key": "ctrl+;",
+    "command": "aichat.insertselectionintochat",
+  },
+  {
+    "key": "ctrl+.",
     "command": "composer.startComposerPrompt",
   },
   {
@@ -558,9 +562,5 @@
     "key": "shift+cmd+r",
     "command": "workbench.action.pinEditor",
     "when": "!activeEditorIsPinned"
-  },
-  {
-    "key": "ctrl+.",
-    "command": "workbench.panel.composerViewPane2.view.focus"
   }
 ]

@@ -720,6 +720,54 @@ function gs
     end
 end
 
+function gsync
+    # Save current branch to return to it later
+    set current_branch (git rev-parse --abbrev-ref HEAD)
+
+    # Make sure we have upstream set
+    if not git remote | grep -q upstream
+        echo "No upstream remote found. Please add it first with:"
+        echo "git remote add upstream git@github.com:original-owner/repository.git"
+        return 1
+    end
+
+    # Fetch all from upstream
+    echo "Fetching all branches from upstream..."
+    git fetch upstream --prune
+
+    # Get list of all upstream branches
+    set upstream_branches (git branch -r | grep upstream/ | grep -v HEAD | sed 's/  upstream\///')
+
+    echo "Syncing branches from upstream..."
+
+    # For each upstream branch
+    for branch in $upstream_branches
+        # Skip if it's the same as our local test branch
+        if test "$branch" = "test"
+            echo "Skipping 'test' branch as you have a local branch with this name"
+            continue
+        end
+
+        # Check if we already have this branch locally
+        if git show-ref --verify --quiet refs/heads/$branch
+            # Branch exists, update it
+            echo "Updating existing branch: $branch"
+            git checkout $branch
+            git merge upstream/$branch
+        else
+            # Branch doesn't exist, create it
+            echo "Creating new branch: $branch"
+            git checkout -b $branch upstream/$branch
+        end
+    end
+
+    # Return to the original branch
+    echo "Returning to '$current_branch' branch"
+    git checkout $current_branch
+
+    echo "All branches have been synced with upstream"
+end
+
 # used as catch all for fast scripts
 function ,
     for dir in *=*
