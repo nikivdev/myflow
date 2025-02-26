@@ -292,7 +292,7 @@
          :rules [:w-mode
                  [:e [:km "open: Linear"]]
                  [:r [:km "open: 1Password"]]
-                 [:t [:km "open: Notion"]]
+                 [:t [:km "open: Craft"]]
                  [:a [:km "open: Bike"]]
                  [:v [:km "open: Yaak"]]
                  [:i [:km "open: Windsurf"]]
@@ -313,9 +313,9 @@
                  [:n [:km "open: Zed"]]
                  [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
-                 [:left_command [:km "open: Craft"]]
                  [:comma [:km "open: JuxtaCode"]]
                  [:period [:km "open: Sublime Merge"]]
+                 [:left_command [:km "open: Notion"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
                  ;[:comma [:km "open: GitButler"]]
@@ -762,7 +762,8 @@
                  [:tab [:km "open: tldraw"]]
                  [:escape [:km "open: Excalidraw"]]
                  [:a [:km "open: Chrome Canary"]]
-                 [:s [:km "open: Lovable"]]
+                 [:s [:km "open: Bolt"]]
+                 ;[:s [:km "open: Lovable"]]
                  [:d [:km "open: Rive"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:k [:km "New Linear task"]]
