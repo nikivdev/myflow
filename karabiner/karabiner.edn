@@ -913,7 +913,7 @@
                  [:h [:km "cursor: gridchess."]]
                  [:j [:km "cursor: ts."]]
                  [:s [:km "cursor: genx."]]
-                 [:d [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
+                 [:d [:km "cursor: jazz."]]
                  [:left_command [:km "cursor: 1focus."]]
                  [:f [:km "cursor: projects+"]]
                  [:g [:km "cursor: gpton."]]
@@ -930,6 +930,7 @@
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: odin."]]
+                 [:left_command [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
