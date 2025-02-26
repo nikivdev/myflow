@@ -763,7 +763,7 @@
                  [:escape [:km "open: Excalidraw"]]
                  [:a [:km "open: Chrome Canary"]]
                  [:s [:km "open: Bolt"]]
-                 ;[:s [:km "open: Lovable"]]
+                 ;[:s [:km "open: Lovable"]] ; TODO: see if bolt is better or lovable
                  [:d [:km "open: Rive"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:k [:km "New Linear task"]]
