@@ -454,10 +454,6 @@
     "when": "terminal.active"
   },
   {
-    "key": "ctrl+;",
-    "command": "aichat.insertselectionintochat"
-  },
-  {
     "key": "shift+cmd+l",
     "command": "-aichat.insertselectionintochat"
   },
@@ -535,9 +531,8 @@
     "command": "workbench.explorer.fileView.focus"
   },
   {
-    "key": "ctrl+m",
+    "key": "ctrl+;",
     "command": "composer.startComposerPrompt",
-    "when": "composerIsEnabled"
   },
   {
     "key": "cmd+i",

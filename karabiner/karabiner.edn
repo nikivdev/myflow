@@ -314,10 +314,11 @@
                  [:m [:km "open: GoLand"]]
                  [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
                  [:left_command [:km "open: Craft"]]
-                 [:comma [:km "open: GitButler"]]
+                 [:comma [:km "open: JuxtaCode"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
+                 ;[:comma [:km "open: GitButler"]]
                  ; TODO: add somewhere
                  ;[:comma [:km "open: Replit"]] ; TODO: bind nicer
                  ;[:n [:km "open: RustRover"]]
@@ -1231,7 +1232,6 @@
         {:des "mkey (apps)"
          :rules [:m-mode
                  [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 [:e [:km "open: JuxtaCode"]]
                  [:a [:km "open: TablePlus"]]
                  [:s [:km "open: v0"]]
                  [:d [:km "open: bolt"]]
