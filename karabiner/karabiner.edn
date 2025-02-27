@@ -908,16 +908,15 @@
         {:des "tilkey (project/code switches + km)"
          :rules [:tilde-mode
                  [:w [:km "cursor: x."]]
-                 [:e [:km "cursor: test!"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
+                 [:e [:km "cursor: focus!"]]
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
-                 [:t [:km "cursor: notlost."]]
                  [:k [:km "cursor: solbond."]]
                  [:h [:km "cursor: gridchess."]]
                  [:j [:km "cursor: ts."]]
-                 [:s [:km "cursor: genx."]]
-                 [:d [:km "cursor: jazz."]]
-                 [:left_command [:km "cursor: 1focus."]]
+                 [:s [:km "cursor: -test"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
+                 [:d [:km "cursor: deps*"]]
                  [:f [:km "cursor: projects+"]]
+                 [:left_command [:km "cursor: 1focus."]]
                  [:g [:km "cursor: gpton."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
@@ -927,7 +926,7 @@
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: preprompt."]]
                  [:quote [:km "cursor: mojo."]]
-                 [:i [:km "cursor: nix-infra."]] ; TODO: move infra into config. eventually
+                 [:i [:km "cursor: genx."]]
                  [:o [:km "cursor: clones/forks"]]
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
@@ -936,6 +935,8 @@
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
+                 ;[:t [:km "cursor: notlost."]]
+                 ;[:i [:km "cursor: nix-infra."]] ; TODO: move infra into config.
                  ;[:quote [:km "cursor: ocaml."]]
                  ;[:spacebar [:km "cursor: nikiv-ui."]]
                  ;[:b [:km "cursor: kotlin."]]
