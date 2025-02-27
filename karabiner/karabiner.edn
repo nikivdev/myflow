@@ -560,7 +560,7 @@
                  [:h [:km "open: RunPod"]]
                  [:s [:km "open: Axiom"]]
                  [:d [:km "open: Cloudflare"]]
-                 [:f [:km "open: Claude"]]
+                 [:f [:km "open: ChatGPT"]]
                  [:g [:km "open: AI Studio"]]
                  [:b [:km "open: EdgeDB Cloud"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
@@ -572,7 +572,7 @@
                  ; TODO: improve. i passed in `__` to make it filter out for clones only before
                  [:z [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
                  [:left_command [:km "open: Perplexity"]]
-                 [:spacebar [:km "open: ChatGPT"]]
+                 [:spacebar [:km "open: Claude"]]
                  ]}
                  ;[:tab [:km "open: Google Cloud"]]
                  ;[:z [:km "open: DeepSeek"]]

@@ -768,6 +768,41 @@ function gsync
     echo "All branches have been synced with upstream"
 end
 
+function gsyncMain
+    # Save current branch to return to it later
+    set current_branch (git rev-parse --abbrev-ref HEAD)
+
+    # Make sure we have upstream set
+    if not git remote | grep -q upstream
+        echo "No upstream remote found. Please add it first with:"
+        echo "git remote add upstream git@github.com:original-owner/repository.git"
+        return 1
+    end
+
+    # Fetch all from upstream
+    echo "Fetching from upstream..."
+    git fetch upstream --prune
+
+    # Check if main branch exists locally
+    if git show-ref --verify --quiet refs/heads/main
+        # Branch exists, update it
+        echo "Updating main branch"
+        git checkout main
+        git merge upstream/main
+    else
+        # Branch doesn't exist, create it
+        echo "Creating main branch"
+        git checkout -b main upstream/main
+    end
+
+    # Return to the original branch
+    echo "Returning to '$current_branch' branch"
+    git checkout $current_branch
+
+    echo "Main branch has been synced with upstream"
+end
+
+
 # used as catch all for fast scripts
 function ,
     for dir in *=*
