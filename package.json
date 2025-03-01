@@ -1,7 +1,7 @@
 {
   "name": "config",
   "devDependencies": {
-    "bun-types": "canary"
+    "bun-types": "^1.2.4"
   },
   "type": "module",
   "prettier": {
