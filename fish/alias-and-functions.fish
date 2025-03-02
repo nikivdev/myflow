@@ -353,10 +353,10 @@ end
 # end
 
 function :s
-    set run_file (fd -t f -p "scripts/run.ts" | head -n 1)
-    if test -n "$run_file"
-        cursor "$run_file"
-    end
+    # set run_file (fd -t f -p "scripts/run.ts" | head -n 1)
+    # if test -n "$run_file"
+    #     cursor "$run_file"
+    # end
     bun s
 end
 
