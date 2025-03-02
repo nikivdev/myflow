@@ -911,8 +911,8 @@
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
                  [:t [:km "cursor: gitedit."]] ; TODO: setup (view projects at some point in time from commit, bootstrap, run, branches etc.)
                  [:u [:km "cursor: kuskus."]] ; TODO: setup (food app)
-                 [:h [:km "cursor: gridchess."]]
                  [:k [:km "cursor: solbond."]]
+                 [:h [:km "cursor: xn."]]
                  [:j [:km "cursor: ts."]]
                  [:s [:km "cursor: -test"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  [:d [:km "cursor: deps*"]]
@@ -929,7 +929,6 @@
                  [:quote [:km "cursor: mojo."]]
                  [:i [:km "cursor: genx."]]
                  [:o [:km "cursor: clones/forks"]]
-                 [:p [:km "cursor: xn."]]
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: odin."]]
@@ -937,6 +936,7 @@
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
+                 ;[:h [:km "cursor: gridchess."]]
                  ;[:t [:km "cursor: notlost."]]
                  ;[:i [:km "cursor: nix-infra."]] ; TODO: move infra into config.
                  ;[:quote [:km "cursor: ocaml."]]
