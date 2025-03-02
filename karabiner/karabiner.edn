@@ -909,10 +909,10 @@
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: focus!"]]
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
-                 [:t [:km "cursor: gitedit."]] ; TODO: setup
-                 [:u [:km "cursor: kuskus."]] ; TODO: setup
-                 [:k [:km "cursor: solbond."]]
+                 [:t [:km "cursor: gitedit."]] ; TODO: setup (view projects at some point in time from commit, bootstrap, run, branches etc.)
+                 [:u [:km "cursor: kuskus."]] ; TODO: setup (food app)
                  [:h [:km "cursor: gridchess."]]
+                 [:k [:km "cursor: solbond."]]
                  [:j [:km "cursor: ts."]]
                  [:s [:km "cursor: -test"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  [:d [:km "cursor: deps*"]]
