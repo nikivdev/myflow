@@ -909,6 +909,8 @@
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: focus!"]]
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
+                 [:t [:km "cursor: gitedit."]] ; TODO: setup
+                 [:u [:km "cursor: kuskus."]] ; TODO: setup
                  [:k [:km "cursor: solbond."]]
                  [:h [:km "cursor: gridchess."]]
                  [:j [:km "cursor: ts."]]
@@ -927,6 +929,7 @@
                  [:quote [:km "cursor: mojo."]]
                  [:i [:km "cursor: genx."]]
                  [:o [:km "cursor: clones/forks"]]
+                 [:p [:km "cursor: xn."]]
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: odin."]]
