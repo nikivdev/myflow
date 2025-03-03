@@ -302,7 +302,8 @@
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:g [:km "open: n8n"]]
                  [:d [:km "open: SnippetsLab"]]
-                 [:j [:km "open: Warp"]]
+                 ;[:j [:km "open: Warp"]] ; cpu buggy for now
+                 [:j [:km "open: Ghostty"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
                  [:semicolon [:km "open: Xcode"]]
@@ -312,7 +313,7 @@
                  [:b [:km "open: Colab"]]
                  [:n [:km "open: Zed"]]
                  [:m [:km "open: GoLand"]]
-                 [:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
+                 ;[:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
                  [:comma [:km "open: JuxtaCode"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:left_command [:km "open: Notion"]]
