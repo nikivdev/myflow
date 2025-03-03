@@ -720,6 +720,7 @@ function gs
     end
 end
 
+# git sync
 function gsync
     # Save current branch to return to it later
     set current_branch (git rev-parse --abbrev-ref HEAD)
