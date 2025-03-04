@@ -44,6 +44,7 @@
   "editor.fontSize": 15,
   "files.exclude": {
     "**/app.config.timestamp_*.js": true,
+    "**/schema/migrations": true,
     "**/__pycache__": true,
     "**/.idea": true,
     "license/": true,
