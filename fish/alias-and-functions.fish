@@ -35,6 +35,7 @@ alias di="cd ~/clones && eza"
 alias do="cd ~/forks && eza"
 alias aa="eza -la" # list files (with hidden)
 alias r="ronin"
+alias npm="bun"
 alias v="mv" # move files/folders or rename
 alias dc="cd ~/src/config && eza"
 alias pr="gh pr checkout"
