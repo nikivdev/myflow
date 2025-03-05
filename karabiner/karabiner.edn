@@ -178,10 +178,11 @@
                  [[:k :l] :!COS9] ; Raycast
                  [[:l :n] [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [[:l :m] [:raycast "renfei_song/snippetslab/index"]] ; TODO: move to own tool + a way to preview snippets inline
-                 [[:j :semicolon] :!CSspacebar] ; Kunkun
+                 [[:j :semicolon] [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]] ; TODO: improve
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
                  [[:k :n] [:km "open: Dash (with search)"]]
                  ]}
+                 ;[[:j :semicolon] :!CSspacebar] ; Kunkun
                  ;[[:j :semicolon] [:alfred "run" "iansinnott.keyboardmaestro"]]
                  ;[[:l :n] :!TOSr] ; ScriptKit
                  ;[[:j :semicolon] :!CSspacebar] ; Homerow ; TODO: check if it's useful
@@ -302,7 +303,7 @@
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:g [:km "open: n8n"]]
                  [:d [:km "open: SnippetsLab"]]
-                 ;[:j [:km "open: Warp"]] ; cpu buggy for now
+                 ;[:h [:km "open: Warp"]] ; cpu buggy for now
                  [:j [:km "open: Ghostty"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
