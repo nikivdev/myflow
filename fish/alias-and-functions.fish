@@ -692,6 +692,10 @@ function repoCleanup
         tmp="$1.tmp"
         mv "$1" "$tmp" && mv "$tmp" "$(dirname "$1")/readme.md"
     ' _ {} \;
+    find . -type f -name "LICENSE" -not -path "*/node_modules/*" -exec sh -c '
+        tmp="$1.tmp"
+        mv "$1" "$tmp" && mv "$tmp" "$(dirname "$1")/license"
+    ' _ {} \;
     find . -type f -name "CHANGELOG.md" -not -path "*/node_modules/*" -exec sh -c '
         tmp="$1.tmp"
         mv "$1" "$tmp" && mv "$tmp" "$(dirname "$1")/changelog.md"
