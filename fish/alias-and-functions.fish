@@ -938,3 +938,31 @@ end
 function :b
     bun run build
 end
+
+# function c
+#     set -l last_output (eval "echo (history --max=1)")
+#     if test -n "$last_output"
+#         echo "$last_output" | pbcopy
+#         echo "Last command output copied to clipboard"
+#     else
+#         echo "No output from last command to copy"
+#     end
+# end
+
+# copy last command output to clipboard
+function .
+    # Create a temporary file to store command output
+    set -l temp_file (mktemp)
+
+    # Get the last command from history
+    set -l last_cmd (history --max=1)
+
+    # Re-run the command and capture its output
+    eval "$last_cmd" > $temp_file
+
+    # Copy the output to clipboard
+    cat $temp_file | pbcopy
+
+    # Clean up
+    rm $temp_file
+end
