@@ -303,7 +303,7 @@
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:g [:km "open: n8n"]]
                  [:d [:km "open: SnippetsLab"]]
-                 ;[:h [:km "open: Warp"]] ; cpu buggy for now
+                 [:h [:km "open: Preview"]]
                  [:j [:km "open: Ghostty"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: Cursor"]]
@@ -314,12 +314,12 @@
                  [:b [:km "open: Colab"]]
                  [:n [:km "open: Zed"]]
                  [:m [:km "open: GoLand"]]
-                 ;[:h [:km "open: Ghostty"]] ; TODO: using it for daemons for now, there should be better way with flox (but it's coming in future only)
                  [:comma [:km "open: JuxtaCode"]]
                  [:period [:km "open: Sublime Merge"]]
                  [:left_command [:km "open: Notion"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
+                 ;[:h [:km "open: Warp"]] ; cpu buggy for now
                  ;[:comma [:km "open: GitButler"]]
                  ; TODO: add somewhere
                  ;[:comma [:km "open: Replit"]] ; TODO: bind nicer
@@ -451,20 +451,20 @@
                  [:escape [:km "open: Final Cut Pro"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:b [:km "Edit keyboard shortcuts"]]
-                 [:j [:km "open: Preview"]]
+                 [:j [:km "open: Books"]]
                  [:k [:km "open: Reader"]]
                  [:l [:km "open: Dictionary"]]
+                 [:semicolon [:km "open: Notes"]]
                  [:n [:km "open: System Settings: Network"]]
                  [:m [:km "open: MacUpdater"]]
-                 [:semicolon [:km "open: Notes"]]
                  [:spacebar [:km "Screenshot into Claude"]]
                  ]}
+                 ;[:j [:km "open: Preview"]]
                  ;[:i [:km "open: Feedback Assistant"]]
                  ;[:l [:km "Open Reader with Nightly TS- workspace split 50/50"]]
                  ;[:comma [:km "open: Arq"]]
                  ;[:semicolon [:km "open: Day One"]]
                  ;[:semicolon [:km "open: Crouton"]]
-                 ;[:l [:km "open: Books"]]
                  ;[:k [:km "open: PDF Expert"]]
                  ;[:l [:km "open: Reeder"]]
                  ;[:n [:km "open: ScreenFlow"]]
