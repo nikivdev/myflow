@@ -296,9 +296,9 @@
                  [:t [:km "open: Craft"]]
                  [:a [:km "open: Bike"]]
                  [:v [:km "open: Yaak"]]
+                 [:u [:km "open: Proxyman"]]
                  [:i [:km "open: Windsurf"]]
                  [:o [:km "open: Keyboard Maestro"]]
-                 [:p [:km "open: Proxyman"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
                  [:g [:km "open: n8n"]]
@@ -337,7 +337,6 @@
                  ;[:t [:km "open: JuxtaText"]]
                  ;[:g [:km "open: Pathfinder"]]
                  ;[:t [:km "open: Color Picker"]]
-                 ;[:i [:km "open: Yaak"]]
                  ;[:semicolon [:km "open: Xcode Beta (but not xcode test project)"]]
                  ;[:n [:km "Open Xcode personal"]]
                  ;[:n :!OC9] ; open 2nd mac space with Xcode + Terminal
