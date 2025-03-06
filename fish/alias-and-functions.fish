@@ -949,36 +949,38 @@ end
 #     end
 # end
 
-# copy last command output to clipboard
+# copy last command output to clipboard (including the command that was executed)
 function .
     # Get the last command from history
     set -l last_cmd (history --max=1)
-    # Get the first word of the command to check if it's an alias or function
+
+    # For display purposes, try to get a clean name
     set -l cmd_name (string split ' ' $last_cmd)[1]
-    # Try to get the expanded command
-    set -l expanded_cmd (type -a $cmd_name 2>/dev/null | string match -r '^.+ is an alias for (.*)$' | head -n1 | string trim)
-    # If no alias found, check if it's a function
-    if test -z "$expanded_cmd"
-        # Keep original command
-        set expanded_cmd $last_cmd
-    else
-        # Replace the command with its expansion, preserving any arguments
-        set -l cmd_args (string split ' ' $last_cmd | string collect)[2..-1]
-        set expanded_cmd "$expanded_cmd $cmd_args"
+    set -l display_cmd $last_cmd
+
+    # If the command is an alias or function, try to display a nicer version
+    if functions -q $cmd_name
+        # Look for the first line with actual command execution
+        set -l actual_cmd (functions $cmd_name | grep -E '^\s+\w+' | head -n1 | string trim)
+        if test -n "$actual_cmd"
+            # Get just the command without the $argv
+            set display_cmd (string replace -r '\s+\$argv.*$' '' $actual_cmd)
+            # Add any arguments
+            set -l args (string split ' ' $last_cmd | tail -n +2 | string join ' ')
+            if test -n "$args"
+                set display_cmd "$display_cmd $args"
+            end
+        end
     end
+
     # Create a temporary file to store command output
     set -l temp_file (mktemp)
     # Add the command line with $ prefix
-    echo "\$ $expanded_cmd" >$temp_file
-    # Re-run the command and capture both stdout and stderr, appending to temp file
-    eval "$expanded_cmd" >>$temp_file 2>&1
-    # Check if command produced any output
-    if test -s $temp_file
-        # Silently copy to clipboard if there's output
-        cat $temp_file | pbcopy
-    else
-        echo "No output from last command"
-    end
+    echo "\$ $display_cmd" >$temp_file
+    # Re-run the last command and capture output
+    eval $last_cmd >>$temp_file 2>&1
+    # Copy to clipboard
+    cat $temp_file | pbcopy
     # Clean up
     rm $temp_file
 end
