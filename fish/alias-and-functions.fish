@@ -986,3 +986,71 @@ function .
     # Clean up
     rm $temp_file
 end
+
+# symlink a file to ~/bin with a specified name
+function b
+    # Check if exactly two arguments are provided
+    if test (count $argv) -ne 2
+        echo "Usage: bin <source_file> <target_name>"
+        echo "Example: bin dist/cli.js sitefetch"
+        return 1
+    end
+
+    set -l source_file $argv[1]
+    set -l target_name $argv[2]
+    set -l bin_dir "$HOME/bin"
+
+    # Ensure the source file exists
+    if not test -f $source_file
+        echo "Error: Source file '$source_file' does not exist"
+        return 1
+    end
+
+    # Make the source file executable
+    chmod +x $source_file
+    if test $status -ne 0
+        echo "Error: Failed to make '$source_file' executable"
+        return 1
+    end
+
+    # Create ~/bin if it doesn't exist
+    if not test -d $bin_dir
+        mkdir -p $bin_dir
+        if test $status -ne 0
+            echo "Error: Failed to create '$bin_dir'"
+            return 1
+        end
+    end
+
+    # Ensure ~/bin is in PATH
+    if not contains $bin_dir $PATH
+        set -U fish_user_paths $bin_dir $fish_user_paths
+        echo "Added '$bin_dir' to PATH"
+    end
+
+    # Resolve the absolute path of the source file
+    set -l abs_source (realpath $source_file)
+    if test $status -ne 0
+        echo "Error: Failed to resolve absolute path of '$source_file'"
+        return 1
+    end
+
+    # Create or update the symlink
+    set -l target_path "$bin_dir/$target_name"
+    if test -e $target_path
+        echo "Removing existing '$target_path'"
+        rm $target_path
+        if test $status -ne 0
+            echo "Error: Failed to remove existing '$target_path'"
+            return 1
+        end
+    end
+
+    ln -s $abs_source $target_path
+    if test $status -eq 0
+        echo "Symlinked '$abs_source' to '$target_path'"
+    else
+        echo "Error: Failed to create symlink"
+        return 1
+    end
+end
