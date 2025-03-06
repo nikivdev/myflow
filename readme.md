@@ -64,11 +64,11 @@ There is currently no automated way to replicate below setup so you would have t
 - [CleanShot](https://getcleanshot.com) for quick editing of screenshots/screencasts.
 - [Transmission](https://www.transmissionbt.com/) for downloading [torrents](https://wiki.nikiv.dev/networking/peer-to-peer/bittorrent).
 - [1Password](https://wiki.nikiv.dev/macOS/apps/1password) to keep all passwords and secret info. I prefer to use Passkeys or Single Sign On via GitHub/Google.
-- [Cursor](https://www.cursor.sh/) as my main code editor. Use many [VSCode extensions](https://wiki.nikiv.dev/text-editors/vs-code/vs-code-extensions) with it. Keep my UI minimal and useful.
+- [Cursor](https://www.cursor.sh/) as my main code editor. Use [many extensions](https://reflect.site/g/nikiv-personal/cursor/a675292841a94fbb960fb10fdd7eefa5) with it. Keep my UI minimal and useful.
 - [Sublime Merge](https://www.sublimemerge.com) as visual Git client. It gives nice overview of files changed, what branches exist and more. I have custom actions bound to go through Git tasks fast.
-- [Warp](https://wiki.nikiv.dev/unix/shell/warp) as primary terminal together with [Fish Shell](https://wiki.nikiv.dev/unix/shell/fish). I also use [Ghostty](https://mitchellh.com/ghostty) as side terminal for background servers and things.
+- [Ghostty](https://mitchellh.com/ghostty) as primary terminal together with [Fish Shell](https://wiki.nikiv.dev/unix/shell/fish).
 - [Dash](https://kapeli.com/dash) to search APIs fast.
-- [Xcode Beta](https://wiki.nikiv.dev/macOS/apps/xcode/) to write swift code.
+- [Xcode](https://wiki.nikiv.dev/macOS/apps/xcode/) to write swift code.
 - [Telegram](https://wiki.nikiv.dev/tools/telegram) as my main messenger. Love its stickers, speed and simplicity.
 - [Discord](https://wiki.nikiv.dev/tools/discord) as main way to interact with various communities.
 - [Spark](https://sparkmailapp.com) as my email client. Does good job of sorting mail and getting out of my way when writing/replying to things.
