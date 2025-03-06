@@ -951,17 +951,38 @@ end
 
 # copy last command output to clipboard
 function .
-    # Create a temporary file to store command output
-    set -l temp_file (mktemp)
-
     # Get the last command from history
     set -l last_cmd (history --max=1)
 
-    # Re-run the command and capture its output
-    eval "$last_cmd" > $temp_file
+    # Get the first word of the command to check if it's an alias or function
+    set -l cmd_name (string split ' ' $last_cmd)[1]
 
-    # Copy the output to clipboard
-    cat $temp_file | pbcopy
+    # Try to get the expanded command
+    set -l expanded_cmd (type $cmd_name 2>/dev/null | string match -r 'is an alias for (.*)' | string sub -s 2 || echo '')
+
+    # Use expanded command if found, otherwise use original
+    set -l display_cmd (test -n "$expanded_cmd" && echo "$expanded_cmd" || echo "$last_cmd")
+
+    # Create a temporary file to store command output
+    set -l temp_file (mktemp)
+
+    # Re-run the command and capture both stdout and stderr
+    eval "$display_cmd" >$temp_file 2>&1
+
+    # Check if command produced any output
+    if test -s $temp_file
+        # Combine command and output in clipboard
+        begin
+            echo '$ '"$display_cmd"
+            cat $temp_file
+        end | pbcopy
+
+        # Also show in terminal
+        echo '$ '"$display_cmd"
+        cat $temp_file
+    else
+        echo "No output from last command"
+    end
 
     # Clean up
     rm $temp_file
