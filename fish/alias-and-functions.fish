@@ -953,37 +953,32 @@ end
 function .
     # Get the last command from history
     set -l last_cmd (history --max=1)
-
     # Get the first word of the command to check if it's an alias or function
     set -l cmd_name (string split ' ' $last_cmd)[1]
-
     # Try to get the expanded command
-    set -l expanded_cmd (type $cmd_name 2>/dev/null | string match -r 'is an alias for (.*)' | string sub -s 2 || echo '')
-
-    # Use expanded command if found, otherwise use original
-    set -l display_cmd (test -n "$expanded_cmd" && echo "$expanded_cmd" || echo "$last_cmd")
-
+    set -l expanded_cmd (type -a $cmd_name 2>/dev/null | string match -r '^.+ is an alias for (.*)$' | head -n1 | string trim)
+    # If no alias found, check if it's a function
+    if test -z "$expanded_cmd"
+        # Keep original command
+        set expanded_cmd $last_cmd
+    else
+        # Replace the command with its expansion, preserving any arguments
+        set -l cmd_args (string split ' ' $last_cmd | string collect)[2..-1]
+        set expanded_cmd "$expanded_cmd $cmd_args"
+    end
     # Create a temporary file to store command output
     set -l temp_file (mktemp)
-
-    # Re-run the command and capture both stdout and stderr
-    eval "$display_cmd" >$temp_file 2>&1
-
+    # Add the command line with $ prefix
+    echo "\$ $expanded_cmd" >$temp_file
+    # Re-run the command and capture both stdout and stderr, appending to temp file
+    eval "$expanded_cmd" >>$temp_file 2>&1
     # Check if command produced any output
     if test -s $temp_file
-        # Combine command and output in clipboard
-        begin
-            echo '$ '"$display_cmd"
-            cat $temp_file
-        end | pbcopy
-
-        # Also show in terminal
-        echo '$ '"$display_cmd"
-        cat $temp_file
+        # Silently copy to clipboard if there's output
+        cat $temp_file | pbcopy
     else
         echo "No output from last command"
     end
-
     # Clean up
     rm $temp_file
 end
