@@ -953,11 +953,9 @@ end
 function .
     # Get the last command from history
     set -l last_cmd (history --max=1)
-
     # For display purposes, try to get a clean name
     set -l cmd_name (string split ' ' $last_cmd)[1]
     set -l display_cmd $last_cmd
-
     # If the command is an alias or function, try to display a nicer version
     if functions -q $cmd_name
         # Look for the first line with actual command execution
@@ -972,6 +970,10 @@ function .
             end
         end
     end
+
+    # useful addition my personal use (not to confuse llms)
+    # hard-code replacement of eza -I 'license' with ls
+    set display_cmd (string replace "eza -I 'license'" "ls" $display_cmd)
 
     # Create a temporary file to store command output
     set -l temp_file (mktemp)
