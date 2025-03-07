@@ -978,6 +978,7 @@ function .
     # useful addition my personal use (not to confuse llms)
     # hard-code replacement of eza -I 'license' with ls
     set display_cmd (string replace "eza -I 'license'" "ls" $display_cmd)
+    set display_cmd (string replace "eza -la" "ls -la" $display_cmd)
 
     # Create a temporary file to store command output
     set -l temp_file (mktemp)
