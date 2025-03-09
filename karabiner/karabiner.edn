@@ -477,10 +477,10 @@
                  ;[:spacebar [:km "Copied image into ChatGPT"]]]}
         {:des "tkey (sites + tests)"
          :rules [:t-mode
-                 [:l [:km "open: Haptic"]]
                  [:semicolon [:km "open: Supernotes"]]
                  [:spacebar :!CTOSi] ; Loom cancel record
                  ]}
+                 ;[:l [:km "open: Haptic"]]
                  ;[:0 [:km "w: regex101"]]
                  ;[:e [:km "w: Facebook"]]
                  ;[:n [:km "w: Facebook"]]
@@ -554,33 +554,35 @@
                  [:w [:km "open: Vercel"]]
                  [:e [:km "open: Repo Prompt"]]
                  [:r [:km "open: AlexSideBar"]]
-                 [:h [:km "open: EdgeDB Cloud"]]
+                 [:t [:km "open: Vultr"]]
                  [:j [:km "open: Ronin"]]
                  [:a [:km "open: Grok"]]
                  [:s [:km "open: ClaudeWeb"]]
+                 [:tab [:km "open: AWS"]]
                  [:escape [:km "open: Grep"]]
-                 [:h [:km "open: RunPod"]]
                  [:d [:km "open: Cloudflare"]]
                  [:f [:km "open: ChatGPT"]]
-                 [:g [:km "open: AI Studio"]]
+                 [:g [:km "open: Google Cloud"]]
+                 [:h [:km "open: AI Studio"]]
+                 [:z [:km "open: DeepSeek"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:v [:km "open: Railway"]]
-                 [:b [:km "open: Neon"]]
+                 [:b [:km "open: EdgeDB Cloud"]]
+                 [:n [:km "open: Neon"]]
+                 [:m [:km "open: Modal"]]
+                 [:semicolon [:km "open: RunPod"]]
                  [:i [:km "open: SQLiteFlow"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:grave_accent_and_tilde [:km "open: Sourcegraph"]]
                  ; TODO: improve. i passed in `__` to make it filter out for clones only before
-                 [:z [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
                  [:left_command [:km "open: T3 Chat"]]
                  [:spacebar [:km "open: Claude"]]
                  ]}
+                 ;[:z [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
                  ;[:t [:km "open: Yandex Cloud"]]
                  ;[:s [:km "open: Axiom"]] ; TODO: bind well
                  ;[:left_command [:km "open: Perplexity"]]
-                 ;[:tab [:km "open: Google Cloud"]]
-                 ;[:z [:km "open: DeepSeek"]]
-                 ;[:tab [:km "open: AWS"]] ; TODO: bind
                  ;[:m [:km "open: Mistral Chat"]]
                  ;[:i [:km "open: SQLiteFlow"]]
                  ;[:g [:km "open: Console"]]
