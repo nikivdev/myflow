@@ -579,7 +579,7 @@
                  [:left_command [:km "open: T3 Chat"]]
                  [:spacebar [:km "open: Claude"]]
                  ]}
-                 [;:x [:alfred "search workflows" "org.jeef.workflowdirectory"]] ; TODO: breaks
+                 ;[:x [:alfred "search workflows" "org.jeef.workflowdirectory"]] ; TODO: breaks
                  ;[:z [:alfred "search clones and forks" "com.vitorgalvao.alfred.directories"]] ; `=` makes it filter out for clones only TODO: find better way to do this, custom workflow, fast
                  ;[:t [:km "open: Yandex Cloud"]]
                  ;[:s [:km "open: Axiom"]] ; TODO: bind well
