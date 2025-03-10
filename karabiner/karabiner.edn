@@ -881,37 +881,6 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (paste)"
          :rules [:escape-mode
-                  [:w [:km "paste: personal nikita.vo@ email"]]
-                  [:e [:km "paste: personal nikita@ email"]]
-                  [:r [:km "paste: 🙏"]]
-                  [:s [:km "paste: ✨"]]
-                  [:d [:km "paste: delete"]]
-                  [:j [:km "enter: thanks 🖤"]]
-                  [:k [:km "paste: nikiv"]]
-                  [:l [:km "paste: Cal.com (15 min)️"]]
-                  [:c [:km "paste: 😿"]]
-                  [:v [:km "paste: 👋"]]
-                  [:h [:km "paste: 😺"]]
-                  [:semicolon [:km "paste: 🖤"]]
-                  [:g [:km "paste: Telegram (personal)️"]]
-                  [:n [:km "paste: nikitavoloboev"]]
-                  [:u [:km "paste: update"]]
-                  [:p [:km "paste: please"]]
-                  [:left_command [:km "Go to test macro"]]
-                  [:spacebar [:km "Test"]]
-                  ]}
-                  ;[:l [:km "open: EdgeDB Cloud"]]
-                  ;[:k [:km "paste: That worked 🖤"]]
-                  ;[:m [:km "paste: Cal.com (30 min)️"]]
-                  ;[:spacebar [:km "Screenshot into ChatGPT and explain"]]
-                  ;[:j [:km "paste: Thanks ♥️"]]
-                  ;[:j [:km "paste: thanks"]]
-                  ;[:k [:km "paste: Thank you."]]
-                  ;[:period [:km "paste: that worked 🖤"]]
-                  ;[:n [:km "paste: Nikita"]]
-                  ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
-        {:des "tilkey (project/code switches + km)"
-         :rules [:tilde-mode
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: focus!"]]
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
@@ -941,6 +910,37 @@
                  [:left_command [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
+                 ]}
+                  ;[:l [:km "open: EdgeDB Cloud"]]
+                  ;[:k [:km "paste: That worked 🖤"]]
+                  ;[:m [:km "paste: Cal.com (30 min)️"]]
+                  ;[:spacebar [:km "Screenshot into ChatGPT and explain"]]
+                  ;[:j [:km "paste: Thanks ♥️"]]
+                  ;[:j [:km "paste: thanks"]]
+                  ;[:k [:km "paste: Thank you."]]
+                  ;[:period [:km "paste: that worked 🖤"]]
+                  ;[:n [:km "paste: Nikita"]]
+                  ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
+        {:des "tilkey (project/code switches + km)"
+         :rules [:tilde-mode
+                  [:w [:km "paste: personal nikita.vo@ email"]]
+                  [:e [:km "paste: personal nikita@ email"]]
+                  [:r [:km "paste: 🙏"]]
+                  [:s [:km "paste: ✨"]]
+                  [:d [:km "paste: delete"]]
+                  [:j [:km "enter: thanks 🖤"]]
+                  [:k [:km "paste: nikiv"]]
+                  [:l [:km "paste: Cal.com (15 min)️"]]
+                  [:c [:km "paste: 😿"]]
+                  [:v [:km "paste: 👋"]]
+                  [:h [:km "paste: 😺"]]
+                  [:semicolon [:km "paste: 🖤"]]
+                  [:g [:km "paste: Telegram (personal)️"]]
+                  [:n [:km "paste: nikitavoloboev"]]
+                  [:u [:km "paste: update"]]
+                  [:p [:km "paste: please"]]
+                  [:left_command [:km "Go to test macro"]]
+                  [:spacebar [:km "Test"]]
                  ]}
                  ;[:h [:km "cursor: gridchess."]]
                  ;[:t [:km "cursor: notlost."]]
@@ -1244,10 +1244,11 @@
         {:des "mkey (apps, sites)"
          :rules [:m-mode
                  [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
+                 [:t [:km "open: DigitalOcean"]]
                  [:e [:km "open: TablePlus"]]
                  [:a [:km "open: Bolt"]]
                  [:s [:km "open: v0"]]
-                 [:d [:km "open: DigitalOcean"]]
+                 [:d [:km "open: Docker Desktop"]]
                  [:f [:km "open: OrbStack"]]
                  [:c [:km "open: OBS"]]
                  [:v [:km "open: Kulve"]]

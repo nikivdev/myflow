@@ -46,3 +46,9 @@ jumpy completions fish | source
 fish_add_path /opt/homebrew/opt/libpq/bin
 
 fish_add_path /Users/nikiv/.modular/bin
+
+if test -e "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk"
+    fish_add_path "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin"
+    test -f "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc" && source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+    test -f "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.fish.inc" && source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.fish.inc"
+end
