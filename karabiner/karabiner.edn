@@ -776,8 +776,9 @@
                  [:j :!TOCspacebar] ; Things Quick Entry (without context)
                  [:i [:km "clear active todo"]]
                  [:o [:km "Things: new top task"]]
+                 [:p [:km "Things: new 2nd from top task"]]
                  [:left_command [:km "open: Photos"]]
-                 [:semicolon [:km "Things: new 2nd from top task"]]
+                 [:semicolon :!Tspacebar] ; contexts window search (only cursor) TODO: make generic, good
                  [:quote :!CT5] ; Sleep display
                  [:comma [:km "cursor: .flox:env/manifest.toml"]]
                  [:period [:km "edit: Karabiner"]]
