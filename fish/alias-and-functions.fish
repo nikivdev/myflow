@@ -34,7 +34,7 @@ alias dv="cd ~/src/nikiv.dev && eza"
 alias di="cd ~/clones && eza"
 alias do="cd ~/forks && eza"
 alias aa="eza -la" # list files (with hidden)
-alias r="ronin"
+# alias r="ronin"
 alias npm="bun"
 alias v="mv" # move files/folders or rename
 alias dc="cd ~/src/config && eza"
@@ -73,14 +73,13 @@ function :p
     bun dev --port $argv
 end
 
-# TODO: add nice
-# function en
-#     if not set -q argv[1]
-#         encore run
-#     else
-#         encore $argv
-#     end
-# end
+function r
+    if not set -q argv[1]
+        encore run
+    else
+        encore $argv
+    end
+end
 
 function i
     if not set -q argv[1]

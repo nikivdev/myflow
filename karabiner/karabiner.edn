@@ -291,7 +291,6 @@
                  ;[:spacebar [:km "Explain selected text"]]]} ; TODO: seems not needed, as there is e+spacebar
         {:des "wkey (apps)"
          :rules [:w-mode
-                 [:q [:km "open: SQLiteFlow"]]
                  [:e [:km "open: Linear"]]
                  [:r [:km "open: 1Password"]]
                  [:t [:km "open: Craft"]]
@@ -1243,11 +1242,13 @@
         {:des "mkey (apps, sites)"
          :rules [:m-mode
                  [:w [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
+                 [:e [:km "open: Encore (local)"]]
+                 [:r [:km "open: Docker Desktop"]]
                  [:t [:km "open: DigitalOcean"]]
-                 [:e [:km "open: TablePlus"]]
-                 [:a [:km "open: Bolt"]]
-                 [:s [:km "open: v0"]]
-                 [:d [:km "open: Docker Desktop"]]
+                 [:escape [:km "open: TablePlus"]]
+                 [:a [:km "open: SQLiteFlow"]]
+                 [:s [:km "open: Bolt"]]
+                 [:d [:km "open: v0"]]
                  [:f [:km "open: OrbStack"]]
                  [:c [:km "open: OBS"]]
                  [:v [:km "open: Kulve"]]
