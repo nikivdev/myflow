@@ -900,7 +900,7 @@
                  [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: preprompt."]]
+                 [:v [:km "cursor: pp."]]
                  [:quote [:km "cursor: mojo."]]
                  [:i [:km "cursor: genx."]]
                  [:o [:km "cursor: clones/forks"]]
@@ -977,7 +977,6 @@
                  ;[:i [:km "cursor: cpp."]]
                  ;[:g [:km "cursor: genx"]]
                  ;[:quote [:km "cursor: forks"]] ; TODO: with 3 `---`?
-                 ;[:k [:km "cursor: solbond"]]
                  ;[:v [:km "cursor: nikiv.dev"]]
                  ;[:u [:km "cursor: kuskus"]]
                  ;[:comma [:km "cursor: lisa"]]
@@ -1023,9 +1022,11 @@
                  [:i [:km "w: Reddit submit"]]
                  [:period [:km "open: Element"]]
                  [:u [:km "Create new contact"]] ; TODO: move
+                 [:d [:km "open: Resend"]]
                  [:v [:km "open: Loops"]]
                  [:m [:km "open: Zoom"]]
                  ]}
+                 ; TODO: add google video
                  ;[:i [:km "web: Cal.video"]] TODO: use. as app
                  ;[:l [:km "open: Texts"]]
                  ;[:spacebar :!CSOz] ; X search TODO: check bind
