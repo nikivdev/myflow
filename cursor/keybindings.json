@@ -27,10 +27,6 @@
     "key": "cmd+l",
     "command": "workbench.action.quickOpen"
   },
-  // {
-  //   "key": "ctrl+r",
-  //   "command": "workbench.view.explorer"
-  // },
   {
     "key": "ctrl+f",
     "command": "editor.action.goToDeclaration",
@@ -272,10 +268,6 @@
     "command": "-editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
-  // {
-  //   "key": "ctrl+d",
-  //   "command": "editor.action.rename"
-  // },
   {
     "key": "alt+f12",
     "command": "-editor.action.peekDefinition",
@@ -386,10 +378,6 @@
     "command": "-editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   },
-  // {
-  //   "key": "cmd+j",
-  //   "command": "workbench.action.togglePanel"
-  // },
   {
     "key": "ctrl+n",
     "command": "editor.action.codeAction"
@@ -421,14 +409,6 @@
     "command": "-aipopup.action.modal.generate",
     "when": "editorFocus"
   },
-  // {
-  //   "key": "cmd+j",
-  //   "command": "-workbench.action.togglePanel"
-  // },
-  // {
-  //   "key": "cmd+j",
-  //   "command": "aipopup.action.modal.generate"
-  // },
   {
     "key": "cmd+l",
     "command": "-aichat.newchataction"
@@ -438,7 +418,6 @@
     "when": "!terminalFocus",
     "command": "-workbench.action.togglePanel"
   },
-  // TODO: should not go to first editor tab but should just 'go back' from when terminal was focused in on
   {
     "key": "cmd+j",
     "when": "terminalFocus",

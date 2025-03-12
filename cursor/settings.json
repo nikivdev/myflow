@@ -3,24 +3,19 @@
   "workbench.colorCustomizations": {
     "[GitHub Light]": {
       "editorLineNumber.foreground": "#ffffff",
+      // "editorLineNumber.foreground": "#0d090979",
       "editor.lineHighlightBackground": "#ffffff",
       "editorInlayHint.typeBackground": "#f1f9fd",
       "titleBar.activeBackground": "#ffffff",
-      "titleBar.activeForeground": "#0d1116"
-      // uncomment below to activate line numbers TODO: should automate on/off of this via keybind
-      // "editorLineNumber.foreground": "#0d090979",
-      // "editor.background": "#eeecf4",
-      // "tab.activeBackground": "#eeecf4",
-      // "window.activeBorder": "#eeecf4",
-      // "window.inactiveBorder": "#eeecf4",
+      "titleBar.activeForeground": "#0d1116",
     },
     "[GitHub Dark Default]": {
       "editorLineNumber.foreground": "#0c1118",
+      // "editorLineNumber.foreground": "#615e5ea7",
       "editor.lineHighlightBackground": "#0c1118",
       "editorInlayHint.typeBackground": "#0d1116",
       "titleBar.activeBackground": "#02040a",
-      "titleBar.activeForeground": "#7c8590"
-      // "editorLineNumber.foreground": "#615e5ea7",
+      "titleBar.activeForeground": "#7c8590",
     }
   },
   "errorLens.followCursor": "allLines",
@@ -244,7 +239,7 @@
   "gitlens.hovers.currentLine.over": "line",
   "workbench.activityBar.location": "hidden",
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "window.zoomLevel": -1,
   "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
@@ -281,13 +276,4 @@
   "python.terminal.activateEnvironment": false,
   "update.releaseTrack": "prerelease",
   "workbench.statusBar.visible": false
-  // past
-  // "ReactNativeIDE.panelLocation": "tab",
-  // "direnv.path.executable": "/Users/nikiv/.flox/run/aarch64-darwin.default.dev/bin/direnv",
-  // "direnv.restart.automatic": true,
-  // "cody.autocomplete.enabled": false,
-  // "cody.codeActions.enabled": false,
-  // "pieces.OS.launchOnStartup": "Yes",
-  // "pieces.cloudCapabilities": "Blended",
-  // "pieces.telemetry": true,
 }
