@@ -279,6 +279,7 @@
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
   "python.terminal.activateEnvironment": false,
+  "update.releaseTrack": "prerelease",
   "workbench.statusBar.visible": false
   // past
   // "ReactNativeIDE.panelLocation": "tab",
