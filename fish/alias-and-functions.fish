@@ -372,6 +372,49 @@ function find.git
     find . -type d -name ".git"
 end
 
+function rmGitFoldersInsideThisFolder --description "Find and delete all nested .git directories except the one at current root"
+    # Find all .git directories
+    set -l git_dirs (find . -type d -name ".git")
+
+    # Separate root .git from nested ones
+    set -l to_delete
+
+    for dir in $git_dirs
+        # Only add to deletion list if it's not the root .git
+        if test "$dir" != "./.git"
+            set -a to_delete $dir
+        end
+    end
+
+    # Display what will be deleted
+    echo "Found root .git directory (will be kept):"
+    echo "  ./.git"
+
+    if test (count $to_delete) -eq 0
+        echo "No nested .git directories to delete."
+        return 0
+    end
+
+    echo "The following nested .git directories will be deleted:"
+    for dir in $to_delete
+        echo "  $dir"
+    end
+
+    # Ask for confirmation
+    read -l -P "Are you sure you want to delete these directories? (y/N) " confirm
+    if test "$confirm" != "y" -a "$confirm" != "Y"
+        echo "Operation cancelled."
+        return 1
+    end
+
+    # Perform deletion
+    for dir in $to_delete
+        echo "Deleting $dir"
+        rm -rf "$dir"
+    end
+    echo "Deletion complete."
+end
+
 function find.DS_Store
     find . -type f -name ".DS_Store"
 end
