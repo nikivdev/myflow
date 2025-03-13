@@ -65,6 +65,9 @@ end
 function :
     if not set -q argv[1]
         bun dev
+    # if ` <port-number>`, run `bun dev --port <port>`
+    else if string match -qr '^[0-9]+$' $argv[1]
+        bun dev --port $argv[1]
     else
         bun $argv
     end
