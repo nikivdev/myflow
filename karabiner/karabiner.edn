@@ -879,7 +879,7 @@
                  ;[:j [:km "New open app's macro"]] ; TODO: macro that will start a new macro in currently open app KM group
                  ;[:semicolon :!COSs] ; Move window to right desktop
                  ;[:z :!CO0] ; Show Dropzone dropdown
-        {:des "capskey (paste)"
+        {:des "capskey (projects)"
          :rules [:escape-mode
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: focus!"]]
@@ -921,7 +921,7 @@
                   ;[:period [:km "paste: that worked 🖤"]]
                   ;[:n [:km "paste: Nikita"]]
                   ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
-        {:des "tilkey (project/code switches + km)"
+        {:des "tilkey (paste)"
          :rules [:tilde-mode
                   [:w [:km "paste: personal nikita.vo@ email"]]
                   [:e [:km "paste: personal nikita@ email"]]

@@ -442,17 +442,17 @@
   },
   {
     "key": "shift+cmd+r",
-    "command": "aichat.fixerrormessage",
+    "command": "composer.fixerrormessage",
     "when": "(arbitrary function)"
   },
   {
     "key": "shift+cmd+e",
-    "command": "-aichat.fixerrormessage",
+    "command": "-composer.fixerrormessage",
     "when": "(arbitrary function)"
   },
   {
     "key": "shift+cmd+e",
-    "command": "aichat.fixerrormessage"
+    "command": "composer.fixerrormessage"
   },
   {
     "key": "cmd+y",
