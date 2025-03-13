@@ -884,11 +884,11 @@
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: focus!"]]
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
-                 [:t [:km "cursor: gitedit."]] ; TODO: setup (view projects at some point in time from commit, bootstrap, run, branches etc.)
-                 [:u [:km "cursor: kuskus."]] ; TODO: setup (food app)
+                 [:t [:km "cursor: notlost."]]
                  [:k [:km "cursor: sb."]]
-                 [:h [:km "cursor: xn."]]
+                 [:h [:km "cursor: mojo."]]
                  [:j [:km "cursor: ts."]]
+                 [:a [:km "cursor: nix-infra."]] ; TODO: move infra into config. mby
                  [:s [:km "cursor: -test"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  [:d [:km "cursor: -dep"]]
                  [:f [:km "cursor: projects+"]]
@@ -896,13 +896,14 @@
                  [:g [:km "cursor: gpton."]]
                  [:l [:km "cursor: la."]]
                  [:semicolon [:km "cursor: swift."]]
+                 [:quote [:km "cursor: 1f."]]
                  [:b [:km "cursor: moonbit."]]
                  [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: pp."]]
-                 [:quote [:km "cursor: mojo."]]
-                 [:i [:km "cursor: genx."]]
+                 [:u [:km "cursor: kuskus."]] ; TODO: setup (food app)
+                 [:i [:km "cursor: xn."]]
                  [:o [:km "cursor: clones/forks"]]
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
@@ -911,40 +912,8 @@
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
-                  ;[:l [:km "open: EdgeDB Cloud"]]
-                  ;[:k [:km "paste: That worked 🖤"]]
-                  ;[:m [:km "paste: Cal.com (30 min)️"]]
-                  ;[:spacebar [:km "Screenshot into ChatGPT and explain"]]
-                  ;[:j [:km "paste: Thanks ♥️"]]
-                  ;[:j [:km "paste: thanks"]]
-                  ;[:k [:km "paste: Thank you."]]
-                  ;[:period [:km "paste: that worked 🖤"]]
-                  ;[:n [:km "paste: Nikita"]]
-                  ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
-        {:des "tilkey (paste)"
-         :rules [:tilde-mode
-                  [:w [:km "paste: personal nikita.vo@ email"]]
-                  [:e [:km "paste: personal nikita@ email"]]
-                  [:r [:km "paste: 🙏"]]
-                  [:s [:km "paste: ✨"]]
-                  [:d [:km "paste: delete"]]
-                  [:j [:km "enter: thanks 🖤"]]
-                  [:k [:km "paste: nikiv"]]
-                  [:l [:km "paste: Cal.com (15 min)️"]]
-                  [:c [:km "paste: 😿"]]
-                  [:v [:km "paste: 👋"]]
-                  [:h [:km "paste: 😺"]]
-                  [:semicolon [:km "paste: 🖤"]]
-                  [:g [:km "paste: Telegram (personal)️"]]
-                  [:n [:km "paste: nikitavoloboev"]]
-                  [:u [:km "paste: update"]]
-                  [:p [:km "paste: please"]]
-                  [:left_command [:km "Go to test macro"]]
-                  [:spacebar [:km "Test"]]
-                 ]}
                  ;[:h [:km "cursor: gridchess."]]
-                 ;[:t [:km "cursor: notlost."]]
-                 ;[:i [:km "cursor: nix-infra."]] ; TODO: move infra into config.
+                 ;[:t [:km "cursor: gitedit."]] ; TODO: setup (view projects at some point in time from commit, bootstrap, run, branches etc.)
                  ;[:quote [:km "cursor: ocaml."]]
                  ;[:spacebar [:km "cursor: nikiv-ui."]]
                  ;[:b [:km "cursor: kotlin."]]
@@ -978,7 +947,6 @@
                  ;[:g [:km "cursor: genx"]]
                  ;[:quote [:km "cursor: forks"]] ; TODO: with 3 `---`?
                  ;[:v [:km "cursor: nikiv.dev"]]
-                 ;[:u [:km "cursor: kuskus"]]
                  ;[:comma [:km "cursor: lisa"]]
                  ;[:v [:km "cursor: private"]]
                  ;[:i [:km "cursor: config"]]
@@ -1005,6 +973,37 @@
                  ;[:f [:km "w: Cloudflare LA deployments"]]
                  ;[:g [:km "w: Grafbase LA logs"]]
                  ;[:spacebar :!COSn]]} ; Selection -> GitHub ; TODO: move it to another key (on s?)
+        {:des "tilkey (paste)"
+         :rules [:tilde-mode
+                  [:w [:km "paste: personal nikita.vo@ email"]]
+                  [:e [:km "paste: personal nikita@ email"]]
+                  [:r [:km "paste: 🙏"]]
+                  [:s [:km "paste: ✨"]]
+                  [:d [:km "paste: delete"]]
+                  [:j [:km "enter: thanks 🖤"]]
+                  [:k [:km "paste: nikiv"]]
+                  [:l [:km "paste: Cal.com (15 min)️"]]
+                  [:c [:km "paste: 😿"]]
+                  [:v [:km "paste: 👋"]]
+                  [:h [:km "paste: 😺"]]
+                  [:semicolon [:km "paste: 🖤"]]
+                  [:g [:km "paste: Telegram (personal)️"]]
+                  [:n [:km "paste: nikitavoloboev"]]
+                  [:u [:km "paste: update"]]
+                  [:p [:km "paste: please"]]
+                  [:left_command [:km "Go to test macro"]]
+                  [:spacebar [:km "Test"]]
+                 ]}
+                  ;[:l [:km "open: EdgeDB Cloud"]]
+                  ;[:k [:km "paste: That worked 🖤"]]
+                  ;[:m [:km "paste: Cal.com (30 min)️"]]
+                  ;[:spacebar [:km "Screenshot into ChatGPT and explain"]]
+                  ;[:j [:km "paste: Thanks ♥️"]]
+                  ;[:j [:km "paste: thanks"]]
+                  ;[:k [:km "paste: Thank you."]]
+                  ;[:period [:km "paste: that worked 🖤"]]
+                  ;[:n [:km "paste: Nikita"]]
+                  ;[:spacebar [:km "Selected text into Google Lucky search"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:w [:km "New Spark email"]]
