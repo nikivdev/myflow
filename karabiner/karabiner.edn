@@ -905,6 +905,7 @@
                  [:u [:km "cursor: kuskus."]] ; TODO: setup (food app)
                  [:i [:km "cursor: xn."]]
                  [:o [:km "cursor: clones/forks"]]
+                 [:open_bracket [:km "cursor: gridchess."]]
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: odin."]]
@@ -912,7 +913,6 @@
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
-                 ;[:h [:km "cursor: gridchess."]]
                  ;[:t [:km "cursor: gitedit."]] ; TODO: setup (view projects at some point in time from commit, bootstrap, run, branches etc.)
                  ;[:quote [:km "cursor: ocaml."]]
                  ;[:spacebar [:km "cursor: nikiv-ui."]]
