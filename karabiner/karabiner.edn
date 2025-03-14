@@ -881,7 +881,6 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (projects)"
          :rules [:escape-mode
-                 [:q [:km "cursor: loraverse."]]
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: focus!"]]
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
@@ -904,9 +903,11 @@
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: pp."]]
                  [:u [:km "cursor: kuskus."]]
-                 [:i [:km "cursor: xn."]]
+                 [:i [:km "cursor: loraverse."]]
                  [:o [:km "cursor: clones/forks"]]
+                 [:p [:km "cursor: xn."]]
                  [:open_bracket [:km "cursor: gridchess."]]
+                 [:close_bracket [:km "cursor: xd."]]
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: odin."]]
