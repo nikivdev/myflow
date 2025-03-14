@@ -881,6 +881,8 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (projects)"
          :rules [:escape-mode
+                 ;[:2 [:km "cursor: gitedit."]] ; TODO: setup (view projects at some point in time from commit, bootstrap, run, branches etc.)
+                 [:q [:km "cursor: xn."]]
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: focus!"]]
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
@@ -905,7 +907,7 @@
                  [:u [:km "cursor: kuskus."]]
                  [:i [:km "cursor: loraverse."]]
                  [:o [:km "cursor: clones/forks"]]
-                 [:p [:km "cursor: xn."]]
+                 ;[:p [:km "cursor: past."]] ; TODO: make work (last month, with ability to change fast)
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:close_bracket [:km "cursor: xd."]]
                  [:comma [:km "cursor: zig."]]
@@ -915,7 +917,6 @@
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
-                 ;[:t [:km "cursor: gitedit."]] ; TODO: setup (view projects at some point in time from commit, bootstrap, run, branches etc.)
                  ;[:quote [:km "cursor: ocaml."]]
                  ;[:spacebar [:km "cursor: nikiv-ui."]]
                  ;[:b [:km "cursor: kotlin."]]
