@@ -902,7 +902,7 @@
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: pp."]]
-                 [:u [:km "cursor: kuskus."]] ; TODO: setup (food app)
+                 [:u [:km "cursor: kuskus."]]
                  [:i [:km "cursor: xn."]]
                  [:o [:km "cursor: clones/forks"]]
                  [:open_bracket [:km "cursor: gridchess."]]
