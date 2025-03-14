@@ -881,6 +881,7 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (projects)"
          :rules [:escape-mode
+                 [:q [:km "cursor: loraverse."]]
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: focus!"]]
                  [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
