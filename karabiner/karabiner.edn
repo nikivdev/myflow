@@ -1017,7 +1017,8 @@
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:j [:km "open: Discord"]]
                  [:k [:km "open: Telegram"]]
-                 [:l [:km "open: Beeper"]]
+                 ;[:l [:km "open: Beeper"]] ; TODO: move when x embeds start working
+                 [:l [:km "open: Texts"]]
                  [:semicolon [:km "open: Slack"]]
                  [:h :!COTS6] ; Tuple hang up
                  [:t [:km "open: Contacts"]]
