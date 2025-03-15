@@ -881,6 +881,10 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (projects)"
          :rules [:escape-mode
+                 [:1 [:km "cursor: ronin."]]
+                 [:2 [:km "cursor: pytorch."]]
+                 [:3 [:km "cursor: expo."]]
+                 [:4 [:km "cursor: tanstack."]]
                  [:q [:km "cursor: xn."]]
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: focus!"]]
@@ -902,7 +906,7 @@
                  [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: garden."]]
+                 [:v [:km "cursor: jazz."]]
                  [:u [:km "cursor: kuskus."]]
                  [:i [:km "cursor: loraverse."]]
                  [:o [:km "cursor: clones/forks"]]
