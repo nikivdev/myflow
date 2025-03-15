@@ -231,6 +231,10 @@
                  [:n [:km "list: Events"]]]}
         {:des "tabkey (things)"
          :rules [:tab-mode
+                 ; TODO: find convention for non `.` projects
+                 [:n [:km "cursor: py.."]]
+                 [:m [:km "cursor: go.."]]
+                 ; TODO: add more
                  [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
                  [:semicolon [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
                  [:n [[:open "dash-plugin://query=.pyprofile%3A&prevent_activation=true"] ["in-python" 1] ["in-go" 0] ["in-ts" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
