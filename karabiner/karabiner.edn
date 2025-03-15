@@ -13,6 +13,7 @@
              :shell "%s"
              }
  :simlayers {
+             :1-mode {:key :1}
              :2-mode {:key :2}
              :3-mode {:key :3}
              :4-mode {:key :4}
@@ -192,6 +193,15 @@
                  ;[[:l :m] :!TOSt] ; Raycast AI quick chat
                  ;[[:k :n] :!TOSu] ; Raycast AI window
                  ;[[:j :semicolon] :!TOSw] ; Notion Command Search TODO: replace with LA global search (with same Notion like raycast window) (inline info!)
+        {:des "1key (things)"
+         :rules [:1-mode
+                 [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
+                 [:semicolon [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
+                 [:n [[:open "dash-plugin://query=.pyprofile%3A&prevent_activation=true"] ["in-python" 1] ["in-go" 0] ["in-ts" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
+                 [:m [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
+                 [:period [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
+                 ]}
+                 ;[:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
         {:des "2key (move + alfred)"
          :rules [:2-mode
                  [:j :!Cdown_arrow]
@@ -229,17 +239,12 @@
                  [:k [:km "list: Alfred workflows"]]
                  [:l [:km "list: Command line tools"]]
                  [:n [:km "list: Events"]]]}
-        {:des "tabkey (things)"
+        {:des "tabkey (more projects)"
          :rules [:tab-mode
                  ; TODO: find convention for non `.` projects
                  [:n [:km "cursor: py.."]]
                  [:m [:km "cursor: go.."]]
                  ; TODO: add more
-                 [:j [[:open-g "dash-plugin://query=.tsprofile%3A&prevent_activation=true"] ["in-ts" 1] ["in-rust" 0] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; TS
-                 [:semicolon [[:open "dash-plugin://query=.swiftprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 1] ["in-go" 0] ["in-python" 0]]] ; Swift
-                 [:n [[:open "dash-plugin://query=.pyprofile%3A&prevent_activation=true"] ["in-python" 1] ["in-go" 0] ["in-ts" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
-                 [:m [[:open "dash-plugin://query=.goprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 0] ["in-swift" 0] ["in-go" 1] ["in-python" 0]]] ; Go
-                 [:period [[:open-g "dash-plugin://query=.rustprofile%3A&prevent_activation=true"] ["in-ts" 0] ["in-rust" 1] ["in-swift" 0] ["in-go" 0] ["in-python" 0]]] ; Rust
                  ;[:d [:km "Open Dash and search docsets"]]
                  ;[:hyphen [:km "cursor: vscode."]]
                  ;[:equal_sign [:km "cursor: bluesky."]]
@@ -886,9 +891,9 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (projects)"
          :rules [:escape-mode
-                 [:1 [:km "cursor: ronin."]]
-                 [:2 [:km "cursor: effect."]]
-                 [:3 [:km "cursor: expo."]]
+                 [:1 [:km "cursor: ronin-dep"]]
+                 [:2 [:km "cursor: effect-dep"]]
+                 [:3 [:km "cursor: expo-dep"]]
                  [:4 [:km "cursor: tanstack."]]
                  [:5 [:km "cursor: nextjs."]]
                  [:6 [:km "cursor: jax."]]
@@ -1097,15 +1102,16 @@
                  [:s [:km "Clone repo to ~/clones"]]
                  [:h [:km "edit: GitHub Bio"]]
                  [:j [:km "cursor: ts:scripts/run.ts"]]
-                 [:i [:km "edit: run.zig"]]
-                 ; TODO: fix
-                 [:n [:km "edit: run.rs"]]
-                 [:m [:km "edit: run.go"]]
+                 [:i [:km "cursor: config:fish/private.fish"]]
                  [:o [:km "edit: Fish alias/functions"]] ; TODO: bind to run.swift, move fish alias to something nice too
                  ;[:k [:km "cursor: ui"]] ; TODO: do
                  [:l [:km "cursor: config:fish/config.fish"]]
                  [:semicolon [:km "edit: run.swift"]]
-                 [:period [:km "edit: run.py"]]
+                 [:n [:km "edit: run.py"]]
+                 [:m [:km "edit: run.go"]]
+                 [:comma [:km "edit: run.zig"]]
+                 [:period [:km "edit: run.rs"]]
+                 [:slash [:km "edit: run.odin"]]
                  ; TODO: do smth better
                  ;[:spacebar :!CSOy] ; Selection -> Stack Overflow
                  ]}
