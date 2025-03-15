@@ -241,9 +241,14 @@
                  [:n [:km "list: Events"]]]}
         {:des "tabkey (more projects)"
          :rules [:tab-mode
-                 ; TODO: find convention for non `.` projects
-                 [:n [:km "cursor: py.."]]
-                 [:m [:km "cursor: go.."]]
+                 [:h [:km "cursor: mojo-dep"]]
+                 [:j [:km "cursor: ts-dep"]]
+                 [:n [:km "cursor: py-dep"]]
+                 [:m [:km "cursor: go-dep"]]
+                 [:comma [:km "cursor: zig-dep"]]
+                 [:period [:km "cursor: rust-dep"]]
+                 [:slash [:km "cursor: odin-dep"]]
+                 [:semicolon [:km "cursor: gorealeaser-dep"]]
                  ; TODO: add more
                  ;[:d [:km "Open Dash and search docsets"]]
                  ;[:hyphen [:km "cursor: vscode."]]
