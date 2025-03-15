@@ -881,7 +881,6 @@
                  ;[:z :!CO0] ; Show Dropzone dropdown
         {:des "capskey (projects)"
          :rules [:escape-mode
-                 ;[:2 [:km "cursor: gitedit."]] ; TODO: setup (view projects at some point in time from commit, bootstrap, run, branches etc.)
                  [:q [:km "cursor: xn."]]
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: focus!"]]
@@ -897,8 +896,8 @@
                  [:left_command [:km "cursor: 1focus."]]
                  [:g [:km "cursor: gpton."]]
                  [:l [:km "cursor: la."]]
-                 [:semicolon [:km "cursor: swift."]]
-                 [:quote [:km "cursor: 1f."]]
+                 [:semicolon [:km "cursor: 1f."]]
+                 [:quote [:km "cursor: swift."]]
                  [:b [:km "cursor: moonbit."]]
                  [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
@@ -917,6 +916,8 @@
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
+                 ;[:quote [:km "cursor: 1f."]]
+                 ;[:2 [:km "cursor: gitedit."]] ; TODO: setup (view projects at some point in time from commit, bootstrap, run, branches etc.)
                  ;[:quote [:km "cursor: ocaml."]]
                  ;[:spacebar [:km "cursor: nikiv-ui."]]
                  ;[:b [:km "cursor: kotlin."]]
