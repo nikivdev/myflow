@@ -241,6 +241,7 @@
                  [:n [:km "list: Events"]]]}
         {:des "tabkey (more projects)"
          :rules [:tab-mode
+                 [:e [:km "cursor: better-auth-dep"]]
                  [:h [:km "cursor: mojo-dep"]]
                  [:j [:km "cursor: ts-dep"]]
                  [:n [:km "cursor: py-dep"]]
