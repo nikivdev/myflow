@@ -1109,16 +1109,31 @@ function b
 end
 
 function mc --description "go build and install a binary"
-    if test (count $argv) -lt 1
-        echo "Usage: mc <binary-name>"
-        return 1
+    set -l binary_name
+
+    # Check if an argument is provided
+    if test (count $argv) -eq 0
+        # No argument provided, check for directories in cmd/
+        set -l cmd_dirs (path filter -d cmd/*)
+        set -l num_dirs (count $cmd_dirs)
+
+        if test $num_dirs -eq 1
+            # Exactly one directory found, use it as the binary name
+            set binary_name (basename $cmd_dirs[1])
+        else
+            # Zero or multiple directories found, prompt for binary name
+            echo "Error: Please specify the binary name. Found $num_dirs directories in cmd/."
+            return 1
+        end
+    else
+        # Use the provided argument as the binary name
+        set binary_name $argv[1]
     end
 
-    set -l binary_name $argv[1]
     set -l gopath (go env GOPATH)
 
     # Build the binary locally
-    echo "Building $binary_name locally..."
+    # echo "Building $binary_name locally..."
     go build -o $binary_name ./cmd/$binary_name
     if test $status -ne 0
         echo "Build failed"
@@ -1126,12 +1141,11 @@ function mc --description "go build and install a binary"
     end
 
     # Install the binary to $GOPATH/bin
-    echo "Installing $binary_name..."
+    # echo "Installing $binary_name..."
     go install ./cmd/$binary_name
     if test $status -ne 0
         echo "Failed to install $binary_name"
         return 1
     end
-
-    echo "$binary_name installed successfully to $gopath/bin"
+    echo "✔ $binary_name installed"
 end
