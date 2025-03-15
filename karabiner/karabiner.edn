@@ -882,9 +882,10 @@
         {:des "capskey (projects)"
          :rules [:escape-mode
                  [:1 [:km "cursor: ronin."]]
-                 [:2 [:km "cursor: pytorch."]]
+                 [:2 [:km "cursor: effect."]]
                  [:3 [:km "cursor: expo."]]
                  [:4 [:km "cursor: tanstack."]]
+                 [:5 [:km "cursor: pytorch."]]
                  [:q [:km "cursor: xn."]]
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: focus!"]]
