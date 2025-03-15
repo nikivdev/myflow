@@ -902,11 +902,11 @@
                  [:n [:km "cursor: py."]]
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
-                 [:v [:km "cursor: pp."]]
+                 [:v [:km "cursor: garden."]]
                  [:u [:km "cursor: kuskus."]]
                  [:i [:km "cursor: loraverse."]]
                  [:o [:km "cursor: clones/forks"]]
-                 ;[:p [:km "cursor: past."]] ; TODO: make work (last month, with ability to change fast)
+                 [:p [:km "cursor: pp."]]
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:close_bracket [:km "cursor: xd."]]
                  [:comma [:km "cursor: zig."]]
@@ -916,6 +916,7 @@
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
+                 ;[:p [:km "cursor: past."]] ; TODO: make work (last month, with ability to change fast)
                  ;[:quote [:km "cursor: 1f."]]
                  ;[:2 [:km "cursor: gitedit."]] ; TODO: setup (view projects at some point in time from commit, bootstrap, run, branches etc.)
                  ;[:quote [:km "cursor: ocaml."]]
