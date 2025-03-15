@@ -885,14 +885,14 @@
                  [:2 [:km "cursor: effect."]]
                  [:3 [:km "cursor: expo."]]
                  [:4 [:km "cursor: tanstack."]]
-                 [:5 [:km "cursor: jax."]]
-                 [:6 [:km "cursor: pytorch."]]
-                 [:7 [:km "cursor: nextjs."]]
-                 [:8 [:km "cursor: yaak."]]
-                 [:9 [:km "cursor: railway."]]
-                 [:0 [:km "cursor: gel."]]
-                 [:hyphen [:km "cursor: vscode."]]
-                 [:equal_sign [:km "cursor: bluesky."]]
+                 [:5 [:km "cursor: nextjs."]]
+                 [:6 [:km "cursor: jax."]]
+                 [:7 [:km "cursor: pytorch."]]
+                 [:8 [:km "cursor: gel."]]
+                 [:9 [:km "cursor: ollama."]]
+                 [:0 [:km "cursor: encore."]]
+                 [:hyphen [:km "cursor: railway."]]
+                 [:equal_sign [:km "cursor: yaak."]]
                  [:q [:km "cursor: xn."]]
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: focus!"]]
@@ -928,6 +928,9 @@
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
+                 ; TODO: add to tab key?
+                 ;[:hyphen [:km "cursor: vscode."]]
+                 ;[:equal_sign [:km "cursor: bluesky."]]
                  ;[:p [:km "cursor: past."]] ; TODO: make work (last month, with ability to change fast)
                  ;[:quote [:km "cursor: 1f."]]
                  ;[:2 [:km "cursor: gitedit."]] ; TODO: setup (view projects at some point in time from commit, bootstrap, run, branches etc.)
