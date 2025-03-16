@@ -922,7 +922,7 @@
                  [:1 [:km "cursor: expo-gh"]]
                  [:2 [:km "cursor: effect-gh"]]
                  [:3 [:km "cursor: encore-gh"]]
-                 [:q [:km "cursor: loraverse."]]
+                 [:q [:km "cursor: new."]]
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
                  [:r [:km "cursor: pp."]]
@@ -946,8 +946,8 @@
                  [:i [:km "cursor: xn."]]
                  [:o [:km "cursor: -gh"]]
                  [:p [:km "cursor: past."]]
-                 [:open_bracket [:km "cursor: gridchess."]]
-                 [:close_bracket [:km "cursor: xd."]]
+                 [:open_bracket [:km "cursor: loraverse."]]
+                 [:close_bracket [:km "cursor: gridchess."]]
                  [:comma [:km "cursor: zig."]]
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: odin."]]
@@ -955,6 +955,7 @@
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
+                 ;[:close_bracket [:km "cursor: xd."]]
                  ;[:s [:km "cursor: -test"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  ;[:o [:km "cursor: clones/forks"]]
                  ;[:p [:km "cursor: past."]] ; TODO: make work (last month, with ability to change fast)
