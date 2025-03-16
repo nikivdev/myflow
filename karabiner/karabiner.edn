@@ -912,8 +912,10 @@
                  [:q [:km "cursor: xn."]]
                  [:w [:km "cursor: x."]]
                  [:e [:km "cursor: focus!"]]
-                 [:r [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
-                 [:t [:km "cursor: notlost."]]
+                 [:r [:km "cursor: pp."]]
+                 [:t [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
+                 [:y [:km "cursor: notlost."]]
+                 [:u [:km "cursor: kuskus."]]
                  [:k [:km "cursor: sb."]]
                  [:h [:km "cursor: mojo."]]
                  [:j [:km "cursor: ts."]]
@@ -931,10 +933,9 @@
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: jazz."]]
-                 [:u [:km "cursor: kuskus."]]
                  [:i [:km "cursor: loraverse."]]
                  [:o [:km "cursor: clones/forks"]]
-                 [:p [:km "cursor: pp."]]
+                 [:p [:km "cursor: past."]]
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:close_bracket [:km "cursor: xd."]]
                  [:comma [:km "cursor: zig."]]
@@ -1053,6 +1054,7 @@
                  [:h :!COTS6] ; Tuple hang up
                  [:t [:km "open: Contacts"]]
                  [:i [:km "w: Reddit submit"]]
+                 [:comma [:km "open: Signal"]]
                  [:period [:km "open: Element"]]
                  [:u [:km "Create new contact"]] ; TODO: move
                  [:d [:km "open: Resend"]]
@@ -1081,7 +1083,6 @@
                  ;[:n [:km "w: Twitter Compose"]]
                  ;[:m [:km "w: Twitter Compose with current URL pasted"]]
                  ;[:v [:km "open: Mimestream"]]
-                 ;[:n [:km "open: Signal"]]
                  ;[:i [:km "open: WhatsApp"]]
                  ;[:o [:km "open: FaceTime"]]
                  ;[:o [:km "open: Around"]]
