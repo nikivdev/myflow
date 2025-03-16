@@ -932,9 +932,8 @@
                  [:k [:km "cursor: sb."]]
                  [:h [:km "cursor: mojo."]]
                  [:j [:km "cursor: ts."]]
-                 [:a [:km "cursor: nix-infra."]] ; TODO: move infra into config. mby
                  [:s [:km "cursor: -test"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
-                 [:d [:km "cursor: -gh"]]
+                 [:d [:km "cursor: nix-infra."]]
                  [:f [:km "cursor: projects+"]]
                  [:left_command [:km "cursor: 1focus."]]
                  [:g [:km "cursor: gpton."]]
@@ -947,7 +946,7 @@
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: jazz."]]
                  [:i [:km "cursor: loraverse."]]
-                 [:o [:km "cursor: clones/forks"]]
+                 [:o [:km "cursor: -gh"]]
                  [:p [:km "cursor: past."]]
                  [:open_bracket [:km "cursor: gridchess."]]
                  [:close_bracket [:km "cursor: xd."]]
@@ -958,6 +957,7 @@
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
+                 ;[:o [:km "cursor: clones/forks"]]
                  ;[:p [:km "cursor: past."]] ; TODO: make work (last month, with ability to change fast)
                  ;[:quote [:km "cursor: 1f."]]
                  ;[:2 [:km "cursor: gitedit."]] ; TODO: setup (view projects at some point in time from commit, bootstrap, run, branches etc.)
