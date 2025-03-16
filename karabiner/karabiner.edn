@@ -922,14 +922,14 @@
                  [:1 [:km "cursor: expo-gh"]]
                  [:2 [:km "cursor: effect-gh"]]
                  [:3 [:km "cursor: encore-gh"]]
-                 [:q [:km "cursor: mojo."]] ; TODO: move to e, move xn. to q prob
+                 [:q [:km "cursor: loraverse."]]
                  [:w [:km "cursor: x."]]
-                 [:e [:km "cursor: xn."]]
+                 [:e [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
                  [:r [:km "cursor: pp."]]
                  [:t [:km "cursor: notlost."]]
                  [:u [:km "cursor: kuskus."]]
                  [:k [:km "cursor: sb."]]
-                 [:h [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
+                 [:h [:km "cursor: mojo."]]
                  [:j [:km "cursor: ts."]]
                  [:d [:km "cursor: nix-infra."]]
                  [:f [:km "cursor: focus!"]]
@@ -943,7 +943,7 @@
                  [:m [:km "cursor: go."]]
                  [:c [:km "cursor: config."]]
                  [:v [:km "cursor: jazz."]]
-                 [:i [:km "cursor: loraverse."]]
+                 [:i [:km "cursor: xn."]]
                  [:o [:km "cursor: -gh"]]
                  [:p [:km "cursor: past."]]
                  [:open_bracket [:km "cursor: gridchess."]]
