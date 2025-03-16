@@ -1149,3 +1149,12 @@ function mc --description "go build and install a binary"
     end
     echo "✔ $binary_name installed"
 end
+
+
+function fn --description "Find directories matching a pattern and exclude node_modules"
+    if test (count $argv) -eq 0
+        echo "Error: Please provide a search pattern"
+        return 1
+    end
+    fd -td $argv[1] -E node_modules
+end
