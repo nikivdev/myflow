@@ -332,15 +332,14 @@
          :rules [:w-mode
                  [:e [:km "open: Linear"]]
                  [:r [:km "open: 1Password"]]
-                 [:t [:km "open: Craft"]]
+                 [:t [:km "open: n8n"]]
                  [:a [:km "open: Bike"]]
                  [:v [:km "open: Yaak"]]
-                 [:u [:km "open: Proxyman"]]
                  [:i [:km "open: Windsurf"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:escape [:km "open: Finder"]]
                  [:f [:km "open: Things"]] ; TODO: LA todos (separate app ideally) (show today calendar on right, same quality as Fantastical/Amie) (on left 2Do/Things/Linear/Ship like!)
-                 [:g [:km "open: n8n"]]
+                 [:g [:km "open: Proxyman"]]
                  [:d [:km "open: SnippetsLab"]]
                  [:h [:km "open: Preview"]]
                  [:j [:km "open: Ghostty"]]
@@ -358,6 +357,7 @@
                  [:left_command [:km "open: Notion"]]
                  [:spacebar [:km "open: Fantastical"]]
                  ]}
+                 ;[:t [:km "open: Craft"]]
                  ;[:h [:km "open: Warp"]] ; cpu buggy for now
                  ;[:comma [:km "open: GitButler"]]
                  ; TODO: add somewhere
