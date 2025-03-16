@@ -1158,3 +1158,11 @@ function fn --description "Find directories matching a pattern and exclude node_
     end
     fd -td $argv[1] -E node_modules
 end
+
+function c
+    if test -z "$argv[1]"
+        claude
+    else
+        claude $argv
+    end
+end

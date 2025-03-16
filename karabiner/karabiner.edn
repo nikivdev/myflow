@@ -923,14 +923,15 @@
                  [:2 [:km "cursor: effect-gh"]]
                  [:3 [:km "cursor: encore-gh"]]
                  [:q [:km "cursor: new."]]
-                 [:w [:km "cursor: x."]]
-                 [:e [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
+                 [:w [:km "cursor: other"]]
+                 [:e [:km "cursor: x."]]
                  [:r [:km "cursor: pp."]]
                  [:t [:km "cursor: notlost."]]
                  [:u [:km "cursor: kuskus."]]
                  [:k [:km "cursor: sb."]]
                  [:h [:km "cursor: mojo."]]
                  [:j [:km "cursor: ts."]]
+                 ;[:s [:km "cursor: data."]]
                  [:d [:km "cursor: nix-infra."]]
                  [:f [:km "cursor: focus!"]]
                  [:left_command [:km "cursor: 1focus."]]
@@ -952,7 +953,7 @@
                  [:period [:km "cursor: rust."]]
                  [:slash [:km "cursor: odin."]]
                  [:left_command [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
-                 [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
+                 [:spacebar [:km "cursor: try."]]
                  [:s [:km "cursor: _new"]]
                  ]}
                  ;[:close_bracket [:km "cursor: xd."]]
