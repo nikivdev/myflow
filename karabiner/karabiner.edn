@@ -922,19 +922,17 @@
                  [:1 [:km "cursor: expo-gh"]]
                  [:2 [:km "cursor: effect-gh"]]
                  [:3 [:km "cursor: encore-gh"]]
-                 [:q [:km "cursor: xn."]]
+                 [:q [:km "cursor: mojo."]] ; TODO: move to e, move xn. to q prob
                  [:w [:km "cursor: x."]]
-                 [:e [:km "cursor: focus!"]]
+                 [:e [:km "cursor: xn."]]
                  [:r [:km "cursor: pp."]]
-                 [:t [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
-                 [:y [:km "cursor: notlost."]]
+                 [:t [:km "cursor: notlost."]]
                  [:u [:km "cursor: kuskus."]]
                  [:k [:km "cursor: sb."]]
-                 [:h [:km "cursor: mojo."]]
+                 [:h [:km "cursor: try."]] ; TODO: improve, do similar like _new workspace. make work well. for new projects maybe? or bind smth good for this
                  [:j [:km "cursor: ts."]]
-                 [:s [:km "cursor: -test"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  [:d [:km "cursor: nix-infra."]]
-                 [:f [:km "cursor: projects+"]]
+                 [:f [:km "cursor: focus!"]]
                  [:left_command [:km "cursor: 1focus."]]
                  [:g [:km "cursor: gpton."]]
                  [:l [:km "cursor: la."]]
@@ -957,6 +955,7 @@
                  [:spacebar [:km "cursor: other"]] ; TODO: similar to clones (but switch to `non-clones` and `non-workspaces` (with `.`)) (should be other/clones/forks cycle)
                  [:s [:km "cursor: _new"]]
                  ]}
+                 ;[:s [:km "cursor: -test"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  ;[:o [:km "cursor: clones/forks"]]
                  ;[:p [:km "cursor: past."]] ; TODO: make work (last month, with ability to change fast)
                  ;[:quote [:km "cursor: 1f."]]
