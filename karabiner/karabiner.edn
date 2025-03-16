@@ -926,12 +926,11 @@
                  [:w [:km "cursor: other"]]
                  [:e [:km "cursor: x."]]
                  [:r [:km "cursor: nix-infra."]]
-                 [:t [:km "cursor: notlost."]]
+                 [:t [:km "cursor: pp."]]
                  [:u [:km "cursor: kuskus."]]
                  [:k [:km "cursor: sb."]]
                  [:h [:km "cursor: mojo."]]
                  [:j [:km "cursor: ts."]]
-                 [:s [:km "cursor: pp."]]
                  [:d [:km "cursor: data."]]
                  [:f [:km "cursor: focus!"]]
                  [:left_command [:km "cursor: 1focus."]]
@@ -954,8 +953,9 @@
                  [:slash [:km "cursor: odin."]]
                  [:left_command [:km "cursor: alfred-raycast."]] ; TODO: add kunkun
                  [:spacebar [:km "cursor: try."]]
-                 [:s [:km "cursor: _new"]]
                  ]}
+                 ;[:s [:km "cursor: _new"]]
+                 ;[:t [:km "cursor: notlost."]]
                  ;[:close_bracket [:km "cursor: xd."]]
                  ;[:s [:km "cursor: -test"]] ; TODO: instead of activating `search test code-workspace` when already on _test, it should search existing _test instances or open new ones in one alfred search
                  ;[:o [:km "cursor: clones/forks"]]
