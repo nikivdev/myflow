@@ -58,7 +58,8 @@
     "vendor": true,
     "**/npm-debug.log": true,
     "**/dist": true,
-    "**/*.bs.js": true
+    "**/*.bs.js": true,
+    "past/": true
   },
   "files.associations": {
     "*.toml": "toml",
