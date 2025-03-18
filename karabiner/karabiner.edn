@@ -806,7 +806,7 @@
                  [:tab [:km "open: tldraw"]]
                  [:escape [:km "open: Excalidraw"]]
                  [:a [:km "open: Chrome Canary"]]
-                 [:s [:km "open: v0"]]
+                 [:s [:km "open: Bolt"]]
                  [:d [:km "open: Rive"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:k [:km "New Linear task"]]
@@ -840,7 +840,6 @@
                  ;[:n [:km "open: Simulator"]]
                  ;[:q [:km "open: Color Picker"]] ; TODO: start picker too fast
                  ;[:comma  [:km "Add safari link to selected markdown text"]] ; TODO: move to another key, s?
-                 ;[:z [:km "open: v0"]]
                  ;[:i :!Treturn_or_enter]
                  ;[:o :!Oreturn_or_enter]
                  ;[:n :!Freturn_or_enter]
@@ -1300,7 +1299,7 @@
                  [:t [:km "open: DigitalOcean"]]
                  [:escape [:km "open: TablePlus"]]
                  [:a [:km "open: Lovable"]]
-                 [:s [:km "open: Bolt"]]
+                 [:s [:km "open: v0"]]
                  [:d [:km "open: SQLiteFlow"]]
                  [:f [:km "open: OrbStack"]]
                  [:c [:km "open: OBS"]]
