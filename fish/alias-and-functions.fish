@@ -720,6 +720,9 @@ function replace
     end
 end
 
+function :a
+    bun run deploy
+end
 
 function :c
     find . -type d -name node_modules -prune -print | xargs rm -rf
