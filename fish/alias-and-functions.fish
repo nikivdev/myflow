@@ -221,6 +221,10 @@ function w.
     cursor .env
 end
 
+function e.
+    bat .env
+end
+
 function n
     if not set -q argv[1]
         python3
