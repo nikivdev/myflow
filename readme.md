@@ -85,6 +85,7 @@ There is currently no automated way to replicate below setup so you would have t
 - [Safari](https://wiki.nikiv.dev/web/browsers/safari) as main browser for everything.
 - [Google Chrome Canary](https://wiki.nikiv.dev/web/browsers/google-chrome) for web development as its [dev tools](https://wiki.nikiv.dev/web/browsers/google-chrome/chrome-dev-tools) are superior to Safari.
 - [Safari Technology Preview](https://developer.apple.com/safari/technology-preview/) as browser for my [X](https://wiki.nikiv.dev/tools/twitter)/[Bluesky](https://bsky.app) feeds and sometimes dev.
+- [Fynix](https://www.fynix.ai/)Vs code extension which combines real-time AI coding assistance with agent-powered code reviews
 
 ## macOS CLIs
 
