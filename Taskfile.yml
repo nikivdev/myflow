@@ -1,0 +1,27 @@
+version: '3'
+
+tasks:
+  setup:
+    desc: Validate bun installation.
+    silent: true
+    cmds:
+      - |
+          bash <<'BASH'
+          set -euo pipefail
+
+          if ! command -v bun >/dev/null 2>&1; then
+            echo "Error: bun is not installed. Install it from https://bun.sh before continuing." >&2
+            exit 1
+          fi
+          echo "✔️ you are setup"
+          BASH
+
+  dev:
+    desc: Run the local development server.
+    cmds:
+      - bun dev
+
+  script:
+    desc: Watch and run scripts/run.ts via bun.
+    cmds:
+      - bun --watch scripts/run.ts
